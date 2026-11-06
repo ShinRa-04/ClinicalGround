@@ -1,0 +1,17 @@
+digraph "role-M04" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM04 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+M01 [label="M01\nLead care manager / case \nmanager", URL="../index.html#M01", target="_top"];
+M04 [label="M04\nClinical / community \npharmacist", URL="../index.html#M04", target="_top"];
+M05 [label="M05\nPharmacy technician / \nmedication-access coordinator", URL="../index.html#M05", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+U07 [label="U07\nManaged-care pharmacist / \npharmacy reviewer", URL="../index.html#U07", target="_top"];
+M04 -> U07 [label="DEP083", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> M04 [label="DEP117", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> M04 [label="DEP118", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M04 -> M05 [label="DEP119", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> M04 [label="S-M04 request", tooltip="Professional scope, collaborative arrangements and specific state permissions must be identified for therapy changes. Washington CDTA is one documented pathway for specified therapy activity; no universal requirement for a new physician instruction on each authorized action is inferred."];
+M04 -> M01 [label="S-M04 response", tooltip="Professional scope, collaborative arrangements and specific state permissions must be identified for therapy changes. Washington CDTA is one documented pathway for specified therapy activity; no universal requirement for a new physician instruction on each authorized action is inferred."];
+}

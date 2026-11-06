@@ -1,0 +1,12 @@
+digraph "role-M31" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM31 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+M02 [label="M02\nMedical social worker \n(credential-dependent \npractice)", URL="../index.html#M02", target="_top"];
+M31 [label="M31\nSafeguarding / \nprotection-service \nprofessional", URL="../index.html#M31", target="_top"];
+P07 [label="P07\nPatient-relations advocate", URL="../index.html#P07", target="_top"];
+M02 -> M31 [label="DEP176", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P07 -> M31 [label="DEP177", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M02 -> M31 [label="S-M31 request", tooltip="State reporting law and actual agency mandate are unresolved case variables; this card does not invent national reporting thresholds. The cited 2024 APS fact sheet has a 2028 full-compliance date; it does not prove uniform present implementation in every state or child-protection setting."];
+M31 -> M02 [label="S-M31 response", tooltip="State reporting law and actual agency mandate are unresolved case variables; this card does not invent national reporting thresholds. The cited 2024 APS fact sheet has a 2028 full-compliance date; it does not prove uniform present implementation in every state or child-protection setting."];
+}

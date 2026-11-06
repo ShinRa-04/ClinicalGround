@@ -1,0 +1,20 @@
+digraph "role-G09" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nG09 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+G04 [label="G04\nCare-management director / \nmanager", URL="../index.html#G04", target="_top"];
+G06 [label="G06\nQuality-improvement / audit \nprofessional", URL="../index.html#G06", target="_top"];
+G08 [label="G08\nPolicy analyst / clinical \nregulatory adviser", URL="../index.html#G08", target="_top"];
+G09 [label="G09\nCompliance / regulatory \nprofessional", URL="../index.html#G09", target="_top"];
+G16 [label="G16\nRegulator / oversight \nofficial", URL="../index.html#G16", target="_top"];
+G17 [label="G17\nLegal adviser / specialist \nlegal representative", URL="../index.html#G17", target="_top"];
+U08 [label="U08\nDelegated medical-group / \nreview-vendor reviewer", URL="../index.html#U08", target="_top"];
+G09 -> U08 [label="DEP086", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G09 -> G08 [label="DEP194", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G06 -> G09 [label="DEP196", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G08 -> G09 [label="DEP197", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G09 -> G16 [label="DEP210", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G09 -> G17 [label="DEP213", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G04 -> G09 [label="S-G09 request", tooltip="Actual legal interpretation and enforcement authority depend on role; local compliance staff are not the regulator."];
+G09 -> G04 [label="S-G09 response", tooltip="Actual legal interpretation and enforcement authority depend on role; local compliance staff are not the regulator."];
+}

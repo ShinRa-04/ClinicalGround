@@ -1,0 +1,680 @@
+{
+  "renderer": "@viz-js/viz",
+  "version": "3.31.0",
+  "date": "2026-10-17",
+  "graphs": 112,
+  "results": [
+    {
+      "name": "all-role-dependencies",
+      "engine": "dot",
+      "bytes": 256686,
+      "warnings": []
+    },
+    {
+      "name": "all-role-information",
+      "engine": "dot",
+      "bytes": 238633,
+      "warnings": []
+    },
+    {
+      "name": "provider-dependencies",
+      "engine": "dot",
+      "bytes": 49466,
+      "warnings": []
+    },
+    {
+      "name": "payer-dependencies",
+      "engine": "dot",
+      "bytes": 41458,
+      "warnings": []
+    },
+    {
+      "name": "care-dependencies",
+      "engine": "dot",
+      "bytes": 82571,
+      "warnings": []
+    },
+    {
+      "name": "governance-dependencies",
+      "engine": "dot",
+      "bytes": 48151,
+      "warnings": []
+    },
+    {
+      "name": "appeal-dependencies",
+      "engine": "dot",
+      "bytes": 25308,
+      "warnings": []
+    },
+    {
+      "name": "provider-information",
+      "engine": "dot",
+      "bytes": 22347,
+      "warnings": []
+    },
+    {
+      "name": "payer-appeal-information",
+      "engine": "dot",
+      "bytes": 24118,
+      "warnings": []
+    },
+    {
+      "name": "care-information",
+      "engine": "dot",
+      "bytes": 26491,
+      "warnings": []
+    },
+    {
+      "name": "governance-information",
+      "engine": "dot",
+      "bytes": 25194,
+      "warnings": []
+    },
+    {
+      "name": "role-P01",
+      "engine": "dot",
+      "bytes": 63410,
+      "warnings": []
+    },
+    {
+      "name": "role-P02",
+      "engine": "dot",
+      "bytes": 6020,
+      "warnings": []
+    },
+    {
+      "name": "role-P03",
+      "engine": "dot",
+      "bytes": 7945,
+      "warnings": []
+    },
+    {
+      "name": "role-P04",
+      "engine": "dot",
+      "bytes": 16807,
+      "warnings": []
+    },
+    {
+      "name": "role-P05",
+      "engine": "dot",
+      "bytes": 6034,
+      "warnings": []
+    },
+    {
+      "name": "role-P06",
+      "engine": "dot",
+      "bytes": 6213,
+      "warnings": []
+    },
+    {
+      "name": "role-P07",
+      "engine": "dot",
+      "bytes": 9243,
+      "warnings": []
+    },
+    {
+      "name": "role-C01",
+      "engine": "dot",
+      "bytes": 50741,
+      "warnings": []
+    },
+    {
+      "name": "role-C02",
+      "engine": "dot",
+      "bytes": 17572,
+      "warnings": []
+    },
+    {
+      "name": "role-C03",
+      "engine": "dot",
+      "bytes": 9933,
+      "warnings": []
+    },
+    {
+      "name": "role-C04",
+      "engine": "dot",
+      "bytes": 6322,
+      "warnings": []
+    },
+    {
+      "name": "role-C05",
+      "engine": "dot",
+      "bytes": 6050,
+      "warnings": []
+    },
+    {
+      "name": "role-C06",
+      "engine": "dot",
+      "bytes": 10637,
+      "warnings": []
+    },
+    {
+      "name": "role-C07",
+      "engine": "dot",
+      "bytes": 6039,
+      "warnings": []
+    },
+    {
+      "name": "role-C08",
+      "engine": "dot",
+      "bytes": 5918,
+      "warnings": []
+    },
+    {
+      "name": "role-O01",
+      "engine": "dot",
+      "bytes": 19637,
+      "warnings": []
+    },
+    {
+      "name": "role-O02",
+      "engine": "dot",
+      "bytes": 7351,
+      "warnings": []
+    },
+    {
+      "name": "role-O03",
+      "engine": "dot",
+      "bytes": 10539,
+      "warnings": []
+    },
+    {
+      "name": "role-O04",
+      "engine": "dot",
+      "bytes": 14518,
+      "warnings": []
+    },
+    {
+      "name": "role-O05",
+      "engine": "dot",
+      "bytes": 13647,
+      "warnings": []
+    },
+    {
+      "name": "role-O06",
+      "engine": "dot",
+      "bytes": 14475,
+      "warnings": []
+    },
+    {
+      "name": "role-O07",
+      "engine": "dot",
+      "bytes": 8838,
+      "warnings": []
+    },
+    {
+      "name": "role-O08",
+      "engine": "dot",
+      "bytes": 5956,
+      "warnings": []
+    },
+    {
+      "name": "role-O09",
+      "engine": "dot",
+      "bytes": 6190,
+      "warnings": []
+    },
+    {
+      "name": "role-O10",
+      "engine": "dot",
+      "bytes": 8872,
+      "warnings": []
+    },
+    {
+      "name": "role-O11",
+      "engine": "dot",
+      "bytes": 7019,
+      "warnings": []
+    },
+    {
+      "name": "role-O12",
+      "engine": "dot",
+      "bytes": 6058,
+      "warnings": []
+    },
+    {
+      "name": "role-O13",
+      "engine": "dot",
+      "bytes": 10570,
+      "warnings": []
+    },
+    {
+      "name": "role-U01",
+      "engine": "dot",
+      "bytes": 16855,
+      "warnings": []
+    },
+    {
+      "name": "role-U02",
+      "engine": "dot",
+      "bytes": 8428,
+      "warnings": []
+    },
+    {
+      "name": "role-U03",
+      "engine": "dot",
+      "bytes": 12653,
+      "warnings": []
+    },
+    {
+      "name": "role-U04",
+      "engine": "dot",
+      "bytes": 14297,
+      "warnings": []
+    },
+    {
+      "name": "role-U05",
+      "engine": "dot",
+      "bytes": 6443,
+      "warnings": []
+    },
+    {
+      "name": "role-U06",
+      "engine": "dot",
+      "bytes": 9194,
+      "warnings": []
+    },
+    {
+      "name": "role-U07",
+      "engine": "dot",
+      "bytes": 7755,
+      "warnings": []
+    },
+    {
+      "name": "role-U08",
+      "engine": "dot",
+      "bytes": 6192,
+      "warnings": []
+    },
+    {
+      "name": "role-U09",
+      "engine": "dot",
+      "bytes": 16856,
+      "warnings": []
+    },
+    {
+      "name": "role-U10",
+      "engine": "dot",
+      "bytes": 6636,
+      "warnings": []
+    },
+    {
+      "name": "role-U11",
+      "engine": "dot",
+      "bytes": 6082,
+      "warnings": []
+    },
+    {
+      "name": "role-U12",
+      "engine": "dot",
+      "bytes": 12513,
+      "warnings": []
+    },
+    {
+      "name": "role-U13",
+      "engine": "dot",
+      "bytes": 9403,
+      "warnings": []
+    },
+    {
+      "name": "role-U14",
+      "engine": "dot",
+      "bytes": 7589,
+      "warnings": []
+    },
+    {
+      "name": "role-U15",
+      "engine": "dot",
+      "bytes": 9216,
+      "warnings": []
+    },
+    {
+      "name": "role-U16",
+      "engine": "dot",
+      "bytes": 6008,
+      "warnings": []
+    },
+    {
+      "name": "role-U17",
+      "engine": "dot",
+      "bytes": 11055,
+      "warnings": []
+    },
+    {
+      "name": "role-U18",
+      "engine": "dot",
+      "bytes": 7736,
+      "warnings": []
+    },
+    {
+      "name": "role-M01",
+      "engine": "dot",
+      "bytes": 36764,
+      "warnings": []
+    },
+    {
+      "name": "role-M02",
+      "engine": "dot",
+      "bytes": 9630,
+      "warnings": []
+    },
+    {
+      "name": "role-M03",
+      "engine": "dot",
+      "bytes": 6046,
+      "warnings": []
+    },
+    {
+      "name": "role-M04",
+      "engine": "dot",
+      "bytes": 10133,
+      "warnings": []
+    },
+    {
+      "name": "role-M05",
+      "engine": "dot",
+      "bytes": 7649,
+      "warnings": []
+    },
+    {
+      "name": "role-M06",
+      "engine": "dot",
+      "bytes": 8014,
+      "warnings": []
+    },
+    {
+      "name": "role-M07",
+      "engine": "dot",
+      "bytes": 7571,
+      "warnings": []
+    },
+    {
+      "name": "role-M08",
+      "engine": "dot",
+      "bytes": 7617,
+      "warnings": []
+    },
+    {
+      "name": "role-M09",
+      "engine": "dot",
+      "bytes": 7452,
+      "warnings": []
+    },
+    {
+      "name": "role-M10",
+      "engine": "dot",
+      "bytes": 7446,
+      "warnings": []
+    },
+    {
+      "name": "role-M11",
+      "engine": "dot",
+      "bytes": 6031,
+      "warnings": []
+    },
+    {
+      "name": "role-M12",
+      "engine": "dot",
+      "bytes": 6933,
+      "warnings": []
+    },
+    {
+      "name": "role-M13",
+      "engine": "dot",
+      "bytes": 6042,
+      "warnings": []
+    },
+    {
+      "name": "role-M14",
+      "engine": "dot",
+      "bytes": 8377,
+      "warnings": []
+    },
+    {
+      "name": "role-M15",
+      "engine": "dot",
+      "bytes": 7248,
+      "warnings": []
+    },
+    {
+      "name": "role-M16",
+      "engine": "dot",
+      "bytes": 6683,
+      "warnings": []
+    },
+    {
+      "name": "role-M17",
+      "engine": "dot",
+      "bytes": 5719,
+      "warnings": []
+    },
+    {
+      "name": "role-M18",
+      "engine": "dot",
+      "bytes": 10678,
+      "warnings": []
+    },
+    {
+      "name": "role-M19",
+      "engine": "dot",
+      "bytes": 7414,
+      "warnings": []
+    },
+    {
+      "name": "role-M20",
+      "engine": "dot",
+      "bytes": 6260,
+      "warnings": []
+    },
+    {
+      "name": "role-M21",
+      "engine": "dot",
+      "bytes": 6092,
+      "warnings": []
+    },
+    {
+      "name": "role-M22",
+      "engine": "dot",
+      "bytes": 6808,
+      "warnings": []
+    },
+    {
+      "name": "role-M23",
+      "engine": "dot",
+      "bytes": 7512,
+      "warnings": []
+    },
+    {
+      "name": "role-M24",
+      "engine": "dot",
+      "bytes": 4725,
+      "warnings": []
+    },
+    {
+      "name": "role-M25",
+      "engine": "dot",
+      "bytes": 7469,
+      "warnings": []
+    },
+    {
+      "name": "role-M26",
+      "engine": "dot",
+      "bytes": 6068,
+      "warnings": []
+    },
+    {
+      "name": "role-M27",
+      "engine": "dot",
+      "bytes": 8975,
+      "warnings": []
+    },
+    {
+      "name": "role-M28",
+      "engine": "dot",
+      "bytes": 8061,
+      "warnings": []
+    },
+    {
+      "name": "role-M29",
+      "engine": "dot",
+      "bytes": 6069,
+      "warnings": []
+    },
+    {
+      "name": "role-M30",
+      "engine": "dot",
+      "bytes": 8932,
+      "warnings": []
+    },
+    {
+      "name": "role-M31",
+      "engine": "dot",
+      "bytes": 6697,
+      "warnings": []
+    },
+    {
+      "name": "role-G01",
+      "engine": "dot",
+      "bytes": 6078,
+      "warnings": []
+    },
+    {
+      "name": "role-G02",
+      "engine": "dot",
+      "bytes": 7513,
+      "warnings": []
+    },
+    {
+      "name": "role-G03",
+      "engine": "dot",
+      "bytes": 11082,
+      "warnings": []
+    },
+    {
+      "name": "role-G04",
+      "engine": "dot",
+      "bytes": 7515,
+      "warnings": []
+    },
+    {
+      "name": "role-G05",
+      "engine": "dot",
+      "bytes": 6389,
+      "warnings": []
+    },
+    {
+      "name": "role-G06",
+      "engine": "dot",
+      "bytes": 17602,
+      "warnings": []
+    },
+    {
+      "name": "role-G07",
+      "engine": "dot",
+      "bytes": 7019,
+      "warnings": []
+    },
+    {
+      "name": "role-G08",
+      "engine": "dot",
+      "bytes": 9574,
+      "warnings": []
+    },
+    {
+      "name": "role-G09",
+      "engine": "dot",
+      "bytes": 12192,
+      "warnings": []
+    },
+    {
+      "name": "role-G10",
+      "engine": "dot",
+      "bytes": 8155,
+      "warnings": []
+    },
+    {
+      "name": "role-G11",
+      "engine": "dot",
+      "bytes": 12315,
+      "warnings": []
+    },
+    {
+      "name": "role-G12",
+      "engine": "dot",
+      "bytes": 7769,
+      "warnings": []
+    },
+    {
+      "name": "role-G13",
+      "engine": "dot",
+      "bytes": 7833,
+      "warnings": []
+    },
+    {
+      "name": "role-G14",
+      "engine": "dot",
+      "bytes": 7254,
+      "warnings": []
+    },
+    {
+      "name": "role-G15",
+      "engine": "dot",
+      "bytes": 6897,
+      "warnings": []
+    },
+    {
+      "name": "role-G16",
+      "engine": "dot",
+      "bytes": 6016,
+      "warnings": []
+    },
+    {
+      "name": "role-G17",
+      "engine": "dot",
+      "bytes": 7448,
+      "warnings": []
+    },
+    {
+      "name": "role-J01",
+      "engine": "dot",
+      "bytes": 7671,
+      "warnings": []
+    },
+    {
+      "name": "role-J02",
+      "engine": "dot",
+      "bytes": 7457,
+      "warnings": []
+    },
+    {
+      "name": "role-J03",
+      "engine": "dot",
+      "bytes": 6083,
+      "warnings": []
+    },
+    {
+      "name": "authority-domains",
+      "engine": "dot",
+      "bytes": 12329,
+      "warnings": []
+    },
+    {
+      "name": "ma-appeals",
+      "engine": "dot",
+      "bytes": 15001,
+      "warnings": []
+    },
+    {
+      "name": "commercial-appeals",
+      "engine": "dot",
+      "bytes": 8287,
+      "warnings": []
+    },
+    {
+      "name": "reporting-examples",
+      "engine": "dot",
+      "bytes": 12697,
+      "warnings": []
+    }
+  ]
+}

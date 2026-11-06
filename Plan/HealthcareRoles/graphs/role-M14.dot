@@ -1,0 +1,15 @@
+digraph "role-M14" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM14 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C02 [label="C02\nReferring / primary-care \nclinician", URL="../index.html#C02", target="_top"];
+M01 [label="M01\nLead care manager / case \nmanager", URL="../index.html#M01", target="_top"];
+M14 [label="M14\nPhysical therapist", URL="../index.html#M14", target="_top"];
+M18 [label="M18\nDischarge planner / \ntransitions coordinator", URL="../index.html#M18", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+P01 -> M14 [label="DEP139", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C02 -> M14 [label="DEP140", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M14 -> M18 [label="DEP149", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> M14 [label="S-M14 request", tooltip="State/direct-access, order and payer requirements can differ; do not infer one universal physician-supervision hierarchy. No particular state direct-access rule was established in this audit; attempted V20 was unavailable and is not used as proof."];
+M14 -> M01 [label="S-M14 response", tooltip="State/direct-access, order and payer requirements can differ; do not infer one universal physician-supervision hierarchy. No particular state direct-access rule was established in this audit; attempted V20 was unavailable and is not used as proof."];
+}

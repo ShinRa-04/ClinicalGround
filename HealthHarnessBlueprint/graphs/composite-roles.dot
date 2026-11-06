@@ -1,0 +1,28 @@
+digraph composite_roles {
+graph [rankdir=TB,fontname="Arial",fontsize=15,labelloc=t,pad=0.35,nodesep=0.45,ranksep=0.65,bgcolor="white"];node [shape=box,style="rounded,filled",fillcolor="#edf3f6",color="#8396a2",fontname="Arial",fontsize=11,margin="0.15,0.12"];edge [fontname="Arial",fontsize=9,color="#526e80",arrowsize=0.7];
+graph [label="PROPOSED DECOMPOSITION | responsibility does not imply a separate person or model call"];
+owner [label="PA specialist: composite job owner
+Own the assigned outcome and pending work"];
+orient [label="PA-01-05
+Request / identity / coverage
+Requirement / policy applicability",URL="../MICRO_ROLES.md#pa-01"];
+evidence [label="PA-06-09
+Evidence / criteria links
+Gaps / clinical clarification",URL="../MICRO_ROLES.md#pa-06"];
+packet [label="PA-10-13
+Coding / packet / preflight
+Actual submission",URL="../MICRO_ROLES.md#pa-10"];
+response [label="PA-14-18
+Actual response / RFI / dispute
+Access handoff / closure",URL="../MICRO_ROLES.md#pa-14"];
+forms [label="Choose execution arrangement
+Combined owner / bounded helpers
+Selected role workers",URL="../COMPOSITION.md"];
+support [label="SH-01-10 shared mechanisms
+Deterministic functions where sufficient
+Case-scoped reasoning where useful",URL="../MICRO_ROLES.md#sh-01"];
+owner -> orient [label="only needed outputs"];owner -> evidence;owner -> packet;owner -> response;
+orient -> forms;evidence -> forms;packet -> forms;response -> forms;
+forms -> support [label="same contract / scope / evidence obligations"];
+
+}

@@ -1,0 +1,14 @@
+digraph "role-U07" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nU07 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+M04 [label="M04\nClinical / community \npharmacist", URL="../index.html#M04", target="_top"];
+U01 [label="U01\nPayer UM intake coordinator", URL="../index.html#U01", target="_top"];
+U07 [label="U07\nManaged-care pharmacist / \npharmacy reviewer", URL="../index.html#U07", target="_top"];
+U01 -> U07 [label="DEP082", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M04 -> U07 [label="DEP083", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> U07 [label="DEP084", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U01 -> U07 [label="S-U07 request", tooltip="Medication pathways can differ from medical-service prior authorization and Part C item/service appeals. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone."];
+U07 -> U01 [label="S-U07 response", tooltip="Medication pathways can differ from medical-service prior authorization and Part C item/service appeals. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone."];
+}

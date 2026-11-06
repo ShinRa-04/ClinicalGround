@@ -1,0 +1,875 @@
+[
+  {
+    "role_id": "O12",
+    "title": "Practice / patient-access supervisor",
+    "module_id": "A01",
+    "module_name": "Hospital operations coordinator",
+    "prior_scope": "Specific reporting lines are organization-specific and are not inferred from a generic title.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/O12.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "O01",
+    "title": "Provider authorization / precertification specialist",
+    "module_id": "A02",
+    "module_name": "Provider PA case owner",
+    "prior_scope": "Works for requester; not payer intake. Local payer requirements and request stage determine the needed packet.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/O01.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "O10",
+    "title": "Provider denial / appeal specialist",
+    "module_id": "A02",
+    "module_name": "Provider PA case owner",
+    "prior_scope": "Separate pre-service authorization disputes from post-service claim denials; actual notice determines route and deadlines.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/O10.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U01",
+    "title": "Payer UM intake coordinator",
+    "module_id": "A03",
+    "module_name": "Payer UM case owner",
+    "prior_scope": "Different employer/function from provider authorization specialist; decisions follow the actual plan/delegation. R13 describes some limited nonclinical approvals and assigned benefit-only decisions; it is not a national permission or medical-necessity-denial grant.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U01.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U08",
+    "title": "Delegated medical-group / review-vendor reviewer",
+    "module_id": "A03",
+    "module_name": "Payer UM case owner",
+    "prior_scope": "Functional wrapper, not an extra profession; identify both employer and actual licensed/intake role. In R13, AZPC explicitly retains no delegation to process, decide or notify appeals; the plan handles that review.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U08.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U10",
+    "title": "Member-services representative",
+    "module_id": "A03",
+    "module_name": "Payer UM case owner",
+    "prior_scope": "Explanation may be limited; the determination and notice remain the source for procedural rights.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U10.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U11",
+    "title": "Provider-services representative",
+    "module_id": "A03",
+    "module_name": "Payer UM case owner",
+    "prior_scope": "May be combined with other service functions; do not infer final decision power from access to the case.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U11.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U17",
+    "title": "UM manager / operational supervisor",
+    "module_id": "A03",
+    "module_name": "Payer UM case owner",
+    "prior_scope": "UCSD documents supervision of nurse case managers/referral coordinators in its own example; no universal payer organization chart is asserted.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U17.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M01",
+    "title": "Lead care manager / case manager",
+    "module_id": "A04",
+    "module_name": "CM journey owner",
+    "prior_scope": "Credential may be nursing, social work or another background; separate coordination authority from that credential. Published staffing examples differ; this is not evidence of national role prevalence.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M01.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M30",
+    "title": "Administrative care coordinator / scheduling support",
+    "module_id": "A04",
+    "module_name": "CM journey owner",
+    "prior_scope": "Administrative coordinator and licensed case manager may be distinct posts; do not infer credentials from title.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M30.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "P01",
+    "title": "Patient / insured member",
+    "module_id": "A05",
+    "module_name": "Patient interaction endpoint",
+    "prior_scope": "Capacity, minors, emergencies and surrogate authority require applicable law and case facts; this is not a blanket consent rule.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/P01.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "P02",
+    "title": "Informal caregiver / family support person",
+    "module_id": "A06",
+    "module_name": "Caregiver and representative endpoints",
+    "prior_scope": "Information sharing depends on permitted involvement; access is not automatically access to the entire record.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/P02.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "P03",
+    "title": "Legally recognized personal representative",
+    "module_id": "A06",
+    "module_name": "Caregiver and representative endpoints",
+    "prior_scope": "No universal national ordering of spouses, adult children or guardians is asserted; resolve governing state law and actual appointment.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/P03.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "C01",
+    "title": "Ordering / treating physician",
+    "module_id": "A07",
+    "module_name": "Treating clinician role templates",
+    "prior_scope": "License, privileges and clinical setting control the activity; this is not a hierarchy over insurer employees.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/C01.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "C02",
+    "title": "Referring / primary-care clinician",
+    "module_id": "A07",
+    "module_name": "Treating clinician role templates",
+    "prior_scope": "May be a physician, NP or PA under the relevant professional rules; this is a functional role, not an additional credential.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/C02.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "C03",
+    "title": "Treating / performing specialist",
+    "module_id": "A07",
+    "module_name": "Treating clinician role templates",
+    "prior_scope": "Clinical responsibility must be assigned for the actual service; specialist is not necessarily the organizational supervisor of the PCP.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/C03.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "C04",
+    "title": "Nurse practitioner",
+    "module_id": "A07",
+    "module_name": "Treating clinician role templates",
+    "prior_scope": "Specify state, population focus, privileges and any required practice arrangement before concluding independent authority. California examples separate practice category, furnishing authority and employer requirements. Prospective 104-availability wording is not proof of present individual certification or application availability.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/C04.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "C05",
+    "title": "Physician assistant / associate (jurisdiction-specific title)",
+    "module_id": "A07",
+    "module_name": "Treating clinician role templates",
+    "prior_scope": "PA means physician assistant in this profile; prior authorization is written out to avoid acronym confusion.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/C05.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "O11",
+    "title": "Provider physician adviser / peer-discussion clinician",
+    "module_id": "A07",
+    "module_name": "Treating clinician role templates",
+    "prior_scope": "May be the treating physician rather than a separate employee; duties depend on relationship to the patient and organization.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/O11.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M06",
+    "title": "Treating psychiatrist",
+    "module_id": "A07",
+    "module_name": "Treating clinician role templates",
+    "prior_scope": "Treating psychiatrist and coverage reviewer must be identified separately even where both are physicians.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M06.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M27",
+    "title": "Palliative-care clinical team member",
+    "module_id": "A07",
+    "module_name": "Treating clinician role templates",
+    "prior_scope": "A team function comprising different professions, each retaining its own scope; identify the actual clinician for an order.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M27.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "O13",
+    "title": "External diagnostic / clinical evidence author or custodian",
+    "module_id": "A08",
+    "module_name": "Diagnostic evidence and consultation interface",
+    "prior_scope": "This is an evidence-supply function spanning distinct professions, not a claim that laboratory staff, radiologists and therapists have identical permissions.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/O13.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U05",
+    "title": "Independent clinical / specialty consultant",
+    "module_id": "A08",
+    "module_name": "Diagnostic evidence and consultation interface",
+    "prior_scope": "Differentiate contracted expertise, internal consultation and statutory independent review.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U05.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "C06",
+    "title": "Registered nurse providing direct care",
+    "module_id": "A09",
+    "module_name": "Nursing and direct-care role templates",
+    "prior_scope": "A direct-care RN, payer UM nurse and nurse case manager are different functions even if one person can hold more than one role.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/C06.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "C07",
+    "title": "Licensed practical / vocational nurse",
+    "module_id": "A09",
+    "module_name": "Nursing and direct-care role templates",
+    "prior_scope": "State law and setting determine supervision and permitted activities; staffing title alone is insufficient.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/C07.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "C08",
+    "title": "Medical assistant / clinical-support assistant",
+    "module_id": "A09",
+    "module_name": "Nursing and direct-care role templates",
+    "prior_scope": "Specific clinical tasks depend on state rules and training; this role is not interchangeable with a physician assistant.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/C08.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M21",
+    "title": "Home-health aide / personal-care worker",
+    "module_id": "A09",
+    "module_name": "Nursing and direct-care role templates",
+    "prior_scope": "Health-related tasks depend on state, training and supervision; personal support is not equivalent to skilled nursing.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M21.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "O03",
+    "title": "Registration / patient-access representative",
+    "module_id": "A10",
+    "module_name": "Registration and benefits desk",
+    "prior_scope": "Identity, benefits verification and authorization are distinct checks even if performed by the same employee.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/O03.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "O04",
+    "title": "Provider insurance-verification / benefits specialist",
+    "module_id": "A10",
+    "module_name": "Registration and benefits desk",
+    "prior_scope": "Uses plan-specific information; a coverage estimate is not final claim adjudication.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/O04.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U02",
+    "title": "Payer eligibility / benefit specialist",
+    "module_id": "A10",
+    "module_name": "Registration and benefits desk",
+    "prior_scope": "Exact benefit authority and decision notice are plan-specific; not every benefits specialist is authorized to issue a denial. R13 permits some assigned benefit-only decisions; actual signatory authority still requires the plan/delegation.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U02.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "O06",
+    "title": "HIM / release-of-information specialist",
+    "module_id": "A11",
+    "module_name": "Evidence and documentation auditor",
+    "prior_scope": "Purpose matters: HIPAA minimum-necessary exceptions include specified treatment disclosures; other privacy requirements can still apply.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/O06.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "O08",
+    "title": "Clinical-documentation-integrity specialist",
+    "module_id": "A11",
+    "module_name": "Evidence and documentation auditor",
+    "prior_scope": "Documentation improvement is not permission to rewrite clinical facts to match coverage criteria.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/O08.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G08",
+    "title": "Policy analyst / clinical regulatory adviser",
+    "module_id": "A12",
+    "module_name": "Policy and criteria specialist",
+    "prior_scope": "Clinical adviser and nonclinical analyst may be separate professions; any clinical decision requires the actual credential and assignment.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G08.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "O07",
+    "title": "Medical coding specialist",
+    "module_id": "A13",
+    "module_name": "Coding support",
+    "prior_scope": "Authorization and claims can involve different code requirements; this role is conditional, not mandatory on every case.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/O07.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "P05",
+    "title": "Healthcare interpreter / communication-access professional",
+    "module_id": "A15",
+    "module_name": "Conversation and access support",
+    "prior_scope": "Qualification and access arrangements must fit the communication need; interpreting is distinct from written translation.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/P05.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "P06",
+    "title": "Healthcare translator",
+    "module_id": "A15",
+    "module_name": "Conversation and access support",
+    "prior_scope": "Language/format needs and quality review are organization-specific; the document author retains substantive responsibility.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/P06.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M13",
+    "title": "Health educator / self-management coach",
+    "module_id": "A15",
+    "module_name": "Conversation and access support",
+    "prior_scope": "A licensed clinician may also provide education; distinguish the educational function from any separate clinical authority.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M13.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "O02",
+    "title": "Referral coordinator",
+    "module_id": "A16",
+    "module_name": "Navigation and transitions desk",
+    "prior_scope": "May share a job with scheduling or authorization; preserve those functions as separate milestones.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/O02.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "P04",
+    "title": "Appointed appeal representative",
+    "module_id": "A16",
+    "module_name": "Navigation and transitions desk",
+    "prior_scope": "Verify standing, consent, route and deadlines from the actual notice; Medicare and commercial routes differ.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/P04.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "P07",
+    "title": "Patient-relations advocate",
+    "module_id": "A16",
+    "module_name": "Navigation and transitions desk",
+    "prior_scope": "A complaint about service and an appeal of a coverage decision are separate routes; a job title does not establish appointment.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/P07.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U16",
+    "title": "SHIP / consumer-assistance / ombudsman counselor",
+    "module_id": "A16",
+    "module_name": "Navigation and transitions desk",
+    "prior_scope": "SHIP is Medicare-specific; ombudsman and consumer-assistance mandates differ and are not interchangeable.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U16.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M09",
+    "title": "Community health worker",
+    "module_id": "A16",
+    "module_name": "Navigation and transitions desk",
+    "prior_scope": "Community trust does not substitute for clinical licensure; program training and role determine permitted services.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M09.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M10",
+    "title": "Patient navigator",
+    "module_id": "A16",
+    "module_name": "Navigation and transitions desk",
+    "prior_scope": "May be a nurse, social worker, CHW or other trained worker; apply the actual credentials in addition to navigation role.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M10.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M11",
+    "title": "Health-care guide / nonclinical care guide",
+    "module_id": "A16",
+    "module_name": "Navigation and transitions desk",
+    "prior_scope": "Partnership HealthPlan documents this title as an organizational example; do not impose it on every care program.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M11.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M18",
+    "title": "Discharge planner / transitions coordinator",
+    "module_id": "A16",
+    "module_name": "Navigation and transitions desk",
+    "prior_scope": "Hospital 482.43 permits development by or under RN, social worker or other qualified personnel; do not impose RN-only staffing nationally.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M18.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M04",
+    "title": "Clinical / community pharmacist",
+    "module_id": "A17",
+    "module_name": "Medication expertise and access interfaces",
+    "prior_scope": "Professional scope, collaborative arrangements and specific state permissions must be identified for therapy changes. Washington CDTA is one documented pathway for specified therapy activity; no universal requirement for a new physician instruction on each authorized action is inferred.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M04.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M05",
+    "title": "Pharmacy technician / medication-access coordinator",
+    "module_id": "A17",
+    "module_name": "Medication expertise and access interfaces",
+    "prior_scope": "Technician permissions vary; medication-access work can be an advanced assignment but remains distinct from pharmacist judgment.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M05.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M02",
+    "title": "Medical social worker (credential-dependent practice)",
+    "module_id": "A18",
+    "module_name": "Psychosocial, behavioral and safeguarding interfaces",
+    "prior_scope": "Job titles and licensure differ; distinguish supportive casework from licensed clinical treatment. UCLA describes a pre-licensure Clinical Social Worker II assignment; clinical job wording does not establish independent clinical licensure.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M02.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M03",
+    "title": "Licensed clinical social worker",
+    "module_id": "A18",
+    "module_name": "Psychosocial, behavioral and safeguarding interfaces",
+    "prior_scope": "Exact clinical activities and independent practice depend on state license and setting, not a national generic job description.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M03.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M07",
+    "title": "Clinical psychologist",
+    "module_id": "A18",
+    "module_name": "Psychosocial, behavioral and safeguarding interfaces",
+    "prior_scope": "Prescribing and specialty testing permissions are jurisdiction- and qualification-specific. New Mexico documents additional conditional/full prescribing certification; ordinary psychology licensure alone does not establish it.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M07.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M08",
+    "title": "Licensed behavioral-health / substance-use counselor",
+    "module_id": "A18",
+    "module_name": "Psychosocial, behavioral and safeguarding interfaces",
+    "prior_scope": "Mental-health, addiction, marriage/family and peer credentials have different requirements; establish the specific credential before assigning clinical authority.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M08.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M31",
+    "title": "Safeguarding / protection-service professional",
+    "module_id": "A18",
+    "module_name": "Psychosocial, behavioral and safeguarding interfaces",
+    "prior_scope": "State reporting law and actual agency mandate are unresolved case variables; this card does not invent national reporting thresholds. The cited 2024 APS fact sheet has a 2028 full-compliance date; it does not prove uniform present implementation in every state or child-protection setting.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M31.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M12",
+    "title": "Registered dietitian / qualified nutrition professional",
+    "module_id": "A19",
+    "module_name": "Rehabilitation, nutrition and respiratory interfaces",
+    "prior_scope": "Credential, state rules, referral/order and facility privileges determine specific clinical permissions.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M12.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M14",
+    "title": "Physical therapist",
+    "module_id": "A19",
+    "module_name": "Rehabilitation, nutrition and respiratory interfaces",
+    "prior_scope": "State/direct-access, order and payer requirements can differ; do not infer one universal physician-supervision hierarchy. No particular state direct-access rule was established in this audit; attempted V20 was unavailable and is not used as proof.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M14.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M15",
+    "title": "Occupational therapist",
+    "module_id": "A19",
+    "module_name": "Rehabilitation, nutrition and respiratory interfaces",
+    "prior_scope": "Order, setting and scope requirements must be identified for the actual service.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M15.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M16",
+    "title": "Speech-language pathologist",
+    "module_id": "A19",
+    "module_name": "Rehabilitation, nutrition and respiratory interfaces",
+    "prior_scope": "Language access and speech/swallowing impairment are different needs and may require different professionals.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M16.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M17",
+    "title": "Respiratory therapist",
+    "module_id": "A19",
+    "module_name": "Rehabilitation, nutrition and respiratory interfaces",
+    "prior_scope": "Specific protocols and privileges determine independent adjustments; state and setting must be checked.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M17.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "O05",
+    "title": "Scheduler / procedure coordinator",
+    "module_id": "A20",
+    "module_name": "Access, receiving services and fulfillment network",
+    "prior_scope": "Scheduling may occur before authorization, but completion/readiness must not be inferred from booking alone.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/O05.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "O09",
+    "title": "Financial counselor / assistance specialist",
+    "module_id": "A20",
+    "module_name": "Access, receiving services and fulfillment network",
+    "prior_scope": "Estimates, assistance approvals, authorization and final claims are separate records and decisions.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/O09.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M19",
+    "title": "Home-health intake / coordination clinician",
+    "module_id": "A20",
+    "module_name": "Access, receiving services and fulfillment network",
+    "prior_scope": "Home-health rules apply to the specified setting; signatory and verbal-order acceptance requirements remain scoped.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M19.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M20",
+    "title": "Skilled-nursing / rehabilitation receiving-team coordinator",
+    "module_id": "A20",
+    "module_name": "Access, receiving services and fulfillment network",
+    "prior_scope": "This is a receiving coordination function; profession, orders and facility rules determine actual treatment authority.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M20.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M22",
+    "title": "Community resource / housing / food / benefit-support worker",
+    "module_id": "A20",
+    "module_name": "Access, receiving services and fulfillment network",
+    "prior_scope": "Broad service-partner family, not a single licensed occupation; record the actual agency and job before assigning permissions.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M22.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M23",
+    "title": "Transportation coordinator / dispatcher",
+    "module_id": "A20",
+    "module_name": "Access, receiving services and fulfillment network",
+    "prior_scope": "Functional synthesis from access-barrier and transport-support evidence; exact broker rules and payment route are not established here.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M23.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M24",
+    "title": "Transport driver / service-delivery worker",
+    "module_id": "A20",
+    "module_name": "Access, receiving services and fulfillment network",
+    "prior_scope": "Operational synthesis; vehicle, attendant and medical-transport qualification must be determined for the actual journey.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M24.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M25",
+    "title": "Equipment supplier / delivery or fitting staff",
+    "module_id": "A20",
+    "module_name": "Access, receiving services and fulfillment network",
+    "prior_scope": "The CMS power-mobility example has specific requirements; do not apply those mechanically to all equipment.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M25.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M26",
+    "title": "Infusion / other receiving-service coordinator",
+    "module_id": "A20",
+    "module_name": "Access, receiving services and fulfillment network",
+    "prior_scope": "Operational service-coordination model; exact service procedure and clinical signoffs require the actual provider protocol.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M26.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G15",
+    "title": "Billing / patient accounts / claim-denial worker",
+    "module_id": "A20",
+    "module_name": "Access, receiving services and fulfillment network",
+    "prior_scope": "Downstream claim adjudication and pre-service authorization are distinct; exact payment rules are outside a generic role title.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G15.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U03",
+    "title": "Payer nurse / licensed UM clinical reviewer",
+    "module_id": "A21",
+    "module_name": "Initial UM clinical review roles",
+    "prior_scope": "Under MA 422.566(d), anticipated adverse medical necessity requires appropriate licensed professional review; local policy may impose stricter physician escalation. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U03.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U04",
+    "title": "Payer physician reviewer / medical director acting on a case",
+    "module_id": "A21",
+    "module_name": "Initial UM clinical review roles",
+    "prior_scope": "Case-review function is distinct from organization-wide CMO governance; authority depends on product, license, expertise and delegation. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U04.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U06",
+    "title": "Payer behavioral-health reviewer",
+    "module_id": "A21",
+    "module_name": "Initial UM clinical review roles",
+    "prior_scope": "Psychiatrist, psychologist and counselor credentials are not interchangeable; apply actual product and review requirements. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U06.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U07",
+    "title": "Managed-care pharmacist / pharmacy reviewer",
+    "module_id": "A21",
+    "module_name": "Initial UM clinical review roles",
+    "prior_scope": "Medication pathways can differ from medical-service prior authorization and Part C item/service appeals. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U07.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U12",
+    "title": "Internal appeal / grievance coordinator",
+    "module_id": "A22",
+    "module_name": "Appeal administration and reconsideration roles",
+    "prior_scope": "For MA, distinguish integrated plans and other applicable routes; grievance resolution is not necessarily coverage reversal.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U12.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U13",
+    "title": "Medical-necessity appeal / reconsideration physician",
+    "module_id": "A22",
+    "module_name": "Appeal administration and reconsideration roles",
+    "prior_scope": "MA medical-necessity denial reconsideration requires an appropriately expert physician; do not extend this exact requirement to all products and dispute types.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U13.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U14",
+    "title": "Medicare Advantage independent-review entity reviewer",
+    "module_id": "A23",
+    "module_name": "External review, regulator and court adapters",
+    "prior_scope": "This is MA IRE review; do not label a commercial IRO or an Original Medicare contractor as the same route.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U14.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U15",
+    "title": "External-review administrator",
+    "module_id": "A23",
+    "module_name": "External review, regulator and court adapters",
+    "prior_scope": "Exact administrator and permissible actions must be identified from product and notice.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U15.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U18",
+    "title": "Applicable commercial independent-review organization reviewer",
+    "module_id": "A23",
+    "module_name": "External review, regulator and court adapters",
+    "prior_scope": "HealthCare.gov describes required insurer acceptance in the process it covers; determine state/federal/plan route before applying it.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U18.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G16",
+    "title": "Regulator / oversight official",
+    "module_id": "A23",
+    "module_name": "External review, regulator and court adapters",
+    "prior_scope": "Identify agency, program and legal route; no blanket authority is assigned to every regulator or ombudsman.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G16.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "J01",
+    "title": "MA administrative law judge / applicable adjudicator",
+    "module_id": "A23",
+    "module_name": "External review, regulator and court adapters",
+    "prior_scope": "Standing, filing and any amount-in-controversy rules must be checked; no threshold amounts are invented here.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/J01.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "J02",
+    "title": "Medicare Appeals Council reviewer",
+    "module_id": "A23",
+    "module_name": "External review, regulator and court adapters",
+    "prior_scope": "The precise review scope and procedural requirements require the actual notice/rules; no automatic appeal entitlement is implied.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/J02.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "J03",
+    "title": "Federal district court in an eligible Medicare appeal",
+    "module_id": "A23",
+    "module_name": "External review, regulator and court adapters",
+    "prior_scope": "Exhaustion, standing, filing and threshold conditions matter; the map is not a procedural filing guide.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/J03.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "U09",
+    "title": "Determination / notification coordinator",
+    "module_id": "A24",
+    "module_name": "Determination notice operation",
+    "prior_scope": "Contents, recipients and deadlines depend on the actual product/process; no universal time limit is encoded here.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/U09.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G06",
+    "title": "Quality-improvement / audit professional",
+    "module_id": "A25",
+    "module_name": "Quality and workflow analyst",
+    "prior_scope": "Audit access and methods must be authorized; observational findings are not automatically causal evidence.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G06.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G11",
+    "title": "Health-services / population-health data analyst",
+    "module_id": "A25",
+    "module_name": "Quality and workflow analyst",
+    "prior_scope": "Reporting access and measure interpretation require actual data governance; algorithm output is not automatically a clinical determination.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G11.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G12",
+    "title": "Business / workflow analyst",
+    "module_id": "A25",
+    "module_name": "Quality and workflow analyst",
+    "prior_scope": "Systems analyst authority is change-process authority, not authority over patient treatment.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G12.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G01",
+    "title": "Provider medical director / chief medical officer",
+    "module_id": "A26",
+    "module_name": "Governance and staffing configuration",
+    "prior_scope": "Actual reporting lines, medical-staff authority and privileges require local bylaws/organization chart; no universal CMO-boss graph is asserted.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G01.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G02",
+    "title": "Payer medical director / clinical-program leader",
+    "module_id": "A26",
+    "module_name": "Governance and staffing configuration",
+    "prior_scope": "In MA the UM committee is led by the plan medical director; governance and case-review roles are not the same authority edge.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G02.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G03",
+    "title": "UM / medical-policy committee and specialty members",
+    "module_id": "A26",
+    "module_name": "Governance and staffing configuration",
+    "prior_scope": "MA committee requirements are explicit in A05; do not assume identical statutory composition for all insurance products.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G03.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G04",
+    "title": "Care-management director / manager",
+    "module_id": "A26",
+    "module_name": "Governance and staffing configuration",
+    "prior_scope": "Partnership documents several management levels; exact titles and reporting relationships elsewhere remain local.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G04.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G05",
+    "title": "Clinical / case-management supervisor",
+    "module_id": "A26",
+    "module_name": "Governance and staffing configuration",
+    "prior_scope": "R32 distinguishes RN, LVN, nonclinical and social-work supervisors; those qualifications must not be collapsed into one scope.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G05.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G07",
+    "title": "Trainer / clinical educator",
+    "module_id": "A26",
+    "module_name": "Governance and staffing configuration",
+    "prior_scope": "A clinical educator may hold a clinical license, but its separate practice permissions are not supplied by the training title.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G07.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G09",
+    "title": "Compliance / regulatory professional",
+    "module_id": "A26",
+    "module_name": "Governance and staffing configuration",
+    "prior_scope": "Actual legal interpretation and enforcement authority depend on role; local compliance staff are not the regulator.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G09.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G17",
+    "title": "Legal adviser / specialist legal representative",
+    "module_id": "A26",
+    "module_name": "Governance and staffing configuration",
+    "prior_scope": "A lawyer is not automatically needed in ordinary authorization work; professional and appointment rules are issue-specific.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G17.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G10",
+    "title": "Privacy officer / HIM privacy specialist",
+    "module_id": "A27",
+    "module_name": "Privacy, identity and infrastructure guard",
+    "prior_scope": "Treatment, payment, patient access, representative authority and specially protected data can invoke different rules.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G10.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G13",
+    "title": "EHR / clinical informatics / application-support professional",
+    "module_id": "A27",
+    "module_name": "Privacy, identity and infrastructure guard",
+    "prior_scope": "Clinical informaticists may hold additional licenses; distinguish technical permissions from those independent credentials.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G13.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "G14",
+    "title": "Identity / portal-access administrator",
+    "module_id": "A27",
+    "module_name": "Privacy, identity and infrastructure guard",
+    "prior_scope": "Operational synthesis of access-control support; actual IAM owner and escalation line must be locally identified.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/G14.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M28",
+    "title": "Hospice interdisciplinary group and attending functions (distinct roles)",
+    "module_id": "A29",
+    "module_name": "Hospice and spiritual-care pathway",
+    "prior_scope": "V11, V16 and V17 are the official October 2025 codification, not a complete current-2026 update check. They distinguish IDG/designated RN coordination, physician certification and admission. A patient-designated attending may have a different allowed credential; that does not grant every attending terminal-illness certification authority.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M28.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  },
+  {
+    "role_id": "M29",
+    "title": "Chaplain / spiritual-care professional",
+    "module_id": "A29",
+    "module_name": "Hospice and spiritual-care pathway",
+    "prior_scope": "Participation is needs/preference-dependent; protect the distinction between support and clinical decision authority.",
+    "prior_evidence": "Plan/HealthcareRoles/roles/M29.md",
+    "status": "PROPOSED_PRIMARY_MAPPING_NOT_VERIFIED_BENCHMARK_ASSIGNMENT"
+  }
+]

@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-10-18",
+  "scope": "Selected official documentation/code and historical abstract descriptions. Full copyrighted source snapshots are ignored.",
+  "sources": [
+    {
+      "id": "lg_workflows",
+      "url": "https://docs.langchain.com/oss/python/langgraph/workflows-agents",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "documentation",
+      "checked_date": "2026-10-18",
+      "sha256": "f60028deccad52ef8c58a55c340f1d73d8a24db01425a6ef5a3918cd8fd65213",
+      "bytes": 1594224,
+      "cache_relative_path": "_sources/comparative/lg_workflows.txt",
+      "scope": "Selected passages only; not a complete project audit."
+    },
+    {
+      "id": "lg_choosing",
+      "url": "https://docs.langchain.com/oss/python/langgraph/choosing-apis",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "documentation",
+      "checked_date": "2026-10-18",
+      "sha256": "7c34c4512d15a24dabb5f49bb3f933bfa1fa5498b4d3e0841d96bac6cf757545",
+      "bytes": 891100,
+      "cache_relative_path": "_sources/comparative/lg_choosing.txt",
+      "scope": "Selected passages only; not a complete project audit."
+    },
+    {
+      "id": "lg_persistence",
+      "url": "https://docs.langchain.com/oss/python/langgraph/persistence",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "documentation",
+      "checked_date": "2026-10-18",
+      "sha256": "0beeb62398cfb90f3f11e3a434748e42b216c41c2299bc8cdae3ea113c3bd4f7",
+      "bytes": 705060,
+      "cache_relative_path": "_sources/comparative/lg_persistence.txt",
+      "scope": "Selected passages only; not a complete project audit."
+    },
+    {
+      "id": "lg_checkpointers",
+      "url": "https://docs.langchain.com/oss/python/langgraph/checkpointers",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "documentation",
+      "checked_date": "2026-10-18",
+      "sha256": "56bda1f1669f05c34efe0da310276cc0df708a95cdaced25923750a9d7c14e29",
+      "bytes": 1319158,
+      "cache_relative_path": "_sources/comparative/lg_checkpointers.txt",
+      "scope": "Selected passages only; not a complete project audit."
+    },
+    {
+      "id": "lg_interrupts",
+      "url": "https://docs.langchain.com/oss/python/langgraph/interrupts",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "documentation",
+      "checked_date": "2026-10-18",
+      "sha256": "1985206b9a7098b7496c2913d38e4dcd140ce3eda4279d43ba74786c827da6dc",
+      "bytes": 1515912,
+      "cache_relative_path": "_sources/comparative/lg_interrupts.txt",
+      "scope": "Selected passages only; not a complete project audit."
+    },
+    {
+      "id": "lg_functional",
+      "url": "https://docs.langchain.com/oss/python/langgraph/functional-api",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "documentation",
+      "checked_date": "2026-10-18",
+      "sha256": "41ea5a0124e2aa7c517e75b18c513232344db5b4186fd3fbf9942106d4eeba7f",
+      "bytes": 1156660,
+      "cache_relative_path": "_sources/comparative/lg_functional.txt",
+      "scope": "Selected passages only; not a complete project audit."
+    },
+    {
+      "id": "lg_memory_doc",
+      "url": "https://docs.langchain.com/oss/python/concepts/memory",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "documentation",
+      "checked_date": "2026-10-18",
+      "sha256": "8f832ea99a92f6ec21198c5ce67e3b77661fd7c1c9b42d7f114e872c671e692b",
+      "bytes": 803404,
+      "cache_relative_path": "_sources/comparative/lg_memory_doc.txt",
+      "scope": "Selected passages only; not a complete project audit."
+    },
+    {
+      "id": "letta_memfs",
+      "url": "https://docs.letta.com/concepts/memfs/index.md",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "documentation",
+      "checked_date": "2026-10-18",
+      "sha256": "f181f55f9d014b2af22145be13281b49a09df684b9107cb4442540feb51afe68",
+      "bytes": 4163,
+      "cache_relative_path": "_sources/comparative/letta_memfs.txt",
+      "scope": "Selected passages only; not a complete project audit."
+    },
+    {
+      "id": "letta_sessions",
+      "url": "https://docs.letta.com/agent-sdk/sessions/index.md",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "documentation",
+      "checked_date": "2026-10-18",
+      "sha256": "9c8d9638749a6f4b4200337c62e0d8a966b741b779ecd253e38893d42157b7d3",
+      "bytes": 6075,
+      "cache_relative_path": "_sources/comparative/letta_sessions.txt",
+      "scope": "Selected passages only; not a complete project audit."
+    },
+    {
+      "id": "letta_memory",
+      "url": "https://docs.letta.com/agent-sdk/memory/index.md",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "documentation",
+      "checked_date": "2026-10-18",
+      "sha256": "18d67a103c8a67a9b35d364106f64459928e28c16dad6f8be6ef79117aec4118",
+      "bytes": 3987,
+      "cache_relative_path": "_sources/comparative/letta_memory.txt",
+      "scope": "Selected passages only; not a complete project audit."
+    },
+    {
+      "id": "letta_conversations",
+      "url": "https://docs.letta.com/concepts/conversations/index.md",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "documentation",
+      "checked_date": "2026-10-18",
+      "sha256": "20e80eebc8400a152acf2b3aa17dbc8dc46908e2755291ad0e8c52afad2d3c24",
+      "bytes": 2325,
+      "cache_relative_path": "_sources/comparative/letta_conversations.txt",
+      "scope": "Selected passages only; not a complete project audit."
+    },
+    {
+      "id": "letta_dreaming",
+      "url": "https://docs.letta.com/configuration/memory/index.md",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "documentation",
+      "checked_date": "2026-10-18",
+      "sha256": "88d0e5a3d270e07ecd106207f6c5440a835f81129744ff62a8b5799959988a07",
+      "bytes": 2129,
+      "cache_relative_path": "_sources/comparative/letta_dreaming.txt",
+      "scope": "Selected passages only; not a complete project audit."
+    },
+    {
+      "id": "pi_session_src",
+      "url": "https://github.com/earendil-works/pi/blob/c268154ca1171c2f9eefe75d3d7372a68aada2d5/packages/coding-agent/src/core/session-manager.ts",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "source_code",
+      "checked_date": "2026-10-18",
+      "sha256": "450d82c529933214e088b8422f00061815e617f352f6c834689787a314064bff",
+      "bytes": 63809,
+      "cache_relative_path": "_sources/comparative/pi_session_src.txt",
+      "scope": "Selected passages only; not a complete project audit.",
+      "commit": "c268154ca1171c2f9eefe75d3d7372a68aada2d5",
+      "repository": "earendil-works/pi",
+      "path": "packages/coding-agent/src/core/session-manager.ts",
+      "line_count": 2013
+    },
+    {
+      "id": "pi_loop_src",
+      "url": "https://github.com/earendil-works/pi/blob/c268154ca1171c2f9eefe75d3d7372a68aada2d5/packages/agent/src/agent-loop.ts",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "source_code",
+      "checked_date": "2026-10-18",
+      "sha256": "28a2b03e34a7e32f004aa851e54d3b5be9dad71c392205614cbc9abdf3a9020a",
+      "bytes": 29513,
+      "cache_relative_path": "_sources/comparative/pi_loop_src.txt",
+      "scope": "Selected passages only; not a complete project audit.",
+      "commit": "c268154ca1171c2f9eefe75d3d7372a68aada2d5",
+      "repository": "earendil-works/pi",
+      "path": "packages/agent/src/agent-loop.ts",
+      "line_count": 949
+    },
+    {
+      "id": "pi_agent_src",
+      "url": "https://github.com/earendil-works/pi/blob/c268154ca1171c2f9eefe75d3d7372a68aada2d5/packages/agent/src/agent.ts",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "source_code",
+      "checked_date": "2026-10-18",
+      "sha256": "7024a3145a6ebc951a0f030164adb1dfb12d33d6e0dbbac15ef0efda49c87457",
+      "bytes": 19748,
+      "cache_relative_path": "_sources/comparative/pi_agent_src.txt",
+      "scope": "Selected passages only; not a complete project audit.",
+      "commit": "c268154ca1171c2f9eefe75d3d7372a68aada2d5",
+      "repository": "earendil-works/pi",
+      "path": "packages/agent/src/agent.ts",
+      "line_count": 613
+    },
+    {
+      "id": "pi_compaction_src",
+      "url": "https://github.com/earendil-works/pi/blob/c268154ca1171c2f9eefe75d3d7372a68aada2d5/packages/coding-agent/src/core/compaction/compaction.ts",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "source_code",
+      "checked_date": "2026-10-18",
+      "sha256": "f5bbc427e337be708bd15297806c0acaf7cb0ee65cc4af77e6e48c3e3937894f",
+      "bytes": 35245,
+      "cache_relative_path": "_sources/comparative/pi_compaction_src.txt",
+      "scope": "Selected passages only; not a complete project audit.",
+      "commit": "c268154ca1171c2f9eefe75d3d7372a68aada2d5",
+      "repository": "earendil-works/pi",
+      "path": "packages/coding-agent/src/core/compaction/compaction.ts",
+      "line_count": 1099
+    },
+    {
+      "id": "lg_task",
+      "url": "https://github.com/langchain-ai/langgraph/blob/0eb194fe6093812243de2249e7092029c87c8820/libs/langgraph/langgraph/func/__init__.py",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "source_code",
+      "checked_date": "2026-10-18",
+      "sha256": "f07e4a9f9bac75e2b48ac987fb91ca8c13a0a3d40723aa1997840bcde56732b7",
+      "bytes": 23816,
+      "cache_relative_path": "_sources/comparative/lg_task.txt",
+      "scope": "Selected passages only; not a complete project audit.",
+      "commit": "0eb194fe6093812243de2249e7092029c87c8820",
+      "repository": "langchain-ai/langgraph",
+      "path": "libs/langgraph/langgraph/func/__init__.py",
+      "line_count": 620
+    },
+    {
+      "id": "lg_types",
+      "url": "https://github.com/langchain-ai/langgraph/blob/0eb194fe6093812243de2249e7092029c87c8820/libs/langgraph/langgraph/types.py",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "source_code",
+      "checked_date": "2026-10-18",
+      "sha256": "062583a1c0af9833477935a9a78d336408cc9a33c425722a1191e000d032107a",
+      "bytes": 37830,
+      "cache_relative_path": "_sources/comparative/lg_types.txt",
+      "scope": "Selected passages only; not a complete project audit.",
+      "commit": "0eb194fe6093812243de2249e7092029c87c8820",
+      "repository": "langchain-ai/langgraph",
+      "path": "libs/langgraph/langgraph/types.py",
+      "line_count": 1096
+    },
+    {
+      "id": "lg_sqlite",
+      "url": "https://github.com/langchain-ai/langgraph/blob/0eb194fe6093812243de2249e7092029c87c8820/libs/checkpoint-sqlite/langgraph/checkpoint/sqlite/__init__.py",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "source_code",
+      "checked_date": "2026-10-18",
+      "sha256": "13829d2b3961129e13ee3113a6674bff790181d26e5cae83c3bfabd6cca9074c",
+      "bytes": 25894,
+      "cache_relative_path": "_sources/comparative/lg_sqlite.txt",
+      "scope": "Selected passages only; not a complete project audit.",
+      "commit": "0eb194fe6093812243de2249e7092029c87c8820",
+      "repository": "langchain-ai/langgraph",
+      "path": "libs/checkpoint-sqlite/langgraph/checkpoint/sqlite/__init__.py",
+      "line_count": 661
+    },
+    {
+      "id": "letta_initial",
+      "url": "https://github.com/letta-ai/letta-code/blob/6e2081fa9d7b6bb54bbaab365e24f142e7ad382b/src/backend/local/initial-memory.ts",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "source_code",
+      "checked_date": "2026-10-18",
+      "sha256": "7a26cddaa0d6f74c04eabaee491a2f7a45b4d3dcb775c1f5bc723eb9bb889329",
+      "bytes": 3584,
+      "cache_relative_path": "_sources/comparative/letta_initial.txt",
+      "scope": "Selected passages only; not a complete project audit.",
+      "commit": "6e2081fa9d7b6bb54bbaab365e24f142e7ad382b",
+      "repository": "letta-ai/letta-code",
+      "path": "src/backend/local/initial-memory.ts",
+      "line_count": 116
+    },
+    {
+      "id": "letta_format",
+      "url": "https://github.com/letta-ai/letta-code/blob/6e2081fa9d7b6bb54bbaab365e24f142e7ad382b/src/agent/memory-format.ts",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "source_code",
+      "checked_date": "2026-10-18",
+      "sha256": "d06c0d5eb4a206ac35a2f673910782ef3c846155405aa443d315dbaf3ef77a47",
+      "bytes": 1278,
+      "cache_relative_path": "_sources/comparative/letta_format.txt",
+      "scope": "Selected passages only; not a complete project audit.",
+      "commit": "6e2081fa9d7b6bb54bbaab365e24f142e7ad382b",
+      "repository": "letta-ai/letta-code",
+      "path": "src/agent/memory-format.ts",
+      "line_count": 41
+    },
+    {
+      "id": "letta_compaction",
+      "url": "https://github.com/letta-ai/letta-code/blob/6e2081fa9d7b6bb54bbaab365e24f142e7ad382b/src/backend/local/compaction.ts",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "source_code",
+      "checked_date": "2026-10-18",
+      "sha256": "37cf5b97727f4bb3c8bd3b98fe0cf0ede4d465403b38ec0e323a32bdee3a6af4",
+      "bytes": 28304,
+      "cache_relative_path": "_sources/comparative/letta_compaction.txt",
+      "scope": "Selected passages only; not a complete project audit.",
+      "commit": "6e2081fa9d7b6bb54bbaab365e24f142e7ad382b",
+      "repository": "letta-ai/letta-code",
+      "path": "src/backend/local/compaction.ts",
+      "line_count": 749
+    },
+    {
+      "id": "rag_abstract",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "research_abstract",
+      "checked_date": "2026-10-18",
+      "sha256": "8fe67b6e6cba908511e7a7bb688a6306cd15309ae9096b4e57970469dce23e55",
+      "bytes": 45835,
+      "cache_relative_path": "_sources/comparative/rag_abstract.txt",
+      "scope": "Selected passages only; not a complete project audit."
+    },
+    {
+      "id": "memgpt_abstract",
+      "url": "https://arxiv.org/abs/2310.08560v2",
+      "status": "retrieved_and_inspected_selected_passages",
+      "kind": "research_abstract",
+      "checked_date": "2026-10-18",
+      "sha256": "938d54ff126d6fb19c8e8f96e77c359256a7236a6d76f86dd80d8716ba31f226",
+      "bytes": 42552,
+      "cache_relative_path": "_sources/comparative/memgpt_abstract.txt",
+      "scope": "Selected passages only; not a complete project audit."
+    }
+  ],
+  "failed_or_redirected_attempts": [
+    {
+      "url": "https://github.com/badlogic/pi-mono",
+      "result": "Redirected to earendil-works/pi; current identity pinned separately."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/durable-execution",
+      "result": "Redirected to persistence; functional-api/checkpointers/interrupts inspected for replay details."
+    },
+    {
+      "url": "https://docs.letta.com/guides/core-concepts/memory/",
+      "result": "Web fetch failed; official llms.txt supplied current routes."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/earendil-works/pi/main/packages/coding-agent/docs/session.md",
+      "result": "Singular path failed; current sessions.md inspected."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/langchain-ai/langgraph/0eb194fe6093812243de2249e7092029c87c8820/docs/docs/concepts/persistence.md",
+      "result": "404; current website documentation used instead."
+    }
+  ]
+}

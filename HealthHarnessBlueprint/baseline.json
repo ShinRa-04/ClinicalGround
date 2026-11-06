@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-18",
+  "research_baseline_commit": "a4c5726",
+  "scope": "Prior research identity only; no new runtime or clinical validation.",
+  "files": [
+    {
+      "path": "Plan/HealthcareRoles/data/roles.json",
+      "sha256": "d6b421978fbf88500cf36de83f46bd778326bf7af04606150dac1d33e800acb3"
+    },
+    {
+      "path": "Plan/HealthcareRoles/data/decisions.json",
+      "sha256": "e3c96a3d800abbe77956b7deaed0989dff48f79a22824a3c9850733e532bd5d9"
+    },
+    {
+      "path": "Plan/AgentOrganization/data/work_packages.json",
+      "sha256": "b4dfe072d217785318338ae56654be876ff692bb0c050829e2663a3d384b63b1"
+    },
+    {
+      "path": "HarnessResearch/verification/build_receipt.json",
+      "sha256": "6a3a555d19bbbe399101c8cb554255b0c168c2ed60a29b9d21bb4fd17923b9d0"
+    },
+    {
+      "path": "HarnessResearch/source_versions.json",
+      "sha256": "d1b76e8cea05975f38751b4514f70499ceaa41fc6e1aa513e033712032aecc26"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+digraph "role-C08" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nC08 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+C08 [label="C08\nMedical assistant / \nclinical-support assistant", URL="../index.html#C08", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+C01 -> C08 [label="DEP033", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> C08 [label="DEP034", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> C08 [label="S-C08 request", tooltip="Specific clinical tasks depend on state rules and training; this role is not interchangeable with a physician assistant."];
+C08 -> C01 [label="S-C08 response", tooltip="Specific clinical tasks depend on state rules and training; this role is not interchangeable with a physician assistant."];
+}

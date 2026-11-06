@@ -1,0 +1,27 @@
+digraph patient_isolation {
+graph [rankdir=TB,fontname="Arial",fontsize=15,labelloc=t,pad=0.35,nodesep=0.45,ranksep=0.65,bgcolor="white"];node [shape=box,style="rounded,filled",fillcolor="#edf3f6",color="#8396a2",fontname="Arial",fontsize=11,margin="0.15,0.12"];edge [fontname="Arial",fontsize=9,color="#526e80",arrowsize=0.7];
+graph [label="DESIGN REQUIREMENT, NOT IMPLEMENTED | no patient-derived influence across patients"];
+general [label="Approved reusable job definitions
+General procedures / applicable reference versions
+Read-only to patient-runtime work"];
+subgraph cluster_a {label="Patient A / task A namespace";color="#afc8d5";
+dataA [label="A records / answers / source references"];
+jobA [label="A composite owner and bounded helpers"];
+memA [label="A notes / summaries / episodes
+Checkpoint / actions / artifacts"];
+dataA -> jobA;jobA -> memA;memA -> jobA [label="same allowed case scope"];
+}
+subgraph cluster_b {label="Patient B / task B namespace";color="#afc8d5";
+dataB [label="B records / answers / source references"];
+jobB [label="B composite owner and bounded helpers"];
+memB [label="B notes / summaries / episodes
+Checkpoint / actions / artifacts"];
+dataB -> jobB;jobB -> memB;memB -> jobB [label="same allowed case scope"];
+}
+stop [shape=octagon,fillcolor="#fff0ed",label="No cross-patient retrieval/context
+No automatic patient-derived shared
+profiles, habits, procedures or learning"];
+general -> jobA [label="general definitions only"];general -> jobB [label="general definitions only"];
+memA -> stop [style=dashed,color="#a94534",arrowhead=tee];memB -> stop [style=dashed,color="#a94534",arrowhead=tee];
+
+}

@@ -1,0 +1,24 @@
+{
+  "status": "DESIGN_REQUIREMENT_NOT_IMPLEMENTED",
+  "origin": "User explicitly requires that patient data not influence another patient’s role behavior.",
+  "reusable": [
+    "approved job definitions",
+    "approved general procedures",
+    "applicable approved policy/reference versions"
+  ],
+  "case_local": [
+    "patient records and evidence",
+    "dialogue answers/refusal",
+    "derived facts and summaries",
+    "episodic recall",
+    "checkpoints",
+    "helper outputs",
+    "tool handles/results"
+  ],
+  "automatic_patient_derived_shared_learning": false,
+  "cross_patient_retrieval": false,
+  "reassign_provider_thread_without_verified_reset": false,
+  "actual_isolation_enforced_or_tested": false,
+  "operational_state": "Only actual permitted operational facts, separately sourced; no other patient chart/context injection.",
+  "verification_property": "Hold B allowed inputs/general versions/operational facts fixed; changes to A must not change B constructed context, source set or permitted operation scope."
+}

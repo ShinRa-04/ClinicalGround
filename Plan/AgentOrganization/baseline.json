@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-18",
+  "baseline_commit": "afb2ab9",
+  "purpose": "Immutable prior evidence reference for a separate organizational-design study; not agent implementation.",
+  "files": [
+    {
+      "path": "Plan/HealthcareRoles/data/roles.json",
+      "sha256": "d6b421978fbf88500cf36de83f46bd778326bf7af04606150dac1d33e800acb3"
+    },
+    {
+      "path": "Plan/HealthcareRoles/data/decisions.json",
+      "sha256": "e3c96a3d800abbe77956b7deaed0989dff48f79a22824a3c9850733e532bd5d9"
+    },
+    {
+      "path": "Plan/HealthcareRoles/data/relations.json",
+      "sha256": "161f00f27f9cb33e1a4591efe03cd509c15a23d5d35aef9a35350178f84e033e"
+    },
+    {
+      "path": "Plan/HealthcareRoles/data/information_flows.json",
+      "sha256": "a33c52a65196cf26d9d137cdcfdf19e1c325f969cc2b17c56a59ef6268e3fc29"
+    },
+    {
+      "path": "Plan/HealthcareRoles/verification/audit_receipt.json",
+      "sha256": "c83b6e0b92b5c4ad9b86f3721cdcaf1a92bb02c58aaf7ea16d521e12952485cf"
+    },
+    {
+      "path": "Plan/HealthcareRoles/verification/current_revision_review.json",
+      "sha256": "cc5a2b64208b764a67f231f38434a5d95d0ce353b56fcef2d1db0faa62f22809"
+    }
+  ]
+}

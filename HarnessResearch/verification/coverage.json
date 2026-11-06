@@ -1,0 +1,628 @@
+[
+  {
+    "id": "K01",
+    "topic": "Harness/model/agent/workflow boundaries",
+    "chapter": "general/01-anatomy-and-control.md",
+    "foundation_ids": [
+      "G03",
+      "G07"
+    ],
+    "finding_ids": [
+      "H001",
+      "OC-003",
+      "C01",
+      "C02"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K02",
+    "topic": "Task state, obligations and completion",
+    "chapter": "general/01-anatomy-and-control.md",
+    "foundation_ids": [
+      "G08",
+      "G10",
+      "G14"
+    ],
+    "finding_ids": [
+      "H001",
+      "OC-006"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K03",
+    "topic": "Provider adapters and native context ownership",
+    "chapter": "general/08-providers-streaming-and-performance.md",
+    "foundation_ids": [
+      "G03",
+      "G04",
+      "G05",
+      "G07"
+    ],
+    "finding_ids": [
+      "H004",
+      "OC-003",
+      "OC-072"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K04",
+    "topic": "Streaming and incomplete tool calls",
+    "chapter": "general/08-providers-streaming-and-performance.md",
+    "foundation_ids": [
+      "G03"
+    ],
+    "finding_ids": [
+      "OC-006",
+      "C30",
+      "C31"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K05",
+    "topic": "Tool contracts, discovery and response design",
+    "chapter": "general/05-tools-execution-and-trust.md",
+    "foundation_ids": [
+      "G03",
+      "G11",
+      "G12",
+      "G13"
+    ],
+    "finding_ids": [
+      "OC-062"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K06",
+    "topic": "Permissions, approval and execution authority",
+    "chapter": "general/05-tools-execution-and-trust.md",
+    "foundation_ids": [
+      "G01",
+      "G02"
+    ],
+    "finding_ids": [
+      "H048",
+      "H049",
+      "H050",
+      "OC-063",
+      "OC-064"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K07",
+    "topic": "Sandbox and deployment trust boundaries",
+    "chapter": "general/05-tools-execution-and-trust.md",
+    "foundation_ids": [
+      "G01",
+      "G02"
+    ],
+    "finding_ids": [
+      "OC-065",
+      "OC-066",
+      "OC-067"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K08",
+    "topic": "Prompt construction and instruction tiers",
+    "chapter": "general/03-context-budget-and-compaction.md",
+    "foundation_ids": [
+      "G06",
+      "G09"
+    ],
+    "finding_ids": [
+      "H006",
+      "H008",
+      "H009"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K09",
+    "topic": "Token accounting, reserves and effective triggers",
+    "chapter": "general/03-context-budget-and-compaction.md",
+    "foundation_ids": [
+      "G05",
+      "G06"
+    ],
+    "finding_ids": [
+      "H012",
+      "H013",
+      "H014"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K10",
+    "topic": "Prompt cache versus durable memory",
+    "chapter": "general/08-providers-streaming-and-performance.md",
+    "foundation_ids": [
+      "G06",
+      "G08"
+    ],
+    "finding_ids": [
+      "H011"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K11",
+    "topic": "Pruning, compaction and persisted projections",
+    "chapter": "general/03-context-budget-and-compaction.md",
+    "foundation_ids": [
+      "G05",
+      "G09"
+    ],
+    "finding_ids": [
+      "H016",
+      "H018",
+      "OC-023",
+      "OC-024",
+      "OC-025",
+      "C04"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K12",
+    "topic": "Tool-pair and provider protocol preservation",
+    "chapter": "general/03-context-budget-and-compaction.md",
+    "foundation_ids": [
+      "G03",
+      "G05"
+    ],
+    "finding_ids": [
+      "C35"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K13",
+    "topic": "Lossy summaries versus retained evidence",
+    "chapter": "general/03-context-budget-and-compaction.md",
+    "foundation_ids": [
+      "G05",
+      "G08",
+      "G09"
+    ],
+    "finding_ids": [
+      "H016",
+      "C20"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K14",
+    "topic": "Event logs, episodes and transcript recall",
+    "chapter": "general/02-state-memory-and-sessions.md",
+    "foundation_ids": [
+      "G04",
+      "G08"
+    ],
+    "finding_ids": [
+      "H030",
+      "C03",
+      "C04"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K15",
+    "topic": "Semantic facts/profile memory",
+    "chapter": "general/04-memory-retrieval-and-learning.md",
+    "foundation_ids": [
+      "G08",
+      "G09"
+    ],
+    "finding_ids": [
+      "H019",
+      "H020",
+      "C15"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K16",
+    "topic": "Procedural memory, skills and self-improvement",
+    "chapter": "general/10-construction-guide.md",
+    "foundation_ids": [
+      "G08",
+      "G10"
+    ],
+    "finding_ids": [
+      "H042",
+      "H043",
+      "H044",
+      "H045"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K17",
+    "topic": "Retrieval: exact/lexical/vector/hybrid/file alternatives",
+    "chapter": "general/04-memory-retrieval-and-learning.md",
+    "foundation_ids": [
+      "G09"
+    ],
+    "finding_ids": [
+      "H030",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K18",
+    "topic": "Admission, consolidation and trust provenance",
+    "chapter": "general/04-memory-retrieval-and-learning.md",
+    "foundation_ids": [
+      "G01",
+      "G02"
+    ],
+    "finding_ids": [
+      "OC-042",
+      "OC-045",
+      "OC-046"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K19",
+    "topic": "Correction, deletion and derived lineage",
+    "chapter": "general/04-memory-retrieval-and-learning.md",
+    "foundation_ids": [
+      "G16"
+    ],
+    "finding_ids": [
+      "OC-050",
+      "OC-051",
+      "OC-052"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K20",
+    "topic": "Index freshness and source/version consistency",
+    "chapter": "general/04-memory-retrieval-and-learning.md",
+    "foundation_ids": [
+      "G16",
+      "G17"
+    ],
+    "finding_ids": [
+      "H032",
+      "OC-038"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K21",
+    "topic": "Session identity, branching, reset and resume",
+    "chapter": "general/02-state-memory-and-sessions.md",
+    "foundation_ids": [
+      "G04"
+    ],
+    "finding_ids": [
+      "H033",
+      "H034",
+      "C03",
+      "C04"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K22",
+    "topic": "Checkpoints and replay semantics",
+    "chapter": "general/06-durability-replay-and-recovery.md",
+    "foundation_ids": [
+      "G15",
+      "G16",
+      "G17"
+    ],
+    "finding_ids": [
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K23",
+    "topic": "External effects, idempotency and unknown outcomes",
+    "chapter": "general/06-durability-replay-and-recovery.md",
+    "foundation_ids": [
+      "G15",
+      "G18"
+    ],
+    "finding_ids": [
+      "H002",
+      "H034",
+      "C11",
+      "C13"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K24",
+    "topic": "Failure recovery, cancellation and restart",
+    "chapter": "general/06-durability-replay-and-recovery.md",
+    "foundation_ids": [
+      "G15",
+      "G16"
+    ],
+    "finding_ids": [
+      "H017",
+      "OC-061",
+      "C13",
+      "C33",
+      "C34"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K25",
+    "topic": "Writer ownership, fences and concurrent state",
+    "chapter": "general/06-durability-replay-and-recovery.md",
+    "foundation_ids": [
+      "G16",
+      "G17"
+    ],
+    "finding_ids": [
+      "H003",
+      "OC-019",
+      "OC-020",
+      "OC-073"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K26",
+    "topic": "Worker/mode/handoff/team alternatives",
+    "chapter": "general/07-orchestration-concurrency-and-delegation.md",
+    "foundation_ids": [
+      "G09",
+      "G10"
+    ],
+    "finding_ids": [
+      "H038",
+      "OC-059",
+      "C01",
+      "C02"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K27",
+    "topic": "Admission, queues, aggregate budgets and stops",
+    "chapter": "general/07-orchestration-concurrency-and-delegation.md",
+    "foundation_ids": [
+      "G14",
+      "G15"
+    ],
+    "finding_ids": [
+      "H039",
+      "OC-057",
+      "OC-058"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K28",
+    "topic": "Gateway, cron, heartbeat and background work",
+    "chapter": "general/07-orchestration-concurrency-and-delegation.md",
+    "foundation_ids": [
+      "G15"
+    ],
+    "finding_ids": [
+      "H044",
+      "H045",
+      "H047",
+      "H060",
+      "OC-069",
+      "OC-070"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K29",
+    "topic": "Tracing, privacy and actual resource accounting",
+    "chapter": "general/09-observability-evaluation-and-maintenance.md",
+    "foundation_ids": [
+      "G06",
+      "G14"
+    ],
+    "finding_ids": [
+      "OC-071"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K30",
+    "topic": "Evaluation, ablations and reserved evidence",
+    "chapter": "general/09-observability-evaluation-and-maintenance.md",
+    "foundation_ids": [
+      "G14"
+    ],
+    "finding_ids": [
+      "H054",
+      "H055",
+      "H056",
+      "OC-074",
+      "OC-075"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K31",
+    "topic": "Plugins, configuration and replaceable engines",
+    "chapter": "general/10-construction-guide.md",
+    "foundation_ids": [
+      "G01",
+      "G07"
+    ],
+    "finding_ids": [
+      "H018",
+      "H059",
+      "OC-003"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K32",
+    "topic": "Versioning, migration and documentation drift",
+    "chapter": "general/09-observability-evaluation-and-maintenance.md",
+    "foundation_ids": [
+      "G04",
+      "G07"
+    ],
+    "finding_ids": [
+      "H006",
+      "H014",
+      "OC-024",
+      "OC-025",
+      "C21",
+      "C22"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K33",
+    "topic": "Construction sequence and explicit contracts",
+    "chapter": "general/10-construction-guide.md",
+    "foundation_ids": [
+      "G03",
+      "G08",
+      "G10",
+      "G15"
+    ],
+    "finding_ids": [
+      "H002",
+      "C11"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K34",
+    "topic": "Failure catalog and executable teaching invariants",
+    "chapter": "general/11-data-contracts-and-failure-catalog.md",
+    "foundation_ids": [
+      "G03",
+      "G15",
+      "G16",
+      "G18"
+    ],
+    "finding_ids": [
+      "H002",
+      "OC-073"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K35",
+    "topic": "Local/hosted/managed runtime alternatives",
+    "chapter": "general/08-providers-streaming-and-performance.md",
+    "foundation_ids": [
+      "G07"
+    ],
+    "finding_ids": [
+      "OC-003",
+      "OC-072"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K36",
+    "topic": "Independent requirements rather than copied products",
+    "chapter": "general/12-design-questions-and-learning-map.md",
+    "foundation_ids": [
+      "G10",
+      "G14"
+    ],
+    "finding_ids": [
+      "C01",
+      "C02",
+      "C16"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K37",
+    "topic": "Error classification and bounded fallbacks",
+    "chapter": "general/08-providers-streaming-and-performance.md",
+    "foundation_ids": [
+      "G05",
+      "G15"
+    ],
+    "finding_ids": [
+      "H017",
+      "H058"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  },
+  {
+    "id": "K38",
+    "topic": "Principal/case/agent scopes and memory ownership",
+    "chapter": "general/02-state-memory-and-sessions.md",
+    "foundation_ids": [
+      "G01",
+      "G02",
+      "G04"
+    ],
+    "finding_ids": [
+      "H023",
+      "H037",
+      "H038",
+      "OC-067",
+      "C06"
+    ],
+    "status": "DOCUMENTED_GENERAL_ANALYSIS_WITH_SCOPED_REFERENCES",
+    "runtime_completeness_verified": false
+  }
+]

@@ -1,0 +1,35 @@
+digraph "governance-information" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nGovernance Information | arrow = named information handoff; F ID links to contract", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+G03 [label="G03\nUM / medical-policy committee \nand specialty members", URL="../index.html#G03", target="_top"];
+G05 [label="G05\nClinical / case-management \nsupervisor", URL="../index.html#G05", target="_top"];
+G06 [label="G06\nQuality-improvement / audit \nprofessional", URL="../index.html#G06", target="_top"];
+G07 [label="G07\nTrainer / clinical educator", URL="../index.html#G07", target="_top"];
+G08 [label="G08\nPolicy analyst / clinical \nregulatory adviser", URL="../index.html#G08", target="_top"];
+G10 [label="G10\nPrivacy officer / HIM privacy \nspecialist", URL="../index.html#G10", target="_top"];
+G12 [label="G12\nBusiness / workflow analyst", URL="../index.html#G12", target="_top"];
+G13 [label="G13\nEHR / clinical informatics / \napplication-support \nprofessional", URL="../index.html#G13", target="_top"];
+G14 [label="G14\nIdentity / portal-access \nadministrator", URL="../index.html#G14", target="_top"];
+G15 [label="G15\nBilling / patient accounts / \nclaim-denial worker", URL="../index.html#G15", target="_top"];
+J01 [label="J01\nMA administrative law judge / \napplicable adjudicator", URL="../index.html#J01", target="_top"];
+J02 [label="J02\nMedicare Appeals Council \nreviewer", URL="../index.html#J02", target="_top"];
+J03 [label="J03\nFederal district court in an \neligible Medicare appeal", URL="../index.html#J03", target="_top"];
+M01 [label="M01\nLead care manager / case \nmanager", URL="../index.html#M01", target="_top"];
+O06 [label="O06\nHIM / release-of-information \nspecialist", URL="../index.html#O06", target="_top"];
+O07 [label="O07\nMedical coding specialist", URL="../index.html#O07", target="_top"];
+P05 [label="P05\nHealthcare interpreter / \ncommunication-access \nprofessional", URL="../index.html#P05", target="_top"];
+U14 [label="U14\nMedicare Advantage \nindependent-review entity \nreviewer", URL="../index.html#U14", target="_top"];
+M01 -> G05 [label="F36 | Complex-case escalation", tooltip="Assigned supervisory relationship only"];
+G06 -> G03 [label="F37 | Policy-quality finding", tooltip="When systemic criteria issue identified"];
+G08 -> G07 [label="F38 | Approved procedural change", tooltip="Designated approval/change process"];
+G10 -> G14 [label="F39 | Access authorization decision", tooltip="Authorized local access-control process"];
+G12 -> G13 [label="F40 | Approved system requirements", tooltip="Authorized change process"];
+O07 -> G15 [label="F41 | Supported claim coding", tooltip="Downstream billing, not authorization completion"];
+U14 -> J01 [label="F42 | Eligible MA further appeal record", tooltip="When further MA appeal is available"];
+J01 -> J02 [label="F43 | Eligible Council review", tooltip="When Council review properly pursued"];
+J02 -> J03 [label="F44 | Eligible judicial review", tooltip="When judicial review legally available"];
+P05 -> C01 [label="F45 | Interpreted patient-clinician message", tooltip="When qualified interpretation needed"];
+O06 -> G10 [label="F46 | Unclear disclosure request", tooltip="When release authority/purpose unclear"];
+}

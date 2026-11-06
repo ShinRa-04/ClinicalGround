@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-18",
+  "organizational_modules": 29,
+  "micro_responsibilities": 66,
+  "micro_families": {
+    "PA": 18,
+    "UM": 18,
+    "CM": 20,
+    "SH": 10
+  },
+  "service_contracts": 20,
+  "memory_layers": 10,
+  "prior_role_mappings": 97,
+  "composition_variants": 3,
+  "supplied_environment_is_authoritative": true,
+  "separate_hospital_world_in_scope": false,
+  "patient_derived_cross_patient_learning": false,
+  "actual_tool_mapping_completed": false,
+  "runtime_implemented": false,
+  "patient_isolation_enforced_or_tested": false,
+  "benchmark_or_clinical_performance_verified": false,
+  "baseline_hashes_unchanged": true
+}

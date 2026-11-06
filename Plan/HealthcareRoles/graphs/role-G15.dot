@@ -1,0 +1,13 @@
+digraph "role-G15" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nG15 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+G15 [label="G15\nBilling / patient accounts / \nclaim-denial worker", URL="../index.html#G15", target="_top"];
+O04 [label="O04\nProvider \ninsurance-verification / \nbenefits specialist", URL="../index.html#O04", target="_top"];
+O07 [label="O07\nMedical coding specialist", URL="../index.html#O07", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+O07 -> G15 [label="DEP208", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O04 -> G15 [label="DEP209", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> G15 [label="S-G15 request", tooltip="Downstream claim adjudication and pre-service authorization are distinct; exact payment rules are outside a generic role title."];
+G15 -> P01 [label="S-G15 response", tooltip="Downstream claim adjudication and pre-service authorization are distinct; exact payment rules are outside a generic role title."];
+}

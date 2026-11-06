@@ -1,0 +1,366 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-18T06:17:54.409336+00:00",
+  "reviewer": "/root/harness_independent_review",
+  "independent_of_authors": true,
+  "verdict": "pass_for_bounded_reviewed_scope_with_nonblocking_diagram_clarification",
+  "issues": [
+    {
+      "id": "R1",
+      "severity": "P2",
+      "status": "fixed_and_independently_rechecked",
+      "file": "COVERAGE.md",
+      "lines": [
+        12,
+        22,
+        34,
+        36,
+        44
+      ],
+      "title": "Unrelated Hermes evidence IDs in coverage-topic mappings",
+      "detail": "Integrator fixed generator and regenerated Markdown/JSON; independent readback confirmed all five corrected mappings."
+    },
+    {
+      "id": "R2",
+      "severity": "P3",
+      "status": "reported_to_integrator_nonblocking",
+      "file": "ARCHITECTURE_MAPS.md",
+      "lines": [
+        57
+      ],
+      "title": "Diagram reconciliation-to-confirmed edge needs an inconclusive-outcome branch",
+      "detail": "Surrounding prose already preserves uncertainty. Integrator can clarify without another worker review round."
+    }
+  ],
+  "gates": [
+    {
+      "id": "general_learning_priority",
+      "status": "pass"
+    },
+    {
+      "id": "sampled_memory_context_correctness",
+      "status": "pass"
+    },
+    {
+      "id": "sampled_execution_recovery_correctness",
+      "status": "pass"
+    },
+    {
+      "id": "sampled_security_trust_correctness",
+      "status": "pass"
+    },
+    {
+      "id": "sampled_defaults_documentation_drift",
+      "status": "pass"
+    },
+    {
+      "id": "source_identity_line_bounds",
+      "status": "pass"
+    },
+    {
+      "id": "construction_contract_failure_coverage",
+      "status": "pass"
+    },
+    {
+      "id": "synthetic_lab_logic_and_execution",
+      "status": "pass"
+    },
+    {
+      "id": "truthful_execution_claims",
+      "status": "pass"
+    },
+    {
+      "id": "targeted_final_index_source_coverage_readback",
+      "status": "pass"
+    },
+    {
+      "id": "final_mechanical_validator",
+      "status": "integrator_owned_outside_review_verdict",
+      "owner": "integrator"
+    },
+    {
+      "id": "commit_publication_completion",
+      "status": "integrator_owned_outside_review_verdict",
+      "owner": "integrator"
+    }
+  ],
+  "semantic_samples": {
+    "hermes": [
+      "H002",
+      "H006",
+      "H010",
+      "H012",
+      "H014",
+      "H029",
+      "H034",
+      "H038",
+      "H048",
+      "H049"
+    ],
+    "openclaw": [
+      "OC-018",
+      "OC-023",
+      "OC-024",
+      "OC-025",
+      "OC-035",
+      "OC-036",
+      "OC-038",
+      "OC-043",
+      "OC-044",
+      "OC-045",
+      "OC-058",
+      "OC-063",
+      "OC-064",
+      "OC-065",
+      "OC-066",
+      "OC-067"
+    ],
+    "comparative": [
+      "C05",
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C17",
+      "C22",
+      "C23",
+      "C27",
+      "C34"
+    ],
+    "foundation": [
+      "G01",
+      "G05",
+      "G06",
+      "G15"
+    ]
+  },
+  "mechanical_identity_checks": {
+    "count": 159,
+    "failures": 0,
+    "artifact": "identity_checks.json"
+  },
+  "independent_lab_execution": {
+    "command": "python -B -m unittest discover -s HarnessResearch/labs -p 'test_*.py' -v",
+    "python": "3.11.9",
+    "tests": 17,
+    "failures": 0,
+    "errors": 0,
+    "reported_test_seconds": 0.092,
+    "scope": "Synthetic fixture invariants only; no upstream/runtime/model/provider validation."
+  },
+  "reviewed_artifacts": [
+    {
+      "path": "ARCHITECTURE_MAPS.md",
+      "sha256": "a9fbfc9434c8be6191b9d318998271ba5bcbd937d3d24c137a6ff709f2fda669"
+    },
+    {
+      "path": "comparative/DESIGN_QUESTIONS.md",
+      "sha256": "aaf96b9f58d6657946db37426fb2f7d3d1e1cb16446c70498a11106b0bfeb6bd"
+    },
+    {
+      "path": "comparative/evidence.json",
+      "sha256": "c67315b1fc73163be566c27c39c9acd092b97edc7f05c79c81849e22583cc99a"
+    },
+    {
+      "path": "comparative/EXECUTION_STATE.md",
+      "sha256": "77aef075d7ac6f9b0a841bc7267967f98f499d935d732ba8d5f2dbdebfc22530"
+    },
+    {
+      "path": "comparative/MEMORY_CONTEXT.md",
+      "sha256": "b3c5c784bb424ea3dbb790258ee640e66630e420ca704cabb63070d93b1474ee"
+    },
+    {
+      "path": "comparative/README.md",
+      "sha256": "97645bc114cd0e2e14570a8c1131f6140dc45f8c87703d687120594dd69eb00c"
+    },
+    {
+      "path": "comparative/REFERENCE_TRACES.md",
+      "sha256": "2146471f5618c7502e2ea0b4e9e372b764348e2ac09cb8dcadb9897481e14e40"
+    },
+    {
+      "path": "comparative/sources.json",
+      "sha256": "313ece57d0032f21aa69395a9fcd3bdaf2b0a6bdcce367febedd6be9cb55c928"
+    },
+    {
+      "path": "comparative/VALIDATION.md",
+      "sha256": "4aa07df29515b58fbd5ac9a9bf2c098b8997206997af5fd41a315e4158597382"
+    },
+    {
+      "path": "COVERAGE.md",
+      "sha256": "dd6dba6106261a1a1cbab3775b89f7fcd1014ca25b284b781279b2c8df99e131"
+    },
+    {
+      "path": "FINDINGS_INDEX.md",
+      "sha256": "9ca4f1c21df67cc0ccb4ca80baf7435db3c3e94b44d6381db6dbcc75eb2c20da"
+    },
+    {
+      "path": "foundation_sources.json",
+      "sha256": "6b7723bde9fe312ce69e6e5cb2194d3c387307e4a220aa3437cef994bc203755"
+    },
+    {
+      "path": "general/01-anatomy-and-control.md",
+      "sha256": "8ce03c6d853dba0a1d13cebcf99edbef31965e88cd162528f8107ba1a7f236ec"
+    },
+    {
+      "path": "general/02-state-memory-and-sessions.md",
+      "sha256": "722219cb9650999b2171f952477e7ce676d12c6bf3314dfbb88d27a46418c70a"
+    },
+    {
+      "path": "general/03-context-budget-and-compaction.md",
+      "sha256": "4f6a6a906a2775446350e90632e633c61845f4f01364c1f670de889ac7331294"
+    },
+    {
+      "path": "general/04-memory-retrieval-and-learning.md",
+      "sha256": "df92b5a10b5f55106f3b373f0f7beabde3b63b461eee2d45ba3cebba840c647d"
+    },
+    {
+      "path": "general/05-tools-execution-and-trust.md",
+      "sha256": "39ce926b2faf297d7d8018af61d5119cd8a5ef7bcd4d1478c02107b2acebdf1f"
+    },
+    {
+      "path": "general/06-durability-replay-and-recovery.md",
+      "sha256": "2fc12d62cf54edf80812e4747eb692e59b37b35bf0fc9100950d28e73f9dd9c8"
+    },
+    {
+      "path": "general/07-orchestration-concurrency-and-delegation.md",
+      "sha256": "f723d3fafe98e7488af90ae9524400db89529978a222a8797d428e7c20afb433"
+    },
+    {
+      "path": "general/08-providers-streaming-and-performance.md",
+      "sha256": "dc10a12b17eadbcc0832d1d5843c4b797cc1bfb7633dbff587f8348fd49071cb"
+    },
+    {
+      "path": "general/09-observability-evaluation-and-maintenance.md",
+      "sha256": "23f5a7909b965f7aeb6c2208f6632cb94b383743d765e98dfa45e505f0f2acfa"
+    },
+    {
+      "path": "general/10-construction-guide.md",
+      "sha256": "512e8fdca816ac1affabcb18ab869dbaa6b2c6373b97c39cb9ee2982b9e73f88"
+    },
+    {
+      "path": "general/11-data-contracts-and-failure-catalog.md",
+      "sha256": "7dc7996318e778db6ecb0cbc01fc45ea093200ad587e1c11ad7323ee8a449040"
+    },
+    {
+      "path": "general/12-design-questions-and-learning-map.md",
+      "sha256": "4aaa8aee9129b7eb8359aef98f597b58d2b767ac63d467cb9b65ce249a7b814e"
+    },
+    {
+      "path": "hermes/build_evidence.py",
+      "sha256": "620f22354acf70f848da5142989c016e316add44c9e468fed21dd85e5a7e31f1"
+    },
+    {
+      "path": "hermes/CONTEXT.md",
+      "sha256": "29611caca40dcc421599b50d7edc9016eba903ef8056519f0d8f3af1e61e571a"
+    },
+    {
+      "path": "hermes/evidence.json",
+      "sha256": "ad16745bfecaf78ecf04a72bb85d660541b84b307e556fec2abd6ba94d80fce2"
+    },
+    {
+      "path": "hermes/EXECUTION.md",
+      "sha256": "89bfe0885072db419744d54faed816348eac890722f476508094dc220841179d"
+    },
+    {
+      "path": "hermes/LIMITS_AND_LESSONS.md",
+      "sha256": "1913867401b3836b049a82e6382c7bddf7bc3ec6a88cc834c4a759e2d8112eda"
+    },
+    {
+      "path": "hermes/MEMORY.md",
+      "sha256": "ec7a2057344e97670c475e000e42dceb9f916d13fa5217370bcfa069fc5b6594"
+    },
+    {
+      "path": "hermes/OPERATIONS.md",
+      "sha256": "24c423b8e747aea53a1b1714fd869c51239bf32acbb2c5648ce8e76680ba5195"
+    },
+    {
+      "path": "hermes/README.md",
+      "sha256": "8dfa2213b4e6b7c47f8f5cef97e4b4c7857d90fec54d64b13dd2a6c504b41d23"
+    },
+    {
+      "path": "labs/invariants.py",
+      "sha256": "e8686421f24bfd96a25fa9acf9f2258e9abc15e766a357d3f2482a18a36f54ce"
+    },
+    {
+      "path": "labs/README.md",
+      "sha256": "b6dcf5fc456c4df1d3191bd21685f7c11eaa29036ad1d180d06a889b924726df"
+    },
+    {
+      "path": "labs/test_invariants.py",
+      "sha256": "ab642205cb3fb1fdfd65262f121c4c0c69238e12ee29690d0a14d659054dac8a"
+    },
+    {
+      "path": "openclaw/build_report.py",
+      "sha256": "0b9c5497b7972ada0db15fd2559bba2c8013141f94d7243d1abbf2c727d570be"
+    },
+    {
+      "path": "openclaw/CONTEXT.md",
+      "sha256": "9dd5ddb05be79ff371673fab38f1a38dacd3d85d6d83ce74311d216194c7a5d7"
+    },
+    {
+      "path": "openclaw/evidence.json",
+      "sha256": "b6d854ed6c1011bf48c6149e967af317279025b9e8877b4093e7dd3ab06a1651"
+    },
+    {
+      "path": "openclaw/EVIDENCE.md",
+      "sha256": "cbf11f9b372ba655768e2602f5c5779b8c7979995f3e63a06facd107857d7ac4"
+    },
+    {
+      "path": "openclaw/EXECUTION.md",
+      "sha256": "266994a5742ab188be88159b6b80baa4c4c2a0d2ebebd4f1f9ad7ccde43c4aa6"
+    },
+    {
+      "path": "openclaw/MEMORY.md",
+      "sha256": "5a07790f84fe84f20fc3bd5243cd96e37d80fd3953e8a9b57d4fbc2c977a5b7b"
+    },
+    {
+      "path": "openclaw/MULTI_AGENT.md",
+      "sha256": "2b4218a646ac4d446edb7046f6ca17a9bb957694071d7f780f20a19295906af4"
+    },
+    {
+      "path": "openclaw/OPERATIONS_SECURITY.md",
+      "sha256": "71de89b8ab76cda577df1a8e7687ff84156d554aa921784ed80c0aa6b94355a5"
+    },
+    {
+      "path": "openclaw/README.md",
+      "sha256": "cbdbf9cb2297c2617e7eff12b21ce5614bdf85cfd3ab0e920bb03be381553d11"
+    },
+    {
+      "path": "openclaw/TRANSFERABLE_LESSONS.md",
+      "sha256": "dcb32eae80448eb0f8c0769889310c61bcee3376da65a29574ea30722b80c547"
+    },
+    {
+      "path": "README.md",
+      "sha256": "002390eaccc6dde13e6efc3eecd89bb5a031c5f9bc4935b88f9084977b903f17"
+    },
+    {
+      "path": "source_versions.json",
+      "sha256": "d1b76e8cea05975f38751b4514f70499ceaa41fc6e1aa513e033712032aecc26"
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "a18f7d84aca6820136745ad7abb640261c1fb95099819089706c196ed5de3b15"
+    },
+    {
+      "path": "tools/run_labs.py",
+      "sha256": "2953d6fff8d0c4a896c4a85fb38d2ac1ea87dd427182b66cc792dc6c6206815c"
+    },
+    {
+      "path": "verification/coverage.json",
+      "sha256": "a025c2f0e437c428540652197f78c4e717b8a7d68ef34a74af7c289c5d982bad"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "sha256": "e4952d82de5c2980ddde82b7df49786391ee3b3d54ca78f711671cdadd177387"
+    }
+  ],
+  "limits": [
+    "Semantic verification samples selected high-consequence claims; not exhaustive review of all 170 findings.",
+    "General foundations reopened through non-visible web retrieval and remain mutable checked-date docs.",
+    "No upstream app installed, imported or run; source/test inspection differs from runtime execution.",
+    "No Docker, visible browser, protected benchmark data, personal services, provider/model calls or upstream mutations.",
+    "Lab is sequential and synthetic: no atomic distributed fencing, real tokenizer/semantic compaction, global erasure or external exactly-once proof.",
+    "R1 navigation corrections independently rechecked. R2 low-severity diagram clarification is integrator-owned.",
+    "Final mechanical validator and commit/publication are outside reviewer verdict; reviewer made no commit."
+  ]
+}

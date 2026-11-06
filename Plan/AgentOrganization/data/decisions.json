@@ -1,0 +1,304 @@
+[
+  {
+    "id": "AD01",
+    "question": "Should each of the 97 profiles become a running agent?",
+    "conclusion": "Preserve all functions in the design inventory, but do not select 97 running agents from the count of profiles.",
+    "rationale": "Profiles include people, composite groups, infrastructure, governance and physical services. Running-worker boundaries need a task-specific purpose beyond a title.",
+    "alternatives": [
+      "One agent per profile for a controlled ecosystem simulation",
+      "A single worker with explicit role modes",
+      "A small team with capability workers"
+    ],
+    "evidence": [
+      "S01",
+      "S03",
+      "prior-reference"
+    ],
+    "uncertainty": "No chi-Bench comparison of these organizations has been run.",
+    "reconsider_if": "A role-per-worker design demonstrably improves the chosen objective under comparable resources without compromising allowed environment boundaries.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  },
+  {
+    "id": "AD02",
+    "question": "Are realistic simulation and benchmark solving the same design problem?",
+    "conclusion": "Maintain two explicitly separate designs and success criteria.",
+    "rationale": "A world simulation may model independent parties; a solver must interact with the supplied environment. Internal synthetic consent or external outcomes would not be observations.",
+    "alternatives": [
+      "A full organizational simulator as a separate research environment",
+      "A task-scoped solver with external interfaces"
+    ],
+    "evidence": [
+      "S06",
+      "S09",
+      "prior-reference"
+    ],
+    "uncertainty": "The 75 public instruction files have not been mapped to every proposed capability in this phase.",
+    "reconsider_if": "A documented benchmark contract actually delegates simulation ownership or the project objective changes to constructing a new simulator.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  },
+  {
+    "id": "AD03",
+    "question": "What makes two software workers substantively different?",
+    "conclusion": "Specify objective, input view, tools, authority envelope, state ownership, output contract, trigger and stop condition.",
+    "rationale": "Two prompts with different job titles can still have identical information and correlated failure. A distinct output or isolation requirement is a stronger reason to separate.",
+    "alternatives": [
+      "Role prompt only",
+      "Isolated context with common permissions",
+      "Separate tool/data scope and state ownership"
+    ],
+    "evidence": [
+      "S01",
+      "S02",
+      "S04"
+    ],
+    "uncertainty": "Which dimension matters most for this benchmark is unmeasured.",
+    "reconsider_if": "A controlled prompt-only condition provides the same benefit more simply than stronger worker separation.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  },
+  {
+    "id": "AD04",
+    "question": "Which functions are plausible early merger candidates?",
+    "conclusion": "Investigate provider access (W05), payer administrative operations (W08), and care coordination (W13), with explicit state and permission distinctions.",
+    "rationale": "These work packages can share a case record and continuity obligation. This is a design hypothesis informed by role overlap, not a legal permission to combine all activities.",
+    "alternatives": [
+      "Separate workers for every function",
+      "One case owner with named modes",
+      "Case owner plus specialist calls"
+    ],
+    "evidence": [
+      "prior-reference",
+      "S01",
+      "S03"
+    ],
+    "uncertainty": "Actual tool scopes, task frequency, workload and local assignments remain unresolved.",
+    "reconsider_if": "Merged trials repeatedly lose required distinctions or separate workers gain repeatably at matched task/model/resource settings.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  },
+  {
+    "id": "AD05",
+    "question": "Can merging preserve different authorities?",
+    "conclusion": "Merge implementation only where it preserves explicit operation-level permissions, author identity and decision stage.",
+    "rationale": "Shared computation and shared authority are different properties. One executable can enforce separate scopes, and many prompts can still expose unrestricted access.",
+    "alternatives": [
+      "Separate processes",
+      "One process with scoped adapters and state transitions",
+      "A role-mode prompt without enforceable separation"
+    ],
+    "evidence": [
+      "S07",
+      "S08",
+      "prior-reference"
+    ],
+    "uncertainty": "No permission-enforcement implementation has been built or tested.",
+    "reconsider_if": "The actual tool contract cannot preserve required isolation inside one process, or scoped operations prove ineffective in execution tests.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  },
+  {
+    "id": "AD06",
+    "question": "Does a fresh model call provide independent reconsideration?",
+    "conclusion": "Treat a fresh reviewer context as an error-checking experiment, never as proof of required human institutional independence or qualification.",
+    "rationale": "The cited MA reconsideration rule concerns uninvolved persons and appropriate physician expertise. Naming a model physician does not establish either. Models can also share failure biases.",
+    "alternatives": [
+      "Same-context self-check",
+      "Fresh context with the same model",
+      "Different model or human/institutional review where actually required"
+    ],
+    "evidence": [
+      "S07",
+      "S03",
+      "prior-reference"
+    ],
+    "uncertainty": "Error correlation and the value of context isolation have not been measured here.",
+    "reconsider_if": "Actual policy/tool requirements and measured outcomes establish the permitted software role; real human qualification claims still require actual evidence.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  },
+  {
+    "id": "AD07",
+    "question": "Who should write mutable case state?",
+    "conclusion": "Use one accountable case-write owner as the first design to test; let helpers return proposals with source/version references.",
+    "rationale": "This makes conflicting or duplicate writes easier to control. It is a local engineering preference, not a claim that all real institutions have one writer.",
+    "alternatives": [
+      "One serialized case owner",
+      "Several transactional writers with conflict control",
+      "Uncoordinated agent writers"
+    ],
+    "evidence": [
+      "S04",
+      "S05",
+      "S09"
+    ],
+    "uncertainty": "The benchmark’s observed concurrency/version/idempotency semantics have not been tested in this study.",
+    "reconsider_if": "Disjoint transactional writes are supported and measured parallel execution gains outweigh coordination failures.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  },
+  {
+    "id": "AD08",
+    "question": "When should a specialist be a sub-agent rather than a capability call?",
+    "conclusion": "Use a bounded call for a specific evidence or interpretation question; consider autonomous specialists only when independent multi-step exploration and context isolation add measurable value.",
+    "rationale": "Many functions need focused reasoning without a new persistent identity, memory or right to mutate the case.",
+    "alternatives": [
+      "Reusable prompt/tool function",
+      "Fresh read-only specialist context",
+      "Persistent autonomous worker"
+    ],
+    "evidence": [
+      "S01",
+      "S02",
+      "S03"
+    ],
+    "uncertainty": "No activation thresholds or profitable call budget have been established.",
+    "reconsider_if": "Trace evidence shows repeated independent multi-step specialist work and controlled trials show net improvement.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  },
+  {
+    "id": "AD09",
+    "question": "Should workers communicate in free-form conversation?",
+    "conclusion": "Prefer a small structured task/result contract plus a concise explanation; retain source references and explicit unknowns.",
+    "rationale": "A handoff must preserve what is needed for the recipient’s action. More dialogue alone is not proof of transfer, understanding or accepted responsibility.",
+    "alternatives": [
+      "Free-form chat",
+      "Shared structured record",
+      "Structured messages with acknowledgement and clarification"
+    ],
+    "evidence": [
+      "S04",
+      "S05",
+      "S10"
+    ],
+    "uncertainty": "The smallest sufficient message for each function is not yet measured.",
+    "reconsider_if": "Structured compression loses necessary context or a richer format reduces observed handoff failures at acceptable cost.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  },
+  {
+    "id": "AD10",
+    "question": "What should happen when specialists disagree?",
+    "conclusion": "Preserve the conflicting evidence and applicable rule; route to the authorized decision function or an unresolved/clarification state.",
+    "rationale": "A majority of model opinions cannot create missing patient facts, professional authority or a binding external outcome.",
+    "alternatives": [
+      "Majority vote",
+      "Evidence/rule-based resolution",
+      "Escalation or unresolved state under the actual workflow"
+    ],
+    "evidence": [
+      "prior-reference",
+      "S04"
+    ],
+    "uncertainty": "Not every clinical conflict has a deterministic answer from the available information.",
+    "reconsider_if": "A validated aggregation rule improves a bounded reasoning task without being confused with clinical or institutional authorization.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  },
+  {
+    "id": "AD11",
+    "question": "How much organizational realism is useful?",
+    "conclusion": "Retain realistic accountability, information limits and observable handoffs; test conversational personas separately from these mechanisms.",
+    "rationale": "Realistic names, simulated shifts or internal politics can add cost without improving completion. They may still be useful if the research objective is simulation fidelity.",
+    "alternatives": [
+      "Rich human-like personas",
+      "Minimal function contracts",
+      "Separate realism and operational-mechanism experiments"
+    ],
+    "evidence": [
+      "S01",
+      "S03",
+      "prior-reference"
+    ],
+    "uncertainty": "No effect of persona richness on this benchmark has been measured.",
+    "reconsider_if": "An ablation isolates a repeatable benefit from persona detail beyond extra tokens and clearer functional instructions.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  },
+  {
+    "id": "AD12",
+    "question": "Can the existing dependency graph determine the optimal organization?",
+    "conclusion": "Use it to enumerate modeled interactions and stress cases; do not treat graph clustering as proof of an optimal worker count.",
+    "rationale": "Its 219 edges are explicit proposed dependencies, not measured interaction frequencies, token costs or observed workload.",
+    "alternatives": [
+      "Cluster the modeled graph as a hypothesis generator",
+      "Measure trace-weighted interactions before optimizing",
+      "Start with functional packages and revise from trials"
+    ],
+    "evidence": [
+      "prior-reference",
+      "S03"
+    ],
+    "uncertainty": "No empirical edge weights or workload distribution exist in this study.",
+    "reconsider_if": "Measured traces establish meaningful weights and held-out evaluation validates a graph-derived partition.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  },
+  {
+    "id": "AD13",
+    "question": "What evidence would justify the extra agents?",
+    "conclusion": "Require complete-task outcomes and process validity alongside resource accounting; compare against a strong mode-based single-agent baseline.",
+    "rationale": "Additional calls, tokens, context and tools can confound an apparent architectural improvement. Literature outside chi-Bench motivates controls, not a predicted score gain.",
+    "alternatives": [
+      "Equal-resource causal comparisons",
+      "Equal-wall-time practical comparisons",
+      "Best-effort frontier with full cost disclosure"
+    ],
+    "evidence": [
+      "S02",
+      "S03",
+      "S04"
+    ],
+    "uncertainty": "Models, task subsets, repetitions, exact budgets and scoring runs remain unselected/unexecuted.",
+    "reconsider_if": "Results reproduce across appropriately separated evaluation cases and stochastic trials with a practically meaningful cost/quality tradeoff.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  },
+  {
+    "id": "AD14",
+    "question": "Which harness integration description should future code follow?",
+    "conclusion": "Use the tested pinned checkout interface as the initial implementation target and explicitly reconcile any upgrade; do not splice the live guide’s API into the old checkout.",
+    "rationale": "The live guide describes AgentHarness/constructor/run/trajectory wiring, while local commit 4444a07 uses a Harbor BaseInstalledAgent integration. These are different interface descriptions.",
+    "alternatives": [
+      "Keep the tested pin",
+      "Intentionally update and reverify",
+      "Guess compatibility from similar names"
+    ],
+    "evidence": [
+      "S06",
+      "S09"
+    ],
+    "uncertainty": "Cause of live-versus-pinned documentation divergence and current remote compatibility are unconfirmed.",
+    "reconsider_if": "An intentional version update with actual interface/runtime checks establishes the new contract.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  },
+  {
+    "id": "AD15",
+    "question": "Should governance and infrastructure be runtime personas?",
+    "conclusion": "Model most approval/version/access rules as explicit configuration or tools; use bounded analysis where interpretation is actually needed.",
+    "rationale": "A policy committee, EHR administrator or quality role does not need to hold an open-ended conversation on every case to preserve its function.",
+    "alternatives": [
+      "Autonomous governance agents",
+      "Versioned configuration and scoped tools",
+      "Tools plus a bounded interpretation/escalation capability"
+    ],
+    "evidence": [
+      "S01",
+      "S08",
+      "prior-reference"
+    ],
+    "uncertainty": "Some tasks could explicitly require policy analysis or unusual escalation; invocation must follow real task demand.",
+    "reconsider_if": "Runtime traces reveal unresolved governance work that cannot be represented adequately by the simpler approach.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  },
+  {
+    "id": "AD16",
+    "question": "What is the provisional experimental starting point?",
+    "conclusion": "Compare one case owner with explicit role modes against that same owner plus a small number of on-demand bounded specialists; retain a role-per-worker variant as a separate hypothesis.",
+    "rationale": "This separates benefits of functional instructions and state tracking from benefits of worker/context separation. It does not select a final framework or prove the smaller team wins.",
+    "alternatives": [
+      "Mode-rich single worker",
+      "Case owner plus bounded specialists",
+      "Persistent role team",
+      "Full organization simulator outside the official solver environment"
+    ],
+    "evidence": [
+      "S01",
+      "S02",
+      "S03",
+      "S04"
+    ],
+    "uncertainty": "Task-level relevance and all runtime effects are pending; 23 work packages are analysis categories, not a recommended agent count.",
+    "reconsider_if": "Controlled results favor a different structure for the chosen objective and satisfy task-boundary constraints.",
+    "status": "PROVISIONAL_DESIGN_JUDGMENT_NOT_RUNTIME_VALIDATED"
+  }
+]

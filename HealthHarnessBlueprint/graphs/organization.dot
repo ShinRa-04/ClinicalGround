@@ -1,0 +1,32 @@
+digraph organization {
+graph [rankdir=TB,fontname="Arial",fontsize=15,labelloc=t,pad=0.35,nodesep=0.45,ranksep=0.65,bgcolor="white"];node [shape=box,style="rounded,filled",fillcolor="#edf3f6",color="#8396a2",fontname="Arial",fontsize=11,margin="0.15,0.12"];edge [fontname="Arial",fontsize=9,color="#526e80",arrowsize=0.7];
+graph [label="PROPOSED WORKING ORGANIZATION | one supplied environment, not a second world"];
+work [label="Actual CHI-Bench task / current stage
+Supplied instruction and tool scope"];
+board [label="Work routing and ownership board
+Scoped task references
+No global patient chart in every prompt"];
+pa [label="Provider PA composite job
+18 responsibility contracts",URL="../COMPOSITION.md"];
+um [label="Payer UM composite job
+18 responsibility contracts
+Separate principal / review stages",URL="../COMPOSITION.md"];
+cm [label="CM composite job
+20 responsibility contracts",URL="../COMPOSITION.md"];
+support [label="Scoped capabilities and interfaces
+Evidence / policy / coding / artifacts
+Dialogue / referral / discipline support"];
+kernel [label="Shared kernel: 10 support responsibilities
+Patient barrier / context / provenance
+Tools / actions / budgets / checkpoints"];
+env [label="CHI-Bench supplied records and tools
+Actual counterparties and observations
+Official evaluation stays outside acting inputs"];
+work -> board [label="assigned work, not all stages"];
+board -> pa;board -> um;board -> cm;
+pa -> support [label="needed contributions"];um -> support;cm -> support;
+support -> kernel [label="scoped request / result"];
+kernel -> env [label="actual permitted operations"];
+env -> kernel [label="observed outcome / unknown"];
+
+}

@@ -1,0 +1,13 @@
+**
+!Dockerfile.tools
+!toolkit.py
+!chi-bench/
+!chi-bench/pyproject.toml
+!chi-bench/uv.lock
+!chi-bench/README.md
+!chi-bench/LICENSE
+!chi-bench/src/
+!chi-bench/src/**
+**/__pycache__/
+**/*.pyc
+**/*.egg-info/

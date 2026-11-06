@@ -1,0 +1,12 @@
+digraph "role-O09" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nO09 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+O04 [label="O04\nProvider \ninsurance-verification / \nbenefits specialist", URL="../index.html#O04", target="_top"];
+O09 [label="O09\nFinancial counselor / \nassistance specialist", URL="../index.html#O09", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+P01 -> O09 [label="DEP055", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O04 -> O09 [label="DEP056", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> O09 [label="S-O09 request", tooltip="Estimates, assistance approvals, authorization and final claims are separate records and decisions."];
+O09 -> P01 [label="S-O09 response", tooltip="Estimates, assistance approvals, authorization and final claims are separate records and decisions."];
+}

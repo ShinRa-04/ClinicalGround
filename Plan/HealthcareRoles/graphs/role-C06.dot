@@ -1,0 +1,18 @@
+digraph "role-C06" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nC06 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+C06 [label="C06\nRegistered nurse providing \ndirect care", URL="../index.html#C06", target="_top"];
+C07 [label="C07\nLicensed practical / \nvocational nurse", URL="../index.html#C07", target="_top"];
+M21 [label="M21\nHome-health aide / \npersonal-care worker", URL="../index.html#M21", target="_top"];
+M28 [label="M28\nHospice interdisciplinary \ngroup and attending functions \n(distinct roles)", URL="../index.html#M28", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+C01 -> C06 [label="DEP029", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> C06 [label="DEP030", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C06 -> C07 [label="DEP031", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C06 -> M21 [label="DEP155", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C06 -> M28 [label="DEP171", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> C06 [label="S-C06 request", tooltip="A direct-care RN, payer UM nurse and nurse case manager are different functions even if one person can hold more than one role."];
+C06 -> C01 [label="S-C06 response", tooltip="A direct-care RN, payer UM nurse and nurse case manager are different functions even if one person can hold more than one role."];
+}

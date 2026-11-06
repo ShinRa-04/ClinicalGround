@@ -1,0 +1,16 @@
+digraph "role-U13" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nU13 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+U04 [label="U04\nPayer physician reviewer / \nmedical director acting on a \ncase", URL="../index.html#U04", target="_top"];
+U12 [label="U12\nInternal appeal / grievance \ncoordinator", URL="../index.html#U12", target="_top"];
+U13 [label="U13\nMedical-necessity appeal / \nreconsideration physician", URL="../index.html#U13", target="_top"];
+U14 [label="U14\nMedicare Advantage \nindependent-review entity \nreviewer", URL="../index.html#U14", target="_top"];
+U12 -> U13 [label="DEP097", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U04 -> U13 [label="DEP098", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> U13 [label="DEP099", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U13 -> U14 [label="DEP100", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U12 -> U13 [label="S-U13 request", tooltip="MA medical-necessity denial reconsideration requires an appropriately expert physician; do not extend this exact requirement to all products and dispute types."];
+U13 -> U12 [label="S-U13 response", tooltip="MA medical-necessity denial reconsideration requires an appropriately expert physician; do not extend this exact requirement to all products and dispute types."];
+}

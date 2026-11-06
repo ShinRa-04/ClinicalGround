@@ -1,0 +1,26 @@
+digraph "role-P04" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nP04 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+G17 [label="G17\nLegal adviser / specialist \nlegal representative", URL="../index.html#G17", target="_top"];
+J01 [label="J01\nMA administrative law judge / \napplicable adjudicator", URL="../index.html#J01", target="_top"];
+J02 [label="J02\nMedicare Appeals Council \nreviewer", URL="../index.html#J02", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+P04 [label="P04\nAppointed appeal \nrepresentative", URL="../index.html#P04", target="_top"];
+U09 [label="U09\nDetermination / notification \ncoordinator", URL="../index.html#U09", target="_top"];
+U12 [label="U12\nInternal appeal / grievance \ncoordinator", URL="../index.html#U12", target="_top"];
+U15 [label="U15\nExternal-review administrator", URL="../index.html#U15", target="_top"];
+U18 [label="U18\nApplicable commercial \nindependent-review \norganization reviewer", URL="../index.html#U18", target="_top"];
+P01 -> P04 [label="DEP009", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U09 -> P04 [label="DEP010", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> P04 [label="DEP011", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P04 -> U12 [label="DEP094", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P04 -> U15 [label="DEP103", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P04 -> U18 [label="DEP110", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P04 -> G17 [label="DEP212", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P04 -> J01 [label="DEP215", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P04 -> J02 [label="DEP217", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U12 -> P04 [label="S-P04 request", tooltip="Verify standing, consent, route and deadlines from the actual notice; Medicare and commercial routes differ."];
+P04 -> U12 [label="S-P04 response", tooltip="Verify standing, consent, route and deadlines from the actual notice; Medicare and commercial routes differ."];
+}

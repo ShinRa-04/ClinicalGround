@@ -1,0 +1,30 @@
+digraph case_execution {
+graph [rankdir=TB,fontname="Arial",fontsize=15,labelloc=t,pad=0.35,nodesep=0.45,ranksep=0.65,bgcolor="white"];node [shape=box,style="rounded,filled",fillcolor="#edf3f6",color="#8396a2",fontname="Arial",fontsize=11,margin="0.15,0.12"];edge [fontname="Arial",fontsize=9,color="#526e80",arrowsize=0.7];
+graph [label="PROPOSED CASE FLOW | no mandatory PA -> UM -> CM tour"];
+task [label="Actual task and observed starting stage"];
+scope [label="Resolve principal / patient / case
+Protected request and obligations"];
+job [label="Assign composite job
+Select required responsibility outputs"];
+reason [label="Combined reasoning or scoped helpers
+No other patient data / learned habits"];
+gate [shape=diamond,label="Actual scope / evidence / arguments
+ready for the requested operation?"];
+clarify [label="Clarify / retrieve / retain unknown
+Bounded next step, not fabricated evidence"];
+tool [label="Actual tool dispatch / intent identity
+Observe result and permitted readback"];
+state [label="Update case-local obligations
+Unknown external effect stays unknown"];
+done [shape=diamond,label="What does observed evidence
+establish for the assigned work?"];
+close [label="Truthful completion / exception
+Remaining work and owner explicit"];
+task -> scope -> job -> reason -> gate;
+job -> done [style=dashed,label="existing evidence may already suffice"];
+gate -> clarify [label="no / unknown"];clarify -> reason [style=dashed,label="if required and permitted"];
+clarify -> close [style=dashed,label="bounded unresolved / exception report"];
+gate -> tool [label="yes"];tool -> state -> done;
+done -> job [label="more work within scope / budget"];done -> close [label="completion / exception / explicit unresolved report"];
+
+}

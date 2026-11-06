@@ -1,0 +1,82 @@
+[
+  {
+    "id": "M01",
+    "name": "Authoritative supplied environment state",
+    "scope": "Environment services; never replaced by a summary",
+    "contents": "Supplied domain records under actual write contracts",
+    "boundary": "No global actor read; no direct acting-worker access to hidden truth",
+    "implemented": false
+  },
+  {
+    "id": "M02",
+    "name": "Case/journey working state",
+    "scope": "Per organization and patient/task",
+    "contents": "Goals, observed stage, obligations, unknowns and source/version links",
+    "boundary": "Separate hospital/payer/CM views even when correlated by journey",
+    "implemented": false
+  },
+  {
+    "id": "M03",
+    "name": "Conversation episodes",
+    "scope": "Per participant/conversation with scope",
+    "contents": "Exact observed messages, asked questions, answers, refusal and channel status",
+    "boundary": "Do not merge speakers or assume a silence/translation is consent",
+    "implemented": false
+  },
+  {
+    "id": "M04",
+    "name": "Reusable job definition and assignment",
+    "scope": "Approved role definition plus case-local assignment",
+    "contents": "Mandate, allowed scope, specialty, organization and output contract; no patient-derived profile",
+    "boundary": "Shared job definition does not retain patient memories or acquire authority from its title",
+    "implemented": false
+  },
+  {
+    "id": "M05",
+    "name": "Policy/reference knowledge",
+    "scope": "Versioned scoped registry",
+    "contents": "Approved rules, terminology and source documents",
+    "boundary": "Applicability/effective version checked; summaries remain derived",
+    "implemented": false
+  },
+  {
+    "id": "M06",
+    "name": "Approved general procedures",
+    "scope": "Read-only approved shared versions",
+    "contents": "General methods, prerequisites and tool/version assumptions",
+    "boundary": "No patient-derived automatic learning or procedure/skill promotion across patients",
+    "implemented": false
+  },
+  {
+    "id": "M07",
+    "name": "Case-local episodic history",
+    "scope": "Current permitted patient/case/task namespace only",
+    "contents": "This case’s observations, attempts, outcomes and uncertainty",
+    "boundary": "No cross-patient recall, learned habits, summaries or patient-derived procedural transfer",
+    "implemented": false
+  },
+  {
+    "id": "M08",
+    "name": "Execution checkpoints/actions",
+    "scope": "Runtime owner/aggregate",
+    "contents": "Program position, source/task version, pending actions and unknown receipts",
+    "boundary": "Local checkpoint does not guarantee external exactly-once effects",
+    "implemented": false
+  },
+  {
+    "id": "M09",
+    "name": "Active model context",
+    "scope": "One scoped inference request",
+    "contents": "Protected request, role, relevant evidence, recent coherent exchanges and bounded recall",
+    "boundary": "Budget reserves and complete call/result units; fail explicitly if essentials cannot fit",
+    "implemented": false
+  },
+  {
+    "id": "M10",
+    "name": "Retrieval and computation caches",
+    "scope": "Versioned derived scope",
+    "contents": "Lexical/vector indexes, tool-result caches and provider prompt cache where available",
+    "boundary": "Different invalidation/retention; cache does not create new knowledge or permission",
+    "implemented": false
+  }
+]

@@ -1,0 +1,12 @@
+digraph "role-P06" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nP06 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+M30 [label="M30\nAdministrative care \ncoordinator / scheduling \nsupport", URL="../index.html#M30", target="_top"];
+P06 [label="P06\nHealthcare translator", URL="../index.html#P06", target="_top"];
+U09 [label="U09\nDetermination / notification \ncoordinator", URL="../index.html#U09", target="_top"];
+U09 -> P06 [label="DEP014", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M30 -> P06 [label="DEP015", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U09 -> P06 [label="S-P06 request", tooltip="Language/format needs and quality review are organization-specific; the document author retains substantive responsibility."];
+P06 -> U09 [label="S-P06 response", tooltip="Language/format needs and quality review are organization-specific; the document author retains substantive responsibility."];
+}

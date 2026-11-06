@@ -1,0 +1,14 @@
+digraph "role-M28" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM28 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+C06 [label="C06\nRegistered nurse providing \ndirect care", URL="../index.html#C06", target="_top"];
+M28 [label="M28\nHospice interdisciplinary \ngroup and attending functions \n(distinct roles)", URL="../index.html#M28", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+P01 -> M28 [label="DEP169", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> M28 [label="DEP170", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C06 -> M28 [label="DEP171", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C06 -> M28 [label="S-M28 request", tooltip="V11, V16 and V17 are the official October 2025 codification, not a complete current-2026 update check. They distinguish IDG/designated RN coordination, physician certification and admission. A patient-designated attending may have a different allowed credential; that does not grant every attending terminal-illness certification authority."];
+M28 -> C06 [label="S-M28 response", tooltip="V11, V16 and V17 are the official October 2025 codification, not a complete current-2026 update check. They distinguish IDG/designated RN coordination, physician certification and admission. A patient-designated attending may have a different allowed credential; that does not grant every attending terminal-illness certification authority."];
+}

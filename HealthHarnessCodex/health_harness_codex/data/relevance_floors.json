@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "encoder": {
+    "model": "BAAI/bge-small-en-v1.5",
+    "runtime_image": "sha256:7511bbf140ee9f29937cce74e002f140762f39bb24f4abbea65bae26ede7c1c7"
+  },
+  "derivation": "Minimum expected-target cosine across three predeclared ambiguous positive probes per corpus, rounded down to three decimals. Validation controls did not set the floors.",
+  "floors": {
+    "policy": {
+      "minimum_cosine": 0.665,
+      "basis": "Fixed reference calibration: three ambiguous relevant queries; minimum expected-target cosine 0.6651826. Development calibration, not a probability or clinical applicability rule."
+    },
+    "narrative": {
+      "minimum_cosine": 0.587,
+      "basis": "Independent synthetic narrative calibration: three ambiguous relevant queries; minimum expected-target cosine 0.5870627. No patient-derived tuning."
+    }
+  }
+}

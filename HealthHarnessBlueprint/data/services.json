@@ -1,0 +1,162 @@
+[
+  {
+    "id": "S01",
+    "name": "Identity, representation and scope",
+    "information": "Principal, organization, patient/case IDs, purpose, representation, resource permissions.",
+    "contract": "Authorization checks and scoped identity matches; no role prompt can bypass the gate.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S02",
+    "name": "Clinical record and evidence",
+    "information": "Versioned source notes, orders, observations, diagnostic reports and document provenance.",
+    "contract": "Reads and attributed writes follow assigned operation scope; agents cannot create unobserved test results.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S03",
+    "name": "Policy and criteria registry",
+    "information": "Product/jurisdiction/setting/version/effective-date rules and approval history.",
+    "contract": "Ordinary workers read; approved governance controls change versions.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S04",
+    "name": "Coverage and benefit facts",
+    "information": "Enrollment/benefit snapshots, requirements and administrative determinations.",
+    "contract": "Product-specific administrative scope; not clinical necessity or payment assurance.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S05",
+    "name": "Provider authorization workspace",
+    "information": "Requests, packet versions, submissions, RFIs and provider disputes.",
+    "contract": "Versioned mutation, stable action identity and observable submission/receipt.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S06",
+    "name": "Payer review and appeal workspace",
+    "information": "Intake/review episodes, qualification/assignment, determination and appeal state.",
+    "contract": "Actual stage/route and signoff envelope; no universal forced stage sequence.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S07",
+    "name": "Conversation and correspondence",
+    "information": "Patient, representative, clinician and interorganization exchanges.",
+    "contract": "Preserve speaker, actual observed answer, scope, channel, status and reply correlation.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S08",
+    "name": "Care journey and obligations",
+    "information": "Assessments, goals, plan contributions, outreach and follow-up ownership.",
+    "contract": "Attributed updates with unknowns, refusal and pending/exception dispositions.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S09",
+    "name": "Referrals and resource directory",
+    "information": "Receiving providers, community supports, service eligibility and acceptance.",
+    "contract": "Resource listing, referral, acceptance and actual fulfillment remain distinct.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S10",
+    "name": "Capacity, staffing and scheduling",
+    "information": "Beds, slots, shifts, resources, reservations and waitlists.",
+    "contract": "No double allocation; reservations/expiry follow only exposed authoritative version/time semantics.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S11",
+    "name": "Service fulfillment and delivery",
+    "information": "Visits, transport, supplies, placement, administration and no-shows.",
+    "contract": "Only environment/service events establish delivery; a plan or actor narration alone cannot.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S12",
+    "name": "Artifacts, notices and delivery",
+    "information": "Draft/final packet, note, plan, handoff, notice and delivery receipt.",
+    "contract": "Author/source/decision/version link; draft, final and delivered are separate.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S13",
+    "name": "Scoped memory and retrieval",
+    "information": "Per-actor/case working context, episodes, policy/procedure knowledge and indexes.",
+    "contract": "Scope/trust/provenance filters before injection and delegation; index freshness explicit.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S14",
+    "name": "Action journal and recovery",
+    "information": "Intents, canonical payload hashes, attempts, receipts, unknown outcomes and replay.",
+    "contract": "Stable intent keys, actual receiver contract, fenced publication and reconciliation.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S15",
+    "name": "Work events, queues and task clock",
+    "information": "Observed task events, internal timers, deadlines and waiting obligations.",
+    "contract": "Use actual task/environment time where exposed; do not advance a fictional hospital clock.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S16",
+    "name": "Audit and observability",
+    "information": "Permitted action/source/context/usage trace and aggregate operational metrics.",
+    "contract": "Separate actor-visible diagnostics from hidden oracle/debug data; retention/purpose apply.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S17",
+    "name": "Actor assignments and authority",
+    "information": "People/positions, recorded role/task scope, delegation, scope, ownership and conflicts.",
+    "contract": "Distinct organization/decision domains; policy-configured independence and actual assignment checks.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S18",
+    "name": "Benchmark boundary and evaluation output",
+    "information": "Supplied task input/tool contracts and separate post-run result receipts.",
+    "contract": "No acting prompt/tool may query hidden expected answers; official grading remains outside our acting organization.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S19",
+    "name": "Clinical evidence and diagnostic interfaces",
+    "information": "Supplied clinical observations, orders, diagnostic evidence and exposed service results.",
+    "contract": "No physiology/world engine: accept actual observations and distinguish a new review judgment from an invented test result.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  },
+  {
+    "id": "S20",
+    "name": "Billing, assistance and payment",
+    "information": "Estimates, assistance applications, claims, adjudication and observed payment.",
+    "contract": "Not inferred from authorization; financial outcomes require their own service evidence.",
+    "actual_tool_mapping": "NOT_YET_PERFORMED",
+    "implemented": false
+  }
+]

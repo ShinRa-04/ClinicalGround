@@ -1,0 +1,651 @@
+[
+  {
+    "earlier_row": 1,
+    "earlier_label": "Patient / insured member",
+    "canonical_ids": [
+      "P01"
+    ]
+  },
+  {
+    "earlier_row": 2,
+    "earlier_label": "Family member / informal caregiver / support person",
+    "canonical_ids": [
+      "P02"
+    ]
+  },
+  {
+    "earlier_row": 3,
+    "earlier_label": "Parent / guardian / healthcare proxy or other recognized personal representative",
+    "canonical_ids": [
+      "P03"
+    ]
+  },
+  {
+    "earlier_row": 4,
+    "earlier_label": "Appointed appeal representative / advocate",
+    "canonical_ids": [
+      "P04"
+    ]
+  },
+  {
+    "earlier_row": 5,
+    "earlier_label": "Interpreter / translator / communication-access professional",
+    "canonical_ids": [
+      "P05",
+      "P06"
+    ]
+  },
+  {
+    "earlier_row": 6,
+    "earlier_label": "Patient navigator / patient-relations advocate",
+    "canonical_ids": [
+      "M10",
+      "P07"
+    ]
+  },
+  {
+    "earlier_row": 8,
+    "earlier_label": "Ordering/treating physician",
+    "canonical_ids": [
+      "C01"
+    ]
+  },
+  {
+    "earlier_row": 9,
+    "earlier_label": "Nurse practitioner / physician assistant / other authorized practitioner",
+    "canonical_ids": [
+      "C04",
+      "C05"
+    ]
+  },
+  {
+    "earlier_row": 10,
+    "earlier_label": "Referring clinician / primary-care clinician",
+    "canonical_ids": [
+      "C02"
+    ]
+  },
+  {
+    "earlier_row": 11,
+    "earlier_label": "Receiving specialist / performing clinician",
+    "canonical_ids": [
+      "C03"
+    ]
+  },
+  {
+    "earlier_row": 12,
+    "earlier_label": "Clinic nurse / medical assistant / clinical-support staff",
+    "canonical_ids": [
+      "C06",
+      "C07",
+      "C08"
+    ]
+  },
+  {
+    "earlier_row": 13,
+    "earlier_label": "Prior-authorization specialist / precertification representative",
+    "canonical_ids": [
+      "O01"
+    ]
+  },
+  {
+    "earlier_row": 14,
+    "earlier_label": "Referral coordinator",
+    "canonical_ids": [
+      "O02"
+    ]
+  },
+  {
+    "earlier_row": 15,
+    "earlier_label": "Registration / patient-access / insurance-verification staff",
+    "canonical_ids": [
+      "O03",
+      "O04"
+    ]
+  },
+  {
+    "earlier_row": 16,
+    "earlier_label": "Scheduler / procedure coordinator",
+    "canonical_ids": [
+      "O05"
+    ]
+  },
+  {
+    "earlier_row": 17,
+    "earlier_label": "Health-information / release-of-information specialist",
+    "canonical_ids": [
+      "O06"
+    ]
+  },
+  {
+    "earlier_row": 18,
+    "earlier_label": "Coding / clinical-documentation-integrity specialist",
+    "canonical_ids": [
+      "O07",
+      "O08"
+    ]
+  },
+  {
+    "earlier_row": 19,
+    "earlier_label": "Financial counselor / medication-assistance worker",
+    "canonical_ids": [
+      "O09",
+      "M05"
+    ]
+  },
+  {
+    "earlier_row": 20,
+    "earlier_label": "Provider denial/appeal specialist",
+    "canonical_ids": [
+      "O10"
+    ]
+  },
+  {
+    "earlier_row": 21,
+    "earlier_label": "Provider physician adviser / treating specialist in peer discussion",
+    "canonical_ids": [
+      "O11"
+    ]
+  },
+  {
+    "earlier_row": 22,
+    "earlier_label": "Practice/patient-access supervisor",
+    "canonical_ids": [
+      "O12"
+    ]
+  },
+  {
+    "earlier_row": 24,
+    "earlier_label": "Insurer provider-services representative / intake worker",
+    "canonical_ids": [
+      "U11",
+      "U01"
+    ]
+  },
+  {
+    "earlier_row": 25,
+    "earlier_label": "Payer nurse / licensed clinical reviewer",
+    "canonical_ids": [
+      "U03"
+    ]
+  },
+  {
+    "earlier_row": 26,
+    "earlier_label": "Payer physician / medical director / specialist reviewer",
+    "canonical_ids": [
+      "U04",
+      "U05"
+    ]
+  },
+  {
+    "earlier_row": 27,
+    "earlier_label": "Outside clinician / lab / imaging / therapy evidence holder",
+    "canonical_ids": [
+      "O13",
+      "C03",
+      "M14"
+    ]
+  },
+  {
+    "earlier_row": 28,
+    "earlier_label": "Pharmacy pharmacist / specialty-pharmacy technician",
+    "canonical_ids": [
+      "M04",
+      "M05"
+    ]
+  },
+  {
+    "earlier_row": 29,
+    "earlier_label": "Equipment supplier / infusion or receiving-service staff",
+    "canonical_ids": [
+      "M25",
+      "M26"
+    ]
+  },
+  {
+    "earlier_row": 30,
+    "earlier_label": "Independent external reviewer",
+    "canonical_ids": [
+      "U14",
+      "U18"
+    ]
+  },
+  {
+    "earlier_row": 32,
+    "earlier_label": "UM intake / authorization coordinator",
+    "canonical_ids": [
+      "U01"
+    ]
+  },
+  {
+    "earlier_row": 33,
+    "earlier_label": "Eligibility / benefits specialist",
+    "canonical_ids": [
+      "U02"
+    ]
+  },
+  {
+    "earlier_row": 34,
+    "earlier_label": "Nurse UM reviewer / appropriate licensed reviewer",
+    "canonical_ids": [
+      "U03"
+    ]
+  },
+  {
+    "earlier_row": 35,
+    "earlier_label": "Physician reviewer / medical director / physician adviser",
+    "canonical_ids": [
+      "U04"
+    ]
+  },
+  {
+    "earlier_row": 36,
+    "earlier_label": "Specialty consultant / independent clinical expert",
+    "canonical_ids": [
+      "U05"
+    ]
+  },
+  {
+    "earlier_row": 37,
+    "earlier_label": "Behavioral-health reviewer / designated practitioner",
+    "canonical_ids": [
+      "U06"
+    ]
+  },
+  {
+    "earlier_row": 38,
+    "earlier_label": "Managed-care pharmacist / pharmacy reviewer",
+    "canonical_ids": [
+      "U07"
+    ]
+  },
+  {
+    "earlier_row": 39,
+    "earlier_label": "Delegated-vendor / medical-group reviewer",
+    "canonical_ids": [
+      "U08"
+    ]
+  },
+  {
+    "earlier_row": 40,
+    "earlier_label": "Determination / notification coordinator",
+    "canonical_ids": [
+      "U09"
+    ]
+  },
+  {
+    "earlier_row": 41,
+    "earlier_label": "Member-services representative",
+    "canonical_ids": [
+      "U10"
+    ]
+  },
+  {
+    "earlier_row": 42,
+    "earlier_label": "Provider-services representative",
+    "canonical_ids": [
+      "U11"
+    ]
+  },
+  {
+    "earlier_row": 43,
+    "earlier_label": "Internal appeal / grievance coordinator",
+    "canonical_ids": [
+      "U12"
+    ]
+  },
+  {
+    "earlier_row": 44,
+    "earlier_label": "Appeal clinician / specialty reviewer",
+    "canonical_ids": [
+      "U13"
+    ]
+  },
+  {
+    "earlier_row": 45,
+    "earlier_label": "Independent external reviewer / review administrator",
+    "canonical_ids": [
+      "U14",
+      "U18",
+      "U15"
+    ]
+  },
+  {
+    "earlier_row": 46,
+    "earlier_label": "SHIP counselor / consumer-assistance or ombudsman contact",
+    "canonical_ids": [
+      "U16"
+    ]
+  },
+  {
+    "earlier_row": 47,
+    "earlier_label": "UM supervisor / manager",
+    "canonical_ids": [
+      "U17"
+    ]
+  },
+  {
+    "earlier_row": 48,
+    "earlier_label": "Patient / representative / treating clinician / provider coordinator",
+    "canonical_ids": [
+      "P01",
+      "P03",
+      "P04",
+      "C01",
+      "O01"
+    ]
+  },
+  {
+    "earlier_row": 50,
+    "earlier_label": "Patient",
+    "canonical_ids": [
+      "P01"
+    ]
+  },
+  {
+    "earlier_row": 51,
+    "earlier_label": "Family caregiver / authorized helper / legal representative",
+    "canonical_ids": [
+      "P02",
+      "P03"
+    ]
+  },
+  {
+    "earlier_row": 52,
+    "earlier_label": "Lead care manager / case manager",
+    "canonical_ids": [
+      "M01"
+    ]
+  },
+  {
+    "earlier_row": 53,
+    "earlier_label": "Primary-care / treating clinician",
+    "canonical_ids": [
+      "C02",
+      "C01"
+    ]
+  },
+  {
+    "earlier_row": 54,
+    "earlier_label": "Nurse practitioner / physician assistant",
+    "canonical_ids": [
+      "C04",
+      "C05"
+    ]
+  },
+  {
+    "earlier_row": 55,
+    "earlier_label": "Treating specialist(s)",
+    "canonical_ids": [
+      "C03"
+    ]
+  },
+  {
+    "earlier_row": 56,
+    "earlier_label": "Clinic / bedside / home-health nurse",
+    "canonical_ids": [
+      "C06"
+    ]
+  },
+  {
+    "earlier_row": 57,
+    "earlier_label": "Social worker / clinical social worker",
+    "canonical_ids": [
+      "M02",
+      "M03"
+    ]
+  },
+  {
+    "earlier_row": 58,
+    "earlier_label": "Pharmacist",
+    "canonical_ids": [
+      "M04"
+    ]
+  },
+  {
+    "earlier_row": 59,
+    "earlier_label": "Pharmacy technician / medication-access coordinator",
+    "canonical_ids": [
+      "M05"
+    ]
+  },
+  {
+    "earlier_row": 60,
+    "earlier_label": "Behavioral-health professional",
+    "canonical_ids": [
+      "M06",
+      "M07",
+      "M08"
+    ]
+  },
+  {
+    "earlier_row": 61,
+    "earlier_label": "Community health worker / navigator / health-care guide",
+    "canonical_ids": [
+      "M09",
+      "M10",
+      "M11"
+    ]
+  },
+  {
+    "earlier_row": 62,
+    "earlier_label": "Registered dietitian",
+    "canonical_ids": [
+      "M12"
+    ]
+  },
+  {
+    "earlier_row": 63,
+    "earlier_label": "Health educator / self-management coach",
+    "canonical_ids": [
+      "M13"
+    ]
+  },
+  {
+    "earlier_row": 64,
+    "earlier_label": "Physical therapist",
+    "canonical_ids": [
+      "M14"
+    ]
+  },
+  {
+    "earlier_row": 65,
+    "earlier_label": "Occupational therapist",
+    "canonical_ids": [
+      "M15"
+    ]
+  },
+  {
+    "earlier_row": 66,
+    "earlier_label": "Speech-language pathologist",
+    "canonical_ids": [
+      "M16"
+    ]
+  },
+  {
+    "earlier_row": 67,
+    "earlier_label": "Respiratory therapist",
+    "canonical_ids": [
+      "M17"
+    ]
+  },
+  {
+    "earlier_row": 68,
+    "earlier_label": "Discharge planner / transition coordinator",
+    "canonical_ids": [
+      "M18"
+    ]
+  },
+  {
+    "earlier_row": 69,
+    "earlier_label": "Home-health coordinator / skilled-nursing or rehabilitation receiving team",
+    "canonical_ids": [
+      "M19",
+      "M20"
+    ]
+  },
+  {
+    "earlier_row": 70,
+    "earlier_label": "Home-health aide / personal-care worker",
+    "canonical_ids": [
+      "M21"
+    ]
+  },
+  {
+    "earlier_row": 71,
+    "earlier_label": "Community-service / food, housing or benefits-support worker",
+    "canonical_ids": [
+      "M22"
+    ]
+  },
+  {
+    "earlier_row": 72,
+    "earlier_label": "Transportation contact / dispatcher / driver",
+    "canonical_ids": [
+      "M23",
+      "M24"
+    ]
+  },
+  {
+    "earlier_row": 73,
+    "earlier_label": "Equipment supplier staff",
+    "canonical_ids": [
+      "M25"
+    ]
+  },
+  {
+    "earlier_row": 74,
+    "earlier_label": "Palliative-care professional; chaplain / spiritual-care worker",
+    "canonical_ids": [
+      "M27",
+      "M29"
+    ]
+  },
+  {
+    "earlier_row": 75,
+    "earlier_label": "Hospice interdisciplinary group / attending / support functions",
+    "canonical_ids": [
+      "M28"
+    ]
+  },
+  {
+    "earlier_row": 76,
+    "earlier_label": "Scheduler / administrative coordinator",
+    "canonical_ids": [
+      "M30",
+      "O05"
+    ]
+  },
+  {
+    "earlier_row": 77,
+    "earlier_label": "Payer benefits / authorization contact",
+    "canonical_ids": [
+      "U02",
+      "U01",
+      "O04"
+    ]
+  },
+  {
+    "earlier_row": 78,
+    "earlier_label": "Interpreter / communication-access professional",
+    "canonical_ids": [
+      "P05",
+      "P06"
+    ]
+  },
+  {
+    "earlier_row": 79,
+    "earlier_label": "Patient-relations advocate / safeguarding service",
+    "canonical_ids": [
+      "P07",
+      "M31"
+    ]
+  },
+  {
+    "earlier_row": 81,
+    "earlier_label": "Medical director / chief medical officer / physician leadership",
+    "canonical_ids": [
+      "G01",
+      "G02"
+    ]
+  },
+  {
+    "earlier_row": 82,
+    "earlier_label": "UM / medical-policy committee members and specialist advisers",
+    "canonical_ids": [
+      "G03",
+      "U05"
+    ]
+  },
+  {
+    "earlier_row": 83,
+    "earlier_label": "Care-management director / manager / clinical supervisor",
+    "canonical_ids": [
+      "G04",
+      "G05"
+    ]
+  },
+  {
+    "earlier_row": 84,
+    "earlier_label": "Quality-improvement / audit staff",
+    "canonical_ids": [
+      "G06"
+    ]
+  },
+  {
+    "earlier_row": 85,
+    "earlier_label": "Training supervisor / trainer / clinical educator",
+    "canonical_ids": [
+      "G07"
+    ]
+  },
+  {
+    "earlier_row": 86,
+    "earlier_label": "Policy analyst / clinical regulatory adviser / compliance staff",
+    "canonical_ids": [
+      "G08",
+      "G09"
+    ]
+  },
+  {
+    "earlier_row": 87,
+    "earlier_label": "Privacy officer / HIM privacy specialist",
+    "canonical_ids": [
+      "G10",
+      "O06"
+    ]
+  },
+  {
+    "earlier_row": 88,
+    "earlier_label": "Health-services / business / population-health analyst",
+    "canonical_ids": [
+      "G11",
+      "G12"
+    ]
+  },
+  {
+    "earlier_row": 89,
+    "earlier_label": "EHR/informatics / application-support / portal-access staff",
+    "canonical_ids": [
+      "G13",
+      "G14"
+    ]
+  },
+  {
+    "earlier_row": 90,
+    "earlier_label": "Billing / patient accounts / claims-denial staff",
+    "canonical_ids": [
+      "G15",
+      "O10"
+    ]
+  },
+  {
+    "earlier_row": 91,
+    "earlier_label": "External-review administrator / regulator / specialized legal representative",
+    "canonical_ids": [
+      "U15",
+      "G16",
+      "G17"
+    ]
+  }
+]

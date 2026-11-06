@@ -1,0 +1,18 @@
+digraph "role-G03" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nG03 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+G02 [label="G02\nPayer medical director / \nclinical-program leader", URL="../index.html#G02", target="_top"];
+G03 [label="G03\nUM / medical-policy committee \nand specialty members", URL="../index.html#G03", target="_top"];
+G06 [label="G06\nQuality-improvement / audit \nprofessional", URL="../index.html#G06", target="_top"];
+G08 [label="G08\nPolicy analyst / clinical \nregulatory adviser", URL="../index.html#G08", target="_top"];
+U03 [label="U03\nPayer nurse / licensed UM \nclinical reviewer", URL="../index.html#U03", target="_top"];
+U04 [label="U04\nPayer physician reviewer / \nmedical director acting on a \ncase", URL="../index.html#U04", target="_top"];
+G03 -> U03 [label="DEP072", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G03 -> U04 [label="DEP075", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G08 -> G03 [label="DEP182", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G06 -> G03 [label="DEP183", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G02 -> G03 [label="DEP184", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G08 -> G03 [label="S-G03 request", tooltip="MA committee requirements are explicit in A05; do not assume identical statutory composition for all insurance products."];
+G03 -> G08 [label="S-G03 response", tooltip="MA committee requirements are explicit in A05; do not assume identical statutory composition for all insurance products."];
+}

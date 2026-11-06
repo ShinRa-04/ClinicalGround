@@ -1,0 +1,12 @@
+digraph "role-M29" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM29 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+M27 [label="M27\nPalliative-care clinical team \nmember", URL="../index.html#M27", target="_top"];
+M29 [label="M29\nChaplain / spiritual-care \nprofessional", URL="../index.html#M29", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+P01 -> M29 [label="DEP172", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M27 -> M29 [label="DEP173", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M27 -> M29 [label="S-M29 request", tooltip="Participation is needs/preference-dependent; protect the distinction between support and clinical decision authority."];
+M29 -> M27 [label="S-M29 response", tooltip="Participation is needs/preference-dependent; protect the distinction between support and clinical decision authority."];
+}

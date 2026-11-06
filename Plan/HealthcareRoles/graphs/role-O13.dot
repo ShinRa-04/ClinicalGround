@@ -1,0 +1,18 @@
+digraph "role-O13" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nO13 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+C03 [label="C03\nTreating / performing \nspecialist", URL="../index.html#C03", target="_top"];
+O06 [label="O06\nHIM / release-of-information \nspecialist", URL="../index.html#O06", target="_top"];
+O13 [label="O13\nExternal diagnostic / \nclinical evidence author or \ncustodian", URL="../index.html#O13", target="_top"];
+U05 [label="U05\nIndependent clinical / \nspecialty consultant", URL="../index.html#U05", target="_top"];
+O13 -> C01 [label="DEP019", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O13 -> C03 [label="DEP024", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O13 -> O06 [label="DEP050", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> O13 [label="DEP064", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O06 -> O13 [label="DEP065", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O13 -> U05 [label="DEP077", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> O13 [label="S-O13 request", tooltip="This is an evidence-supply function spanning distinct professions, not a claim that laboratory staff, radiologists and therapists have identical permissions."];
+O13 -> C01 [label="S-O13 response", tooltip="This is an evidence-supply function spanning distinct professions, not a claim that laboratory staff, radiologists and therapists have identical permissions."];
+}

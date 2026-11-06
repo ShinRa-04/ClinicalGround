@@ -1,0 +1,15 @@
+digraph "role-U02" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nU02 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+O04 [label="O04\nProvider \ninsurance-verification / \nbenefits specialist", URL="../index.html#O04", target="_top"];
+U01 [label="U01\nPayer UM intake coordinator", URL="../index.html#U01", target="_top"];
+U02 [label="U02\nPayer eligibility / benefit \nspecialist", URL="../index.html#U02", target="_top"];
+U09 [label="U09\nDetermination / notification \ncoordinator", URL="../index.html#U09", target="_top"];
+U02 -> O04 [label="DEP044", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U01 -> U02 [label="DEP068", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O04 -> U02 [label="DEP069", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U02 -> U09 [label="DEP089", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U01 -> U02 [label="S-U02 request", tooltip="Exact benefit authority and decision notice are plan-specific; not every benefits specialist is authorized to issue a denial. R13 permits some assigned benefit-only decisions; actual signatory authority still requires the plan/delegation."];
+U02 -> U01 [label="S-U02 response", tooltip="Exact benefit authority and decision notice are plan-specific; not every benefits specialist is authorized to issue a denial. R13 permits some assigned benefit-only decisions; actual signatory authority still requires the plan/delegation."];
+}

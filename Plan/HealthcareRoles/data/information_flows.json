@@ -1,0 +1,951 @@
+[
+  {
+    "id": "F01",
+    "sender": "P01",
+    "receiver": "O03",
+    "artifact": "Identity / insurance information",
+    "fields": [
+      "Patient identifier",
+      "Insurance identifiers",
+      "Contact details"
+    ],
+    "acknowledgement": "Registration match or mismatch recorded",
+    "failure": "Resolve mismatch before attaching another person's records",
+    "condition": "When registering/requesting service",
+    "sources": [
+      "R03",
+      "R06"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F02",
+    "sender": "C01",
+    "receiver": "O01",
+    "artifact": "Clinical service request",
+    "fields": [
+      "Patient",
+      "Requested service",
+      "Clinical rationale",
+      "Responsible author/date"
+    ],
+    "acknowledgement": "Request accepted into provider queue",
+    "failure": "Ask author for clarification; do not invent rationale",
+    "condition": "When service requires authorization work",
+    "sources": [
+      "R03",
+      "R04",
+      "A15"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F03",
+    "sender": "O04",
+    "receiver": "O01",
+    "artifact": "Benefits / requirement finding",
+    "fields": [
+      "Plan",
+      "Service",
+      "Verification source/date",
+      "Unresolved requirements"
+    ],
+    "acknowledgement": "Coordinator records status and next check",
+    "failure": "Contact payer on discrepancy",
+    "condition": "Plan/service-specific check",
+    "sources": [
+      "R03",
+      "R06"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F04",
+    "sender": "O06",
+    "receiver": "O01",
+    "artifact": "Supporting record package",
+    "fields": [
+      "Patient match",
+      "Source/date",
+      "Relevant clinical reports",
+      "Release basis"
+    ],
+    "acknowledgement": "Records linked to correct request",
+    "failure": "Query source for missing/incorrect records",
+    "condition": "When additional records needed",
+    "sources": [
+      "R07",
+      "B20",
+      "A10"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F05",
+    "sender": "O01",
+    "receiver": "U01",
+    "artifact": "Authorization submission",
+    "fields": [
+      "Patient/plan",
+      "Service",
+      "Requesting professional",
+      "Supporting record"
+    ],
+    "acknowledgement": "Payer receipt/case identifier",
+    "failure": "Track failed transmission and missing items",
+    "condition": "When request submitted",
+    "sources": [
+      "R03",
+      "R04",
+      "R12"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F06",
+    "sender": "U01",
+    "receiver": "O01",
+    "artifact": "Missing-information request",
+    "fields": [
+      "Case identifier",
+      "Requested missing items",
+      "Response channel"
+    ],
+    "acknowledgement": "Provider records request and response ownership",
+    "failure": "Escalate clinical gaps to author",
+    "condition": "When intake/review needs clarification",
+    "sources": [
+      "R12",
+      "R13"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F07",
+    "sender": "U01",
+    "receiver": "U03",
+    "artifact": "Clinical review case",
+    "fields": [
+      "Matched identifiers",
+      "Request",
+      "Submitted evidence",
+      "Relevant benefit context"
+    ],
+    "acknowledgement": "Assigned reviewer/status",
+    "failure": "Return factual gaps; route urgency by policy",
+    "condition": "When clinical review required",
+    "sources": [
+      "R12",
+      "R13"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F08",
+    "sender": "G03",
+    "receiver": "U03",
+    "artifact": "Applicable approved criteria",
+    "fields": [
+      "Policy/version",
+      "Product/service",
+      "Effective scope",
+      "Evidence/rule basis"
+    ],
+    "acknowledgement": "Reviewer identifies correct version",
+    "failure": "Resolve version/product mismatch",
+    "condition": "Approved-policy use; MA requirements separately A05/A17",
+    "sources": [
+      "A05",
+      "A17",
+      "R12"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F09",
+    "sender": "U03",
+    "receiver": "U04",
+    "artifact": "Clinical escalation",
+    "fields": [
+      "Question",
+      "Evidence assessed",
+      "Criteria",
+      "Unresolved reason"
+    ],
+    "acknowledgement": "Qualified reviewer accepts case",
+    "failure": "Do not treat inability to approve as unreviewed denial",
+    "condition": "When delegated first level cannot resolve",
+    "sources": [
+      "R12",
+      "A02"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F10",
+    "sender": "U04",
+    "receiver": "U05",
+    "artifact": "Specialty consultation request",
+    "fields": [
+      "Defined question",
+      "Relevant record",
+      "Scope and conflict information"
+    ],
+    "acknowledgement": "Opinion returned with rationale",
+    "failure": "Request missing evidence/appropriate expertise",
+    "condition": "When specialist opinion needed",
+    "sources": [
+      "R18",
+      "A02"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F11",
+    "sender": "O11",
+    "receiver": "U04",
+    "artifact": "Peer clinical discussion",
+    "fields": [
+      "Case",
+      "Disputed rationale",
+      "Additional relevant evidence",
+      "Discussion record"
+    ],
+    "acknowledgement": "Outcome and next formal step recorded",
+    "failure": "Preserve applicable appeal route independently",
+    "condition": "Plan-specific peer process",
+    "sources": [
+      "R15"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F12",
+    "sender": "U04",
+    "receiver": "U09",
+    "artifact": "Authorized clinical determination",
+    "fields": [
+      "Decision",
+      "Rationale",
+      "Scope/service",
+      "Author",
+      "Applicable procedural information"
+    ],
+    "acknowledgement": "Notice prepared from authorized record",
+    "failure": "Return inconsistency to decision author",
+    "condition": "When case decision made",
+    "sources": [
+      "A02",
+      "R13"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F13",
+    "sender": "U09",
+    "receiver": "P01",
+    "artifact": "Decision notice",
+    "fields": [
+      "Outcome",
+      "Reason",
+      "Service/case",
+      "Applicable review information"
+    ],
+    "acknowledgement": "Communication sent/status recorded",
+    "failure": "Correct failed/mismatched notice through process",
+    "condition": "Recipients/contents depend on route",
+    "sources": [
+      "R16",
+      "R15",
+      "A03"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F14",
+    "sender": "U09",
+    "receiver": "O01",
+    "artifact": "Provider outcome communication",
+    "fields": [
+      "Case",
+      "Service",
+      "Outcome",
+      "Scope/conditions",
+      "Next action"
+    ],
+    "acknowledgement": "Provider updates queue and readiness checks",
+    "failure": "Clarify ambiguity before assuming approval",
+    "condition": "As required/permitted in actual process",
+    "sources": [
+      "R13",
+      "R15"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F15",
+    "sender": "O01",
+    "receiver": "O05",
+    "artifact": "Recorded authorization status",
+    "fields": [
+      "Service",
+      "Case",
+      "Outcome/conditions",
+      "Remaining prerequisites"
+    ],
+    "acknowledgement": "Scheduler records booking or unresolved status",
+    "failure": "Do not equate booking and clinical readiness",
+    "condition": "When scheduling depends on status",
+    "sources": [
+      "R03",
+      "R05"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F16",
+    "sender": "P04",
+    "receiver": "U12",
+    "artifact": "Appeal request",
+    "fields": [
+      "Authority/standing",
+      "Challenged notice",
+      "Grounds",
+      "Supporting record"
+    ],
+    "acknowledgement": "Proper route/case acknowledgement",
+    "failure": "Resolve missing standing or wrong route",
+    "condition": "Actual appeal rights and deadlines",
+    "sources": [
+      "R20",
+      "A03"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F17",
+    "sender": "U12",
+    "receiver": "U13",
+    "artifact": "MA reconsideration case",
+    "fields": [
+      "Initial record",
+      "New material",
+      "Disputed question",
+      "Reviewer independence check"
+    ],
+    "acknowledgement": "Reconsideration assignment/decision",
+    "failure": "Use appropriate uninvolved physician for scoped medical-necessity reconsideration",
+    "condition": "MA route described by A03",
+    "sources": [
+      "A03"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F18",
+    "sender": "U13",
+    "receiver": "U14",
+    "artifact": "Remaining adverse MA case",
+    "fields": [
+      "Disputed issues",
+      "Case file",
+      "Written explanation"
+    ],
+    "acknowledgement": "IRE review/disposition recorded",
+    "failure": "Follow applicable forwarding and record requirements",
+    "condition": "When MA adverse reconsideration remains",
+    "sources": [
+      "A03",
+      "A04"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F19",
+    "sender": "U14",
+    "receiver": "U09",
+    "artifact": "MA independent-review decision",
+    "fields": [
+      "Case",
+      "Outcome",
+      "Scope of reversal",
+      "Implementation requirement"
+    ],
+    "acknowledgement": "Effectuation status recorded/communicated",
+    "failure": "Escalate failure to implement to correct route",
+    "condition": "MA decision and A16 conditions",
+    "sources": [
+      "A04",
+      "A16"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F20",
+    "sender": "U15",
+    "receiver": "U18",
+    "artifact": "Commercial external-review case",
+    "fields": [
+      "Applicable route",
+      "Eligibility",
+      "Denial",
+      "Record"
+    ],
+    "acknowledgement": "External-review disposition",
+    "failure": "Do not route MA automatically here",
+    "condition": "Eligible commercial external-review process",
+    "sources": [
+      "A12",
+      "R17"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F21",
+    "sender": "P01",
+    "receiver": "M01",
+    "artifact": "Care-management goals and needs",
+    "fields": [
+      "Patient goals",
+      "Preferences",
+      "Reported barriers",
+      "Involvement choices"
+    ],
+    "acknowledgement": "Needs reflected in coordination assessment",
+    "failure": "Clarify disagreement; do not invent consent",
+    "condition": "Program/patient participation context",
+    "sources": [
+      "R22",
+      "R23"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F22",
+    "sender": "C02",
+    "receiver": "M01",
+    "artifact": "Clinical context / referral",
+    "fields": [
+      "Clinical plan",
+      "Responsible clinician",
+      "Relevant concerns",
+      "Follow-up needs"
+    ],
+    "acknowledgement": "Care-manager review and coordination task",
+    "failure": "Clarify missing medical ownership",
+    "condition": "When coordination referred/needed",
+    "sources": [
+      "R22",
+      "R24"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F23",
+    "sender": "M01",
+    "receiver": "M02",
+    "artifact": "Psychosocial resource referral",
+    "fields": [
+      "Specific need",
+      "Agreed information",
+      "Desired follow-up"
+    ],
+    "acknowledgement": "Assessment/resource response",
+    "failure": "Return unmet need to coordinator",
+    "condition": "When appropriate social support needed",
+    "sources": [
+      "R25",
+      "B09"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F24",
+    "sender": "M01",
+    "receiver": "M04",
+    "artifact": "Medication review request",
+    "fields": [
+      "Medication information",
+      "Clinical question",
+      "Responsible prescriber"
+    ],
+    "acknowledgement": "Pharmacist recommendation/clarification",
+    "failure": "Refer order changes to authorized prescriber/protocol",
+    "condition": "When medication review needed",
+    "sources": [
+      "B07",
+      "R24"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F25",
+    "sender": "M04",
+    "receiver": "C01",
+    "artifact": "Medication recommendation",
+    "fields": [
+      "Identified concern",
+      "Evidence",
+      "Recommendation",
+      "Urgency/context"
+    ],
+    "acknowledgement": "Prescriber response or authorized protocol action",
+    "failure": "Do not silently assume recommendation changed order",
+    "condition": "Professional relationship/protocol-specific",
+    "sources": [
+      "B07",
+      "A15"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F26",
+    "sender": "M01",
+    "receiver": "M10",
+    "artifact": "Navigation task",
+    "fields": [
+      "Barrier",
+      "Patient preference",
+      "Service contact",
+      "Follow-up need"
+    ],
+    "acknowledgement": "Connection/status returned",
+    "failure": "Report unresolved access rather than assume success",
+    "condition": "When navigation assigned",
+    "sources": [
+      "R28"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F27",
+    "sender": "M10",
+    "receiver": "M22",
+    "artifact": "Community service referral",
+    "fields": [
+      "Agreed need",
+      "Relevant eligibility information",
+      "Contact"
+    ],
+    "acknowledgement": "Service acceptance/status",
+    "failure": "Notify coordinator of waiting/refusal/absence",
+    "condition": "Agency-specific sharing and availability",
+    "sources": [
+      "R28",
+      "R29",
+      "A10"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F28",
+    "sender": "M01",
+    "receiver": "M23",
+    "artifact": "Transport arrangement",
+    "fields": [
+      "Appointment/trip",
+      "Contact",
+      "Accessibility needs"
+    ],
+    "acknowledgement": "Booking status returned",
+    "failure": "Clarify clinical transport needs",
+    "condition": "When travel support needed",
+    "sources": [
+      "R28",
+      "B19"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F29",
+    "sender": "M23",
+    "receiver": "M24",
+    "artifact": "Assigned transport",
+    "fields": [
+      "Pickup/destination",
+      "Time/contact",
+      "Necessary access instructions"
+    ],
+    "acknowledgement": "Completion/failure status",
+    "failure": "Notify dispatcher of failed trip",
+    "condition": "Actual service qualification and permissions",
+    "sources": [
+      "R28",
+      "A10"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F30",
+    "sender": "C01",
+    "receiver": "M25",
+    "artifact": "Equipment order",
+    "fields": [
+      "Patient",
+      "Ordered equipment",
+      "Clinical/order author",
+      "Requirements"
+    ],
+    "acknowledgement": "Supplier acceptance/service status",
+    "failure": "Resolve missing order or unsuitable service with clinician",
+    "condition": "Equipment-specific pathway",
+    "sources": [
+      "R11",
+      "R30"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F31",
+    "sender": "M18",
+    "receiver": "M19",
+    "artifact": "Home-health transition referral",
+    "fields": [
+      "Clinical course",
+      "Goals/preferences",
+      "Orders/plan",
+      "Pending needs"
+    ],
+    "acknowledgement": "Agency acceptance/capacity and plan coordination",
+    "failure": "Return unavailable service or missing order",
+    "condition": "Hospital transition plus home-health setting",
+    "sources": [
+      "A06",
+      "A07"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F32",
+    "sender": "M18",
+    "receiver": "M20",
+    "artifact": "Facility transition record",
+    "fields": [
+      "Clinical course",
+      "Goals",
+      "Relevant care needs",
+      "Pending issues"
+    ],
+    "acknowledgement": "Receiving service acceptance/handoff",
+    "failure": "Resolve missing/unavailable care with sending team",
+    "condition": "Hospital to receiving facility",
+    "sources": [
+      "A06"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F33",
+    "sender": "M19",
+    "receiver": "C01",
+    "artifact": "Home-health change request",
+    "fields": [
+      "Changed assessment",
+      "Need/response",
+      "Proposed plan revision"
+    ],
+    "acknowledgement": "Authorized response and plan communication",
+    "failure": "Do not freely rewrite orders",
+    "condition": "484.60 setting and signatory rules",
+    "sources": [
+      "A07"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F34",
+    "sender": "M21",
+    "receiver": "C06",
+    "artifact": "Home-support observations",
+    "fields": [
+      "Assigned task",
+      "Completion",
+      "Observed concern"
+    ],
+    "acknowledgement": "Qualified review/escalation",
+    "failure": "Use supervising professional for concern outside training",
+    "condition": "Actual home-aide supervision",
+    "sources": [
+      "B19",
+      "B04"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F35",
+    "sender": "M14",
+    "receiver": "M01",
+    "artifact": "Functional progress",
+    "fields": [
+      "Assessment",
+      "Goals",
+      "Response",
+      "Unresolved needs"
+    ],
+    "acknowledgement": "Coordination plan updated",
+    "failure": "Route medical or resource issue to owner",
+    "condition": "When PT involved",
+    "sources": [
+      "B15",
+      "R22"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F36",
+    "sender": "M01",
+    "receiver": "G05",
+    "artifact": "Complex-case escalation",
+    "fields": [
+      "Unmet need",
+      "Actions attempted",
+      "Clinical/resource question"
+    ],
+    "acknowledgement": "Assigned supervisory response",
+    "failure": "Separate clinical authority from workload decision",
+    "condition": "Assigned supervisory relationship only",
+    "sources": [
+      "R32"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F37",
+    "sender": "G06",
+    "receiver": "G03",
+    "artifact": "Policy-quality finding",
+    "fields": [
+      "Pattern",
+      "Measure/record basis",
+      "Policy version",
+      "Limitations"
+    ],
+    "acknowledgement": "Policy review/revision disposition",
+    "failure": "Do not retroactively change case evidence",
+    "condition": "When systemic criteria issue identified",
+    "sources": [
+      "A05",
+      "R12"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F38",
+    "sender": "G08",
+    "receiver": "G07",
+    "artifact": "Approved procedural change",
+    "fields": [
+      "Approved version",
+      "Effective scope",
+      "Training implications"
+    ],
+    "acknowledgement": "Training updated and delivered",
+    "failure": "Do not teach draft as approved policy",
+    "condition": "Designated approval/change process",
+    "sources": [
+      "R32"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F39",
+    "sender": "G10",
+    "receiver": "G14",
+    "artifact": "Access authorization decision",
+    "fields": [
+      "User/role",
+      "Purpose",
+      "Permitted scope",
+      "Approval"
+    ],
+    "acknowledgement": "Access provisioning/audit result",
+    "failure": "Escalate unmatched permissions",
+    "condition": "Authorized local access-control process",
+    "sources": [
+      "A10",
+      "B21"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F40",
+    "sender": "G12",
+    "receiver": "G13",
+    "artifact": "Approved system requirements",
+    "fields": [
+      "Business owner",
+      "Intended behavior",
+      "Permissions",
+      "Acceptance conditions"
+    ],
+    "acknowledgement": "Validated implementation or rejected change",
+    "failure": "Clinical/policy owner resolves substantive ambiguity",
+    "condition": "Authorized change process",
+    "sources": [
+      "B21",
+      "R32"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F41",
+    "sender": "O07",
+    "receiver": "G15",
+    "artifact": "Supported claim coding",
+    "fields": [
+      "Service/documentation",
+      "Supported codes",
+      "Relevant clarification"
+    ],
+    "acknowledgement": "Claim/account work recorded",
+    "failure": "Return unsupported code or documentation issue",
+    "condition": "Downstream billing, not authorization completion",
+    "sources": [
+      "B20",
+      "R08"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F42",
+    "sender": "U14",
+    "receiver": "J01",
+    "artifact": "Eligible MA further appeal record",
+    "fields": [
+      "Prior decision",
+      "Proper request",
+      "Record",
+      "Jurisdiction conditions"
+    ],
+    "acknowledgement": "Adjudicative disposition",
+    "failure": "No automatic right inferred from dissatisfaction",
+    "condition": "When further MA appeal is available",
+    "sources": [
+      "A11",
+      "A16"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F43",
+    "sender": "J01",
+    "receiver": "J02",
+    "artifact": "Eligible Council review",
+    "fields": [
+      "Prior decision",
+      "Eligible request",
+      "Record"
+    ],
+    "acknowledgement": "Council disposition",
+    "failure": "Follow actual review notice/rules",
+    "condition": "When Council review properly pursued",
+    "sources": [
+      "A11",
+      "A16"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F44",
+    "sender": "J02",
+    "receiver": "J03",
+    "artifact": "Eligible judicial review",
+    "fields": [
+      "Administrative record",
+      "Eligible filing",
+      "Legal issues"
+    ],
+    "acknowledgement": "Judicial disposition",
+    "failure": "Check jurisdiction/exhaustion/thresholds",
+    "condition": "When judicial review legally available",
+    "sources": [
+      "A11"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F45",
+    "sender": "P05",
+    "receiver": "C01",
+    "artifact": "Interpreted patient-clinician message",
+    "fields": [
+      "Original meaning",
+      "Relevant clarification",
+      "Communication context"
+    ],
+    "acknowledgement": "Participants can clarify meaning",
+    "failure": "Return substantive question to patient/clinician",
+    "condition": "When qualified interpretation needed",
+    "sources": [
+      "B23",
+      "R21"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  },
+  {
+    "id": "F46",
+    "sender": "O06",
+    "receiver": "G10",
+    "artifact": "Unclear disclosure request",
+    "fields": [
+      "Request/purpose",
+      "Identity/authority",
+      "Specific privacy question"
+    ],
+    "acknowledgement": "Scoped privacy guidance",
+    "failure": "Do not release all data from uncertainty",
+    "condition": "When release authority/purpose unclear",
+    "sources": [
+      "A09",
+      "A10",
+      "R07"
+    ],
+    "evidence": "Operational synthesis; scoped requirements cited separately",
+    "evidence_status": "SYNTHESIZED MODEL: artifact fields, contacts and routing NOT CONFIRMED as a real institution's procedure."
+  }
+]

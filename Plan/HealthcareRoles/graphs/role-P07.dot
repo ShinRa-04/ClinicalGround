@@ -1,0 +1,16 @@
+digraph "role-P07" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nP07 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+G16 [label="G16\nRegulator / oversight \nofficial", URL="../index.html#G16", target="_top"];
+M30 [label="M30\nAdministrative care \ncoordinator / scheduling \nsupport", URL="../index.html#M30", target="_top"];
+M31 [label="M31\nSafeguarding / \nprotection-service \nprofessional", URL="../index.html#M31", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+P07 [label="P07\nPatient-relations advocate", URL="../index.html#P07", target="_top"];
+P01 -> P07 [label="DEP016", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M30 -> P07 [label="DEP017", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P07 -> M31 [label="DEP177", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P07 -> G16 [label="DEP211", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> P07 [label="S-P07 request", tooltip="A complaint about service and an appeal of a coverage decision are separate routes; a job title does not establish appointment."];
+P07 -> P01 [label="S-P07 response", tooltip="A complaint about service and an appeal of a coverage decision are separate routes; a job title does not establish appointment."];
+}

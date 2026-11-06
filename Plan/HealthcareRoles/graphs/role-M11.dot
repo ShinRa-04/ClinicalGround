@@ -1,0 +1,12 @@
+digraph "role-M11" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM11 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+M01 [label="M01\nLead care manager / case \nmanager", URL="../index.html#M01", target="_top"];
+M11 [label="M11\nHealth-care guide / \nnonclinical care guide", URL="../index.html#M11", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+M01 -> M11 [label="DEP133", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> M11 [label="DEP134", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> M11 [label="S-M11 request", tooltip="Partnership HealthPlan documents this title as an organizational example; do not impose it on every care program."];
+M11 -> M01 [label="S-M11 response", tooltip="Partnership HealthPlan documents this title as an organizational example; do not impose it on every care program."];
+}

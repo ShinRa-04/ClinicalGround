@@ -1,0 +1,731 @@
+[
+  {
+    "id": "D01",
+    "question": "Who chooses whether to accept proposed treatment?",
+    "actors": [
+      "P01",
+      "P03",
+      "C01"
+    ],
+    "packages": [
+      "W01",
+      "W04"
+    ],
+    "design_implication": "Keep patient decision evidence external to the worker’s own proposals; merging communication and planning must not create consent.",
+    "original_condition": "Hospital rights under A01; capacity/minor/emergency and other exceptions require additional applicable law.",
+    "original_source_ids": [
+      "A01",
+      "A09"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D02",
+    "question": "Who establishes representative authority?",
+    "actors": [
+      "P03",
+      "P04",
+      "G10",
+      "G17"
+    ],
+    "packages": [
+      "W01",
+      "W02",
+      "W20",
+      "W22"
+    ],
+    "design_implication": "Store representative identity, scope and evidence separately from informal family contact.",
+    "original_condition": "Healthcare personal representation and appeal standing are separate determinations.",
+    "original_source_ids": [
+      "A09",
+      "R20",
+      "R15"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D03",
+    "question": "Who recommends/orders clinical treatment?",
+    "actors": [
+      "C01",
+      "C03",
+      "C04",
+      "C05"
+    ],
+    "packages": [
+      "W04"
+    ],
+    "design_implication": "Clinical evidence organization and clinician authorship/order permission are distinct even in one executable.",
+    "original_condition": "Profession/state/practice arrangement and patient consent must be established.",
+    "original_source_ids": [
+      "B01",
+      "B02",
+      "B03",
+      "A15"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D04",
+    "question": "Does a treating specialist automatically outrank the PCP?",
+    "actors": [
+      "C02",
+      "C03"
+    ],
+    "packages": [
+      "W04"
+    ],
+    "design_implication": "Route by the actual issue and mandate, not a fabricated specialty seniority ladder.",
+    "original_condition": "Actual episode, privileges and local responsibility assignment determine signoff.",
+    "original_source_ids": [
+      "B01",
+      "R22",
+      "R24"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D05",
+    "question": "Can an NP act independently?",
+    "actors": [
+      "C04"
+    ],
+    "packages": [
+      "W04"
+    ],
+    "design_implication": "Parameterize applicable NP practice/furnishing/employer conditions; do not bake a universal role hierarchy into prompts.",
+    "original_condition": "State and actual activity must be specified.",
+    "original_source_ids": [
+      "B03",
+      "A13",
+      "A14",
+      "V02"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D06",
+    "question": "Who supervises PA practice?",
+    "actors": [
+      "C05",
+      "C01"
+    ],
+    "packages": [
+      "W04"
+    ],
+    "design_implication": "Represent the actual PA arrangement explicitly; a generic supervisor agent is insufficient evidence.",
+    "original_condition": "State, privileges and agreement are unresolved until identified.",
+    "original_source_ids": [
+      "B02",
+      "A15",
+      "V03"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D07",
+    "question": "Can an RN delegate any assigned task?",
+    "actors": [
+      "C06",
+      "C07",
+      "C08",
+      "M21"
+    ],
+    "packages": [
+      "W04",
+      "W17"
+    ],
+    "design_implication": "Delegation needs activity/credential/competence scope; coordinator assignment cannot expand it.",
+    "original_condition": "No nationwide permission for a specific drug, IV task or assessment is assumed.",
+    "original_source_ids": [
+      "A13",
+      "A14",
+      "B04",
+      "B05",
+      "B06",
+      "B19",
+      "V10"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D08",
+    "question": "Who supplies the clinical facts in a request?",
+    "actors": [
+      "C01",
+      "O06",
+      "O08",
+      "O13"
+    ],
+    "packages": [
+      "W04",
+      "W06"
+    ],
+    "design_implication": "Evidence-assembly capability must preserve substantive author identity and never manufacture clinical facts.",
+    "original_condition": "Hospital authentication requirement A15; other settings need their rules.",
+    "original_source_ids": [
+      "A15",
+      "B20",
+      "R07",
+      "R08"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D09",
+    "question": "Who selects supported administrative codes?",
+    "actors": [
+      "O07",
+      "O08",
+      "C01"
+    ],
+    "packages": [
+      "W04",
+      "W06"
+    ],
+    "design_implication": "Coding suggestions should remain traceable to documentation rather than become independent proof of a clinical condition.",
+    "original_condition": "Code system, service and documentation must match actual context.",
+    "original_source_ids": [
+      "B20",
+      "R08",
+      "A15"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D10",
+    "question": "Is benefit verification the same as authorization?",
+    "actors": [
+      "O04",
+      "U02",
+      "O01"
+    ],
+    "packages": [
+      "W05",
+      "W08"
+    ],
+    "design_implication": "Use separate state fields for benefits, authorization and later payment.",
+    "original_condition": "Plan and service determine required checks.",
+    "original_source_ids": [
+      "R06",
+      "R13"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D11",
+    "question": "Can first-level UM approve a request?",
+    "actors": [
+      "U01",
+      "U02",
+      "U03",
+      "U04",
+      "U06",
+      "U07"
+    ],
+    "packages": [
+      "W08",
+      "W09"
+    ],
+    "design_implication": "Allow documented limited nonclinical alternatives where applicable; do not require a clinical agent in every valid path.",
+    "original_condition": "R12/R13 are example programs; no universal program permission is inferred. R13 also states medical-director final responsibility and wider professional categories; exact case signoff needs clarification.",
+    "original_source_ids": [
+      "R12",
+      "R13",
+      "A02"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D12",
+    "question": "Who reviews anticipated adverse MA medical necessity?",
+    "actors": [
+      "U03",
+      "U04",
+      "U05",
+      "U06"
+    ],
+    "packages": [
+      "W09"
+    ],
+    "design_implication": "Model the actual initial-review qualification route, including appropriate nonphysician possibilities; a title alone is inadequate.",
+    "original_condition": "MA initial adverse medical necessity; integrated-plan exception in 422.566(a) and different decision types must be checked.",
+    "original_source_ids": [
+      "A02"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D13",
+    "question": "Who may reconsider an MA medical-necessity denial?",
+    "actors": [
+      "U13",
+      "U12"
+    ],
+    "packages": [
+      "W11"
+    ],
+    "design_implication": "Preserve required uninvolved reconsideration/accountability; fresh LLM context is only a software-review experiment.",
+    "original_condition": "Specified MA reconsideration route; not a universal rule for every product/dispute.",
+    "original_source_ids": [
+      "A03",
+      "A04"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D14",
+    "question": "Does peer-to-peer discussion replace appeal?",
+    "actors": [
+      "O11",
+      "U04",
+      "O10"
+    ],
+    "packages": [
+      "W07",
+      "W09"
+    ],
+    "design_implication": "Track peer exchange and formal filing as different transitions and outputs.",
+    "original_condition": "Plan/state/service process determines relationship between discussion and appeal.",
+    "original_source_ids": [
+      "R15"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D15",
+    "question": "Can MA independent review reverse payer review?",
+    "actors": [
+      "U14",
+      "U13",
+      "U09"
+    ],
+    "packages": [
+      "W10",
+      "W11",
+      "W12"
+    ],
+    "design_implication": "Observe external outcomes; do not let an internal critic manufacture IRE authority or assume instant effectuation.",
+    "original_condition": "422.592 and 422.618; deadlines and further appeal rights differ by decision type.",
+    "original_source_ids": [
+      "A04",
+      "A16",
+      "A11"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D16",
+    "question": "Can commercial independent review supersede insurer denial?",
+    "actors": [
+      "U18",
+      "U15"
+    ],
+    "packages": [
+      "W12"
+    ],
+    "design_implication": "Keep commercial review distinct and permit eligible urgent concurrency instead of an unconditional linear ladder.",
+    "original_condition": "Determine product, eligibility, issue and route first. Check the applicable ACA/non-grandfathered context and actual external-review eligibility. Eligible urgent external review may be requested concurrently with internal appeal.",
+    "original_source_ids": [
+      "A12",
+      "R17",
+      "V19"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D17",
+    "question": "Are later MA appeal forums above the prior decision?",
+    "actors": [
+      "J01",
+      "J02",
+      "J03"
+    ],
+    "packages": [
+      "W12"
+    ],
+    "design_implication": "Represent later forums as conditional external interfaces rather than an internal management hierarchy.",
+    "original_condition": "A16 includes a Council-review effectuation exception; further appeal can affect implementation.",
+    "original_source_ids": [
+      "A11",
+      "A16"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D18",
+    "question": "Does coverage approval order the clinician to treat?",
+    "actors": [
+      "U04",
+      "C01",
+      "P01"
+    ],
+    "packages": [
+      "W01",
+      "W04",
+      "W09"
+    ],
+    "design_implication": "Never merge coverage outcome, clinical instruction and patient consent into one approval flag.",
+    "original_condition": "Functional separation; actual service and rights still apply.",
+    "original_source_ids": [
+      "A01",
+      "A02",
+      "A17",
+      "B01"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D19",
+    "question": "Who approves MA utilization policy?",
+    "actors": [
+      "G03",
+      "G02",
+      "G08"
+    ],
+    "packages": [
+      "W20"
+    ],
+    "design_implication": "Use an approved policy/version source; policy drafting by a helper must not alter controlling rules.",
+    "original_condition": "MA-specific committee requirements; other products need their own governance.",
+    "original_source_ids": [
+      "A05",
+      "A17"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D20",
+    "question": "Does policy committee rank supersede every case appeal?",
+    "actors": [
+      "G03",
+      "U13",
+      "U14"
+    ],
+    "packages": [
+      "W11",
+      "W12",
+      "W20"
+    ],
+    "design_implication": "Separate policy governance from the applicable case-appeal route.",
+    "original_condition": "No committee-to-IRE command edge exists in this map.",
+    "original_source_ids": [
+      "A05",
+      "A03",
+      "A04"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D21",
+    "question": "Who owns the shared care-coordination plan?",
+    "actors": [
+      "M01",
+      "P01",
+      "C02"
+    ],
+    "packages": [
+      "W01",
+      "W04",
+      "W13"
+    ],
+    "design_implication": "Keep a clear plan/case owner while attributing each discipline and patient contribution.",
+    "original_condition": "Program-specific professional background and permissions.",
+    "original_source_ids": [
+      "R22",
+      "R25",
+      "R24",
+      "R32"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D22",
+    "question": "Who develops hospital discharge planning?",
+    "actors": [
+      "M18",
+      "C06",
+      "M02"
+    ],
+    "packages": [
+      "W04",
+      "W13",
+      "W14"
+    ],
+    "design_implication": "Transition coordination can share workflow state without being confused with all medical discharge authority.",
+    "original_condition": "Hospital discharge setting; patient goals/access and information transfer requirements also apply.",
+    "original_source_ids": [
+      "A06"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D23",
+    "question": "Who signs/changes the home-health medical plan?",
+    "actors": [
+      "M19",
+      "C01",
+      "C04",
+      "C05"
+    ],
+    "packages": [
+      "W04",
+      "W17"
+    ],
+    "design_implication": "Separate service scheduling from the permitted medical-plan signature/change function.",
+    "original_condition": "Home-health setting; state law and agency policy apply to verbal orders and allowed activities.",
+    "original_source_ids": [
+      "A07"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D24",
+    "question": "Does referral acceptance mean the service happened?",
+    "actors": [
+      "M01",
+      "M18",
+      "M19",
+      "M20",
+      "O05"
+    ],
+    "packages": [
+      "W05",
+      "W13",
+      "W17"
+    ],
+    "design_implication": "Require observed acceptance/delivery states; a model’s plan is not a completed service.",
+    "original_condition": "Operational synthesis supporting closed-loop coordination, not a universal mandated form.",
+    "original_source_ids": [
+      "R22",
+      "R28",
+      "A06"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D25",
+    "question": "Can a technician change medication therapy?",
+    "actors": [
+      "M05",
+      "M04",
+      "C01"
+    ],
+    "packages": [
+      "W04",
+      "W15"
+    ],
+    "design_implication": "Share medication data but keep access/technician activity distinct from therapy changes.",
+    "original_condition": "Specific technician, pharmacist and prescribing permissions remain state/program-specific.",
+    "original_source_ids": [
+      "B07",
+      "B08",
+      "R09",
+      "V13"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D26",
+    "question": "Does psychologist/counselor title imply prescribing?",
+    "actors": [
+      "M06",
+      "M07",
+      "M08"
+    ],
+    "packages": [
+      "W04",
+      "W14"
+    ],
+    "design_implication": "Treat actual credential/jurisdiction permissions as facts to establish, not as powers granted by a specialist prompt.",
+    "original_condition": "Jurisdiction and specialty qualification required.",
+    "original_source_ids": [
+      "B01",
+      "B10",
+      "B11",
+      "V04"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D27",
+    "question": "Who can approve information sharing?",
+    "actors": [
+      "G10",
+      "O06",
+      "P03"
+    ],
+    "packages": [
+      "W01",
+      "W06",
+      "W22"
+    ],
+    "design_implication": "Scope data views and recipients by purpose and actual permissions, preserving exceptions and special restrictions.",
+    "original_condition": "A10 lists minimum-necessary exceptions including specified treatment disclosures; other protections still apply. Applicable Part 2 records and separate SUD counseling notes illustrate additional consent distinctions; a HIPAA minimum-necessary exception is not blanket disclosure permission.",
+    "original_source_ids": [
+      "A09",
+      "A10",
+      "R07",
+      "V15"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D28",
+    "question": "Can interpreter or navigator decide for the patient?",
+    "actors": [
+      "P05",
+      "P06",
+      "M09",
+      "M10"
+    ],
+    "packages": [
+      "W03",
+      "W13"
+    ],
+    "design_implication": "Language/navigation capability must not answer for the patient or acquire representation authority.",
+    "original_condition": "Additional independent license/appointment, if any, must be established separately.",
+    "original_source_ids": [
+      "B23",
+      "R21",
+      "R28",
+      "A09"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D29",
+    "question": "Can a manager overrule a licensed professional on any task?",
+    "actors": [
+      "O12",
+      "U17",
+      "G04",
+      "G05"
+    ],
+    "packages": [
+      "W05",
+      "W08",
+      "W21"
+    ],
+    "design_implication": "The orchestrator allocates work; it cannot gain every clinical permission by being called a manager.",
+    "original_condition": "Actual organogram and professional/practice rules required.",
+    "original_source_ids": [
+      "B22",
+      "A13",
+      "A14",
+      "A03"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D30",
+    "question": "Does an EHR administrator have clinical editing authority?",
+    "actors": [
+      "G13",
+      "G14",
+      "C01"
+    ],
+    "packages": [
+      "W04",
+      "W22"
+    ],
+    "design_implication": "Technical write access must not be mistaken for authorized clinical authorship.",
+    "original_condition": "Hospital authentication A15 and applicable access controls.",
+    "original_source_ids": [
+      "A15",
+      "A10",
+      "B21"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D31",
+    "question": "Who decides equipment or transport suitability?",
+    "actors": [
+      "M25",
+      "M23",
+      "M24",
+      "C01"
+    ],
+    "packages": [
+      "W04",
+      "W17"
+    ],
+    "design_implication": "Logistics, clinical suitability and observed physical fulfillment need separate evidence.",
+    "original_condition": "Exact equipment/transport protocol not established universally; CMS device example is service-specific.",
+    "original_source_ids": [
+      "R11",
+      "R28",
+      "R30"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D32",
+    "question": "Who approves financial assistance or final payment?",
+    "actors": [
+      "O09",
+      "G15",
+      "O04"
+    ],
+    "packages": [
+      "W05",
+      "W23"
+    ],
+    "design_implication": "Track financial application/approval/payment separately from authorization and coverage.",
+    "original_condition": "Program and claim rules must be identified.",
+    "original_source_ids": [
+      "R06",
+      "R08",
+      "R09"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D33",
+    "question": "Does hospice team composition create one boss over every profession?",
+    "actors": [
+      "M28",
+      "C01",
+      "C06",
+      "M03",
+      "M29"
+    ],
+    "packages": [
+      "W04",
+      "W14",
+      "W18"
+    ],
+    "design_implication": "Decompose the composite hospice profile into IDG, RN, attending, certification/admission and support functions before assigning workers.",
+    "original_condition": "V11/V16/V17 establish that codified edition; a complete current-2026 update audit and actual hospice assignment are not established.",
+    "original_source_ids": [
+      "A08",
+      "R34",
+      "V11",
+      "V16",
+      "V17"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  },
+  {
+    "id": "D34",
+    "question": "Does a complaint to a regulator automatically reverse coverage?",
+    "actors": [
+      "G16",
+      "P07",
+      "U16"
+    ],
+    "packages": [
+      "W02",
+      "W12"
+    ],
+    "design_implication": "A complaint or regulator contact is not itself a coverage reversal; preserve actual route and observed outcome.",
+    "original_condition": "Agency jurisdiction and program rules determine action.",
+    "original_source_ids": [
+      "R35",
+      "A11",
+      "A12"
+    ],
+    "status": "SCOPED_PRIOR_CONTEXT_PLUS_PROPOSED_DESIGN_IMPLICATION"
+  }
+]

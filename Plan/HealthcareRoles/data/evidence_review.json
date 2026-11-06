@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-17",
+  "defined_inventory_adjudication_completed": true,
+  "reviewed_assertion_units": 2218,
+  "pending_assertion_units": 0,
+  "every_finding_confirmed_true": false,
+  "local_institutional_authority_confirmed": false,
+  "source_access_is_not_claim_verification": true,
+  "checked_core_rules": [
+    {
+      "id": "D12",
+      "source": "A02",
+      "locator": "42 CFR 422.566(d)",
+      "checked_claim": "Anticipated adverse MA medical-necessity determinations require appropriate physician or other licensed professional review with relevant expertise.",
+      "scope": "Core qualification requirement only; integrated-plan exception and actual case applicability must still be checked.",
+      "checked_date": "2026-10-17",
+      "displayed_edition": "Title 42 through 2026-10-15",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.566"
+    },
+    {
+      "id": "D13",
+      "source": "A03",
+      "locator": "42 CFR 422.590(h)(1)-(2)",
+      "checked_claim": "MA reconsiderers were not involved in the initial determination; medical-necessity denial reconsideration is made by an appropriately expert physician.",
+      "scope": "Specified MA reconsideration rule; not every product or dispute type.",
+      "checked_date": "2026-10-17",
+      "displayed_edition": "Title 42 through 2026-10-15",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.590"
+    },
+    {
+      "id": "D22",
+      "source": "A06",
+      "locator": "42 CFR 482.43(a)(5)",
+      "checked_claim": "Hospital discharge planning/evaluation is developed by or under an RN, social worker or other appropriately qualified personnel.",
+      "scope": "Hospital discharge-planning qualification requirement only; not sole medical discharge authority.",
+      "checked_date": "2026-10-17",
+      "displayed_edition": "Title 42 through 2026-10-15",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-C/section-482.43"
+    },
+    {
+      "id": "D23",
+      "source": "A07",
+      "locator": "42 CFR 484.60(a)(1)",
+      "checked_claim": "The specified home-health plan is established, reviewed and signed by a physician or allowed practitioner within scope; applicable additions are approved by the referring professional.",
+      "scope": "Core plan/signature and evaluation-addition rule; other order/revision statements retain their separate scope.",
+      "checked_date": "2026-10-17",
+      "displayed_edition": "Title 42 through 2026-10-15",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-484/subpart-B/section-484.60"
+    }
+  ],
+  "unconfirmed_models": {
+    "dependency_edges": 219,
+    "handoff_contracts": 46,
+    "service_interfaces": 97
+  },
+  "limitation": "All defined assertion units have scoped authored judgments, with alternatives and unresolved facts. Composite units and explicit models are included; not independent clinical/legal certification."
+}

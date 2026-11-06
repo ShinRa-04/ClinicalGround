@@ -1,0 +1,12 @@
+digraph "role-J03" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nJ03 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+G17 [label="G17\nLegal adviser / specialist \nlegal representative", URL="../index.html#G17", target="_top"];
+J02 [label="J02\nMedicare Appeals Council \nreviewer", URL="../index.html#J02", target="_top"];
+J03 [label="J03\nFederal district court in an \neligible Medicare appeal", URL="../index.html#J03", target="_top"];
+J02 -> J03 [label="DEP218", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G17 -> J03 [label="DEP219", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G17 -> J03 [label="S-J03 request", tooltip="Exhaustion, standing, filing and threshold conditions matter; the map is not a procedural filing guide."];
+J03 -> G17 [label="S-J03 response", tooltip="Exhaustion, standing, filing and threshold conditions matter; the map is not a procedural filing guide."];
+}

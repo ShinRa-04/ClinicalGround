@@ -1,0 +1,3273 @@
+[
+  {
+    "id": "P01",
+    "title": "Patient / insured member",
+    "package": "W01",
+    "representation": "external_actor",
+    "key_question": "Whose expressed preference is being recorded, and what observation establishes it?",
+    "distinction": "Patient answers must be observed; a simulated internal patient must never supply the benchmark patient response.",
+    "counterexample": "A coordinator writes consent because its own patient persona agreed.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "Represent related participants in one case model, with separate identities and statement attribution; do not replace them with a worker that supplies convenient answers.",
+    "retained_package_boundary": "Patient choice, caregiver observation and lawful representation are different facts. Family relationship does not establish decision authority.",
+    "split_trigger": "A merged record attributes caregiver wishes to the patient or treats missing consent as agreement.",
+    "evidence_role": "Plan/HealthcareRoles/roles/P01.md",
+    "evidence_source_ids": [
+      "A01",
+      "A09",
+      "R22"
+    ],
+    "linked_authority_questions": [
+      "D01",
+      "D18",
+      "D21"
+    ],
+    "original_scope": "Capacity, minors, emergencies and surrogate authority require applicable law and case facts; this is not a blanket consent rule.",
+    "original_evidence_limit": "Patient rights do not create entitlement to inappropriate treatment; capacity, minors and emergency rules require case-specific law.",
+    "suggested_input_context": [
+      "Understandable clinical explanation",
+      "Options and relevant coverage information"
+    ],
+    "suggested_output_context": [
+      "Preferences and reported history",
+      "Consent/refusal or request for clarification"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "P02",
+    "title": "Informal caregiver / family support person",
+    "package": "W01",
+    "representation": "external_actor",
+    "key_question": "Is this statement a caregiver observation or the patient’s own choice?",
+    "distinction": "Practical support and representative authority are separate.",
+    "counterexample": "Caregiver availability is mistaken for patient willingness.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "Represent related participants in one case model, with separate identities and statement attribution; do not replace them with a worker that supplies convenient answers.",
+    "retained_package_boundary": "Patient choice, caregiver observation and lawful representation are different facts. Family relationship does not establish decision authority.",
+    "split_trigger": "A merged record attributes caregiver wishes to the patient or treats missing consent as agreement.",
+    "evidence_role": "Plan/HealthcareRoles/roles/P02.md",
+    "evidence_source_ids": [
+      "R19",
+      "A09",
+      "R30"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Information sharing depends on permitted involvement; access is not automatically access to the entire record.",
+    "original_evidence_limit": "Being helpful or related does not by itself establish access to all records or substitute decision authority.",
+    "suggested_input_context": [
+      "Patient involvement preferences",
+      "Relevant instructions"
+    ],
+    "suggested_output_context": [
+      "Support availability and observations",
+      "Report of barriers or change"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "P03",
+    "title": "Legally recognized personal representative",
+    "package": "W01",
+    "representation": "external_actor",
+    "key_question": "What establishes this representative’s authority for this specific decision?",
+    "distinction": "Appointment/scope evidence belongs in state, not an assumed family-role prompt.",
+    "counterexample": "A family contact receives unrestricted records without applicable authority.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "Represent related participants in one case model, with separate identities and statement attribution; do not replace them with a worker that supplies convenient answers.",
+    "retained_package_boundary": "Patient choice, caregiver observation and lawful representation are different facts. Family relationship does not establish decision authority.",
+    "split_trigger": "A merged record attributes caregiver wishes to the patient or treats missing consent as agreement.",
+    "evidence_role": "Plan/HealthcareRoles/roles/P03.md",
+    "evidence_source_ids": [
+      "A09",
+      "A01",
+      "R19"
+    ],
+    "linked_authority_questions": [
+      "D01",
+      "D02",
+      "D27"
+    ],
+    "original_scope": "No universal national ordering of spouses, adult children or guardians is asserted; resolve governing state law and actual appointment.",
+    "original_evidence_limit": "Authority can be limited and safety exceptions exist. No universal national family-priority order is established.",
+    "suggested_input_context": [
+      "Authority instrument and applicable circumstances",
+      "Clinical explanation and patient preferences"
+    ],
+    "suggested_output_context": [
+      "Documented scope of representation",
+      "Decisions within scope"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "P04",
+    "title": "Appointed appeal representative",
+    "package": "W02",
+    "representation": "external_actor",
+    "key_question": "Does the appointment cover this dispute, this action and this stage?",
+    "distinction": "Dispute representation is not treatment consent or insurer decision power.",
+    "counterexample": "A generic advocate drafts an authorized signature it cannot substantiate.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "Shared navigation and document-preparation capability may support several functions, while appointments and authority remain explicit.",
+    "retained_package_boundary": "Appeal appointment is distinct from treatment representation; assistance is not insurer or adjudicator decision power.",
+    "split_trigger": "One general advocate label silently grants authority over every dispute or patient decision.",
+    "evidence_role": "Plan/HealthcareRoles/roles/P04.md",
+    "evidence_source_ids": [
+      "R20",
+      "R15",
+      "A11"
+    ],
+    "linked_authority_questions": [
+      "D02"
+    ],
+    "original_scope": "Verify standing, consent, route and deadlines from the actual notice; Medicare and commercial routes differ.",
+    "original_evidence_limit": "An appeal appointment does not establish treatment proxy authority; filing/standing details differ by product.",
+    "suggested_input_context": [
+      "Appointment/authority",
+      "Adverse notice and supporting record"
+    ],
+    "suggested_output_context": [
+      "Appeal submission",
+      "Procedural communications and patient updates"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "P05",
+    "title": "Healthcare interpreter / communication-access professional",
+    "package": "W03",
+    "representation": "communication_adapter",
+    "key_question": "Does the interpreter preserve speaker attribution and unanswered questions?",
+    "distinction": "Interpretation supports the conversation; it cannot create clinical answers.",
+    "counterexample": "An interpreter fills a missing assessment answer to keep dialogue moving.",
+    "conclusion": "Prefer a bounded language/communication capability; retain speaker, content and understanding distinctions.",
+    "merge_condition": "One language service can expose separate interpretation and translation operations; a persistent autonomous persona is not inherently needed.",
+    "retained_package_boundary": "Written fidelity, oral turn-taking, participant comprehension and substantive consent must remain distinguishable. Qualification is not proved by a language prompt.",
+    "split_trigger": "Translation drops a negation, invents an answer, or is recorded as informed understanding without evidence.",
+    "evidence_role": "Plan/HealthcareRoles/roles/P05.md",
+    "evidence_source_ids": [
+      "B23",
+      "R21"
+    ],
+    "linked_authority_questions": [
+      "D28"
+    ],
+    "original_scope": "Qualification and access arrangements must fit the communication need; interpreting is distinct from written translation.",
+    "original_evidence_limit": "Qualification, language and communication needs matter; no independent medical decision is conferred by interpreting.",
+    "suggested_input_context": [
+      "Speaker's actual message",
+      "Communication/language needs"
+    ],
+    "suggested_output_context": [
+      "Interpreted message",
+      "Clarification or access concern"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "P06",
+    "title": "Healthcare translator",
+    "package": "W03",
+    "representation": "communication_adapter",
+    "key_question": "Can the written output be checked for omissions, negation and ambiguity?",
+    "distinction": "Translation and comprehension are separate evidence.",
+    "counterexample": "A translated letter is recorded as proof the patient understood it.",
+    "conclusion": "Prefer a bounded language/communication capability; retain speaker, content and understanding distinctions.",
+    "merge_condition": "One language service can expose separate interpretation and translation operations; a persistent autonomous persona is not inherently needed.",
+    "retained_package_boundary": "Written fidelity, oral turn-taking, participant comprehension and substantive consent must remain distinguishable. Qualification is not proved by a language prompt.",
+    "split_trigger": "Translation drops a negation, invents an answer, or is recorded as informed understanding without evidence.",
+    "evidence_role": "Plan/HealthcareRoles/roles/P06.md",
+    "evidence_source_ids": [
+      "B23",
+      "R21"
+    ],
+    "linked_authority_questions": [
+      "D28"
+    ],
+    "original_scope": "Language/format needs and quality review are organization-specific; the document author retains substantive responsibility.",
+    "original_evidence_limit": "Producing a translation does not demonstrate comprehension or valid consent.",
+    "suggested_input_context": [
+      "Authoritative document version",
+      "Target language and audience needs"
+    ],
+    "suggested_output_context": [
+      "Translated version with provenance",
+      "Questions about ambiguous source text"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "P07",
+    "title": "Patient-relations advocate",
+    "package": "W02",
+    "representation": "external_actor",
+    "key_question": "Is this an access complaint, clinical issue or formal appeal?",
+    "distinction": "Navigation may be shared; case resolution authority must be identified.",
+    "counterexample": "A patient-relations response is treated as a coverage reversal.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "Shared navigation and document-preparation capability may support several functions, while appointments and authority remain explicit.",
+    "retained_package_boundary": "Appeal appointment is distinct from treatment representation; assistance is not insurer or adjudicator decision power.",
+    "split_trigger": "One general advocate label silently grants authority over every dispute or patient decision.",
+    "evidence_role": "Plan/HealthcareRoles/roles/P07.md",
+    "evidence_source_ids": [
+      "R04",
+      "A01",
+      "R35"
+    ],
+    "linked_authority_questions": [
+      "D34"
+    ],
+    "original_scope": "A complaint about service and an appeal of a coverage decision are separate routes; a job title does not establish appointment.",
+    "original_evidence_limit": "Patient advocacy title alone does not confer legal representation or power to reverse coverage.",
+    "suggested_input_context": [
+      "Patient concern",
+      "Relevant service/process facts"
+    ],
+    "suggested_output_context": [
+      "Routed complaint",
+      "Response tracking and explanation"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "C01",
+    "title": "Ordering / treating physician",
+    "package": "W04",
+    "representation": "external_actor",
+    "key_question": "Which clinical facts/orders were actually authored by the treating professional?",
+    "distinction": "The solver may organize evidence without impersonating the author.",
+    "counterexample": "A stronger medical rationale is invented and attributed to the physician.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "A shared evidence-request adapter may serve these contacts; that is an interface merger, not one interchangeable clinical occupation.",
+    "retained_package_boundary": "Credential, jurisdiction, privileges, authorship and treating relationship remain distinct; reading a chart is not performing treatment or acquiring prescribing authority.",
+    "split_trigger": "The harness fabricates a clinician statement or treats every clinical title as equivalent signatory permission.",
+    "evidence_role": "Plan/HealthcareRoles/roles/C01.md",
+    "evidence_source_ids": [
+      "B01",
+      "A01",
+      "A15",
+      "R01"
+    ],
+    "linked_authority_questions": [
+      "D01",
+      "D03",
+      "D06",
+      "D08",
+      "D09",
+      "D18",
+      "D23",
+      "D25",
+      "D30",
+      "D31",
+      "D33"
+    ],
+    "original_scope": "License, privileges and clinical setting control the activity; this is not a hierarchy over insurer employees.",
+    "original_evidence_limit": "Clinical recommendation, patient participation and coverage are separate functions; privileges and jurisdiction remain local facts.",
+    "suggested_input_context": [
+      "Patient history and examination",
+      "Results and specialist information"
+    ],
+    "suggested_output_context": [
+      "Authenticated clinical note/order",
+      "Clinical rationale and instructions"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "C02",
+    "title": "Referring / primary-care clinician",
+    "package": "W04",
+    "representation": "external_actor",
+    "key_question": "Does the referral establish an indication, an order, or only a request for evaluation?",
+    "distinction": "Referral and authorization functions can share tracking but retain different authors.",
+    "counterexample": "A referral becomes specialist acceptance without a receiving response.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "A shared evidence-request adapter may serve these contacts; that is an interface merger, not one interchangeable clinical occupation.",
+    "retained_package_boundary": "Credential, jurisdiction, privileges, authorship and treating relationship remain distinct; reading a chart is not performing treatment or acquiring prescribing authority.",
+    "split_trigger": "The harness fabricates a clinician statement or treats every clinical title as equivalent signatory permission.",
+    "evidence_role": "Plan/HealthcareRoles/roles/C02.md",
+    "evidence_source_ids": [
+      "B01",
+      "R22"
+    ],
+    "linked_authority_questions": [
+      "D04",
+      "D21"
+    ],
+    "original_scope": "May be a physician, NP or PA under the relevant professional rules; this is a functional role, not an additional credential.",
+    "original_evidence_limit": "A referral is not insurance authorization; receiving-specialist input does not prove a universal reporting hierarchy.",
+    "suggested_input_context": [
+      "Patient needs",
+      "Existing clinical record"
+    ],
+    "suggested_output_context": [
+      "Referral and clinical question",
+      "Follow-up clinical plan"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "C03",
+    "title": "Treating / performing specialist",
+    "package": "W04",
+    "representation": "external_actor",
+    "key_question": "What specialty evidence is available and which missing assessment needs an external contribution?",
+    "distinction": "Specialty framing is not evidence that an examination or procedure occurred.",
+    "counterexample": "A specialist persona supplies a result absent from the permitted record.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "A shared evidence-request adapter may serve these contacts; that is an interface merger, not one interchangeable clinical occupation.",
+    "retained_package_boundary": "Credential, jurisdiction, privileges, authorship and treating relationship remain distinct; reading a chart is not performing treatment or acquiring prescribing authority.",
+    "split_trigger": "The harness fabricates a clinician statement or treats every clinical title as equivalent signatory permission.",
+    "evidence_role": "Plan/HealthcareRoles/roles/C03.md",
+    "evidence_source_ids": [
+      "B01",
+      "R01",
+      "R22"
+    ],
+    "linked_authority_questions": [
+      "D03",
+      "D04"
+    ],
+    "original_scope": "Clinical responsibility must be assigned for the actual service; specialist is not necessarily the organizational supervisor of the PCP.",
+    "original_evidence_limit": "Specialty expertise does not itself establish final signoff over every PCP decision or coverage.",
+    "suggested_input_context": [
+      "Referral question",
+      "Relevant history/results and patient preferences"
+    ],
+    "suggested_output_context": [
+      "Specialist assessment",
+      "Proposed service and clinical report"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "C04",
+    "title": "Nurse practitioner",
+    "package": "W04",
+    "representation": "external_actor",
+    "key_question": "Which jurisdiction, practice category, furnishing authority and employer conditions apply?",
+    "distinction": "One clinician interface can support several credentials without treating them as interchangeable.",
+    "counterexample": "The harness converts an NP role prompt into universal independent prescribing permission.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "A shared evidence-request adapter may serve these contacts; that is an interface merger, not one interchangeable clinical occupation.",
+    "retained_package_boundary": "Credential, jurisdiction, privileges, authorship and treating relationship remain distinct; reading a chart is not performing treatment or acquiring prescribing authority.",
+    "split_trigger": "The harness fabricates a clinician statement or treats every clinical title as equivalent signatory permission.",
+    "evidence_role": "Plan/HealthcareRoles/roles/C04.md",
+    "evidence_source_ids": [
+      "B03",
+      "A14",
+      "A07",
+      "V02"
+    ],
+    "linked_authority_questions": [
+      "D03",
+      "D05",
+      "D23"
+    ],
+    "original_scope": "Specify state, population focus, privileges and any required practice arrangement before concluding independent authority. California examples separate practice category, furnishing authority and employer requirements. Prospective 104-availability wording is not proof of present individual certification or application availability.",
+    "original_evidence_limit": "California page includes prospective/stale 104 availability wording. Its pathway description does not verify current certification of an individual or present application availability.",
+    "suggested_input_context": [
+      "History/findings",
+      "Current plan and professional permissions"
+    ],
+    "suggested_output_context": [
+      "Clinical assessment/orders within scope",
+      "Follow-up instructions"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "C05",
+    "title": "Physician assistant / associate (jurisdiction-specific title)",
+    "package": "W04",
+    "representation": "external_actor",
+    "key_question": "Does the applicable arrangement require supervision, collaboration or another defined condition?",
+    "distinction": "Terminology and practice arrangement vary; fixed national hierarchy is unsupported.",
+    "counterexample": "A universal physician-signoff requirement is imposed or removed without evidence.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "A shared evidence-request adapter may serve these contacts; that is an interface merger, not one interchangeable clinical occupation.",
+    "retained_package_boundary": "Credential, jurisdiction, privileges, authorship and treating relationship remain distinct; reading a chart is not performing treatment or acquiring prescribing authority.",
+    "split_trigger": "The harness fabricates a clinician statement or treats every clinical title as equivalent signatory permission.",
+    "evidence_role": "Plan/HealthcareRoles/roles/C05.md",
+    "evidence_source_ids": [
+      "B02",
+      "A15",
+      "V03"
+    ],
+    "linked_authority_questions": [
+      "D03",
+      "D06",
+      "D23"
+    ],
+    "original_scope": "PA means physician assistant in this profile; prior authorization is written out to avoid acronym confusion.",
+    "original_evidence_limit": "National occupational summaries are not substitutes for state practice law. Physician assistant/associate terminology itself varies.",
+    "suggested_input_context": [
+      "Patient history/results",
+      "Applicable practice arrangement"
+    ],
+    "suggested_output_context": [
+      "Clinical assessment and authorized orders",
+      "Progress documentation"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "C06",
+    "title": "Registered nurse providing direct care",
+    "package": "W04",
+    "representation": "external_actor",
+    "key_question": "Is the task nursing assessment, care coordination or direct service documentation?",
+    "distinction": "The same RN may hold several functions; the assigned function and observed work still matter.",
+    "counterexample": "A care-coordination note is recorded as a completed nursing visit.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "A shared evidence-request adapter may serve these contacts; that is an interface merger, not one interchangeable clinical occupation.",
+    "retained_package_boundary": "Credential, jurisdiction, privileges, authorship and treating relationship remain distinct; reading a chart is not performing treatment or acquiring prescribing authority.",
+    "split_trigger": "The harness fabricates a clinician statement or treats every clinical title as equivalent signatory permission.",
+    "evidence_role": "Plan/HealthcareRoles/roles/C06.md",
+    "evidence_source_ids": [
+      "B04",
+      "A13",
+      "A14"
+    ],
+    "linked_authority_questions": [
+      "D07",
+      "D22",
+      "D33"
+    ],
+    "original_scope": "A direct-care RN, payer UM nurse and nurse case manager are different functions even if one person can hold more than one role.",
+    "original_evidence_limit": "Assignment is not evidence of legal delegation; additional APRN authority cannot be inferred from RN status alone.",
+    "suggested_input_context": [
+      "Orders/care plan",
+      "Nursing assessment and observations"
+    ],
+    "suggested_output_context": [
+      "Nursing documentation",
+      "Education and change/escalation report"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "C07",
+    "title": "Licensed practical / vocational nurse",
+    "package": "W04",
+    "representation": "external_actor",
+    "key_question": "What activity is permitted under the actual license and supervision arrangement?",
+    "distinction": "Shared nursing data does not erase RN/LPN role differences.",
+    "counterexample": "A merged nursing agent inherits the most permissive scope of either label.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "A shared evidence-request adapter may serve these contacts; that is an interface merger, not one interchangeable clinical occupation.",
+    "retained_package_boundary": "Credential, jurisdiction, privileges, authorship and treating relationship remain distinct; reading a chart is not performing treatment or acquiring prescribing authority.",
+    "split_trigger": "The harness fabricates a clinician statement or treats every clinical title as equivalent signatory permission.",
+    "evidence_role": "Plan/HealthcareRoles/roles/C07.md",
+    "evidence_source_ids": [
+      "B05",
+      "A13",
+      "A14"
+    ],
+    "linked_authority_questions": [
+      "D07"
+    ],
+    "original_scope": "State law and setting determine supervision and permitted activities; staffing title alone is insufficient.",
+    "original_evidence_limit": "No national assertion is made about IV therapy, independent assessment or direct supervision in a particular case.",
+    "suggested_input_context": [
+      "Assigned plan and supervision",
+      "Patient observations"
+    ],
+    "suggested_output_context": [
+      "Care/task record",
+      "Reported changes and concerns"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "C08",
+    "title": "Medical assistant / clinical-support assistant",
+    "package": "W04",
+    "representation": "external_actor",
+    "key_question": "Which administrative/support observation needs review by an authorized clinician?",
+    "distinction": "Clinical support can share collection tools without autonomous medical conclusions.",
+    "counterexample": "Rooming/support information becomes an independent diagnosis.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "A shared evidence-request adapter may serve these contacts; that is an interface merger, not one interchangeable clinical occupation.",
+    "retained_package_boundary": "Credential, jurisdiction, privileges, authorship and treating relationship remain distinct; reading a chart is not performing treatment or acquiring prescribing authority.",
+    "split_trigger": "The harness fabricates a clinician statement or treats every clinical title as equivalent signatory permission.",
+    "evidence_role": "Plan/HealthcareRoles/roles/C08.md",
+    "evidence_source_ids": [
+      "B06",
+      "A15",
+      "B02"
+    ],
+    "linked_authority_questions": [
+      "D07"
+    ],
+    "original_scope": "Specific clinical tasks depend on state rules and training; this role is not interchangeable with a physician assistant.",
+    "original_evidence_limit": "Job assignment or training alone cannot establish every clinical permission.",
+    "suggested_input_context": [
+      "Clinician instructions",
+      "Patient information and task queue"
+    ],
+    "suggested_output_context": [
+      "Entered observations and administrative updates",
+      "Questions requiring clinician response"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "O01",
+    "title": "Provider authorization / precertification specialist",
+    "package": "W05",
+    "representation": "task_scoped_worker",
+    "key_question": "What observable event shows the supported request was submitted and what remains unresolved?",
+    "distinction": "Preparation, submission, receipt and outcome must remain separate.",
+    "counterexample": "A polished packet is reported as submitted without a tool receipt.",
+    "conclusion": "Candidate workflow-owner function when the actual task assigns it; retain explicit role modes and observed completion obligations.",
+    "merge_condition": "These operations can share a case record and an accountable workflow owner; combining them may reduce summary handoffs.",
+    "retained_package_boundary": "Identity, coverage verification, authorization outcome, financial estimate and service booking are different states. Management rank does not confer clinical power.",
+    "split_trigger": "Measured merged execution repeatedly confuses administrative states, loses obligations or lacks genuinely different access scopes.",
+    "evidence_role": "Plan/HealthcareRoles/roles/O01.md",
+    "evidence_source_ids": [
+      "R04",
+      "R12",
+      "R05"
+    ],
+    "linked_authority_questions": [
+      "D10"
+    ],
+    "original_scope": "Works for requester; not payer intake. Local payer requirements and request stage determine the needed packet.",
+    "original_evidence_limit": "Requests, receipt, approval, scheduling and delivery are distinct events; title alone does not grant clinical decision authority.",
+    "suggested_input_context": [
+      "Clinician order/rationale",
+      "Patient/benefit details and records"
+    ],
+    "suggested_output_context": [
+      "Authorization packet and submission receipt",
+      "Status/outcome and pending-work record"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "O02",
+    "title": "Referral coordinator",
+    "package": "W05",
+    "representation": "role_mode",
+    "key_question": "Who owns the unanswered referral and what shows it reached the receiver?",
+    "distinction": "Common tracking can merge with authorization, but referral acceptance is its own event.",
+    "counterexample": "A sent referral is mistaken for accepted service.",
+    "conclusion": "Candidate explicit mode of a shared workflow owner, conditional on scope and measured context/coordination behavior.",
+    "merge_condition": "These operations can share a case record and an accountable workflow owner; combining them may reduce summary handoffs.",
+    "retained_package_boundary": "Identity, coverage verification, authorization outcome, financial estimate and service booking are different states. Management rank does not confer clinical power.",
+    "split_trigger": "Measured merged execution repeatedly confuses administrative states, loses obligations or lacks genuinely different access scopes.",
+    "evidence_role": "Plan/HealthcareRoles/roles/O02.md",
+    "evidence_source_ids": [
+      "R05",
+      "R22"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "May share a job with scheduling or authorization; preserve those functions as separate milestones.",
+    "original_evidence_limit": "Closed-loop follow-up is a coordination recommendation, not a nationally prescribed form or signoff sequence.",
+    "suggested_input_context": [
+      "Referral and contact information",
+      "Receiving-service requirements"
+    ],
+    "suggested_output_context": [
+      "Routed referral",
+      "Acceptance/appointment or unresolved-referral status"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "O03",
+    "title": "Registration / patient-access representative",
+    "package": "W05",
+    "representation": "tool_supported_mode",
+    "key_question": "Which identifiers prove the evidence and task concern the same case?",
+    "distinction": "Identity checking should be explicit even when the same worker assembles the packet.",
+    "counterexample": "A similar-name record is merged into the wrong case.",
+    "conclusion": "Prefer explicit identifiers/validation plus a scoped operation; a distinct persona is not inherently necessary.",
+    "merge_condition": "These operations can share a case record and an accountable workflow owner; combining them may reduce summary handoffs.",
+    "retained_package_boundary": "Identity, coverage verification, authorization outcome, financial estimate and service booking are different states. Management rank does not confer clinical power.",
+    "split_trigger": "Measured merged execution repeatedly confuses administrative states, loses obligations or lacks genuinely different access scopes.",
+    "evidence_role": "Plan/HealthcareRoles/roles/O03.md",
+    "evidence_source_ids": [
+      "R06",
+      "B20"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Identity, benefits verification and authorization are distinct checks even if performed by the same employee.",
+    "original_evidence_limit": "Actual identity-matching procedure and permitted correction rights are institution-specific.",
+    "suggested_input_context": [
+      "Patient-supplied identifiers",
+      "Existing registration record"
+    ],
+    "suggested_output_context": [
+      "Verified or unresolved demographic/insurance details",
+      "Encounter record"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "O04",
+    "title": "Provider insurance-verification / benefits specialist",
+    "package": "W05",
+    "representation": "role_mode",
+    "key_question": "Is this a benefit fact, an authorization requirement or a guarantee of payment?",
+    "distinction": "Benefits lookup can share the workflow owner without deciding clinical necessity.",
+    "counterexample": "Verified benefits are treated as service approval.",
+    "conclusion": "Candidate explicit mode of a shared workflow owner, conditional on scope and measured context/coordination behavior.",
+    "merge_condition": "These operations can share a case record and an accountable workflow owner; combining them may reduce summary handoffs.",
+    "retained_package_boundary": "Identity, coverage verification, authorization outcome, financial estimate and service booking are different states. Management rank does not confer clinical power.",
+    "split_trigger": "Measured merged execution repeatedly confuses administrative states, loses obligations or lacks genuinely different access scopes.",
+    "evidence_role": "Plan/HealthcareRoles/roles/O04.md",
+    "evidence_source_ids": [
+      "R06",
+      "R11"
+    ],
+    "linked_authority_questions": [
+      "D10",
+      "D32"
+    ],
+    "original_scope": "Uses plan-specific information; a coverage estimate is not final claim adjudication.",
+    "original_evidence_limit": "Verification and cost estimates do not guarantee coverage or final payment; exact benefit interpretations require the plan.",
+    "suggested_input_context": [
+      "Insurance identifiers",
+      "Proposed service and payer response"
+    ],
+    "suggested_output_context": [
+      "Benefits/requirement record",
+      "Unresolved coverage questions"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "O05",
+    "title": "Scheduler / procedure coordinator",
+    "package": "W05",
+    "representation": "role_mode",
+    "key_question": "What prerequisites and actual capacity must be satisfied before booking?",
+    "distinction": "Scheduling may merge administratively; booked, cleared and performed remain distinct.",
+    "counterexample": "A scheduled visit closes the care-completion obligation.",
+    "conclusion": "Candidate explicit mode of a shared workflow owner, conditional on scope and measured context/coordination behavior.",
+    "merge_condition": "These operations can share a case record and an accountable workflow owner; combining them may reduce summary handoffs.",
+    "retained_package_boundary": "Identity, coverage verification, authorization outcome, financial estimate and service booking are different states. Management rank does not confer clinical power.",
+    "split_trigger": "Measured merged execution repeatedly confuses administrative states, loses obligations or lacks genuinely different access scopes.",
+    "evidence_role": "Plan/HealthcareRoles/roles/O05.md",
+    "evidence_source_ids": [
+      "R04",
+      "R05"
+    ],
+    "linked_authority_questions": [
+      "D24"
+    ],
+    "original_scope": "Scheduling may occur before authorization, but completion/readiness must not be inferred from booking alone.",
+    "original_evidence_limit": "A booking is not proof of clinical readiness, consent, authorization or service completion.",
+    "suggested_input_context": [
+      "Referral/order",
+      "Availability and recorded prerequisite status"
+    ],
+    "suggested_output_context": [
+      "Appointment/booking record",
+      "Instructions and unmet-prerequisite report"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "O06",
+    "title": "HIM / release-of-information specialist",
+    "package": "W06",
+    "representation": "bounded_capability",
+    "key_question": "What records may be released for this purpose and who authored them?",
+    "distinction": "Authenticity, release authority and clinical meaning need separate provenance.",
+    "counterexample": "The evidence worker fabricates a missing clinical detail while assembling records.",
+    "conclusion": "Candidate reusable evidence/checking capability; autonomous persistence needs a measured reason.",
+    "merge_condition": "A bounded evidence-preparation capability can combine retrieval and consistency checks without multiple autonomous writers.",
+    "retained_package_boundary": "Record release, coding interpretation, clinical clarification and authentication are distinct. Staff must not create unsupported clinical facts.",
+    "split_trigger": "A merged evidence worker silently repairs a clinical fact instead of requesting clarification or preserving uncertainty.",
+    "evidence_role": "Plan/HealthcareRoles/roles/O06.md",
+    "evidence_source_ids": [
+      "R07",
+      "B20",
+      "A10",
+      "A15",
+      "V15"
+    ],
+    "linked_authority_questions": [
+      "D08",
+      "D27"
+    ],
+    "original_scope": "Purpose matters: HIPAA minimum-necessary exceptions include specified treatment disclosures; other privacy requirements can still apply.",
+    "original_evidence_limit": "No blanket written-consent rule for every treatment disclosure; exceptions do not remove other privacy protections.",
+    "suggested_input_context": [
+      "Record request and purpose",
+      "Identity/authority and record location"
+    ],
+    "suggested_output_context": [
+      "Released records and provenance",
+      "Access/release question or exception"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "O07",
+    "title": "Medical coding specialist",
+    "package": "W06",
+    "representation": "bounded_capability",
+    "key_question": "Does a code reflect supplied documentation or an unsupported diagnostic inference?",
+    "distinction": "Code suggestions can be a module; they do not establish new clinical facts.",
+    "counterexample": "A billing code is used to prove a diagnosis absent clinical support.",
+    "conclusion": "Candidate reusable evidence/checking capability; autonomous persistence needs a measured reason.",
+    "merge_condition": "A bounded evidence-preparation capability can combine retrieval and consistency checks without multiple autonomous writers.",
+    "retained_package_boundary": "Record release, coding interpretation, clinical clarification and authentication are distinct. Staff must not create unsupported clinical facts.",
+    "split_trigger": "A merged evidence worker silently repairs a clinical fact instead of requesting clarification or preserving uncertainty.",
+    "evidence_role": "Plan/HealthcareRoles/roles/O07.md",
+    "evidence_source_ids": [
+      "B20",
+      "R08",
+      "A15"
+    ],
+    "linked_authority_questions": [
+      "D09"
+    ],
+    "original_scope": "Authorization and claims can involve different code requirements; this role is conditional, not mandatory on every case.",
+    "original_evidence_limit": "Code assignment is not independent diagnosis or coverage adjudication.",
+    "suggested_input_context": [
+      "Authenticated documentation",
+      "Relevant coding requirements"
+    ],
+    "suggested_output_context": [
+      "Supported code assignment",
+      "Documentation/coding query"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "O08",
+    "title": "Clinical-documentation-integrity specialist",
+    "package": "W06",
+    "representation": "bounded_capability",
+    "key_question": "Should an inconsistency trigger a clarification query rather than an automated repair?",
+    "distinction": "Documentation consistency review can be shared; substantive corrections require appropriate authorship.",
+    "counterexample": "The agent resolves a conflict by silently rewriting the clinical source.",
+    "conclusion": "Candidate reusable evidence/checking capability; autonomous persistence needs a measured reason.",
+    "merge_condition": "A bounded evidence-preparation capability can combine retrieval and consistency checks without multiple autonomous writers.",
+    "retained_package_boundary": "Record release, coding interpretation, clinical clarification and authentication are distinct. Staff must not create unsupported clinical facts.",
+    "split_trigger": "A merged evidence worker silently repairs a clinical fact instead of requesting clarification or preserving uncertainty.",
+    "evidence_role": "Plan/HealthcareRoles/roles/O08.md",
+    "evidence_source_ids": [
+      "R08",
+      "B20",
+      "A15"
+    ],
+    "linked_authority_questions": [
+      "D08",
+      "D09"
+    ],
+    "original_scope": "Documentation improvement is not permission to rewrite clinical facts to match coverage criteria.",
+    "original_evidence_limit": "Clinical author authentication and permitted correction remain setting-specific; clarification is not permission to invent diagnoses.",
+    "suggested_input_context": [
+      "Clinical record",
+      "Coding/denial question"
+    ],
+    "suggested_output_context": [
+      "Clarification query",
+      "Documentation-quality finding"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "O09",
+    "title": "Financial counselor / assistance specialist",
+    "package": "W05",
+    "representation": "role_mode",
+    "key_question": "Which affordability barrier and assistance option are actually supported?",
+    "distinction": "Financial coordination can merge with access work; eligibility/awards remain observed outcomes.",
+    "counterexample": "An assistance application is reported as approved funding.",
+    "conclusion": "Candidate explicit mode of a shared workflow owner, conditional on scope and measured context/coordination behavior.",
+    "merge_condition": "These operations can share a case record and an accountable workflow owner; combining them may reduce summary handoffs.",
+    "retained_package_boundary": "Identity, coverage verification, authorization outcome, financial estimate and service booking are different states. Management rank does not confer clinical power.",
+    "split_trigger": "Measured merged execution repeatedly confuses administrative states, loses obligations or lacks genuinely different access scopes.",
+    "evidence_role": "Plan/HealthcareRoles/roles/O09.md",
+    "evidence_source_ids": [
+      "R06",
+      "R09"
+    ],
+    "linked_authority_questions": [
+      "D32"
+    ],
+    "original_scope": "Estimates, assistance approvals, authorization and final claims are separate records and decisions.",
+    "original_evidence_limit": "The counselor does not automatically decide assistance eligibility, benefit coverage or final claim payment.",
+    "suggested_input_context": [
+      "Patient financial concerns",
+      "Benefits/cost information and program criteria"
+    ],
+    "suggested_output_context": [
+      "Cost explanation/estimate",
+      "Assistance application or referral"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "O10",
+    "title": "Provider denial / appeal specialist",
+    "package": "W07",
+    "representation": "task_scoped_worker",
+    "key_question": "Which dispute route preserves the correct issue, standing and filing status?",
+    "distinction": "Administrative dispute preparation can be shared without impersonating clinical peer review.",
+    "counterexample": "A complaint or peer discussion is treated as a filed formal appeal.",
+    "conclusion": "Candidate workflow-owner function when the actual task assigns it; retain explicit role modes and observed completion obligations.",
+    "merge_condition": "Administrative filing preparation and evidence collection may share a workflow; clinical peer participation remains an explicitly authorized interface.",
+    "retained_package_boundary": "Peer discussion is not automatically formal appeal; filing, clinical argument, appointment, deadline and acceptance are separate.",
+    "split_trigger": "A merged job claims a successful appeal from a peer-discussion note or submits an unattributed clinical opinion.",
+    "evidence_role": "Plan/HealthcareRoles/roles/O10.md",
+    "evidence_source_ids": [
+      "R04",
+      "R08",
+      "R15",
+      "R20"
+    ],
+    "linked_authority_questions": [
+      "D14"
+    ],
+    "original_scope": "Separate pre-service authorization disputes from post-service claim denials; actual notice determines route and deadlines.",
+    "original_evidence_limit": "Standing and representation need separate verification; a billing/appeal job title is not a patient appointment.",
+    "suggested_input_context": [
+      "Adverse notice",
+      "Request/record and representation information"
+    ],
+    "suggested_output_context": [
+      "Appeal/correction packet",
+      "Submission tracking and unresolved issues"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "O11",
+    "title": "Provider physician adviser / peer-discussion clinician",
+    "package": "W07",
+    "representation": "external_actor",
+    "key_question": "What actual clinician contribution is required for this peer exchange?",
+    "distinction": "Clinical argument and filing mechanics have different owners even if software coordinates both.",
+    "counterexample": "A local reviewer persona is presented as the real participating physician.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "Administrative filing preparation and evidence collection may share a workflow; clinical peer participation remains an explicitly authorized interface.",
+    "retained_package_boundary": "Peer discussion is not automatically formal appeal; filing, clinical argument, appointment, deadline and acceptance are separate.",
+    "split_trigger": "A merged job claims a successful appeal from a peer-discussion note or submits an unattributed clinical opinion.",
+    "evidence_role": "Plan/HealthcareRoles/roles/O11.md",
+    "evidence_source_ids": [
+      "R15",
+      "B01"
+    ],
+    "linked_authority_questions": [
+      "D14"
+    ],
+    "original_scope": "May be the treating physician rather than a separate employee; duties depend on relationship to the patient and organization.",
+    "original_evidence_limit": "Payer-specific timing text differs between retrieved views. No deadline or preservation rule is inferred from a generic peer-discussion label.",
+    "suggested_input_context": [
+      "Clinical evidence and denial rationale",
+      "Question for peer discussion"
+    ],
+    "suggested_output_context": [
+      "Clinical opinion/discussion record",
+      "Recommended next clinical/procedural action"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "O12",
+    "title": "Practice / patient-access supervisor",
+    "package": "W05",
+    "representation": "configuration_or_escalation",
+    "key_question": "Is the issue workload/process authority or a substantive clinical/coverage decision?",
+    "distinction": "Operational supervision can be a routing policy; it does not enlarge permissions.",
+    "counterexample": "A supervisor override bypasses a clinical requirement.",
+    "conclusion": "Represent assignment/routing rules explicitly; interpret/escalate only when the actual task requires it.",
+    "merge_condition": "These operations can share a case record and an accountable workflow owner; combining them may reduce summary handoffs.",
+    "retained_package_boundary": "Identity, coverage verification, authorization outcome, financial estimate and service booking are different states. Management rank does not confer clinical power.",
+    "split_trigger": "Measured merged execution repeatedly confuses administrative states, loses obligations or lacks genuinely different access scopes.",
+    "evidence_role": "Plan/HealthcareRoles/roles/O12.md",
+    "evidence_source_ids": [
+      "B22",
+      "R04"
+    ],
+    "linked_authority_questions": [
+      "D29"
+    ],
+    "original_scope": "Specific reporting lines are organization-specific and are not inferred from a generic title.",
+    "original_evidence_limit": "Operational reporting rank does not establish clinical license or insurer signoff authority.",
+    "suggested_input_context": [
+      "Queue/status reports",
+      "Staff/process problems"
+    ],
+    "suggested_output_context": [
+      "Work assignment and process resolution",
+      "Escalated clinical/privacy issues"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "O13",
+    "title": "External diagnostic / clinical evidence author or custodian",
+    "package": "W04",
+    "representation": "external_actor",
+    "key_question": "Can the result be traced to an actual test, assessor, document or custodian?",
+    "distinction": "Evidence requests and evidence creation cannot collapse into the same unsupported assertion.",
+    "counterexample": "The harness invents a missing external result to complete the packet.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "A shared evidence-request adapter may serve these contacts; that is an interface merger, not one interchangeable clinical occupation.",
+    "retained_package_boundary": "Credential, jurisdiction, privileges, authorship and treating relationship remain distinct; reading a chart is not performing treatment or acquiring prescribing authority.",
+    "split_trigger": "The harness fabricates a clinician statement or treats every clinical title as equivalent signatory permission.",
+    "evidence_role": "Plan/HealthcareRoles/roles/O13.md",
+    "evidence_source_ids": [
+      "A15",
+      "B01",
+      "B20"
+    ],
+    "linked_authority_questions": [
+      "D08"
+    ],
+    "original_scope": "This is an evidence-supply function spanning distinct professions, not a claim that laboratory staff, radiologists and therapists have identical permissions.",
+    "original_evidence_limit": "The report author and person transmitting it may be different people with different permissions.",
+    "suggested_input_context": [
+      "Relevant order/referral",
+      "Findings or existing source record"
+    ],
+    "suggested_output_context": [
+      "Authenticated report/result",
+      "Record availability or correction response"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U01",
+    "title": "Payer UM intake coordinator",
+    "package": "W08",
+    "representation": "task_scoped_worker",
+    "key_question": "Is this collection/routing or an explicitly delegated limited nonclinical decision?",
+    "distinction": "Do not prohibit every nonclinical approval or grant unrestricted denial power.",
+    "counterexample": "An intake case is denied for medical necessity by an unqualified administrative mode.",
+    "conclusion": "Candidate workflow-owner function when the actual task assigns it; retain explicit role modes and observed completion obligations.",
+    "merge_condition": "A common payer case owner can combine collection and service/status functions with role-scoped operations.",
+    "retained_package_boundary": "Limited delegated nonclinical decisions are program-specific; medical-necessity denial and general benefits/status work remain different permissions.",
+    "split_trigger": "Status communication becomes an invented determination, or a clinically complete review is forced after a valid administrative terminal path.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U01.md",
+    "evidence_source_ids": [
+      "R12",
+      "R13"
+    ],
+    "linked_authority_questions": [
+      "D11"
+    ],
+    "original_scope": "Different employer/function from provider authorization specialist; decisions follow the actual plan/delegation. R13 describes some limited nonclinical approvals and assigned benefit-only decisions; it is not a national permission or medical-necessity-denial grant.",
+    "original_evidence_limit": "This is organization-specific delegation. Clinical medical-necessity denial is treated differently from benefit-only decisions; do not infer national authority.",
+    "suggested_input_context": [
+      "Provider request and identifiers",
+      "Submitted records"
+    ],
+    "suggested_output_context": [
+      "Review case/queue item",
+      "Missing-information/status communication"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U02",
+    "title": "Payer eligibility / benefit specialist",
+    "package": "W08",
+    "representation": "role_mode",
+    "key_question": "Which product/eligibility facts authorize this particular administrative outcome?",
+    "distinction": "Benefit-only and medical-necessity conclusions remain distinct.",
+    "counterexample": "A coverage mismatch becomes an unsupported clinical denial.",
+    "conclusion": "Candidate explicit mode of a shared workflow owner, conditional on scope and measured context/coordination behavior.",
+    "merge_condition": "A common payer case owner can combine collection and service/status functions with role-scoped operations.",
+    "retained_package_boundary": "Limited delegated nonclinical decisions are program-specific; medical-necessity denial and general benefits/status work remain different permissions.",
+    "split_trigger": "Status communication becomes an invented determination, or a clinically complete review is forced after a valid administrative terminal path.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U02.md",
+    "evidence_source_ids": [
+      "R13",
+      "R16",
+      "A02"
+    ],
+    "linked_authority_questions": [
+      "D10",
+      "D11"
+    ],
+    "original_scope": "Exact benefit authority and decision notice are plan-specific; not every benefits specialist is authorized to issue a denial. R13 permits some assigned benefit-only decisions; actual signatory authority still requires the plan/delegation.",
+    "original_evidence_limit": "A benefits title alone does not establish signatory power. Administrative coverage exclusions and clinical medical necessity need different reasoning/review.",
+    "suggested_input_context": [
+      "Enrollment/benefit record",
+      "Requested service details"
+    ],
+    "suggested_output_context": [
+      "Benefit/eligibility finding",
+      "Administrative explanation or referral"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U03",
+    "title": "Payer nurse / licensed UM clinical reviewer",
+    "package": "W09",
+    "representation": "task_scoped_review_mode",
+    "key_question": "What can the initial reviewer conclude versus recommend or escalate?",
+    "distinction": "Reusable policy checks need an explicit review-stage and permission envelope.",
+    "counterexample": "The first-level mode assumes it can sign every denial.",
+    "conclusion": "Keep a distinct review-stage/permission contract; test separate reasoning context if it improves a defined review task.",
+    "merge_condition": "Shared policy/evidence machinery can serve distinct review modes; separate bounded reasoning calls may be useful for genuinely different questions.",
+    "retained_package_boundary": "Professional expertise, delegation, recommendation versus determination, and actual signoff remain separate. R13 signoff tension is unresolved; delegation may exclude appeals.",
+    "split_trigger": "A shared review mode crosses product/delegation limits, hides conflicting evidence or requires more independent expertise than its input supports.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U03.md",
+    "evidence_source_ids": [
+      "R12",
+      "R13",
+      "A02",
+      "A13"
+    ],
+    "linked_authority_questions": [
+      "D11",
+      "D12"
+    ],
+    "original_scope": "Under MA 422.566(d), anticipated adverse medical necessity requires appropriate licensed professional review; local policy may impose stricter physician escalation. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone.",
+    "original_evidence_limit": "R13 contains both medical-director final responsibility and a wider professional-denial list; exact signing/review authority requires its specific policy/delegation and product.",
+    "suggested_input_context": [
+      "Complete relevant records",
+      "Applicable criteria and authorized review scope"
+    ],
+    "suggested_output_context": [
+      "Clinical review and evidence gaps",
+      "Approval or escalated recommendation within scope"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U04",
+    "title": "Payer physician reviewer / medical director acting on a case",
+    "package": "W09",
+    "representation": "task_scoped_review_mode",
+    "key_question": "Which case decision is authorized, and is this person/function initial reviewer or reconsiderer?",
+    "distinction": "Expert review does not supply independence from an earlier determination.",
+    "counterexample": "A medical-director title is used to make a self-review independent.",
+    "conclusion": "Keep a distinct review-stage/permission contract; test separate reasoning context if it improves a defined review task.",
+    "merge_condition": "Shared policy/evidence machinery can serve distinct review modes; separate bounded reasoning calls may be useful for genuinely different questions.",
+    "retained_package_boundary": "Professional expertise, delegation, recommendation versus determination, and actual signoff remain separate. R13 signoff tension is unresolved; delegation may exclude appeals.",
+    "split_trigger": "A shared review mode crosses product/delegation limits, hides conflicting evidence or requires more independent expertise than its input supports.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U04.md",
+    "evidence_source_ids": [
+      "R12",
+      "R18",
+      "A02",
+      "A17"
+    ],
+    "linked_authority_questions": [
+      "D11",
+      "D12",
+      "D14",
+      "D18"
+    ],
+    "original_scope": "Case-review function is distinct from organization-wide CMO governance; authority depends on product, license, expertise and delegation. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone.",
+    "original_evidence_limit": "Initial review, final institutional accountability and independent reconsideration are separate; medical director is not a universal superior over the treating clinician.",
+    "suggested_input_context": [
+      "Review record and criteria",
+      "Escalation question"
+    ],
+    "suggested_output_context": [
+      "Clinical coverage rationale",
+      "Determination or request for further evidence"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U05",
+    "title": "Independent clinical / specialty consultant",
+    "package": "W09",
+    "representation": "bounded_specialist",
+    "key_question": "Is the consultant offering evidence/advice or issuing the authoritative determination?",
+    "distinction": "A fresh specialist context may broaden analysis without owning the decision.",
+    "counterexample": "A consultation recommendation is persisted as a final outcome without the authorized step.",
+    "conclusion": "Candidate on-demand specialist with a specific question and bounded evidence view; proposal by default, not assumed case-finalization authority.",
+    "merge_condition": "Shared policy/evidence machinery can serve distinct review modes; separate bounded reasoning calls may be useful for genuinely different questions.",
+    "retained_package_boundary": "Professional expertise, delegation, recommendation versus determination, and actual signoff remain separate. R13 signoff tension is unresolved; delegation may exclude appeals.",
+    "split_trigger": "A shared review mode crosses product/delegation limits, hides conflicting evidence or requires more independent expertise than its input supports.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U05.md",
+    "evidence_source_ids": [
+      "R18",
+      "A02"
+    ],
+    "linked_authority_questions": [
+      "D12"
+    ],
+    "original_scope": "Differentiate contracted expertise, internal consultation and statutory independent review.",
+    "original_evidence_limit": "The insurer page is undated and does not independently verify its current staffing/contracts. Consultant independence and final authority cannot be inferred from the name.",
+    "suggested_input_context": [
+      "Review question and relevant record",
+      "Applicable clinical context"
+    ],
+    "suggested_output_context": [
+      "Specialty opinion with reasoning",
+      "Further information needs"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U06",
+    "title": "Payer behavioral-health reviewer",
+    "package": "W09",
+    "representation": "bounded_specialist",
+    "key_question": "Does the service require behavioral-health criteria or restricted evidence handling?",
+    "distinction": "Specialty scope and information sensitivity can justify isolation; frequency still needs measurement.",
+    "counterexample": "A general review mode ignores behavioral-health-specific requirements.",
+    "conclusion": "Candidate on-demand specialist with a specific question and bounded evidence view; proposal by default, not assumed case-finalization authority.",
+    "merge_condition": "Shared policy/evidence machinery can serve distinct review modes; separate bounded reasoning calls may be useful for genuinely different questions.",
+    "retained_package_boundary": "Professional expertise, delegation, recommendation versus determination, and actual signoff remain separate. R13 signoff tension is unresolved; delegation may exclude appeals.",
+    "split_trigger": "A shared review mode crosses product/delegation limits, hides conflicting evidence or requires more independent expertise than its input supports.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U06.md",
+    "evidence_source_ids": [
+      "R13",
+      "A02"
+    ],
+    "linked_authority_questions": [
+      "D11",
+      "D12"
+    ],
+    "original_scope": "Psychiatrist, psychologist and counselor credentials are not interchangeable; apply actual product and review requirements. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone.",
+    "original_evidence_limit": "A designated behavioral program leader is not automatically the reviewer of every case; counselor, psychologist and physician qualifications are not interchangeable.",
+    "suggested_input_context": [
+      "Behavioral-health request/evidence",
+      "Program criteria and professional permissions"
+    ],
+    "suggested_output_context": [
+      "Review rationale",
+      "Decision or escalation within delegated scope"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U07",
+    "title": "Managed-care pharmacist / pharmacy reviewer",
+    "package": "W09",
+    "representation": "bounded_specialist",
+    "key_question": "Is this pharmacy coverage review, medication advice or treatment authority?",
+    "distinction": "A pharmacy capability may share evidence infrastructure without acquiring all three powers.",
+    "counterexample": "A formulary observation is converted into a medication change.",
+    "conclusion": "Candidate on-demand specialist with a specific question and bounded evidence view; proposal by default, not assumed case-finalization authority.",
+    "merge_condition": "Shared policy/evidence machinery can serve distinct review modes; separate bounded reasoning calls may be useful for genuinely different questions.",
+    "retained_package_boundary": "Professional expertise, delegation, recommendation versus determination, and actual signoff remain separate. R13 signoff tension is unresolved; delegation may exclude appeals.",
+    "split_trigger": "A shared review mode crosses product/delegation limits, hides conflicting evidence or requires more independent expertise than its input supports.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U07.md",
+    "evidence_source_ids": [
+      "R10",
+      "B07",
+      "R13"
+    ],
+    "linked_authority_questions": [
+      "D11"
+    ],
+    "original_scope": "Medication pathways can differ from medical-service prior authorization and Part C item/service appeals. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone.",
+    "original_evidence_limit": "Do not apply a medical-service Part C appeal rule to every drug benefit. Coverage review and prescribing remain different authorities.",
+    "suggested_input_context": [
+      "Medication request/history",
+      "Applicable pharmacy criteria"
+    ],
+    "suggested_output_context": [
+      "Medication review",
+      "Recommendation/decision and evidence requirements"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U08",
+    "title": "Delegated medical-group / review-vendor reviewer",
+    "package": "W09",
+    "representation": "delegation_boundary",
+    "key_question": "What is delegated for this product, including what is expressly retained by the plan?",
+    "distinction": "Delegated initial review does not automatically include appeals processing or signoff.",
+    "counterexample": "The delegate agent decides an appeal excluded by its actual agreement.",
+    "conclusion": "Establish the actual delegated scope and retained plan functions; do not infer it from a reviewer title.",
+    "merge_condition": "Shared policy/evidence machinery can serve distinct review modes; separate bounded reasoning calls may be useful for genuinely different questions.",
+    "retained_package_boundary": "Professional expertise, delegation, recommendation versus determination, and actual signoff remain separate. R13 signoff tension is unresolved; delegation may exclude appeals.",
+    "split_trigger": "A shared review mode crosses product/delegation limits, hides conflicting evidence or requires more independent expertise than its input supports.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U08.md",
+    "evidence_source_ids": [
+      "R13",
+      "R14",
+      "A02"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Functional wrapper, not an extra profession; identify both employer and actual licensed/intake role. In R13, AZPC explicitly retains no delegation to process, decide or notify appeals; the plan handles that review.",
+    "original_evidence_limit": "The same organization cannot be assumed to own the whole workflow; professional license, contractual scope and product requirements all matter.",
+    "suggested_input_context": [
+      "Delegation scope and case",
+      "Applicable review policies"
+    ],
+    "suggested_output_context": [
+      "Delegated work product",
+      "Decision/status and oversight records"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U09",
+    "title": "Determination / notification coordinator",
+    "package": "W10",
+    "representation": "controlled_operation",
+    "key_question": "Does the notice exactly correspond to the stored decision, version and recipient?",
+    "distinction": "Rendering and delivery can merge into a workflow owner; neither may invent an outcome.",
+    "counterexample": "A generated notice changes the reason or outcome without updating authority/state.",
+    "conclusion": "Candidate controlled operation derived from authoritative state, not an open-ended decision-making persona.",
+    "merge_condition": "This can be a controlled operation of the payer workflow owner rather than another open-ended agent.",
+    "retained_package_boundary": "The notice must derive from the authoritative decision/version; drafting or delivery must not change the substantive decision.",
+    "split_trigger": "Notice text contradicts the stored decision, wrong recipient is used, or draft is recorded as delivered.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U09.md",
+    "evidence_source_ids": [
+      "R13",
+      "A02",
+      "R15"
+    ],
+    "linked_authority_questions": [
+      "D15"
+    ],
+    "original_scope": "Contents, recipients and deadlines depend on the actual product/process; no universal time limit is encoded here.",
+    "original_evidence_limit": "Receipt, decision, dispatch and implementation are separate events. Actual timing/contents must be resolved for the route.",
+    "suggested_input_context": [
+      "Authorized determination and rationale",
+      "Recipient and route information"
+    ],
+    "suggested_output_context": [
+      "Decision notice",
+      "Dispatch/communication record"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U10",
+    "title": "Member-services representative",
+    "package": "W08",
+    "representation": "role_mode",
+    "key_question": "What status can be truthfully explained from the current authoritative record?",
+    "distinction": "Member-facing wording differs from decision authority.",
+    "counterexample": "A reassuring conversation is recorded as approval.",
+    "conclusion": "Candidate explicit mode of a shared workflow owner, conditional on scope and measured context/coordination behavior.",
+    "merge_condition": "A common payer case owner can combine collection and service/status functions with role-scoped operations.",
+    "retained_package_boundary": "Limited delegated nonclinical decisions are program-specific; medical-necessity denial and general benefits/status work remain different permissions.",
+    "split_trigger": "Status communication becomes an invented determination, or a clinically complete review is forced after a valid administrative terminal path.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U10.md",
+    "evidence_source_ids": [
+      "R16",
+      "R32",
+      "R35"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Explanation may be limited; the determination and notice remain the source for procedural rights.",
+    "original_evidence_limit": "Access to a status screen does not establish authority to decide merits; no universal call-center delegation is confirmed.",
+    "suggested_input_context": [
+      "Patient question",
+      "Verified benefit/status information"
+    ],
+    "suggested_output_context": [
+      "Explanation/referral",
+      "Contact record and unresolved concern"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U11",
+    "title": "Provider-services representative",
+    "package": "W08",
+    "representation": "role_mode",
+    "key_question": "What does the provider need to supply or do next, and is that an observed requirement?",
+    "distinction": "Provider-service communication can share intake state with explicit provenance.",
+    "counterexample": "A service representative invents an additional clinical criterion.",
+    "conclusion": "Candidate explicit mode of a shared workflow owner, conditional on scope and measured context/coordination behavior.",
+    "merge_condition": "A common payer case owner can combine collection and service/status functions with role-scoped operations.",
+    "retained_package_boundary": "Limited delegated nonclinical decisions are program-specific; medical-necessity denial and general benefits/status work remain different permissions.",
+    "split_trigger": "Status communication becomes an invented determination, or a clinically complete review is forced after a valid administrative terminal path.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U11.md",
+    "evidence_source_ids": [
+      "R15",
+      "R32"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "May be combined with other service functions; do not infer final decision power from access to the case.",
+    "original_evidence_limit": "The correct counterparty and what it can decide must be confirmed for the actual case.",
+    "suggested_input_context": [
+      "Provider inquiry/case identifier",
+      "Current case status"
+    ],
+    "suggested_output_context": [
+      "Status/process response",
+      "Routed follow-up"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U12",
+    "title": "Internal appeal / grievance coordinator",
+    "package": "W11",
+    "representation": "task_scoped_worker",
+    "key_question": "Is the submission a grievance, reconsideration, external request or another route?",
+    "distinction": "Appeal administration is separable from substantive reconsideration.",
+    "counterexample": "Administrative acceptance is mistaken for a favorable appeal decision.",
+    "conclusion": "Candidate workflow-owner function when the actual task assigns it; retain explicit role modes and observed completion obligations.",
+    "merge_condition": "Filing support may share software, but do not collapse initial-decision ownership and a required uninvolved reconsideration function.",
+    "retained_package_boundary": "For the cited MA rule, actual uninvolved persons and appropriate physician expertise are requirements; a fresh LLM context is not proof of those human qualifications.",
+    "split_trigger": "The initial author self-certifies independent reconsideration merely by changing its role label.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U12.md",
+    "evidence_source_ids": [
+      "R15",
+      "R20",
+      "A03"
+    ],
+    "linked_authority_questions": [
+      "D13"
+    ],
+    "original_scope": "For MA, distinguish integrated plans and other applicable routes; grievance resolution is not necessarily coverage reversal.",
+    "original_evidence_limit": "Routing/standing checks are operational responsibilities; clinical reconsideration authority must be separately qualified.",
+    "suggested_input_context": [
+      "Challenge and adverse notice",
+      "Standing/appointment and supporting record"
+    ],
+    "suggested_output_context": [
+      "Appeal/grievance case",
+      "Review assignment and communications"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U13",
+    "title": "Medical-necessity appeal / reconsideration physician",
+    "package": "W11",
+    "representation": "protected_review",
+    "key_question": "How is uninvolved review established beyond using a different prompt?",
+    "distinction": "The cited human independence/expertise rule is not satisfied by naming an LLM physician.",
+    "counterexample": "The initial author changes its persona and self-certifies compliant reconsideration.",
+    "conclusion": "Preserve applicable uninvolved-review accountability; a fresh model context is only an internal error-checking experiment.",
+    "merge_condition": "Filing support may share software, but do not collapse initial-decision ownership and a required uninvolved reconsideration function.",
+    "retained_package_boundary": "For the cited MA rule, actual uninvolved persons and appropriate physician expertise are requirements; a fresh LLM context is not proof of those human qualifications.",
+    "split_trigger": "The initial author self-certifies independent reconsideration merely by changing its role label.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U13.md",
+    "evidence_source_ids": [
+      "A03",
+      "A04",
+      "A16"
+    ],
+    "linked_authority_questions": [
+      "D13",
+      "D15",
+      "D20"
+    ],
+    "original_scope": "MA medical-necessity denial reconsideration requires an appropriately expert physician; do not extend this exact requirement to all products and dispute types.",
+    "original_evidence_limit": "Independence is not merely seniority. This card does not establish the credentials/delegation of any actual reviewer.",
+    "suggested_input_context": [
+      "Appeal case and initial rationale",
+      "Relevant record and criteria"
+    ],
+    "suggested_output_context": [
+      "Reconsidered determination",
+      "Rationale and onward-review record when required"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U14",
+    "title": "Medicare Advantage independent-review entity reviewer",
+    "package": "W12",
+    "representation": "external_review_actor",
+    "key_question": "What actual CMS-contracted review outcome and route apply?",
+    "distinction": "MA independent review is not an internal model critic or commercial IRO.",
+    "counterexample": "A harness-generated critique is called an official IRE reversal.",
+    "conclusion": "Preserve the actual external forum, route and observed outcome; an internal critic is a different function.",
+    "merge_condition": "A routing adapter can share transport/record plumbing, while preserving distinct institutions, jurisdiction, eligibility and decision authority.",
+    "retained_package_boundary": "MA IRE, commercial IRO, regulator, ALJ, Council and court are not one escalating internal worker. External decisions cannot be invented by a local reviewer persona.",
+    "split_trigger": "A harness creates a binding external reversal or moves automatically through every forum without eligibility.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U14.md",
+    "evidence_source_ids": [
+      "A04",
+      "A11",
+      "A16"
+    ],
+    "linked_authority_questions": [
+      "D15",
+      "D20"
+    ],
+    "original_scope": "This is MA IRE review; do not label a commercial IRO or an Original Medicare contractor as the same route.",
+    "original_evidence_limit": "An IRE reviewer is not an internal supervisor; an external-review label alone does not identify the correct statutory route.",
+    "suggested_input_context": [
+      "Forwarded MA case and explanation",
+      "Relevant appeal evidence"
+    ],
+    "suggested_output_context": [
+      "Independent decision",
+      "Notice or remand/disposition where applicable"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U15",
+    "title": "External-review administrator",
+    "package": "W12",
+    "representation": "external_route_adapter",
+    "key_question": "Which state/federal process and eligibility govern the external-review request?",
+    "distinction": "Routing administration can share transport code without owning adjudication.",
+    "counterexample": "The request is sent through a convenient but inapplicable route.",
+    "conclusion": "Share routing/transport machinery where permitted, while retaining actual forum eligibility and external decision ownership.",
+    "merge_condition": "A routing adapter can share transport/record plumbing, while preserving distinct institutions, jurisdiction, eligibility and decision authority.",
+    "retained_package_boundary": "MA IRE, commercial IRO, regulator, ALJ, Council and court are not one escalating internal worker. External decisions cannot be invented by a local reviewer persona.",
+    "split_trigger": "A harness creates a binding external reversal or moves automatically through every forum without eligibility.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U15.md",
+    "evidence_source_ids": [
+      "R17",
+      "A04",
+      "A12"
+    ],
+    "linked_authority_questions": [
+      "D16"
+    ],
+    "original_scope": "Exact administrator and permissible actions must be identified from product and notice.",
+    "original_evidence_limit": "Administrative eligibility/file handling must not be confused with medical merits or universal agency jurisdiction.",
+    "suggested_input_context": [
+      "External-review request/case",
+      "Route and standing information"
+    ],
+    "suggested_output_context": [
+      "Administrative case record",
+      "Assigned review and procedural communication"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U16",
+    "title": "SHIP / consumer-assistance / ombudsman counselor",
+    "package": "W02",
+    "representation": "external_actor",
+    "key_question": "Does the assistance function inform, represent, or decide the matter?",
+    "distinction": "Consumer assistance does not imply insurer or court authority.",
+    "counterexample": "Advice from an assistance persona is recorded as binding coverage.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "Shared navigation and document-preparation capability may support several functions, while appointments and authority remain explicit.",
+    "retained_package_boundary": "Appeal appointment is distinct from treatment representation; assistance is not insurer or adjudicator decision power.",
+    "split_trigger": "One general advocate label silently grants authority over every dispute or patient decision.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U16.md",
+    "evidence_source_ids": [
+      "R35",
+      "R20"
+    ],
+    "linked_authority_questions": [
+      "D34"
+    ],
+    "original_scope": "SHIP is Medicare-specific; ombudsman and consumer-assistance mandates differ and are not interchangeable.",
+    "original_evidence_limit": "These are several functions, not one credential or one organization that can reverse every denial.",
+    "suggested_input_context": [
+      "Patient concern and relevant notice",
+      "Program eligibility/context"
+    ],
+    "suggested_output_context": [
+      "Explanation/referral",
+      "Assistance record"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U17",
+    "title": "UM manager / operational supervisor",
+    "package": "W08",
+    "representation": "configuration_or_escalation",
+    "key_question": "Can a process manager resolve this queue issue without changing clinical judgment?",
+    "distinction": "Operational allocation is a separate axis from reviewer expertise.",
+    "counterexample": "Higher operational rank overrides a scoped clinical requirement.",
+    "conclusion": "Represent assignment/routing rules explicitly; interpret/escalate only when the actual task requires it.",
+    "merge_condition": "A common payer case owner can combine collection and service/status functions with role-scoped operations.",
+    "retained_package_boundary": "Limited delegated nonclinical decisions are program-specific; medical-necessity denial and general benefits/status work remain different permissions.",
+    "split_trigger": "Status communication becomes an invented determination, or a clinically complete review is forced after a valid administrative terminal path.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U17.md",
+    "evidence_source_ids": [
+      "R14",
+      "B22",
+      "A03"
+    ],
+    "linked_authority_questions": [
+      "D29"
+    ],
+    "original_scope": "UCSD documents supervision of nurse case managers/referral coordinators in its own example; no universal payer organization chart is asserted.",
+    "original_evidence_limit": "Documented operational supervision does not establish every professional signoff, appeal-review power or cross-organization hierarchy.",
+    "suggested_input_context": [
+      "Case queues and performance issues",
+      "Review/staffing constraints"
+    ],
+    "suggested_output_context": [
+      "Assignments and process resolutions",
+      "Escalation and oversight reports"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "U18",
+    "title": "Applicable commercial independent-review organization reviewer",
+    "package": "W12",
+    "representation": "external_review_actor",
+    "key_question": "Does this issue qualify for the applicable commercial external route, including urgent concurrency?",
+    "distinction": "Commercial review remains separate from MA IRE and ordinary peer discussion.",
+    "counterexample": "The system forces all urgent cases to finish every internal step first.",
+    "conclusion": "Preserve the actual external forum, route and observed outcome; an internal critic is a different function.",
+    "merge_condition": "A routing adapter can share transport/record plumbing, while preserving distinct institutions, jurisdiction, eligibility and decision authority.",
+    "retained_package_boundary": "MA IRE, commercial IRO, regulator, ALJ, Council and court are not one escalating internal worker. External decisions cannot be invented by a local reviewer persona.",
+    "split_trigger": "A harness creates a binding external reversal or moves automatically through every forum without eligibility.",
+    "evidence_role": "Plan/HealthcareRoles/roles/U18.md",
+    "evidence_source_ids": [
+      "A12",
+      "R17"
+    ],
+    "linked_authority_questions": [
+      "D16"
+    ],
+    "original_scope": "HealthCare.gov describes required insurer acceptance in the process it covers; determine state/federal/plan route before applying it.",
+    "original_evidence_limit": "Do not apply this route to every plan/denial, or substitute it for MA IRE review. Further legal remedies are not comprehensively audited here.",
+    "suggested_input_context": [
+      "Eligible external-review case",
+      "Denial and clinical/benefit evidence"
+    ],
+    "suggested_output_context": [
+      "External-review outcome",
+      "Result communicated for implementation"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M01",
+    "title": "Lead care manager / case manager",
+    "package": "W13",
+    "representation": "task_scoped_worker",
+    "key_question": "What unresolved patient goal or service obligation still has a named owner?",
+    "distinction": "One case owner can combine coordination functions while retaining evidence and professional boundaries.",
+    "counterexample": "A plan exists but outreach, referral response or follow-up is never completed.",
+    "conclusion": "Candidate workflow-owner function when the actual task assigns it; retain explicit role modes and observed completion obligations.",
+    "merge_condition": "A case owner can combine administrative coordination, navigation and general education support while invoking specific expertise when needed.",
+    "retained_package_boundary": "Clinical assessment permissions, patient statements, discharge authority and professional education scope remain explicit; coordination is not physical service delivery.",
+    "split_trigger": "A merged worker loses patient dialogue state, invents assessment answers, or marks a referral as completed care.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M01.md",
+    "evidence_source_ids": [
+      "R22",
+      "R25",
+      "R32",
+      "R24"
+    ],
+    "linked_authority_questions": [
+      "D21",
+      "D24"
+    ],
+    "original_scope": "Credential may be nursing, social work or another background; separate coordination authority from that credential. Published staffing examples differ; this is not evidence of national role prevalence.",
+    "original_evidence_limit": "These examples do not establish national prevalence. Coordination title is not a license or independent prescribing credential; unavailable R23 is not needed to establish these examples.",
+    "suggested_input_context": [
+      "Patient preferences and assessment",
+      "Clinical plan and service responses"
+    ],
+    "suggested_output_context": [
+      "Shared coordination plan",
+      "Assigned follow-up and unresolved-need record"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M02",
+    "title": "Medical social worker (credential-dependent practice)",
+    "package": "W14",
+    "representation": "bounded_specialist",
+    "key_question": "What social-work function and credential level are actually relevant?",
+    "distinction": "Clinical job wording may include supervised pre-licensure work; title is not independent licensure.",
+    "counterexample": "A generic social-work persona supplies unrestricted psychotherapy authority.",
+    "conclusion": "Candidate on-demand specialist with a specific question and bounded evidence view; proposal by default, not assumed case-finalization authority.",
+    "merge_condition": "Common intake/resource-finding support can be shared; separate expertise and restricted information views may be necessary for specialist reasoning.",
+    "retained_package_boundary": "Job title, independent clinical licensure and additional prescribing certification differ. Do not collapse social support, therapy and prescribing.",
+    "split_trigger": "A generic behavioral-health persona acts beyond its assigned function or exposes protected material to unrelated work.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M02.md",
+    "evidence_source_ids": [
+      "B09",
+      "R25",
+      "R32"
+    ],
+    "linked_authority_questions": [
+      "D22"
+    ],
+    "original_scope": "Job titles and licensure differ; distinguish supportive casework from licensed clinical treatment. UCLA describes a pre-licensure Clinical Social Worker II assignment; clinical job wording does not establish independent clinical licensure.",
+    "original_evidence_limit": "UCLA describes an unlicensed Clinical Social Worker II role. A job title containing clinical does not establish independent clinical licensure.",
+    "suggested_input_context": [
+      "Patient goals and social assessment",
+      "Available resources"
+    ],
+    "suggested_output_context": [
+      "Psychosocial/resource assessment",
+      "Referral and follow-up"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M03",
+    "title": "Licensed clinical social worker",
+    "package": "W14",
+    "representation": "external_actor",
+    "key_question": "Is the requested contribution clinical social-work assessment/therapy or practical resource coordination?",
+    "distinction": "Share referral plumbing while preserving independent clinical scope and source attribution.",
+    "counterexample": "A resource-coordination summary is treated as a completed clinical assessment.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "Common intake/resource-finding support can be shared; separate expertise and restricted information views may be necessary for specialist reasoning.",
+    "retained_package_boundary": "Job title, independent clinical licensure and additional prescribing certification differ. Do not collapse social support, therapy and prescribing.",
+    "split_trigger": "A generic behavioral-health persona acts beyond its assigned function or exposes protected material to unrelated work.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M03.md",
+    "evidence_source_ids": [
+      "B09",
+      "R25"
+    ],
+    "linked_authority_questions": [
+      "D33"
+    ],
+    "original_scope": "Exact clinical activities and independent practice depend on state license and setting, not a national generic job description.",
+    "original_evidence_limit": "State license/permissions remain necessary; the profile does not establish medication-prescribing or coverage authority.",
+    "suggested_input_context": [
+      "Clinical/social history and patient goals",
+      "Relevant referral"
+    ],
+    "suggested_output_context": [
+      "Clinical assessment/intervention plan",
+      "Progress and coordination communication"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M04",
+    "title": "Clinical / community pharmacist",
+    "package": "W15",
+    "representation": "bounded_specialist",
+    "key_question": "Which medication action is advice, protocol-authorized activity or a new order?",
+    "distinction": "Pharmacist pathways vary; neither universal physician reapproval nor universal independence is inferred.",
+    "counterexample": "The system changes therapy based solely on its pharmacist label.",
+    "conclusion": "Candidate on-demand specialist with a specific question and bounded evidence view; proposal by default, not assumed case-finalization authority.",
+    "merge_condition": "Share a medication evidence record and access workflow, while separating clinical proposals from technician/access operations.",
+    "retained_package_boundary": "Protocol-authorized pharmacist activity, general prescribing and technician tasks are not equivalent; local authority is unresolved.",
+    "split_trigger": "Medication availability is treated as a treatment order or access staff alter therapy.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M04.md",
+    "evidence_source_ids": [
+      "B07",
+      "R10",
+      "R24",
+      "V13"
+    ],
+    "linked_authority_questions": [
+      "D25"
+    ],
+    "original_scope": "Professional scope, collaborative arrangements and specific state permissions must be identified for therapy changes. Washington CDTA is one documented pathway for specified therapy activity; no universal requirement for a new physician instruction on each authorized action is inferred.",
+    "original_evidence_limit": "Do not imply every change requires a fresh individual physician instruction or every pharmacist can independently prescribe; actual legal/program authority controls.",
+    "suggested_input_context": [
+      "Prescription and medication history",
+      "Relevant clinical information"
+    ],
+    "suggested_output_context": [
+      "Verified dispensing/counseling record",
+      "Medication recommendation or clarification request"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M05",
+    "title": "Pharmacy technician / medication-access coordinator",
+    "package": "W15",
+    "representation": "role_mode",
+    "key_question": "What access/fulfillment information is missing without requiring clinical medication decisions?",
+    "distinction": "Technician/access operations can share medication state but not clinical permissions.",
+    "counterexample": "A stock or authorization issue is resolved by changing the medication.",
+    "conclusion": "Candidate explicit mode of a shared workflow owner, conditional on scope and measured context/coordination behavior.",
+    "merge_condition": "Share a medication evidence record and access workflow, while separating clinical proposals from technician/access operations.",
+    "retained_package_boundary": "Protocol-authorized pharmacist activity, general prescribing and technician tasks are not equivalent; local authority is unresolved.",
+    "split_trigger": "Medication availability is treated as a treatment order or access staff alter therapy.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M05.md",
+    "evidence_source_ids": [
+      "B08",
+      "R09"
+    ],
+    "linked_authority_questions": [
+      "D25"
+    ],
+    "original_scope": "Technician permissions vary; medication-access work can be an advanced assignment but remains distinct from pharmacist judgment.",
+    "original_evidence_limit": "An access assignment does not replace pharmacist/prescriber judgment. R09 historical examples are not proof of current staffing or procedure.",
+    "suggested_input_context": [
+      "Prescription and patient/benefit details",
+      "Pharmacist/prescriber instructions"
+    ],
+    "suggested_output_context": [
+      "Processed access/refill task",
+      "Status and clinical clarification request"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M06",
+    "title": "Treating psychiatrist",
+    "package": "W04",
+    "representation": "external_actor",
+    "key_question": "What psychiatric assessment/order is present versus needing an external clinician?",
+    "distinction": "Specialist evidence may be requested; a solver prompt is not an actual consultation.",
+    "counterexample": "An invented psychiatric evaluation fills an evidence gap.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "A shared evidence-request adapter may serve these contacts; that is an interface merger, not one interchangeable clinical occupation.",
+    "retained_package_boundary": "Credential, jurisdiction, privileges, authorship and treating relationship remain distinct; reading a chart is not performing treatment or acquiring prescribing authority.",
+    "split_trigger": "The harness fabricates a clinician statement or treats every clinical title as equivalent signatory permission.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M06.md",
+    "evidence_source_ids": [
+      "B01",
+      "B11",
+      "R24"
+    ],
+    "linked_authority_questions": [
+      "D26"
+    ],
+    "original_scope": "Treating psychiatrist and coverage reviewer must be identified separately even where both are physicians.",
+    "original_evidence_limit": "Physician status does not automatically confer a patient relationship or payer-review delegation.",
+    "suggested_input_context": [
+      "Patient history and assessment",
+      "Relevant medical/behavioral information"
+    ],
+    "suggested_output_context": [
+      "Psychiatric clinical plan",
+      "Orders and progress communication"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M07",
+    "title": "Clinical psychologist",
+    "package": "W14",
+    "representation": "bounded_specialist",
+    "key_question": "Does this contribution require ordinary psychology scope or additional prescribing certification?",
+    "distinction": "Additional local certification is not implied by general psychology credentials.",
+    "counterexample": "A psychologist persona is granted prescribing authority in every jurisdiction.",
+    "conclusion": "Candidate on-demand specialist with a specific question and bounded evidence view; proposal by default, not assumed case-finalization authority.",
+    "merge_condition": "Common intake/resource-finding support can be shared; separate expertise and restricted information views may be necessary for specialist reasoning.",
+    "retained_package_boundary": "Job title, independent clinical licensure and additional prescribing certification differ. Do not collapse social support, therapy and prescribing.",
+    "split_trigger": "A generic behavioral-health persona acts beyond its assigned function or exposes protected material to unrelated work.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M07.md",
+    "evidence_source_ids": [
+      "B10",
+      "R24",
+      "V04"
+    ],
+    "linked_authority_questions": [
+      "D26"
+    ],
+    "original_scope": "Prescribing and specialty testing permissions are jurisdiction- and qualification-specific. New Mexico documents additional conditional/full prescribing certification; ordinary psychology licensure alone does not establish it.",
+    "original_evidence_limit": "Neither a universal prescribing right nor a blanket nationwide prohibition is justified; specific current qualification must be checked.",
+    "suggested_input_context": [
+      "Patient history/goals",
+      "Relevant referral and assessment information"
+    ],
+    "suggested_output_context": [
+      "Psychological assessment/treatment plan",
+      "Progress or referral communication"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M08",
+    "title": "Licensed behavioral-health / substance-use counselor",
+    "package": "W14",
+    "representation": "external_actor",
+    "key_question": "What counseling function and restricted-record conditions apply to this service?",
+    "distinction": "Counseling, diagnosis and information-sharing permissions must be specified separately.",
+    "counterexample": "A general case summary discloses specially protected material to every worker.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "Common intake/resource-finding support can be shared; separate expertise and restricted information views may be necessary for specialist reasoning.",
+    "retained_package_boundary": "Job title, independent clinical licensure and additional prescribing certification differ. Do not collapse social support, therapy and prescribing.",
+    "split_trigger": "A generic behavioral-health persona acts beyond its assigned function or exposes protected material to unrelated work.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M08.md",
+    "evidence_source_ids": [
+      "B11"
+    ],
+    "linked_authority_questions": [
+      "D26"
+    ],
+    "original_scope": "Mental-health, addiction, marriage/family and peer credentials have different requirements; establish the specific credential before assigning clinical authority.",
+    "original_evidence_limit": "Do not infer equivalent clinical scope or prescribing authority across counseling titles.",
+    "suggested_input_context": [
+      "Patient goals and counseling assessment",
+      "Relevant referral/history"
+    ],
+    "suggested_output_context": [
+      "Counseling plan and progress",
+      "Coordination/referral"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M09",
+    "title": "Community health worker",
+    "package": "W13",
+    "representation": "role_mode",
+    "key_question": "Which practical barrier comes from the patient/community context rather than chart inference?",
+    "distinction": "Community navigation can share coordination state without inventing local resource availability.",
+    "counterexample": "A plausible community resource is described as accepting the patient without confirmation.",
+    "conclusion": "Candidate explicit mode of a shared workflow owner, conditional on scope and measured context/coordination behavior.",
+    "merge_condition": "A case owner can combine administrative coordination, navigation and general education support while invoking specific expertise when needed.",
+    "retained_package_boundary": "Clinical assessment permissions, patient statements, discharge authority and professional education scope remain explicit; coordination is not physical service delivery.",
+    "split_trigger": "A merged worker loses patient dialogue state, invents assessment answers, or marks a referral as completed care.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M09.md",
+    "evidence_source_ids": [
+      "B12",
+      "R29"
+    ],
+    "linked_authority_questions": [
+      "D28"
+    ],
+    "original_scope": "Community trust does not substitute for clinical licensure; program training and role determine permitted services.",
+    "original_evidence_limit": "Community trust and additional training do not by themselves establish a clinical license or benefit-decision authority.",
+    "suggested_input_context": [
+      "Patient priorities and community context",
+      "Resource information"
+    ],
+    "suggested_output_context": [
+      "Barrier/resource findings",
+      "Navigation and follow-up record"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M10",
+    "title": "Patient navigator",
+    "package": "W13",
+    "representation": "role_mode",
+    "key_question": "What obstacle is being navigated and which recipient owns the next response?",
+    "distinction": "Navigation and provider/care coordination overlap but do not grant every institution’s access.",
+    "counterexample": "The agent treats navigation across organizations as unrestricted write access.",
+    "conclusion": "Candidate explicit mode of a shared workflow owner, conditional on scope and measured context/coordination behavior.",
+    "merge_condition": "A case owner can combine administrative coordination, navigation and general education support while invoking specific expertise when needed.",
+    "retained_package_boundary": "Clinical assessment permissions, patient statements, discharge authority and professional education scope remain explicit; coordination is not physical service delivery.",
+    "split_trigger": "A merged worker loses patient dialogue state, invents assessment answers, or marks a referral as completed care.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M10.md",
+    "evidence_source_ids": [
+      "R28",
+      "B12"
+    ],
+    "linked_authority_questions": [
+      "D28"
+    ],
+    "original_scope": "May be a nurse, social worker, CHW or other trained worker; apply the actual credentials in addition to navigation role.",
+    "original_evidence_limit": "Navigation is a function rather than one universal credential; cancer guidance does not prescribe every other program's workflow.",
+    "suggested_input_context": [
+      "Patient access needs",
+      "Referral and service availability"
+    ],
+    "suggested_output_context": [
+      "Navigation plan",
+      "Connection/status and unresolved barriers"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M11",
+    "title": "Health-care guide / nonclinical care guide",
+    "package": "W13",
+    "representation": "role_mode",
+    "key_question": "Which task is nonclinical support and which needs clinical interpretation?",
+    "distinction": "A combined case owner must retain activity-level limits.",
+    "counterexample": "A nonclinical guide interprets clinical change as a treatment decision.",
+    "conclusion": "Candidate explicit mode of a shared workflow owner, conditional on scope and measured context/coordination behavior.",
+    "merge_condition": "A case owner can combine administrative coordination, navigation and general education support while invoking specific expertise when needed.",
+    "retained_package_boundary": "Clinical assessment permissions, patient statements, discharge authority and professional education scope remain explicit; coordination is not physical service delivery.",
+    "split_trigger": "A merged worker loses patient dialogue state, invents assessment answers, or marks a referral as completed care.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M11.md",
+    "evidence_source_ids": [
+      "R32",
+      "R29"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Partnership HealthPlan documents this title as an organizational example; do not impose it on every care program.",
+    "original_evidence_limit": "The title and hierarchy cannot be transferred nationally or treated as equivalent to licensed clinical case management.",
+    "suggested_input_context": [
+      "Assigned member needs",
+      "Resource/benefit information"
+    ],
+    "suggested_output_context": [
+      "Resource connection/status",
+      "Escalated unresolved need"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M12",
+    "title": "Registered dietitian / qualified nutrition professional",
+    "package": "W16",
+    "representation": "bounded_specialist",
+    "key_question": "What nutrition assessment or plan contribution is actually evidenced?",
+    "distinction": "Diet education and individualized professional assessment are different contributions.",
+    "counterexample": "A generic healthy-eating paragraph is called a completed nutrition assessment.",
+    "conclusion": "Candidate on-demand specialist with a specific question and bounded evidence view; proposal by default, not assumed case-finalization authority.",
+    "merge_condition": "Use a common referral/evidence adapter with discipline-specific capability selection; persistent workers only if workload and errors justify them.",
+    "retained_package_boundary": "Different disciplines assess different functions and have different scope; one capability catalogue is not interchangeable clinical expertise.",
+    "split_trigger": "A general specialist output substitutes nutrition, mobility, daily-function, communication or respiratory evidence for one another.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M12.md",
+    "evidence_source_ids": [
+      "B14",
+      "R31"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Credential, state rules, referral/order and facility privileges determine specific clinical permissions.",
+    "original_evidence_limit": "Do not assume every nutritionist title equals an RD credential or independently grants unrelated treatment authority.",
+    "suggested_input_context": [
+      "Clinical/nutrition history",
+      "Patient goals and practical constraints"
+    ],
+    "suggested_output_context": [
+      "Nutrition assessment/plan",
+      "Response and recommendations"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M13",
+    "title": "Health educator / self-management coach",
+    "package": "W13",
+    "representation": "role_mode",
+    "key_question": "Does education reflect an existing plan and the person’s stated understanding?",
+    "distinction": "General education can merge into outreach; it must not replace consent or invent comprehension.",
+    "counterexample": "Information delivered is reported as demonstrated patient understanding.",
+    "conclusion": "Candidate explicit mode of a shared workflow owner, conditional on scope and measured context/coordination behavior.",
+    "merge_condition": "A case owner can combine administrative coordination, navigation and general education support while invoking specific expertise when needed.",
+    "retained_package_boundary": "Clinical assessment permissions, patient statements, discharge authority and professional education scope remain explicit; coordination is not physical service delivery.",
+    "split_trigger": "A merged worker loses patient dialogue state, invents assessment answers, or marks a referral as completed care.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M13.md",
+    "evidence_source_ids": [
+      "B13"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "A licensed clinician may also provide education; distinguish the educational function from any separate clinical authority.",
+    "original_evidence_limit": "Providing education is not by itself a medical diagnosis or prescribing grant.",
+    "suggested_input_context": [
+      "Learning goals and approved plan",
+      "Patient understanding/preferences"
+    ],
+    "suggested_output_context": [
+      "Education/coaching record",
+      "Learning needs and follow-up"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M14",
+    "title": "Physical therapist",
+    "package": "W16",
+    "representation": "bounded_specialist",
+    "key_question": "Which mobility/rehabilitation facts support this referral and what local access rule is unknown?",
+    "distinction": "The previous audit did not establish a specific direct-access state rule.",
+    "counterexample": "The harness assumes either universal direct access or universal physician referral.",
+    "conclusion": "Candidate on-demand specialist with a specific question and bounded evidence view; proposal by default, not assumed case-finalization authority.",
+    "merge_condition": "Use a common referral/evidence adapter with discipline-specific capability selection; persistent workers only if workload and errors justify them.",
+    "retained_package_boundary": "Different disciplines assess different functions and have different scope; one capability catalogue is not interchangeable clinical expertise.",
+    "split_trigger": "A general specialist output substitutes nutrition, mobility, daily-function, communication or respiratory evidence for one another.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M14.md",
+    "evidence_source_ids": [
+      "B15",
+      "R30"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "State/direct-access, order and payer requirements can differ; do not infer one universal physician-supervision hierarchy. No particular state direct-access rule was established in this audit; attempted V20 was unavailable and is not used as proof.",
+    "original_evidence_limit": "Professional clinical assessment and authorization/payment criteria are separate. Actual state/order rules are not nationally resolved.",
+    "suggested_input_context": [
+      "History/referral where required",
+      "Functional assessment and goals"
+    ],
+    "suggested_output_context": [
+      "Therapy plan/progress",
+      "Functional recommendations"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M15",
+    "title": "Occupational therapist",
+    "package": "W16",
+    "representation": "bounded_specialist",
+    "key_question": "What daily-activity/environment assessment differs from mobility-only evidence?",
+    "distinction": "Shared rehabilitation routing must preserve occupational-therapy content.",
+    "counterexample": "A physical-therapy summary substitutes for daily-function assessment.",
+    "conclusion": "Candidate on-demand specialist with a specific question and bounded evidence view; proposal by default, not assumed case-finalization authority.",
+    "merge_condition": "Use a common referral/evidence adapter with discipline-specific capability selection; persistent workers only if workload and errors justify them.",
+    "retained_package_boundary": "Different disciplines assess different functions and have different scope; one capability catalogue is not interchangeable clinical expertise.",
+    "split_trigger": "A general specialist output substitutes nutrition, mobility, daily-function, communication or respiratory evidence for one another.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M15.md",
+    "evidence_source_ids": [
+      "B16",
+      "R30"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Order, setting and scope requirements must be identified for the actual service.",
+    "original_evidence_limit": "Equipment recommendation is not itself a covered equipment order, supplier acceptance or payment approval.",
+    "suggested_input_context": [
+      "Functional history and goals",
+      "Relevant environment/service information"
+    ],
+    "suggested_output_context": [
+      "OT plan/progress",
+      "Adaptation/equipment recommendations"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M16",
+    "title": "Speech-language pathologist",
+    "package": "W16",
+    "representation": "bounded_specialist",
+    "key_question": "Is the need communication, swallowing or another documented function requiring the right evidence?",
+    "distinction": "Speech-language expertise is not generic language translation.",
+    "counterexample": "The communication adapter claims a clinical speech/swallow evaluation.",
+    "conclusion": "Candidate on-demand specialist with a specific question and bounded evidence view; proposal by default, not assumed case-finalization authority.",
+    "merge_condition": "Use a common referral/evidence adapter with discipline-specific capability selection; persistent workers only if workload and errors justify them.",
+    "retained_package_boundary": "Different disciplines assess different functions and have different scope; one capability catalogue is not interchangeable clinical expertise.",
+    "split_trigger": "A general specialist output substitutes nutrition, mobility, daily-function, communication or respiratory evidence for one another.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M16.md",
+    "evidence_source_ids": [
+      "B17",
+      "R30"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Language access and speech/swallowing impairment are different needs and may require different professionals.",
+    "original_evidence_limit": "Speech-language pathology does not make someone a qualified interpreter for every language or an unrelated medical prescriber.",
+    "suggested_input_context": [
+      "Clinical history/referral",
+      "Functional assessment and goals"
+    ],
+    "suggested_output_context": [
+      "Assessment and therapy plan",
+      "Recommendations and progress"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M17",
+    "title": "Respiratory therapist",
+    "package": "W16",
+    "representation": "bounded_specialist",
+    "key_question": "What respiratory assessment/instruction is present and which service needs professional input?",
+    "distinction": "Equipment logistics and respiratory clinical assessment cannot be equated.",
+    "counterexample": "An oxygen/equipment delivery record is used as evidence of clinical reassessment.",
+    "conclusion": "Candidate on-demand specialist with a specific question and bounded evidence view; proposal by default, not assumed case-finalization authority.",
+    "merge_condition": "Use a common referral/evidence adapter with discipline-specific capability selection; persistent workers only if workload and errors justify them.",
+    "retained_package_boundary": "Different disciplines assess different functions and have different scope; one capability catalogue is not interchangeable clinical expertise.",
+    "split_trigger": "A general specialist output substitutes nutrition, mobility, daily-function, communication or respiratory evidence for one another.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M17.md",
+    "evidence_source_ids": [
+      "B18",
+      "R33"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Specific protocols and privileges determine independent adjustments; state and setting must be checked.",
+    "original_evidence_limit": "The occupational summary does not establish a particular independent treatment-adjustment permission.",
+    "suggested_input_context": [
+      "Relevant clinical order/plan",
+      "Respiratory assessment and equipment needs"
+    ],
+    "suggested_output_context": [
+      "Respiratory treatment/monitoring record",
+      "Education and clinical concern report"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M18",
+    "title": "Discharge planner / transitions coordinator",
+    "package": "W13",
+    "representation": "role_mode",
+    "key_question": "Which transition tasks are complete, and what clinical discharge authority is outside coordination?",
+    "distinction": "Transition coordination can share a case owner without owning every discharge decision.",
+    "counterexample": "The coordinator declares medical readiness from an administrative checklist.",
+    "conclusion": "Candidate explicit mode of a shared workflow owner, conditional on scope and measured context/coordination behavior.",
+    "merge_condition": "A case owner can combine administrative coordination, navigation and general education support while invoking specific expertise when needed.",
+    "retained_package_boundary": "Clinical assessment permissions, patient statements, discharge authority and professional education scope remain explicit; coordination is not physical service delivery.",
+    "split_trigger": "A merged worker loses patient dialogue state, invents assessment answers, or marks a referral as completed care.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M18.md",
+    "evidence_source_ids": [
+      "A06",
+      "R25",
+      "R27"
+    ],
+    "linked_authority_questions": [
+      "D22",
+      "D24"
+    ],
+    "original_scope": "Hospital 482.43 permits development by or under RN, social worker or other qualified personnel; do not impose RN-only staffing nationally.",
+    "original_evidence_limit": "Medical readiness, discharge planning, receiving acceptance, coverage and patient rights are distinct; planner title is not sole authority.",
+    "suggested_input_context": [
+      "Clinical course/goals",
+      "Functional and social needs",
+      "Receiving-service availability"
+    ],
+    "suggested_output_context": [
+      "Discharge/transition plan",
+      "Transfer record and unmet needs"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M19",
+    "title": "Home-health intake / coordination clinician",
+    "package": "W17",
+    "representation": "external_service_actor",
+    "key_question": "Has the receiving home-health service accepted the referral and documented its actual prerequisites?",
+    "distinction": "Sending, acceptance, ordered plan and actual visit are separate events.",
+    "counterexample": "Home-health referral sent is recorded as a completed visit.",
+    "conclusion": "Coordinate the service through permitted interfaces; require observed acceptance/fulfillment rather than an internal persona’s promise.",
+    "merge_condition": "A shared logistics coordinator can manage requests; providers, workers and actual delivery remain distinct external parties/events.",
+    "retained_package_boundary": "Referral sent, accepted, scheduled, delivered and completed are separate states. Capacity and actual attendance must come from allowed observations.",
+    "split_trigger": "A dispatcher persona or optimistic plan is used as evidence that a person received care, transport, food or equipment.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M19.md",
+    "evidence_source_ids": [
+      "A07",
+      "R30"
+    ],
+    "linked_authority_questions": [
+      "D23",
+      "D24"
+    ],
+    "original_scope": "Home-health rules apply to the specified setting; signatory and verbal-order acceptance requirements remain scoped.",
+    "original_evidence_limit": "Agency capacity, clinical orders, accepted referral and completed visits are separate. Local intake/acceptance permissions remain unconfirmed.",
+    "suggested_input_context": [
+      "Referral and clinical needs",
+      "Allowed-practitioner plan/orders"
+    ],
+    "suggested_output_context": [
+      "Acceptance/service arrangements",
+      "Coordinated plan and status/change report"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M20",
+    "title": "Skilled-nursing / rehabilitation receiving-team coordinator",
+    "package": "W17",
+    "representation": "external_service_actor",
+    "key_question": "What shows receiving-facility acceptance, capacity and handoff acknowledgement?",
+    "distinction": "A local coordinator cannot invent another institution’s bed or acceptance decision.",
+    "counterexample": "A preferred discharge destination is treated as an accepted placement.",
+    "conclusion": "Coordinate the service through permitted interfaces; require observed acceptance/fulfillment rather than an internal persona’s promise.",
+    "merge_condition": "A shared logistics coordinator can manage requests; providers, workers and actual delivery remain distinct external parties/events.",
+    "retained_package_boundary": "Referral sent, accepted, scheduled, delivered and completed are separate states. Capacity and actual attendance must come from allowed observations.",
+    "split_trigger": "A dispatcher persona or optimistic plan is used as evidence that a person received care, transport, food or equipment.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M20.md",
+    "evidence_source_ids": [
+      "A06",
+      "R25",
+      "R27"
+    ],
+    "linked_authority_questions": [
+      "D24"
+    ],
+    "original_scope": "This is a receiving coordination function; profession, orders and facility rules determine actual treatment authority.",
+    "original_evidence_limit": "Reception/acceptance is not benefit approval or automatic authentication of all medical orders; exact local permissions are not established.",
+    "suggested_input_context": [
+      "Transition referral and clinical information",
+      "Facility capability/availability"
+    ],
+    "suggested_output_context": [
+      "Acceptance/transfer response",
+      "Receiving plan and unresolved issues"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M21",
+    "title": "Home-health aide / personal-care worker",
+    "package": "W17",
+    "representation": "external_service_actor",
+    "key_question": "What evidence shows personal-care work actually occurred rather than being arranged?",
+    "distinction": "A physical service worker is not an LLM reasoning role.",
+    "counterexample": "A scheduled aide visit is represented as delivered care.",
+    "conclusion": "Coordinate the service through permitted interfaces; require observed acceptance/fulfillment rather than an internal persona’s promise.",
+    "merge_condition": "A shared logistics coordinator can manage requests; providers, workers and actual delivery remain distinct external parties/events.",
+    "retained_package_boundary": "Referral sent, accepted, scheduled, delivered and completed are separate states. Capacity and actual attendance must come from allowed observations.",
+    "split_trigger": "A dispatcher persona or optimistic plan is used as evidence that a person received care, transport, food or equipment.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M21.md",
+    "evidence_source_ids": [
+      "B19",
+      "R30"
+    ],
+    "linked_authority_questions": [
+      "D07"
+    ],
+    "original_scope": "Health-related tasks depend on state, training and supervision; personal support is not equivalent to skilled nursing.",
+    "original_evidence_limit": "Do not apply Medicare coverage conditions to every private aide or treat personal care as equivalent to skilled nursing.",
+    "suggested_input_context": [
+      "Assigned plan and instructions",
+      "Patient needs/preferences"
+    ],
+    "suggested_output_context": [
+      "Completed-task record",
+      "Observed changes and unmet-support report"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M22",
+    "title": "Community resource / housing / food / benefit-support worker",
+    "package": "W17",
+    "representation": "external_service_actor",
+    "key_question": "Which resource is eligible, available and actually accepted for this person?",
+    "distinction": "Resource discovery, application, approval and delivery need distinct states.",
+    "counterexample": "A housing/food resource listed online is reported as secured assistance.",
+    "conclusion": "Coordinate the service through permitted interfaces; require observed acceptance/fulfillment rather than an internal persona’s promise.",
+    "merge_condition": "A shared logistics coordinator can manage requests; providers, workers and actual delivery remain distinct external parties/events.",
+    "retained_package_boundary": "Referral sent, accepted, scheduled, delivered and completed are separate states. Capacity and actual attendance must come from allowed observations.",
+    "split_trigger": "A dispatcher persona or optimistic plan is used as evidence that a person received care, transport, food or equipment.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M22.md",
+    "evidence_source_ids": [
+      "R22",
+      "R28",
+      "R29"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Broad service-partner family, not a single licensed occupation; record the actual agency and job before assigning permissions.",
+    "original_evidence_limit": "Directory availability is not service capacity, and the worker cannot be assumed to control health-plan eligibility or clinical treatment.",
+    "suggested_input_context": [
+      "Appropriate referral and agreed information",
+      "Program eligibility/capacity"
+    ],
+    "suggested_output_context": [
+      "Service acceptance/refusal or assistance record",
+      "Remaining barrier"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M23",
+    "title": "Transportation coordinator / dispatcher",
+    "package": "W17",
+    "representation": "role_mode",
+    "key_question": "Is the trip merely requested, confirmed, dispatched or completed?",
+    "distinction": "Transport coordination can merge with logistics; execution remains externally observed.",
+    "counterexample": "A trip request is treated as attendance at care.",
+    "conclusion": "Candidate explicit mode of a shared workflow owner, conditional on scope and measured context/coordination behavior.",
+    "merge_condition": "A shared logistics coordinator can manage requests; providers, workers and actual delivery remain distinct external parties/events.",
+    "retained_package_boundary": "Referral sent, accepted, scheduled, delivered and completed are separate states. Capacity and actual attendance must come from allowed observations.",
+    "split_trigger": "A dispatcher persona or optimistic plan is used as evidence that a person received care, transport, food or equipment.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M23.md",
+    "evidence_source_ids": [
+      "R28",
+      "B19",
+      "V05",
+      "V14"
+    ],
+    "linked_authority_questions": [
+      "D31"
+    ],
+    "original_scope": "Functional synthesis from access-barrier and transport-support evidence; exact broker rules and payment route are not established here.",
+    "original_evidence_limit": "Travel eligibility, accessibility, modality and required clinical attendants cannot be decided from dispatcher title alone.",
+    "suggested_input_context": [
+      "Appointment/trip details",
+      "Relevant accessibility requirements"
+    ],
+    "suggested_output_context": [
+      "Trip booking/status",
+      "Unresolved travel barrier"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M24",
+    "title": "Transport driver / service-delivery worker",
+    "package": "W17",
+    "representation": "external_service_actor",
+    "key_question": "What observation establishes pickup, delivery or a failed trip?",
+    "distinction": "A driver persona cannot physically deliver a person.",
+    "counterexample": "The model invents transport completion to close the case.",
+    "conclusion": "Coordinate the service through permitted interfaces; require observed acceptance/fulfillment rather than an internal persona’s promise.",
+    "merge_condition": "A shared logistics coordinator can manage requests; providers, workers and actual delivery remain distinct external parties/events.",
+    "retained_package_boundary": "Referral sent, accepted, scheduled, delivered and completed are separate states. Capacity and actual attendance must come from allowed observations.",
+    "split_trigger": "A dispatcher persona or optimistic plan is used as evidence that a person received care, transport, food or equipment.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M24.md",
+    "evidence_source_ids": [
+      "R28",
+      "B19",
+      "A10",
+      "V05",
+      "V14"
+    ],
+    "linked_authority_questions": [
+      "D31"
+    ],
+    "original_scope": "Operational synthesis; vehicle, attendant and medical-transport qualification must be determined for the actual journey.",
+    "original_evidence_limit": "Driver title alone does not grant emergency clinical triage authority. A trip booking is not proof of attendance or completed care.",
+    "suggested_input_context": [
+      "Confirmed trip and access details",
+      "Service instructions"
+    ],
+    "suggested_output_context": [
+      "Pickup/completion or failure status",
+      "Operational concern"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M25",
+    "title": "Equipment supplier / delivery or fitting staff",
+    "package": "W17",
+    "representation": "external_service_actor",
+    "key_question": "What confirms supply, delivery/fitting and any required receiving acknowledgement?",
+    "distinction": "Ordering equipment and its real fulfillment are separate responsibilities.",
+    "counterexample": "An equipment order is reported as installed and usable without confirmation.",
+    "conclusion": "Coordinate the service through permitted interfaces; require observed acceptance/fulfillment rather than an internal persona’s promise.",
+    "merge_condition": "A shared logistics coordinator can manage requests; providers, workers and actual delivery remain distinct external parties/events.",
+    "retained_package_boundary": "Referral sent, accepted, scheduled, delivered and completed are separate states. Capacity and actual attendance must come from allowed observations.",
+    "split_trigger": "A dispatcher persona or optimistic plan is used as evidence that a person received care, transport, food or equipment.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M25.md",
+    "evidence_source_ids": [
+      "R11",
+      "R30"
+    ],
+    "linked_authority_questions": [
+      "D31"
+    ],
+    "original_scope": "The CMS power-mobility example has specific requirements; do not apply those mechanically to all equipment.",
+    "original_evidence_limit": "Power-mobility requirements cannot be generalized to all DME, delivery staff or fitting credentials. Supplier is not automatically the prescriber.",
+    "suggested_input_context": [
+      "Order and equipment needs",
+      "Relevant authorization/service requirements"
+    ],
+    "suggested_output_context": [
+      "Fulfillment/fitting/service record",
+      "Missing-order or service problem"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M26",
+    "title": "Infusion / other receiving-service coordinator",
+    "package": "W17",
+    "representation": "external_service_actor",
+    "key_question": "Which receiving-service acceptance, scheduling and clinical prerequisites remain outstanding?",
+    "distinction": "Service coordination cannot supply all fulfillment/clinical evidence itself.",
+    "counterexample": "An infusion referral is labeled administered treatment.",
+    "conclusion": "Coordinate the service through permitted interfaces; require observed acceptance/fulfillment rather than an internal persona’s promise.",
+    "merge_condition": "A shared logistics coordinator can manage requests; providers, workers and actual delivery remain distinct external parties/events.",
+    "retained_package_boundary": "Referral sent, accepted, scheduled, delivered and completed are separate states. Capacity and actual attendance must come from allowed observations.",
+    "split_trigger": "A dispatcher persona or optimistic plan is used as evidence that a person received care, transport, food or equipment.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M26.md",
+    "evidence_source_ids": [
+      "A06",
+      "R22",
+      "R04"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Operational service-coordination model; exact service procedure and clinical signoffs require the actual provider protocol.",
+    "original_evidence_limit": "This profile must remain an operational model; booking does not establish clinical readiness or administration.",
+    "suggested_input_context": [
+      "Clinical order and referral",
+      "Required service/coverage information"
+    ],
+    "suggested_output_context": [
+      "Acceptance/booking response",
+      "Missing requirements or completed handoff"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M27",
+    "title": "Palliative-care clinical team member",
+    "package": "W04",
+    "representation": "external_actor",
+    "key_question": "Which palliative contribution is relevant without assuming hospice enrollment?",
+    "distinction": "Palliative care and hospice participation are not interchangeable pathways.",
+    "counterexample": "A palliative referral triggers an invented hospice certification.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "A shared evidence-request adapter may serve these contacts; that is an interface merger, not one interchangeable clinical occupation.",
+    "retained_package_boundary": "Credential, jurisdiction, privileges, authorship and treating relationship remain distinct; reading a chart is not performing treatment or acquiring prescribing authority.",
+    "split_trigger": "The harness fabricates a clinician statement or treats every clinical title as equivalent signatory permission.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M27.md",
+    "evidence_source_ids": [
+      "R31",
+      "A01"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "A team function comprising different professions, each retaining its own scope; identify the actual clinician for an order.",
+    "original_evidence_limit": "Palliative care and hospice are distinct service contexts; team membership does not give every member physician authority.",
+    "suggested_input_context": [
+      "Clinical situation and patient goals",
+      "Treating-team information"
+    ],
+    "suggested_output_context": [
+      "Serious-illness assessment/recommendation",
+      "Coordinated support plan"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M28",
+    "title": "Hospice interdisciplinary group and attending functions (distinct roles)",
+    "package": "W18",
+    "representation": "composite_external_functions",
+    "key_question": "Which IDG, RN coordination, attending, certification or admission function is needed?",
+    "distinction": "The existing composite profile is a warning against one-role/one-agent mapping.",
+    "counterexample": "A single hospice worker is assigned every signatory function from a group description.",
+    "conclusion": "Decompose the profile’s multiple functions before assigning worker identities or decision ownership.",
+    "merge_condition": "Common communication plumbing may connect participants; the composite hospice profile must be decomposed into functions before creating worker identities.",
+    "retained_package_boundary": "IDG planning, designated RN coordination, attending, certification/admission and spiritual support are distinct; the cited hospice evidence is the 2025 edition.",
+    "split_trigger": "One hospice agent is assigned all professional decisions or spiritual support is treated as clinical certification.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M28.md",
+    "evidence_source_ids": [
+      "A08",
+      "R34",
+      "V11",
+      "V16",
+      "V17"
+    ],
+    "linked_authority_questions": [
+      "D33"
+    ],
+    "original_scope": "V11, V16 and V17 are the official October 2025 codification, not a complete current-2026 update check. They distinguish IDG/designated RN coordination, physician certification and admission. A patient-designated attending may have a different allowed credential; that does not grant every attending terminal-illness certification authority.",
+    "original_evidence_limit": "The IDG is a group, not one individual. Evidence is expressly the October 2025 codification; complete current 2026 hospice-rule verification is not claimed.",
+    "suggested_input_context": [
+      "Hospice referral/context and goals",
+      "Professional assessments"
+    ],
+    "suggested_output_context": [
+      "Interdisciplinary care plan",
+      "Patient/family support and change communication"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M29",
+    "title": "Chaplain / spiritual-care professional",
+    "package": "W18",
+    "representation": "external_actor",
+    "key_question": "What spiritual support did the person request or accept?",
+    "distinction": "Spiritual support can be coordinated without assuming beliefs or clinical decision authority.",
+    "counterexample": "The model invents spiritual preferences or treats support as clinical consent.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "Common communication plumbing may connect participants; the composite hospice profile must be decomposed into functions before creating worker identities.",
+    "retained_package_boundary": "IDG planning, designated RN coordination, attending, certification/admission and spiritual support are distinct; the cited hospice evidence is the 2025 edition.",
+    "split_trigger": "One hospice agent is assigned all professional decisions or spiritual support is treated as clinical certification.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M29.md",
+    "evidence_source_ids": [
+      "R27",
+      "R31",
+      "A08"
+    ],
+    "linked_authority_questions": [
+      "D33"
+    ],
+    "original_scope": "Participation is needs/preference-dependent; protect the distinction between support and clinical decision authority.",
+    "original_evidence_limit": "Spiritual support does not create clinical, coverage or surrogate-decision authority.",
+    "suggested_input_context": [
+      "Patient wishes and relevant referral",
+      "Agreed context"
+    ],
+    "suggested_output_context": [
+      "Support provided",
+      "Relevant agreed team communication"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M30",
+    "title": "Administrative care coordinator / scheduling support",
+    "package": "W13",
+    "representation": "role_mode",
+    "key_question": "Which scheduling/follow-up task can be closed with an observed response?",
+    "distinction": "Administrative care support can share the case owner while clinical conclusions remain scoped.",
+    "counterexample": "A reminder sent becomes a completed assessment.",
+    "conclusion": "Candidate explicit mode of a shared workflow owner, conditional on scope and measured context/coordination behavior.",
+    "merge_condition": "A case owner can combine administrative coordination, navigation and general education support while invoking specific expertise when needed.",
+    "retained_package_boundary": "Clinical assessment permissions, patient statements, discharge authority and professional education scope remain explicit; coordination is not physical service delivery.",
+    "split_trigger": "A merged worker loses patient dialogue state, invents assessment answers, or marks a referral as completed care.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M30.md",
+    "evidence_source_ids": [
+      "R26",
+      "R32"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Administrative coordinator and licensed case manager may be distinct posts; do not infer credentials from title.",
+    "original_evidence_limit": "Administrative closure/status changes are not equivalent to clinical decision or confirmed service delivery.",
+    "suggested_input_context": [
+      "Assigned coordination plan",
+      "Contacts and service responses"
+    ],
+    "suggested_output_context": [
+      "Schedules/status updates",
+      "Routed unresolved items"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "M31",
+    "title": "Safeguarding / protection-service professional",
+    "package": "W19",
+    "representation": "external_actor",
+    "key_question": "Which actual protection pathway, jurisdiction and mandate must be established?",
+    "distinction": "Concern detection and mandated reporting/investigation are different functions.",
+    "counterexample": "A protection persona is assumed to resolve a legally governed safeguarding matter.",
+    "conclusion": "Keep a separately attributed participant/evidence interface when this information belongs to an external party; use an acting role mode only where the actual task explicitly assigns it.",
+    "merge_condition": "Detection and routing can be a capability of a case owner; legal investigation/protection authority remains external.",
+    "retained_package_boundary": "Applicable mandate, jurisdiction, urgency and APS phase-in facts cannot be inferred from a generic concern. Child/adult pathways are not identical.",
+    "split_trigger": "A model resolves a safeguarding case by assertion or invents a universal reporting rule.",
+    "evidence_role": "Plan/HealthcareRoles/roles/M31.md",
+    "evidence_source_ids": [
+      "R25",
+      "A09",
+      "A10",
+      "V12"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "State reporting law and actual agency mandate are unresolved case variables; this card does not invent national reporting thresholds. The cited 2024 APS fact sheet has a 2028 full-compliance date; it does not prove uniform present implementation in every state or child-protection setting.",
+    "original_evidence_limit": "The 2024 federal APS rule fact sheet has a later full-compliance date. Do not infer uniform implementation or identical consent/investigation authority in every state.",
+    "suggested_input_context": [
+      "Specific concern/referral",
+      "Appropriate facts and authority"
+    ],
+    "suggested_output_context": [
+      "Protection-process response",
+      "Appropriate service communication"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G01",
+    "title": "Provider medical director / chief medical officer",
+    "package": "W20",
+    "representation": "governance_interface",
+    "key_question": "Is this a provider governance mandate or a case-level treating/review function?",
+    "distinction": "A leadership title is not authority over payer determinations.",
+    "counterexample": "Provider leadership is modeled as the payer reviewer’s boss.",
+    "conclusion": "Retain the approved mandate/version and external approval identity; retrieval/analysis may be shared without creating governance authority.",
+    "merge_condition": "Share policy retrieval and change tracking; proposal, clinical governance, committee approval and legal advice remain separately attributed functions.",
+    "retained_package_boundary": "An analyst draft or agent-generated rule is not approved policy. Provider and payer leaders have different mandates; hierarchy is not global authority.",
+    "split_trigger": "A task worker rewrites the controlling rule or approves its own policy revision to make a case pass.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G01.md",
+    "evidence_source_ids": [
+      "B22",
+      "R14",
+      "A15"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Actual reporting lines, medical-staff authority and privileges require local bylaws/organization chart; no universal CMO-boss graph is asserted.",
+    "original_evidence_limit": "Exact authority over practitioners requires bylaws, privileges and assignment; the title does not establish a physician-over-all-professions chain.",
+    "suggested_input_context": [
+      "Clinical quality/escalation findings",
+      "Applicable professional and organizational requirements"
+    ],
+    "suggested_output_context": [
+      "Clinical-program policy/escalation response",
+      "Improvement direction"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G02",
+    "title": "Payer medical director / clinical-program leader",
+    "package": "W20",
+    "representation": "governance_interface",
+    "key_question": "Is the action policy/program oversight or a separately assigned case determination?",
+    "distinction": "One person can hold both functions, but attribution and authority still differ.",
+    "counterexample": "Program leadership is treated as independent appeal jurisdiction.",
+    "conclusion": "Retain the approved mandate/version and external approval identity; retrieval/analysis may be shared without creating governance authority.",
+    "merge_condition": "Share policy retrieval and change tracking; proposal, clinical governance, committee approval and legal advice remain separately attributed functions.",
+    "retained_package_boundary": "An analyst draft or agent-generated rule is not approved policy. Provider and payer leaders have different mandates; hierarchy is not global authority.",
+    "split_trigger": "A task worker rewrites the controlling rule or approves its own policy revision to make a case pass.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G02.md",
+    "evidence_source_ids": [
+      "A05",
+      "A02",
+      "A03",
+      "R18"
+    ],
+    "linked_authority_questions": [
+      "D19"
+    ],
+    "original_scope": "In MA the UM committee is led by the plan medical director; governance and case-review roles are not the same authority edge.",
+    "original_evidence_limit": "Program leadership cannot substitute for the independence/expertise required for a particular appeal.",
+    "suggested_input_context": [
+      "Review quality/escalation reports",
+      "Coverage/policy requirements"
+    ],
+    "suggested_output_context": [
+      "Clinical-program direction",
+      "Policy-governance input"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G03",
+    "title": "UM / medical-policy committee and specialty members",
+    "package": "W20",
+    "representation": "governance_interface",
+    "key_question": "Which policy/version was actually approved by the relevant process?",
+    "distinction": "A committee is a governance function, not one agent whose generated opinion changes rules.",
+    "counterexample": "A policy-synthesis agent approves its own novel criterion.",
+    "conclusion": "Retain the approved mandate/version and external approval identity; retrieval/analysis may be shared without creating governance authority.",
+    "merge_condition": "Share policy retrieval and change tracking; proposal, clinical governance, committee approval and legal advice remain separately attributed functions.",
+    "retained_package_boundary": "An analyst draft or agent-generated rule is not approved policy. Provider and payer leaders have different mandates; hierarchy is not global authority.",
+    "split_trigger": "A task worker rewrites the controlling rule or approves its own policy revision to make a case pass.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G03.md",
+    "evidence_source_ids": [
+      "A05",
+      "A17",
+      "R12",
+      "R18"
+    ],
+    "linked_authority_questions": [
+      "D19",
+      "D20"
+    ],
+    "original_scope": "MA committee requirements are explicit in A05; do not assume identical statutory composition for all insurance products.",
+    "original_evidence_limit": "Policy approval is not adjudication of every case. An earlier rule edition may contain requirements removed or changed later; use the stated edition.",
+    "suggested_input_context": [
+      "Evidence and coverage rules",
+      "Policy proposals and quality feedback"
+    ],
+    "suggested_output_context": [
+      "Approved/revised policy",
+      "Governance rationale"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G04",
+    "title": "Care-management director / manager",
+    "package": "W21",
+    "representation": "configuration_or_escalation",
+    "key_question": "What management decision concerns assignment/process rather than clinical override?",
+    "distinction": "Shared operational control can allocate work without inventing clinical seniority.",
+    "counterexample": "The orchestrator is labeled director and given every professional permission.",
+    "conclusion": "Represent assignment/routing rules explicitly; interpret/escalate only when the actual task requires it.",
+    "merge_condition": "A design-time analysis service may cover several functions, while runtime checks remain bounded and separate from official grading.",
+    "retained_package_boundary": "Operational management is not clinical or appeal authority; internal diagnostics must not read hidden verifier answers or masquerade as official scores.",
+    "split_trigger": "Training feedback contaminates held-out evaluation, or a self-audit is reported as independent official success.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G04.md",
+    "evidence_source_ids": [
+      "R32",
+      "B22"
+    ],
+    "linked_authority_questions": [
+      "D29"
+    ],
+    "original_scope": "Partnership documents several management levels; exact titles and reporting relationships elsewhere remain local.",
+    "original_evidence_limit": "Administrative resource authority does not confer prescribing, patient consent or insurer appeal authority.",
+    "suggested_input_context": [
+      "Program metrics and escalations",
+      "Resource and policy requirements"
+    ],
+    "suggested_output_context": [
+      "Resource/process direction",
+      "Program evaluation and escalation response"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G05",
+    "title": "Clinical / case-management supervisor",
+    "package": "W21",
+    "representation": "configuration_or_escalation",
+    "key_question": "Which supervision relationship and professional scope are actually documented?",
+    "distinction": "RN/LVN/nonclinical supervisory titles do not prove identical powers.",
+    "counterexample": "A manager/supervisor collaboration edge becomes a universal command chain.",
+    "conclusion": "Represent assignment/routing rules explicitly; interpret/escalate only when the actual task requires it.",
+    "merge_condition": "A design-time analysis service may cover several functions, while runtime checks remain bounded and separate from official grading.",
+    "retained_package_boundary": "Operational management is not clinical or appeal authority; internal diagnostics must not read hidden verifier answers or masquerade as official scores.",
+    "split_trigger": "Training feedback contaminates held-out evaluation, or a self-audit is reported as independent official success.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G05.md",
+    "evidence_source_ids": [
+      "R32",
+      "A13",
+      "A14"
+    ],
+    "linked_authority_questions": [
+      "D29"
+    ],
+    "original_scope": "R32 distinguishes RN, LVN, nonclinical and social-work supervisors; those qualifications must not be collapsed into one scope.",
+    "original_evidence_limit": "A supervisor title does not imply identical clinical powers or a universal ordering between professional licenses.",
+    "suggested_input_context": [
+      "Case-manager escalation",
+      "Team workload and quality issues"
+    ],
+    "suggested_output_context": [
+      "Supervisory guidance and case review",
+      "Escalation to appropriate professional"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G06",
+    "title": "Quality-improvement / audit professional",
+    "package": "W21",
+    "representation": "development_capability",
+    "key_question": "Is this an internal quality check, an independent review or the official benchmark result?",
+    "distinction": "A bounded critic can aid quality without becoming an adjudicator or hidden verifier.",
+    "counterexample": "A model’s own success declaration is reported as official pass evidence.",
+    "conclusion": "Primarily a development/quality-analysis function unless a task explicitly requires it at runtime; keep official grading separate.",
+    "merge_condition": "A design-time analysis service may cover several functions, while runtime checks remain bounded and separate from official grading.",
+    "retained_package_boundary": "Operational management is not clinical or appeal authority; internal diagnostics must not read hidden verifier answers or masquerade as official scores.",
+    "split_trigger": "Training feedback contaminates held-out evaluation, or a self-audit is reported as independent official success.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G06.md",
+    "evidence_source_ids": [
+      "R14",
+      "R32",
+      "B21"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Audit access and methods must be authorized; observational findings are not automatically causal evidence.",
+    "original_evidence_limit": "A finding is not a patient diagnosis, automatic coverage reversal or causal proof of improved outcomes.",
+    "suggested_input_context": [
+      "Authorized operational/clinical data",
+      "Audit criteria"
+    ],
+    "suggested_output_context": [
+      "Quality findings",
+      "Improvement recommendations and follow-up"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G07",
+    "title": "Trainer / clinical educator",
+    "package": "W21",
+    "representation": "development_capability",
+    "key_question": "Which observed failure justifies a reusable instruction change?",
+    "distinction": "Training updates should use permitted development evidence and preserve held-out evaluation.",
+    "counterexample": "A task-specific answer is embedded into a general role prompt.",
+    "conclusion": "Primarily a development/quality-analysis function unless a task explicitly requires it at runtime; keep official grading separate.",
+    "merge_condition": "A design-time analysis service may cover several functions, while runtime checks remain bounded and separate from official grading.",
+    "retained_package_boundary": "Operational management is not clinical or appeal authority; internal diagnostics must not read hidden verifier answers or masquerade as official scores.",
+    "split_trigger": "Training feedback contaminates held-out evaluation, or a self-audit is reported as independent official success.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G07.md",
+    "evidence_source_ids": [
+      "R32",
+      "B13",
+      "A13"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "A clinical educator may hold a clinical license, but its separate practice permissions are not supplied by the training title.",
+    "original_evidence_limit": "Course attendance does not grant a license or establish competence for every clinical task.",
+    "suggested_input_context": [
+      "Approved policies and tools",
+      "Identified learning gaps"
+    ],
+    "suggested_output_context": [
+      "Training materials and learning record",
+      "Escalated policy question"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G08",
+    "title": "Policy analyst / clinical regulatory adviser",
+    "package": "W20",
+    "representation": "bounded_capability",
+    "key_question": "Is a retrieved rule current/applicable, a draft interpretation or an approved controlling policy?",
+    "distinction": "Retrieval and policy interpretation can be shared; policy approval remains separate.",
+    "counterexample": "A generated policy summary overrides the actual cited rule.",
+    "conclusion": "Candidate reusable evidence/checking capability; autonomous persistence needs a measured reason.",
+    "merge_condition": "Share policy retrieval and change tracking; proposal, clinical governance, committee approval and legal advice remain separately attributed functions.",
+    "retained_package_boundary": "An analyst draft or agent-generated rule is not approved policy. Provider and payer leaders have different mandates; hierarchy is not global authority.",
+    "split_trigger": "A task worker rewrites the controlling rule or approves its own policy revision to make a case pass.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G08.md",
+    "evidence_source_ids": [
+      "R32",
+      "A05",
+      "A17"
+    ],
+    "linked_authority_questions": [
+      "D19"
+    ],
+    "original_scope": "Clinical adviser and nonclinical analyst may be separate professions; any clinical decision requires the actual credential and assignment.",
+    "original_evidence_limit": "Drafting and approval are distinct. The analyst does not automatically enact policy or decide clinical case merits.",
+    "suggested_input_context": [
+      "Requirements/evidence",
+      "Operational feedback and policy versions"
+    ],
+    "suggested_output_context": [
+      "Policy analysis/draft",
+      "Change-impact and approval request"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G09",
+    "title": "Compliance / regulatory professional",
+    "package": "W20",
+    "representation": "governance_interface",
+    "key_question": "What requirement applies to the actual product/setting and what remains unverified?",
+    "distinction": "Compliance review can identify questions without inventing permissions or deadlines.",
+    "counterexample": "A generic compliance persona certifies every jurisdiction.",
+    "conclusion": "Retain the approved mandate/version and external approval identity; retrieval/analysis may be shared without creating governance authority.",
+    "merge_condition": "Share policy retrieval and change tracking; proposal, clinical governance, committee approval and legal advice remain separately attributed functions.",
+    "retained_package_boundary": "An analyst draft or agent-generated rule is not approved policy. Provider and payer leaders have different mandates; hierarchy is not global authority.",
+    "split_trigger": "A task worker rewrites the controlling rule or approves its own policy revision to make a case pass.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G09.md",
+    "evidence_source_ids": [
+      "R14",
+      "R32",
+      "B22"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Actual legal interpretation and enforcement authority depend on role; local compliance staff are not the regulator.",
+    "original_evidence_limit": "An internal interpretation is not itself law or a clinical/appeal decision.",
+    "suggested_input_context": [
+      "Applicable rules and oversight findings",
+      "Operational concerns"
+    ],
+    "suggested_output_context": [
+      "Compliance guidance/action plan",
+      "Escalated interpretive issue"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G10",
+    "title": "Privacy officer / HIM privacy specialist",
+    "package": "W22",
+    "representation": "configuration_or_escalation",
+    "key_question": "What purpose, recipient and protected material determine this information view?",
+    "distinction": "Prompt separation alone is not access control; treatment exceptions and other restrictions remain scoped.",
+    "counterexample": "All workers receive the whole chart because they belong to one software system.",
+    "conclusion": "Represent assignment/routing rules explicitly; interpret/escalate only when the actual task requires it.",
+    "merge_condition": "Prefer explicit permission/configuration machinery plus escalation where uncertain; a persona alone cannot enforce access.",
+    "retained_package_boundary": "Technical access is not consent, clinical permission or substantive authorship; privacy purpose and special restrictions remain explicit.",
+    "split_trigger": "Every worker receives all tools/data because one shared model is assumed to have global authority.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G10.md",
+    "evidence_source_ids": [
+      "R07",
+      "R32",
+      "A09",
+      "A10",
+      "V15"
+    ],
+    "linked_authority_questions": [
+      "D02",
+      "D27"
+    ],
+    "original_scope": "Treatment, payment, patient access, representative authority and specially protected data can invoke different rules.",
+    "original_evidence_limit": "Minimum necessary, authorization, representative access and specially protected records are different questions; Part 2 illustrates why treatment is not an unrestricted all-records exception.",
+    "suggested_input_context": [
+      "Access/disclosure request",
+      "Purpose and relevant authority facts"
+    ],
+    "suggested_output_context": [
+      "Access/disclosure guidance",
+      "Privacy escalation/action record"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G11",
+    "title": "Health-services / population-health data analyst",
+    "package": "W21",
+    "representation": "development_capability",
+    "key_question": "Which aggregate outcome metric is observed rather than inferred from a role narrative?",
+    "distinction": "Population analysis is design-time unless the assigned task actually requires it.",
+    "counterexample": "Aggregate data is treated as a patient-specific fact or an unmeasured improvement.",
+    "conclusion": "Primarily a development/quality-analysis function unless a task explicitly requires it at runtime; keep official grading separate.",
+    "merge_condition": "A design-time analysis service may cover several functions, while runtime checks remain bounded and separate from official grading.",
+    "retained_package_boundary": "Operational management is not clinical or appeal authority; internal diagnostics must not read hidden verifier answers or masquerade as official scores.",
+    "split_trigger": "Training feedback contaminates held-out evaluation, or a self-audit is reported as independent official success.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G11.md",
+    "evidence_source_ids": [
+      "B21",
+      "R32"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Reporting access and measure interpretation require actual data governance; algorithm output is not automatically a clinical determination.",
+    "original_evidence_limit": "Measure definitions, data access and interpretation must be authorized; administrative task completion cannot be assumed to mean clinical benefit.",
+    "suggested_input_context": [
+      "Authorized data and measure definitions",
+      "Operational questions"
+    ],
+    "suggested_output_context": [
+      "Reports and limitations",
+      "Data-quality findings"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G12",
+    "title": "Business / workflow analyst",
+    "package": "W21",
+    "representation": "development_capability",
+    "key_question": "Which process bottleneck is supported by measured traces rather than a diagram edge?",
+    "distinction": "The old dependency graph is a model, not measured interaction frequency.",
+    "counterexample": "Clustering the 219 modeled arrows is presented as an empirically optimal architecture.",
+    "conclusion": "Primarily a development/quality-analysis function unless a task explicitly requires it at runtime; keep official grading separate.",
+    "merge_condition": "A design-time analysis service may cover several functions, while runtime checks remain bounded and separate from official grading.",
+    "retained_package_boundary": "Operational management is not clinical or appeal authority; internal diagnostics must not read hidden verifier answers or masquerade as official scores.",
+    "split_trigger": "Training feedback contaminates held-out evaluation, or a self-audit is reported as independent official success.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G12.md",
+    "evidence_source_ids": [
+      "R32",
+      "B21"
+    ],
+    "linked_authority_questions": [],
+    "original_scope": "Systems analyst authority is change-process authority, not authority over patient treatment.",
+    "original_evidence_limit": "Requirements writing is not medical-policy approval or treatment authority.",
+    "suggested_input_context": [
+      "User/process requirements",
+      "Operational and system findings"
+    ],
+    "suggested_output_context": [
+      "Process/system requirements",
+      "Acceptance findings and unresolved questions"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G13",
+    "title": "EHR / clinical informatics / application-support professional",
+    "package": "W22",
+    "representation": "infrastructure",
+    "key_question": "Does a technical operation alter presentation, access or substantive clinical state?",
+    "distinction": "An EHR support interface is infrastructure, not a hidden source of decision power.",
+    "counterexample": "System access is used to rewrite a clinical fact without an authorized author.",
+    "conclusion": "Prefer explicit access/configuration/tool machinery; role text alone is not enforcement.",
+    "merge_condition": "Prefer explicit permission/configuration machinery plus escalation where uncertain; a persona alone cannot enforce access.",
+    "retained_package_boundary": "Technical access is not consent, clinical permission or substantive authorship; privacy purpose and special restrictions remain explicit.",
+    "split_trigger": "Every worker receives all tools/data because one shared model is assumed to have global authority.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G13.md",
+    "evidence_source_ids": [
+      "B21",
+      "R32",
+      "A15"
+    ],
+    "linked_authority_questions": [
+      "D30"
+    ],
+    "original_scope": "Clinical informaticists may hold additional licenses; distinguish technical permissions from those independent credentials.",
+    "original_evidence_limit": "Technical configuration permission is not permission to alter clinical facts or approve care.",
+    "suggested_input_context": [
+      "Approved requirements",
+      "Incident and data-quality reports"
+    ],
+    "suggested_output_context": [
+      "System change/support resolution",
+      "Audit and validation information"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G14",
+    "title": "Identity / portal-access administrator",
+    "package": "W22",
+    "representation": "infrastructure",
+    "key_question": "Which identity and tool permission are granted for this exact task principal?",
+    "distinction": "Use explicit scoped operations; one shared model identity does not imply global access.",
+    "counterexample": "Role prompts are treated as enforceable security while every worker retains all credentials.",
+    "conclusion": "Prefer explicit access/configuration/tool machinery; role text alone is not enforcement.",
+    "merge_condition": "Prefer explicit permission/configuration machinery plus escalation where uncertain; a persona alone cannot enforce access.",
+    "retained_package_boundary": "Technical access is not consent, clinical permission or substantive authorship; privacy purpose and special restrictions remain explicit.",
+    "split_trigger": "Every worker receives all tools/data because one shared model is assumed to have global authority.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G14.md",
+    "evidence_source_ids": [
+      "B21",
+      "A10",
+      "R07",
+      "V08"
+    ],
+    "linked_authority_questions": [
+      "D30"
+    ],
+    "original_scope": "Operational synthesis of access-control support; actual IAM owner and escalation line must be locally identified.",
+    "original_evidence_limit": "Exact healthcare provisioning workflow, approval authority and local job title remain unconfirmed; administrator access is not unrestricted PHI permission.",
+    "suggested_input_context": [
+      "Approved access request",
+      "Identity and technical incident details"
+    ],
+    "suggested_output_context": [
+      "Provisioned/corrected access",
+      "Audit and unresolved incident record"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G15",
+    "title": "Billing / patient accounts / claim-denial worker",
+    "package": "W23",
+    "representation": "external_service_actor",
+    "key_question": "Which payment/claim event is actually in scope and observed?",
+    "distinction": "Account handling can share documents with authorization while preserving distinct financial state.",
+    "counterexample": "Authorization or coverage verification is reported as a paid claim.",
+    "conclusion": "Coordinate the service through permitted interfaces; require observed acceptance/fulfillment rather than an internal persona’s promise.",
+    "merge_condition": "Share identifiers and authorized documents with access/dispute workflows; invoke payment reasoning only where needed.",
+    "retained_package_boundary": "Prior authorization, benefit verification, claim acceptance, adjudication and payment are different states.",
+    "split_trigger": "Authorization success is reported as a paid claim or a completed financial outcome without evidence.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G15.md",
+    "evidence_source_ids": [
+      "R06",
+      "R08",
+      "B20",
+      "V18"
+    ],
+    "linked_authority_questions": [
+      "D32"
+    ],
+    "original_scope": "Downstream claim adjudication and pre-service authorization are distinct; exact payment rules are outside a generic role title.",
+    "original_evidence_limit": "Pre-service authorization, claim adjudication, financial assistance and patient liability are different decisions.",
+    "suggested_input_context": [
+      "Service/coding record",
+      "Benefit and claim response"
+    ],
+    "suggested_output_context": [
+      "Claim/account record",
+      "Correction or payment-dispute follow-up"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G16",
+    "title": "Regulator / oversight official",
+    "package": "W12",
+    "representation": "external_review_actor",
+    "key_question": "What oversight power and case route are actually invoked?",
+    "distinction": "A regulator is not a universal super-agent or ordinary appeal endpoint.",
+    "counterexample": "A local model manufactures a regulatory ruling to resolve disagreement.",
+    "conclusion": "Preserve the actual external forum, route and observed outcome; an internal critic is a different function.",
+    "merge_condition": "A routing adapter can share transport/record plumbing, while preserving distinct institutions, jurisdiction, eligibility and decision authority.",
+    "retained_package_boundary": "MA IRE, commercial IRO, regulator, ALJ, Council and court are not one escalating internal worker. External decisions cannot be invented by a local reviewer persona.",
+    "split_trigger": "A harness creates a binding external reversal or moves automatically through every forum without eligibility.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G16.md",
+    "evidence_source_ids": [
+      "A05",
+      "A11",
+      "R17",
+      "R35"
+    ],
+    "linked_authority_questions": [
+      "D34"
+    ],
+    "original_scope": "Identify agency, program and legal route; no blanket authority is assigned to every regulator or ombudsman.",
+    "original_evidence_limit": "A complaint may trigger oversight or referral rather than a coverage reversal; identify jurisdiction and legal process.",
+    "suggested_input_context": [
+      "Applicable oversight issue",
+      "Authorized complaint/evidence"
+    ],
+    "suggested_output_context": [
+      "Oversight disposition or required action",
+      "Referral to proper forum"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "G17",
+    "title": "Legal adviser / specialist legal representative",
+    "package": "W20",
+    "representation": "governance_interface",
+    "key_question": "Is this administrative assistance, legal analysis or actual authorized representation?",
+    "distinction": "A legal capability does not make a model a licensed representative or court.",
+    "counterexample": "A generated legal argument is labeled a binding legal outcome.",
+    "conclusion": "Retain the approved mandate/version and external approval identity; retrieval/analysis may be shared without creating governance authority.",
+    "merge_condition": "Share policy retrieval and change tracking; proposal, clinical governance, committee approval and legal advice remain separately attributed functions.",
+    "retained_package_boundary": "An analyst draft or agent-generated rule is not approved policy. Provider and payer leaders have different mandates; hierarchy is not global authority.",
+    "split_trigger": "A task worker rewrites the controlling rule or approves its own policy revision to make a case pass.",
+    "evidence_role": "Plan/HealthcareRoles/roles/G17.md",
+    "evidence_source_ids": [
+      "R20",
+      "A11",
+      "A12",
+      "V07"
+    ],
+    "linked_authority_questions": [
+      "D02"
+    ],
+    "original_scope": "A lawyer is not automatically needed in ordinary authorization work; professional and appointment rules are issue-specific.",
+    "original_evidence_limit": "Retainer/appointment and professional jurisdiction matter; advice does not itself reverse coverage or grant treatment permission.",
+    "suggested_input_context": [
+      "Issue and relevant record",
+      "Representation scope"
+    ],
+    "suggested_output_context": [
+      "Legal advice/submission",
+      "Procedural recommendation"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "J01",
+    "title": "MA administrative law judge / applicable adjudicator",
+    "package": "W12",
+    "representation": "external_review_actor",
+    "key_question": "Are this appeal’s jurisdiction and procedural prerequisites established?",
+    "distinction": "Adjudication is an external process; an internal reviewer cannot supply its ruling.",
+    "counterexample": "An agent judge is substituted for the actual eligible appeal forum.",
+    "conclusion": "Preserve the actual external forum, route and observed outcome; an internal critic is a different function.",
+    "merge_condition": "A routing adapter can share transport/record plumbing, while preserving distinct institutions, jurisdiction, eligibility and decision authority.",
+    "retained_package_boundary": "MA IRE, commercial IRO, regulator, ALJ, Council and court are not one escalating internal worker. External decisions cannot be invented by a local reviewer persona.",
+    "split_trigger": "A harness creates a binding external reversal or moves automatically through every forum without eligibility.",
+    "evidence_role": "Plan/HealthcareRoles/roles/J01.md",
+    "evidence_source_ids": [
+      "A11",
+      "A16"
+    ],
+    "linked_authority_questions": [
+      "D17"
+    ],
+    "original_scope": "Standing, filing and any amount-in-controversy rules must be checked; no threshold amounts are invented here.",
+    "original_evidence_limit": "Jurisdiction, filing and threshold conditions apply; a later stage is not automatically available or a clinical supervisory role.",
+    "suggested_input_context": [
+      "Eligible timely appeal",
+      "Prior decision and case record"
+    ],
+    "suggested_output_context": [
+      "Adjudicative decision",
+      "Applicable onward-review information"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "J02",
+    "title": "Medicare Appeals Council reviewer",
+    "package": "W12",
+    "representation": "external_review_actor",
+    "key_question": "What actual Council review/disposition is available for this case?",
+    "distinction": "This is a distinct forum, not the next internal managerial approval.",
+    "counterexample": "The system assumes every ALJ case automatically proceeds to Council.",
+    "conclusion": "Preserve the actual external forum, route and observed outcome; an internal critic is a different function.",
+    "merge_condition": "A routing adapter can share transport/record plumbing, while preserving distinct institutions, jurisdiction, eligibility and decision authority.",
+    "retained_package_boundary": "MA IRE, commercial IRO, regulator, ALJ, Council and court are not one escalating internal worker. External decisions cannot be invented by a local reviewer persona.",
+    "split_trigger": "A harness creates a binding external reversal or moves automatically through every forum without eligibility.",
+    "evidence_role": "Plan/HealthcareRoles/roles/J02.md",
+    "evidence_source_ids": [
+      "A11",
+      "A16"
+    ],
+    "linked_authority_questions": [
+      "D17"
+    ],
+    "original_scope": "The precise review scope and procedural requirements require the actual notice/rules; no automatic appeal entitlement is implied.",
+    "original_evidence_limit": "Do not infer automatic review entitlement or that every earlier outcome is immediately final/effectuated.",
+    "suggested_input_context": [
+      "Proper Council request",
+      "Prior adjudicative decision and record"
+    ],
+    "suggested_output_context": [
+      "Council disposition",
+      "Applicable further-review information"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  },
+  {
+    "id": "J03",
+    "title": "Federal district court in an eligible Medicare appeal",
+    "package": "W12",
+    "representation": "external_review_actor",
+    "key_question": "Which judicial prerequisites and actual disposition are established?",
+    "distinction": "A court is neither a callable internal helper nor a guaranteed final step.",
+    "counterexample": "A simulated court persona creates an authoritative judgment.",
+    "conclusion": "Preserve the actual external forum, route and observed outcome; an internal critic is a different function.",
+    "merge_condition": "A routing adapter can share transport/record plumbing, while preserving distinct institutions, jurisdiction, eligibility and decision authority.",
+    "retained_package_boundary": "MA IRE, commercial IRO, regulator, ALJ, Council and court are not one escalating internal worker. External decisions cannot be invented by a local reviewer persona.",
+    "split_trigger": "A harness creates a binding external reversal or moves automatically through every forum without eligibility.",
+    "evidence_role": "Plan/HealthcareRoles/roles/J03.md",
+    "evidence_source_ids": [
+      "A11",
+      "A16"
+    ],
+    "linked_authority_questions": [
+      "D17"
+    ],
+    "original_scope": "Exhaustion, standing, filing and threshold conditions matter; the map is not a procedural filing guide.",
+    "original_evidence_limit": "The court is not an ordinary healthcare employee or a routine prerequisite to care.",
+    "suggested_input_context": [
+      "Eligible judicial filing",
+      "Administrative record and legal issues"
+    ],
+    "suggested_output_context": [
+      "Judicial decision/order"
+    ],
+    "status": "PROPOSED_DESIGN_INFERENCE_NOT_RUNTIME_VALIDATED",
+    "actual_task_assignment_verified": false
+  }
+]

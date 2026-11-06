@@ -1,0 +1,26 @@
+digraph "role-U01" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nU01 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+O01 [label="O01\nProvider authorization / \nprecertification specialist", URL="../index.html#O01", target="_top"];
+O03 [label="O03\nRegistration / patient-access \nrepresentative", URL="../index.html#O03", target="_top"];
+U01 [label="U01\nPayer UM intake coordinator", URL="../index.html#U01", target="_top"];
+U02 [label="U02\nPayer eligibility / benefit \nspecialist", URL="../index.html#U02", target="_top"];
+U03 [label="U03\nPayer nurse / licensed UM \nclinical reviewer", URL="../index.html#U03", target="_top"];
+U06 [label="U06\nPayer behavioral-health \nreviewer", URL="../index.html#U06", target="_top"];
+U07 [label="U07\nManaged-care pharmacist / \npharmacy reviewer", URL="../index.html#U07", target="_top"];
+U08 [label="U08\nDelegated medical-group / \nreview-vendor reviewer", URL="../index.html#U08", target="_top"];
+U11 [label="U11\nProvider-services \nrepresentative", URL="../index.html#U11", target="_top"];
+U17 [label="U17\nUM manager / operational \nsupervisor", URL="../index.html#U17", target="_top"];
+O01 -> U01 [label="DEP066", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O03 -> U01 [label="DEP067", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U01 -> U02 [label="DEP068", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U01 -> U03 [label="DEP070", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U01 -> U06 [label="DEP078", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U01 -> U07 [label="DEP082", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U01 -> U08 [label="DEP085", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U01 -> U11 [label="DEP093", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U01 -> U17 [label="DEP106", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O01 -> U01 [label="S-U01 request", tooltip="Different employer/function from provider authorization specialist; decisions follow the actual plan/delegation. R13 describes some limited nonclinical approvals and assigned benefit-only decisions; it is not a national permission or medical-necessity-denial grant."];
+U01 -> O01 [label="S-U01 response", tooltip="Different employer/function from provider authorization specialist; decisions follow the actual plan/delegation. R13 describes some limited nonclinical approvals and assigned benefit-only decisions; it is not a national permission or medical-necessity-denial grant."];
+}

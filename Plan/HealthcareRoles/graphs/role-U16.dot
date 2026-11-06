@@ -1,0 +1,12 @@
+digraph "role-U16" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nU16 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+U09 [label="U09\nDetermination / notification \ncoordinator", URL="../index.html#U09", target="_top"];
+U16 [label="U16\nSHIP / consumer-assistance / \nombudsman counselor", URL="../index.html#U16", target="_top"];
+P01 -> U16 [label="DEP104", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U09 -> U16 [label="DEP105", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> U16 [label="S-U16 request", tooltip="SHIP is Medicare-specific; ombudsman and consumer-assistance mandates differ and are not interchangeable."];
+U16 -> P01 [label="S-U16 response", tooltip="SHIP is Medicare-specific; ombudsman and consumer-assistance mandates differ and are not interchangeable."];
+}

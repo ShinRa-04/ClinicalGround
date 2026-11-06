@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-18",
+  "result": "passed",
+  "baseline_hashes_unchanged": true,
+  "roles": 97,
+  "packages": 23,
+  "design_decisions": 16,
+  "authority_implications": 34,
+  "stress_cases_proposed_not_run": 20,
+  "mechanically_screened_pairs": 4656,
+  "authored_pair_examples": 20,
+  "cross_cutting_questions": 26,
+  "inherited_dependency_edges_accounted_for": 219,
+  "inherited_handoffs_accounted_for": 46,
+  "source_entries": 11,
+  "rendered_diagrams": 3,
+  "local_markdown_links_checked": 1365,
+  "markdown_anchor_targets_checked": 493,
+  "checks": "Coverage, preserved baseline hashes, explicit hypothesis status, record consistency, link/anchor validity and SVG structure.",
+  "clinical_or_institutional_validity_verified": false,
+  "task_assignments_verified": false,
+  "architecture_performance_verified": false
+}

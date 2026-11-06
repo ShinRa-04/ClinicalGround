@@ -1,0 +1,27 @@
+digraph handoff_acceptance {
+graph [rankdir=TB,fontname="Arial",fontsize=15,labelloc=t,pad=0.35,nodesep=0.4,ranksep=0.8,bgcolor="white"];node [shape=box,style="rounded,filled",fillcolor="#edf3f6",color="#8396a2",fontname="Arial",fontsize=11,margin="0.15,0.12"];edge [fontname="Arial",fontsize=9,color="#526e80",arrowsize=0.7];
+graph [label="PROPOSED / UNTESTED | message receipt is not substantive approval"];
+request [label="Request
+Case, stage, evidence versions
+Objective, scope, budget, output"];
+result [label="Helper result
+Facts / interpretations / proposal
+Sources, missing facts, limits"];
+check [shape=diamond,label="Correct case, current version
+and permitted scope?"];
+stale [label="Clarify / refresh / decline proposal
+Retain named unresolved obligation"];
+accepted [label="Owner acknowledges accepted work
+Resolve conflicts through actual rule
+Do not invent missing authority"];
+action [label="Permitted action through actual tools
+Read back authoritative outcome
+Track remaining completion evidence"];
+request -> result [label="bounded work"];
+result -> check [label="proposed contribution"];
+check -> stale [label="no / unknown"];
+stale -> request [style=dashed,label="only if needed and budget permits"];
+check -> accepted [label="yes"];
+accepted -> action [label="ready under actual task contract"];
+
+}

@@ -1,0 +1,27 @@
+digraph "role-C02" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nC02 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C02 [label="C02\nReferring / primary-care \nclinician", URL="../index.html#C02", target="_top"];
+C03 [label="C03\nTreating / performing \nspecialist", URL="../index.html#C03", target="_top"];
+C04 [label="C04\nNurse practitioner", URL="../index.html#C04", target="_top"];
+M01 [label="M01\nLead care manager / case \nmanager", URL="../index.html#M01", target="_top"];
+M06 [label="M06\nTreating psychiatrist", URL="../index.html#M06", target="_top"];
+M12 [label="M12\nRegistered dietitian / \nqualified nutrition \nprofessional", URL="../index.html#M12", target="_top"];
+M14 [label="M14\nPhysical therapist", URL="../index.html#M14", target="_top"];
+M16 [label="M16\nSpeech-language pathologist", URL="../index.html#M16", target="_top"];
+O02 [label="O02\nReferral coordinator", URL="../index.html#O02", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+P01 -> C02 [label="DEP020", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C03 -> C02 [label="DEP021", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C02 -> C03 [label="DEP022", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C02 -> C04 [label="DEP026", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C02 -> O02 [label="DEP039", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C02 -> M01 [label="DEP112", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C02 -> M06 [label="DEP123", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C02 -> M12 [label="DEP136", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C02 -> M14 [label="DEP140", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C02 -> M16 [label="DEP144", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> C02 [label="S-C02 request", tooltip="May be a physician, NP or PA under the relevant professional rules; this is a functional role, not an additional credential."];
+C02 -> P01 [label="S-C02 response", tooltip="May be a physician, NP or PA under the relevant professional rules; this is a functional role, not an additional credential."];
+}

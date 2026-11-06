@@ -1,0 +1,17 @@
+digraph "role-C03" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nC03 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C02 [label="C02\nReferring / primary-care \nclinician", URL="../index.html#C02", target="_top"];
+C03 [label="C03\nTreating / performing \nspecialist", URL="../index.html#C03", target="_top"];
+O05 [label="O05\nScheduler / procedure \ncoordinator", URL="../index.html#O05", target="_top"];
+O13 [label="O13\nExternal diagnostic / \nclinical evidence author or \ncustodian", URL="../index.html#O13", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+C03 -> C02 [label="DEP021", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C02 -> C03 [label="DEP022", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> C03 [label="DEP023", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O13 -> C03 [label="DEP024", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C03 -> O05 [label="DEP047", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C02 -> C03 [label="S-C03 request", tooltip="Clinical responsibility must be assigned for the actual service; specialist is not necessarily the organizational supervisor of the PCP."];
+C03 -> C02 [label="S-C03 response", tooltip="Clinical responsibility must be assigned for the actual service; specialist is not necessarily the organizational supervisor of the PCP."];
+}

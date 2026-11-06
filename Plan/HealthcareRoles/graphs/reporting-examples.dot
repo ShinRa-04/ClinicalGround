@@ -1,0 +1,29 @@
+digraph reporting_examples {
+graph [rankdir=TB, bgcolor="white", fontname="Arial", fontsize=16, labelloc=t, pad=0.4, nodesep=0.4, ranksep=0.65];
+node [shape=box, style="rounded,filled", fillcolor="#f0f5f8", fontname="Arial", fontsize=12, color="#8396a2", margin="0.18,0.14"];
+edge [fontname="Arial", fontsize=10, color="#526e80", arrowsize=0.7];
+graph [label="SOURCE-SPECIFIC EXAMPLE: not confirmed for other institutions\nDocumented reporting examples only | not a national organization chart\nSolid arrows = described supervision/management, never universal clinical override"];
+subgraph cluster_ucsd {
+label="UC San Diego role-description example | R14";color="#c3d0d8";
+um [label="UM Manager (U17)"];
+ncm [label="Assigned nurse case managers\nUM duties in this example\nM01/U03 function"];
+ref [label="Assigned referral coordinators\nO02 function"];
+um -> ncm [label="described supervision"];
+um -> ref [label="described supervision"];
+}
+subgraph cluster_partnership {
+label="Partnership HealthPlan role-description example | R32 pp.12-16";color="#c3d0d8";
+director [label="Director of Care Coordination\nG04 leadership function"];
+associate [label="Associate director\nG04 leadership function"];
+managers [label="Department managers\nG04 function"];
+supervisors [label="Assigned supervisors (G05)\nRN / LVN / nonclinical / social work\nDifferent scopes despite supervision titles"];
+assigned [label="Assigned team members\nCase managers / social workers / guides\nActual assignment controls"];
+director -> associate [label="under director direction"];
+associate -> managers [label="manages / provides direction"];
+associate -> supervisors [label="described direction"];
+managers -> supervisors [style=dashed,label="collaborates in oversight\nnot a documented direct reporting edge"];
+supervisors -> assigned [label="assigned supervision\nwithin actual scope"];
+}
+note [shape=note,fillcolor="#fff8e5",label="No physician-over-all-nurses or insurer-over-treating-doctor\nreporting edge is inferred. Obtain actual institution organogram,\nbylaws, privileges, delegation and service/product rules."];
+
+}

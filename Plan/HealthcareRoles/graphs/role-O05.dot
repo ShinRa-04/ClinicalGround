@@ -1,0 +1,22 @@
+digraph "role-O05" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nO05 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C03 [label="C03\nTreating / performing \nspecialist", URL="../index.html#C03", target="_top"];
+M10 [label="M10\nPatient navigator", URL="../index.html#M10", target="_top"];
+M23 [label="M23\nTransportation coordinator / \ndispatcher", URL="../index.html#M23", target="_top"];
+M30 [label="M30\nAdministrative care \ncoordinator / scheduling \nsupport", URL="../index.html#M30", target="_top"];
+O01 [label="O01\nProvider authorization / \nprecertification specialist", URL="../index.html#O01", target="_top"];
+O02 [label="O02\nReferral coordinator", URL="../index.html#O02", target="_top"];
+O05 [label="O05\nScheduler / procedure \ncoordinator", URL="../index.html#O05", target="_top"];
+O12 [label="O12\nPractice / patient-access \nsupervisor", URL="../index.html#O12", target="_top"];
+O02 -> O05 [label="DEP045", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O01 -> O05 [label="DEP046", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C03 -> O05 [label="DEP047", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O05 -> O12 [label="DEP063", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O05 -> M10 [label="DEP132", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O05 -> M23 [label="DEP159", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O05 -> M30 [label="DEP175", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O02 -> O05 [label="S-O05 request", tooltip="Scheduling may occur before authorization, but completion/readiness must not be inferred from booking alone."];
+O05 -> O02 [label="S-O05 response", tooltip="Scheduling may occur before authorization, but completion/readiness must not be inferred from booking alone."];
+}

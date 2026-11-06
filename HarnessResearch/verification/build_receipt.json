@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-18",
+  "general_chapters": 12,
+  "knowledge_topics": 38,
+  "foundation_sources": 18,
+  "hermes_findings": 60,
+  "openclaw_findings": 75,
+  "comparative_findings": 35,
+  "implementation_and_comparative_findings": 170,
+  "comparative_source_receipts": 24,
+  "statuses": {
+    "code-traced": 103,
+    "docs-only": 26,
+    "test-inspected": 6,
+    "documented": 17,
+    "code_inspected": 17,
+    "ambiguous_documentation": 1
+  },
+  "upstream_runtime_executed": false,
+  "upstream_tests_executed": false,
+  "architecture_selected": false,
+  "scope": "General engineering handbook with scoped case evidence; not literal exhaustive knowledge or proof of deployment behavior."
+}

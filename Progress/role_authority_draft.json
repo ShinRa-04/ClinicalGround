@@ -1,0 +1,936 @@
+[
+  {
+    "id": "PA-01",
+    "hospital_roles": [
+      "O01"
+    ],
+    "authority": "Chooses the provider request's operational scope from instructions and records.",
+    "approach": "Treat authorization as an owned provider workflow whose next step depends on the actual request and current stage.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Provider authorization / precertification specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O01: modules A02; coverage A02; packages W05"
+  },
+  {
+    "id": "PA-02",
+    "hospital_roles": [
+      "O03",
+      "O06"
+    ],
+    "authority": "Decides record linkage from observed identifiers and provenance.",
+    "approach": "Resolve identity discrepancies before using records and retain ambiguity rather than selecting the most convenient match.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Registration / patient-access representative, HIM / release-of-information specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O03: modules A10; coverage A10; packages W05 | O06: modules A11; coverage A11; packages W06"
+  },
+  {
+    "id": "PA-03",
+    "hospital_roles": [
+      "O04"
+    ],
+    "authority": "Represents coverage facts with their source and effective date.",
+    "approach": "Help the requester understand the administrative facts while keeping coverage verification distinct from authorization and payment.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Provider insurance-verification / benefits specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O04: modules A10; coverage A10; packages W05"
+  },
+  {
+    "id": "PA-04",
+    "hospital_roles": [
+      "O01",
+      "O04"
+    ],
+    "authority": "Decides which authorization requirement applies to the documented service and product.",
+    "approach": "Seek the applicable requirement before preparing unnecessary authorization work and make unresolved applicability visible.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Provider authorization / precertification specialist, Provider insurance-verification / benefits specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O01: modules A02; coverage A02; packages W05 | O04: modules A10; coverage A10; packages W05"
+  },
+  {
+    "id": "PA-05",
+    "hospital_roles": [
+      "O01",
+      "G08"
+    ],
+    "authority": "Selects the applicable policy version from service context and source applicability.",
+    "approach": "Read policy as a governing source with conditions and exceptions rather than as a plausible title or convenient summary.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Provider authorization / precertification specialist, Policy analyst / clinical regulatory adviser. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O01: modules A02; coverage A02; packages W05 | G08: modules A12; coverage A12; packages W20"
+  },
+  {
+    "id": "PA-06",
+    "hospital_roles": [
+      "O06",
+      "O08"
+    ],
+    "authority": "Curates authentic, relevant evidence from observed records under permitted disclosure.",
+    "approach": "Build the request from existing authored evidence and make missing documentation visible to the responsible source.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to HIM / release-of-information specialist, Clinical-documentation-integrity specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O06: modules A11; coverage A11; packages W06 | O08: modules A11; coverage A11; packages W06"
+  },
+  {
+    "id": "PA-07",
+    "hospital_roles": [
+      "O01",
+      "O08"
+    ],
+    "authority": "Interprets provider-side criterion support from applicable criteria and documentation.",
+    "approach": "Make the relationship between a requirement and its evidence traceable while treating missing evidence as an open question.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Provider authorization / precertification specialist, Clinical-documentation-integrity specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O01: modules A02; coverage A02; packages W05 | O08: modules A11; coverage A11; packages W06"
+  },
+  {
+    "id": "PA-08",
+    "hospital_roles": [
+      "O08",
+      "O01"
+    ],
+    "authority": "Identifies material documentation gaps from conflicting sources and packet requirements.",
+    "approach": "Clarify discrepancies with their authors instead of silently repairing the record to make the request fit.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Clinical-documentation-integrity specialist, Provider authorization / precertification specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O08: modules A11; coverage A11; packages W06 | O01: modules A02; coverage A02; packages W05"
+  },
+  {
+    "id": "PA-09",
+    "hospital_roles": [
+      "O01",
+      "O08",
+      "O11"
+    ],
+    "authority": "Chooses clarification routes and represents documented provider positions, with new clinical opinions under separately assigned professional authority.",
+    "approach": "Ask a precise question of the appropriate source and distinguish an attributed clinical answer from the coordinator's interpretation.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Provider authorization / precertification specialist, Clinical-documentation-integrity specialist, Provider physician adviser / peer-discussion clinician. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O01: modules A02; coverage A02; packages W05 | O08: modules A11; coverage A11; packages W06 | O11: modules A07; coverage A07; packages W07",
+    "changes": {
+      "decision_scope": {
+        "old": "Choose the right question/recipient within the assigned workflow.",
+        "new": "Choose the clarification question and recipient under provider procedure; represent documented provider facts, with any new clinical opinion restricted to separately assigned professional authority."
+      }
+    }
+  },
+  {
+    "id": "PA-10",
+    "hospital_roles": [
+      "O07"
+    ],
+    "authority": "Recommends administrative coding supported by documentation and coding guidance.",
+    "approach": "Represent documented services accurately and seek clarification where a code would imply more than the record supports.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Medical coding specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O07: modules A13; coverage A13; packages W06"
+  },
+  {
+    "id": "PA-11",
+    "hospital_roles": [
+      "O01",
+      "O06"
+    ],
+    "authority": "Shapes the provider packet's supported content and organization from sources and submission requirements.",
+    "approach": "Make the request easy to review without upgrading a draft or a persuasive explanation into proof of submission or approval.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Provider authorization / precertification specialist, HIM / release-of-information specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O01: modules A02; coverage A02; packages W05 | O06: modules A11; coverage A11; packages W06"
+  },
+  {
+    "id": "PA-12",
+    "hospital_roles": [
+      "O01",
+      "O08"
+    ],
+    "authority": "Decides packet readiness against actual requirements and source consistency.",
+    "approach": "Check what the recipient actually requires and return specific correctable defects instead of inventing new hurdles.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Provider authorization / precertification specialist, Clinical-documentation-integrity specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O01: modules A02; coverage A02; packages W05 | O08: modules A11; coverage A11; packages W06"
+  },
+  {
+    "id": "PA-13",
+    "hospital_roles": [
+      "O01"
+    ],
+    "authority": "Carries the assigned submission through available tools and represents its observed outcome.",
+    "approach": "Carry the supported request through the permitted submission interface and reconcile an uncertain effect before retrying.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Provider authorization / precertification specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O01: modules A02; coverage A02; packages W05"
+  },
+  {
+    "id": "PA-14",
+    "hospital_roles": [
+      "O01",
+      "O10"
+    ],
+    "authority": "Interprets payer responses and chooses the provider's operational next step under procedure.",
+    "approach": "Read the actual response for its consequences and preserve the difference between the payer's determination and a provider interpretation.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Provider authorization / precertification specialist, Provider denial / appeal specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O01: modules A02; coverage A02; packages W05 | O10: modules A02; coverage A02; packages W07",
+    "changes": {
+      "decision_scope": {
+        "old": "Classify approval, denial, information request or another supported response.",
+        "new": "Classify the actual payer response and choose the supported provider operational next step under applicable procedure; preserve the authoritative response and outstanding deadlines."
+      }
+    }
+  },
+  {
+    "id": "PA-15",
+    "hospital_roles": [
+      "O01",
+      "O08",
+      "O11"
+    ],
+    "authority": "Speaks for the provider's supported response to an actual information request, preserving records and authorship.",
+    "approach": "Answer the question the payer actually asked and obtain clinical clarification from the appropriate source where existing records do not answer it.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Provider authorization / precertification specialist, Clinical-documentation-integrity specialist, Provider physician adviser / peer-discussion clinician. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O01: modules A02; coverage A02; packages W05 | O08: modules A11; coverage A11; packages W06 | O11: modules A07; coverage A07; packages W07",
+    "changes": {
+      "decision_scope": {
+        "old": "Plan the supported response to the specific request.",
+        "new": "Choose and represent the supported provider response to the actual request under applicable procedure; obtain new clinical clarification from its authorized source where required."
+      }
+    }
+  },
+  {
+    "id": "PA-16",
+    "hospital_roles": [
+      "O10",
+      "O11"
+    ],
+    "authority": "Chooses the dispute route under established standing, with peer clinical representation under assigned professional authority.",
+    "approach": "Treat correction and peer exchange and appeal as distinct procedures with their own deadlines and evidence rather than interchangeable chances to obtain approval.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Provider denial / appeal specialist, Provider physician adviser / peer-discussion clinician. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O10: modules A02; coverage A02; packages W07 | O11: modules A07; coverage A07; packages W07",
+    "changes": {
+      "decision_scope": {
+        "old": "Separate correction, peer exchange, appeal and external eligibility.",
+        "new": "Select the supported correction, peer exchange or dispute route under established standing and procedure; clinical representation requires assigned professional authority and external outcomes require actual observations."
+      }
+    }
+  },
+  {
+    "id": "PA-17",
+    "hospital_roles": [
+      "O02",
+      "O05",
+      "O09"
+    ],
+    "authority": "Coordinates the assigned access handoff from observed disposition and service availability.",
+    "approach": "Connect the request to a feasible next administrative step and keep access barriers visible to the next responsible participant.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Referral coordinator, Scheduler / procedure coordinator, Financial counselor / assistance specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O02: modules A16; coverage A16; packages W05 | O05: modules A20; coverage A20; packages W05 | O09: modules A20; coverage A20; packages W05"
+  },
+  {
+    "id": "PA-18",
+    "hospital_roles": [
+      "O01",
+      "O10"
+    ],
+    "authority": "Declares the provider assignment's supported endpoint from observed effects and remaining obligations.",
+    "approach": "Close the assigned work honestly while retaining unresolved responses and downstream responsibilities.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Provider authorization / precertification specialist, Provider denial / appeal specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. O01: modules A02; coverage A02; packages W05 | O10: modules A02; coverage A02; packages W07"
+  },
+  {
+    "id": "UM-01",
+    "hospital_roles": [
+      "U01"
+    ],
+    "authority": "Shapes the reviewable intake record from received material and verified case linkage.",
+    "approach": "Give the reviewing function a faithful account of what arrived and what remains missing without implying a substantive decision.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Payer UM intake coordinator. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U01: modules A03; coverage A03; packages W08"
+  },
+  {
+    "id": "UM-02",
+    "hospital_roles": [
+      "U02"
+    ],
+    "authority": "Decides the assigned administrative benefit question from plan records under documented delegation.",
+    "approach": "Apply membership and benefit rules to their administrative question and route clinical issues to the appropriate review function.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Payer eligibility / benefit specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U02: modules A10; coverage A10; packages W08"
+  },
+  {
+    "id": "UM-03",
+    "hospital_roles": [
+      "U01",
+      "U08",
+      "U17"
+    ],
+    "authority": "Chooses the permitted review route under program procedure and documented delegation.",
+    "approach": "Choose a supported operational lane while keeping retained functions and professional decision authority explicit.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Payer UM intake coordinator, Delegated medical-group / review-vendor reviewer, UM manager / operational supervisor. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U01: modules A03; coverage A03; packages W08 | U08: modules A03; coverage A03; packages W09 | U17: modules A03; coverage A03; packages W08"
+  },
+  {
+    "id": "UM-04",
+    "hospital_roles": [
+      "G08",
+      "U03",
+      "U04"
+    ],
+    "authority": "Selects the controlling review policy from product context and source applicability.",
+    "approach": "Establish which policy governs before judging the evidence and preserve unresolved version or applicability questions.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Policy analyst / clinical regulatory adviser, Payer nurse / licensed UM clinical reviewer, Payer physician reviewer / medical director acting on a case. Selected for mission/duties and conditional decisions, not transfer of the entire profession. G08: modules A12; coverage A12; packages W20 | U03: modules A21; coverage A21; packages W09 | U04: modules A21; coverage A21; packages W09"
+  },
+  {
+    "id": "UM-05",
+    "hospital_roles": [
+      "U03",
+      "U04"
+    ],
+    "authority": "Interprets governing criteria with their alternatives and exceptions.",
+    "approach": "Apply the rule as written and expose its alternatives rather than simplify away a material exception.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Payer nurse / licensed UM clinical reviewer, Payer physician reviewer / medical director acting on a case. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U03: modules A21; coverage A21; packages W09 | U04: modules A21; coverage A21; packages W09"
+  },
+  {
+    "id": "UM-06",
+    "hospital_roles": [
+      "U03",
+      "U04"
+    ],
+    "authority": "Establishes attributed clinical facts for review from observed records.",
+    "approach": "Read the submitted evidence carefully and keep authored findings distinct from reviewer inference.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Payer nurse / licensed UM clinical reviewer, Payer physician reviewer / medical director acting on a case. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U03: modules A21; coverage A21; packages W09 | U04: modules A21; coverage A21; packages W09"
+  },
+  {
+    "id": "UM-07",
+    "hospital_roles": [
+      "U03",
+      "U04"
+    ],
+    "authority": "Establishes the relevant chronology from dated records and documented prior work.",
+    "approach": "Test duration and sequence against actual evidence and retain unknown dates as unknown.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Payer nurse / licensed UM clinical reviewer, Payer physician reviewer / medical director acting on a case. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U03: modules A21; coverage A21; packages W09 | U04: modules A21; coverage A21; packages W09"
+  },
+  {
+    "id": "UM-08",
+    "hospital_roles": [
+      "U03",
+      "U06",
+      "U07"
+    ],
+    "authority": "Approves under documented delegation when criteria and program permit, otherwise recommends or escalates the initial clinical review.",
+    "approach": "Apply governing criteria to the evidence and resolve the assigned review through a supported decision or an explicit route to the responsible decision-maker.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Payer nurse / licensed UM clinical reviewer, Payer behavioral-health reviewer, Managed-care pharmacist / pharmacy reviewer. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U03: modules A21; coverage A21; packages W09 | U06: modules A21; coverage A21; packages W09 | U07: modules A21; coverage A21; packages W09",
+    "changes": {
+      "decision_scope": {
+        "old": "Apply the actual initial-review function.",
+        "new": "Apply governing criteria to observed evidence; approve only under documented delegation when criteria and program permit, otherwise recommend or escalate within the assigned initial-review function."
+      }
+    }
+  },
+  {
+    "id": "UM-09",
+    "hospital_roles": [
+      "U03",
+      "U04",
+      "U05"
+    ],
+    "authority": "Identifies material review uncertainty from conflicting evidence or unclear policy applicability.",
+    "approach": "Investigate what could change the review conclusion and explain the consequence of each unresolved question.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Payer nurse / licensed UM clinical reviewer, Payer physician reviewer / medical director acting on a case, Independent clinical / specialty consultant. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U03: modules A21; coverage A21; packages W09 | U04: modules A21; coverage A21; packages W09 | U05: modules A08; coverage A08; packages W09"
+  },
+  {
+    "id": "UM-10",
+    "hospital_roles": [
+      "U01",
+      "U03"
+    ],
+    "authority": "Chooses focused additional-information requirements from review gaps under permitted procedure.",
+    "approach": "Ask focused questions that enable the assigned review and track the response without turning missing information into an endless delay.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Payer UM intake coordinator, Payer nurse / licensed UM clinical reviewer. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U01: modules A03; coverage A03; packages W08 | U03: modules A21; coverage A21; packages W09"
+  },
+  {
+    "id": "UM-11",
+    "hospital_roles": [
+      "U05",
+      "U06",
+      "U07"
+    ],
+    "authority": "Contributes the assigned specialty opinion within professional scope, with decision authority under separate assignment.",
+    "approach": "Contribute focused expertise with its rationale and limitations rather than imply that consultation itself settles the case.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Independent clinical / specialty consultant, Payer behavioral-health reviewer, Managed-care pharmacist / pharmacy reviewer. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U05: modules A08; coverage A08; packages W09 | U06: modules A21; coverage A21; packages W09 | U07: modules A21; coverage A21; packages W09"
+  },
+  {
+    "id": "UM-12",
+    "hospital_roles": [
+      "U08",
+      "U17"
+    ],
+    "authority": "Establishes the review assignment's authority from documented delegation and independence requirements.",
+    "approach": "Verify the actual function and retained authority instead of inferring permission from seniority or a role title.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Delegated medical-group / review-vendor reviewer, UM manager / operational supervisor. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U08: modules A03; coverage A03; packages W09 | U17: modules A03; coverage A03; packages W08"
+  },
+  {
+    "id": "UM-13",
+    "hospital_roles": [
+      "U04",
+      "U03"
+    ],
+    "authority": "Issues the clinical coverage determination under assigned documented delegation, otherwise recommends it from governing criteria and observed evidence.",
+    "approach": "Reach the supported assigned decision and explain its rationale while preserving recommendation and final determination as distinct records.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Payer physician reviewer / medical director acting on a case, Payer nurse / licensed UM clinical reviewer. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U04: modules A21; coverage A21; packages W09 | U03: modules A21; coverage A21; packages W09",
+    "changes": {
+      "decision_scope": {
+        "old": "Make the decision actually assigned by the workflow.",
+        "new": "Issue or recommend the clinical coverage determination actually assigned under documented authority and governing criteria; preserve the difference between recommendation, recorded decision and finalized determination."
+      }
+    }
+  },
+  {
+    "id": "UM-14",
+    "hospital_roles": [
+      "U09",
+      "U10",
+      "U11"
+    ],
+    "authority": "Speaks for the recorded determination and applicable procedural rights under notice policy.",
+    "approach": "Explain the outcome plainly to the intended recipient and resolve missing rationale without rewriting the decision.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Determination / notification coordinator, Member-services representative, Provider-services representative. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U09: modules A24; coverage A24; packages W10 | U10: modules A03; coverage A03; packages W08 | U11: modules A03; coverage A03; packages W08",
+    "changes": {
+      "decision_scope": {
+        "old": "Render required content from the authoritative decision.",
+        "new": "Represent the authoritative determination and applicable procedural information under notice policy; resolve missing rationale through the responsible decision source rather than changing the outcome."
+      }
+    }
+  },
+  {
+    "id": "UM-15",
+    "hospital_roles": [
+      "U09"
+    ],
+    "authority": "Carries the assigned notice through available tools and represents observed delivery state.",
+    "approach": "Carry the authorized communication through its required channel and track failures or uncertain receipt explicitly.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Determination / notification coordinator. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U09: modules A24; coverage A24; packages W10"
+  },
+  {
+    "id": "UM-16",
+    "hospital_roles": [
+      "U12"
+    ],
+    "authority": "Selects the applicable challenge route and standing from the request and governing procedure.",
+    "approach": "Distinguish appeal from grievance and peer exchange before routing the record and any missing material.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Internal appeal / grievance coordinator. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U12: modules A22; coverage A22; packages W11"
+  },
+  {
+    "id": "UM-17",
+    "hospital_roles": [
+      "U13"
+    ],
+    "authority": "Affirms or reverses the disputed decision under assigned reconsideration authority and applicable independence requirements.",
+    "approach": "Reconsider the disputed record and new evidence on their merits while checking that the required review separation actually exists.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Medical-necessity appeal / reconsideration physician. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U13: modules A22; coverage A22; packages W11",
+    "changes": {
+      "decision_scope": {
+        "old": "Perform the task-assigned reconsideration function.",
+        "new": "Affirm or reverse within assigned reconsideration authority using the disputed record and governing criteria; verify applicable review separation rather than infer independence from a changed prompt."
+      }
+    }
+  },
+  {
+    "id": "UM-18",
+    "hospital_roles": [
+      "U01",
+      "U09",
+      "U17"
+    ],
+    "authority": "Declares the assigned review endpoint and remaining effectuation duties from the recorded outcome and observed implementation.",
+    "approach": "Track what the decision requires next and close only the work whose effects are actually supported.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Payer UM intake coordinator, Determination / notification coordinator, UM manager / operational supervisor. Selected for mission/duties and conditional decisions, not transfer of the entire profession. U01: modules A03; coverage A03; packages W08 | U09: modules A24; coverage A24; packages W10 | U17: modules A03; coverage A03; packages W08"
+  },
+  {
+    "id": "CM-01",
+    "hospital_roles": [
+      "M01",
+      "M30"
+    ],
+    "authority": "Chooses coordination priorities from referral context and observed chart information.",
+    "approach": "Treat the referral as a starting point for understanding this member's needs and the program's responsibilities rather than a fixed form sequence.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Administrative care coordinator / scheduling support. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | M30: modules A04; coverage A04; packages W13",
+    "changes": {
+      "decision_scope": {
+        "old": "Identify what the current episode requires.",
+        "new": "Interpret the referral and current episode using observed chart context and applicable care-management intake policy; identify coordination priorities and unresolved needs."
+      }
+    }
+  },
+  {
+    "id": "CM-02",
+    "hospital_roles": [
+      "M01",
+      "P03",
+      "P05"
+    ],
+    "authority": "Establishes contact and representation scope from observed identity and authority records.",
+    "approach": "Make communication accessible and verify who is speaking for whom without substituting a representative's wishes for the member's.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Legally recognized personal representative, Healthcare interpreter / communication-access professional. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | P03: modules A06; coverage A06; packages W01 | P05: modules A15; coverage A15; packages W03"
+  },
+  {
+    "id": "CM-03",
+    "hospital_roles": [
+      "M01",
+      "M09",
+      "M13"
+    ],
+    "authority": "Chooses the outreach plan under care-management outreach and enrollment policy and observed contact permissions.",
+    "approach": "Prepare an accessible conversation that explains the program and explores priorities while preserving consent conditions and policy-specific exit duties.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Community health worker, Health educator / self-management coach. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | M09: modules A16; coverage A16; packages W13 | M13: modules A15; coverage A15; packages W13",
+    "changes": {
+      "decision_scope": {
+        "old": "Choose the next allowed channel/question opportunity.",
+        "new": "Plan outreach from applicable care-management outreach and enrollment policy, observed contact permissions and current member questions; retain required information and exit/handoff duties."
+      }
+    }
+  },
+  {
+    "id": "CM-04",
+    "hospital_roles": [
+      "M01",
+      "M09",
+      "M13"
+    ],
+    "authority": "Speaks for the program to the member: may state the program's purpose, services, cost and participation terms as the retrieved policy states them, once the policy's conditions are checked against the member's records; may explain what care planning could include, ask for enrollment consent, and conduct the permitted interview after consent.",
+    "approach": "Find what matters to the member and connect it to program services. Answer plainly from policy, invite an informed decision and respect decline without pressure or promised dates or outcomes.",
+    "status_label": "executing_worker",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Community health worker, Health educator / self-management coach. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | M09: modules A16; coverage A16; packages W13 | M13: modules A15; coverage A15; packages W13",
+    "changes": {
+      "name": {
+        "old": "Conversation turn coordinator",
+        "new": "Member-engagement lead"
+      },
+      "decision_scope": {
+        "old": "Manage dialogue without losing already supplied answers or refusals.",
+        "new": "Represent the program accurately under retrieved policy and observed eligibility conditions; learn member priorities, connect them to supported services and answer questions plainly. Invite an informed decision, respect decline and conduct a permitted interview only after actual consent."
+      },
+      "output": {
+        "old": "Next relevant question or truthful conversation disposition.",
+        "new": "Source-linked engagement handoff with consent status, member priorities and open questions; accurate program information and permitted post-consent interview findings."
+      },
+      "completion_check": {
+        "old": "Each next step follows observed interaction state.",
+        "new": "An informed decision is observed or the member ended contact; each question is answered or noted as unanswerable. Consent status, member priorities and open questions are preserved."
+      }
+    }
+  },
+  {
+    "id": "CM-05",
+    "hospital_roles": [
+      "M01",
+      "P05"
+    ],
+    "authority": "Represents dialogue findings faithfully from the actual transcript.",
+    "approach": "Listen for the person's meaning and preserve uncertainty or refusal instead of filling a convenient answer into the record.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Healthcare interpreter / communication-access professional. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | P05: modules A15; coverage A15; packages W03"
+  },
+  {
+    "id": "CM-06",
+    "hospital_roles": [
+      "M01",
+      "C06"
+    ],
+    "authority": "Establishes assessment completeness from required fields and sourced answers under actual consent.",
+    "approach": "Make each assessment entry defensible and identify a missing answer without turning a completed form into a substitute for performed assessment.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Registered nurse providing direct care. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | C06: modules A09; coverage A09; packages W04"
+  },
+  {
+    "id": "CM-07",
+    "hospital_roles": [
+      "M01",
+      "M02",
+      "M09"
+    ],
+    "authority": "Identifies coordination needs and barriers from the member's account and observed records.",
+    "approach": "Understand how practical circumstances affect the member's goals and seek clarification rather than rely on assumptions about a population.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Medical social worker (credential-dependent practice), Community health worker. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | M02: modules A18; coverage A18; packages W14 | M09: modules A16; coverage A16; packages W13"
+  },
+  {
+    "id": "CM-08",
+    "hospital_roles": [
+      "M01",
+      "M31",
+      "G10"
+    ],
+    "authority": "Identifies safety or scope concerns under applicable escalation and privacy rules.",
+    "approach": "Treat sensitive concerns respectfully and route issues to the responsible function without inventing a diagnosis or protection outcome.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Safeguarding / protection-service professional, Privacy officer / HIM privacy specialist. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | M31: modules A18; coverage A18; packages W19 | G10: modules A27; coverage A27; packages W22"
+  },
+  {
+    "id": "CM-09",
+    "hospital_roles": [
+      "M01",
+      "M13"
+    ],
+    "authority": "Represents the member's goals from their expressed priorities and agreement.",
+    "approach": "Elicit what useful help would mean to the member during permitted outreach and revisit proposed goals as understanding changes without assessing before consent.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Health educator / self-management coach. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | M13: modules A15; coverage A15; packages W13",
+    "changes": {
+      "decision_scope": {
+        "old": "Clarify the person’s expressed priorities.",
+        "new": "Elicit the member's own priorities during permitted outreach and clarify goals for care planning under the applicable consent conditions; preserve acceptance, disagreement and unknown status."
+      }
+    }
+  },
+  {
+    "id": "CM-10",
+    "hospital_roles": [
+      "M01",
+      "M04",
+      "M05"
+    ],
+    "authority": "Owns the medication coordination question from existing instructions and observed access concerns.",
+    "approach": "Help resolve medication-use or access barriers through the appropriate professional contribution while preserving the prescriber's treatment authority.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Clinical / community pharmacist, Pharmacy technician / medication-access coordinator. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | M04: modules A17; coverage A17; packages W15 | M05: modules A17; coverage A17; packages W15"
+  },
+  {
+    "id": "CM-11",
+    "hospital_roles": [
+      "M01",
+      "M02",
+      "M09"
+    ],
+    "authority": "Proposes care-plan interventions for psychosocial and resource needs from observed barriers and supported options.",
+    "approach": "Turn relevant support options into practical proposed interventions linked to the member's goals while preserving eligibility and availability uncertainty.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Medical social worker (credential-dependent practice), Community health worker. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | M02: modules A18; coverage A18; packages W14 | M09: modules A16; coverage A16; packages W13",
+    "changes": {
+      "output": {
+        "old": "Relevant support options with eligibility/availability uncertainty.",
+        "new": "Proposed care-plan interventions linked to member goals and support needs, with responsible recipients and eligibility/availability uncertainty."
+      },
+      "decision_scope": {
+        "old": "Identify appropriate support/referral questions.",
+        "new": "Translate supported psychosocial and resource options into proposed care-plan interventions within assigned scope."
+      }
+    }
+  },
+  {
+    "id": "CM-12",
+    "hospital_roles": [
+      "M01",
+      "M30",
+      "M18"
+    ],
+    "authority": "Chooses care-task sequence and ownership from supported dependencies and member goals.",
+    "approach": "Organize feasible coordination work around the member's needs and make the next responsibility clear without imposing a universal clinical pathway.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Administrative care coordinator / scheduling support, Discharge planner / transitions coordinator. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | M30: modules A04; coverage A04; packages W13 | M18: modules A16; coverage A16; packages W13"
+  },
+  {
+    "id": "CM-13",
+    "hospital_roles": [
+      "M01",
+      "M18"
+    ],
+    "authority": "Shapes a coherent care plan from observed assessment, member goals and applicable care-plan standards.",
+    "approach": "Connect problems and goals to interventions, escalation conditions and follow-up cadence. Preserve ownership, uncertainty and the distinction between planned and performed work.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Discharge planner / transitions coordinator. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | M18: modules A16; coverage A16; packages W13",
+    "changes": {
+      "output": {
+        "old": "Versioned care plan with responsibilities and unresolved items.",
+        "new": "Versioned care plan connecting supported problems, member goals and interventions with escalation conditions, follow-up cadence, responsibilities and unresolved items."
+      },
+      "decision_scope": {
+        "old": "Assemble the plan actually requested by the task.",
+        "new": "Compose the requested plan using applicable care-plan standards; distinguish sourced problems and goals from proposed interventions and their execution status."
+      }
+    }
+  },
+  {
+    "id": "CM-14",
+    "hospital_roles": [
+      "M01",
+      "O02",
+      "M10"
+    ],
+    "authority": "Coordinates the consented referral through available tools, or places its proposed intervention in the care plan when execution tools are absent.",
+    "approach": "Pursue the supported referral connection where it can actually be performed and otherwise specify the proposed intervention and responsible recipient in the plan.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Referral coordinator, Patient navigator. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | O02: modules A16; coverage A16; packages W05 | M10: modules A16; coverage A16; packages W13",
+    "changes": {
+      "decision_scope": {
+        "old": "Send the scoped referral through the actual tool.",
+        "new": "Coordinate a permitted referral through an actual available tool; when no execution tool exists, include the proposed referral intervention and responsible recipient in the care plan."
+      },
+      "output": {
+        "old": "Actual referral receipt/failure/unknown.",
+        "new": "Actual referral receipt/failure/unknown where performed, otherwise a clearly planned care-plan referral intervention."
+      },
+      "completion_check": {
+        "old": "Observed receipt and next owner are recorded.",
+        "new": "Record observed receipt and next owner if executed; otherwise record the planned intervention, execution limit and responsible recipient without claiming a sent referral."
+      }
+    }
+  },
+  {
+    "id": "CM-15",
+    "hospital_roles": [
+      "M01",
+      "M19",
+      "M20",
+      "M26"
+    ],
+    "authority": "Represents actual receiver acceptance, or plans acknowledgement follow-up in the care plan when receiving-status tools are absent.",
+    "approach": "Follow the connection to its real receiving status and retain a proposed acknowledgement check when the environment cannot obtain one.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Home-health intake / coordination clinician, Skilled-nursing / rehabilitation receiving-team coordinator, Infusion / other receiving-service coordinator. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | M19: modules A20; coverage A20; packages W17 | M20: modules A20; coverage A20; packages W17 | M26: modules A20; coverage A20; packages W17",
+    "changes": {
+      "decision_scope": {
+        "old": "Track the actual recipient’s decision/status.",
+        "new": "Track the recipient's actual acceptance or status when observable; when no receiving-status tool exists, plan the acknowledgement follow-up intervention in the care plan."
+      },
+      "output": {
+        "old": "Accepted/rejected/pending state and next obligation.",
+        "new": "Sourced receiver status and next obligation, or a clearly planned acknowledgement follow-up intervention."
+      },
+      "completion_check": {
+        "old": "Status has an actual source and appropriate freshness.",
+        "new": "Each claimed receiving status has a fresh actual source; an unexecuted acknowledgement check remains a planned intervention with an owner."
+      }
+    }
+  },
+  {
+    "id": "CM-16",
+    "hospital_roles": [
+      "M01",
+      "O05",
+      "M23"
+    ],
+    "authority": "Coordinates access from member constraints and observed availability, or plans the intervention in the care plan when execution tools are absent.",
+    "approach": "Help make access feasible through available arrangements and otherwise describe the proposed access work and its owner in the care plan.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Scheduler / procedure coordinator, Transportation coordinator / dispatcher. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | O05: modules A20; coverage A20; packages W05 | M23: modules A20; coverage A20; packages W17",
+    "changes": {
+      "decision_scope": {
+        "old": "Coordinate an available next step.",
+        "new": "Coordinate an available permitted access step; when no execution tool exists, plan the access intervention and responsible recipient in the care plan."
+      },
+      "output": {
+        "old": "Permitted booking/support task or unresolved access barrier.",
+        "new": "Observed booking/support status where performed, otherwise a planned care-plan access intervention with unresolved barriers."
+      },
+      "completion_check": {
+        "old": "Each claimed booking or service status is supported by supplied observations.",
+        "new": "Claimed bookings have supplied observations; unavailable execution is represented as planned coordination with an owner and outstanding barriers."
+      }
+    }
+  },
+  {
+    "id": "CM-17",
+    "hospital_roles": [
+      "M01",
+      "M18"
+    ],
+    "authority": "Shapes supported handoff content from the current plan and unresolved responsibilities.",
+    "approach": "Give the receiving participant a clear account of what changed and what remains to be done while tracking acknowledgement separately from a draft.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Discharge planner / transitions coordinator. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | M18: modules A16; coverage A16; packages W13"
+  },
+  {
+    "id": "CM-18",
+    "hospital_roles": [
+      "M01",
+      "M30"
+    ],
+    "authority": "Establishes follow-up obligation status from actual deadlines and observed replies.",
+    "approach": "Track whether the intended connection occurred and keep the next responsible participant aware of unresolved work.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Administrative care coordinator / scheduling support. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | M30: modules A04; coverage A04; packages W13"
+  },
+  {
+    "id": "CM-19",
+    "hospital_roles": [
+      "M01"
+    ],
+    "authority": "Revises the case interpretation from new evidence and current member priorities.",
+    "approach": "Update coordination work when circumstances change while preserving the history and why an earlier interpretation was superseded.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13"
+  },
+  {
+    "id": "CM-20",
+    "hospital_roles": [
+      "M01",
+      "M30"
+    ],
+    "authority": "Chooses the episode closure or decline path from observed participation under care-management closure policy.",
+    "approach": "Respect a decline or ended contact and complete the remaining permitted documentation and return-path duties under retrieved policy while preserving any unmet assigned goal.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "Functional mapping to Lead care manager / case manager, Administrative care coordinator / scheduling support. Selected for mission/duties and conditional decisions, not transfer of the entire profession. M01: modules A04; coverage A04; packages W13 | M30: modules A04; coverage A04; packages W13",
+    "changes": {
+      "decision_scope": {
+        "old": "Decide whether the assigned episode has reached its permitted end.",
+        "new": "Choose the episode completion, decline or exception path under retrieved care-management closure policy and observed participation; distinguish an ended contact from consent or refusal."
+      },
+      "output": {
+        "old": "Supported episode completion/exception and remaining responsibilities.",
+        "new": "Source-supported episode disposition with remaining permitted documentation/communication duties, return-path information where required and unmet goals."
+      },
+      "completion_check": {
+        "old": "Final claims distinguish episode scope from unobserved future care.",
+        "new": "Disposition follows the retrieved policy and observed participation; remaining duties and unmet assigned outcomes remain explicit without claiming downstream care."
+      }
+    }
+  },
+  {
+    "id": "SH-01",
+    "hospital_roles": [],
+    "authority": "Selects relevant responsibilities from the actual instruction and observed stage.",
+    "approach": "Keep the requested work central and route only the responsibilities it actually needs.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "code-only safeguard"
+  },
+  {
+    "id": "SH-02",
+    "hospital_roles": [],
+    "authority": "Selects permitted context under case namespaces and source permissions.",
+    "approach": "Give each function the evidence it needs with explicit unknowns and traceable source versions.",
+    "status_label": "prompt_contract",
+    "model_visible": false,
+    "hospital_source_note": "code-only safeguard"
+  },
+  {
+    "id": "SH-03",
+    "hospital_roles": [],
+    "authority": "Retrieves relevant evidence from approved sources and scoped queries.",
+    "approach": "Return relevant evidence with its provenance and limitations while leaving policy interpretation to the assigned function.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "code-only safeguard"
+  },
+  {
+    "id": "SH-04",
+    "hospital_roles": [],
+    "authority": "Preserves claim provenance and source version relationships.",
+    "approach": "Keep original evidence distinguishable from summaries and retain contradictions for explicit resolution.",
+    "status_label": "prompt_contract",
+    "model_visible": false,
+    "hospital_source_note": "code-only safeguard"
+  },
+  {
+    "id": "SH-05",
+    "hospital_roles": [],
+    "authority": "Renders faithful artifacts from approved content under the output contract.",
+    "approach": "Make a clear usable artifact whose draft or final status remains visible and whose claims remain source-linked.",
+    "status_label": "prompt_contract",
+    "model_visible": true,
+    "hospital_source_note": "code-only safeguard"
+  },
+  {
+    "id": "SH-06",
+    "hospital_roles": [],
+    "authority": "Enforces the execution envelope under tool contracts and journaled outcomes.",
+    "approach": "Treat external effects as events requiring identity and reconciliation rather than as implications of plausible model text.",
+    "status_label": "prompt_contract",
+    "model_visible": false,
+    "hospital_source_note": "code-only safeguard"
+  },
+  {
+    "id": "SH-07",
+    "hospital_roles": [],
+    "authority": "Admits work within current budgets and dependencies.",
+    "approach": "Spend bounded resources on task-relevant work and keep cancellation and stopping conditions explicit.",
+    "status_label": "prompt_contract",
+    "model_visible": false,
+    "hospital_source_note": "code-only safeguard"
+  },
+  {
+    "id": "SH-08",
+    "hospital_roles": [],
+    "authority": "Preserves checkpoint obligations under the provider context contract.",
+    "approach": "Reduce context carefully while preserving the active request and unresolved effects and access to original sources.",
+    "status_label": "prompt_contract",
+    "model_visible": false,
+    "hospital_source_note": "code-only safeguard"
+  },
+  {
+    "id": "SH-09",
+    "hospital_roles": [],
+    "authority": "Denies cross-case source access under principal and patient namespaces.",
+    "approach": "Enforce isolation before content reaches reasoning or tools rather than relying on a request to ignore unrelated material.",
+    "status_label": "prompt_contract",
+    "model_visible": false,
+    "hospital_source_note": "code-only safeguard"
+  },
+  {
+    "id": "SH-10",
+    "hospital_roles": [],
+    "authority": "Challenges unsupported readiness and stop claims against task-visible requirements and observed effects.",
+    "approach": "Review both overclaiming and remaining useful permitted work with specific source-backed objections while leaving the owner responsible for the next decision.",
+    "status_label": "executing_worker",
+    "model_visible": true,
+    "hospital_source_note": "code-only safeguard"
+  }
+]

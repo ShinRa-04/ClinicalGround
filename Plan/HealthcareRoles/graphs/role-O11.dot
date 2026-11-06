@@ -1,0 +1,13 @@
+digraph "role-O11" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nO11 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+O10 [label="O10\nProvider denial / appeal \nspecialist", URL="../index.html#O10", target="_top"];
+O11 [label="O11\nProvider physician adviser / \npeer-discussion clinician", URL="../index.html#O11", target="_top"];
+U04 [label="U04\nPayer physician reviewer / \nmedical director acting on a \ncase", URL="../index.html#U04", target="_top"];
+C01 -> O11 [label="DEP060", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U04 -> O11 [label="DEP061", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O10 -> O11 [label="S-O11 request", tooltip="May be the treating physician rather than a separate employee; duties depend on relationship to the patient and organization."];
+O11 -> O10 [label="S-O11 response", tooltip="May be the treating physician rather than a separate employee; duties depend on relationship to the patient and organization."];
+}

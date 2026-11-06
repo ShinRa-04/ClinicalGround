@@ -1,0 +1,12 @@
+digraph "role-U05" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nU05 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+O13 [label="O13\nExternal diagnostic / \nclinical evidence author or \ncustodian", URL="../index.html#O13", target="_top"];
+U04 [label="U04\nPayer physician reviewer / \nmedical director acting on a \ncase", URL="../index.html#U04", target="_top"];
+U05 [label="U05\nIndependent clinical / \nspecialty consultant", URL="../index.html#U05", target="_top"];
+U04 -> U05 [label="DEP076", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O13 -> U05 [label="DEP077", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U04 -> U05 [label="S-U05 request", tooltip="Differentiate contracted expertise, internal consultation and statutory independent review."];
+U05 -> U04 [label="S-U05 response", tooltip="Differentiate contracted expertise, internal consultation and statutory independent review."];
+}

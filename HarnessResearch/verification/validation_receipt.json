@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-18",
+  "result": "passed",
+  "general_chapters": 12,
+  "knowledge_topics": 38,
+  "scoped_implementation_comparative_findings": 170,
+  "foundation_sources": 18,
+  "source_identity_checks": 177,
+  "documents_checked": 41,
+  "local_markdown_links_checked": 538,
+  "local_markdown_anchor_targets_checked": 410,
+  "synthetic_lab_tests_passed": 17,
+  "upstream_checkouts_clean": true,
+  "upstream_runtime_executed": false,
+  "upstream_tests_executed": false,
+  "architecture_performance_verified": false,
+  "limits": "Identity, bounds, coverage and navigation checks only; semantic support uses bounded independent review. Synthetic examples are not deployment/upstream behavior.",
+  "documents": [
+    {
+      "path": "ARCHITECTURE_MAPS.md",
+      "normalized_utf8_sha256": "2391d18b676d324becebd9a5d24666d24e4fadb5fb43902bd42c7200a3808cd6"
+    },
+    {
+      "path": "comparative/DESIGN_QUESTIONS.md",
+      "normalized_utf8_sha256": "aaf96b9f58d6657946db37426fb2f7d3d1e1cb16446c70498a11106b0bfeb6bd"
+    },
+    {
+      "path": "comparative/EXECUTION_STATE.md",
+      "normalized_utf8_sha256": "77aef075d7ac6f9b0a841bc7267967f98f499d935d732ba8d5f2dbdebfc22530"
+    },
+    {
+      "path": "comparative/MEMORY_CONTEXT.md",
+      "normalized_utf8_sha256": "b3c5c784bb424ea3dbb790258ee640e66630e420ca704cabb63070d93b1474ee"
+    },
+    {
+      "path": "comparative/README.md",
+      "normalized_utf8_sha256": "97645bc114cd0e2e14570a8c1131f6140dc45f8c87703d687120594dd69eb00c"
+    },
+    {
+      "path": "comparative/REFERENCE_TRACES.md",
+      "normalized_utf8_sha256": "2146471f5618c7502e2ea0b4e9e372b764348e2ac09cb8dcadb9897481e14e40"
+    },
+    {
+      "path": "comparative/VALIDATION.md",
+      "normalized_utf8_sha256": "4aa07df29515b58fbd5ac9a9bf2c098b8997206997af5fd41a315e4158597382"
+    },
+    {
+      "path": "COVERAGE.md",
+      "normalized_utf8_sha256": "c3f9d388005979dcf5ea2e4fa6a0a7abf6876890de23f24b2760c357a69a5103"
+    },
+    {
+      "path": "FINDINGS_INDEX.md",
+      "normalized_utf8_sha256": "9ca4f1c21df67cc0ccb4ca80baf7435db3c3e94b44d6381db6dbcc75eb2c20da"
+    },
+    {
+      "path": "general/01-anatomy-and-control.md",
+      "normalized_utf8_sha256": "8ce03c6d853dba0a1d13cebcf99edbef31965e88cd162528f8107ba1a7f236ec"
+    },
+    {
+      "path": "general/02-state-memory-and-sessions.md",
+      "normalized_utf8_sha256": "722219cb9650999b2171f952477e7ce676d12c6bf3314dfbb88d27a46418c70a"
+    },
+    {
+      "path": "general/03-context-budget-and-compaction.md",
+      "normalized_utf8_sha256": "4f6a6a906a2775446350e90632e633c61845f4f01364c1f670de889ac7331294"
+    },
+    {
+      "path": "general/04-memory-retrieval-and-learning.md",
+      "normalized_utf8_sha256": "df92b5a10b5f55106f3b373f0f7beabde3b63b461eee2d45ba3cebba840c647d"
+    },
+    {
+      "path": "general/05-tools-execution-and-trust.md",
+      "normalized_utf8_sha256": "39ce926b2faf297d7d8018af61d5119cd8a5ef7bcd4d1478c02107b2acebdf1f"
+    },
+    {
+      "path": "general/06-durability-replay-and-recovery.md",
+      "normalized_utf8_sha256": "2fc12d62cf54edf80812e4747eb692e59b37b35bf0fc9100950d28e73f9dd9c8"
+    },
+    {
+      "path": "general/07-orchestration-concurrency-and-delegation.md",
+      "normalized_utf8_sha256": "f723d3fafe98e7488af90ae9524400db89529978a222a8797d428e7c20afb433"
+    },
+    {
+      "path": "general/08-providers-streaming-and-performance.md",
+      "normalized_utf8_sha256": "dc10a12b17eadbcc0832d1d5843c4b797cc1bfb7633dbff587f8348fd49071cb"
+    },
+    {
+      "path": "general/09-observability-evaluation-and-maintenance.md",
+      "normalized_utf8_sha256": "23f5a7909b965f7aeb6c2208f6632cb94b383743d765e98dfa45e505f0f2acfa"
+    },
+    {
+      "path": "general/10-construction-guide.md",
+      "normalized_utf8_sha256": "512e8fdca816ac1affabcb18ab869dbaa6b2c6373b97c39cb9ee2982b9e73f88"
+    },
+    {
+      "path": "general/11-data-contracts-and-failure-catalog.md",
+      "normalized_utf8_sha256": "7dc7996318e778db6ecb0cbc01fc45ea093200ad587e1c11ad7323ee8a449040"
+    },
+    {
+      "path": "general/12-design-questions-and-learning-map.md",
+      "normalized_utf8_sha256": "4aaa8aee9129b7eb8359aef98f597b58d2b767ac63d467cb9b65ce249a7b814e"
+    },
+    {
+      "path": "hermes/CONTEXT.md",
+      "normalized_utf8_sha256": "29611caca40dcc421599b50d7edc9016eba903ef8056519f0d8f3af1e61e571a"
+    },
+    {
+      "path": "hermes/EXECUTION.md",
+      "normalized_utf8_sha256": "89bfe0885072db419744d54faed816348eac890722f476508094dc220841179d"
+    },
+    {
+      "path": "hermes/LIMITS_AND_LESSONS.md",
+      "normalized_utf8_sha256": "1913867401b3836b049a82e6382c7bddf7bc3ec6a88cc834c4a759e2d8112eda"
+    },
+    {
+      "path": "hermes/MEMORY.md",
+      "normalized_utf8_sha256": "ec7a2057344e97670c475e000e42dceb9f916d13fa5217370bcfa069fc5b6594"
+    },
+    {
+      "path": "hermes/OPERATIONS.md",
+      "normalized_utf8_sha256": "24c423b8e747aea53a1b1714fd869c51239bf32acbb2c5648ce8e76680ba5195"
+    },
+    {
+      "path": "hermes/README.md",
+      "normalized_utf8_sha256": "8dfa2213b4e6b7c47f8f5cef97e4b4c7857d90fec54d64b13dd2a6c504b41d23"
+    },
+    {
+      "path": "labs/README.md",
+      "normalized_utf8_sha256": "b6dcf5fc456c4df1d3191bd21685f7c11eaa29036ad1d180d06a889b924726df"
+    },
+    {
+      "path": "openclaw/CONTEXT.md",
+      "normalized_utf8_sha256": "9dd5ddb05be79ff371673fab38f1a38dacd3d85d6d83ce74311d216194c7a5d7"
+    },
+    {
+      "path": "openclaw/EVIDENCE.md",
+      "normalized_utf8_sha256": "cbf11f9b372ba655768e2602f5c5779b8c7979995f3e63a06facd107857d7ac4"
+    },
+    {
+      "path": "openclaw/EXECUTION.md",
+      "normalized_utf8_sha256": "266994a5742ab188be88159b6b80baa4c4c2a0d2ebebd4f1f9ad7ccde43c4aa6"
+    },
+    {
+      "path": "openclaw/MEMORY.md",
+      "normalized_utf8_sha256": "5a07790f84fe84f20fc3bd5243cd96e37d80fd3953e8a9b57d4fbc2c977a5b7b"
+    },
+    {
+      "path": "openclaw/MULTI_AGENT.md",
+      "normalized_utf8_sha256": "2b4218a646ac4d446edb7046f6ca17a9bb957694071d7f780f20a19295906af4"
+    },
+    {
+      "path": "openclaw/OPERATIONS_SECURITY.md",
+      "normalized_utf8_sha256": "71de89b8ab76cda577df1a8e7687ff84156d554aa921784ed80c0aa6b94355a5"
+    },
+    {
+      "path": "openclaw/README.md",
+      "normalized_utf8_sha256": "cbdbf9cb2297c2617e7eff12b21ce5614bdf85cfd3ab0e920bb03be381553d11"
+    },
+    {
+      "path": "openclaw/TRANSFERABLE_LESSONS.md",
+      "normalized_utf8_sha256": "dcb32eae80448eb0f8c0769889310c61bcee3376da65a29574ea30722b80c547"
+    },
+    {
+      "path": "README.md",
+      "normalized_utf8_sha256": "002390eaccc6dde13e6efc3eecd89bb5a031c5f9bc4935b88f9084977b903f17"
+    },
+    {
+      "path": "review/INDEPENDENT_REVIEW.md",
+      "normalized_utf8_sha256": "3878cbdc6d83fde62908bcb26d7f4c90c71776985fe0821ad47c76bee27ee68f"
+    },
+    {
+      "path": "review/INTEGRATOR_DISPOSITIONS.md",
+      "normalized_utf8_sha256": "83e02054cddd822a789e73079f8a7f2fdb15c870660f61832e43e7640d9d5a68"
+    },
+    {
+      "path": "SOURCES.md",
+      "normalized_utf8_sha256": "a18f7d84aca6820136745ad7abb640261c1fb95099819089706c196ed5de3b15"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "normalized_utf8_sha256": "9fb11908cdbeb0c844d94238b214417ac0936fbbe7814cc2fc03467449c79c87"
+    }
+  ]
+}

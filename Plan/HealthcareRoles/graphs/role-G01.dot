@@ -1,0 +1,12 @@
+digraph "role-G01" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nG01 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+G01 [label="G01\nProvider medical director / \nchief medical officer", URL="../index.html#G01", target="_top"];
+G06 [label="G06\nQuality-improvement / audit \nprofessional", URL="../index.html#G06", target="_top"];
+C01 -> G01 [label="DEP178", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G06 -> G01 [label="DEP179", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> G01 [label="S-G01 request", tooltip="Actual reporting lines, medical-staff authority and privileges require local bylaws/organization chart; no universal CMO-boss graph is asserted."];
+G01 -> C01 [label="S-G01 response", tooltip="Actual reporting lines, medical-staff authority and privileges require local bylaws/organization chart; no universal CMO-boss graph is asserted."];
+}

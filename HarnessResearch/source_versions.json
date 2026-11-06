@@ -1,0 +1,46 @@
+{
+  "checked_local_date": "2026-10-18",
+  "retrieved_utc": "2026-10-17T19:27:44.117915+00:00",
+  "repositories": [
+    {
+      "id": "hermes",
+      "url": "https://github.com/NousResearch/hermes-agent.git",
+      "commit": "e6f57427c198cfd96854522b7a9159eb007e13c2",
+      "commit_date": "2026-10-17T12:16:10-07:00",
+      "checked_local_date": "2026-10-18",
+      "checkout_clean": true,
+      "path": "HarnessResearch/_sources/hermes",
+      "status": "official_source_checkout_not_installed_or_executed"
+    },
+    {
+      "id": "openclaw",
+      "url": "https://github.com/openclaw/openclaw.git",
+      "commit": "3b3492490602f5080d3fbe7d2df9618cdb82ea9a",
+      "commit_date": "2026-10-17T12:23:49-07:00",
+      "checked_local_date": "2026-10-18",
+      "checkout_clean": true,
+      "path": "HarnessResearch/_sources/openclaw",
+      "status": "official_source_checkout_not_installed_or_executed"
+    }
+  ],
+  "comparative_snapshots": [
+    {
+      "repository": "earendil-works/pi",
+      "commit": "c268154ca1171c2f9eefe75d3d7372a68aada2d5",
+      "scope": "Selected read-only source files, not a full checkout/install/runtime test",
+      "checked_local_date": "2026-10-18"
+    },
+    {
+      "repository": "langchain-ai/langgraph",
+      "commit": "0eb194fe6093812243de2249e7092029c87c8820",
+      "scope": "Selected read-only source files, not a full checkout/install/runtime test",
+      "checked_local_date": "2026-10-18"
+    },
+    {
+      "repository": "letta-ai/letta-code",
+      "commit": "6e2081fa9d7b6bb54bbaab365e24f142e7ad382b",
+      "scope": "Selected read-only source files, not a full checkout/install/runtime test",
+      "checked_local_date": "2026-10-18"
+    }
+  ]
+}

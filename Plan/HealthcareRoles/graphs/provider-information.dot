@@ -1,0 +1,34 @@
+digraph "provider-information" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nProvider Information | arrow = named information handoff; F ID links to contract", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+G03 [label="G03\nUM / medical-policy committee \nand specialty members", URL="../index.html#G03", target="_top"];
+O01 [label="O01\nProvider authorization / \nprecertification specialist", URL="../index.html#O01", target="_top"];
+O03 [label="O03\nRegistration / patient-access \nrepresentative", URL="../index.html#O03", target="_top"];
+O04 [label="O04\nProvider \ninsurance-verification / \nbenefits specialist", URL="../index.html#O04", target="_top"];
+O05 [label="O05\nScheduler / procedure \ncoordinator", URL="../index.html#O05", target="_top"];
+O06 [label="O06\nHIM / release-of-information \nspecialist", URL="../index.html#O06", target="_top"];
+O11 [label="O11\nProvider physician adviser / \npeer-discussion clinician", URL="../index.html#O11", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+U01 [label="U01\nPayer UM intake coordinator", URL="../index.html#U01", target="_top"];
+U03 [label="U03\nPayer nurse / licensed UM \nclinical reviewer", URL="../index.html#U03", target="_top"];
+U04 [label="U04\nPayer physician reviewer / \nmedical director acting on a \ncase", URL="../index.html#U04", target="_top"];
+U05 [label="U05\nIndependent clinical / \nspecialty consultant", URL="../index.html#U05", target="_top"];
+U09 [label="U09\nDetermination / notification \ncoordinator", URL="../index.html#U09", target="_top"];
+P01 -> O03 [label="F01 | Identity / insurance information", tooltip="When registering/requesting service"];
+C01 -> O01 [label="F02 | Clinical service request", tooltip="When service requires authorization work"];
+O04 -> O01 [label="F03 | Benefits / requirement finding", tooltip="Plan/service-specific check"];
+O06 -> O01 [label="F04 | Supporting record package", tooltip="When additional records needed"];
+O01 -> U01 [label="F05 | Authorization submission", tooltip="When request submitted"];
+U01 -> O01 [label="F06 | Missing-information request", tooltip="When intake/review needs clarification"];
+U01 -> U03 [label="F07 | Clinical review case", tooltip="When clinical review required"];
+G03 -> U03 [label="F08 | Applicable approved criteria", tooltip="Approved-policy use; MA requirements separately A05/A17"];
+U03 -> U04 [label="F09 | Clinical escalation", tooltip="When delegated first level cannot resolve"];
+U04 -> U05 [label="F10 | Specialty consultation request", tooltip="When specialist opinion needed"];
+O11 -> U04 [label="F11 | Peer clinical discussion", tooltip="Plan-specific peer process"];
+U04 -> U09 [label="F12 | Authorized clinical determination", tooltip="When case decision made"];
+U09 -> P01 [label="F13 | Decision notice", tooltip="Recipients/contents depend on route"];
+U09 -> O01 [label="F14 | Provider outcome communication", tooltip="As required/permitted in actual process"];
+O01 -> O05 [label="F15 | Recorded authorization status", tooltip="When scheduling depends on status"];
+}

@@ -1,0 +1,54 @@
+{
+  "headless": true,
+  "visible_windows_requested": false,
+  "profile_count": 97,
+  "id_filter": "passed",
+  "domain_filter": "passed",
+  "hash_navigation": "passed",
+  "javascript_errors": [],
+  "graphs_inspected": [
+    {
+      "name": "authority-domains",
+      "width": 1385,
+      "height": 619,
+      "loaded": true
+    },
+    {
+      "name": "ma-appeals",
+      "width": 1284,
+      "height": 1413,
+      "loaded": true
+    },
+    {
+      "name": "commercial-appeals",
+      "width": 891,
+      "height": 932,
+      "loaded": true
+    },
+    {
+      "name": "reporting-examples",
+      "width": 1784,
+      "height": 989,
+      "loaded": true
+    },
+    {
+      "name": "role-M28",
+      "width": 996,
+      "height": 272,
+      "loaded": true
+    },
+    {
+      "name": "role-U13",
+      "width": 971,
+      "height": 339,
+      "loaded": true
+    },
+    {
+      "name": "provider-information",
+      "width": 3489,
+      "height": 500,
+      "loaded": true
+    }
+  ],
+  "screenshot_folder": "Runner/.cache/role-docs-toolchain/qa"
+}

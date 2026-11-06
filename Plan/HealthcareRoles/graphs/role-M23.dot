@@ -1,0 +1,14 @@
+digraph "role-M23" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM23 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+M01 [label="M01\nLead care manager / case \nmanager", URL="../index.html#M01", target="_top"];
+M23 [label="M23\nTransportation coordinator / \ndispatcher", URL="../index.html#M23", target="_top"];
+M24 [label="M24\nTransport driver / \nservice-delivery worker", URL="../index.html#M24", target="_top"];
+O05 [label="O05\nScheduler / procedure \ncoordinator", URL="../index.html#O05", target="_top"];
+M01 -> M23 [label="DEP158", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O05 -> M23 [label="DEP159", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M23 -> M24 [label="DEP160", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> M23 [label="S-M23 request", tooltip="Functional synthesis from access-barrier and transport-support evidence; exact broker rules and payment route are not established here."];
+M23 -> M01 [label="S-M23 response", tooltip="Functional synthesis from access-barrier and transport-support evidence; exact broker rules and payment route are not established here."];
+}

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-18",
+  "renderer": "@viz-js/viz",
+  "version": "3.31.0",
+  "diagrams": 5,
+  "results": [
+    {
+      "name": "organization",
+      "warnings": [],
+      "bytes": 12079
+    },
+    {
+      "name": "composite-roles",
+      "warnings": [],
+      "bytes": 11170
+    },
+    {
+      "name": "case-execution",
+      "warnings": [],
+      "bytes": 13650
+    },
+    {
+      "name": "patient-isolation",
+      "warnings": [],
+      "bytes": 11642
+    },
+    {
+      "name": "memory-context",
+      "warnings": [],
+      "bytes": 9710
+    }
+  ],
+  "scope": "Hypothetical documentation only; no agent runtime, actual task mapping, isolation enforcement or benchmark result."
+}

@@ -1,0 +1,16 @@
+digraph "role-U15" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nU15 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+P04 [label="P04\nAppointed appeal \nrepresentative", URL="../index.html#P04", target="_top"];
+U12 [label="U12\nInternal appeal / grievance \ncoordinator", URL="../index.html#U12", target="_top"];
+U14 [label="U14\nMedicare Advantage \nindependent-review entity \nreviewer", URL="../index.html#U14", target="_top"];
+U15 [label="U15\nExternal-review administrator", URL="../index.html#U15", target="_top"];
+U18 [label="U18\nApplicable commercial \nindependent-review \norganization reviewer", URL="../index.html#U18", target="_top"];
+U15 -> U14 [label="DEP101", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U12 -> U15 [label="DEP102", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P04 -> U15 [label="DEP103", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U15 -> U18 [label="DEP108", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P04 -> U15 [label="S-U15 request", tooltip="Exact administrator and permissible actions must be identified from product and notice."];
+U15 -> P04 [label="S-U15 response", tooltip="Exact administrator and permissible actions must be identified from product and notice."];
+}

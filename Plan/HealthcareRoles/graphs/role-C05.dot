@@ -1,0 +1,12 @@
+digraph "role-C05" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nC05 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+C05 [label="C05\nPhysician assistant / \nassociate \n(jurisdiction-specific title)", URL="../index.html#C05", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+P01 -> C05 [label="DEP027", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> C05 [label="DEP028", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> C05 [label="S-C05 request", tooltip="PA means physician assistant in this profile; prior authorization is written out to avoid acronym confusion."];
+C05 -> P01 [label="S-C05 response", tooltip="PA means physician assistant in this profile; prior authorization is written out to avoid acronym confusion."];
+}

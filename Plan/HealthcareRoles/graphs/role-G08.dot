@@ -1,0 +1,17 @@
+digraph "role-G08" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nG08 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+G03 [label="G03\nUM / medical-policy committee \nand specialty members", URL="../index.html#G03", target="_top"];
+G06 [label="G06\nQuality-improvement / audit \nprofessional", URL="../index.html#G06", target="_top"];
+G07 [label="G07\nTrainer / clinical educator", URL="../index.html#G07", target="_top"];
+G08 [label="G08\nPolicy analyst / clinical \nregulatory adviser", URL="../index.html#G08", target="_top"];
+G09 [label="G09\nCompliance / regulatory \nprofessional", URL="../index.html#G09", target="_top"];
+G08 -> G03 [label="DEP182", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G08 -> G07 [label="DEP192", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G09 -> G08 [label="DEP194", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G06 -> G08 [label="DEP195", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G08 -> G09 [label="DEP197", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G03 -> G08 [label="S-G08 request", tooltip="Clinical adviser and nonclinical analyst may be separate professions; any clinical decision requires the actual credential and assignment."];
+G08 -> G03 [label="S-G08 response", tooltip="Clinical adviser and nonclinical analyst may be separate professions; any clinical decision requires the actual credential and assignment."];
+}

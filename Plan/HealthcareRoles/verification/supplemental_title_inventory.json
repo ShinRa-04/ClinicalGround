@@ -1,0 +1,1331 @@
+[
+  {
+    "id": "ROLE:P01:title:01",
+    "kind": "role_taxonomy",
+    "text": "Patient / insured member",
+    "parent": "P01",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A01",
+      "A09",
+      "R22"
+    ],
+    "original_sha256": "ed63a55213e8140cdda43936decc2748ef777e31c4008496f6c139c2c71d36d1"
+  },
+  {
+    "id": "ROLE:P02:title:01",
+    "kind": "role_taxonomy",
+    "text": "Informal caregiver / family support person",
+    "parent": "P02",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R19",
+      "A09",
+      "R30"
+    ],
+    "original_sha256": "5e7e3cc51955d05e42fb371ff0bf6b02abc84b5429def12ba3f30979b493fd11"
+  },
+  {
+    "id": "ROLE:P03:title:01",
+    "kind": "role_taxonomy",
+    "text": "Legally recognized personal representative",
+    "parent": "P03",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A09",
+      "A01",
+      "R19"
+    ],
+    "original_sha256": "3fb1753ba971c6d2a35598f2e74cf7b6f6d0d8c321cf7b00daef69d76d4b41f2"
+  },
+  {
+    "id": "ROLE:P04:title:01",
+    "kind": "role_taxonomy",
+    "text": "Appointed appeal representative",
+    "parent": "P04",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R20",
+      "R15",
+      "A11"
+    ],
+    "original_sha256": "0537d340a5f51f3d431f1dc31539edc679aedf094542e87e75744bf5e12dde0a"
+  },
+  {
+    "id": "ROLE:P05:title:01",
+    "kind": "role_taxonomy",
+    "text": "Healthcare interpreter / communication-access professional",
+    "parent": "P05",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B23",
+      "R21"
+    ],
+    "original_sha256": "717e09a6acff0c5eb07fd66a9ed60d7fca7fdfae31cbc2e4748a2c24456ddca4"
+  },
+  {
+    "id": "ROLE:P06:title:01",
+    "kind": "role_taxonomy",
+    "text": "Healthcare translator",
+    "parent": "P06",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B23",
+      "R21"
+    ],
+    "original_sha256": "8d5edecc7199bc06218741d0ee7221d5a61e9659956983f2bee2f3c73968c0cb"
+  },
+  {
+    "id": "ROLE:P07:title:01",
+    "kind": "role_taxonomy",
+    "text": "Patient-relations advocate",
+    "parent": "P07",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R04",
+      "A01",
+      "R35"
+    ],
+    "original_sha256": "96b642e6b7ab748af42b24e4cd34dc0e5df2e5d5121157cada8ff24fe15d7c83"
+  },
+  {
+    "id": "ROLE:C01:title:01",
+    "kind": "role_taxonomy",
+    "text": "Ordering / treating physician",
+    "parent": "C01",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B01",
+      "A01",
+      "A15",
+      "R01"
+    ],
+    "original_sha256": "c8d04d8c14337b94fabaa49969bc57d81ff25f764b69d398f371cf5d0f80f525"
+  },
+  {
+    "id": "ROLE:C02:title:01",
+    "kind": "role_taxonomy",
+    "text": "Referring / primary-care clinician",
+    "parent": "C02",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B01",
+      "R22",
+      "R03"
+    ],
+    "original_sha256": "ee7b3111822ece83c7de4137b94194ce72d08dc4a1dd06b9b2b8fa6499fce2bf"
+  },
+  {
+    "id": "ROLE:C03:title:01",
+    "kind": "role_taxonomy",
+    "text": "Treating / performing specialist",
+    "parent": "C03",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B01",
+      "R01",
+      "R22"
+    ],
+    "original_sha256": "073aa49da03d4188871c8286fe34d5e3c014264ac88dbdbd21cd870cb17d9fcc"
+  },
+  {
+    "id": "ROLE:C04:title:01",
+    "kind": "role_taxonomy",
+    "text": "Nurse practitioner",
+    "parent": "C04",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B03",
+      "A14",
+      "A07"
+    ],
+    "original_sha256": "289628b3489bc7671700888734f5e12f2814472ddc26e5b690eaef950747b6bd"
+  },
+  {
+    "id": "ROLE:C05:title:01",
+    "kind": "role_taxonomy",
+    "text": "Physician assistant",
+    "parent": "C05",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B02",
+      "A15"
+    ],
+    "original_sha256": "a4d1f1c10e0ca1a4a5ef08efbcea56b6cd2c561d2e81df15b2356504d10a46f4"
+  },
+  {
+    "id": "ROLE:C06:title:01",
+    "kind": "role_taxonomy",
+    "text": "Registered nurse providing direct care",
+    "parent": "C06",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B04",
+      "A13",
+      "A14"
+    ],
+    "original_sha256": "d636874f4e00102e911797ab95dcb7a6b66ba916f52e6ace99675338a0f944d1"
+  },
+  {
+    "id": "ROLE:C07:title:01",
+    "kind": "role_taxonomy",
+    "text": "Licensed practical / vocational nurse",
+    "parent": "C07",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B05",
+      "A13",
+      "A14"
+    ],
+    "original_sha256": "fad62c58da0c52f8e0e61f176760dad626930a4932f4c6a639196048358a44bd"
+  },
+  {
+    "id": "ROLE:C08:title:01",
+    "kind": "role_taxonomy",
+    "text": "Medical assistant / clinical-support assistant",
+    "parent": "C08",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B06",
+      "A15"
+    ],
+    "original_sha256": "b05de7a6859241d1b6c217e3f968c1041867cb77a14d6f78b156f5b4d1e697c5"
+  },
+  {
+    "id": "ROLE:O01:title:01",
+    "kind": "role_taxonomy",
+    "text": "Provider authorization / precertification specialist",
+    "parent": "O01",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R03",
+      "R04",
+      "R12"
+    ],
+    "original_sha256": "aef18676981c6d97684fb885342ab77c9477935ccf3b0df564b33d8a5451dff1"
+  },
+  {
+    "id": "ROLE:O02:title:01",
+    "kind": "role_taxonomy",
+    "text": "Referral coordinator",
+    "parent": "O02",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R03",
+      "R05",
+      "R22"
+    ],
+    "original_sha256": "822cf7334647d1d7dab58d54c122e1e23d8632012c1cc63246dd9fc6a4faf11d"
+  },
+  {
+    "id": "ROLE:O03:title:01",
+    "kind": "role_taxonomy",
+    "text": "Registration / patient-access representative",
+    "parent": "O03",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R03",
+      "R06",
+      "B20"
+    ],
+    "original_sha256": "e59e8d480af2bce5ed378aae87c21b7040d3e95f546ff62406a6a08042ea5ee8"
+  },
+  {
+    "id": "ROLE:O04:title:01",
+    "kind": "role_taxonomy",
+    "text": "Provider insurance-verification / benefits specialist",
+    "parent": "O04",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R03",
+      "R06",
+      "R11"
+    ],
+    "original_sha256": "391cb74369ef3d9741f051a4457a74004bd6941a8e566a904ed6c5870b37349d"
+  },
+  {
+    "id": "ROLE:O05:title:01",
+    "kind": "role_taxonomy",
+    "text": "Scheduler / procedure coordinator",
+    "parent": "O05",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R04",
+      "R05"
+    ],
+    "original_sha256": "c4ee80d02a5e1e1f539fdfe86fa4ade866d0c9e5abca8d982b14c2c8a7b93c93"
+  },
+  {
+    "id": "ROLE:O06:title:01",
+    "kind": "role_taxonomy",
+    "text": "HIM / release-of-information specialist",
+    "parent": "O06",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R07",
+      "B20",
+      "A10",
+      "A15"
+    ],
+    "original_sha256": "ce1a032b37b1dd87b24f18733f4a3c354872dcd3e5a4b3a787d1f73bcf865ca8"
+  },
+  {
+    "id": "ROLE:O07:title:01",
+    "kind": "role_taxonomy",
+    "text": "Medical coding specialist",
+    "parent": "O07",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B20",
+      "R08",
+      "A15"
+    ],
+    "original_sha256": "7d18bd27dcb36fb4e679430ad6db24d8b6e851e68497119a02f2f8283fc0ac61"
+  },
+  {
+    "id": "ROLE:O08:title:01",
+    "kind": "role_taxonomy",
+    "text": "Clinical-documentation-integrity specialist",
+    "parent": "O08",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R08",
+      "B20",
+      "A15"
+    ],
+    "original_sha256": "9dd3bc2ad0f4529bbab4650fc83e58a7c9c5e28ad62ba602eec16c18869f321b"
+  },
+  {
+    "id": "ROLE:O09:title:01",
+    "kind": "role_taxonomy",
+    "text": "Financial counselor / assistance specialist",
+    "parent": "O09",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R06",
+      "R09"
+    ],
+    "original_sha256": "fe8fb91d8594203b793c71a224bee39a4b3fb6890337bdb0199aceff805dc0f4"
+  },
+  {
+    "id": "ROLE:O10:title:01",
+    "kind": "role_taxonomy",
+    "text": "Provider denial / appeal specialist",
+    "parent": "O10",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R04",
+      "R08",
+      "R15",
+      "R20"
+    ],
+    "original_sha256": "dd6f32d13ec203258bdb7e9fda0ca333d61264042bf1e31e98419422b36b0488"
+  },
+  {
+    "id": "ROLE:O11:title:01",
+    "kind": "role_taxonomy",
+    "text": "Provider physician adviser / peer-discussion clinician",
+    "parent": "O11",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R15",
+      "B01"
+    ],
+    "original_sha256": "cc63a5b030cc9f2384649898a1cdcd4d49c3af464ca5abca507f20d8e9d684a1"
+  },
+  {
+    "id": "ROLE:O12:title:01",
+    "kind": "role_taxonomy",
+    "text": "Practice / patient-access supervisor",
+    "parent": "O12",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B22",
+      "R03",
+      "R04"
+    ],
+    "original_sha256": "46208227d0365b07e11c36ba743a7b452464c42899165436fbeddf8140b44114"
+  },
+  {
+    "id": "ROLE:O13:title:01",
+    "kind": "role_taxonomy",
+    "text": "External diagnostic / clinical evidence author or custodian",
+    "parent": "O13",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A15",
+      "B01",
+      "B20"
+    ],
+    "original_sha256": "5f5b91baf37b290731f89c7898995ff4d301c40ba051d4e935553cf09db3b833"
+  },
+  {
+    "id": "ROLE:U01:title:01",
+    "kind": "role_taxonomy",
+    "text": "Payer UM intake coordinator",
+    "parent": "U01",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R12",
+      "R13"
+    ],
+    "original_sha256": "589d8e8cd37eeff4247ea1b91c29556f5b8a57b6984128325993fd61f5d91d08"
+  },
+  {
+    "id": "ROLE:U02:title:01",
+    "kind": "role_taxonomy",
+    "text": "Payer eligibility / benefit specialist",
+    "parent": "U02",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R13",
+      "R16",
+      "A02"
+    ],
+    "original_sha256": "875294a718fb2153293322bc33d996fcc99c09380d0561837cb704a58a26b19e"
+  },
+  {
+    "id": "ROLE:U03:title:01",
+    "kind": "role_taxonomy",
+    "text": "Payer nurse / licensed UM clinical reviewer",
+    "parent": "U03",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R12",
+      "R13",
+      "A02",
+      "A13"
+    ],
+    "original_sha256": "3c55c02094e70dba92aefd712a1fb559c4560ce7733951723583e6390589c9fd"
+  },
+  {
+    "id": "ROLE:U04:title:01",
+    "kind": "role_taxonomy",
+    "text": "Payer physician reviewer / medical director acting on a case",
+    "parent": "U04",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R12",
+      "R18",
+      "A02",
+      "A17"
+    ],
+    "original_sha256": "3a37380dd0d1fe00d2031d81c7db92a6f81b5696b4befab2d80df576ad8f62f5"
+  },
+  {
+    "id": "ROLE:U05:title:01",
+    "kind": "role_taxonomy",
+    "text": "Independent clinical / specialty consultant",
+    "parent": "U05",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R18",
+      "A02"
+    ],
+    "original_sha256": "f5f6899e27275c3ca968075f0fbff4c58df4ffe0025402b13807685f2a4e3d0e"
+  },
+  {
+    "id": "ROLE:U06:title:01",
+    "kind": "role_taxonomy",
+    "text": "Payer behavioral-health reviewer",
+    "parent": "U06",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R13",
+      "A02"
+    ],
+    "original_sha256": "12372dd35ff164e55cb7a08a7f1535b2c666bf2ed04fea5f1689b6c6c95b2c5f"
+  },
+  {
+    "id": "ROLE:U07:title:01",
+    "kind": "role_taxonomy",
+    "text": "Managed-care pharmacist / pharmacy reviewer",
+    "parent": "U07",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R10",
+      "B07",
+      "R13"
+    ],
+    "original_sha256": "94762212cf0b5c3ca91a53d17c429d5ca22016529a4f2f9d00102de6ad8d2abd"
+  },
+  {
+    "id": "ROLE:U08:title:01",
+    "kind": "role_taxonomy",
+    "text": "Delegated medical-group / review-vendor reviewer",
+    "parent": "U08",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R13",
+      "R14",
+      "A02"
+    ],
+    "original_sha256": "79cf61a809573644ede826d90a158ad6c5d17346947cae1a503a5505be205fe6"
+  },
+  {
+    "id": "ROLE:U09:title:01",
+    "kind": "role_taxonomy",
+    "text": "Determination / notification coordinator",
+    "parent": "U09",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R13",
+      "A02",
+      "R15"
+    ],
+    "original_sha256": "6eea1fce76cf34472c6b75dff0f7fd5074895283f4cf9c1845e5f7c85dcc35ef"
+  },
+  {
+    "id": "ROLE:U10:title:01",
+    "kind": "role_taxonomy",
+    "text": "Member-services representative",
+    "parent": "U10",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R16",
+      "R32",
+      "R35"
+    ],
+    "original_sha256": "750ec368ad9aacf8abe53536d6183a836e0fa1920d816c5f6bbe4270b06341d6"
+  },
+  {
+    "id": "ROLE:U11:title:01",
+    "kind": "role_taxonomy",
+    "text": "Provider-services representative",
+    "parent": "U11",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R15",
+      "R32"
+    ],
+    "original_sha256": "7d54409803411ad42e07490d207a29014bb087ede6b7ef32adfb4ffd7e32951e"
+  },
+  {
+    "id": "ROLE:U12:title:01",
+    "kind": "role_taxonomy",
+    "text": "Internal appeal / grievance coordinator",
+    "parent": "U12",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R15",
+      "R20",
+      "A03"
+    ],
+    "original_sha256": "a5baef2902a431f29532a3219c5a953b83d88d5e82856600d25f30a55b970755"
+  },
+  {
+    "id": "ROLE:U13:title:01",
+    "kind": "role_taxonomy",
+    "text": "Medical-necessity appeal / reconsideration physician",
+    "parent": "U13",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A03",
+      "A04",
+      "A16"
+    ],
+    "original_sha256": "25abccc8cc36ade2a25feee47280340d46cbe03078a123b872e56823f98c5574"
+  },
+  {
+    "id": "ROLE:U14:title:01",
+    "kind": "role_taxonomy",
+    "text": "Medicare Advantage independent-review entity reviewer",
+    "parent": "U14",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A04",
+      "A11",
+      "A16"
+    ],
+    "original_sha256": "cc9b444ad0ce90a0e36fdbe96a9ddce92f6a083e0749210ce638c93ab269463a"
+  },
+  {
+    "id": "ROLE:U15:title:01",
+    "kind": "role_taxonomy",
+    "text": "External-review administrator",
+    "parent": "U15",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R17",
+      "A04",
+      "A12"
+    ],
+    "original_sha256": "4bf9e262849797b0af3e6d1e261a4a12e447fc890262144e2c15e3d0dad8019e"
+  },
+  {
+    "id": "ROLE:U16:title:01",
+    "kind": "role_taxonomy",
+    "text": "SHIP / consumer-assistance / ombudsman counselor",
+    "parent": "U16",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R35",
+      "R20"
+    ],
+    "original_sha256": "d893336f6cb064749ffc5dfcf87dafe5c52925dbe77b6c9e57d125c13d522f6a"
+  },
+  {
+    "id": "ROLE:U17:title:01",
+    "kind": "role_taxonomy",
+    "text": "UM manager / operational supervisor",
+    "parent": "U17",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R14",
+      "B22",
+      "A03"
+    ],
+    "original_sha256": "4b3799124438ec599b15f3324ac935d139759737c1aded8c558d03a2a28836dc"
+  },
+  {
+    "id": "ROLE:U18:title:01",
+    "kind": "role_taxonomy",
+    "text": "Applicable commercial independent-review organization reviewer",
+    "parent": "U18",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A12",
+      "R17"
+    ],
+    "original_sha256": "71781215c465db9072422f62f54d57c58ae3408bf8e39171a09fc01a58eb7881"
+  },
+  {
+    "id": "ROLE:M01:title:01",
+    "kind": "role_taxonomy",
+    "text": "Lead care manager / case manager",
+    "parent": "M01",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R22",
+      "R23",
+      "R25",
+      "R32"
+    ],
+    "original_sha256": "31ac17d2fc274edde7b153931bc3ee8d6e0bcb60247b55decaaf802c7d0c1b42"
+  },
+  {
+    "id": "ROLE:M02:title:01",
+    "kind": "role_taxonomy",
+    "text": "Medical / nonclinical social worker",
+    "parent": "M02",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B09",
+      "R25",
+      "R32"
+    ],
+    "original_sha256": "3b0aa10f39c24e09a39269613232176c6b8dd1f016462ed8060dceed3c3f870b"
+  },
+  {
+    "id": "ROLE:M03:title:01",
+    "kind": "role_taxonomy",
+    "text": "Licensed clinical social worker",
+    "parent": "M03",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B09",
+      "R25"
+    ],
+    "original_sha256": "f36d3883ff67fcf39cdd0029485800a787e37ec0669cede3dbd79b7f98b70b64"
+  },
+  {
+    "id": "ROLE:M04:title:01",
+    "kind": "role_taxonomy",
+    "text": "Clinical / community pharmacist",
+    "parent": "M04",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B07",
+      "R10",
+      "R24"
+    ],
+    "original_sha256": "5dff68010d83348d27e466e0f0fb33bdda751bebc8ce190f74d6b826f61fcf7b"
+  },
+  {
+    "id": "ROLE:M05:title:01",
+    "kind": "role_taxonomy",
+    "text": "Pharmacy technician / medication-access coordinator",
+    "parent": "M05",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B08",
+      "R09"
+    ],
+    "original_sha256": "5e024824e0534007f5146fcc1ba88dfce46465696969a2474ed69ef3da9a2472"
+  },
+  {
+    "id": "ROLE:M06:title:01",
+    "kind": "role_taxonomy",
+    "text": "Treating psychiatrist",
+    "parent": "M06",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B01",
+      "B11",
+      "R24"
+    ],
+    "original_sha256": "e39e6da82aafd57e2067bd23d9a0e449f9a37d3e2313203b752f6502ad6eb599"
+  },
+  {
+    "id": "ROLE:M07:title:01",
+    "kind": "role_taxonomy",
+    "text": "Clinical psychologist",
+    "parent": "M07",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B10",
+      "R24"
+    ],
+    "original_sha256": "c51503afdd8f8d5b0799de2fd46a3b199e76ededc67b7f40dc712affcc167e1d"
+  },
+  {
+    "id": "ROLE:M08:title:01",
+    "kind": "role_taxonomy",
+    "text": "Licensed behavioral-health / substance-use counselor",
+    "parent": "M08",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B11",
+      "R23"
+    ],
+    "original_sha256": "d6f490784b051566e6ce0a4bf24f4b02d3b43fc39284b67e15eab08baf544d23"
+  },
+  {
+    "id": "ROLE:M09:title:01",
+    "kind": "role_taxonomy",
+    "text": "Community health worker",
+    "parent": "M09",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B12",
+      "R29"
+    ],
+    "original_sha256": "9d5aba52c4e6808b945f6c912db254f9fd55d467c4cb22159c4176f9acef254c"
+  },
+  {
+    "id": "ROLE:M10:title:01",
+    "kind": "role_taxonomy",
+    "text": "Patient navigator",
+    "parent": "M10",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R28",
+      "B12"
+    ],
+    "original_sha256": "27ae6dc80e9740495618fef6360b744a10fbb156ee00eae2c53ade11632b28d7"
+  },
+  {
+    "id": "ROLE:M11:title:01",
+    "kind": "role_taxonomy",
+    "text": "Health-care guide / nonclinical care guide",
+    "parent": "M11",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R32",
+      "R29"
+    ],
+    "original_sha256": "3cc27f0b07fdf20f5c91f7bfd7c6ab0515dc4d03ae2166a93a78b5b8059bc06a"
+  },
+  {
+    "id": "ROLE:M12:title:01",
+    "kind": "role_taxonomy",
+    "text": "Registered dietitian / qualified nutrition professional",
+    "parent": "M12",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B14",
+      "R31"
+    ],
+    "original_sha256": "f4bcc880af250e89c5771d7b5f005b34ec521fcf7d2eca72195e853acaffdcf6"
+  },
+  {
+    "id": "ROLE:M13:title:01",
+    "kind": "role_taxonomy",
+    "text": "Health educator / self-management coach",
+    "parent": "M13",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B13",
+      "R23"
+    ],
+    "original_sha256": "83fa88201f371f0751913fa1146b2f3ea1651813d17f02af348fe64797f0356f"
+  },
+  {
+    "id": "ROLE:M14:title:01",
+    "kind": "role_taxonomy",
+    "text": "Physical therapist",
+    "parent": "M14",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B15",
+      "R30"
+    ],
+    "original_sha256": "a19f500ae5fb6e082191cca2ca10a7b23682a25042b3fea8848caae9b96128ec"
+  },
+  {
+    "id": "ROLE:M15:title:01",
+    "kind": "role_taxonomy",
+    "text": "Occupational therapist",
+    "parent": "M15",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B16",
+      "R30"
+    ],
+    "original_sha256": "7c8dc187609e6a0eff6d7800a3b12759c7624ccd7ea253b6f2041af80c3e56e2"
+  },
+  {
+    "id": "ROLE:M16:title:01",
+    "kind": "role_taxonomy",
+    "text": "Speech-language pathologist",
+    "parent": "M16",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B17",
+      "R30"
+    ],
+    "original_sha256": "4fbde4caec280da76cbd6c622b65bd8b236ac3f77f847266e9c5adefc85e3d87"
+  },
+  {
+    "id": "ROLE:M17:title:01",
+    "kind": "role_taxonomy",
+    "text": "Respiratory therapist",
+    "parent": "M17",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B18",
+      "R33"
+    ],
+    "original_sha256": "e255428e04847e61c3a8f7549d042777dc02aab23d25b644010c3c3dbf0e93be"
+  },
+  {
+    "id": "ROLE:M18:title:01",
+    "kind": "role_taxonomy",
+    "text": "Discharge planner / transitions coordinator",
+    "parent": "M18",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A06",
+      "R25",
+      "R27"
+    ],
+    "original_sha256": "cea24dd286f00f7d32f764a679ed275b3d1c23f7de6c3c86e674bc6d4b732476"
+  },
+  {
+    "id": "ROLE:M19:title:01",
+    "kind": "role_taxonomy",
+    "text": "Home-health intake / coordination clinician",
+    "parent": "M19",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A07",
+      "R30"
+    ],
+    "original_sha256": "cf3da66c9ecc3e617d36906b651ae75d6cac72f6950beaf8531443c0bbac2013"
+  },
+  {
+    "id": "ROLE:M20:title:01",
+    "kind": "role_taxonomy",
+    "text": "Skilled-nursing / rehabilitation receiving-team coordinator",
+    "parent": "M20",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A06",
+      "R25",
+      "R27"
+    ],
+    "original_sha256": "97e2c0540031e2c7cfd3c8814a530d111980d34a6ed32352447537ed1ad938f4"
+  },
+  {
+    "id": "ROLE:M21:title:01",
+    "kind": "role_taxonomy",
+    "text": "Home-health aide / personal-care worker",
+    "parent": "M21",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B19",
+      "R30"
+    ],
+    "original_sha256": "afb833c90049d7e73f421205c76ead50fb55b1980f510d8fb6bf35e21383459b"
+  },
+  {
+    "id": "ROLE:M22:title:01",
+    "kind": "role_taxonomy",
+    "text": "Community resource / housing / food / benefit-support worker",
+    "parent": "M22",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R22",
+      "R28",
+      "R29"
+    ],
+    "original_sha256": "59190a76409a7d332b5bb82af8d60146b90404a70602f9098bd1af64c66344d1"
+  },
+  {
+    "id": "ROLE:M23:title:01",
+    "kind": "role_taxonomy",
+    "text": "Transportation coordinator / dispatcher",
+    "parent": "M23",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R28",
+      "B19"
+    ],
+    "original_sha256": "355ac0885d88469f7bd6cc4d6dc40acf2626586b0793948aa9a50df6010c007b"
+  },
+  {
+    "id": "ROLE:M24:title:01",
+    "kind": "role_taxonomy",
+    "text": "Transport driver / service-delivery worker",
+    "parent": "M24",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R28",
+      "B19",
+      "A10"
+    ],
+    "original_sha256": "ffd46c043dbe73e9edfeae166dc8a52eb7c6fddf2fb4edd3ac13e1da80f1faba"
+  },
+  {
+    "id": "ROLE:M25:title:01",
+    "kind": "role_taxonomy",
+    "text": "Equipment supplier / delivery or fitting staff",
+    "parent": "M25",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R11",
+      "R30"
+    ],
+    "original_sha256": "394493d560798e5b13a316717435b5667577a3a9a59307c379875375c0d07023"
+  },
+  {
+    "id": "ROLE:M26:title:01",
+    "kind": "role_taxonomy",
+    "text": "Infusion / other receiving-service coordinator",
+    "parent": "M26",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A06",
+      "R22",
+      "R04"
+    ],
+    "original_sha256": "97aaad192878bd7f1a890c63441eb10609dd8ce68302dc53afc766bc798d0162"
+  },
+  {
+    "id": "ROLE:M27:title:01",
+    "kind": "role_taxonomy",
+    "text": "Palliative-care clinical team member",
+    "parent": "M27",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R31",
+      "A01"
+    ],
+    "original_sha256": "7b9738da68c75c4f29c88b835816de5ffcbf5f6d17bd40eb9175e38811bdfe40"
+  },
+  {
+    "id": "ROLE:M28:title:01",
+    "kind": "role_taxonomy",
+    "text": "Hospice interdisciplinary team / attending function",
+    "parent": "M28",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A08",
+      "R34"
+    ],
+    "original_sha256": "2d176e8b43d25afc9f46bd39766bc9a14d44a795a33fbd082a45bb30da463dcb"
+  },
+  {
+    "id": "ROLE:M29:title:01",
+    "kind": "role_taxonomy",
+    "text": "Chaplain / spiritual-care professional",
+    "parent": "M29",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R27",
+      "R31",
+      "A08"
+    ],
+    "original_sha256": "6f22411d060ba2dec23d89374b4c9fbbfe2c9ae1e8eafdb35fd1a51624b1fad0"
+  },
+  {
+    "id": "ROLE:M30:title:01",
+    "kind": "role_taxonomy",
+    "text": "Administrative care coordinator / scheduling support",
+    "parent": "M30",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R26",
+      "R32"
+    ],
+    "original_sha256": "a67f2419f7feec271a6449aa3bf8aa6ed48da7af552be87bfc12b368aab390a9"
+  },
+  {
+    "id": "ROLE:M31:title:01",
+    "kind": "role_taxonomy",
+    "text": "Safeguarding / protection-service professional",
+    "parent": "M31",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R25",
+      "A09",
+      "A10"
+    ],
+    "original_sha256": "60c1fa51de5c2482936e1042f66252c5dd77c1c164c62fca283d9170baeb944a"
+  },
+  {
+    "id": "ROLE:G01:title:01",
+    "kind": "role_taxonomy",
+    "text": "Provider medical director / chief medical officer",
+    "parent": "G01",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B22",
+      "R14",
+      "A15"
+    ],
+    "original_sha256": "7f3216b99fe73e483781abb8174cc7bd37e8444300adb5b27393ac0755108f84"
+  },
+  {
+    "id": "ROLE:G02:title:01",
+    "kind": "role_taxonomy",
+    "text": "Payer medical director / clinical-program leader",
+    "parent": "G02",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A05",
+      "A02",
+      "A03",
+      "R18"
+    ],
+    "original_sha256": "7309120575ec9e221c52146b7d6ad68643f4769c79612dc170ea723275feedb8"
+  },
+  {
+    "id": "ROLE:G03:title:01",
+    "kind": "role_taxonomy",
+    "text": "UM / medical-policy committee and specialty members",
+    "parent": "G03",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A05",
+      "A17",
+      "R12",
+      "R18"
+    ],
+    "original_sha256": "ef14c828e76c0d335a24dc3d46023b77741b863ab233c1dd6cf11e3758787d9d"
+  },
+  {
+    "id": "ROLE:G04:title:01",
+    "kind": "role_taxonomy",
+    "text": "Care-management director / manager",
+    "parent": "G04",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R32",
+      "B22"
+    ],
+    "original_sha256": "9fd2f3a56e597d35ea3e8484787cbe687da8e6f0dd60d3823aafcdda0b616a79"
+  },
+  {
+    "id": "ROLE:G05:title:01",
+    "kind": "role_taxonomy",
+    "text": "Clinical / case-management supervisor",
+    "parent": "G05",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R32",
+      "A13",
+      "A14"
+    ],
+    "original_sha256": "62e0b2dd3111f26a4a617560292e4cd7805c25b545852f4516f7a71cf93c83bd"
+  },
+  {
+    "id": "ROLE:G06:title:01",
+    "kind": "role_taxonomy",
+    "text": "Quality-improvement / audit professional",
+    "parent": "G06",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R14",
+      "R32",
+      "B21"
+    ],
+    "original_sha256": "cb452c58bd334f908b26e01730e9e8cb6a862bbcca3eef00fa6635fa3c4a14d9"
+  },
+  {
+    "id": "ROLE:G07:title:01",
+    "kind": "role_taxonomy",
+    "text": "Trainer / clinical educator",
+    "parent": "G07",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R32",
+      "B13",
+      "A13"
+    ],
+    "original_sha256": "f3f10665df82a40475456bb9ff1dd363f08996e24200ff04573097bd9a0959af"
+  },
+  {
+    "id": "ROLE:G08:title:01",
+    "kind": "role_taxonomy",
+    "text": "Policy analyst / clinical regulatory adviser",
+    "parent": "G08",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R32",
+      "A05",
+      "A17"
+    ],
+    "original_sha256": "4ce4eb08c222d116de0ce9c89e4066777561598f120a6c8af5be322d3e8baa22"
+  },
+  {
+    "id": "ROLE:G09:title:01",
+    "kind": "role_taxonomy",
+    "text": "Compliance / regulatory professional",
+    "parent": "G09",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R14",
+      "R32",
+      "B22"
+    ],
+    "original_sha256": "2f2726088b0593e3d726fe63fd23c10e6d2ddca0f32bdc7c9bde40f5fe061b4e"
+  },
+  {
+    "id": "ROLE:G10:title:01",
+    "kind": "role_taxonomy",
+    "text": "Privacy officer / HIM privacy specialist",
+    "parent": "G10",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R07",
+      "R32",
+      "A09",
+      "A10"
+    ],
+    "original_sha256": "ddb50960ea47f06ed4c6afbaeceb760500afe40159b14980c8d712a8dba95325"
+  },
+  {
+    "id": "ROLE:G11:title:01",
+    "kind": "role_taxonomy",
+    "text": "Health-services / population-health data analyst",
+    "parent": "G11",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B21",
+      "R32"
+    ],
+    "original_sha256": "3adca310514b300d4af0ed5fa1ed52bf7429d473f386fa8297dd1b338cd65c8a"
+  },
+  {
+    "id": "ROLE:G12:title:01",
+    "kind": "role_taxonomy",
+    "text": "Business / workflow analyst",
+    "parent": "G12",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R32",
+      "B21"
+    ],
+    "original_sha256": "2d7e37648db78dd3af5ecd426f60181be331a3e4c9ef3c7030eb189f9295924a"
+  },
+  {
+    "id": "ROLE:G13:title:01",
+    "kind": "role_taxonomy",
+    "text": "EHR / clinical informatics / application-support professional",
+    "parent": "G13",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B21",
+      "R32",
+      "A15"
+    ],
+    "original_sha256": "f6da73cbb560d8d8124507e998c4aa4725b751ff81e032c62f437efc2cbc1edc"
+  },
+  {
+    "id": "ROLE:G14:title:01",
+    "kind": "role_taxonomy",
+    "text": "Identity / portal-access administrator",
+    "parent": "G14",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "B21",
+      "A10",
+      "R07"
+    ],
+    "original_sha256": "48e48d62b961e6716d0bc25897b5707e1bfb5425456e8f0a0f96f38d7cb14d30"
+  },
+  {
+    "id": "ROLE:G15:title:01",
+    "kind": "role_taxonomy",
+    "text": "Billing / patient accounts / claim-denial worker",
+    "parent": "G15",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R06",
+      "R08",
+      "B20"
+    ],
+    "original_sha256": "12cfb3f5221d6945089497e690e7e1dd0d25b8238035e6604438aff0c0f3dbfd"
+  },
+  {
+    "id": "ROLE:G16:title:01",
+    "kind": "role_taxonomy",
+    "text": "Regulator / oversight official",
+    "parent": "G16",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A05",
+      "A11",
+      "R17",
+      "R35"
+    ],
+    "original_sha256": "7a2f84e5e62bbe879e9a28eb66c5cb54d62726e175937a9a221fe2808c879781"
+  },
+  {
+    "id": "ROLE:G17:title:01",
+    "kind": "role_taxonomy",
+    "text": "Legal adviser / specialist legal representative",
+    "parent": "G17",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "R20",
+      "A11",
+      "A12"
+    ],
+    "original_sha256": "c1981b447a07ab0f12664859b988229ef39c8fae0ff88e71514aae6002bff06b"
+  },
+  {
+    "id": "ROLE:J01:title:01",
+    "kind": "role_taxonomy",
+    "text": "MA administrative law judge / applicable adjudicator",
+    "parent": "J01",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A11",
+      "A16"
+    ],
+    "original_sha256": "bf970e0dae7106643bc882a165691957735b79c6d72c60ff86071f36cbe04ced"
+  },
+  {
+    "id": "ROLE:J02:title:01",
+    "kind": "role_taxonomy",
+    "text": "Medicare Appeals Council reviewer",
+    "parent": "J02",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A11",
+      "A16"
+    ],
+    "original_sha256": "9231cb80d18249a9618ca9cb6766cac406965a4c3c5733112a9ec10dfb805f85"
+  },
+  {
+    "id": "ROLE:J03:title:01",
+    "kind": "role_taxonomy",
+    "text": "Federal district court in an eligible Medicare appeal",
+    "parent": "J03",
+    "field": "title",
+    "origin": "ROLE_INDEX.md",
+    "sources": [
+      "A11",
+      "A16"
+    ],
+    "original_sha256": "eb74caedf0cbfef74cdd871b577314007e2a51ccbc3d31509a673b2f1441cc9e"
+  }
+]

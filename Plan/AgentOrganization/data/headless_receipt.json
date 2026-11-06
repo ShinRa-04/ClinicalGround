@@ -1,0 +1,27 @@
+{
+  "headless": true,
+  "visible_windows_requested": false,
+  "svg_loads": [
+    {
+      "name": "owner-specialists",
+      "width": 811,
+      "height": 510,
+      "nodes": 6
+    },
+    {
+      "name": "handoff-acceptance",
+      "width": 549,
+      "height": 666,
+      "nodes": 6
+    },
+    {
+      "name": "package-dependencies",
+      "width": 777,
+      "height": 1044,
+      "nodes": 10
+    }
+  ],
+  "javascript_errors": [],
+  "screenshot_folder": "Runner/.cache/agent-organization/qa",
+  "limitation": "Loading/screenshots are representation checks, not empirical architecture validation."
+}

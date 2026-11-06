@@ -1,0 +1,952 @@
+[
+  {
+    "id": "R01",
+    "url": "https://github.com/actava-ai/chi-bench#what-this-benchmark-measures",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "4bacdda83bcd2203b850b6169d20ee171d1946c8ff919425e74886a1d53f5a00",
+    "text_sha256": "f45d65e167458b5679e6094f5172b021128c619acc14405c1f49304ea401cae2",
+    "error": null,
+    "paragraphs": 95
+  },
+  {
+    "id": "R02",
+    "url": "https://www.actava.ai/benchmarks/tasks",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "047658568a44d8db0837a6f4102b0318bc7a19b6a0bb6f9fd4b72281b6b15e9a",
+    "text_sha256": "6fc819ad7e13169de93ecc934539a77e45633baf5d0f8cad13c19b3c610b9e46",
+    "error": null,
+    "paragraphs": 73
+  },
+  {
+    "id": "R03",
+    "url": "https://jobs.mayoclinic.org/job/rochester/precertification-and-authorization-rep-hybrid/33647/100997191200",
+    "retrieval_status": "failed",
+    "format": null,
+    "byte_sha256": null,
+    "text_sha256": null,
+    "error": "HTTPError: HTTP Error 404: Not Found",
+    "paragraphs": 0
+  },
+  {
+    "id": "R04",
+    "url": "https://www.urmc.rochester.edu/noyes/careers-noyes/current-job-openings",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "8f47b01c60a2834f16f64ebb7fc9c6cddf6a587a5e42683e5769c059d460045b",
+    "text_sha256": "89a55423d3c471bcfe880325a174b3f89404c7282e45ce451703c555c42b4520",
+    "error": null,
+    "paragraphs": 161
+  },
+  {
+    "id": "R05",
+    "url": "https://careernavigator.umich.edu/job_detail/103767/patient-services-intermediate",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "b1ff4e031d56798e792a80e17504f66195cabdfc4c7cfc625d4cfda7f823789c",
+    "text_sha256": "cb69fb7ffd066ec233f265fd4c0d6ef27d5f3628724839534860c6b9ca37f15f",
+    "error": null,
+    "paragraphs": 92
+  },
+  {
+    "id": "R06",
+    "url": "https://health.ucsd.edu/insurance-billing/paying/faq/",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "71b722059597d3774f0d2233bea6b89662ff6be9943cfff26ef70115ff73269e",
+    "text_sha256": "b5acd82dbce888b8c7d60712aa978a2093c828d16c9a1731b8fbd3cdfb4efd11",
+    "error": null,
+    "paragraphs": 127
+  },
+  {
+    "id": "R07",
+    "url": "https://journal.ahima.org/page/ensure-roi-training-evolves-as-the-industry-changes",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "19cff5c890ef3b22641410313d00742e91025c07b9b9384daa6bcbda4a4dbdb7",
+    "text_sha256": "692f56a61636a1df33070b355cbecf8be91be3c05e9e82955831199abeca1726",
+    "error": null,
+    "paragraphs": 14
+  },
+  {
+    "id": "R08",
+    "url": "https://journal.ahima.org/AMP_EDN/383/AHIMA-Releases-Denials-Management-Toolkit-1776.amp.html",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "513073880d49b723c7effa706cf0f3af5655317da0fc3db7836cd55b3c144190",
+    "text_sha256": "f2746f045120684d76d2429556c3ec742d872153d770a8b86bb4a37f43f64a8f",
+    "error": null,
+    "paragraphs": 4
+  },
+  {
+    "id": "R09",
+    "url": "https://news.ashp.org/news/ashp-news/2019/11/21/Specialty-Pharmacy-Technicians-Assume-Advanced-Roles",
+    "retrieval_status": "earlier_tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "d716f05e3bf2453c2f9f6e8525d15f38151cc65212fa64bd486afc65c61c5e7a",
+    "error": null,
+    "paragraphs": 23
+  },
+  {
+    "id": "R10",
+    "url": "https://www.amcp.org/about/managed-care-pharmacy/what-do-managed-care-pharmacists-do",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "9e72571f3ad4ffb237e2cfd582fa5f9db8e09eab14d98e9dfdc51348af949385",
+    "text_sha256": "2e46e9cc794a5cf35d40d634dcbdc64a70d9e6552bb617b96517d391b23edd7c",
+    "error": null,
+    "paragraphs": 43
+  },
+  {
+    "id": "R11",
+    "url": "https://www.cms.gov/medicare/payment/fee-schedules/durable-medical-equipment-prosthetic-devices-prosthetics-orthotics-supplies/power-mobility-devices",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "a6cbcbe467aa389d05d1e537e2c234ada73e7ef2cfd6159100fa5fb0f0b3304f",
+    "text_sha256": "68156fa96c3b515a4ef745ddd2e9b1f6a20f26e9b687fc43567dd455fea5b439",
+    "error": null,
+    "paragraphs": 174
+  },
+  {
+    "id": "R12",
+    "url": "https://martinspoint.org/-/media/Providers/Documents/Clinical-Documentation/Medical-Necessity-Criteria-Standard.ashx",
+    "retrieval_status": "earlier_tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "4b5f91fd5091c3e9e03be90d0287b3e52e616bfc694678695f4b4b21daeaad52",
+    "error": null,
+    "paragraphs": 148
+  },
+  {
+    "id": "R13",
+    "url": "https://azprioritycare.com/wp-content/uploads/2026/03/2026-AZPC-Utilization-Management-Program.pdf",
+    "retrieval_status": "retrieved",
+    "format": "pdf",
+    "byte_sha256": "cd9acd1f9870f952ec94e94d91981409162a0867d6be1bb006bedef10bcbc804",
+    "text_sha256": "d8921994ee6444823d3152ad683a7233e20f2f9caf86b3284ff535d5abf57313",
+    "error": null,
+    "paragraphs": 110
+  },
+  {
+    "id": "R14",
+    "url": "https://employment.ucsd.edu/rn-manager-utilization-management-140306/job/2BD7908FE0FC2DE4369E0F492FCDD518",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "b39cc8a8955db7c70a84be6fecee96fb8c2f4f8548d2cb00b83c946c503fbd35",
+    "text_sha256": "82760a983cc8e2c65d1e64edd6d529d8b70b3ec844107b6ca1e8e1b7d46922ac",
+    "error": null,
+    "paragraphs": 47
+  },
+  {
+    "id": "R15",
+    "url": "https://www.uhcprovider.com/en/claims-payments-billing/appeals.html",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "3e0a3aa3801b9be108a1f2a4c9689c5b9aa83849b9daba34a6e405dcf60de4fb",
+    "text_sha256": "fdabc38e090ec40332c8493a67ee7756bec0bc9193b6f2eef69b6463aee9dffa",
+    "error": null,
+    "paragraphs": 43
+  },
+  {
+    "id": "R16",
+    "url": "https://www.cms.gov/medicare/appeals-grievances/managed-care/organization-determinations",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "d4dab0492742653a5eb938382c077fb6a3092c30e91ca51c7f18a14ae2069a73",
+    "text_sha256": "e0195e285a9399c80e20db812c3d24c0372d53c1d0c036f91c0a8c26ba2fb248",
+    "error": null,
+    "paragraphs": 11
+  },
+  {
+    "id": "R17",
+    "url": "https://www.cms.gov/cciio/programs-and-initiatives/consumer-support-and-information/csg-ext-appeals-facts",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "e48e47ab64351221075568c7ba486da11e78e380b23bea556e726b06902585ac",
+    "text_sha256": "736385abd503e5c77db0179c0ceacf35abb880df1ebb08047d06a631b4befc13",
+    "error": null,
+    "paragraphs": 22
+  },
+  {
+    "id": "R18",
+    "url": "https://www.cigna.com/legal/members/member-rights-and-responsibilities/cigna-health-care-policies",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "8715a90ae3057b55e1453aa7324f49e37f3fdf5a8d488e21dab229783203328c",
+    "text_sha256": "22111d8497a8c9c3f6f3b70023a21c13f90b6eeb294a0dd1e9d4a58a21ad19ab",
+    "error": null,
+    "paragraphs": 148
+  },
+  {
+    "id": "R19",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/personal-representatives/index.html",
+    "retrieval_status": "alias_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "47f6b57260c613d9e2f493dc904dfce3ce3e5bcba1b22303f016a0280f9e7d76",
+    "error": null,
+    "paragraphs": 50
+  },
+  {
+    "id": "R20",
+    "url": "https://www.hhs.gov/about/agencies/omha/filing-an-appeal/your-right-to-representation/index.html",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "625970dc70fc4d460f418070761e7688074bb684464f0db36d4f0de956c97f10",
+    "error": null,
+    "paragraphs": 18
+  },
+  {
+    "id": "R21",
+    "url": "https://www.hhs.gov/civil-rights/for-individuals/disability/guidance-on-nondiscrimination-in-telehealth/index.html",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "03c652b4ce1a03893a7303821e399e9eaf837dabf2c117c96bc144e02a4ec2cb",
+    "error": null,
+    "paragraphs": 91
+  },
+  {
+    "id": "R22",
+    "url": "https://www.ahrq.gov/ncepcr/care/coordination.html",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "f2f0f12be9ee97cde671fc408061b77ef6cf751578c781ee383c746624eeedf2",
+    "error": null,
+    "paragraphs": 76
+  },
+  {
+    "id": "R23",
+    "url": "https://www.ahrq.gov/sites/default/files/wysiwyg/evidencenow/tools-and-materials/care-management-implementation-guide.pdf",
+    "retrieval_status": "failed",
+    "format": null,
+    "byte_sha256": null,
+    "text_sha256": null,
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "paragraphs": 0
+  },
+  {
+    "id": "R24",
+    "url": "https://psnet.ahrq.gov/innovation/team-developed-care-plan-and-ongoing-care-management-social-workers-and-nurse",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "8fd28ca4651a2e6a582c96f618b44bfe751f64d8f399f5d0a6ec12c8b60da20d",
+    "text_sha256": "0dba4f4c1b605efe1cd14123d9fa9a75a647ec07c73ca7c5f573537574161c97",
+    "error": null,
+    "paragraphs": 86
+  },
+  {
+    "id": "R25",
+    "url": "https://www.uclahealth.org/programs/ccsw/about-us/rn-clinical-case-managers",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "f29e025351300d9080cc4d730cf37632e1010f49d5dcfc25eecfefd38e1858f1",
+    "text_sha256": "28515c3f223e242d6db63b1e8d3e19841837eae3c6ebdc7e882682470e5df906",
+    "error": null,
+    "paragraphs": 51
+  },
+  {
+    "id": "R26",
+    "url": "https://www.uclahealth.org/programs/ccsw/about-us",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "37f5770f9833fd42b6055ca883fa00b5ad673aa203045cc60b38d508ea534c4b",
+    "text_sha256": "657c17bd609edfa4d6ec4f4f24c9bcfa1dc256e3796e35b7b0ef1ce018e4e4c2",
+    "error": null,
+    "paragraphs": 5
+  },
+  {
+    "id": "R27",
+    "url": "https://www.uclahealth.org/hospitals/santa-monica/patients-visitors/know-your-hospital-staff",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "f94965d102897b18b7be7e8273269406ddd41b81bbd661a14a8099e401e0a4a3",
+    "text_sha256": "c35ac79ed5149343ddfc6c53de7bac33f08741f1e34f4e347f35d5e6e7b1eddf",
+    "error": null,
+    "paragraphs": 15
+  },
+  {
+    "id": "R28",
+    "url": "https://www.cdc.gov/cancer/php/interventions/patient-navigation.html",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "5bd5db9eb4b8b992dda3cd617e134f280dcfd77ac9afe57c91a0176671a66731",
+    "error": null,
+    "paragraphs": 67
+  },
+  {
+    "id": "R29",
+    "url": "https://www.cdc.gov/chronic-disease/php/community-health-worker-resources/index.html",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "5ddd29e5ec367a1352ffeba5a476d98ee51e8171f93be4d7291d8edc49b102e4",
+    "error": null,
+    "paragraphs": 226
+  },
+  {
+    "id": "R30",
+    "url": "https://www.medicare.gov/coverage/home-health-services",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "080a05324161b46406534dcc84245288f779f269b4879063146287ffa161f677",
+    "text_sha256": "a8ad3d0d9cabba9b9da6ea3901d657c7687087e720345771da668256948bf502",
+    "error": null,
+    "paragraphs": 51
+  },
+  {
+    "id": "R31",
+    "url": "https://www.mayoclinic.org/departments-centers/general-internal-medicine/palliative-care-minnesota/overview?p=1",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "40542426472a627d645bcd72af63d6f1705539ee05041f87e14b7ef3bad809aa",
+    "error": null,
+    "paragraphs": 39
+  },
+  {
+    "id": "R32",
+    "url": "https://www.partnershiphp.org/Providers/HealthServices/Documents/Physicians_Advisory_Committee_PAC/2026/04-April/Policy_Summary/Care_Coordination/MPCD2013_clean.pdf",
+    "retrieval_status": "retrieved",
+    "format": "pdf",
+    "byte_sha256": "e5d66d3266611ecec5e85d458a4d0e5afb6c3778550362d70de15dbda5f8a1e7",
+    "text_sha256": "77e4f25fccb10b9f1f7b13dd8a020e6b1e257b7d390a98abc27482b7b2daa497",
+    "error": null,
+    "paragraphs": 73
+  },
+  {
+    "id": "R33",
+    "url": "https://www.uclahealth.org/medical-services/respiratory-care",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "5d48648076c1654c17b98798b5df8bb95020ff511de9fbf2f325a4263e379ccf",
+    "text_sha256": "1418763a235888d1a45791844d83927af98fea09f4ffe6890fc535ad6918aa9d",
+    "error": null,
+    "paragraphs": 60
+  },
+  {
+    "id": "R34",
+    "url": "https://www.medicare.gov/publications/02154-medicare-hospice-benefits.pdf",
+    "retrieval_status": "retrieved",
+    "format": "pdf",
+    "byte_sha256": "b6ca0800c5ecb95a4af994134d21f5a8f5ecb41e995fd20a4f0c60747d3492b3",
+    "text_sha256": "6b22b42772142815c0f34979c7a57584d69d83cdee9152432111da15971b7b7c",
+    "error": null,
+    "paragraphs": 19
+  },
+  {
+    "id": "R35",
+    "url": "https://www.medicare.gov/basics/your-medicare-rights/get-help-with-your-rights-protections",
+    "retrieval_status": "retrieved",
+    "format": "html",
+    "byte_sha256": "0bf9e5b014c54e4d1c5c81d00a7caa780085aa8feaf213adb60eb98e1160c151",
+    "text_sha256": "496bc1ba67908a14d796288f41d1e386865be70da676e535dfea623201882690",
+    "error": null,
+    "paragraphs": 35
+  },
+  {
+    "id": "A01",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-B/section-482.13",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "bac516176c3d291b39750285f02b0b2c4564bda54394f736fa33134a1e738191",
+    "error": null,
+    "paragraphs": 166
+  },
+  {
+    "id": "A02",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.566",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "bdbcd3597593c7bd7c2fa282fd7349210788db8c6bb4ad2b2e60be03429f2a72",
+    "error": null,
+    "paragraphs": 90
+  },
+  {
+    "id": "A03",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.590",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "4d97fbf6fb11c2b72e1b65e3e4b25343c52c95d4bdf4141140223b3e262b3994",
+    "error": null,
+    "paragraphs": 98
+  },
+  {
+    "id": "A04",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.592",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "feef8772fccd227d85d0c074d6d7af65dba41a6aa738b384a488c60357bf34fd",
+    "error": null,
+    "paragraphs": 85
+  },
+  {
+    "id": "A05",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-C/section-422.137",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "661d4ae519df845c875701f680c7f0f36687cf3d116586f123b0f28fda20e1f0",
+    "error": null,
+    "paragraphs": 87
+  },
+  {
+    "id": "A06",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-C/section-482.43",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "2417355dfe736dc6e988fd7a80bb6e160ceaec07757282990e8de975fb3d770e",
+    "error": null,
+    "paragraphs": 85
+  },
+  {
+    "id": "A07",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-484/subpart-B/section-484.60",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "4bd0053ac1d3a4ab1cdfdb99dfb2be00725db5a197e8549814a639d7d6517376",
+    "error": null,
+    "paragraphs": 113
+  },
+  {
+    "id": "A08",
+    "url": "https://www.cms.gov/files/document/r222soma.pdf",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "274db7abde618b4e9a5ede54b36afd19d7bfb16f8bc93540d5c6450bcdda3e9e",
+    "error": null,
+    "paragraphs": 74
+  },
+  {
+    "id": "A09",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/personal-representatives/index.html",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "47f6b57260c613d9e2f493dc904dfce3ce3e5bcba1b22303f016a0280f9e7d76",
+    "error": null,
+    "paragraphs": 50
+  },
+  {
+    "id": "A10",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/minimum-necessary-requirement/index.html",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "e8e421444d62ed6284934a7eae8e9d17b6210c63e105c240e3dcd17204197804",
+    "error": null,
+    "paragraphs": 36
+  },
+  {
+    "id": "A11",
+    "url": "https://www.cms.gov/medicare/appeals-grievances/managed-care-appeals-grievances/appeals-overview",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "ec11b88b4e99076c6dfc0307088feffb03e977b20f3c92e820a4378e61e3ff27",
+    "error": null,
+    "paragraphs": 274
+  },
+  {
+    "id": "A12",
+    "url": "https://www.healthcare.gov/appeal-insurance-company-decision/external-review/",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "47c839bdf206b69ebb89fe3b0e59c8b0a321b4c7d2174de230bc270b4ce98aa1",
+    "error": null,
+    "paragraphs": 59
+  },
+  {
+    "id": "A13",
+    "url": "https://ncsbn.org/nursing-regulation/practice/decision-making-framework.page",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "2d104762a23e36476a318ff4040a98513829253c8a94ac2e4f2fea147f0cd304",
+    "error": null,
+    "paragraphs": 61
+  },
+  {
+    "id": "A14",
+    "url": "https://ncsbn.org/policy/npa.page",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "7e536aa86b6e2f83e88e70f6ae8163a89378c80f389098dd024f1718b99b10a2",
+    "error": null,
+    "paragraphs": 17
+  },
+  {
+    "id": "A15",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-C/section-482.24",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "363a26a40f907655828d23fb820c88ad97806cf91b4b574546fcfa6420ff5839",
+    "error": null,
+    "paragraphs": 103
+  },
+  {
+    "id": "A16",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.618",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "2ec6038589ee6c290ddfecdc01e36a699c0e685f668f6969c048a8b63bee26a7",
+    "error": null,
+    "paragraphs": 81
+  },
+  {
+    "id": "A17",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-C/section-422.101",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "9ef3c0b5ea6b544a2b5f0ac171eda1ddbeb0f46784aef5c9a2e6def81577903d",
+    "error": null,
+    "paragraphs": 186
+  },
+  {
+    "id": "B01",
+    "url": "https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "3e33f364344db6ee1718cfe51ea6505b35b765d49b9953fb9665ca1dc4bfa190",
+    "error": null,
+    "paragraphs": 186
+  },
+  {
+    "id": "B02",
+    "url": "https://www.bls.gov/ooh/healthcare/physician-assistants.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "c15b941bafdbaed6e0dbba5b1b5a5cdc76aa4dea73718eae17df83fbd7b9a11d",
+    "error": null,
+    "paragraphs": 220
+  },
+  {
+    "id": "B03",
+    "url": "https://www.bls.gov/ooh/healthcare/nurse-anesthetists-nurse-midwives-and-nurse-practitioners.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "4004b6c92075aafdbb9e47b13596ddc1cd956fde883b48280cf23b8aab8fc401",
+    "error": null,
+    "paragraphs": 204
+  },
+  {
+    "id": "B04",
+    "url": "https://www.bls.gov/ooh/healthcare/registered-nurses.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "39e7f6e422573257c637f84f50da9dd788bc6809b36a284364335c2da6879a98",
+    "error": null,
+    "paragraphs": 216
+  },
+  {
+    "id": "B05",
+    "url": "https://www.bls.gov/ooh/healthcare/licensed-practical-and-licensed-vocational-nurses.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "2d7a319f0d5bceb7bb96a5e73dbbc6a467e38a57a7e9ce4d934e42b1b3ec90bf",
+    "error": null,
+    "paragraphs": 216
+  },
+  {
+    "id": "B06",
+    "url": "https://www.bls.gov/ooh/healthcare/medical-assistants.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "ce977a5c6c9212dda8ca38a30b2481e4eaca80da21d16a876c2f16fe75973818",
+    "error": null,
+    "paragraphs": 215
+  },
+  {
+    "id": "B07",
+    "url": "https://www.bls.gov/ooh/healthcare/pharmacists.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "acd8170746e44b6f5888ae47d27720519aa272f81920efdf76b283a88e384e44",
+    "error": null,
+    "paragraphs": 222
+  },
+  {
+    "id": "B08",
+    "url": "https://www.bls.gov/ooh/healthcare/pharmacy-technicians.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "1bcd740a97abfc09f482726043b2ebde3d7229a72604d00b2a5d467d1f6898d4",
+    "error": null,
+    "paragraphs": 224
+  },
+  {
+    "id": "B09",
+    "url": "https://www.bls.gov/ooh/community-and-social-service/social-workers.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "da5363c58bdaca327789bbff8309fc3f1f2a4cc16f3140e6c3a0d1ba3ad6d933",
+    "error": null,
+    "paragraphs": 219
+  },
+  {
+    "id": "B10",
+    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/psychologists.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "5b94227f61d060d5688716dc943c56f823fa859a7bfbe96ae10a3f409270dcd6",
+    "error": null,
+    "paragraphs": 221
+  },
+  {
+    "id": "B11",
+    "url": "https://www.bls.gov/ooh/community-and-social-service/substance-abuse-behavioral-disorder-and-mental-health-counselors.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "35190ba4838c924c1670ee2ef76ceb58857530f675c87399e4273a0c06fb0636",
+    "error": null,
+    "paragraphs": 217
+  },
+  {
+    "id": "B12",
+    "url": "https://www.bls.gov/ooh/community-and-social-service/community-health-workers.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "98d6c585e4bb26ec5cc363c3830608f9ef60f50e773ca9a288044ff095323218",
+    "error": null,
+    "paragraphs": 223
+  },
+  {
+    "id": "B13",
+    "url": "https://www.bls.gov/ooh/community-and-social-service/health-educators.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "4e5f0bc5c00510bf96dc2d8a32e9ad7ab0263300a4ba58d81f967ed089524e50",
+    "error": null,
+    "paragraphs": 221
+  },
+  {
+    "id": "B14",
+    "url": "https://www.bls.gov/ooh/healthcare/dietitians-and-nutritionists.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "9073c1ea7e9159c9260294a787d50bedd646afe1c07a25ccc768d5e651a0ce4a",
+    "error": null,
+    "paragraphs": 218
+  },
+  {
+    "id": "B15",
+    "url": "https://www.bls.gov/ooh/healthcare/physical-therapists.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "8907be78aa701e9d7ec10553dfa96ce99e5f544779cf556e40394c4c8d655540",
+    "error": null,
+    "paragraphs": 220
+  },
+  {
+    "id": "B16",
+    "url": "https://www.bls.gov/ooh/healthcare/occupational-therapists.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "4b491850526d550534361232a341515685576ceb9ad8494b6596919cd5e8c982",
+    "error": null,
+    "paragraphs": 220
+  },
+  {
+    "id": "B17",
+    "url": "https://www.bls.gov/ooh/healthcare/speech-language-pathologists.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "e79c627baa820083e241135066b3af10587951a5bc45cb3fb23195ff8063cbed",
+    "error": null,
+    "paragraphs": 221
+  },
+  {
+    "id": "B18",
+    "url": "https://www.bls.gov/ooh/healthcare/respiratory-therapists.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "8e9237f978007d1e78b1b8afc093476f915f2863fe107ad0ae940b5981daa770",
+    "error": null,
+    "paragraphs": 216
+  },
+  {
+    "id": "B19",
+    "url": "https://www.bls.gov/ooh/healthcare/home-health-aides-and-personal-care-aides.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "d7230ece0281c0723d4d0fc0a2bbb1f8a9922b62d169bc2f390ed705ffc329fb",
+    "error": null,
+    "paragraphs": 220
+  },
+  {
+    "id": "B20",
+    "url": "https://www.bls.gov/ooh/healthcare/medical-records-and-health-information-technicians.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "5f1fe0ada7884eefa9c85ababa20e6863909b451cd893a8098f63f71958c1406",
+    "error": null,
+    "paragraphs": 212
+  },
+  {
+    "id": "B21",
+    "url": "https://www.bls.gov/ooh/healthcare/health-information-technologists-and-medical-registrars.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "40d83b33f892deebc4dc30aadf99d9312f39b8d50b948a79ff969793c1c613f5",
+    "error": null,
+    "paragraphs": 210
+  },
+  {
+    "id": "B22",
+    "url": "https://www.bls.gov/ooh/management/medical-and-health-services-managers.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "23e65ad322160368299ccc85597a6a4fa32ad3c04cdf47b8b6533c7e58b7c1bd",
+    "error": null,
+    "paragraphs": 224
+  },
+  {
+    "id": "B23",
+    "url": "https://www.bls.gov/ooh/media-and-communication/interpreters-and-translators.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "968db094c91341b4e22e55a3fbde7217e67761c461221aa53e8f15dfb601465e",
+    "error": null,
+    "paragraphs": 193
+  },
+  {
+    "id": "V02",
+    "url": "https://www.rn.ca.gov/practice/ab890.shtml",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "dc63e5e167d1a71efe71567b6e5715a9bc091b0b984c45fa43fd2d09542aa04a",
+    "error": null,
+    "paragraphs": 129
+  },
+  {
+    "id": "V03",
+    "url": "https://www.oregon.gov/omb/Topics-of-Interest/Pages/PA-Modernization-Bill.aspx",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "974e1d75b877759b45f18312be00cc5571126591db0f98a7205f0807e2c9a641",
+    "error": null,
+    "paragraphs": 46
+  },
+  {
+    "id": "V04",
+    "url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/psychologist-examiners/licensing-registration-and-renewal/",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "fc1db2682f6639ea8b7b6084303c230ebc87393b0f272788e64634f5c11b0793",
+    "error": null,
+    "paragraphs": 62
+  },
+  {
+    "id": "V05",
+    "url": "https://www.medicaid.gov/medicaid/benefits/assurance-of-transportation",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "ff6e48f8134da02fd051f52f1f06d4b1d03064516b5b65022c257f583d4d0444",
+    "error": null,
+    "paragraphs": 39
+  },
+  {
+    "id": "V06",
+    "url": "https://acl.gov/apsrule",
+    "retrieval_status": "failed",
+    "format": null,
+    "byte_sha256": null,
+    "text_sha256": null,
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "paragraphs": 0
+  },
+  {
+    "id": "V07",
+    "url": "https://www.bls.gov/ooh/legal/lawyers.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "8b37d1127e684b78696e2a96d895ecabe90fd608b83fb2dbe0e674cf5412f3ce",
+    "error": null,
+    "paragraphs": 221
+  },
+  {
+    "id": "V08",
+    "url": "https://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "cf5e4a2308c7e70fa8bad5089240bb66ecd68c7fb3612062e7f9fd8caa3e4ee8",
+    "error": null,
+    "paragraphs": 219
+  },
+  {
+    "id": "V09",
+    "url": "https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/downloads/som107ap_m_hospice.pdf",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "4837aa49becd4be51fb869abb0ecab7123b8d51908fefd25bda57757a49de143",
+    "error": null,
+    "paragraphs": 398
+  },
+  {
+    "id": "V10",
+    "url": "https://www.ncsbn.org/public-files/2016_Decision-Making-Framework.pdf",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "b15a96e44efa2e77c7b7d9f601b099ddfe5418b959688005176dfb72db67ba07",
+    "error": null,
+    "paragraphs": 157
+  },
+  {
+    "id": "V11",
+    "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title42-vol3/pdf/CFR-2025-title42-vol3-sec418-56.pdf",
+    "retrieval_status": "retrieved",
+    "format": "pdf",
+    "byte_sha256": "6f44fb6b2ec29073f8d96be81fae2dd3c0c28515fcbf85699cf380957a0f9fb5",
+    "text_sha256": "3ec38fe95197de5574db88702a34345b4f9cde2bed1347b12234ac4c767a23fd",
+    "error": null,
+    "paragraphs": 2
+  },
+  {
+    "id": "V12",
+    "url": "https://acl.gov/sites/default/files/2024-05/APS%20Regs%20-%20Long%20Fact%20sheet.pdf",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "c7ebc796203ef616effe5433e2c3e510452c1276263dbc792271e5ea150a9981",
+    "error": null,
+    "paragraphs": 388
+  },
+  {
+    "id": "V13",
+    "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=246-945-350",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "332cc96833572d6dc69fa75cf488e0914a544d9a67d03bd14e9920febedfb4b4",
+    "error": null,
+    "paragraphs": 60
+  },
+  {
+    "id": "V14",
+    "url": "https://www.medicaid.gov/sites/default/files/2023-09/smd23006.pdf",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "a23f62fb8cd287ca2dc4daa40b617aea568af61fd079666d9cb41013542e6d35",
+    "error": null,
+    "paragraphs": 377
+  },
+  {
+    "id": "V15",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/regulatory-initiatives/fact-sheet-42-cfr-part-2-final-rule/index.html",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "f44633816e29caa3b9914759ac60d103ae05bbf0cc282646de01da0cd401fa96",
+    "error": null,
+    "paragraphs": 48
+  },
+  {
+    "id": "V16",
+    "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title42-vol3/pdf/CFR-2025-title42-vol3-sec418-22.pdf",
+    "retrieval_status": "retrieved",
+    "format": "pdf",
+    "byte_sha256": "e975467af9eae65e437d6759be96c29b8844a649ad3a200965696706ea895f58",
+    "text_sha256": "697759ef73ecadb3d0d5d9218e2209f10b8df1721f8333289ece4811cf42cd78",
+    "error": null,
+    "paragraphs": 2
+  },
+  {
+    "id": "V17",
+    "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title42-vol3/pdf/CFR-2025-title42-vol3-sec418-25.pdf",
+    "retrieval_status": "retrieved",
+    "format": "pdf",
+    "byte_sha256": "8734c283cd8868a97dac01d1a1f0b8d5169f93442188b85fea98d14b47527512",
+    "text_sha256": "041eee87133744c596b4874e4addd56543f0132bfb9bd1b5ed6daa9ae8d4e350",
+    "error": null,
+    "paragraphs": 1
+  },
+  {
+    "id": "V18",
+    "url": "https://www.bls.gov/ooh/office-and-administrative-support/financial-clerks.htm",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "906d9f1701979f45241c63712f799c088a46a9b562b99338ca1e8a869362b7fc",
+    "error": null,
+    "paragraphs": 232
+  },
+  {
+    "id": "V19",
+    "url": "https://www.healthcare.gov/appeal-insurance-company-decision/internal-appeals/",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "fb9b5193e266ceeea808613148ff65c95e2c246a229501e2764433510328b9f3",
+    "error": null,
+    "paragraphs": 45
+  },
+  {
+    "id": "V20",
+    "url": "https://www.ptbc.ca.gov/consumers/direct_access.shtml",
+    "retrieval_status": "failed",
+    "format": null,
+    "byte_sha256": null,
+    "text_sha256": null,
+    "error": "HTTPError: HTTP Error 404: Not Found",
+    "paragraphs": 0
+  },
+  {
+    "id": "V21",
+    "url": "https://www.cms.gov/data-research/monitoring-programs/medicare-fee-service-compliance-programs/prior-authorization-and-pre-claim-review-initiatives",
+    "retrieval_status": "tool_excerpt",
+    "format": "tool_lines",
+    "byte_sha256": null,
+    "text_sha256": "120240a1f73a2476f7c1c82b254d2696df0b86751b65d21bdc37f3db76ee5b03",
+    "error": null,
+    "paragraphs": 295
+  }
+]

@@ -1,0 +1,777 @@
+{
+  "checked_utc": "2026-10-18T06:12:36.212650+00:00",
+  "checks": [
+    {
+      "id": "H001",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H002",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H003",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H004",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H005",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H006",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H007",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H008",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H009",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H010",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H011",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H012",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H013",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H014",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H015",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H016",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H017",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H018",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H019",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H020",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H021",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H022",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H023",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H024",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H025",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H026",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H027",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H028",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H029",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H030",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H031",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H032",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H033",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H034",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H035",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H036",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H037",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H038",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H039",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H040",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H041",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H042",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H043",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H044",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H045",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H046",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H047",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H048",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H049",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H050",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H051",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H052",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H053",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H054",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H055",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H056",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H057",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H058",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H059",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "H060",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-001",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-002",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-003",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-004",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-005",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-006",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-007",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-008",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-009",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-010",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-011",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-012",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-013",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-014",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-015",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-016",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-017",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-018",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-019",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-020",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-021",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-022",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-023",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-024",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-025",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-026",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-027",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-028",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-029",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-030",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-031",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-032",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-033",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-034",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-035",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-036",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-037",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-038",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-039",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-040",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-041",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-042",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-043",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-044",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-045",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-046",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-047",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-048",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-049",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-050",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-051",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-052",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-053",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-054",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-055",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-056",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-057",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-058",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-059",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-060",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-061",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-062",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-063",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-064",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-065",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-066",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-067",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-068",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-069",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-070",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-071",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-072",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-073",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-074",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "OC-075",
+      "line_bounds_valid": true,
+      "hash_matches": true
+    },
+    {
+      "id": "lg_workflows",
+      "hash_matches": true
+    },
+    {
+      "id": "lg_choosing",
+      "hash_matches": true
+    },
+    {
+      "id": "lg_persistence",
+      "hash_matches": true
+    },
+    {
+      "id": "lg_checkpointers",
+      "hash_matches": true
+    },
+    {
+      "id": "lg_interrupts",
+      "hash_matches": true
+    },
+    {
+      "id": "lg_functional",
+      "hash_matches": true
+    },
+    {
+      "id": "lg_memory_doc",
+      "hash_matches": true
+    },
+    {
+      "id": "letta_memfs",
+      "hash_matches": true
+    },
+    {
+      "id": "letta_sessions",
+      "hash_matches": true
+    },
+    {
+      "id": "letta_memory",
+      "hash_matches": true
+    },
+    {
+      "id": "letta_conversations",
+      "hash_matches": true
+    },
+    {
+      "id": "letta_dreaming",
+      "hash_matches": true
+    },
+    {
+      "id": "pi_session_src",
+      "hash_matches": true
+    },
+    {
+      "id": "pi_loop_src",
+      "hash_matches": true
+    },
+    {
+      "id": "pi_agent_src",
+      "hash_matches": true
+    },
+    {
+      "id": "pi_compaction_src",
+      "hash_matches": true
+    },
+    {
+      "id": "lg_task",
+      "hash_matches": true
+    },
+    {
+      "id": "lg_types",
+      "hash_matches": true
+    },
+    {
+      "id": "lg_sqlite",
+      "hash_matches": true
+    },
+    {
+      "id": "letta_initial",
+      "hash_matches": true
+    },
+    {
+      "id": "letta_format",
+      "hash_matches": true
+    },
+    {
+      "id": "letta_compaction",
+      "hash_matches": true
+    },
+    {
+      "id": "rag_abstract",
+      "hash_matches": true
+    },
+    {
+      "id": "memgpt_abstract",
+      "hash_matches": true
+    }
+  ],
+  "limits": "Mechanical identity and line bounds only; not semantic claim validation."
+}

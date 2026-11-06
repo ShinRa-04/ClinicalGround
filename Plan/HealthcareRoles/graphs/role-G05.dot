@@ -1,0 +1,12 @@
+digraph "role-G05" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nG05 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+G05 [label="G05\nClinical / case-management \nsupervisor", URL="../index.html#G05", target="_top"];
+M01 [label="M01\nLead care manager / case \nmanager", URL="../index.html#M01", target="_top"];
+M02 [label="M02\nMedical social worker \n(credential-dependent \npractice)", URL="../index.html#M02", target="_top"];
+M01 -> G05 [label="DEP187", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M02 -> G05 [label="DEP188", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> G05 [label="S-G05 request", tooltip="R32 distinguishes RN, LVN, nonclinical and social-work supervisors; those qualifications must not be collapsed into one scope."];
+G05 -> M01 [label="S-G05 response", tooltip="R32 distinguishes RN, LVN, nonclinical and social-work supervisors; those qualifications must not be collapsed into one scope."];
+}

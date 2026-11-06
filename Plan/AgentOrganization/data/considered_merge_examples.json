@@ -1,0 +1,122 @@
+[
+  {
+    "a": "O01",
+    "b": "O02",
+    "status": "candidate",
+    "reason": "Share provider packet/referral tracking; retain referral receipt/acceptance and authorization outcome as distinct observations."
+  },
+  {
+    "a": "O01",
+    "b": "O03",
+    "status": "candidate",
+    "reason": "Share the case owner, but make identity matching explicit before attaching evidence."
+  },
+  {
+    "a": "O01",
+    "b": "O04",
+    "status": "candidate",
+    "reason": "Share benefits lookup and packet preparation; never equate verified benefits with authorization or payment."
+  },
+  {
+    "a": "O01",
+    "b": "O05",
+    "status": "candidate",
+    "reason": "Share administrative tracking and scheduling where permitted; booked, cleared and performed remain distinct."
+  },
+  {
+    "a": "O06",
+    "b": "O08",
+    "status": "conditional",
+    "reason": "Share evidence retrieval/consistency review, but use the actual release purpose and clarification/authorship process."
+  },
+  {
+    "a": "O07",
+    "b": "O08",
+    "status": "conditional",
+    "reason": "Common documentation support is plausible; code selection and clinical fact clarification remain different work."
+  },
+  {
+    "a": "U01",
+    "b": "U02",
+    "status": "candidate",
+    "reason": "Share payer intake/benefit state; apply only explicitly delegated limited nonclinical decisions."
+  },
+  {
+    "a": "U01",
+    "b": "U09",
+    "status": "conditional_cross_package",
+    "reason": "The payer owner may invoke notice preparation/delivery, but the notice must derive from the authorized decision and cannot create it."
+  },
+  {
+    "a": "U03",
+    "b": "U04",
+    "status": "conditional",
+    "reason": "Share criteria/evidence infrastructure; retain the actual initial-review stage, expertise, escalation and signoff rules."
+  },
+  {
+    "a": "U04",
+    "b": "U13",
+    "status": "protected",
+    "reason": "Do not rename the initial author to claim uninvolved reconsideration. Internal critic and actual reconsideration are distinct."
+  },
+  {
+    "a": "M01",
+    "b": "M10",
+    "status": "candidate",
+    "reason": "Navigation and coordination can share case obligations; external resource availability still needs evidence."
+  },
+  {
+    "a": "M01",
+    "b": "M18",
+    "status": "conditional",
+    "reason": "Shared transition coordination may improve continuity, but administrative readiness and clinical discharge authority differ."
+  },
+  {
+    "a": "M04",
+    "b": "M05",
+    "status": "conditional",
+    "reason": "Share medication/access information; technician/access activity must not acquire therapy-change authority."
+  },
+  {
+    "a": "M23",
+    "b": "M24",
+    "status": "external_boundary",
+    "reason": "Dispatcher coordination is not physical driving, pickup or attendance; only the actual environment response can establish completion."
+  },
+  {
+    "a": "P01",
+    "b": "P02",
+    "status": "participant_boundary",
+    "reason": "Shared family-case context must retain separate speakers, wishes and representative facts."
+  },
+  {
+    "a": "P05",
+    "b": "P06",
+    "status": "conditional",
+    "reason": "A language service can offer both operations while preserving oral interaction versus written fidelity and actual qualification limits."
+  },
+  {
+    "a": "P05",
+    "b": "M16",
+    "status": "expertise_boundary",
+    "reason": "Interpreting a conversation is not a clinical speech/swallowing assessment; similar language-related words do not make the functions equivalent."
+  },
+  {
+    "a": "M28",
+    "b": "M29",
+    "status": "composite_boundary",
+    "reason": "Common support coordination is possible, but hospice IDG/RN/attending/certification and spiritual support are distinct functions."
+  },
+  {
+    "a": "G08",
+    "b": "G03",
+    "status": "approval_boundary",
+    "reason": "A policy-analysis capability can serve governance; its draft cannot approve its own controlling policy."
+  },
+  {
+    "a": "G06",
+    "b": "U13",
+    "status": "review_boundary",
+    "reason": "An internal quality critic is not the applicable physician reconsiderer or official benchmark grader."
+  }
+]

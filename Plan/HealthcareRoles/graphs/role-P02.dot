@@ -1,0 +1,12 @@
+digraph "role-P02" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nP02 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+M01 [label="M01\nLead care manager / case \nmanager", URL="../index.html#M01", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+P02 [label="P02\nInformal caregiver / family \nsupport person", URL="../index.html#P02", target="_top"];
+P01 -> P02 [label="DEP004", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> P02 [label="DEP005", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> P02 [label="S-P02 request", tooltip="Information sharing depends on permitted involvement; access is not automatically access to the entire record."];
+P02 -> M01 [label="S-P02 response", tooltip="Information sharing depends on permitted involvement; access is not automatically access to the entire record."];
+}

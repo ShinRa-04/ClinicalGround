@@ -1,0 +1,14 @@
+digraph "role-J01" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nJ01 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+J01 [label="J01\nMA administrative law judge / \napplicable adjudicator", URL="../index.html#J01", target="_top"];
+J02 [label="J02\nMedicare Appeals Council \nreviewer", URL="../index.html#J02", target="_top"];
+P04 [label="P04\nAppointed appeal \nrepresentative", URL="../index.html#P04", target="_top"];
+U14 [label="U14\nMedicare Advantage \nindependent-review entity \nreviewer", URL="../index.html#U14", target="_top"];
+U14 -> J01 [label="DEP214", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P04 -> J01 [label="DEP215", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+J01 -> J02 [label="DEP216", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P04 -> J01 [label="S-J01 request", tooltip="Standing, filing and any amount-in-controversy rules must be checked; no threshold amounts are invented here."];
+J01 -> P04 [label="S-J01 response", tooltip="Standing, filing and any amount-in-controversy rules must be checked; no threshold amounts are invented here."];
+}

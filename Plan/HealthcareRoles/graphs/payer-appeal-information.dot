@@ -1,0 +1,35 @@
+digraph "payer-appeal-information" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nPayer Appeal Information | arrow = named information handoff; F ID links to contract", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+G03 [label="G03\nUM / medical-policy committee \nand specialty members", URL="../index.html#G03", target="_top"];
+O01 [label="O01\nProvider authorization / \nprecertification specialist", URL="../index.html#O01", target="_top"];
+O05 [label="O05\nScheduler / procedure \ncoordinator", URL="../index.html#O05", target="_top"];
+O11 [label="O11\nProvider physician adviser / \npeer-discussion clinician", URL="../index.html#O11", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+P04 [label="P04\nAppointed appeal \nrepresentative", URL="../index.html#P04", target="_top"];
+U01 [label="U01\nPayer UM intake coordinator", URL="../index.html#U01", target="_top"];
+U03 [label="U03\nPayer nurse / licensed UM \nclinical reviewer", URL="../index.html#U03", target="_top"];
+U04 [label="U04\nPayer physician reviewer / \nmedical director acting on a \ncase", URL="../index.html#U04", target="_top"];
+U05 [label="U05\nIndependent clinical / \nspecialty consultant", URL="../index.html#U05", target="_top"];
+U09 [label="U09\nDetermination / notification \ncoordinator", URL="../index.html#U09", target="_top"];
+U12 [label="U12\nInternal appeal / grievance \ncoordinator", URL="../index.html#U12", target="_top"];
+U13 [label="U13\nMedical-necessity appeal / \nreconsideration physician", URL="../index.html#U13", target="_top"];
+U14 [label="U14\nMedicare Advantage \nindependent-review entity \nreviewer", URL="../index.html#U14", target="_top"];
+U15 [label="U15\nExternal-review administrator", URL="../index.html#U15", target="_top"];
+U18 [label="U18\nApplicable commercial \nindependent-review \norganization reviewer", URL="../index.html#U18", target="_top"];
+U01 -> U03 [label="F07 | Clinical review case", tooltip="When clinical review required"];
+G03 -> U03 [label="F08 | Applicable approved criteria", tooltip="Approved-policy use; MA requirements separately A05/A17"];
+U03 -> U04 [label="F09 | Clinical escalation", tooltip="When delegated first level cannot resolve"];
+U04 -> U05 [label="F10 | Specialty consultation request", tooltip="When specialist opinion needed"];
+O11 -> U04 [label="F11 | Peer clinical discussion", tooltip="Plan-specific peer process"];
+U04 -> U09 [label="F12 | Authorized clinical determination", tooltip="When case decision made"];
+U09 -> P01 [label="F13 | Decision notice", tooltip="Recipients/contents depend on route"];
+U09 -> O01 [label="F14 | Provider outcome communication", tooltip="As required/permitted in actual process"];
+O01 -> O05 [label="F15 | Recorded authorization status", tooltip="When scheduling depends on status"];
+P04 -> U12 [label="F16 | Appeal request", tooltip="Actual appeal rights and deadlines"];
+U12 -> U13 [label="F17 | MA reconsideration case", tooltip="MA route described by A03"];
+U13 -> U14 [label="F18 | Remaining adverse MA case", tooltip="When MA adverse reconsideration remains"];
+U14 -> U09 [label="F19 | MA independent-review decision", tooltip="MA decision and A16 conditions"];
+U15 -> U18 [label="F20 | Commercial external-review case", tooltip="Eligible commercial external-review process"];
+}

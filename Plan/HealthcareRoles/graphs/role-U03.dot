@@ -1,0 +1,20 @@
+digraph "role-U03" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nU03 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+G03 [label="G03\nUM / medical-policy committee \nand specialty members", URL="../index.html#G03", target="_top"];
+U01 [label="U01\nPayer UM intake coordinator", URL="../index.html#U01", target="_top"];
+U03 [label="U03\nPayer nurse / licensed UM \nclinical reviewer", URL="../index.html#U03", target="_top"];
+U04 [label="U04\nPayer physician reviewer / \nmedical director acting on a \ncase", URL="../index.html#U04", target="_top"];
+U09 [label="U09\nDetermination / notification \ncoordinator", URL="../index.html#U09", target="_top"];
+U17 [label="U17\nUM manager / operational \nsupervisor", URL="../index.html#U17", target="_top"];
+U01 -> U03 [label="DEP070", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> U03 [label="DEP071", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G03 -> U03 [label="DEP072", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U03 -> U04 [label="DEP073", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U03 -> U09 [label="DEP088", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U03 -> U17 [label="DEP107", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U01 -> U03 [label="S-U03 request", tooltip="Under MA 422.566(d), anticipated adverse medical necessity requires appropriate licensed professional review; local policy may impose stricter physician escalation. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone."];
+U03 -> U01 [label="S-U03 response", tooltip="Under MA 422.566(d), anticipated adverse medical necessity requires appropriate licensed professional review; local policy may impose stricter physician escalation. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone."];
+}

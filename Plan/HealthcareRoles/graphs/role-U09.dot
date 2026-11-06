@@ -1,0 +1,26 @@
+digraph "role-U09" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nU09 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+O10 [label="O10\nProvider denial / appeal \nspecialist", URL="../index.html#O10", target="_top"];
+P04 [label="P04\nAppointed appeal \nrepresentative", URL="../index.html#P04", target="_top"];
+P06 [label="P06\nHealthcare translator", URL="../index.html#P06", target="_top"];
+U02 [label="U02\nPayer eligibility / benefit \nspecialist", URL="../index.html#U02", target="_top"];
+U03 [label="U03\nPayer nurse / licensed UM \nclinical reviewer", URL="../index.html#U03", target="_top"];
+U04 [label="U04\nPayer physician reviewer / \nmedical director acting on a \ncase", URL="../index.html#U04", target="_top"];
+U09 [label="U09\nDetermination / notification \ncoordinator", URL="../index.html#U09", target="_top"];
+U10 [label="U10\nMember-services \nrepresentative", URL="../index.html#U10", target="_top"];
+U12 [label="U12\nInternal appeal / grievance \ncoordinator", URL="../index.html#U12", target="_top"];
+U16 [label="U16\nSHIP / consumer-assistance / \nombudsman counselor", URL="../index.html#U16", target="_top"];
+U09 -> P04 [label="DEP010", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U09 -> P06 [label="DEP014", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U09 -> O10 [label="DEP057", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U04 -> U09 [label="DEP087", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U03 -> U09 [label="DEP088", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U02 -> U09 [label="DEP089", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U09 -> U10 [label="DEP091", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U09 -> U12 [label="DEP096", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U09 -> U16 [label="DEP105", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U04 -> U09 [label="S-U09 request", tooltip="Contents, recipients and deadlines depend on the actual product/process; no universal time limit is encoded here."];
+U09 -> U04 [label="S-U09 response", tooltip="Contents, recipients and deadlines depend on the actual product/process; no universal time limit is encoded here."];
+}

@@ -1,0 +1,462 @@
+[
+  {
+    "id": "F01",
+    "sender": "P01",
+    "receiver": "O03",
+    "sender_package": "W01",
+    "receiver_package": "W05",
+    "artifact": "Identity / insurance information",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F02",
+    "sender": "C01",
+    "receiver": "O01",
+    "sender_package": "W04",
+    "receiver_package": "W05",
+    "artifact": "Clinical service request",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F03",
+    "sender": "O04",
+    "receiver": "O01",
+    "sender_package": "W05",
+    "receiver_package": "W05",
+    "artifact": "Benefits / requirement finding",
+    "design_obligation": "Retain the explicit artifact and receipt even if one owner performs both functions.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F04",
+    "sender": "O06",
+    "receiver": "O01",
+    "sender_package": "W06",
+    "receiver_package": "W05",
+    "artifact": "Supporting record package",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F05",
+    "sender": "O01",
+    "receiver": "U01",
+    "sender_package": "W05",
+    "receiver_package": "W08",
+    "artifact": "Authorization submission",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F06",
+    "sender": "U01",
+    "receiver": "O01",
+    "sender_package": "W08",
+    "receiver_package": "W05",
+    "artifact": "Missing-information request",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F07",
+    "sender": "U01",
+    "receiver": "U03",
+    "sender_package": "W08",
+    "receiver_package": "W09",
+    "artifact": "Clinical review case",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F08",
+    "sender": "G03",
+    "receiver": "U03",
+    "sender_package": "W20",
+    "receiver_package": "W09",
+    "artifact": "Applicable approved criteria",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F09",
+    "sender": "U03",
+    "receiver": "U04",
+    "sender_package": "W09",
+    "receiver_package": "W09",
+    "artifact": "Clinical escalation",
+    "design_obligation": "Retain the explicit artifact and receipt even if one owner performs both functions.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F10",
+    "sender": "U04",
+    "receiver": "U05",
+    "sender_package": "W09",
+    "receiver_package": "W09",
+    "artifact": "Specialty consultation request",
+    "design_obligation": "Retain the explicit artifact and receipt even if one owner performs both functions.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F11",
+    "sender": "O11",
+    "receiver": "U04",
+    "sender_package": "W07",
+    "receiver_package": "W09",
+    "artifact": "Peer clinical discussion",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F12",
+    "sender": "U04",
+    "receiver": "U09",
+    "sender_package": "W09",
+    "receiver_package": "W10",
+    "artifact": "Authorized clinical determination",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F13",
+    "sender": "U09",
+    "receiver": "P01",
+    "sender_package": "W10",
+    "receiver_package": "W01",
+    "artifact": "Decision notice",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F14",
+    "sender": "U09",
+    "receiver": "O01",
+    "sender_package": "W10",
+    "receiver_package": "W05",
+    "artifact": "Provider outcome communication",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F15",
+    "sender": "O01",
+    "receiver": "O05",
+    "sender_package": "W05",
+    "receiver_package": "W05",
+    "artifact": "Recorded authorization status",
+    "design_obligation": "Retain the explicit artifact and receipt even if one owner performs both functions.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F16",
+    "sender": "P04",
+    "receiver": "U12",
+    "sender_package": "W02",
+    "receiver_package": "W11",
+    "artifact": "Appeal request",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F17",
+    "sender": "U12",
+    "receiver": "U13",
+    "sender_package": "W11",
+    "receiver_package": "W11",
+    "artifact": "MA reconsideration case",
+    "design_obligation": "Retain the explicit artifact and receipt even if one owner performs both functions.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F18",
+    "sender": "U13",
+    "receiver": "U14",
+    "sender_package": "W11",
+    "receiver_package": "W12",
+    "artifact": "Remaining adverse MA case",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F19",
+    "sender": "U14",
+    "receiver": "U09",
+    "sender_package": "W12",
+    "receiver_package": "W10",
+    "artifact": "MA independent-review decision",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F20",
+    "sender": "U15",
+    "receiver": "U18",
+    "sender_package": "W12",
+    "receiver_package": "W12",
+    "artifact": "Commercial external-review case",
+    "design_obligation": "Retain the explicit artifact and receipt even if one owner performs both functions.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F21",
+    "sender": "P01",
+    "receiver": "M01",
+    "sender_package": "W01",
+    "receiver_package": "W13",
+    "artifact": "Care-management goals and needs",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F22",
+    "sender": "C02",
+    "receiver": "M01",
+    "sender_package": "W04",
+    "receiver_package": "W13",
+    "artifact": "Clinical context / referral",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F23",
+    "sender": "M01",
+    "receiver": "M02",
+    "sender_package": "W13",
+    "receiver_package": "W14",
+    "artifact": "Psychosocial resource referral",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F24",
+    "sender": "M01",
+    "receiver": "M04",
+    "sender_package": "W13",
+    "receiver_package": "W15",
+    "artifact": "Medication review request",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F25",
+    "sender": "M04",
+    "receiver": "C01",
+    "sender_package": "W15",
+    "receiver_package": "W04",
+    "artifact": "Medication recommendation",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F26",
+    "sender": "M01",
+    "receiver": "M10",
+    "sender_package": "W13",
+    "receiver_package": "W13",
+    "artifact": "Navigation task",
+    "design_obligation": "Retain the explicit artifact and receipt even if one owner performs both functions.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F27",
+    "sender": "M10",
+    "receiver": "M22",
+    "sender_package": "W13",
+    "receiver_package": "W17",
+    "artifact": "Community service referral",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F28",
+    "sender": "M01",
+    "receiver": "M23",
+    "sender_package": "W13",
+    "receiver_package": "W17",
+    "artifact": "Transport arrangement",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F29",
+    "sender": "M23",
+    "receiver": "M24",
+    "sender_package": "W17",
+    "receiver_package": "W17",
+    "artifact": "Assigned transport",
+    "design_obligation": "Retain the explicit artifact and receipt even if one owner performs both functions.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F30",
+    "sender": "C01",
+    "receiver": "M25",
+    "sender_package": "W04",
+    "receiver_package": "W17",
+    "artifact": "Equipment order",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F31",
+    "sender": "M18",
+    "receiver": "M19",
+    "sender_package": "W13",
+    "receiver_package": "W17",
+    "artifact": "Home-health transition referral",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F32",
+    "sender": "M18",
+    "receiver": "M20",
+    "sender_package": "W13",
+    "receiver_package": "W17",
+    "artifact": "Facility transition record",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F33",
+    "sender": "M19",
+    "receiver": "C01",
+    "sender_package": "W17",
+    "receiver_package": "W04",
+    "artifact": "Home-health change request",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F34",
+    "sender": "M21",
+    "receiver": "C06",
+    "sender_package": "W17",
+    "receiver_package": "W04",
+    "artifact": "Home-support observations",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F35",
+    "sender": "M14",
+    "receiver": "M01",
+    "sender_package": "W16",
+    "receiver_package": "W13",
+    "artifact": "Functional progress",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F36",
+    "sender": "M01",
+    "receiver": "G05",
+    "sender_package": "W13",
+    "receiver_package": "W21",
+    "artifact": "Complex-case escalation",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F37",
+    "sender": "G06",
+    "receiver": "G03",
+    "sender_package": "W21",
+    "receiver_package": "W20",
+    "artifact": "Policy-quality finding",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F38",
+    "sender": "G08",
+    "receiver": "G07",
+    "sender_package": "W20",
+    "receiver_package": "W21",
+    "artifact": "Approved procedural change",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F39",
+    "sender": "G10",
+    "receiver": "G14",
+    "sender_package": "W22",
+    "receiver_package": "W22",
+    "artifact": "Access authorization decision",
+    "design_obligation": "Retain the explicit artifact and receipt even if one owner performs both functions.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F40",
+    "sender": "G12",
+    "receiver": "G13",
+    "sender_package": "W21",
+    "receiver_package": "W22",
+    "artifact": "Approved system requirements",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F41",
+    "sender": "O07",
+    "receiver": "G15",
+    "sender_package": "W06",
+    "receiver_package": "W23",
+    "artifact": "Supported claim coding",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F42",
+    "sender": "U14",
+    "receiver": "J01",
+    "sender_package": "W12",
+    "receiver_package": "W12",
+    "artifact": "Eligible MA further appeal record",
+    "design_obligation": "Retain the explicit artifact and receipt even if one owner performs both functions.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F43",
+    "sender": "J01",
+    "receiver": "J02",
+    "sender_package": "W12",
+    "receiver_package": "W12",
+    "artifact": "Eligible Council review",
+    "design_obligation": "Retain the explicit artifact and receipt even if one owner performs both functions.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F44",
+    "sender": "J02",
+    "receiver": "J03",
+    "sender_package": "W12",
+    "receiver_package": "W12",
+    "artifact": "Eligible judicial review",
+    "design_obligation": "Retain the explicit artifact and receipt even if one owner performs both functions.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F45",
+    "sender": "P05",
+    "receiver": "C01",
+    "sender_package": "W03",
+    "receiver_package": "W04",
+    "artifact": "Interpreted patient-clinician message",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  },
+  {
+    "id": "F46",
+    "sender": "O06",
+    "receiver": "G10",
+    "sender_package": "W06",
+    "receiver_package": "W22",
+    "artifact": "Unclear disclosure request",
+    "design_obligation": "Preserve case/stage, source versions, unresolved facts and responsibility when crossing this modeled boundary.",
+    "status": "INHERITED_MODEL_PLUS_DESIGN_INFERENCE"
+  }
+]

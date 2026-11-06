@@ -1,0 +1,39 @@
+{
+  "headless": true,
+  "visible_windows_requested": false,
+  "diagrams_loaded": [
+    {
+      "name": "organization",
+      "width": 666,
+      "height": 689,
+      "nodes": 8
+    },
+    {
+      "name": "composite-roles",
+      "width": 794,
+      "height": 457,
+      "nodes": 7
+    },
+    {
+      "name": "case-execution",
+      "width": 943,
+      "height": 971,
+      "nodes": 10
+    },
+    {
+      "name": "patient-isolation",
+      "width": 850,
+      "height": 498,
+      "nodes": 8
+    },
+    {
+      "name": "memory-context",
+      "width": 714,
+      "height": 516,
+      "nodes": 7
+    }
+  ],
+  "javascript_errors": [],
+  "screenshot_folder": "HealthHarnessBlueprint/_cache/qa",
+  "scope": "Diagram loading only, not runtime isolation, task compatibility or benchmark verification."
+}

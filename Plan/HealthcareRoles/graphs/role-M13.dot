@@ -1,0 +1,12 @@
+digraph "role-M13" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM13 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+M01 [label="M01\nLead care manager / case \nmanager", URL="../index.html#M01", target="_top"];
+M13 [label="M13\nHealth educator / \nself-management coach", URL="../index.html#M13", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+M01 -> M13 [label="DEP137", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> M13 [label="DEP138", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> M13 [label="S-M13 request", tooltip="A licensed clinician may also provide education; distinguish the educational function from any separate clinical authority."];
+M13 -> M01 [label="S-M13 response", tooltip="A licensed clinician may also provide education; distinguish the educational function from any separate clinical authority."];
+}

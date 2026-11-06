@@ -1,0 +1,26 @@
+[
+  {
+    "id": "C1",
+    "name": "Single combined agent",
+    "behavior": "The composite owner performs needed reasoning responsibilities together, retaining deterministic gates and functional output obligations.",
+    "status": "HYPOTHETICAL_NOT_EVALUATED",
+    "patient_isolation_required": true,
+    "micro_role_count_is_not_call_count": true
+  },
+  {
+    "id": "C2",
+    "name": "Owner plus bounded helpers",
+    "behavior": "Only selected work with a useful separate context is delegated; results are case/source/version-linked proposals.",
+    "status": "HYPOTHETICAL_NOT_EVALUATED",
+    "patient_isolation_required": true,
+    "micro_role_count_is_not_call_count": true
+  },
+  {
+    "id": "C3",
+    "name": "Selected role-worker team",
+    "behavior": "Task-relevant responsibilities use separate bounded workers; no blanket activation of every role.",
+    "status": "HYPOTHETICAL_NOT_EVALUATED",
+    "patient_isolation_required": true,
+    "micro_role_count_is_not_call_count": true
+  }
+]

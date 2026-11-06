@@ -1,0 +1,134 @@
+[
+  {
+    "id": "V02",
+    "title": "California Board of Registered Nursing: AB 890 pathways",
+    "url": "https://www.rn.ca.gov/practice/ab890.shtml",
+    "kind": "Additional public primary source for deep verification",
+    "scope": "Only the named jurisdiction, program or source edition; not national universal authority",
+    "access": "Deep verification retrieval October 17, 2026; see verification provenance and access status",
+    "locator": "Selected paragraphs/pages in verification evidence map",
+    "note": "Added to test alternatives and exceptions; not every provision is automatically confirmed."
+  },
+  {
+    "id": "V03",
+    "title": "Oregon Medical Board: PA collaborative practice",
+    "url": "https://www.oregon.gov/omb/Topics-of-Interest/Pages/PA-Modernization-Bill.aspx",
+    "kind": "Additional public primary source for deep verification",
+    "scope": "Only the named jurisdiction, program or source edition; not national universal authority",
+    "access": "Deep verification retrieval October 17, 2026; see verification provenance and access status",
+    "locator": "Selected paragraphs/pages in verification evidence map",
+    "note": "Added to test alternatives and exceptions; not every provision is automatically confirmed."
+  },
+  {
+    "id": "V04",
+    "title": "New Mexico psychology licensing and prescribing certificates",
+    "url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/psychologist-examiners/licensing-registration-and-renewal/",
+    "kind": "Additional public primary source for deep verification",
+    "scope": "Only the named jurisdiction, program or source edition; not national universal authority",
+    "access": "Deep verification retrieval October 17, 2026; see verification provenance and access status",
+    "locator": "Selected paragraphs/pages in verification evidence map",
+    "note": "Added to test alternatives and exceptions; not every provision is automatically confirmed."
+  },
+  {
+    "id": "V05",
+    "title": "CMS Medicaid transportation requirements and state options",
+    "url": "https://www.medicaid.gov/medicaid/benefits/assurance-of-transportation",
+    "kind": "Additional public primary source for deep verification",
+    "scope": "Only the named jurisdiction, program or source edition; not national universal authority",
+    "access": "Deep verification retrieval October 17, 2026; see verification provenance and access status",
+    "locator": "Selected paragraphs/pages in verification evidence map",
+    "note": "Added to test alternatives and exceptions; not every provision is automatically confirmed."
+  },
+  {
+    "id": "V06",
+    "title": "ACL national APS regulations",
+    "url": "https://acl.gov/apsrule",
+    "kind": "Additional public primary source for deep verification",
+    "scope": "Only the named jurisdiction, program or source edition; not national universal authority",
+    "access": "Deep verification retrieval October 17, 2026; see verification provenance and access status",
+    "locator": "Selected paragraphs/pages in verification evidence map",
+    "note": "Added to test alternatives and exceptions; not every provision is automatically confirmed."
+  },
+  {
+    "id": "V07",
+    "title": "BLS lawyers duties",
+    "url": "https://www.bls.gov/ooh/legal/lawyers.htm",
+    "kind": "Additional public primary source for deep verification",
+    "scope": "Only the named jurisdiction, program or source edition; not national universal authority",
+    "access": "Deep verification retrieval October 17, 2026; see verification provenance and access status",
+    "locator": "Selected paragraphs/pages in verification evidence map",
+    "note": "Added to test alternatives and exceptions; not every provision is automatically confirmed."
+  },
+  {
+    "id": "V08",
+    "title": "BLS systems administrator duties",
+    "url": "https://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm",
+    "kind": "Additional public primary source for deep verification",
+    "scope": "Only the named jurisdiction, program or source edition; not national universal authority",
+    "access": "Deep verification retrieval October 17, 2026; see verification provenance and access status",
+    "locator": "Selected paragraphs/pages in verification evidence map",
+    "note": "Added to test alternatives and exceptions; not every provision is automatically confirmed."
+  },
+  {
+    "id": "V09",
+    "title": "CMS hospice survey manual Appendix M",
+    "url": "https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/downloads/som107ap_m_hospice.pdf",
+    "kind": "Additional public primary source for deep verification",
+    "scope": "Only the named jurisdiction, program or source edition; not national universal authority",
+    "access": "Deep verification retrieval October 17, 2026; see verification provenance and access status",
+    "locator": "Selected paragraphs/pages in verification evidence map",
+    "note": "Added to test alternatives and exceptions; not every provision is automatically confirmed."
+  },
+  {
+    "id": "V10",
+    "title": "NCSBN scope decision framework",
+    "url": "https://www.ncsbn.org/public-files/2016_Decision-Making-Framework.pdf",
+    "kind": "Additional public primary source for deep verification",
+    "scope": "Only the named jurisdiction, program or source edition; not national universal authority",
+    "access": "Deep verification retrieval October 17, 2026; see verification provenance and access status",
+    "locator": "Selected paragraphs/pages in verification evidence map",
+    "note": "Added to test alternatives and exceptions; not every provision is automatically confirmed."
+  },
+  {
+    "id": "V11",
+    "title": "Official 2025 CFR hospice care planning snapshot",
+    "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title42-vol3/pdf/CFR-2025-title42-vol3-sec418-56.pdf",
+    "kind": "Additional public primary source for deep verification",
+    "scope": "Only the named jurisdiction, program or source edition; not national universal authority",
+    "access": "Deep verification retrieval October 17, 2026; see verification provenance and access status",
+    "locator": "Selected paragraphs/pages in verification evidence map",
+    "note": "Added to test alternatives and exceptions; not every provision is automatically confirmed."
+  }
+,
+  {
+    "id": "V12",
+    "title": "ACL APS final rule fact sheet (dated compliance schedule)",
+    "url": "https://acl.gov/sites/default/files/2024-05/APS%20Regs%20-%20Long%20Fact%20sheet.pdf",
+    "kind": "Additional public primary source for deep verification",
+    "scope": "Named jurisdiction/program/edition only",
+    "access": "Deep verification retrieval October 17, 2026; inspect access metadata",
+    "locator": "Selected verified paragraphs/pages",
+    "note": "Alternative-path and exception evidence; not universal authority."
+  },
+  {
+    "id": "V13",
+    "title": "Washington pharmacist collaborative drug therapy agreement rule",
+    "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=246-945-350",
+    "kind": "Additional public primary source for deep verification",
+    "scope": "Named jurisdiction/program/edition only",
+    "access": "Deep verification retrieval October 17, 2026; inspect access metadata",
+    "locator": "Selected verified paragraphs/pages",
+    "note": "Alternative-path and exception evidence; not universal authority."
+  },
+  {
+    "id": "V14",
+    "title": "Medicaid transportation coverage guide",
+    "url": "https://www.medicaid.gov/sites/default/files/2023-09/smd23006.pdf",
+    "kind": "Additional public primary source for deep verification",
+    "scope": "Named jurisdiction/program/edition only",
+    "access": "Deep verification retrieval October 17, 2026; inspect access metadata",
+    "locator": "Selected verified paragraphs/pages",
+    "note": "Alternative-path and exception evidence; not universal authority."
+  }
+
+]

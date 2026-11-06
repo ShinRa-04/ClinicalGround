@@ -1,0 +1,33 @@
+digraph package_dependencies {
+graph [rankdir=TB,fontname="Arial",fontsize=15,labelloc=t,pad=0.35,nodesep=0.4,ranksep=0.8,bgcolor="white"];node [shape=box,style="rounded,filled",fillcolor="#edf3f6",color="#8396a2",fontname="Arial",fontsize=11,margin="0.15,0.12"];edge [fontname="Arial",fontsize=9,color="#526e80",arrowsize=0.7];
+graph [label="UNCONFIRMED INHERITED MODEL | selected package dependencies\nEdge labels = counts of modeled context links, not measured workload or command authority"];
+W05 [label="W05\nProvider access and\nauthorization operations",URL="../WORK_PACKAGES.md#w05"];
+W06 [label="W06\nRecords, coding and\ndocumentation support",URL="../WORK_PACKAGES.md#w06"];
+W07 [label="W07\nProvider dispute preparation\nand clinical exchange",URL="../WORK_PACKAGES.md#w07"];
+W08 [label="W08\nPayer intake, benefits and\nstatus operations",URL="../WORK_PACKAGES.md#w08"];
+W09 [label="W09\nInitial review and specialty\nreasoning",URL="../WORK_PACKAGES.md#w09"];
+W10 [label="W10\nNotice preparation and\ndelivery",URL="../WORK_PACKAGES.md#w10"];
+W11 [label="W11\nInternal appeal\nadministration and\nreconsideration",URL="../WORK_PACKAGES.md#w11"];
+W12 [label="W12\nExternal review and\nadjudication interfaces",URL="../WORK_PACKAGES.md#w12"];
+W13 [label="W13\nCare coordination and\nfollow-through",URL="../WORK_PACKAGES.md#w13"];
+W17 [label="W17\nReceiving services and\nreal-world fulfillment",URL="../WORK_PACKAGES.md#w17"];
+W06 -> W05 [label="1 modeled links"];
+W08 -> W05 [label="1 modeled links"];
+W10 -> W07 [label="1 modeled links"];
+W05 -> W07 [label="1 modeled links"];
+W09 -> W07 [label="1 modeled links"];
+W05 -> W08 [label="4 modeled links"];
+W08 -> W09 [label="4 modeled links"];
+W09 -> W10 [label="2 modeled links"];
+W08 -> W10 [label="1 modeled links"];
+W10 -> W08 [label="1 modeled links"];
+W07 -> W11 [label="1 modeled links"];
+W10 -> W11 [label="1 modeled links"];
+W09 -> W11 [label="1 modeled links"];
+W11 -> W12 [label="3 modeled links"];
+W09 -> W08 [label="1 modeled links"];
+W05 -> W13 [label="2 modeled links"];
+W13 -> W17 [label="5 modeled links"];
+W05 -> W17 [label="3 modeled links"];
+
+}

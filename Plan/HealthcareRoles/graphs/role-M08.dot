@@ -1,0 +1,14 @@
+digraph "role-M08" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM08 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+M01 [label="M01\nLead care manager / case \nmanager", URL="../index.html#M01", target="_top"];
+M08 [label="M08\nLicensed behavioral-health / \nsubstance-use counselor", URL="../index.html#M08", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+U06 [label="U06\nPayer behavioral-health \nreviewer", URL="../index.html#U06", target="_top"];
+M08 -> U06 [label="DEP081", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> M08 [label="DEP126", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> M08 [label="DEP127", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> M08 [label="S-M08 request", tooltip="Mental-health, addiction, marriage/family and peer credentials have different requirements; establish the specific credential before assigning clinical authority."];
+M08 -> M01 [label="S-M08 response", tooltip="Mental-health, addiction, marriage/family and peer credentials have different requirements; establish the specific credential before assigning clinical authority."];
+}

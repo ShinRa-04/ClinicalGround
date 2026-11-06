@@ -1,0 +1,12 @@
+digraph "role-C07" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nC07 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C06 [label="C06\nRegistered nurse providing \ndirect care", URL="../index.html#C06", target="_top"];
+C07 [label="C07\nLicensed practical / \nvocational nurse", URL="../index.html#C07", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+C06 -> C07 [label="DEP031", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> C07 [label="DEP032", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C06 -> C07 [label="S-C07 request", tooltip="State law and setting determine supervision and permitted activities; staffing title alone is insufficient."];
+C07 -> C06 [label="S-C07 response", tooltip="State law and setting determine supervision and permitted activities; staffing title alone is insufficient."];
+}

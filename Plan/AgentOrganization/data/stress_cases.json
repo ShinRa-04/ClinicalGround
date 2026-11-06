@@ -1,0 +1,264 @@
+[
+  {
+    "id": "T01",
+    "title": "Wrong-case evidence",
+    "roles": [
+      "O01",
+      "O03",
+      "O06"
+    ],
+    "trigger": "A retrieved document belongs to a similar-name different case.",
+    "expected": "Reject/clarify the mismatch; preserve case identity and avoid contaminating the packet.",
+    "failure": "Merger hides identity checks or multiple workers reuse an unscoped record.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T02",
+    "title": "Missing clinical fact",
+    "roles": [
+      "O01",
+      "C01",
+      "O08"
+    ],
+    "trigger": "The request lacks support for one relevant criterion.",
+    "expected": "Record the gap and use the applicable information/exception route, without creating a clinical fact.",
+    "failure": "Evidence worker invents a value to satisfy a downstream reviewer.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T03",
+    "title": "Administrative terminal route",
+    "roles": [
+      "U01",
+      "U02",
+      "U03",
+      "U09"
+    ],
+    "trigger": "Allowed observations establish a valid failed-eligibility intake outcome.",
+    "expected": "Follow the applicable intake/finalization/notice route; do not require an irrelevant clinical worker merely because it exists.",
+    "failure": "A fixed organization forces every case through every human-like reviewer.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T04",
+    "title": "Limited nonclinical approval",
+    "roles": [
+      "U01",
+      "U02",
+      "U04"
+    ],
+    "trigger": "A program explicitly delegates a bounded approval under specified criteria.",
+    "expected": "Check actual scope and preserve the distinction from medical-necessity denial.",
+    "failure": "A blanket clinical-only gate incorrectly blocks a valid route.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T05",
+    "title": "Initial versus reconsideration",
+    "roles": [
+      "U04",
+      "U12",
+      "U13"
+    ],
+    "trigger": "The same initial-decision author is offered as the reconsiderer.",
+    "expected": "Distinguish internal model criticism from actual required uninvolved review and route accordingly.",
+    "failure": "Renaming the initial worker is claimed as independent reconsideration.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T06",
+    "title": "Peer discussion versus appeal",
+    "roles": [
+      "O10",
+      "O11",
+      "U12"
+    ],
+    "trigger": "A peer exchange occurred but formal appeal filing is not observed.",
+    "expected": "Maintain separate process status and actual filing requirements.",
+    "failure": "The merged job records appeal completion from a conversational note.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T07",
+    "title": "Urgent commercial review",
+    "roles": [
+      "U12",
+      "U15",
+      "U18"
+    ],
+    "trigger": "The actual issue qualifies for the urgent concurrent route.",
+    "expected": "Permit eligible concurrent requests without equating MA and commercial processes.",
+    "failure": "A linear role ladder unnecessarily waits for all internal stages.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T08",
+    "title": "Policy/version conflict",
+    "roles": [
+      "G08",
+      "G03",
+      "U03"
+    ],
+    "trigger": "A helper uses an outdated policy summary against a newer applicable source.",
+    "expected": "Preserve versions, flag conflict and use the actual controlling rule.",
+    "failure": "More senior-sounding policy agent overrides the real source.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T09",
+    "title": "Patient refusal",
+    "roles": [
+      "P01",
+      "M01",
+      "M13"
+    ],
+    "trigger": "The patient explicitly declines a proposed step.",
+    "expected": "Preserve the response and follow the permitted disposition.",
+    "failure": "An internal patient persona or education agent invents agreement.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T10",
+    "title": "Caregiver disagreement",
+    "roles": [
+      "P01",
+      "P02",
+      "P03"
+    ],
+    "trigger": "Caregiver preferences differ from the patient’s stated choice and representative scope is uncertain.",
+    "expected": "Keep speakers and authority facts separate; seek the applicable clarification.",
+    "failure": "One family-agent summary merges everyone’s wishes.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T11",
+    "title": "Dialogue resume",
+    "roles": [
+      "P01",
+      "M01",
+      "M30"
+    ],
+    "trigger": "A context refresh happens after several assessment answers.",
+    "expected": "Restore sourced answers, unresolved items and last observed conversation state.",
+    "failure": "A new worker repeats questions or fabricates answers from a summary.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T12",
+    "title": "Referral versus delivery",
+    "roles": [
+      "M18",
+      "M19",
+      "M21"
+    ],
+    "trigger": "A home-service referral was sent but acceptance/visit is unobserved.",
+    "expected": "Track pending acceptance and fulfillment distinctly.",
+    "failure": "An optimistic receiving-service agent declares care delivered.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T13",
+    "title": "Transport no-show",
+    "roles": [
+      "M23",
+      "M24",
+      "M01"
+    ],
+    "trigger": "A trip was booked but attendance is unconfirmed or failed.",
+    "expected": "Keep booked/actual trip/attendance states separate and follow the real exception path.",
+    "failure": "A dispatcher persona marks the care visit completed.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T14",
+    "title": "Conflicting helper proposals",
+    "roles": [
+      "U03",
+      "U05",
+      "U07"
+    ],
+    "trigger": "Specialists propose incompatible actions from the same evidence.",
+    "expected": "Preserve disagreements, sources and scope; resolve by applicable rule/authority or clarification.",
+    "failure": "Majority vote creates authority or erases uncertainty.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T15",
+    "title": "Stale helper result",
+    "roles": [
+      "O01",
+      "O06",
+      "U03"
+    ],
+    "trigger": "One helper returns a proposal after newer evidence changes the case.",
+    "expected": "Check evidence/state versions before applying any proposal.",
+    "failure": "A late result silently overwrites the current decision.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T16",
+    "title": "Duplicate tool action",
+    "roles": [
+      "O01",
+      "U01",
+      "U09"
+    ],
+    "trigger": "A timeout occurs after a state-changing request may already have succeeded.",
+    "expected": "Read authoritative state before retrying; use actual tool idempotency if supported.",
+    "failure": "Two agents retry concurrently and create duplicate submissions/notices.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T17",
+    "title": "Restricted information",
+    "roles": [
+      "G10",
+      "O06",
+      "M08"
+    ],
+    "trigger": "A proposed worker receives material outside the established purpose/permission.",
+    "expected": "Use the actual permitted view or unresolved/escalation route.",
+    "failure": "Global shared memory is assumed to authorize every disclosure.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T18",
+    "title": "Composite hospice function",
+    "roles": [
+      "M28",
+      "C06",
+      "C01",
+      "M29"
+    ],
+    "trigger": "The case needs a coordination step and a distinct certification/admission contribution.",
+    "expected": "Identify the distinct function and dated-rule/local applicability limit.",
+    "failure": "A single hospice persona signs every professional output.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T19",
+    "title": "Favorable external outcome",
+    "roles": [
+      "U14",
+      "U09",
+      "O05"
+    ],
+    "trigger": "A favorable review is observed but implementation/service is not.",
+    "expected": "Track the applicable effectuation and downstream events separately.",
+    "failure": "A reversal letter is treated as care delivered or payment complete.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  },
+  {
+    "id": "T20",
+    "title": "Budget exhaustion",
+    "roles": [
+      "M01",
+      "U03",
+      "G06"
+    ],
+    "trigger": "Specialists keep requesting another review near the task budget.",
+    "expected": "Apply a predeclared stop/clarification policy, retain unknowns and reserve resources for required final actions.",
+    "failure": "A realistic committee debate prevents any terminal workflow action.",
+    "status": "PROPOSED_NOT_EXECUTED"
+  }
+]

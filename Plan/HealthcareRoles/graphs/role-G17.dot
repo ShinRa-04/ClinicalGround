@@ -1,0 +1,14 @@
+digraph "role-G17" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nG17 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+G09 [label="G09\nCompliance / regulatory \nprofessional", URL="../index.html#G09", target="_top"];
+G17 [label="G17\nLegal adviser / specialist \nlegal representative", URL="../index.html#G17", target="_top"];
+J03 [label="J03\nFederal district court in an \neligible Medicare appeal", URL="../index.html#J03", target="_top"];
+P04 [label="P04\nAppointed appeal \nrepresentative", URL="../index.html#P04", target="_top"];
+P04 -> G17 [label="DEP212", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G09 -> G17 [label="DEP213", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G17 -> J03 [label="DEP219", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P04 -> G17 [label="S-G17 request", tooltip="A lawyer is not automatically needed in ordinary authorization work; professional and appointment rules are issue-specific."];
+G17 -> P04 [label="S-G17 response", tooltip="A lawyer is not automatically needed in ordinary authorization work; professional and appointment rules are issue-specific."];
+}

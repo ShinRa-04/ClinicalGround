@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-17",
+  "roles": 97,
+  "source_entries": 95,
+  "distinct_source_urls": 94,
+  "decisions": 34,
+  "handoffs": 46,
+  "dependencies": 219,
+  "legacy_rows": 86,
+  "interfaces": 97,
+  "generated_graphs": 112,
+  "schema_checks": "passed",
+  "defined_inventory_adjudication_completed": true,
+  "reviewed_assertion_units": 2218,
+  "pending_assertion_units": 0,
+  "every_finding_confirmed_true": false,
+  "actual_institutional_authority_verified": false,
+  "interpretation": "Authored evidence dispositions for the frozen inventory; models and unresolved facts remain explicit. Not independent clinical/legal validation."
+}

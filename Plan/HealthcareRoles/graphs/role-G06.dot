@@ -1,0 +1,27 @@
+digraph "role-G06" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nG06 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+G01 [label="G01\nProvider medical director / \nchief medical officer", URL="../index.html#G01", target="_top"];
+G02 [label="G02\nPayer medical director / \nclinical-program leader", URL="../index.html#G02", target="_top"];
+G03 [label="G03\nUM / medical-policy committee \nand specialty members", URL="../index.html#G03", target="_top"];
+G04 [label="G04\nCare-management director / \nmanager", URL="../index.html#G04", target="_top"];
+G06 [label="G06\nQuality-improvement / audit \nprofessional", URL="../index.html#G06", target="_top"];
+G07 [label="G07\nTrainer / clinical educator", URL="../index.html#G07", target="_top"];
+G08 [label="G08\nPolicy analyst / clinical \nregulatory adviser", URL="../index.html#G08", target="_top"];
+G09 [label="G09\nCompliance / regulatory \nprofessional", URL="../index.html#G09", target="_top"];
+G11 [label="G11\nHealth-services / \npopulation-health data \nanalyst", URL="../index.html#G11", target="_top"];
+M01 [label="M01\nLead care manager / case \nmanager", URL="../index.html#M01", target="_top"];
+U17 [label="U17\nUM manager / operational \nsupervisor", URL="../index.html#U17", target="_top"];
+G06 -> G01 [label="DEP179", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G06 -> G02 [label="DEP181", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G06 -> G03 [label="DEP183", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U17 -> G06 [label="DEP189", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> G06 [label="DEP190", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G11 -> G06 [label="DEP191", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G06 -> G07 [label="DEP193", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G06 -> G08 [label="DEP195", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G06 -> G09 [label="DEP196", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G04 -> G06 [label="S-G06 request", tooltip="Audit access and methods must be authorized; observational findings are not automatically causal evidence."];
+G06 -> G04 [label="S-G06 response", tooltip="Audit access and methods must be authorized; observational findings are not automatically causal evidence."];
+}

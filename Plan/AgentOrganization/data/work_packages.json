@@ -1,0 +1,375 @@
+[
+  {
+    "id": "W01",
+    "title": "Patient and support participants",
+    "roles": [
+      "P01",
+      "P02",
+      "P03"
+    ],
+    "mode": "external",
+    "work": "Obtain goals, observations and applicable representation facts through permitted interaction.",
+    "merge_rationale": "Represent related participants in one case model, with separate identities and statement attribution; do not replace them with a worker that supplies convenient answers.",
+    "retained_boundary": "Patient choice, caregiver observation and lawful representation are different facts. Family relationship does not establish decision authority.",
+    "split_trigger": "A merged record attributes caregiver wishes to the patient or treats missing consent as agreement.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W02",
+    "title": "Advocacy and assistance interfaces",
+    "roles": [
+      "P04",
+      "P07",
+      "U16"
+    ],
+    "mode": "external",
+    "work": "Clarify complaints, access barriers and permitted representative assistance.",
+    "merge_rationale": "Shared navigation and document-preparation capability may support several functions, while appointments and authority remain explicit.",
+    "retained_boundary": "Appeal appointment is distinct from treatment representation; assistance is not insurer or adjudicator decision power.",
+    "split_trigger": "One general advocate label silently grants authority over every dispute or patient decision.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W03",
+    "title": "Language and communication support",
+    "roles": [
+      "P05",
+      "P06"
+    ],
+    "mode": "capability",
+    "work": "Support oral/written communication without changing the substantive author or decision owner.",
+    "merge_rationale": "One language service can expose separate interpretation and translation operations; a persistent autonomous persona is not inherently needed.",
+    "retained_boundary": "Written fidelity, oral turn-taking, participant comprehension and substantive consent must remain distinguishable. Qualification is not proved by a language prompt.",
+    "split_trigger": "Translation drops a negation, invents an answer, or is recorded as informed understanding without evidence.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W04",
+    "title": "Treating-team and clinical-evidence interfaces",
+    "roles": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "O13",
+      "M06",
+      "M27"
+    ],
+    "mode": "external",
+    "work": "Request and attribute existing clinical assessments, orders, referral context and externally produced evidence.",
+    "merge_rationale": "A shared evidence-request adapter may serve these contacts; that is an interface merger, not one interchangeable clinical occupation.",
+    "retained_boundary": "Credential, jurisdiction, privileges, authorship and treating relationship remain distinct; reading a chart is not performing treatment or acquiring prescribing authority.",
+    "split_trigger": "The harness fabricates a clinician statement or treats every clinical title as equivalent signatory permission.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W05",
+    "title": "Provider access and authorization operations",
+    "roles": [
+      "O01",
+      "O02",
+      "O03",
+      "O04",
+      "O05",
+      "O09",
+      "O12"
+    ],
+    "mode": "merge_candidate",
+    "work": "Identify the case, check administrative requirements, assemble supported materials, submit, track and coordinate scheduling/access barriers.",
+    "merge_rationale": "These operations can share a case record and an accountable workflow owner; combining them may reduce summary handoffs.",
+    "retained_boundary": "Identity, coverage verification, authorization outcome, financial estimate and service booking are different states. Management rank does not confer clinical power.",
+    "split_trigger": "Measured merged execution repeatedly confuses administrative states, loses obligations or lacks genuinely different access scopes.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W06",
+    "title": "Records, coding and documentation support",
+    "roles": [
+      "O06",
+      "O07",
+      "O08"
+    ],
+    "mode": "capability",
+    "work": "Retrieve authentic records and identify coding/documentation questions with source attribution.",
+    "merge_rationale": "A bounded evidence-preparation capability can combine retrieval and consistency checks without multiple autonomous writers.",
+    "retained_boundary": "Record release, coding interpretation, clinical clarification and authentication are distinct. Staff must not create unsupported clinical facts.",
+    "split_trigger": "A merged evidence worker silently repairs a clinical fact instead of requesting clarification or preserving uncertainty.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W07",
+    "title": "Provider dispute preparation and clinical exchange",
+    "roles": [
+      "O10",
+      "O11"
+    ],
+    "mode": "conditional",
+    "work": "Assemble the correct challenge and preserve clinical contributions and process status.",
+    "merge_rationale": "Administrative filing preparation and evidence collection may share a workflow; clinical peer participation remains an explicitly authorized interface.",
+    "retained_boundary": "Peer discussion is not automatically formal appeal; filing, clinical argument, appointment, deadline and acceptance are separate.",
+    "split_trigger": "A merged job claims a successful appeal from a peer-discussion note or submits an unattributed clinical opinion.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W08",
+    "title": "Payer intake, benefits and status operations",
+    "roles": [
+      "U01",
+      "U02",
+      "U10",
+      "U11",
+      "U17"
+    ],
+    "mode": "merge_candidate",
+    "work": "Establish administrative context, collect information, route work and communicate observed status.",
+    "merge_rationale": "A common payer case owner can combine collection and service/status functions with role-scoped operations.",
+    "retained_boundary": "Limited delegated nonclinical decisions are program-specific; medical-necessity denial and general benefits/status work remain different permissions.",
+    "split_trigger": "Status communication becomes an invented determination, or a clinically complete review is forced after a valid administrative terminal path.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W09",
+    "title": "Initial review and specialty reasoning",
+    "roles": [
+      "U03",
+      "U04",
+      "U05",
+      "U06",
+      "U07",
+      "U08"
+    ],
+    "mode": "conditional",
+    "work": "Evaluate applicable criteria and evidence, request needed specialty input, and propose only authorized case actions.",
+    "merge_rationale": "Shared policy/evidence machinery can serve distinct review modes; separate bounded reasoning calls may be useful for genuinely different questions.",
+    "retained_boundary": "Professional expertise, delegation, recommendation versus determination, and actual signoff remain separate. R13 signoff tension is unresolved; delegation may exclude appeals.",
+    "split_trigger": "A shared review mode crosses product/delegation limits, hides conflicting evidence or requires more independent expertise than its input supports.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W10",
+    "title": "Notice preparation and delivery",
+    "roles": [
+      "U09"
+    ],
+    "mode": "capability",
+    "work": "Render and deliver the observed authorized decision with the appropriate reason and review information.",
+    "merge_rationale": "This can be a controlled operation of the payer workflow owner rather than another open-ended agent.",
+    "retained_boundary": "The notice must derive from the authoritative decision/version; drafting or delivery must not change the substantive decision.",
+    "split_trigger": "Notice text contradicts the stored decision, wrong recipient is used, or draft is recorded as delivered.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W11",
+    "title": "Internal appeal administration and reconsideration",
+    "roles": [
+      "U12",
+      "U13"
+    ],
+    "mode": "protected_review",
+    "work": "Establish standing/route, assemble the appeal record and obtain the applicable reconsideration outcome.",
+    "merge_rationale": "Filing support may share software, but do not collapse initial-decision ownership and a required uninvolved reconsideration function.",
+    "retained_boundary": "For the cited MA rule, actual uninvolved persons and appropriate physician expertise are requirements; a fresh LLM context is not proof of those human qualifications.",
+    "split_trigger": "The initial author self-certifies independent reconsideration merely by changing its role label.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W12",
+    "title": "External review and adjudication interfaces",
+    "roles": [
+      "U14",
+      "U15",
+      "U18",
+      "G16",
+      "J01",
+      "J02",
+      "J03"
+    ],
+    "mode": "external_review",
+    "work": "Identify the applicable external route, transmit authorized material, and observe externally issued outcomes.",
+    "merge_rationale": "A routing adapter can share transport/record plumbing, while preserving distinct institutions, jurisdiction, eligibility and decision authority.",
+    "retained_boundary": "MA IRE, commercial IRO, regulator, ALJ, Council and court are not one escalating internal worker. External decisions cannot be invented by a local reviewer persona.",
+    "split_trigger": "A harness creates a binding external reversal or moves automatically through every forum without eligibility.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W13",
+    "title": "Care coordination and follow-through",
+    "roles": [
+      "M01",
+      "M09",
+      "M10",
+      "M11",
+      "M13",
+      "M18",
+      "M30"
+    ],
+    "mode": "merge_candidate",
+    "work": "Maintain goals, assessment context, referrals, outreach, barriers and observed follow-through across care transitions.",
+    "merge_rationale": "A case owner can combine administrative coordination, navigation and general education support while invoking specific expertise when needed.",
+    "retained_boundary": "Clinical assessment permissions, patient statements, discharge authority and professional education scope remain explicit; coordination is not physical service delivery.",
+    "split_trigger": "A merged worker loses patient dialogue state, invents assessment answers, or marks a referral as completed care.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W14",
+    "title": "Psychosocial and behavioral-health interfaces",
+    "roles": [
+      "M02",
+      "M03",
+      "M07",
+      "M08"
+    ],
+    "mode": "conditional",
+    "work": "Identify psychosocial needs and interpret or request appropriate specialist contributions.",
+    "merge_rationale": "Common intake/resource-finding support can be shared; separate expertise and restricted information views may be necessary for specialist reasoning.",
+    "retained_boundary": "Job title, independent clinical licensure and additional prescribing certification differ. Do not collapse social support, therapy and prescribing.",
+    "split_trigger": "A generic behavioral-health persona acts beyond its assigned function or exposes protected material to unrelated work.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W15",
+    "title": "Medication review and access",
+    "roles": [
+      "M04",
+      "M05"
+    ],
+    "mode": "conditional",
+    "work": "Distinguish medication expertise, existing therapy instructions and administrative access/fulfillment work.",
+    "merge_rationale": "Share a medication evidence record and access workflow, while separating clinical proposals from technician/access operations.",
+    "retained_boundary": "Protocol-authorized pharmacist activity, general prescribing and technician tasks are not equivalent; local authority is unresolved.",
+    "split_trigger": "Medication availability is treated as a treatment order or access staff alter therapy.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W16",
+    "title": "Rehabilitation, nutrition and respiratory interfaces",
+    "roles": [
+      "M12",
+      "M14",
+      "M15",
+      "M16",
+      "M17"
+    ],
+    "mode": "conditional",
+    "work": "Request or summarize discipline-specific assessments and service needs.",
+    "merge_rationale": "Use a common referral/evidence adapter with discipline-specific capability selection; persistent workers only if workload and errors justify them.",
+    "retained_boundary": "Different disciplines assess different functions and have different scope; one capability catalogue is not interchangeable clinical expertise.",
+    "split_trigger": "A general specialist output substitutes nutrition, mobility, daily-function, communication or respiratory evidence for one another.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W17",
+    "title": "Receiving services and real-world fulfillment",
+    "roles": [
+      "M19",
+      "M20",
+      "M21",
+      "M22",
+      "M23",
+      "M24",
+      "M25",
+      "M26"
+    ],
+    "mode": "external_service",
+    "work": "Coordinate service acceptance, availability, scheduling and observed delivery/attendance evidence.",
+    "merge_rationale": "A shared logistics coordinator can manage requests; providers, workers and actual delivery remain distinct external parties/events.",
+    "retained_boundary": "Referral sent, accepted, scheduled, delivered and completed are separate states. Capacity and actual attendance must come from allowed observations.",
+    "split_trigger": "A dispatcher persona or optimistic plan is used as evidence that a person received care, transport, food or equipment.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W18",
+    "title": "Hospice and spiritual-care interfaces",
+    "roles": [
+      "M28",
+      "M29"
+    ],
+    "mode": "external",
+    "work": "Coordinate the appropriate hospice group/attending and spiritual support contributions.",
+    "merge_rationale": "Common communication plumbing may connect participants; the composite hospice profile must be decomposed into functions before creating worker identities.",
+    "retained_boundary": "IDG planning, designated RN coordination, attending, certification/admission and spiritual support are distinct; the cited hospice evidence is the 2025 edition.",
+    "split_trigger": "One hospice agent is assigned all professional decisions or spiritual support is treated as clinical certification.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W19",
+    "title": "Safeguarding and protection interface",
+    "roles": [
+      "M31"
+    ],
+    "mode": "external",
+    "work": "Recognize a potential protection concern and follow an actually applicable reporting/escalation pathway.",
+    "merge_rationale": "Detection and routing can be a capability of a case owner; legal investigation/protection authority remains external.",
+    "retained_boundary": "Applicable mandate, jurisdiction, urgency and APS phase-in facts cannot be inferred from a generic concern. Child/adult pathways are not identical.",
+    "split_trigger": "A model resolves a safeguarding case by assertion or invents a universal reporting rule.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W20",
+    "title": "Policy, legal and clinical governance",
+    "roles": [
+      "G01",
+      "G02",
+      "G03",
+      "G08",
+      "G09",
+      "G17"
+    ],
+    "mode": "governance",
+    "work": "Establish applicable policies, approved versions and unresolved governance/legal questions.",
+    "merge_rationale": "Share policy retrieval and change tracking; proposal, clinical governance, committee approval and legal advice remain separately attributed functions.",
+    "retained_boundary": "An analyst draft or agent-generated rule is not approved policy. Provider and payer leaders have different mandates; hierarchy is not global authority.",
+    "split_trigger": "A task worker rewrites the controlling rule or approves its own policy revision to make a case pass.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W21",
+    "title": "Management, quality, analytics and learning",
+    "roles": [
+      "G04",
+      "G05",
+      "G06",
+      "G07",
+      "G11",
+      "G12"
+    ],
+    "mode": "governance",
+    "work": "Manage process design, training, workload and aggregate quality analysis outside ordinary case execution.",
+    "merge_rationale": "A design-time analysis service may cover several functions, while runtime checks remain bounded and separate from official grading.",
+    "retained_boundary": "Operational management is not clinical or appeal authority; internal diagnostics must not read hidden verifier answers or masquerade as official scores.",
+    "split_trigger": "Training feedback contaminates held-out evaluation, or a self-audit is reported as independent official success.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W22",
+    "title": "Privacy and system-access controls",
+    "roles": [
+      "G10",
+      "G13",
+      "G14"
+    ],
+    "mode": "infrastructure",
+    "work": "Constrain record access, authorized operations and technical identity/support.",
+    "merge_rationale": "Prefer explicit permission/configuration machinery plus escalation where uncertain; a persona alone cannot enforce access.",
+    "retained_boundary": "Technical access is not consent, clinical permission or substantive authorship; privacy purpose and special restrictions remain explicit.",
+    "split_trigger": "Every worker receives all tools/data because one shared model is assumed to have global authority.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  },
+  {
+    "id": "W23",
+    "title": "Billing and post-service account interface",
+    "roles": [
+      "G15"
+    ],
+    "mode": "external_service",
+    "work": "Track account/claim status and administrative payment questions when actually in scope.",
+    "merge_rationale": "Share identifiers and authorized documents with access/dispute workflows; invoke payment reasoning only where needed.",
+    "retained_boundary": "Prior authorization, benefit verification, claim acceptance, adjudication and payment are different states.",
+    "split_trigger": "Authorization success is reported as a paid claim or a completed financial outcome without evidence.",
+    "status": "PROPOSED_NOT_EMPIRICALLY_TESTED"
+  }
+]

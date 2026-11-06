@@ -1,0 +1,13 @@
+digraph "role-M22" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM22 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+M01 [label="M01\nLead care manager / case \nmanager", URL="../index.html#M01", target="_top"];
+M09 [label="M09\nCommunity health worker", URL="../index.html#M09", target="_top"];
+M10 [label="M10\nPatient navigator", URL="../index.html#M10", target="_top"];
+M22 [label="M22\nCommunity resource / housing \n/ food / benefit-support \nworker", URL="../index.html#M22", target="_top"];
+M09 -> M22 [label="DEP156", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> M22 [label="DEP157", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M10 -> M22 [label="S-M22 request", tooltip="Broad service-partner family, not a single licensed occupation; record the actual agency and job before assigning permissions."];
+M22 -> M10 [label="S-M22 response", tooltip="Broad service-partner family, not a single licensed occupation; record the actual agency and job before assigning permissions."];
+}

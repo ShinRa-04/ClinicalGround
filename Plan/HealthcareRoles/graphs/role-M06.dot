@@ -1,0 +1,15 @@
+digraph "role-M06" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM06 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C02 [label="C02\nReferring / primary-care \nclinician", URL="../index.html#C02", target="_top"];
+M01 [label="M01\nLead care manager / case \nmanager", URL="../index.html#M01", target="_top"];
+M06 [label="M06\nTreating psychiatrist", URL="../index.html#M06", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+U06 [label="U06\nPayer behavioral-health \nreviewer", URL="../index.html#U06", target="_top"];
+M06 -> U06 [label="DEP079", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> M06 [label="DEP122", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C02 -> M06 [label="DEP123", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> M06 [label="S-M06 request", tooltip="Treating psychiatrist and coverage reviewer must be identified separately even where both are physicians."];
+M06 -> M01 [label="S-M06 response", tooltip="Treating psychiatrist and coverage reviewer must be identified separately even where both are physicians."];
+}

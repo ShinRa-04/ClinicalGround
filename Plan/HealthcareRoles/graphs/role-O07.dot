@@ -1,0 +1,16 @@
+digraph "role-O07" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nO07 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+G15 [label="G15\nBilling / patient accounts / \nclaim-denial worker", URL="../index.html#G15", target="_top"];
+O06 [label="O06\nHIM / release-of-information \nspecialist", URL="../index.html#O06", target="_top"];
+O07 [label="O07\nMedical coding specialist", URL="../index.html#O07", target="_top"];
+O08 [label="O08\nnical-documentation-integrity \nspecialist", URL="../index.html#O08", target="_top"];
+C01 -> O07 [label="DEP051", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O06 -> O07 [label="DEP052", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O07 -> O08 [label="DEP054", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O07 -> G15 [label="DEP208", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G15 -> O07 [label="S-O07 request", tooltip="Authorization and claims can involve different code requirements; this role is conditional, not mandatory on every case."];
+O07 -> G15 [label="S-O07 response", tooltip="Authorization and claims can involve different code requirements; this role is conditional, not mandatory on every case."];
+}

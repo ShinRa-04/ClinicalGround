@@ -1,0 +1,8 @@
+# Actual trajectories and verifier artifacts remain local-only.
+/submission_*/packet/
+/submission_*/evidence/
+/submission_*/validation/
+/submission_*/*.zip
+/submission_*/*.tar.zst
+/submission_*/*.local.json
+__pycache__/

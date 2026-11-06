@@ -1,0 +1,19 @@
+# External run/submission workspaces and local runtime state.
+/Runner/chi-bench/
+/Runner/leaderboard/
+/Runner/.cache/
+/Runner/.python/
+/Runner/.bin/
+/Runner/.env
+/Runner/claude-oauth.env
+/Runner/*.local.yaml
+/Runner/logs/
+/Dataset/*
+!/Dataset/README.md
+/tmp/
+/Plan/HealthcareRoles/tools/__pycache__/
+/Plan/HealthcareRoles/verification/__pycache__/
+/Plan/AgentOrganization/__pycache__/
+
+# Browser-automation tool logs (local only)
+.playwright-mcp/

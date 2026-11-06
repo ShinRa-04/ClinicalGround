@@ -1,0 +1,41 @@
+{
+  "state": "assembled_local_needs_review",
+  "team": "Executioners",
+  "contact_confirmed": true,
+  "packet": "packet/2026-10-20-submission_1",
+  "archive": "submission_1_2026-10-20.zip",
+  "actor_source_commit": "03c845d1aa4abf6794f87088bcc64a9b265ebffc",
+  "scope": {
+    "domain": "pa_um",
+    "n_tasks": 1,
+    "n_trials": 3,
+    "official_rewards": [
+      1,
+      1,
+      1
+    ],
+    "checks_per_trial": "21/21"
+  },
+  "validation": {
+    "exit_code": 0,
+    "status": "needs-review",
+    "errors": 0,
+    "warnings": 3,
+    "warning_category": "native result file size above soft threshold; below hard limit"
+  },
+  "integrity_audit": "passed",
+  "archive_sha256": "0ae7281659ce68e47dd5f35830e7b7fcbeb030fae56cdb322a8880c0f8d0939f",
+  "archive_bytes": 314246,
+  "packet_file_count": 17,
+  "packet_bytes": 1205590,
+  "publication_ready": false,
+  "published": false,
+  "unconfirmed": [
+    "Maintainer acceptance of native transcript/result export",
+    "Acceptance of a one-task partial subset inside UM"
+  ],
+  "tests": {
+    "packet_producer": 3,
+    "actor_suite_unchanged_prior_result": 187
+  }
+}

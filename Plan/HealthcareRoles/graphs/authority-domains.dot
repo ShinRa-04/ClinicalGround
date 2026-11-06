@@ -1,0 +1,23 @@
+digraph authority_domains {
+graph [rankdir=TB, bgcolor="white", fontname="Arial", fontsize=16, labelloc=t, pad=0.4, nodesep=0.4, ranksep=0.65];
+node [shape=box, style="rounded,filled", fillcolor="#f0f5f8", fontname="Arial", fontsize=12, color="#8396a2", margin="0.18,0.14"];
+edge [fontname="Arial", fontsize=10, color="#526e80", arrowsize=0.7];
+graph [label="REVIEWED SCOPED SUMMARY: conditions and unresolved routes remain explicit\nSeparate authority domains | arrows assign a function, not universal rank"];
+consent [label="Patient / lawful representative\nConsent and participation\nP01 / P03 | A01, A09"];
+treatment [label="Authorized treating professional\nClinical recommendation / order\nC01-C05 | B01-B03, A15"];
+coverage [label="Authorized payer reviewer\nCoverage determination\nU03-U07 | A02, A17; delegation"];
+appeal [label="Applicable appeal decision-maker\nScoped review/reversal\nU13/U14/U18/J01-J03 | A03-A04, A11-A12"];
+scope [label="Law + license + competence + privileges\nProfessional scope constraint\nA13-A15; not a job-rank ladder"];
+policy [label="Applicable policy-governance body\nCriteria within governing coverage rules\nG03 | MA A05/A17"];
+manager [label="Assigned operational manager\nWorkload and process\nO12/U17/G04/G05 | local mandate"];
+case [shape=ellipse,fillcolor="#e2edf2",label="Case actions require the applicable\nauthorities together; one domain\ndoes not erase the others"];
+consent -> case [label="participation decision"];
+treatment -> case [label="clinical instruction"];
+coverage -> case [label="benefit/authorization outcome"];
+appeal -> coverage [label="may supersede disputed outcome\nONLY under applicable review route",style=dashed];
+scope -> treatment [label="constrains permitted activity"];
+scope -> coverage [label="constrains reviewer qualification"];
+policy -> coverage [label="approved applicable criteria"];
+manager -> case [label="operational allocation\nnot clinical/consent override"];
+
+}

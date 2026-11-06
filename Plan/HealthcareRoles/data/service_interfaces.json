@@ -1,0 +1,3012 @@
+[
+  {
+    "id": "S-P01",
+    "role": "P01",
+    "primary_contact": "C01",
+    "request": "Question/referral/task and available relevant context for: Express personal goals and make applicable informed choices about participation and care.",
+    "needs": [
+      "Understandable clinical explanation",
+      "Options and relevant coverage information"
+    ],
+    "response": [
+      "Preferences and reported history",
+      "Consent/refusal or request for clarification"
+    ],
+    "decisions": [
+      "Accept or refuse proposed care when legally able to decide",
+      "Choose permitted representatives and communication preferences"
+    ],
+    "exclusions": [
+      "Cannot require a clinician to provide inappropriate treatment",
+      "Cannot unilaterally establish insurance coverage or another person's legal authority"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Treating clinician for clinical explanation; patient advocate for process concerns; applicable representative process if decision-making authority is uncertain.",
+    "condition": "Capacity, minors, emergencies and surrogate authority require applicable law and case facts; this is not a blanket consent rule.",
+    "sources": [
+      "A01",
+      "A09",
+      "R22"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-P02",
+    "role": "P02",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Support the patient with practical help and observations.",
+    "needs": [
+      "Patient involvement preferences",
+      "Relevant instructions"
+    ],
+    "response": [
+      "Support availability and observations",
+      "Report of barriers or change"
+    ],
+    "decisions": [
+      "Agree to tasks they can actually undertake",
+      "Raise concerns about feasibility"
+    ],
+    "exclusions": [
+      "Family relationship alone does not grant treatment or appeal authority",
+      "Cannot silently substitute personal preferences for the patient's"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Care manager for resources; clinician for clinical concerns; verify representative status before using substitute authority.",
+    "condition": "Information sharing depends on permitted involvement; access is not automatically access to the entire record.",
+    "sources": [
+      "R19",
+      "A09",
+      "R30"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-P03",
+    "role": "P03",
+    "primary_contact": "C01",
+    "request": "Question/referral/task and available relevant context for: Exercise only the healthcare/information authority established for this patient.",
+    "needs": [
+      "Authority instrument and applicable circumstances",
+      "Clinical explanation and patient preferences"
+    ],
+    "response": [
+      "Documented scope of representation",
+      "Decisions within scope"
+    ],
+    "decisions": [
+      "Make decisions or exercise information rights within established authority"
+    ],
+    "exclusions": [
+      "No authority outside the instrument or applicable law",
+      "Not automatically the representative for every benefit appeal"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Clinical/legal/privacy channels when authority, patient wishes, safety or conflicting representatives are in dispute.",
+    "condition": "No universal national ordering of spouses, adult children or guardians is asserted; resolve governing state law and actual appointment.",
+    "sources": [
+      "A09",
+      "A01",
+      "R19"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-P04",
+    "role": "P04",
+    "primary_contact": "U12",
+    "request": "Question/referral/task and available relevant context for: Pursue a coverage dispute within the appointment and applicable appeal route.",
+    "needs": [
+      "Appointment/authority",
+      "Adverse notice and supporting record"
+    ],
+    "response": [
+      "Appeal submission",
+      "Procedural communications and patient updates"
+    ],
+    "decisions": [
+      "Submit or pursue procedural requests permitted by the appointment"
+    ],
+    "exclusions": [
+      "Appointment is not an unrestricted healthcare proxy",
+      "Cannot manufacture clinical evidence or guarantee reversal"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Appeal coordinator for filing issues; treating clinician for clinical support; appropriate adjudicator for review.",
+    "condition": "Verify standing, consent, route and deadlines from the actual notice; Medicare and commercial routes differ.",
+    "sources": [
+      "R20",
+      "R15",
+      "A11"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-P05",
+    "role": "P05",
+    "primary_contact": "C01",
+    "request": "Question/referral/task and available relevant context for: Enable accurate spoken or signed communication.",
+    "needs": [
+      "Speaker's actual message",
+      "Communication/language needs"
+    ],
+    "response": [
+      "Interpreted message",
+      "Clarification or access concern"
+    ],
+    "decisions": [
+      "Flag a communication problem and request clarification"
+    ],
+    "exclusions": [
+      "Does not make the medical or coverage decision",
+      "Does not become a representative merely by interpreting"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Requesting team for another qualified access arrangement; clinician for unresolved comprehension of clinical content.",
+    "condition": "Qualification and access arrangements must fit the communication need; interpreting is distinct from written translation.",
+    "sources": [
+      "B23",
+      "R21"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-P06",
+    "role": "P06",
+    "primary_contact": "U09",
+    "request": "Question/referral/task and available relevant context for: Render written information accurately in another language.",
+    "needs": [
+      "Authoritative document version",
+      "Target language and audience needs"
+    ],
+    "response": [
+      "Translated version with provenance",
+      "Questions about ambiguous source text"
+    ],
+    "decisions": [
+      "Select faithful terminology and seek source clarification"
+    ],
+    "exclusions": [
+      "Cannot change the determination or add clinical advice",
+      "Translation does not itself prove patient understanding"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Document author for substantive ambiguity; communication-access team for alternative formats.",
+    "condition": "Language/format needs and quality review are organization-specific; the document author retains substantive responsibility.",
+    "sources": [
+      "B23",
+      "R21"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-P07",
+    "role": "P07",
+    "primary_contact": "P01",
+    "request": "Question/referral/task and available relevant context for: Help route concerns and improve access to the appropriate resolution process.",
+    "needs": [
+      "Patient concern",
+      "Relevant service/process facts"
+    ],
+    "response": [
+      "Routed complaint",
+      "Response tracking and explanation"
+    ],
+    "decisions": [
+      "Route a concern and request operational investigation"
+    ],
+    "exclusions": [
+      "Does not independently prescribe or overturn coverage",
+      "Not automatically a legal or appeal representative"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Clinical leader for care issues; formal grievance mechanism for unresolved complaints; privacy officer for access concerns.",
+    "condition": "A complaint about service and an appeal of a coverage decision are separate routes; a job title does not establish appointment.",
+    "sources": [
+      "R04",
+      "A01",
+      "R35"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-C01",
+    "role": "C01",
+    "primary_contact": "P01",
+    "request": "Question/referral/task and available relevant context for: Assess the clinical problem and recommend or order appropriate care.",
+    "needs": [
+      "Patient history and examination",
+      "Results and specialist information"
+    ],
+    "response": [
+      "Authenticated clinical note/order",
+      "Clinical rationale and instructions"
+    ],
+    "decisions": [
+      "Make clinical recommendations and orders within privileges",
+      "Revise the treatment recommendation when evidence changes"
+    ],
+    "exclusions": [
+      "An order does not establish benefit coverage",
+      "Cannot override applicable patient consent or another profession's scope"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Relevant specialist for expertise; urgent clinical pathway for deterioration; provider adviser or appeal process for coverage disputes.",
+    "condition": "License, privileges and clinical setting control the activity; this is not a hierarchy over insurer employees.",
+    "sources": [
+      "B01",
+      "A01",
+      "A15",
+      "R01"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-C02",
+    "role": "C02",
+    "primary_contact": "P01",
+    "request": "Question/referral/task and available relevant context for: Maintain clinical continuity and connect the patient to an appropriate service.",
+    "needs": [
+      "Patient needs",
+      "Existing clinical record"
+    ],
+    "response": [
+      "Referral and clinical question",
+      "Follow-up clinical plan"
+    ],
+    "decisions": [
+      "Make or revise referrals within professional scope"
+    ],
+    "exclusions": [
+      "Referral is not insurance authorization",
+      "Does not automatically supersede a specialist's separate professional judgment"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Receiving specialist for an unresolved clinical question; coordinator for failed referral communication.",
+    "condition": "May be a physician, NP or PA under the relevant professional rules; this is a functional role, not an additional credential.",
+    "sources": [
+      "B01",
+      "R22"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-C03",
+    "role": "C03",
+    "primary_contact": "C02",
+    "request": "Question/referral/task and available relevant context for: Provide condition- or procedure-specific clinical evaluation and recommendations.",
+    "needs": [
+      "Referral question",
+      "Relevant history/results and patient preferences"
+    ],
+    "response": [
+      "Specialist assessment",
+      "Proposed service and clinical report"
+    ],
+    "decisions": [
+      "Make specialty recommendations/orders within privileges",
+      "Decide clinical readiness within assigned responsibility"
+    ],
+    "exclusions": [
+      "Specialty expertise is not unilateral coverage authority",
+      "Does not erase the patient's participation or other clinicians' responsibilities"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Referrer or multidisciplinary review for conflicting recommendations; authorization team for administrative obstacles.",
+    "condition": "Clinical responsibility must be assigned for the actual service; specialist is not necessarily the organizational supervisor of the PCP.",
+    "sources": [
+      "B01",
+      "R01",
+      "R22"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-C04",
+    "role": "C04",
+    "primary_contact": "P01",
+    "request": "Question/referral/task and available relevant context for: Provide advanced nursing/clinical care within authorized practice.",
+    "needs": [
+      "History/findings",
+      "Current plan and professional permissions"
+    ],
+    "response": [
+      "Clinical assessment/orders within scope",
+      "Follow-up instructions"
+    ],
+    "decisions": [
+      "Diagnose, order or prescribe only where authorized by applicable practice rules and privileges"
+    ],
+    "exclusions": [
+      "Do not assume identical independence in every state",
+      "NP title does not grant insurance appeal or policy authority"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Collaborating or relevant clinician as required by practice arrangement or complexity; care manager for coordination.",
+    "condition": "Specify state, population focus, privileges and any required practice arrangement before concluding independent authority. California examples separate practice category, furnishing authority and employer requirements. Prospective 104-availability wording is not proof of present individual certification or application availability.",
+    "sources": [
+      "B03",
+      "A14",
+      "A07",
+      "V02"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-C05",
+    "role": "C05",
+    "primary_contact": "P01",
+    "request": "Question/referral/task and available relevant context for: Provide clinical assessment and treatment within the applicable PA practice arrangement.",
+    "needs": [
+      "Patient history/results",
+      "Applicable practice arrangement"
+    ],
+    "response": [
+      "Clinical assessment and authorized orders",
+      "Progress documentation"
+    ],
+    "decisions": [
+      "Clinical actions within state law, privileges and required collaboration/supervision arrangement"
+    ],
+    "exclusions": [
+      "Not a medical assistant",
+      "Do not infer a uniform national supervision ratio or unrestricted independence"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Responsible/collaborating physician or specialty team according to the case and practice requirements.",
+    "condition": "PA means physician assistant in this profile; prior authorization is written out to avoid acronym confusion.",
+    "sources": [
+      "B02",
+      "A15",
+      "V03"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-C06",
+    "role": "C06",
+    "primary_contact": "C01",
+    "request": "Question/referral/task and available relevant context for: Assess nursing needs and provide/co-ordinate nursing care.",
+    "needs": [
+      "Orders/care plan",
+      "Nursing assessment and observations"
+    ],
+    "response": [
+      "Nursing documentation",
+      "Education and change/escalation report"
+    ],
+    "decisions": [
+      "Make nursing judgments and carry out authorized care",
+      "Escalate unexpected findings"
+    ],
+    "exclusions": [
+      "RN status alone is not prescribing or payer-decision authority",
+      "Delegation does not transfer all accountability to unlicensed staff"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Responsible clinician for treatment issues; nursing supervisor for scope/delegation questions.",
+    "condition": "A direct-care RN, payer UM nurse and nurse case manager are different functions even if one person can hold more than one role.",
+    "sources": [
+      "B04",
+      "A13",
+      "A14"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-C07",
+    "role": "C07",
+    "primary_contact": "C06",
+    "request": "Question/referral/task and available relevant context for: Provide authorized practical nursing care and report patient status.",
+    "needs": [
+      "Assigned plan and supervision",
+      "Patient observations"
+    ],
+    "response": [
+      "Care/task record",
+      "Reported changes and concerns"
+    ],
+    "decisions": [
+      "Carry out activities permitted by training, state rules and supervision"
+    ],
+    "exclusions": [
+      "No universal national list of IV/assessment permissions is assumed",
+      "Cannot act as an RN merely because assigned similar tasks"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "RN, advanced-practice clinician or physician according to the practice and urgency.",
+    "condition": "State law and setting determine supervision and permitted activities; staffing title alone is insufficient.",
+    "sources": [
+      "B05",
+      "A13",
+      "A14"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-C08",
+    "role": "C08",
+    "primary_contact": "C01",
+    "request": "Question/referral/task and available relevant context for: Support clinic operations and delegated clinical/administrative tasks.",
+    "needs": [
+      "Clinician instructions",
+      "Patient information and task queue"
+    ],
+    "response": [
+      "Entered observations and administrative updates",
+      "Questions requiring clinician response"
+    ],
+    "decisions": [
+      "Perform assigned administrative and permitted clinical tasks",
+      "Flag missing information"
+    ],
+    "exclusions": [
+      "Does not independently practice medicine",
+      "Cannot create a diagnosis, prescription or coverage decision from an administrative assignment"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Directing clinician or clinic supervisor when task is outside training, unclear or clinically concerning.",
+    "condition": "Specific clinical tasks depend on state rules and training; this role is not interchangeable with a physician assistant.",
+    "sources": [
+      "B06",
+      "A15",
+      "B02"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-O01",
+    "role": "O01",
+    "primary_contact": "C01",
+    "request": "Question/referral/task and available relevant context for: Move a supported request through the provider's authorization workflow.",
+    "needs": [
+      "Clinician order/rationale",
+      "Patient/benefit details and records"
+    ],
+    "response": [
+      "Authorization packet and submission receipt",
+      "Status/outcome and pending-work record"
+    ],
+    "decisions": [
+      "Choose operational next step under procedure",
+      "Return incomplete material for clarification"
+    ],
+    "exclusions": [
+      "Cannot invent medical evidence or decide clinical appropriateness",
+      "Submission or a tracking number is not approval"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Ordering clinician for clinical gaps; payer contact for status; provider appeal specialist for adverse outcome.",
+    "condition": "Works for requester; not payer intake. Local payer requirements and request stage determine the needed packet.",
+    "sources": [
+      "R04",
+      "R12",
+      "R05"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-O02",
+    "role": "O02",
+    "primary_contact": "C02",
+    "request": "Question/referral/task and available relevant context for: Connect the referring and receiving services and close referral communication.",
+    "needs": [
+      "Referral and contact information",
+      "Receiving-service requirements"
+    ],
+    "response": [
+      "Routed referral",
+      "Acceptance/appointment or unresolved-referral status"
+    ],
+    "decisions": [
+      "Route and follow up referrals under local procedure"
+    ],
+    "exclusions": [
+      "Cannot substitute a referral for prior authorization",
+      "Cannot choose an unsupported medical indication"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Referring clinician for medical question; scheduler/service team for availability or rejection.",
+    "condition": "May share a job with scheduling or authorization; preserve those functions as separate milestones.",
+    "sources": [
+      "R05",
+      "R22"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-O03",
+    "role": "O03",
+    "primary_contact": "P01",
+    "request": "Question/referral/task and available relevant context for: Establish accurate administrative identity and encounter information.",
+    "needs": [
+      "Patient-supplied identifiers",
+      "Existing registration record"
+    ],
+    "response": [
+      "Verified or unresolved demographic/insurance details",
+      "Encounter record"
+    ],
+    "decisions": [
+      "Correct administrative fields according to verification procedure"
+    ],
+    "exclusions": [
+      "Identity entry does not confer clinical consent or guarantee coverage",
+      "Cannot silently merge conflicting patient records"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Registration supervisor or HIM for identity mismatch; benefits staff for coverage questions.",
+    "condition": "Identity, benefits verification and authorization are distinct checks even if performed by the same employee.",
+    "sources": [
+      "R06",
+      "B20"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-O04",
+    "role": "O04",
+    "primary_contact": "O03",
+    "request": "Question/referral/task and available relevant context for: Clarify administrative coverage information needed to arrange a service.",
+    "needs": [
+      "Insurance identifiers",
+      "Proposed service and payer response"
+    ],
+    "response": [
+      "Benefits/requirement record",
+      "Unresolved coverage questions"
+    ],
+    "decisions": [
+      "Record verified benefits information and route discrepancies"
+    ],
+    "exclusions": [
+      "Benefits verification is not a medical-necessity approval",
+      "Cannot promise final payment solely from eligibility"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Payer benefits/provider services for discrepancy; financial counselor for affordability.",
+    "condition": "Uses plan-specific information; a coverage estimate is not final claim adjudication.",
+    "sources": [
+      "R06",
+      "R11"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-O05",
+    "role": "O05",
+    "primary_contact": "O02",
+    "request": "Question/referral/task and available relevant context for: Arrange feasible service timing, location and staff availability.",
+    "needs": [
+      "Referral/order",
+      "Availability and recorded prerequisite status"
+    ],
+    "response": [
+      "Appointment/booking record",
+      "Instructions and unmet-prerequisite report"
+    ],
+    "decisions": [
+      "Offer available appointments and apply scheduling procedure"
+    ],
+    "exclusions": [
+      "Appointment is not clinical clearance or authorization",
+      "Cannot disregard a clinical safety concern to fill a slot"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Clinical team for readiness; authorization coordinator for approval status; supervisor for scheduling conflicts.",
+    "condition": "Scheduling may occur before authorization, but completion/readiness must not be inferred from booking alone.",
+    "sources": [
+      "R04",
+      "R05"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-O06",
+    "role": "O06",
+    "primary_contact": "O01",
+    "request": "Question/referral/task and available relevant context for: Retrieve and appropriately disclose authentic health information.",
+    "needs": [
+      "Record request and purpose",
+      "Identity/authority and record location"
+    ],
+    "response": [
+      "Released records and provenance",
+      "Access/release question or exception"
+    ],
+    "decisions": [
+      "Process or escalate a release request under applicable rules and policy"
+    ],
+    "exclusions": [
+      "Cannot change clinical facts to improve coverage",
+      "No blanket assumption that every treatment exchange requires signed authorization"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Privacy officer for unclear permission; authoring service for absent or disputed documentation.",
+    "condition": "Purpose matters: HIPAA minimum-necessary exceptions include specified treatment disclosures; other privacy requirements can still apply.",
+    "sources": [
+      "R07",
+      "B20",
+      "A10",
+      "A15",
+      "V15"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-O07",
+    "role": "O07",
+    "primary_contact": "G15",
+    "request": "Question/referral/task and available relevant context for: Translate documented services and diagnoses into appropriate codes.",
+    "needs": [
+      "Authenticated documentation",
+      "Relevant coding requirements"
+    ],
+    "response": [
+      "Supported code assignment",
+      "Documentation/coding query"
+    ],
+    "decisions": [
+      "Select supported codes and flag a coding inconsistency"
+    ],
+    "exclusions": [
+      "Cannot create a clinical diagnosis or change the underlying facts",
+      "Coding does not decide treatment or authorize coverage"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Documenting clinician/CDI for ambiguity; billing team for claim correction.",
+    "condition": "Authorization and claims can involve different code requirements; this role is conditional, not mandatory on every case.",
+    "sources": [
+      "B20",
+      "R08",
+      "A15"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-O08",
+    "role": "O08",
+    "primary_contact": "O07",
+    "request": "Question/referral/task and available relevant context for: Help clarify documentation needed to accurately represent the care provided.",
+    "needs": [
+      "Clinical record",
+      "Coding/denial question"
+    ],
+    "response": [
+      "Clarification query",
+      "Documentation-quality finding"
+    ],
+    "decisions": [
+      "Identify a documentation gap and request clarification"
+    ],
+    "exclusions": [
+      "Cannot dictate an unsupported diagnosis or retrospectively fabricate evidence",
+      "Clinician remains responsible for authenticated clinical content"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Responsible clinician for substantive clarification; HIM/compliance for unresolved query issues.",
+    "condition": "Documentation improvement is not permission to rewrite clinical facts to match coverage criteria.",
+    "sources": [
+      "R08",
+      "B20",
+      "A15"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-O09",
+    "role": "O09",
+    "primary_contact": "P01",
+    "request": "Question/referral/task and available relevant context for: Help the patient understand costs and available assistance options.",
+    "needs": [
+      "Patient financial concerns",
+      "Benefits/cost information and program criteria"
+    ],
+    "response": [
+      "Cost explanation/estimate",
+      "Assistance application or referral"
+    ],
+    "decisions": [
+      "Explain program options and assist applications within assigned procedure"
+    ],
+    "exclusions": [
+      "Cannot independently guarantee coverage, funding or payment",
+      "Financial clearance does not establish consent or clinical readiness"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Benefits/billing for disputed amount; program administrator for assistance eligibility; clinician for treatment questions.",
+    "condition": "Estimates, assistance approvals, authorization and final claims are separate records and decisions.",
+    "sources": [
+      "R06",
+      "R09"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-O10",
+    "role": "O10",
+    "primary_contact": "O01",
+    "request": "Question/referral/task and available relevant context for: Organize the provider response to an adverse outcome.",
+    "needs": [
+      "Adverse notice",
+      "Request/record and representation information"
+    ],
+    "response": [
+      "Appeal/correction packet",
+      "Submission tracking and unresolved issues"
+    ],
+    "decisions": [
+      "Select procedural workflow under approved policy and established standing"
+    ],
+    "exclusions": [
+      "Cannot supply unsupported clinical rationale",
+      "Does not automatically hold patient appeal authority"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Treating clinician/provider adviser for clinical issue; appointed representative or legal channel for standing.",
+    "condition": "Separate pre-service authorization disputes from post-service claim denials; actual notice determines route and deadlines.",
+    "sources": [
+      "R04",
+      "R08",
+      "R15",
+      "R20"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-O11",
+    "role": "O11",
+    "primary_contact": "O10",
+    "request": "Question/referral/task and available relevant context for: Present or assess the provider's clinical position in a review dispute.",
+    "needs": [
+      "Clinical evidence and denial rationale",
+      "Question for peer discussion"
+    ],
+    "response": [
+      "Clinical opinion/discussion record",
+      "Recommended next clinical/procedural action"
+    ],
+    "decisions": [
+      "Give a clinical opinion and recommend revision/escalation"
+    ],
+    "exclusions": [
+      "Peer discussion does not itself confer payer decision authority",
+      "Cannot assume it substitutes for a formal appeal"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Treating team for revised clinical plan; formal appeal route for unresolved coverage.",
+    "condition": "May be the treating physician rather than a separate employee; duties depend on relationship to the patient and organization.",
+    "sources": [
+      "R15",
+      "B01"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-O12",
+    "role": "O12",
+    "primary_contact": "O01",
+    "request": "Question/referral/task and available relevant context for: Manage the provider operation and resolve work-routing problems.",
+    "needs": [
+      "Queue/status reports",
+      "Staff/process problems"
+    ],
+    "response": [
+      "Work assignment and process resolution",
+      "Escalated clinical/privacy issues"
+    ],
+    "decisions": [
+      "Allocate operational work and approve permitted process exceptions"
+    ],
+    "exclusions": [
+      "Management rank does not create clinical licensure",
+      "Cannot authorize insurer coverage by instructing staff"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Clinical leader, privacy or payer contact according to the issue rather than one universal chain.",
+    "condition": "Specific reporting lines are organization-specific and are not inferred from a generic title.",
+    "sources": [
+      "B22",
+      "R04"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-O13",
+    "role": "O13",
+    "primary_contact": "C01",
+    "request": "Question/referral/task and available relevant context for: Supply authentic reports relevant to the clinical question.",
+    "needs": [
+      "Relevant order/referral",
+      "Findings or existing source record"
+    ],
+    "response": [
+      "Authenticated report/result",
+      "Record availability or correction response"
+    ],
+    "decisions": [
+      "Make findings only within the actual professional role",
+      "Release/correct reports through approved process"
+    ],
+    "exclusions": [
+      "A custodian is not necessarily the interpreting clinician",
+      "No one may substitute fabricated evidence for a missing report"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Authoring clinician for interpretation; HIM/privacy channel for release questions.",
+    "condition": "This is an evidence-supply function spanning distinct professions, not a claim that laboratory staff, radiologists and therapists have identical permissions.",
+    "sources": [
+      "A15",
+      "B01",
+      "B20"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U01",
+    "role": "U01",
+    "primary_contact": "O01",
+    "request": "Question/referral/task and available relevant context for: Create and route a reviewable request record for the reviewing organization.",
+    "needs": [
+      "Provider request and identifiers",
+      "Submitted records"
+    ],
+    "response": [
+      "Review case/queue item",
+      "Missing-information/status communication"
+    ],
+    "decisions": [
+      "Make operational decisions and only explicitly delegated limited nonclinical/benefit decisions under the applicable program criteria"
+    ],
+    "exclusions": [
+      "Cannot infer medical necessity from missing paperwork alone",
+      "An intake receipt is not approval"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Clinical reviewer for medical questions; benefits specialist for administrative coverage; manager for urgent routing.",
+    "condition": "Different employer/function from provider authorization specialist; decisions follow the actual plan/delegation. R13 describes some limited nonclinical approvals and assigned benefit-only decisions; it is not a national permission or medical-necessity-denial grant.",
+    "sources": [
+      "R12",
+      "R13"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U02",
+    "role": "U02",
+    "primary_contact": "U01",
+    "request": "Question/referral/task and available relevant context for: Apply the plan's administrative membership and benefit information.",
+    "needs": [
+      "Enrollment/benefit record",
+      "Requested service details"
+    ],
+    "response": [
+      "Benefit/eligibility finding",
+      "Administrative explanation or referral"
+    ],
+    "decisions": [
+      "Make administrative benefit determinations only within delegated authority"
+    ],
+    "exclusions": [
+      "Administrative benefit issue is not interchangeable with adverse medical necessity",
+      "Cannot create clinical rationale for a denial"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Designated benefit decision-maker/compliance for ambiguity; clinical reviewer for medical-necessity issue.",
+    "condition": "Exact benefit authority and decision notice are plan-specific; not every benefits specialist is authorized to issue a denial. R13 permits some assigned benefit-only decisions; actual signatory authority still requires the plan/delegation.",
+    "sources": [
+      "R13",
+      "R16",
+      "A02"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U03",
+    "role": "U03",
+    "primary_contact": "U01",
+    "request": "Question/referral/task and available relevant context for: Assess the submitted clinical evidence under the assigned review program.",
+    "needs": [
+      "Complete relevant records",
+      "Applicable criteria and authorized review scope"
+    ],
+    "response": [
+      "Clinical review and evidence gaps",
+      "Approval or escalated recommendation within scope"
+    ],
+    "decisions": [
+      "Approve under documented delegation when criteria and program permit",
+      "Recommend or escalate when not able to approve"
+    ],
+    "exclusions": [
+      "Do not infer unrestricted denial authority from RN status",
+      "Cannot replace the treating clinician's treatment relationship"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Appropriate medical/other licensed reviewer and UM manager according to clinical and operational issues.",
+    "condition": "Under MA 422.566(d), anticipated adverse medical necessity requires appropriate licensed professional review; local policy may impose stricter physician escalation. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone.",
+    "sources": [
+      "R12",
+      "R13",
+      "A02",
+      "A13"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U04",
+    "role": "U04",
+    "primary_contact": "U03",
+    "request": "Question/referral/task and available relevant context for: Perform assigned clinical coverage review and document the rationale.",
+    "needs": [
+      "Review record and criteria",
+      "Escalation question"
+    ],
+    "response": [
+      "Clinical coverage rationale",
+      "Determination or request for further evidence"
+    ],
+    "decisions": [
+      "Issue/recommend a clinical coverage determination within assigned authority"
+    ],
+    "exclusions": [
+      "Not the patient's treating physician by virtue of coverage review",
+      "Cannot override governing coverage rules or patient consent"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Specialist consultant for expertise; applicable appeal route if challenged; policy governance for systemic criteria questions.",
+    "condition": "Case-review function is distinct from organization-wide CMO governance; authority depends on product, license, expertise and delegation. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone.",
+    "sources": [
+      "R12",
+      "R18",
+      "A02",
+      "A17"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U05",
+    "role": "U05",
+    "primary_contact": "U04",
+    "request": "Question/referral/task and available relevant context for: Provide specialist expertise to the designated reviewing decision-maker.",
+    "needs": [
+      "Review question and relevant record",
+      "Applicable clinical context"
+    ],
+    "response": [
+      "Specialty opinion with reasoning",
+      "Further information needs"
+    ],
+    "decisions": [
+      "Give a specialty opinion",
+      "Decide a case only if separately appointed and authorized"
+    ],
+    "exclusions": [
+      "Consultation alone is not final appeal authority",
+      "Independence must not be assumed from the word consultant"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Requesting reviewer for unresolved record gaps or conflict of expertise.",
+    "condition": "Differentiate contracted expertise, internal consultation and statutory independent review.",
+    "sources": [
+      "R18",
+      "A02"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U06",
+    "role": "U06",
+    "primary_contact": "U01",
+    "request": "Question/referral/task and available relevant context for: Review behavioral-health service requests within the assigned professional scope.",
+    "needs": [
+      "Behavioral-health request/evidence",
+      "Program criteria and professional permissions"
+    ],
+    "response": [
+      "Review rationale",
+      "Decision or escalation within delegated scope"
+    ],
+    "decisions": [
+      "Make delegated review decisions compatible with professional qualifications"
+    ],
+    "exclusions": [
+      "No universal authority for every mental-health profession",
+      "Reviewer role does not establish a treating relationship"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Designated behavioral clinical leader or appropriate appeal reviewer.",
+    "condition": "Psychiatrist, psychologist and counselor credentials are not interchangeable; apply actual product and review requirements. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone.",
+    "sources": [
+      "R13",
+      "A02"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U07",
+    "role": "U07",
+    "primary_contact": "U01",
+    "request": "Question/referral/task and available relevant context for: Evaluate medication evidence and pharmacy-program requirements.",
+    "needs": [
+      "Medication request/history",
+      "Applicable pharmacy criteria"
+    ],
+    "response": [
+      "Medication review",
+      "Recommendation/decision and evidence requirements"
+    ],
+    "decisions": [
+      "Make pharmacy review decisions within program and professional authority"
+    ],
+    "exclusions": [
+      "Pharmacist license alone does not establish every product's denial authority",
+      "Cannot automatically alter the prescriber's order"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Prescriber for clinical clarification; designated physician/appeal reviewer when required.",
+    "condition": "Medication pathways can differ from medical-service prior authorization and Part C item/service appeals. R13 has both a wider professional-category list and medical-director final-responsibility language. Specific case review/signoff must be clarified, not inferred from either statement alone.",
+    "sources": [
+      "R10",
+      "B07",
+      "R13"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U08",
+    "role": "U08",
+    "primary_contact": "U01",
+    "request": "Question/referral/task and available relevant context for: Execute contracted review functions for the accountable organization.",
+    "needs": [
+      "Delegation scope and case",
+      "Applicable review policies"
+    ],
+    "response": [
+      "Delegated work product",
+      "Decision/status and oversight records"
+    ],
+    "decisions": [
+      "Only decisions explicitly within the delegation and professional scope"
+    ],
+    "exclusions": [
+      "Contract does not confer a clinical license",
+      "Delegation does not mean the vendor can ignore governing product requirements"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Delegating organization for limits or conflicts; relevant professional leader for clinical issues.",
+    "condition": "Functional wrapper, not an extra profession; identify both employer and actual licensed/intake role. In R13, AZPC explicitly retains no delegation to process, decide or notify appeals; the plan handles that review.",
+    "sources": [
+      "R13",
+      "R14",
+      "A02"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U09",
+    "role": "U09",
+    "primary_contact": "U04",
+    "request": "Question/referral/task and available relevant context for: Deliver the authorized outcome with accurate procedural information.",
+    "needs": [
+      "Authorized determination and rationale",
+      "Recipient and route information"
+    ],
+    "response": [
+      "Decision notice",
+      "Dispatch/communication record"
+    ],
+    "decisions": [
+      "Apply notice/communication workflow",
+      "Escalate mismatch or missing rationale"
+    ],
+    "exclusions": [
+      "Cannot change the substantive decision while formatting a letter",
+      "Notice sent is not evidence that services were delivered"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Decision author for inconsistency; appeal operations for procedural information; manager for failed delivery.",
+    "condition": "Contents, recipients and deadlines depend on the actual product/process; no universal time limit is encoded here.",
+    "sources": [
+      "R13",
+      "A02",
+      "R15"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U10",
+    "role": "U10",
+    "primary_contact": "P01",
+    "request": "Question/referral/task and available relevant context for: Help the patient navigate benefits, status and the right contact.",
+    "needs": [
+      "Patient question",
+      "Verified benefit/status information"
+    ],
+    "response": [
+      "Explanation/referral",
+      "Contact record and unresolved concern"
+    ],
+    "decisions": [
+      "Operational routing and permitted administrative assistance"
+    ],
+    "exclusions": [
+      "Cannot substitute a call-center explanation for an authorized medical determination",
+      "Cannot claim appointment as patient representative without authority"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "UM/appeal team for determination questions; benefits staff for enrollment; formal complaint route as appropriate.",
+    "condition": "Explanation may be limited; the determination and notice remain the source for procedural rights.",
+    "sources": [
+      "R16",
+      "R32",
+      "R35"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U11",
+    "role": "U11",
+    "primary_contact": "O01",
+    "request": "Question/referral/task and available relevant context for: Help requesting organizations navigate operational payer processes.",
+    "needs": [
+      "Provider inquiry/case identifier",
+      "Current case status"
+    ],
+    "response": [
+      "Status/process response",
+      "Routed follow-up"
+    ],
+    "decisions": [
+      "Operational guidance and routing within assigned scope"
+    ],
+    "exclusions": [
+      "Status advice is not a new clinical determination",
+      "Cannot override coverage solely during a service call"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "UM reviewer for clinical issue; benefits/delegation team for administrative discrepancy.",
+    "condition": "May be combined with other service functions; do not infer final decision power from access to the case.",
+    "sources": [
+      "R15",
+      "R32"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U12",
+    "role": "U12",
+    "primary_contact": "P04",
+    "request": "Question/referral/task and available relevant context for: Route a challenge through the correct dispute process.",
+    "needs": [
+      "Challenge and adverse notice",
+      "Standing/appointment and supporting record"
+    ],
+    "response": [
+      "Appeal/grievance case",
+      "Review assignment and communications"
+    ],
+    "decisions": [
+      "Procedural routing and requests for missing material within rules"
+    ],
+    "exclusions": [
+      "Cannot relabel an appeal to avoid review",
+      "Cannot supply independent physician judgment when not qualified"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Qualified reconsideration reviewer; procedural/legal lead for jurisdiction or standing dispute.",
+    "condition": "For MA, distinguish integrated plans and other applicable routes; grievance resolution is not necessarily coverage reversal.",
+    "sources": [
+      "R15",
+      "R20",
+      "A03"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U13",
+    "role": "U13",
+    "primary_contact": "U12",
+    "request": "Question/referral/task and available relevant context for: Make the applicable reconsideration judgment independently of the initial decision-making.",
+    "needs": [
+      "Appeal case and initial rationale",
+      "Relevant record and criteria"
+    ],
+    "response": [
+      "Reconsidered determination",
+      "Rationale and onward-review record when required"
+    ],
+    "decisions": [
+      "Affirm or reverse within reconsideration authority"
+    ],
+    "exclusions": [
+      "For MA 422.590(h), reviewer must not have participated in initial determination",
+      "Cannot treat higher job rank as adequate substitute for independence/expertise"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "MA independent entity for remaining adverse issues under applicable rules; designated route for other products.",
+    "condition": "MA medical-necessity denial reconsideration requires an appropriately expert physician; do not extend this exact requirement to all products and dispute types.",
+    "sources": [
+      "A03",
+      "A04",
+      "A16"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U14",
+    "role": "U14",
+    "primary_contact": "U13",
+    "request": "Question/referral/task and available relevant context for: Review remaining disputed issues through the CMS-contracted independent route.",
+    "needs": [
+      "Forwarded MA case and explanation",
+      "Relevant appeal evidence"
+    ],
+    "response": [
+      "Independent decision",
+      "Notice or remand/disposition where applicable"
+    ],
+    "decisions": [
+      "Issue an independent review decision within jurisdiction"
+    ],
+    "exclusions": [
+      "Not an internal payer supervisor",
+      "Decision does not confer clinical treatment consent or unlimited jurisdiction"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Further appeal level when permitted; administrative process for incomplete record or jurisdiction issues.",
+    "condition": "This is MA IRE review; do not label a commercial IRO or an Original Medicare contractor as the same route.",
+    "sources": [
+      "A04",
+      "A11",
+      "A16"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U15",
+    "role": "U15",
+    "primary_contact": "P04",
+    "request": "Question/referral/task and available relevant context for: Administer intake and record movement for the specified external-review route.",
+    "needs": [
+      "External-review request/case",
+      "Route and standing information"
+    ],
+    "response": [
+      "Administrative case record",
+      "Assigned review and procedural communication"
+    ],
+    "decisions": [
+      "Procedural actions within the governing process"
+    ],
+    "exclusions": [
+      "Administrative case handling is not clinical review judgment",
+      "Cannot assume MA and commercial routes use identical criteria"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Review entity for merits; route administrator for eligibility/jurisdiction disputes.",
+    "condition": "Exact administrator and permissible actions must be identified from product and notice.",
+    "sources": [
+      "R17",
+      "A04",
+      "A12"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U16",
+    "role": "U16",
+    "primary_contact": "P01",
+    "request": "Question/referral/task and available relevant context for: Help people understand rights and find the appropriate assistance channel.",
+    "needs": [
+      "Patient concern and relevant notice",
+      "Program eligibility/context"
+    ],
+    "response": [
+      "Explanation/referral",
+      "Assistance record"
+    ],
+    "decisions": [
+      "Advice and routing within the assistance program"
+    ],
+    "exclusions": [
+      "Not automatically a clinical reviewer, court or appointed representative",
+      "Cannot promise a coverage reversal"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Correct insurer, external reviewer or oversight office according to the issue.",
+    "condition": "SHIP is Medicare-specific; ombudsman and consumer-assistance mandates differ and are not interchangeable.",
+    "sources": [
+      "R35",
+      "R20"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U17",
+    "role": "U17",
+    "primary_contact": "U03",
+    "request": "Question/referral/task and available relevant context for: Manage review operations, staffing and escalation.",
+    "needs": [
+      "Case queues and performance issues",
+      "Review/staffing constraints"
+    ],
+    "response": [
+      "Assignments and process resolutions",
+      "Escalation and oversight reports"
+    ],
+    "decisions": [
+      "Allocate work and route escalation within delegated management authority"
+    ],
+    "exclusions": [
+      "Management rank alone cannot replace required licensed or independent review",
+      "Cannot override external decision simply as supervisor"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Medical leadership for clinical authority; compliance for product rules; qualified appeal process for contested outcome.",
+    "condition": "UCSD documents supervision of nurse case managers/referral coordinators in its own example; no universal payer organization chart is asserted.",
+    "sources": [
+      "R14",
+      "B22",
+      "A03"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-U18",
+    "role": "U18",
+    "primary_contact": "U15",
+    "request": "Question/referral/task and available relevant context for: Review an eligible dispute under the applicable external-review process.",
+    "needs": [
+      "Eligible external-review case",
+      "Denial and clinical/benefit evidence"
+    ],
+    "response": [
+      "External-review outcome",
+      "Result communicated for implementation"
+    ],
+    "decisions": [
+      "Uphold or reverse within the identified external-review jurisdiction"
+    ],
+    "exclusions": [
+      "Not the MA IRE route",
+      "Do not assume every plan or denial is eligible or that a reviewer controls treatment consent"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Applicable process administrator for eligibility/filing issues; follow actual notice for further permissible remedies.",
+    "condition": "HealthCare.gov describes required insurer acceptance in the process it covers; determine state/federal/plan route before applying it.",
+    "sources": [
+      "A12",
+      "R17"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M01",
+    "role": "M01",
+    "primary_contact": "C02",
+    "request": "Question/referral/task and available relevant context for: Coordinate a patient-centered plan and track unresolved needs.",
+    "needs": [
+      "Patient preferences and assessment",
+      "Clinical plan and service responses"
+    ],
+    "response": [
+      "Shared coordination plan",
+      "Assigned follow-up and unresolved-need record"
+    ],
+    "decisions": [
+      "Prioritize coordination tasks and propose plan changes",
+      "Make professional decisions only within underlying qualifications"
+    ],
+    "exclusions": [
+      "Title alone is not prescribing authority",
+      "A written referral is not proof a service was received"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Treating clinician for clinical changes; supervisor for resources; appropriate specialist for needs beyond qualifications.",
+    "condition": "Credential may be nursing, social work or another background; separate coordination authority from that credential. Published staffing examples differ; this is not evidence of national role prevalence.",
+    "sources": [
+      "R22",
+      "R25",
+      "R32",
+      "R24"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M02",
+    "role": "M02",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Assess psychosocial and practical support needs and connect appropriate resources.",
+    "needs": [
+      "Patient goals and social assessment",
+      "Available resources"
+    ],
+    "response": [
+      "Psychosocial/resource assessment",
+      "Referral and follow-up"
+    ],
+    "decisions": [
+      "Choose appropriate social-service referrals within role",
+      "Identify need for licensed clinical or protection support"
+    ],
+    "exclusions": [
+      "Do not infer authority to diagnose or provide psychotherapy without required clinical qualification",
+      "Cannot decide insurance coverage"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Clinical social worker or clinician for clinical treatment; safeguarding channel for applicable protection concerns.",
+    "condition": "Job titles and licensure differ; distinguish supportive casework from licensed clinical treatment. UCLA describes a pre-licensure Clinical Social Worker II assignment; clinical job wording does not establish independent clinical licensure.",
+    "sources": [
+      "B09",
+      "R25",
+      "R32"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M03",
+    "role": "M03",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Provide qualified clinical social-work assessment and treatment alongside coordination.",
+    "needs": [
+      "Clinical/social history and patient goals",
+      "Relevant referral"
+    ],
+    "response": [
+      "Clinical assessment/intervention plan",
+      "Progress and coordination communication"
+    ],
+    "decisions": [
+      "Clinical social-work assessment/treatment within license",
+      "Appropriate resource/referral decisions"
+    ],
+    "exclusions": [
+      "Not automatically medication-prescribing authority",
+      "Clinical license does not grant payer appeal authority"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Psychiatrist or other clinician for medication/medical needs; applicable professional supervisor for scope issues.",
+    "condition": "Exact clinical activities and independent practice depend on state license and setting, not a national generic job description.",
+    "sources": [
+      "B09",
+      "R25"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M04",
+    "role": "M04",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Support safe and effective medication use.",
+    "needs": [
+      "Prescription and medication history",
+      "Relevant clinical information"
+    ],
+    "response": [
+      "Verified dispensing/counseling record",
+      "Medication recommendation or clarification request"
+    ],
+    "decisions": [
+      "Make pharmacy professional judgments",
+      "Modify/initiate therapy only when separately authorized"
+    ],
+    "exclusions": [
+      "Cannot assume unrestricted prescribing",
+      "A clinical recommendation does not itself change payer coverage"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Prescriber for unresolved order/therapy issues; pharmacy/payer review for access barriers.",
+    "condition": "Professional scope, collaborative arrangements and specific state permissions must be identified for therapy changes. Washington CDTA is one documented pathway for specified therapy activity; no universal requirement for a new physician instruction on each authorized action is inferred.",
+    "sources": [
+      "B07",
+      "R10",
+      "R24",
+      "V13"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M05",
+    "role": "M05",
+    "primary_contact": "M04",
+    "request": "Question/referral/task and available relevant context for: Support medication operations and access logistics.",
+    "needs": [
+      "Prescription and patient/benefit details",
+      "Pharmacist/prescriber instructions"
+    ],
+    "response": [
+      "Processed access/refill task",
+      "Status and clinical clarification request"
+    ],
+    "decisions": [
+      "Administrative processing and permitted technical tasks"
+    ],
+    "exclusions": [
+      "Does not replace pharmacist clinical verification",
+      "Cannot invent clinical appeal rationale or independently change therapy"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Pharmacist for medication questions; prescriber for clinical support; financial assistance contact for access costs.",
+    "condition": "Technician permissions vary; medication-access work can be an advanced assignment but remains distinct from pharmacist judgment.",
+    "sources": [
+      "B08",
+      "R09"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M06",
+    "role": "M06",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Provide medical specialty care for psychiatric needs.",
+    "needs": [
+      "Patient history and assessment",
+      "Relevant medical/behavioral information"
+    ],
+    "response": [
+      "Psychiatric clinical plan",
+      "Orders and progress communication"
+    ],
+    "decisions": [
+      "Medical/psychiatric diagnosis and treatment within physician privileges"
+    ],
+    "exclusions": [
+      "Not automatically the insurer behavioral reviewer",
+      "Cannot bypass applicable consent or coverage process"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Relevant clinical/emergency pathway for acute concern; care manager for access coordination.",
+    "condition": "Treating psychiatrist and coverage reviewer must be identified separately even where both are physicians.",
+    "sources": [
+      "B01",
+      "B11",
+      "R24"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M07",
+    "role": "M07",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Provide qualified psychological assessment and treatment.",
+    "needs": [
+      "Patient history/goals",
+      "Relevant referral and assessment information"
+    ],
+    "response": [
+      "Psychological assessment/treatment plan",
+      "Progress or referral communication"
+    ],
+    "decisions": [
+      "Psychological assessment and treatment within license"
+    ],
+    "exclusions": [
+      "Do not assume either universal prescribing permission or an absolute national ban",
+      "Does not determine insurance coverage unless separately appointed"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Medical/prescribing clinician when needed; relevant professional lead for scope questions.",
+    "condition": "Prescribing and specialty testing permissions are jurisdiction- and qualification-specific. New Mexico documents additional conditional/full prescribing certification; ordinary psychology licensure alone does not establish it.",
+    "sources": [
+      "B10",
+      "R24",
+      "V04"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M08",
+    "role": "M08",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Provide the counseling and recovery support permitted by the actual qualification.",
+    "needs": [
+      "Patient goals and counseling assessment",
+      "Relevant referral/history"
+    ],
+    "response": [
+      "Counseling plan and progress",
+      "Coordination/referral"
+    ],
+    "decisions": [
+      "Counseling and referral decisions within credential"
+    ],
+    "exclusions": [
+      "Not automatically a psychiatrist, psychologist or prescribing clinician",
+      "Cannot assume all counselor titles have the same license"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Appropriate medical/behavioral clinician for needs outside scope; protection/emergency route when indicated.",
+    "condition": "Mental-health, addiction, marriage/family and peer credentials have different requirements; establish the specific credential before assigning clinical authority.",
+    "sources": [
+      "B11"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M09",
+    "role": "M09",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Connect people and communities with accessible health and social support.",
+    "needs": [
+      "Patient priorities and community context",
+      "Resource information"
+    ],
+    "response": [
+      "Barrier/resource findings",
+      "Navigation and follow-up record"
+    ],
+    "decisions": [
+      "Choose navigation actions within program",
+      "Raise unmet need"
+    ],
+    "exclusions": [
+      "Not a prescriber or coverage reviewer by title",
+      "Cannot assume patient participation from outreach alone"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Care manager for clinical coordination; relevant service/clinical professional for unmet need.",
+    "condition": "Community trust does not substitute for clinical licensure; program training and role determine permitted services.",
+    "sources": [
+      "B12",
+      "R29"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M10",
+    "role": "M10",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Help a person traverse appointments, referrals and practical access barriers.",
+    "needs": [
+      "Patient access needs",
+      "Referral and service availability"
+    ],
+    "response": [
+      "Navigation plan",
+      "Connection/status and unresolved barriers"
+    ],
+    "decisions": [
+      "Navigation/routing and follow-up actions"
+    ],
+    "exclusions": [
+      "Title does not establish clinical license",
+      "Cannot guarantee service acceptance or coverage"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Lead coordinator or service owner for failed connection; qualified clinician for clinical questions.",
+    "condition": "May be a nurse, social worker, CHW or other trained worker; apply the actual credentials in addition to navigation role.",
+    "sources": [
+      "R28",
+      "B12"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M11",
+    "role": "M11",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Help members connect with resources and coordinate practical benefit access.",
+    "needs": [
+      "Assigned member needs",
+      "Resource/benefit information"
+    ],
+    "response": [
+      "Resource connection/status",
+      "Escalated unresolved need"
+    ],
+    "decisions": [
+      "Resource navigation within assigned program"
+    ],
+    "exclusions": [
+      "Not automatically clinical case management authority",
+      "Cannot substitute guide judgment for licensed clinical assessment"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Clinical case manager for clinical concerns; supervisor for unresolved resources.",
+    "condition": "Partnership HealthPlan documents this title as an organizational example; do not impose it on every care program.",
+    "sources": [
+      "R32",
+      "R29"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M12",
+    "role": "M12",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Assess and support nutrition-related needs within qualification.",
+    "needs": [
+      "Clinical/nutrition history",
+      "Patient goals and practical constraints"
+    ],
+    "response": [
+      "Nutrition assessment/plan",
+      "Response and recommendations"
+    ],
+    "decisions": [
+      "Nutrition assessment/interventions within authorized scope"
+    ],
+    "exclusions": [
+      "Do not equate every nutritionist title with an RD credential",
+      "Cannot independently change unrelated medical treatment or coverage"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Responsible clinician for medical concerns; care manager for affordability/resource barriers.",
+    "condition": "Credential, state rules, referral/order and facility privileges determine specific clinical permissions.",
+    "sources": [
+      "B14",
+      "R31"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M13",
+    "role": "M13",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Help people understand and implement relevant health-management skills.",
+    "needs": [
+      "Learning goals and approved plan",
+      "Patient understanding/preferences"
+    ],
+    "response": [
+      "Education/coaching record",
+      "Learning needs and follow-up"
+    ],
+    "decisions": [
+      "Select educational approach within program"
+    ],
+    "exclusions": [
+      "Education alone is not prescribing or medical diagnosis",
+      "Cannot assume a coaching title confers clinical licensure"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Clinical team for treatment questions; care manager for barriers beyond education.",
+    "condition": "A licensed clinician may also provide education; distinguish the educational function from any separate clinical authority.",
+    "sources": [
+      "B13"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M14",
+    "role": "M14",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Assess and improve movement/function within physical-therapy practice.",
+    "needs": [
+      "History/referral where required",
+      "Functional assessment and goals"
+    ],
+    "response": [
+      "Therapy plan/progress",
+      "Functional recommendations"
+    ],
+    "decisions": [
+      "Physical-therapy assessment and interventions within scope"
+    ],
+    "exclusions": [
+      "Does not unilaterally decide insurance coverage",
+      "Referral/direct-access rules and other medical needs remain distinct"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Referring/responsible clinician for medical concerns; coordinator for access or equipment.",
+    "condition": "State/direct-access, order and payer requirements can differ; do not infer one universal physician-supervision hierarchy. No particular state direct-access rule was established in this audit; attempted V20 was unavailable and is not used as proof.",
+    "sources": [
+      "B15",
+      "R30"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M15",
+    "role": "M15",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Support safe performance of daily activities and relevant adaptations.",
+    "needs": [
+      "Functional history and goals",
+      "Relevant environment/service information"
+    ],
+    "response": [
+      "OT plan/progress",
+      "Adaptation/equipment recommendations"
+    ],
+    "decisions": [
+      "Occupational-therapy assessment and interventions within scope"
+    ],
+    "exclusions": [
+      "Equipment recommendation is not benefit authorization",
+      "Cannot substitute for medical treatment outside OT scope"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Clinical team for medical issues; service/equipment coordinator for implementation.",
+    "condition": "Order, setting and scope requirements must be identified for the actual service.",
+    "sources": [
+      "B16",
+      "R30"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M16",
+    "role": "M16",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Assess and treat relevant communication or swallowing difficulties.",
+    "needs": [
+      "Clinical history/referral",
+      "Functional assessment and goals"
+    ],
+    "response": [
+      "Assessment and therapy plan",
+      "Recommendations and progress"
+    ],
+    "decisions": [
+      "Speech-language/swallowing assessment and intervention within qualification"
+    ],
+    "exclusions": [
+      "Not an interpreter by virtue of speech training",
+      "Cannot assume authority over unrelated medical or coverage decisions"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Responsible clinical team for medical concerns; communication-access service for language interpretation.",
+    "condition": "Language access and speech/swallowing impairment are different needs and may require different professionals.",
+    "sources": [
+      "B17",
+      "R30"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M17",
+    "role": "M17",
+    "primary_contact": "C01",
+    "request": "Question/referral/task and available relevant context for: Provide assigned cardiopulmonary assessment, treatment and education.",
+    "needs": [
+      "Relevant clinical order/plan",
+      "Respiratory assessment and equipment needs"
+    ],
+    "response": [
+      "Respiratory treatment/monitoring record",
+      "Education and clinical concern report"
+    ],
+    "decisions": [
+      "Respiratory-care decisions within license/protocol/order"
+    ],
+    "exclusions": [
+      "Cannot infer unrestricted prescribing or coverage authority",
+      "Equipment setup does not prove patient can use it safely"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Responsible clinician for deterioration or order issues; service team for equipment problems.",
+    "condition": "Specific protocols and privileges determine independent adjustments; state and setting must be checked.",
+    "sources": [
+      "B18",
+      "R33"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M18",
+    "role": "M18",
+    "primary_contact": "C01",
+    "request": "Question/referral/task and available relevant context for: Coordinate a feasible transition and transfer necessary information.",
+    "needs": [
+      "Clinical course/goals",
+      "Functional and social needs",
+      "Receiving-service availability"
+    ],
+    "response": [
+      "Discharge/transition plan",
+      "Transfer record and unmet needs"
+    ],
+    "decisions": [
+      "Coordinate and revise transition arrangements within role"
+    ],
+    "exclusions": [
+      "Does not independently establish medical discharge readiness or force an unsafe/unaccepted service",
+      "A referral is not acceptance"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Responsible clinician for readiness; qualified supervisor for plan barriers; patient rights process for disputes.",
+    "condition": "Hospital 482.43 permits development by or under RN, social worker or other qualified personnel; do not impose RN-only staffing nationally.",
+    "sources": [
+      "A06",
+      "R25",
+      "R27"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M19",
+    "role": "M19",
+    "primary_contact": "M18",
+    "request": "Question/referral/task and available relevant context for: Coordinate acceptance and services for a home-health plan.",
+    "needs": [
+      "Referral and clinical needs",
+      "Allowed-practitioner plan/orders"
+    ],
+    "response": [
+      "Acceptance/service arrangements",
+      "Coordinated plan and status/change report"
+    ],
+    "decisions": [
+      "Accept/coordinate services within agency authority",
+      "Seek authorized plan changes"
+    ],
+    "exclusions": [
+      "Not unrestricted authority to rewrite prescriber orders",
+      "Acceptance is not proof every ordered visit occurred"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Responsible physician/allowed practitioner for order changes; agency leader for unmet capacity.",
+    "condition": "Home-health rules apply to the specified setting; signatory and verbal-order acceptance requirements remain scoped.",
+    "sources": [
+      "A07",
+      "R30"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M20",
+    "role": "M20",
+    "primary_contact": "M18",
+    "request": "Question/referral/task and available relevant context for: Coordinate receipt of the patient and information at the receiving facility.",
+    "needs": [
+      "Transition referral and clinical information",
+      "Facility capability/availability"
+    ],
+    "response": [
+      "Acceptance/transfer response",
+      "Receiving plan and unresolved issues"
+    ],
+    "decisions": [
+      "Operational acceptance within facility authority",
+      "Route clinical decisions to responsible practitioners"
+    ],
+    "exclusions": [
+      "Cannot assume transfer acceptance means benefit approval or all clinical orders authenticated",
+      "Not a universal discharge decision-maker"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Receiving clinical lead for clinical orders; sending transition team for missing information.",
+    "condition": "This is a receiving coordination function; profession, orders and facility rules determine actual treatment authority.",
+    "sources": [
+      "A06",
+      "R25",
+      "R27"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M21",
+    "role": "M21",
+    "primary_contact": "M19",
+    "request": "Question/referral/task and available relevant context for: Provide assigned personal support and report relevant changes.",
+    "needs": [
+      "Assigned plan and instructions",
+      "Patient needs/preferences"
+    ],
+    "response": [
+      "Completed-task record",
+      "Observed changes and unmet-support report"
+    ],
+    "decisions": [
+      "Carry out permitted assigned support tasks",
+      "Report inability or change"
+    ],
+    "exclusions": [
+      "No automatic diagnosis/prescribing authority",
+      "Home-health aide and other personal-care permissions can differ"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Supervising professional/agency for clinical concern or task outside training.",
+    "condition": "Health-related tasks depend on state, training and supervision; personal support is not equivalent to skilled nursing.",
+    "sources": [
+      "B19",
+      "R30"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M22",
+    "role": "M22",
+    "primary_contact": "M10",
+    "request": "Question/referral/task and available relevant context for: Deliver the assigned practical support or resource assessment.",
+    "needs": [
+      "Appropriate referral and agreed information",
+      "Program eligibility/capacity"
+    ],
+    "response": [
+      "Service acceptance/refusal or assistance record",
+      "Remaining barrier"
+    ],
+    "decisions": [
+      "Resource/program decisions only within the organization's authority"
+    ],
+    "exclusions": [
+      "Not clinical treatment or insurer coverage authority",
+      "A resource directory entry is not a guaranteed available service"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Referring coordinator for alternatives; program supervisor for eligibility or capacity dispute.",
+    "condition": "Broad service-partner family, not a single licensed occupation; record the actual agency and job before assigning permissions.",
+    "sources": [
+      "R22",
+      "R28",
+      "R29"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M23",
+    "role": "M23",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Arrange the practical transport needed for an agreed journey.",
+    "needs": [
+      "Appointment/trip details",
+      "Relevant accessibility requirements"
+    ],
+    "response": [
+      "Trip booking/status",
+      "Unresolved travel barrier"
+    ],
+    "decisions": [
+      "Operational booking/routing within service rules"
+    ],
+    "exclusions": [
+      "Cannot decide clinical transport appropriateness without qualified input",
+      "Booking is not completed attendance"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Clinical team for medical transport requirements; referring coordinator for failed arrangement.",
+    "condition": "Functional synthesis from access-barrier and transport-support evidence; exact broker rules and payment route are not established here.",
+    "sources": [
+      "R28",
+      "B19",
+      "V05",
+      "V14"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M24",
+    "role": "M24",
+    "primary_contact": "M23",
+    "request": "Question/referral/task and available relevant context for: Deliver the arranged transport within the assigned service.",
+    "needs": [
+      "Confirmed trip and access details",
+      "Service instructions"
+    ],
+    "response": [
+      "Pickup/completion or failure status",
+      "Operational concern"
+    ],
+    "decisions": [
+      "Safe operational execution within driver/service qualification"
+    ],
+    "exclusions": [
+      "Not emergency clinical triage by default",
+      "Cannot change treatment destination or disclose records beyond authorized need"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Dispatcher for trip issues; appropriate emergency service if an actual emergency arises.",
+    "condition": "Operational synthesis; vehicle, attendant and medical-transport qualification must be determined for the actual journey.",
+    "sources": [
+      "R28",
+      "B19",
+      "A10",
+      "V05",
+      "V14"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M25",
+    "role": "M25",
+    "primary_contact": "C01",
+    "request": "Question/referral/task and available relevant context for: Arrange and document the ordered equipment service.",
+    "needs": [
+      "Order and equipment needs",
+      "Relevant authorization/service requirements"
+    ],
+    "response": [
+      "Fulfillment/fitting/service record",
+      "Missing-order or service problem"
+    ],
+    "decisions": [
+      "Supplier operational actions and qualified service tasks"
+    ],
+    "exclusions": [
+      "Cannot substitute unsupported equipment/order or assume medical necessity from delivery",
+      "Supplier role is not prescriber authority"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Ordering practitioner for clinical/order question; access team for coverage; supervisor for service problem.",
+    "condition": "The CMS power-mobility example has specific requirements; do not apply those mechanically to all equipment.",
+    "sources": [
+      "R11",
+      "R30"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M26",
+    "role": "M26",
+    "primary_contact": "C01",
+    "request": "Question/referral/task and available relevant context for: Arrange a service-specific handoff and readiness check.",
+    "needs": [
+      "Clinical order and referral",
+      "Required service/coverage information"
+    ],
+    "response": [
+      "Acceptance/booking response",
+      "Missing requirements or completed handoff"
+    ],
+    "decisions": [
+      "Scheduling/intake actions within service authority"
+    ],
+    "exclusions": [
+      "Coordinator title does not grant infusion clinical credentials",
+      "Cannot treat booking as approval, consent or completed administration"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Service clinician for treatment questions; referring/access team for missing documentation.",
+    "condition": "Operational service-coordination model; exact service procedure and clinical signoffs require the actual provider protocol.",
+    "sources": [
+      "A06",
+      "R22",
+      "R04"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M27",
+    "role": "M27",
+    "primary_contact": "C01",
+    "request": "Question/referral/task and available relevant context for: Contribute qualified serious-illness symptom and goals support.",
+    "needs": [
+      "Clinical situation and patient goals",
+      "Treating-team information"
+    ],
+    "response": [
+      "Serious-illness assessment/recommendation",
+      "Coordinated support plan"
+    ],
+    "decisions": [
+      "Clinical/support decisions within underlying profession and assigned responsibility"
+    ],
+    "exclusions": [
+      "Palliative care is not automatically hospice enrollment",
+      "Team label does not give every member physician authority"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Treating/specialty clinician for medical decisions; relevant psychosocial/spiritual professional for needs.",
+    "condition": "A team function comprising different professions, each retaining its own scope; identify the actual clinician for an order.",
+    "sources": [
+      "R31",
+      "A01"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M28",
+    "role": "M28",
+    "primary_contact": "C06",
+    "request": "Question/referral/task and available relevant context for: Coordinate hospice care while distinguishing interdisciplinary, RN coordination, attending and certifying/admission functions.",
+    "needs": [
+      "Hospice referral/context and goals",
+      "Professional assessments"
+    ],
+    "response": [
+      "Interdisciplinary care plan",
+      "Patient/family support and change communication"
+    ],
+    "decisions": [
+      "Team/attending decisions only within the applicable hospice roles and requirements"
+    ],
+    "exclusions": [
+      "Not interchangeable with general palliative care",
+      "Cannot infer each team member's prescribing or certification authority"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Designated hospice clinical/attending leader for clinical issues; program administration for service eligibility questions.",
+    "condition": "V11, V16 and V17 are the official October 2025 codification, not a complete current-2026 update check. They distinguish IDG/designated RN coordination, physician certification and admission. A patient-designated attending may have a different allowed credential; that does not grant every attending terminal-illness certification authority.",
+    "sources": [
+      "A08",
+      "R34",
+      "V11",
+      "V16",
+      "V17"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M29",
+    "role": "M29",
+    "primary_contact": "M27",
+    "request": "Question/referral/task and available relevant context for: Offer desired spiritual or existential support.",
+    "needs": [
+      "Patient wishes and relevant referral",
+      "Agreed context"
+    ],
+    "response": [
+      "Support provided",
+      "Relevant agreed team communication"
+    ],
+    "decisions": [
+      "Spiritual-support approach within professional role and patient preference"
+    ],
+    "exclusions": [
+      "Cannot determine clinical treatment or insurance coverage",
+      "Spiritual care must not be assumed to replace consent or medical advice"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Clinical or psychosocial team for needs beyond spiritual role.",
+    "condition": "Participation is needs/preference-dependent; protect the distinction between support and clinical decision authority.",
+    "sources": [
+      "R27",
+      "R31",
+      "A08"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M30",
+    "role": "M30",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Keep assigned coordination logistics and communications organized.",
+    "needs": [
+      "Assigned coordination plan",
+      "Contacts and service responses"
+    ],
+    "response": [
+      "Schedules/status updates",
+      "Routed unresolved items"
+    ],
+    "decisions": [
+      "Administrative work-routing and scheduling decisions"
+    ],
+    "exclusions": [
+      "Cannot independently rewrite clinical plans or determine coverage",
+      "Closing a task administratively is not proof of service completion"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Lead care manager for unmet need; clinician for clinical questions; supervisor for workload.",
+    "condition": "Administrative coordinator and licensed case manager may be distinct posts; do not infer credentials from title.",
+    "sources": [
+      "R26",
+      "R32"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-M31",
+    "role": "M31",
+    "primary_contact": "M02",
+    "request": "Question/referral/task and available relevant context for: Handle a referred protection concern within the relevant service's mandate.",
+    "needs": [
+      "Specific concern/referral",
+      "Appropriate facts and authority"
+    ],
+    "response": [
+      "Protection-process response",
+      "Appropriate service communication"
+    ],
+    "decisions": [
+      "Actions permitted by actual protection-service mandate and professional authority"
+    ],
+    "exclusions": [
+      "No universal investigation/removal authority is assigned by this generic label",
+      "Not every concern permits unrestricted record sharing"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Relevant designated protection authority or clinical/emergency route according to the actual situation.",
+    "condition": "State reporting law and actual agency mandate are unresolved case variables; this card does not invent national reporting thresholds. The cited 2024 APS fact sheet has a 2028 full-compliance date; it does not prove uniform present implementation in every state or child-protection setting.",
+    "sources": [
+      "R25",
+      "A09",
+      "A10",
+      "V12"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G01",
+    "role": "G01",
+    "primary_contact": "C01",
+    "request": "Question/referral/task and available relevant context for: Provide assigned clinical-program leadership in the provider organization.",
+    "needs": [
+      "Clinical quality/escalation findings",
+      "Applicable professional and organizational requirements"
+    ],
+    "response": [
+      "Clinical-program policy/escalation response",
+      "Improvement direction"
+    ],
+    "decisions": [
+      "Clinical-program governance within organizational mandate"
+    ],
+    "exclusions": [
+      "Title alone does not establish final authority over all individual treatment",
+      "Cannot supersede license restrictions or automatically decide insurer benefits"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Appropriate medical-staff/governing process for unresolved clinical governance; legal/privacy channel for those issues.",
+    "condition": "Actual reporting lines, medical-staff authority and privileges require local bylaws/organization chart; no universal CMO-boss graph is asserted.",
+    "sources": [
+      "B22",
+      "R14",
+      "A15"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G02",
+    "role": "G02",
+    "primary_contact": "U17",
+    "request": "Question/referral/task and available relevant context for: Lead the assigned payer clinical review program.",
+    "needs": [
+      "Review quality/escalation reports",
+      "Coverage/policy requirements"
+    ],
+    "response": [
+      "Clinical-program direction",
+      "Policy-governance input"
+    ],
+    "decisions": [
+      "Program leadership and any separately delegated case decisions"
+    ],
+    "exclusions": [
+      "Leadership is not a substitute for independent appeal review",
+      "Cannot unilaterally override governing coverage standards"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "UM committee for criteria governance; qualified appeal route for case challenge; compliance for legal requirements.",
+    "condition": "In MA the UM committee is led by the plan medical director; governance and case-review roles are not the same authority edge.",
+    "sources": [
+      "A05",
+      "A02",
+      "A03",
+      "R18"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G03",
+    "role": "G03",
+    "primary_contact": "G08",
+    "request": "Question/referral/task and available relevant context for: Review and approve the program's applicable utilization policies.",
+    "needs": [
+      "Evidence and coverage rules",
+      "Policy proposals and quality feedback"
+    ],
+    "response": [
+      "Approved/revised policy",
+      "Governance rationale"
+    ],
+    "decisions": [
+      "Approve/revise policy within governing product constraints"
+    ],
+    "exclusions": [
+      "Policy committee is not necessarily the tribunal for each case",
+      "Cannot approve criteria contrary to governing coverage requirements"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Applicable regulatory/clinical leadership for conflicting requirements; case appeal route for individual dispute.",
+    "condition": "MA committee requirements are explicit in A05; do not assume identical statutory composition for all insurance products.",
+    "sources": [
+      "A05",
+      "A17",
+      "R12",
+      "R18"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G04",
+    "role": "G04",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Lead care-coordination operations and service improvement.",
+    "needs": [
+      "Program metrics and escalations",
+      "Resource and policy requirements"
+    ],
+    "response": [
+      "Resource/process direction",
+      "Program evaluation and escalation response"
+    ],
+    "decisions": [
+      "Program staffing/process decisions within mandate"
+    ],
+    "exclusions": [
+      "Cannot convert managerial approval into clinical consent or license",
+      "Does not replace treating-clinician or payer authority"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Relevant clinical leader for clinical questions; organization leadership for resources; regulatory staff for compliance.",
+    "condition": "Partnership documents several management levels; exact titles and reporting relationships elsewhere remain local.",
+    "sources": [
+      "R32",
+      "B22"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G05",
+    "role": "G05",
+    "primary_contact": "M01",
+    "request": "Question/referral/task and available relevant context for: Supervise assigned staff and support complex case coordination.",
+    "needs": [
+      "Case-manager escalation",
+      "Team workload and quality issues"
+    ],
+    "response": [
+      "Supervisory guidance and case review",
+      "Escalation to appropriate professional"
+    ],
+    "decisions": [
+      "Assigned supervisory and professional decisions within license"
+    ],
+    "exclusions": [
+      "Supervisor title does not permit activities beyond license",
+      "A nonclinical supervisor cannot supply missing clinical authority"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "CM manager or relevant clinician for unresolved issue; discipline-specific supervisor for licensing questions.",
+    "condition": "R32 distinguishes RN, LVN, nonclinical and social-work supervisors; those qualifications must not be collapsed into one scope.",
+    "sources": [
+      "R32",
+      "A13",
+      "A14"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G06",
+    "role": "G06",
+    "primary_contact": "G04",
+    "request": "Question/referral/task and available relevant context for: Identify and help correct recurring process/quality problems.",
+    "needs": [
+      "Authorized operational/clinical data",
+      "Audit criteria"
+    ],
+    "response": [
+      "Quality findings",
+      "Improvement recommendations and follow-up"
+    ],
+    "decisions": [
+      "Classify audit findings within mandate",
+      "Recommend corrective actions"
+    ],
+    "exclusions": [
+      "Audit finding alone is not a new patient diagnosis or coverage decision",
+      "Cannot edit underlying evidence to improve metrics"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Responsible clinical/operational leader; compliance/privacy channels for their respective issues.",
+    "condition": "Audit access and methods must be authorized; observational findings are not automatically causal evidence.",
+    "sources": [
+      "R14",
+      "R32",
+      "B21"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G07",
+    "role": "G07",
+    "primary_contact": "G04",
+    "request": "Question/referral/task and available relevant context for: Develop and deliver the assigned workforce training.",
+    "needs": [
+      "Approved policies and tools",
+      "Identified learning gaps"
+    ],
+    "response": [
+      "Training materials and learning record",
+      "Escalated policy question"
+    ],
+    "decisions": [
+      "Educational methods and training evaluation within assignment"
+    ],
+    "exclusions": [
+      "Training does not expand professional license or delegate prohibited activity",
+      "Cannot treat attendance as independent credentialing"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Policy owner for ambiguity; professional supervisor for competence/scope concerns.",
+    "condition": "A clinical educator may hold a clinical license, but its separate practice permissions are not supplied by the training title.",
+    "sources": [
+      "R32",
+      "B13",
+      "A13"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G08",
+    "role": "G08",
+    "primary_contact": "G03",
+    "request": "Question/referral/task and available relevant context for: Maintain traceable policy analysis and draft operational requirements.",
+    "needs": [
+      "Requirements/evidence",
+      "Operational feedback and policy versions"
+    ],
+    "response": [
+      "Policy analysis/draft",
+      "Change-impact and approval request"
+    ],
+    "decisions": [
+      "Draft and recommend revisions",
+      "Approve only if separately designated"
+    ],
+    "exclusions": [
+      "Analysis is not enactment or unrestricted clinical authority",
+      "Draft policy is not automatically effective policy"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Designated committee/owner for approval; compliance/legal for interpretation uncertainty.",
+    "condition": "Clinical adviser and nonclinical analyst may be separate professions; any clinical decision requires the actual credential and assignment.",
+    "sources": [
+      "R32",
+      "A05",
+      "A17"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G09",
+    "role": "G09",
+    "primary_contact": "G04",
+    "request": "Question/referral/task and available relevant context for: Support adherence to applicable program and organizational requirements.",
+    "needs": [
+      "Applicable rules and oversight findings",
+      "Operational concerns"
+    ],
+    "response": [
+      "Compliance guidance/action plan",
+      "Escalated interpretive issue"
+    ],
+    "decisions": [
+      "Compliance recommendations and assigned administrative actions"
+    ],
+    "exclusions": [
+      "Cannot independently authorize treatment or assume an adjudicator's power",
+      "Legal obligations are not created merely by internal interpretation"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Designated legal/regulatory authority or leadership according to the issue.",
+    "condition": "Actual legal interpretation and enforcement authority depend on role; local compliance staff are not the regulator.",
+    "sources": [
+      "R14",
+      "R32",
+      "B22"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G10",
+    "role": "G10",
+    "primary_contact": "O06",
+    "request": "Question/referral/task and available relevant context for: Resolve assigned health-information access and privacy questions.",
+    "needs": [
+      "Access/disclosure request",
+      "Purpose and relevant authority facts"
+    ],
+    "response": [
+      "Access/disclosure guidance",
+      "Privacy escalation/action record"
+    ],
+    "decisions": [
+      "Privacy/access determinations within mandate and governing law"
+    ],
+    "exclusions": [
+      "Cannot decide treatment or benefit coverage merely by controlling record access",
+      "No blanket claim that all sharing needs authorization or that all treatment data are unrestricted"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Appropriate legal/regulatory process for unresolved law or conflicting rights; record author for clinical accuracy.",
+    "condition": "Treatment, payment, patient access, representative authority and specially protected data can invoke different rules.",
+    "sources": [
+      "R07",
+      "R32",
+      "A09",
+      "A10",
+      "V15"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G11",
+    "role": "G11",
+    "primary_contact": "G04",
+    "request": "Question/referral/task and available relevant context for: Produce accurate authorized information about service and program performance.",
+    "needs": [
+      "Authorized data and measure definitions",
+      "Operational questions"
+    ],
+    "response": [
+      "Reports and limitations",
+      "Data-quality findings"
+    ],
+    "decisions": [
+      "Analytical methods and reports within assignment"
+    ],
+    "exclusions": [
+      "Analysis does not itself order patient care or change coverage",
+      "Cannot infer clinical outcome solely from an administrative completion field"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Data/system owner for integrity; clinical/operational owner for action on findings.",
+    "condition": "Reporting access and measure interpretation require actual data governance; algorithm output is not automatically a clinical determination.",
+    "sources": [
+      "B21",
+      "R32"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G12",
+    "role": "G12",
+    "primary_contact": "G04",
+    "request": "Question/referral/task and available relevant context for: Translate operational needs into documented process/system changes.",
+    "needs": [
+      "User/process requirements",
+      "Operational and system findings"
+    ],
+    "response": [
+      "Process/system requirements",
+      "Acceptance findings and unresolved questions"
+    ],
+    "decisions": [
+      "Propose specifications and test acceptance within assignment"
+    ],
+    "exclusions": [
+      "Cannot independently rewrite medical policy or professional scope",
+      "Requirements document is not clinical approval"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Business/policy owner for decisions; technical owner for implementation constraints.",
+    "condition": "Systems analyst authority is change-process authority, not authority over patient treatment.",
+    "sources": [
+      "R32",
+      "B21"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G13",
+    "role": "G13",
+    "primary_contact": "G12",
+    "request": "Question/referral/task and available relevant context for: Support reliable health-information systems and authorized workflows.",
+    "needs": [
+      "Approved requirements",
+      "Incident and data-quality reports"
+    ],
+    "response": [
+      "System change/support resolution",
+      "Audit and validation information"
+    ],
+    "decisions": [
+      "Technical configuration/actions within approved change permissions"
+    ],
+    "exclusions": [
+      "Technical access does not authorize clinical record fabrication or independent medical decisions",
+      "A system rule is not necessarily governing policy"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Clinical/policy owner for substantive workflow content; privacy/security for access issues.",
+    "condition": "Clinical informaticists may hold additional licenses; distinguish technical permissions from those independent credentials.",
+    "sources": [
+      "B21",
+      "R32",
+      "A15"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G14",
+    "role": "G14",
+    "primary_contact": "O01",
+    "request": "Question/referral/task and available relevant context for: Administer assigned user-access controls and account problems.",
+    "needs": [
+      "Approved access request",
+      "Identity and technical incident details"
+    ],
+    "response": [
+      "Provisioned/corrected access",
+      "Audit and unresolved incident record"
+    ],
+    "decisions": [
+      "Technical account/access actions under approved policy"
+    ],
+    "exclusions": [
+      "Cannot use admin access as authorization to view/disclose every patient record",
+      "Cannot decide clinical or coverage merits"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Privacy/security owner for authorization; system support for technical fault.",
+    "condition": "Operational synthesis of access-control support; actual IAM owner and escalation line must be locally identified.",
+    "sources": [
+      "B21",
+      "A10",
+      "R07",
+      "V08"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G15",
+    "role": "G15",
+    "primary_contact": "P01",
+    "request": "Question/referral/task and available relevant context for: Process payment/claim work and explain or correct administrative account issues.",
+    "needs": [
+      "Service/coding record",
+      "Benefit and claim response"
+    ],
+    "response": [
+      "Claim/account record",
+      "Correction or payment-dispute follow-up"
+    ],
+    "decisions": [
+      "Administrative account/claim actions within assigned permissions"
+    ],
+    "exclusions": [
+      "Prior authorization is not a guarantee of final payment",
+      "Cannot change clinical facts or make unsupported promises to patient"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Coding/clinical documentation team for support; payer process for payment dispute; financial counselor for assistance.",
+    "condition": "Downstream claim adjudication and pre-service authorization are distinct; exact payment rules are outside a generic role title.",
+    "sources": [
+      "R06",
+      "R08",
+      "B20",
+      "V18"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G16",
+    "role": "G16",
+    "primary_contact": "G09",
+    "request": "Question/referral/task and available relevant context for: Exercise the specific public oversight authority assigned by law.",
+    "needs": [
+      "Applicable oversight issue",
+      "Authorized complaint/evidence"
+    ],
+    "response": [
+      "Oversight disposition or required action",
+      "Referral to proper forum"
+    ],
+    "decisions": [
+      "Only decisions/enforcement within actual jurisdiction and process"
+    ],
+    "exclusions": [
+      "Not a universal next-level doctor",
+      "Complaint handling does not automatically reverse a coverage decision"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Correct agency/adjudicative route when jurisdiction lies elsewhere.",
+    "condition": "Identify agency, program and legal route; no blanket authority is assigned to every regulator or ombudsman.",
+    "sources": [
+      "A05",
+      "A11",
+      "R17",
+      "R35"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-G17",
+    "role": "G17",
+    "primary_contact": "P04",
+    "request": "Question/referral/task and available relevant context for: Provide the legal advice or representation actually authorized for the issue.",
+    "needs": [
+      "Issue and relevant record",
+      "Representation scope"
+    ],
+    "response": [
+      "Legal advice/submission",
+      "Procedural recommendation"
+    ],
+    "decisions": [
+      "Advice and procedural representation within retainer/appointment"
+    ],
+    "exclusions": [
+      "Legal advice does not itself overturn coverage or authorize clinical care",
+      "Appointment and conflicts must be checked"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Proper adjudicator or regulator rather than an invented clinical-superiority chain.",
+    "condition": "A lawyer is not automatically needed in ordinary authorization work; professional and appointment rules are issue-specific.",
+    "sources": [
+      "R20",
+      "A11",
+      "A12",
+      "V07"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-J01",
+    "role": "J01",
+    "primary_contact": "P04",
+    "request": "Question/referral/task and available relevant context for: Decide the appeal within the authorized hearing/adjudication jurisdiction.",
+    "needs": [
+      "Eligible timely appeal",
+      "Prior decision and case record"
+    ],
+    "response": [
+      "Adjudicative decision",
+      "Applicable onward-review information"
+    ],
+    "decisions": [
+      "Affirm/reverse/remand as permitted by the actual appeal process"
+    ],
+    "exclusions": [
+      "No universal entitlement to this stage",
+      "Not treating-clinician or consent authority"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Medicare Appeals Council route if available and properly pursued.",
+    "condition": "Standing, filing and any amount-in-controversy rules must be checked; no threshold amounts are invented here.",
+    "sources": [
+      "A11",
+      "A16"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-J02",
+    "role": "J02",
+    "primary_contact": "P04",
+    "request": "Question/referral/task and available relevant context for: Review the applicable appealed adjudicative decision under Council jurisdiction.",
+    "needs": [
+      "Proper Council request",
+      "Prior adjudicative decision and record"
+    ],
+    "response": [
+      "Council disposition",
+      "Applicable further-review information"
+    ],
+    "decisions": [
+      "Council review decisions within jurisdiction"
+    ],
+    "exclusions": [
+      "Not every dissatisfied party automatically reaches this stage",
+      "Does not become the patient's clinical supervisor"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Federal district-court route where legally available and properly pursued.",
+    "condition": "The precise review scope and procedural requirements require the actual notice/rules; no automatic appeal entitlement is implied.",
+    "sources": [
+      "A11",
+      "A16"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  },
+  {
+    "id": "S-J03",
+    "role": "J03",
+    "primary_contact": "G17",
+    "request": "Question/referral/task and available relevant context for: Exercise judicial review when the statutory conditions are met.",
+    "needs": [
+      "Eligible judicial filing",
+      "Administrative record and legal issues"
+    ],
+    "response": [
+      "Judicial decision/order"
+    ],
+    "decisions": [
+      "Judicial relief within jurisdiction"
+    ],
+    "exclusions": [
+      "Not a routine step in a clinical workflow",
+      "Does not grant universal authority to prescribe or override consent"
+    ],
+    "acknowledgement": "Named recipient records receipt, result/status and any unresolved need; receipt is not substantive approval.",
+    "failure": "Further judicial process is outside the scope of this role map.",
+    "condition": "Exhaustion, standing, filing and threshold conditions matter; the map is not a procedural filing guide.",
+    "sources": [
+      "A11",
+      "A16"
+    ],
+    "evidence_status": "SYNTHESIZED MODEL: primary contact and transaction are NOT CONFIRMED institutional practice.",
+    "evidence": "Illustrative synthesis, not a required sequence, exclusive contact, established employer protocol or additional decision authority."
+  }
+]

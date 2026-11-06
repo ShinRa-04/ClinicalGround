@@ -1,0 +1,17 @@
+digraph commercial_appeals {
+graph [rankdir=TB, bgcolor="white", fontname="Arial", fontsize=16, labelloc=t, pad=0.4, nodesep=0.4, ranksep=0.65];
+node [shape=box, style="rounded,filled", fillcolor="#f0f5f8", fontname="Arial", fontsize=12, color="#8396a2", margin="0.18,0.14"];
+edge [fontname="Arial", fontsize=10, color="#526e80", arrowsize=0.7];
+graph [label="REVIEWED SCOPED SUMMARY: conditions and unresolved routes remain explicit\nApplicable commercial external-review route | not the MA IRE ladder\nA12 / HealthCare.gov; R17 | determine plan, issue and state/federal process"];
+eligibility [shape=diamond,label="Identify applicable plan / issue / process\nCheck ACA / non-grandfathered context\nR17; external eligibility is conditional"];
+initial [label="Insurer adverse determination"];
+internal [label="Applicable internal review / appeal\nQualification and procedure depend on product"];
+U18 [label="Eligible independent external review\nU18: appropriate IRO route"];
+implement [label="Insurer accepts applicable external outcome\nA12 describes binding acceptance\nNo treatment-consent or prescribing authority"];
+eligibility -> initial [label="identified applicable process"];
+initial -> internal [label="proper internal challenge / applicable process"];
+internal -> U18 [label="only under applicable eligibility/rules\nexpedited routes require separate check"];
+initial -> U18 [style=dashed,label="eligible urgent review may be requested\nconcurrently with internal appeal | V19\nnot required to finish all internal steps"];
+U18 -> implement [label="external disposition under identified route"];
+
+}

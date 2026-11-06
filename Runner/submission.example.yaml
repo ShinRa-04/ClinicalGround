@@ -1,0 +1,23 @@
+# Template only. Copy to submission.local.yaml and replace all YOUR_* fields.
+# No agent/model has been selected for this project.
+schema: chi-bench/submission/v1
+submission:
+  id: local-test
+  team: YOUR_TEAM
+  contact: you@example.invalid
+  agent: YOUR_HARNESS
+  model: YOUR_MODEL
+  notes: Local testing; future agent development is separate.
+run:
+  environment: docker
+  n_attempts: 1
+  concurrency: 1
+  max_retries: 2
+  timeout_multiplier: 2.0
+  env_file: /runner/.env
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]
+paths:
+  data_root: /dataset/chi-bench
+  output_root: /runner/logs/submissions/local-test

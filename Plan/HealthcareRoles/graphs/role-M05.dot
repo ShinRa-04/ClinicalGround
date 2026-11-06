@@ -1,0 +1,14 @@
+digraph "role-M05" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM05 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+M04 [label="M04\nClinical / community \npharmacist", URL="../index.html#M04", target="_top"];
+M05 [label="M05\nPharmacy technician / \nmedication-access coordinator", URL="../index.html#M05", target="_top"];
+O04 [label="O04\nProvider \ninsurance-verification / \nbenefits specialist", URL="../index.html#O04", target="_top"];
+M04 -> M05 [label="DEP119", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> M05 [label="DEP120", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O04 -> M05 [label="DEP121", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M04 -> M05 [label="S-M05 request", tooltip="Technician permissions vary; medication-access work can be an advanced assignment but remains distinct from pharmacist judgment."];
+M05 -> M04 [label="S-M05 response", tooltip="Technician permissions vary; medication-access work can be an advanced assignment but remains distinct from pharmacist judgment."];
+}

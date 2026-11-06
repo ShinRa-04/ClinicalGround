@@ -1,0 +1,751 @@
+[
+  {
+    "id": "A01",
+    "name": "Hospital operations coordinator",
+    "kind": "controller",
+    "principal": "hospital",
+    "source_roles": [
+      "O12"
+    ],
+    "trigger": "A patient journey or capacity/ownership exception needs cross-department coordination.",
+    "responsibility": "Track queues, responsible departments, blocked obligations, capacity and service handoffs using a minimal operational view.",
+    "allowed_write_intent": "Operational tasks, assignments and proposed scheduling changes under actual scope.",
+    "retained_boundary": "Does not overrule patient consent, clinical judgment, payer decisions or external appeal bodies.",
+    "service_ids": [
+      "S01",
+      "S08",
+      "S09",
+      "S10",
+      "S14",
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A02",
+    "name": "Provider PA case owner",
+    "kind": "case_owner",
+    "principal": "provider",
+    "source_roles": [
+      "O01",
+      "O10"
+    ],
+    "trigger": "An assigned provider authorization/request/dispute task needs action.",
+    "responsibility": "Maintain the supported request, evidence gaps, submission/receipt, payer correspondence and correct dispute route.",
+    "allowed_write_intent": "Provider case workspace, submissions and observed status through permitted operations.",
+    "retained_boundary": "Cannot invent clinical facts or treat submission, authorization, scheduling and payment as one state.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S07",
+      "S12",
+      "S13",
+      "S14",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A03",
+    "name": "Payer UM case owner",
+    "kind": "case_owner",
+    "principal": "payer",
+    "source_roles": [
+      "U01",
+      "U08",
+      "U10",
+      "U11",
+      "U17"
+    ],
+    "trigger": "An assigned payer case arrives or review/notice/implementation work remains.",
+    "responsibility": "Coordinate intake, benefit context, applicable review, actual authority assignment, determination and notice obligations.",
+    "allowed_write_intent": "Payer case transitions only with the applicable operation-level task/role permission.",
+    "retained_boundary": "Payer is a separate organization; operational coordination does not itself supply clinical signoff or appeals delegation.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S06",
+      "S07",
+      "S12",
+      "S13",
+      "S14",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A04",
+    "name": "CM journey owner",
+    "kind": "case_owner",
+    "principal": "care_program",
+    "source_roles": [
+      "M01",
+      "M30"
+    ],
+    "trigger": "An assigned engagement, assessment, care-plan, transition or follow-up obligation is active.",
+    "responsibility": "Maintain actual patient responses, goals, assessments, plan contributions, referrals, barriers and observed follow-through.",
+    "allowed_write_intent": "CM tasks, sourced assessment/plan records and permitted referral/outreach operations.",
+    "retained_boundary": "Cannot infer consent, fabricate answers, alter treatment without assigned scope or mark arranged services delivered.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S07",
+      "S08",
+      "S09",
+      "S10",
+      "S12",
+      "S13",
+      "S14",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A05",
+    "name": "Patient interaction endpoint",
+    "kind": "external_participant_interface",
+    "principal": "patient",
+    "source_roles": [
+      "P01"
+    ],
+    "trigger": "The assigned task needs an actual supplied patient interaction or response.",
+    "responsibility": "Obtain and preserve separately attributed preferences, recollections, symptoms and decisions through the supplied interface.",
+    "allowed_write_intent": "Observed patient messages and explicit preference/consent events, not internally invented answers.",
+    "retained_boundary": "A harness patient persona cannot replace the supplied patient interface. Self-report is not automatically clinical ground truth.",
+    "service_ids": [
+      "S01",
+      "S07",
+      "S15",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A06",
+    "name": "Caregiver and representative endpoints",
+    "kind": "external_participant_interface",
+    "principal": "support_person",
+    "source_roles": [
+      "P02",
+      "P03"
+    ],
+    "trigger": "A caregiver observation or specifically authorized representative contribution is required.",
+    "responsibility": "Provide separately attributed support/observations and exercise only recorded representation scope.",
+    "allowed_write_intent": "Own communications and scoped representative decisions, not arbitrary patient/case facts.",
+    "retained_boundary": "Different people retain separate identities, preferences and appointments; family status is not blanket authority.",
+    "service_ids": [
+      "S01",
+      "S07",
+      "S15",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A07",
+    "name": "Treating clinician role templates",
+    "kind": "staff_role_or_service_interface",
+    "principal": "provider",
+    "source_roles": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "O11",
+      "M06",
+      "M27"
+    ],
+    "trigger": "A clinical order, evidence author contribution, referral, specialist input or peer exchange is assigned.",
+    "responsibility": "Perform the actually assigned clinical-workflow function and maintain source-attributed contributions.",
+    "allowed_write_intent": "Clinical notes/orders or peer statements only through assigned clinical-service contracts.",
+    "retained_boundary": "One template is not one interchangeable credential. Perform assigned reviews/documents without inventing an examination or supplied result.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S07",
+      "S17",
+      "S19"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A08",
+    "name": "Diagnostic evidence and consultation interface",
+    "kind": "specialist_or_adapter",
+    "principal": "assigned_organization",
+    "source_roles": [
+      "O13",
+      "U05"
+    ],
+    "trigger": "The case needs an external result, custodian response or bounded independent specialty contribution.",
+    "responsibility": "Obtain attributable results or analyze a bounded question from the permitted evidence view.",
+    "allowed_write_intent": "Source-linked consultation proposal or observed evidence receipt.",
+    "retained_boundary": "A model opinion cannot create a laboratory result or binding determination. Actor author and service observation are distinct.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S07",
+      "S13",
+      "S17",
+      "S19"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A09",
+    "name": "Nursing and direct-care role templates",
+    "kind": "staff_role_or_service_interface",
+    "principal": "care_provider",
+    "source_roles": [
+      "C06",
+      "C07",
+      "C08",
+      "M21"
+    ],
+    "trigger": "A scoped nursing/support/direct-care activity is assigned or observed.",
+    "responsibility": "Represent the specifically assigned care activity and communicate actual observations/events.",
+    "allowed_write_intent": "Role-scoped observations/tasks; physical completion only from actual environment/service evidence.",
+    "retained_boundary": "RN, LPN/LVN, clinical assistant and aide remain distinct qualifications/functions, not a merged universal scope.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S07",
+      "S08",
+      "S11",
+      "S17",
+      "S19"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A10",
+    "name": "Registration and benefits desk",
+    "kind": "role_mode_or_tool",
+    "principal": "assigned_organization",
+    "source_roles": [
+      "O03",
+      "O04",
+      "U02"
+    ],
+    "trigger": "Identity, coverage, eligibility or administrative requirements must be established.",
+    "responsibility": "Match the correct person/case and retrieve scoped coverage/benefit facts.",
+    "allowed_write_intent": "Verified administrative records and only explicitly delegated benefit operations.",
+    "retained_boundary": "Provider and payer instances use separate principals. Benefits are not authorization or guaranteed payment.",
+    "service_ids": [
+      "S01",
+      "S04",
+      "S05",
+      "S06",
+      "S14",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A11",
+    "name": "Evidence and documentation auditor",
+    "kind": "bounded_capability",
+    "principal": "caller_scope",
+    "source_roles": [
+      "O06",
+      "O08"
+    ],
+    "trigger": "Missing, conflicting, stale or unauthorized documentation needs inspection.",
+    "responsibility": "Assemble provenance, identify gaps/contradictions and recommend clarification.",
+    "allowed_write_intent": "Read-only findings/proposals by default; no silent repair of substantive clinical facts.",
+    "retained_boundary": "Release purpose, source author and documentation meaning remain separate; requester cannot self-supply missing evidence.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S13",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A12",
+    "name": "Policy and criteria specialist",
+    "kind": "bounded_capability",
+    "principal": "caller_scope",
+    "source_roles": [
+      "G08"
+    ],
+    "trigger": "Applicable policy/version or criterion-evidence mapping needs analysis.",
+    "responsibility": "Return sourced criteria, applicability/exception questions, evidence links and unresolved items.",
+    "allowed_write_intent": "Version-linked interpretation proposal; controlling policy is immutable to ordinary workers.",
+    "retained_boundary": "Generated policy summaries cannot approve or replace governing rules.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S13",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A13",
+    "name": "Coding support",
+    "kind": "bounded_capability",
+    "principal": "provider",
+    "source_roles": [
+      "O07"
+    ],
+    "trigger": "A supported code/documentation mapping is required by the assigned workflow.",
+    "responsibility": "Suggest coding from authentic source documentation and flag ambiguity.",
+    "allowed_write_intent": "Coding proposals/queries or scoped administrative edits when assigned.",
+    "retained_boundary": "A code does not create a diagnosis or replace clinician-authored facts.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S05",
+      "S12",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A14",
+    "name": "Artifact and handoff writer",
+    "kind": "bounded_capability",
+    "principal": "caller_scope",
+    "source_roles": [],
+    "trigger": "A task requires a packet, summary, care-plan section or handoff artifact.",
+    "responsibility": "Render source-linked documents from approved facts/proposals with explicit unknowns and status.",
+    "allowed_write_intent": "Draft artifacts; final publication only through the actual case/action authority.",
+    "retained_boundary": "Writing convincing prose is not substantive approval, delivery or independent evidence.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S08",
+      "S12",
+      "S13",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A15",
+    "name": "Conversation and access support",
+    "kind": "role_mode_or_capability",
+    "principal": "caller_scope",
+    "source_roles": [
+      "P05",
+      "P06",
+      "M13"
+    ],
+    "trigger": "Outreach, interview, interpretation, translation or education support is needed.",
+    "responsibility": "Track speakers, questions, actual answers, language needs, refusals and unresolved comprehension.",
+    "allowed_write_intent": "Attributed conversation events and education/communication artifacts.",
+    "retained_boundary": "Translation, interpretation, understanding and consent are different; use actual qualification/task scope.",
+    "service_ids": [
+      "S01",
+      "S07",
+      "S08",
+      "S12",
+      "S13",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A16",
+    "name": "Navigation and transitions desk",
+    "kind": "role_mode_or_capability",
+    "principal": "care_program",
+    "source_roles": [
+      "O02",
+      "P04",
+      "P07",
+      "U16",
+      "M09",
+      "M10",
+      "M11",
+      "M18"
+    ],
+    "trigger": "Referral coordination, access assistance, transition ownership or scoped advocacy is active.",
+    "responsibility": "Connect the right recipient, track acceptance/obligations and retain appointment/representation limits.",
+    "allowed_write_intent": "Referral/navigation tasks, observed replies and scoped filing assistance.",
+    "retained_boundary": "This template combines reusable plumbing, not all advocacy, discharge and clinical decision powers.",
+    "service_ids": [
+      "S01",
+      "S05",
+      "S07",
+      "S08",
+      "S09",
+      "S10",
+      "S12",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A17",
+    "name": "Medication expertise and access interfaces",
+    "kind": "bounded_specialist_or_adapter",
+    "principal": "assigned_organization",
+    "source_roles": [
+      "M04",
+      "M05"
+    ],
+    "trigger": "A medication evidence, pharmacy review or access/fulfillment question is relevant.",
+    "responsibility": "Separate medication expertise, existing instructions, allowed protocol activity and technician/access work.",
+    "allowed_write_intent": "Scoped recommendations/access tasks; therapy changes only through the assigned order contract.",
+    "retained_boundary": "Inventory or authorization success does not establish a new treatment order or administration.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S09",
+      "S11",
+      "S17",
+      "S19"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A18",
+    "name": "Psychosocial, behavioral and safeguarding interfaces",
+    "kind": "bounded_specialist_or_adapter",
+    "principal": "assigned_organization",
+    "source_roles": [
+      "M02",
+      "M03",
+      "M07",
+      "M08",
+      "M31"
+    ],
+    "trigger": "A psychosocial need, specialist input, restricted material or protection concern is present.",
+    "responsibility": "Identify the relevant function, credential/mandate and appropriate information/escalation pathway.",
+    "allowed_write_intent": "Bounded specialist contribution, resource/protection routing and permitted case records.",
+    "retained_boundary": "Resource support, therapy, prescribing and protection authority are distinct; sensitive evidence views remain scoped.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S07",
+      "S08",
+      "S09",
+      "S13",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A19",
+    "name": "Rehabilitation, nutrition and respiratory interfaces",
+    "kind": "bounded_specialist_or_adapter",
+    "principal": "care_provider",
+    "source_roles": [
+      "M12",
+      "M14",
+      "M15",
+      "M16",
+      "M17"
+    ],
+    "trigger": "The actual case needs discipline-specific assessment/evidence or service coordination.",
+    "responsibility": "Produce or obtain specifically attributed discipline contributions from permitted task evidence.",
+    "allowed_write_intent": "Scoped recommendations/referrals and observed discipline records.",
+    "retained_boundary": "A common interface does not make these professions clinically interchangeable or prove service delivery.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S08",
+      "S09",
+      "S11",
+      "S17",
+      "S19"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A20",
+    "name": "Access, receiving services and fulfillment network",
+    "kind": "external_service_adapter",
+    "principal": "external_service",
+    "source_roles": [
+      "O05",
+      "O09",
+      "M19",
+      "M20",
+      "M22",
+      "M23",
+      "M24",
+      "M25",
+      "M26",
+      "G15"
+    ],
+    "trigger": "Capacity, placement, booking, financial support, transport, equipment or receiving-service status is needed.",
+    "responsibility": "Coordinate requests with distinct service organizations and observe acceptance, reservations and fulfillment.",
+    "allowed_write_intent": "Permitted reservations/requests and attributable status/financial events.",
+    "retained_boundary": "Dispatch is not driving; booking is not attendance; request is not acceptance; authorization is not payment.",
+    "service_ids": [
+      "S01",
+      "S07",
+      "S09",
+      "S10",
+      "S11",
+      "S12",
+      "S15",
+      "S17",
+      "S20"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A21",
+    "name": "Initial UM clinical review roles",
+    "kind": "assigned_review_role",
+    "principal": "payer",
+    "source_roles": [
+      "U03",
+      "U04",
+      "U06",
+      "U07"
+    ],
+    "trigger": "Actual criteria/stage require the assigned qualified review or specialty analysis.",
+    "responsibility": "Apply applicable evidence and criteria; recommend/escalate or determine only under the specific assignment.",
+    "allowed_write_intent": "Stage-scoped review contribution and authorized outcome where the task/profile permits.",
+    "retained_boundary": "Initial review, consultation and reconsideration are distinct; no universal physician-only or unrestricted denial rule is invented.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S06",
+      "S07",
+      "S13",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A22",
+    "name": "Appeal administration and reconsideration roles",
+    "kind": "separate_review_role",
+    "principal": "payer_or_review_body",
+    "source_roles": [
+      "U12",
+      "U13"
+    ],
+    "trigger": "A proper appeal/reconsideration route is invoked and within scope.",
+    "responsibility": "Separate route/standing/file preparation from the required reconsidered decision and independence conditions.",
+    "allowed_write_intent": "Scoped appeal records and observed/authorized reconsideration contributions.",
+    "retained_boundary": "Independent actor assignment is more than a new prompt; a software simulation does not certify real human legal qualification.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S06",
+      "S07",
+      "S12",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A23",
+    "name": "External review, regulator and court adapters",
+    "kind": "external_participant_adapter",
+    "principal": "external_review_body",
+    "source_roles": [
+      "U14",
+      "U15",
+      "U18",
+      "G16",
+      "J01",
+      "J02",
+      "J03"
+    ],
+    "trigger": "The identified product/issue/stage permits an external route.",
+    "responsibility": "Represent distinct eligible forums and ingest their attributable supplied outcomes.",
+    "allowed_write_intent": "Route-specific transmission/status and outcomes only through the corresponding environment service.",
+    "retained_boundary": "A local critic cannot issue a binding IRE/IRO/court result. Routes and later-stage eligibility are not automatic.",
+    "service_ids": [
+      "S01",
+      "S06",
+      "S07",
+      "S12",
+      "S15",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A24",
+    "name": "Determination notice operation",
+    "kind": "controlled_operation",
+    "principal": "payer",
+    "source_roles": [
+      "U09"
+    ],
+    "trigger": "An actual authorized determination requires a notice/delivery action.",
+    "responsibility": "Generate and deliver the corresponding reason/outcome/recipient/version and preserve delivery evidence.",
+    "allowed_write_intent": "Notice artifacts and observed delivery receipts, not the underlying decision itself.",
+    "retained_boundary": "A draft notice cannot change a decision or be represented as delivered.",
+    "service_ids": [
+      "S01",
+      "S06",
+      "S12",
+      "S14",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A25",
+    "name": "Quality and workflow analyst",
+    "kind": "bounded_critic_or_design_capability",
+    "principal": "permitted_audit_scope",
+    "source_roles": [
+      "G06",
+      "G11",
+      "G12"
+    ],
+    "trigger": "A meaningful checkpoint needs an invariant review, or permitted post-run aggregate analysis is requested.",
+    "responsibility": "Inspect source/state consistency, missing obligations and actual process metrics.",
+    "allowed_write_intent": "Findings/proposals and scoped audit summaries; no automatic world truth or official grade.",
+    "retained_boundary": "An internal critic is not independent reconsideration or the hidden evaluator; aggregate evidence is not a patient fact.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S13",
+      "S16",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A26",
+    "name": "Governance and staffing configuration",
+    "kind": "configuration_or_governance_interface",
+    "principal": "organization_governance",
+    "source_roles": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G07",
+      "G09",
+      "G17"
+    ],
+    "trigger": "Work needs approved policy, actual assignment, staffing or governance clarification.",
+    "responsibility": "Supply versioned mandates/approval records and distinct institutional governance actors.",
+    "allowed_write_intent": "Design-time approved configuration or specifically authorized governance records.",
+    "retained_boundary": "Ordinary task workers cannot rewrite policy, appoint themselves to every role or override other organizations.",
+    "service_ids": [
+      "S01",
+      "S03",
+      "S16",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A27",
+    "name": "Privacy, identity and infrastructure guard",
+    "kind": "deterministic_service",
+    "principal": "runtime_control",
+    "source_roles": [
+      "G10",
+      "G13",
+      "G14"
+    ],
+    "trigger": "Every retrieval, prompt build, delegation and operation crosses a scope/resource boundary.",
+    "responsibility": "Enforce principal/purpose/version/tool constraints and retain diagnostic provenance.",
+    "allowed_write_intent": "Permission/audit decisions, scoped technical state and declared exceptions.",
+    "retained_boundary": "A guard is not legal certification; technical access does not establish clinical authorship or consent.",
+    "service_ids": [
+      "S01",
+      "S13",
+      "S14",
+      "S16",
+      "S17"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A28",
+    "name": "Benchmark adapter and evaluation boundary",
+    "kind": "boundary_service",
+    "principal": "runtime_boundary",
+    "source_roles": [],
+    "trigger": "A supplied task is admitted, a concrete tool is called or post-run evaluation is inspected.",
+    "responsibility": "Map internal work to actual task instructions and tool contracts while isolating official grading from acting inputs.",
+    "allowed_write_intent": "Adapter/session metadata and observed response receipts; never hidden world or expected-answer state.",
+    "retained_boundary": "The supplied environment owns facts and counterparties. This is an interface boundary, not a second simulator or an acting evaluator.",
+    "service_ids": [
+      "S01",
+      "S14",
+      "S15",
+      "S16",
+      "S18",
+      "S19"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  },
+  {
+    "id": "A29",
+    "name": "Hospice and spiritual-care pathway",
+    "kind": "composite_pathway",
+    "principal": "care_provider",
+    "source_roles": [
+      "M28",
+      "M29"
+    ],
+    "trigger": "The assigned case actually includes a hospice/palliative/spiritual-support pathway.",
+    "responsibility": "Route distinct IDG, RN coordination, attending, certification/admission and requested spiritual-support contributions.",
+    "allowed_write_intent": "Pathway tasks and specifically attributed role contributions under the applicable task/policy.",
+    "retained_boundary": "A composite profile must not become one all-powerful hospice agent; prior hospice evidence is a dated codification.",
+    "service_ids": [
+      "S01",
+      "S02",
+      "S07",
+      "S08",
+      "S09",
+      "S17",
+      "S19"
+    ],
+    "status": "HYPOTHETICAL_NOT_IMPLEMENTED",
+    "instances": "On demand by organization, case, assignment and role; not one global persona."
+  }
+]

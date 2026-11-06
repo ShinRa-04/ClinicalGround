@@ -1,0 +1,12 @@
+digraph "role-U08" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nU08 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+G09 [label="G09\nCompliance / regulatory \nprofessional", URL="../index.html#G09", target="_top"];
+U01 [label="U01\nPayer UM intake coordinator", URL="../index.html#U01", target="_top"];
+U08 [label="U08\nDelegated medical-group / \nreview-vendor reviewer", URL="../index.html#U08", target="_top"];
+U01 -> U08 [label="DEP085", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G09 -> U08 [label="DEP086", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U01 -> U08 [label="S-U08 request", tooltip="Functional wrapper, not an extra profession; identify both employer and actual licensed/intake role. In R13, AZPC explicitly retains no delegation to process, decide or notify appeals; the plan handles that review."];
+U08 -> U01 [label="S-U08 response", tooltip="Functional wrapper, not an extra profession; identify both employer and actual licensed/intake role. In R13, AZPC explicitly retains no delegation to process, decide or notify appeals; the plan handles that review."];
+}

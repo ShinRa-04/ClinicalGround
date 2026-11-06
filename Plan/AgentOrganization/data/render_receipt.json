@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-18",
+  "renderer": "@viz-js/viz",
+  "version": "3.31.0",
+  "graphs": 3,
+  "results": [
+    {
+      "name": "owner-specialists",
+      "warnings": [],
+      "bytes": 10090
+    },
+    {
+      "name": "handoff-acceptance",
+      "warnings": [],
+      "bytes": 8715
+    },
+    {
+      "name": "package-dependencies",
+      "warnings": [],
+      "bytes": 19486
+    }
+  ],
+  "scope": "Proposed design / inherited unconfirmed models; no empirical architecture validation."
+}

@@ -1,0 +1,190 @@
+[
+  {
+    "id": "FIX01",
+    "targets": [
+      "C05"
+    ],
+    "change": "Recognize physician assistant/associate terminology and jurisdiction-specific collaboration rather than a universal supervision model.",
+    "sources": [
+      "V03",
+      "B02"
+    ]
+  },
+  {
+    "id": "FIX02",
+    "targets": [
+      "M02"
+    ],
+    "change": "Remove the misleading medical/nonclinical binary; distinguish job title, supervised pre-licensure work and independent clinical licensure.",
+    "sources": [
+      "R25",
+      "B09"
+    ]
+  },
+  {
+    "id": "FIX03",
+    "targets": [
+      "U01",
+      "U02",
+      "D11"
+    ],
+    "change": "Add limited delegated nonclinical approvals/benefit-only decisions as a published program alternative; keep medical-necessity denials distinct.",
+    "sources": [
+      "R13"
+    ]
+  },
+  {
+    "id": "FIX04",
+    "targets": [
+      "U08"
+    ],
+    "change": "Make retained health-plan appeals explicit in the AZPC delegation example.",
+    "sources": [
+      "R13"
+    ]
+  },
+  {
+    "id": "FIX05",
+    "targets": [
+      "C04"
+    ],
+    "change": "Separate NP practice category, furnishing authority and employer conditions; flag prospective/stale availability wording.",
+    "sources": [
+      "V02"
+    ]
+  },
+  {
+    "id": "FIX06",
+    "targets": [
+      "M04",
+      "D25"
+    ],
+    "change": "Clarify separately authorized pharmacist therapy activity and avoid implying a new physician instruction for every protocol-authorized action.",
+    "sources": [
+      "V13",
+      "B07"
+    ]
+  },
+  {
+    "id": "FIX07",
+    "targets": [
+      "M07",
+      "D26"
+    ],
+    "change": "Add New Mexico additional prescribing-certification example without implying general psychologist prescribing rights.",
+    "sources": [
+      "V04"
+    ]
+  },
+  {
+    "id": "FIX08",
+    "targets": [
+      "M28",
+      "D33",
+      "S-M28"
+    ],
+    "change": "Use official 2025 codification to distinguish interdisciplinary planning, designated RN coordination, attending, certification and admission; retain edition limit.",
+    "sources": [
+      "V11",
+      "V16",
+      "V17",
+      "R34"
+    ]
+  },
+  {
+    "id": "FIX09",
+    "targets": [
+      "D16",
+      "commercial-appeals"
+    ],
+    "change": "Show eligible urgent internal/external review concurrently and qualify applicable plan/process scope.",
+    "sources": [
+      "V19",
+      "R17",
+      "A12"
+    ]
+  },
+  {
+    "id": "FIX10",
+    "targets": [
+      "D27",
+      "G10",
+      "O06"
+    ],
+    "change": "Add applicable Part 2 protections to prevent treating the HIPAA minimum-necessary treatment exception as unrestricted sharing.",
+    "sources": [
+      "V15",
+      "A10"
+    ]
+  },
+  {
+    "id": "FIX11",
+    "targets": [
+      "reporting-examples"
+    ],
+    "change": "Distinguish documented associate-director direction from manager/supervisor collaboration; do not imply an unsupported direct reporting chain.",
+    "sources": [
+      "R32"
+    ]
+  },
+  {
+    "id": "FIX12",
+    "targets": [
+      "R03",
+      "R23",
+      "WORKFLOW_PEOPLE"
+    ],
+    "change": "Stop using expired/unavailable sources as current proof; replace relevant examples with accessible Noyes/Michigan and care-program sources.",
+    "sources": [
+      "R04",
+      "R05",
+      "R24",
+      "R25",
+      "R32"
+    ]
+  },
+  {
+    "id": "FIX13",
+    "targets": [
+      "M23",
+      "M24",
+      "M31",
+      "G14",
+      "G15",
+      "G17"
+    ],
+    "change": "Add specific public context for transport, protection, access-control, billing and legal functions while keeping composite/local mandate limits.",
+    "sources": [
+      "V05",
+      "V14",
+      "V12",
+      "V08",
+      "V18",
+      "V07"
+    ]
+  },
+  {
+    "id": "FIX14",
+    "targets": [
+      "U03",
+      "U04",
+      "U06",
+      "U07"
+    ],
+    "change": "Record tension between a program's professional categories and medical-director final responsibility; do not infer a case signatory without clarification.",
+    "sources": [
+      "R13"
+    ]
+  },
+  {
+    "id": "FIX15",
+    "targets": [
+      "ma-appeals"
+    ],
+    "change": "Place an explicit product/integrated-plan route check before applying the standard MA path; detailed integrated rules remain outside verified scope.",
+    "sources": [
+      "A02",
+      "A03"
+    ]
+  }
+]

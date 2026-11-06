@@ -1,0 +1,12 @@
+digraph "role-M21" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM21 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C06 [label="C06\nRegistered nurse providing \ndirect care", URL="../index.html#C06", target="_top"];
+M19 [label="M19\nHome-health intake / \ncoordination clinician", URL="../index.html#M19", target="_top"];
+M21 [label="M21\nHome-health aide / \npersonal-care worker", URL="../index.html#M21", target="_top"];
+M19 -> M21 [label="DEP154", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C06 -> M21 [label="DEP155", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M19 -> M21 [label="S-M21 request", tooltip="Health-related tasks depend on state, training and supervision; personal support is not equivalent to skilled nursing."];
+M21 -> M19 [label="S-M21 response", tooltip="Health-related tasks depend on state, training and supervision; personal support is not equivalent to skilled nursing."];
+}

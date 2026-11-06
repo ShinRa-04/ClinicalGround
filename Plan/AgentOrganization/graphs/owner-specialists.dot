@@ -1,0 +1,30 @@
+digraph owner_specialists {
+graph [rankdir=TB,fontname="Arial",fontsize=15,labelloc=t,pad=0.35,nodesep=0.4,ranksep=0.8,bgcolor="white"];node [shape=box,style="rounded,filled",fillcolor="#edf3f6",color="#8396a2",fontname="Arial",fontsize=11,margin="0.15,0.12"];edge [fontname="Arial",fontsize=9,color="#526e80",arrowsize=0.7];
+graph [label="PROPOSED / UNTESTED | one owner with explicit modes and bounded helpers"];
+task [label="Actual assigned instruction
+and allowed tools / scope"];
+owner [label="Accountable case owner
+Named role modes and obligations
+Proposed owner of mutable case actions"];
+state [label="Case state / evidence references
+Sources, versions, actual observations
+Unknowns and pending obligations"];
+specialist [label="On-demand specialist contexts
+Bounded evidence / policy question
+No assumed finalization authority"];
+environment [label="Supplied benchmark environment
+Patient/counterparty responses
+Authoritative tool outcomes"];
+scope [label="Actual task permissions / policy
+Explicit operation and data scope
+Prompt title does not grant authority",shape=note,fillcolor="#fff7e2"];
+task -> owner [label="task / current stage"];
+state -> owner [label="current evidence / obligations"];
+owner -> specialist [label="bounded question + scoped references"];
+specialist -> owner [label="sourced proposal + unknowns"];
+scope -> owner [style=dashed,label="constrains permitted action"];
+owner -> environment [label="allowed action / query"];
+environment -> state [label="observed result; preserve provenance"];
+owner -> state [label="proposed internal tracking / next owner"];
+
+}

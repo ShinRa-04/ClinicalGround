@@ -1,0 +1,24 @@
+digraph memory_context {
+graph [rankdir=TB,fontname="Arial",fontsize=15,labelloc=t,pad=0.35,nodesep=0.45,ranksep=0.65,bgcolor="white"];node [shape=box,style="rounded,filled",fillcolor="#edf3f6",color="#8396a2",fontname="Arial",fontsize=11,margin="0.15,0.12"];edge [fontname="Arial",fontsize=9,color="#526e80",arrowsize=0.7];
+graph [label="PROPOSED CASE MEMORY | authoritative observations and derived working views stay distinct"];
+env [label="Supplied case records / tool responses"];
+caseview [label="Source-linked case working view
+Task / stage / obligations / unknowns"];
+episodes [label="Case-local dialogue and episodes
+Actual speakers / answers / refusals"];
+checkpoint [label="Case checkpoint / action journal
+Source versions / pending and unknown effects"];
+approved [label="Approved general knowledge
+No patient-derived automatic updates"];
+builder [label="Scoped context builder
+Active request / role / relevant evidence
+Coherent exchanges and bounded recall"];
+model [label="One scoped model request
+Actual provider budget/state contract"];
+env -> caseview [label="observed facts / provenance"];
+env -> episodes [label="actual interaction"];
+caseview -> checkpoint;episodes -> checkpoint;
+caseview -> builder;episodes -> builder;checkpoint -> builder;approved -> builder;
+builder -> model [label="filter / render / measure / reserve"];
+
+}

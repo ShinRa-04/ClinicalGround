@@ -1,0 +1,34 @@
+{
+  "scope": {
+    "environment": "<explicit-environment-id>",
+    "task": "<explicit-task-id>",
+    "organization": "<explicit-organization-id>",
+    "principal": "<explicit-principal-id>",
+    "patient": "<explicit-patient-id>",
+    "case": "<explicit-case-id>"
+  },
+  "instruction": "<task instruction supplied by the benchmark>",
+  "domain": "PA",
+  "provider": {
+    "type": "codex_app_server",
+    "executable": "C:/Users/<user>/AppData/Local/OpenAI/Codex/bin/<version>/codex.exe",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "high",
+    "timeout": 120,
+    "allowed_instruction_sources": {}
+  },
+  "mcp_servers": [
+    { "url": "http://<task-mcp-host>:<port>/mcp", "namespace": "chi-bench-case-tools" }
+  ],
+  "storage": "runs/<case-scope-hash>/state.sqlite",
+  "workspace": "runs/<case-scope-hash>/workspace",
+  "output_dir": "runs/<case-scope-hash>/receipts",
+  "read_roots": ["<approved-handbook-directory>", "<approved-tool-reference-file>"],
+  "composition": "combined",
+  "limits": {
+    "max_model_calls": 30,
+    "max_tool_calls": 100,
+    "max_context_chars": 60000,
+    "max_output_tokens": 4096
+  }
+}

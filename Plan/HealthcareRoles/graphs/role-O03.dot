@@ -1,0 +1,18 @@
+digraph "role-O03" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nO03 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+O01 [label="O01\nProvider authorization / \nprecertification specialist", URL="../index.html#O01", target="_top"];
+O02 [label="O02\nReferral coordinator", URL="../index.html#O02", target="_top"];
+O03 [label="O03\nRegistration / patient-access \nrepresentative", URL="../index.html#O03", target="_top"];
+O04 [label="O04\nProvider \ninsurance-verification / \nbenefits specialist", URL="../index.html#O04", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+U01 [label="U01\nPayer UM intake coordinator", URL="../index.html#U01", target="_top"];
+O03 -> O01 [label="DEP036", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O03 -> O02 [label="DEP040", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> O03 [label="DEP041", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O03 -> O04 [label="DEP042", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O03 -> U01 [label="DEP067", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> O03 [label="S-O03 request", tooltip="Identity, benefits verification and authorization are distinct checks even if performed by the same employee."];
+O03 -> P01 [label="S-O03 response", tooltip="Identity, benefits verification and authorization are distinct checks even if performed by the same employee."];
+}

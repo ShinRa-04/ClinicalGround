@@ -1,0 +1,12 @@
+digraph "role-C04" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nC04 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C02 [label="C02\nReferring / primary-care \nclinician", URL="../index.html#C02", target="_top"];
+C04 [label="C04\nNurse practitioner", URL="../index.html#C04", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+P01 -> C04 [label="DEP025", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C02 -> C04 [label="DEP026", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> C04 [label="S-C04 request", tooltip="Specify state, population focus, privileges and any required practice arrangement before concluding independent authority. California examples separate practice category, furnishing authority and employer requirements. Prospective 104-availability wording is not proof of present individual certification or application availability."];
+C04 -> P01 [label="S-C04 response", tooltip="Specify state, population focus, privileges and any required practice arrangement before concluding independent authority. California examples separate practice category, furnishing authority and employer requirements. Prospective 104-availability wording is not proof of present individual certification or application availability."];
+}

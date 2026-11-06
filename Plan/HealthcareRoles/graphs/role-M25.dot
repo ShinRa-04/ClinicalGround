@@ -1,0 +1,14 @@
+digraph "role-M25" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM25 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+M15 [label="M15\nOccupational therapist", URL="../index.html#M15", target="_top"];
+M25 [label="M25\nEquipment supplier / delivery \nor fitting staff", URL="../index.html#M25", target="_top"];
+O01 [label="O01\nProvider authorization / \nprecertification specialist", URL="../index.html#O01", target="_top"];
+C01 -> M25 [label="DEP161", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O01 -> M25 [label="DEP162", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M15 -> M25 [label="DEP163", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> M25 [label="S-M25 request", tooltip="The CMS power-mobility example has specific requirements; do not apply those mechanically to all equipment."];
+M25 -> C01 [label="S-M25 response", tooltip="The CMS power-mobility example has specific requirements; do not apply those mechanically to all equipment."];
+}

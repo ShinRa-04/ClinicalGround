@@ -1,0 +1,23 @@
+{
+  "result": "passed",
+  "roles": 97,
+  "source_entries": 95,
+  "distinct_source_urls": 94,
+  "earlier_rows": 86,
+  "decision_questions": 34,
+  "explicit_handoffs": 46,
+  "service_interfaces": 97,
+  "dependency_edges": 219,
+  "rendered_graphs": 112,
+  "checked_local_markdown_links": 3443,
+  "checked_svg_node_instances": 949,
+  "consistency_checks": "Frozen inventory/hash coverage, recorded verdicts/passages, applied corrections, labels, links, SVGs and semantic sentinels; not automatic factual entailment verification.",
+  "defined_inventory_adjudication_completed": true,
+  "reviewed_assertion_units": 2218,
+  "pending_assertion_units": 0,
+  "current_narrative_graph_units_reconciled": 157,
+  "revised_added_units_reviewed": 25,
+  "every_finding_confirmed_true": false,
+  "actual_institutional_authority_verified": false,
+  "limitations": "Reference consistency and rendering only; no institution-specific approval, interviews, clinical validation or live clinical workflow"
+}

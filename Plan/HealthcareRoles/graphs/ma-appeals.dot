@@ -1,0 +1,28 @@
+digraph ma_appeals {
+graph [rankdir=TB, bgcolor="white", fontname="Arial", fontsize=16, labelloc=t, pad=0.4, nodesep=0.4, ranksep=0.65];
+node [shape=box, style="rounded,filled", fillcolor="#f0f5f8", fontname="Arial", fontsize=12, color="#8396a2", margin="0.18,0.14"];
+edge [fontname="Arial", fontsize=10, color="#526e80", arrowsize=0.7];
+graph [label="REVIEWED SCOPED SUMMARY: conditions and unresolved routes remain explicit\nMedicare Advantage Part C review path | process review, not employment hierarchy\nA02-A04, A11, A16 | check integrated-plan route and actual eligibility"];
+route [shape=diamond,label="Identify product / decision category\nApplicable integrated-plan route?\nA02(a) route check first"];
+integrated [shape=note,label="If applicable: identify integrated-plan process\nDetailed integrated rules not audited here\nDo not apply this standard ladder blindly"];
+U04 [label="Initial organization determination\nAppropriate authorized review\nA02: anticipated adverse medical necessity\nphysician OR other appropriate licensed expert"];
+U13 [label="Plan reconsideration\nUninvolved decision-maker\nMedical-necessity denial: expert physician\nA03 / 422.590(h)"];
+U14 [label="CMS-contracted independent entity\nRemaining disputed issues\nA04 / 422.592"];
+J01 [label="Eligible ALJ / applicable adjudication"];
+J02 [label="Eligible Medicare Appeals Council review"];
+J03 [label="Eligible federal district court review"];
+implementation [label="Plan implements applicable reversal\nA16 / 422.618\nDecision type and further-review exceptions matter"];
+route -> U04 [label="standard MA route applies"];
+route -> integrated [style=dashed,label="different applicable route"];
+U04 -> U13 [label="proper reconsideration challenge"];
+U13 -> U14 [label="remaining adverse issues under MA rules"];
+U14 -> J01 [label="only if further appeal eligible/proper"];
+J01 -> J02 [label="only if eligible/proper request"];
+J02 -> J03 [label="only if legal prerequisites met"];
+U13 -> implementation [style=dashed,label="applicable plan reversal"];
+U14 -> implementation [style=dashed,label="applicable independent reversal"];
+J01 -> implementation [style=dashed,label="applicable reversal; Council exception"];
+J02 -> implementation [style=dashed,label="applicable higher decision"];
+J03 -> implementation [style=dashed,label="applicable judicial disposition"];
+
+}

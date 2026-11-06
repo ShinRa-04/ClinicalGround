@@ -1,0 +1,12 @@
+digraph "role-U11" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nU11 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+O01 [label="O01\nProvider authorization / \nprecertification specialist", URL="../index.html#O01", target="_top"];
+U01 [label="U01\nPayer UM intake coordinator", URL="../index.html#U01", target="_top"];
+U11 [label="U11\nProvider-services \nrepresentative", URL="../index.html#U11", target="_top"];
+O01 -> U11 [label="DEP092", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U01 -> U11 [label="DEP093", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O01 -> U11 [label="S-U11 request", tooltip="May be combined with other service functions; do not infer final decision power from access to the case."];
+U11 -> O01 [label="S-U11 response", tooltip="May be combined with other service functions; do not infer final decision power from access to the case."];
+}

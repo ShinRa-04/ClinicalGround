@@ -1,0 +1,14 @@
+digraph "role-U14" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nU14 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+J01 [label="J01\nMA administrative law judge / \napplicable adjudicator", URL="../index.html#J01", target="_top"];
+U13 [label="U13\nMedical-necessity appeal / \nreconsideration physician", URL="../index.html#U13", target="_top"];
+U14 [label="U14\nMedicare Advantage \nindependent-review entity \nreviewer", URL="../index.html#U14", target="_top"];
+U15 [label="U15\nExternal-review administrator", URL="../index.html#U15", target="_top"];
+U13 -> U14 [label="DEP100", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U15 -> U14 [label="DEP101", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U14 -> J01 [label="DEP214", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U13 -> U14 [label="S-U14 request", tooltip="This is MA IRE review; do not label a commercial IRO or an Original Medicare contractor as the same route."];
+U14 -> U13 [label="S-U14 response", tooltip="This is MA IRE review; do not label a commercial IRO or an Original Medicare contractor as the same route."];
+}

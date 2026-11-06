@@ -1,0 +1,36 @@
+# Local controller for the official benchmark. No task data or secrets are baked in.
+FROM ghcr.io/astral-sh/uv:0.12.4@sha256:d0a6eca6c669dc7e9c51218707b8438a3d30402733d739dcc00adb3e213e8f5c AS uv
+FROM docker:29-cli@sha256:1a4c7cb63513f349bdad01fcc6e0f3f2f67d37b9da86f14dc0d4a0942eecda00 AS docker-cli
+FROM python:3.12-slim@sha256:02108f5d322dd89f1c9e552442c25acb0543dfdbc455693a5599624f20d9155d
+
+COPY --from=uv /uv /usr/local/bin/uv
+COPY --from=docker-cli /usr/local/bin/docker /usr/local/bin/docker
+COPY --from=docker-cli /usr/local/libexec/docker/cli-plugins/docker-buildx /usr/local/libexec/docker/cli-plugins/docker-buildx
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends ca-certificates git gh \
+    && rm -rf /var/lib/apt/lists/*
+
+ENV UV_PROJECT_ENVIRONMENT=/opt/chi-bench-venv \
+    UV_LINK_MODE=copy \
+    UV_CACHE_DIR=/runner/.cache/uv-container \
+    HF_HOME=/runner/.cache/huggingface \
+    HF_HUB_DISABLE_IMPLICIT_TOKEN=1 \
+    GH_CONFIG_DIR=/runner/.cache/gh \
+    PLAYWRIGHT_BROWSERS_PATH=/opt/ms-playwright \
+    PYTHONUNBUFFERED=1 \
+    PYTHONUTF8=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PATH=/opt/chi-bench-venv/bin:$PATH
+
+WORKDIR /runner/chi-bench
+COPY chi-bench/pyproject.toml chi-bench/uv.lock chi-bench/README.md chi-bench/LICENSE ./
+COPY chi-bench/src/ ./src/
+RUN uv sync --frozen --extra dev \
+    && playwright install --with-deps chromium \
+    && git config --system --add safe.directory /runner/chi-bench \
+    && git config --system --add safe.directory /runner/leaderboard
+
+COPY toolkit.py /opt/bigdata-toolkit.py
+ENTRYPOINT ["/opt/chi-bench-venv/bin/python", "/opt/bigdata-toolkit.py"]
+CMD ["doctor"]

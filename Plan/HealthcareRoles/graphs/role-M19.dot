@@ -1,0 +1,14 @@
+digraph "role-M19" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM19 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+M18 [label="M18\nDischarge planner / \ntransitions coordinator", URL="../index.html#M18", target="_top"];
+M19 [label="M19\nHome-health intake / \ncoordination clinician", URL="../index.html#M19", target="_top"];
+M21 [label="M21\nHome-health aide / \npersonal-care worker", URL="../index.html#M21", target="_top"];
+M18 -> M19 [label="DEP150", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> M19 [label="DEP151", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M19 -> M21 [label="DEP154", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M18 -> M19 [label="S-M19 request", tooltip="Home-health rules apply to the specified setting; signatory and verbal-order acceptance requirements remain scoped."];
+M19 -> M18 [label="S-M19 response", tooltip="Home-health rules apply to the specified setting; signatory and verbal-order acceptance requirements remain scoped."];
+}

@@ -1,0 +1,894 @@
+[
+  {
+    "name": "all-role-dependencies",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nAll-role coordination dependencies | conditional, not command or mandatory approval",
+    "engine": "dot",
+    "nodes": 97,
+    "edges": 219,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "all-role-information",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nAll-role illustrative request/response interfaces | not an institutional protocol",
+    "engine": "dot",
+    "nodes": 97,
+    "edges": 194,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "provider-dependencies",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nProvider dependencies | arrow = conditional information/service context",
+    "engine": "dot",
+    "nodes": 23,
+    "edges": 44,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "payer-dependencies",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nPayer dependencies | arrow = conditional information/service context",
+    "engine": "dot",
+    "nodes": 24,
+    "edges": 30,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "care-dependencies",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nCare dependencies | arrow = conditional information/service context",
+    "engine": "dot",
+    "nodes": 40,
+    "edges": 71,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "governance-dependencies",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nGovernance dependencies | arrow = conditional information/service context",
+    "engine": "dot",
+    "nodes": 27,
+    "edges": 36,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "appeal-dependencies",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nAppeal dependencies | arrow = conditional information/service context",
+    "engine": "dot",
+    "nodes": 14,
+    "edges": 19,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "provider-information",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nProvider Information | arrow = named information handoff; F ID links to contract",
+    "engine": "dot",
+    "nodes": 14,
+    "edges": 15,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "payer-appeal-information",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nPayer Appeal Information | arrow = named information handoff; F ID links to contract",
+    "engine": "dot",
+    "nodes": 16,
+    "edges": 14,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "care-information",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nCare Information | arrow = named information handoff; F ID links to contract",
+    "engine": "dot",
+    "nodes": 18,
+    "edges": 16,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "governance-information",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nGovernance Information | arrow = named information handoff; F ID links to contract",
+    "engine": "dot",
+    "nodes": 19,
+    "edges": 11,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-P01",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nP01 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 38,
+    "edges": 42,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-P02",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nP02 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-P03",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nP03 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 6,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-P04",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nP04 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 10,
+    "edges": 11,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-P05",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nP05 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-P06",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nP06 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-P07",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nP07 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 5,
+    "edges": 6,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-C01",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nC01 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 30,
+    "edges": 33,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-C02",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nC02 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 10,
+    "edges": 12,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-C03",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nC03 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 5,
+    "edges": 7,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-C04",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nC04 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-C05",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nC05 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-C06",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nC06 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 6,
+    "edges": 7,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-C07",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nC07 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-C08",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nC08 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-O01",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nO01 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 12,
+    "edges": 13,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-O02",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nO02 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-O03",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nO03 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 6,
+    "edges": 7,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-O04",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nO04 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 8,
+    "edges": 10,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-O05",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nO05 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 8,
+    "edges": 9,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-O06",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nO06 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 8,
+    "edges": 10,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-O07",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nO07 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 5,
+    "edges": 6,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-O08",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nO08 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-O09",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nO09 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-O10",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nO10 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 5,
+    "edges": 6,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-O11",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nO11 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-O12",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nO12 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-O13",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nO13 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 5,
+    "edges": 8,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U01",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU01 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 10,
+    "edges": 11,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U02",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU02 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 6,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U03",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU03 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 7,
+    "edges": 8,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U04",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU04 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 8,
+    "edges": 9,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U05",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU05 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U06",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU06 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 5,
+    "edges": 6,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U07",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU07 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U08",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU08 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U09",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU09 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 10,
+    "edges": 11,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U10",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU10 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U11",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU11 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U12",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU12 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 7,
+    "edges": 8,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U13",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU13 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 5,
+    "edges": 6,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U14",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU14 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U15",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU15 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 5,
+    "edges": 6,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U16",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU16 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U17",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU17 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 6,
+    "edges": 7,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-U18",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nU18 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M01",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM01 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 22,
+    "edges": 24,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M02",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM02 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 5,
+    "edges": 6,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M03",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM03 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M04",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM04 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 6,
+    "edges": 6,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M05",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM05 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M06",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM06 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 5,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M07",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM07 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M08",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM08 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M09",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM09 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M10",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM10 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M11",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM11 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M12",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM12 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M13",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM13 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M14",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM14 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 5,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M15",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM15 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M16",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM16 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M17",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM17 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M18",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM18 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 6,
+    "edges": 7,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M19",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM19 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M20",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM20 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M21",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM21 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M22",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM22 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M23",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM23 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M24",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM24 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 2,
+    "edges": 3,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M25",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM25 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M26",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM26 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M27",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM27 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 5,
+    "edges": 6,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M28",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM28 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M29",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM29 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M30",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM30 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 5,
+    "edges": 6,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-M31",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nM31 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G01",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG01 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G02",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG02 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G03",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG03 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 6,
+    "edges": 7,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G04",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG04 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G05",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG05 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G06",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG06 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 11,
+    "edges": 11,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G07",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG07 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G08",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG08 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 5,
+    "edges": 7,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G09",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG09 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 7,
+    "edges": 8,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G10",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG10 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 6,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G11",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG11 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 7,
+    "edges": 8,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G12",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG12 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G13",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG13 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G14",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG14 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G15",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG15 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G16",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG16 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-G17",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nG17 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-J01",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nJ01 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-J02",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nJ02 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 4,
+    "edges": 5,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "role-J03",
+    "title": "MODEL: NOT CONFIRMED institutional workflow\nJ03 dependency neighborhood | conditional contacts, not supervisors",
+    "engine": "dot",
+    "nodes": 3,
+    "edges": 4,
+    "evidence_status": "SYNTHESIZED MODEL / NOT CONFIRMED institutional workflow"
+  },
+  {
+    "name": "authority-domains",
+    "title": "Authority Domains",
+    "engine": "dot",
+    "scope": "See diagram labels and AUTHORITY.md",
+    "evidence_status": "REVIEWED SCOPED SUMMARY: conditions and unresolved routes remain explicit"
+  },
+  {
+    "name": "ma-appeals",
+    "title": "Ma Appeals",
+    "engine": "dot",
+    "scope": "See diagram labels and AUTHORITY.md",
+    "evidence_status": "REVIEWED SCOPED SUMMARY: conditions and unresolved routes remain explicit"
+  },
+  {
+    "name": "commercial-appeals",
+    "title": "Commercial Appeals",
+    "engine": "dot",
+    "scope": "See diagram labels and AUTHORITY.md",
+    "evidence_status": "REVIEWED SCOPED SUMMARY: conditions and unresolved routes remain explicit"
+  },
+  {
+    "name": "reporting-examples",
+    "title": "Reporting Examples",
+    "engine": "dot",
+    "scope": "See diagram labels and AUTHORITY.md",
+    "evidence_status": "SOURCE-SPECIFIC EXAMPLE: not confirmed for other institutions"
+  }
+]

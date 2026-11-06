@@ -1,0 +1,3422 @@
+[
+  {
+    "id": "D01",
+    "question": "Who chooses whether to accept proposed treatment?",
+    "domain": "consent",
+    "actors": [
+      "P01",
+      "P03",
+      "C01"
+    ],
+    "rule": "Patient participates and may request/refuse care; representative acts only under applicable authority.",
+    "cannot": "Insurer approval, scheduling or management preference is not patient consent.",
+    "review": "Clarify understanding, capacity and lawful representative; use applicable clinical/legal process for disputes.",
+    "condition": "Hospital rights under A01; capacity/minor/emergency and other exceptions require additional applicable law.",
+    "sources": [
+      "A01",
+      "A09"
+    ],
+    "evidence_status": "SUPPORTED_WITHIN_SCOPE: Hospital patient participation/refusal and bounded representative authority are explicit. Separating consent from insurance/scheduling is a reasoned domain distinction.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "A01",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-B/section-482.13",
+          "source_text_sha256": "bac516176c3d291b39750285f02b0b2c4564bda54394f736fa33134a1e738191",
+          "retrieval_status": "tool_excerpt",
+          "selector": "request or refuse treatment",
+          "locations": [
+            {
+              "locator": "tool line 118",
+              "context_locators": [
+                "tool line 117",
+                "tool line 118",
+                "tool line 119",
+                "tool line 120",
+                "tool line 122"
+              ],
+              "paragraph_sha256": "c87100eaa414ab908bc02898c2fd89633d4ce8e3273cf238a16da52793e5d166"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A09",
+          "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/personal-representatives/index.html",
+          "source_text_sha256": "47f6b57260c613d9e2f493dc904dfce3ce3e5bcba1b22303f016a0280f9e7d76",
+          "retrieval_status": "tool_excerpt",
+          "selector": "scope",
+          "locations": [
+            {
+              "locator": "tool line 65",
+              "context_locators": [
+                "tool line 64",
+                "tool line 65",
+                "tool line 66",
+                "tool line 67",
+                "tool line 68"
+              ],
+              "paragraph_sha256": "8ece595fe14f86d4cf8e20da5194ccbc26c330f14744911bb10bd56440c3d306"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_WITHIN_SCOPE",
+      "rationale": "Hospital patient participation/refusal and bounded representative authority are explicit. Separating consent from insurance/scheduling is a reasoned domain distinction.",
+      "alternatives": "Direct patient decision or a legally appropriate representative; specific exceptions require the actual law/case.",
+      "complexity": "No universal surrogate order, capacity finding or emergency-consent outcome is established."
+    }
+  },
+  {
+    "id": "D02",
+    "question": "Who establishes representative authority?",
+    "domain": "representation",
+    "actors": [
+      "P03",
+      "P04",
+      "G10",
+      "G17"
+    ],
+    "rule": "Recognize authority from applicable law/instrument/appointment and its actual scope, not family relationship alone.",
+    "cannot": "Appeal appointment does not automatically authorize treatment decisions.",
+    "review": "Privacy/legal or applicable appointment process resolves uncertainty.",
+    "condition": "Healthcare personal representation and appeal standing are separate determinations.",
+    "sources": [
+      "A09",
+      "R20",
+      "R15"
+    ],
+    "evidence_status": "SUPPORTED_CONDITIONAL: HHS defines healthcare representation and separately describes appointment for Medicare appeals.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "A09",
+          "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/personal-representatives/index.html",
+          "source_text_sha256": "47f6b57260c613d9e2f493dc904dfce3ce3e5bcba1b22303f016a0280f9e7d76",
+          "retrieval_status": "tool_excerpt",
+          "selector": "scope",
+          "locations": [
+            {
+              "locator": "tool line 65",
+              "context_locators": [
+                "tool line 64",
+                "tool line 65",
+                "tool line 66",
+                "tool line 67",
+                "tool line 68"
+              ],
+              "paragraph_sha256": "8ece595fe14f86d4cf8e20da5194ccbc26c330f14744911bb10bd56440c3d306"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "R20",
+          "url": "https://www.hhs.gov/about/agencies/omha/filing-an-appeal/your-right-to-representation/index.html",
+          "source_text_sha256": "625970dc70fc4d460f418070761e7688074bb684464f0db36d4f0de956c97f10",
+          "retrieval_status": "tool_excerpt",
+          "selector": "appointment",
+          "locations": [
+            {
+              "locator": "tool line 30",
+              "context_locators": [
+                "tool line 3",
+                "tool line 30",
+                "tool line 31",
+                "tool line 32",
+                "tool line 33"
+              ],
+              "paragraph_sha256": "3dacb647a7267d57e60cbd40b2402789259e330b29e01bc46d19b8a97dc102e2"
+            },
+            {
+              "locator": "tool line 39",
+              "context_locators": [
+                "tool line 38",
+                "tool line 39",
+                "tool line 40",
+                "tool line 42",
+                "tool line 44"
+              ],
+              "paragraph_sha256": "8ed16f175aeb9e922dfe30da5c42bcde174efc57166556fa0877cfad1a0f206b"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_CONDITIONAL",
+      "rationale": "HHS defines healthcare representation and separately describes appointment for Medicare appeals.",
+      "alternatives": "Broad or limited healthcare authority; appointed appeal representative; statutory authority where applicable.",
+      "complexity": "Two scopes can belong to the same person, but neither follows merely from family relationship or a generic signature."
+    }
+  },
+  {
+    "id": "D03",
+    "question": "Who recommends/orders clinical treatment?",
+    "domain": "treatment",
+    "actors": [
+      "C01",
+      "C03",
+      "C04",
+      "C05"
+    ],
+    "rule": "Authorized treating practitioner makes clinical recommendations/orders within license and privileges.",
+    "cannot": "Coordinator, coder, reviewer title or managerial rank alone does not confer prescribing authority.",
+    "review": "Clinical reassessment, appropriate consultation and applicable professional escalation.",
+    "condition": "Profession/state/practice arrangement and patient consent must be established.",
+    "sources": [
+      "B01",
+      "B02",
+      "B03",
+      "A15"
+    ],
+    "evidence_status": "SUPPORTED_CONDITIONAL: Treating-professional functions and hospital order authentication are supported; profession/jurisdiction/privileges condition the permission.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "B01",
+          "url": "https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm",
+          "source_text_sha256": "3e33f364344db6ee1718cfe51ea6505b35b765d49b9953fb9665ca1dc4bfa190",
+          "retrieval_status": "tool_excerpt",
+          "selector": "treatment plan",
+          "locations": [
+            {
+              "locator": "tool line 230",
+              "context_locators": [
+                "tool line 229",
+                "tool line 230",
+                "tool line 231",
+                "tool line 232",
+                "tool line 233"
+              ],
+              "paragraph_sha256": "f4397e066b183ed18275e990893c04f8cd7e09b2e9fb4c5f4d640ac69ca555ec"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "B03",
+          "url": "https://www.bls.gov/ooh/healthcare/nurse-anesthetists-nurse-midwives-and-nurse-practitioners.htm",
+          "source_text_sha256": "4004b6c92075aafdbb9e47b13596ddc1cd956fde883b48280cf23b8aab8fc401",
+          "retrieval_status": "tool_excerpt",
+          "selector": "scope of practice varies",
+          "locations": [
+            {
+              "locator": "tool line 221",
+              "context_locators": [
+                "tool line 219",
+                "tool line 221",
+                "tool line 222",
+                "tool line 224",
+                "tool line 225"
+              ],
+              "paragraph_sha256": "9a3aa5984161051d61b200dff2cf2b469fa8f71037e3fc66febefee5831bcbe1"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A15",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-C/section-482.24",
+          "source_text_sha256": "363a26a40f907655828d23fb820c88ad97806cf91b4b574546fcfa6420ff5839",
+          "retrieval_status": "tool_excerpt",
+          "selector": "ordering practitioner",
+          "locations": [
+            {
+              "locator": "tool line 113",
+              "context_locators": [
+                "tool line 112",
+                "tool line 113",
+                "tool line 115",
+                "tool line 116",
+                "tool line 118"
+              ],
+              "paragraph_sha256": "9ec96a67835ac67c1eb8a98f82a1f8d7150d82a82f9a3e4319ed60d30cc1c4f3"
+            },
+            {
+              "locator": "tool line 120",
+              "context_locators": [
+                "tool line 119",
+                "tool line 120",
+                "tool line 122",
+                "tool line 124",
+                "tool line 125"
+              ],
+              "paragraph_sha256": "834108276bb3a48402dbb69a7cc7df6a12e05a8fe5c0c76c1fb7df7ae05d72a5"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_CONDITIONAL",
+      "rationale": "Treating-professional functions and hospital order authentication are supported; profession/jurisdiction/privileges condition the permission.",
+      "alternatives": "Physician, NP, PA or other allowed practitioner for a specific activity/setting.",
+      "complexity": "Sources do not establish any actual individual license, privileges or authorization; no universal prescribing permission is certified."
+    }
+  },
+  {
+    "id": "D04",
+    "question": "Does a treating specialist automatically outrank the PCP?",
+    "domain": "treatment",
+    "actors": [
+      "C02",
+      "C03"
+    ],
+    "rule": "They contribute different expertise/responsibilities; identify the clinician responsible for the disputed service.",
+    "cannot": "No universal organizational or clinical-superiority edge is inferred from specialty title.",
+    "review": "Reconcile recommendations with patient and responsible clinical team.",
+    "condition": "Actual episode, privileges and local responsibility assignment determine signoff.",
+    "sources": [
+      "B01",
+      "R22",
+      "R24"
+    ],
+    "evidence_status": "INTERPRETATION_WITH_SOURCE_CONTEXT: Sources describe different expertise and coordination. They do not establish a universal specialty-over-PCP command hierarchy.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "B01",
+          "url": "https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm",
+          "source_text_sha256": "3e33f364344db6ee1718cfe51ea6505b35b765d49b9953fb9665ca1dc4bfa190",
+          "retrieval_status": "tool_excerpt",
+          "selector": "specialize",
+          "locations": [
+            {
+              "locator": "tool line 233",
+              "context_locators": [
+                "tool line 232",
+                "tool line 233",
+                "tool line 234",
+                "tool line 235",
+                "tool line 236"
+              ],
+              "paragraph_sha256": "96530156cdd5f1b95aaebd2646e41116add2e25b02413fe2f2caccb60ad379d7"
+            },
+            {
+              "locator": "tool line 235",
+              "context_locators": [
+                "tool line 234",
+                "tool line 235",
+                "tool line 236",
+                "tool line 238",
+                "tool line 239"
+              ],
+              "paragraph_sha256": "50b26026f3e21f8ff752999cf204e05c2a737ab77e6039bd6b23d1ed0ae7134e"
+            },
+            {
+              "locator": "tool line 238",
+              "context_locators": [
+                "tool line 236",
+                "tool line 238",
+                "tool line 239",
+                "tool line 240",
+                "tool line 241"
+              ],
+              "paragraph_sha256": "c30202784f4355dcc20f232e191933bbdcd8016d719b46492d6981fe1161345c"
+            },
+            {
+              "locator": "tool line 240",
+              "context_locators": [
+                "tool line 239",
+                "tool line 240",
+                "tool line 241",
+                "tool line 242",
+                "tool line 243"
+              ],
+              "paragraph_sha256": "e7547de82a9d63b10db193c0646392796c7f1eac56e97df37445ee12177e82b4"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "R22",
+          "url": "https://www.ahrq.gov/ncepcr/care/coordination.html",
+          "source_text_sha256": "f2f0f12be9ee97cde671fc408061b77ef6cf751578c781ee383c746624eeedf2",
+          "retrieval_status": "tool_excerpt",
+          "selector": "primary care physicians",
+          "locations": [
+            {
+              "locator": "tool line 52",
+              "context_locators": [
+                "tool line 51",
+                "tool line 52",
+                "tool line 53",
+                "tool line 54",
+                "tool line 56"
+              ],
+              "paragraph_sha256": "46c61afdee174b446caf87e1bd068ff641605ceb32455b66dd10a35eafc22fc9"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "INTERPRETATION_WITH_SOURCE_CONTEXT",
+      "rationale": "Sources describe different expertise and coordination. They do not establish a universal specialty-over-PCP command hierarchy.",
+      "alternatives": "Responsibility can be assigned by episode, institution, admitting/attending arrangement and privileges.",
+      "complexity": "No universal hierarchy is inferred; this is an evidence boundary, not proof that no institution can assign one."
+    }
+  },
+  {
+    "id": "D05",
+    "question": "Can an NP act independently?",
+    "domain": "professional_scope",
+    "actors": [
+      "C04"
+    ],
+    "rule": "Activity depends on state scope, population focus and privileges/practice arrangement.",
+    "cannot": "Neither universal physician supervision nor universal unrestricted independence is asserted.",
+    "review": "Check current governing rules and required professional support.",
+    "condition": "State and actual activity must be specified.",
+    "sources": [
+      "B03",
+      "A13",
+      "A14",
+      "V02"
+    ],
+    "evidence_status": "SUPPORTED_CONDITIONAL_WITH_ALTERNATIVES: The occupational summary and California regulator establish variation and multiple arrangements.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "B03",
+          "url": "https://www.bls.gov/ooh/healthcare/nurse-anesthetists-nurse-midwives-and-nurse-practitioners.htm",
+          "source_text_sha256": "4004b6c92075aafdbb9e47b13596ddc1cd956fde883b48280cf23b8aab8fc401",
+          "retrieval_status": "tool_excerpt",
+          "selector": "scope of practice varies",
+          "locations": [
+            {
+              "locator": "tool line 221",
+              "context_locators": [
+                "tool line 219",
+                "tool line 221",
+                "tool line 222",
+                "tool line 224",
+                "tool line 225"
+              ],
+              "paragraph_sha256": "9a3aa5984161051d61b200dff2cf2b469fa8f71037e3fc66febefee5831bcbe1"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "V02",
+          "url": "https://www.rn.ca.gov/practice/ab890.shtml",
+          "source_text_sha256": "dc63e5e167d1a71efe71567b6e5715a9bc091b0b984c45fa43fd2d09542aa04a",
+          "retrieval_status": "tool_excerpt",
+          "selector": "103 NP",
+          "locations": [
+            {
+              "locator": "tool line 113",
+              "context_locators": [
+                "tool line 112",
+                "tool line 113",
+                "tool line 114",
+                "tool line 115",
+                "tool line 117"
+              ],
+              "paragraph_sha256": "3b637ce773fc2e9df6172398cdc131109b0fa9df74c5df95d1136091c471ec00"
+            },
+            {
+              "locator": "tool line 117",
+              "context_locators": [
+                "tool line 115",
+                "tool line 117",
+                "tool line 118",
+                "tool line 119",
+                "tool line 121"
+              ],
+              "paragraph_sha256": "09d9cf0440f352fddc8768b192cbd60e81fff6f917f9005304d55f50ead62ce7"
+            },
+            {
+              "locator": "tool line 118",
+              "context_locators": [
+                "tool line 117",
+                "tool line 118",
+                "tool line 119",
+                "tool line 121",
+                "tool line 123"
+              ],
+              "paragraph_sha256": "1bfb0a4f82244f8cb5cc9a8dd0b2978eae8d6653403b1468207378b532bbcdc0"
+            },
+            {
+              "locator": "tool line 135",
+              "context_locators": [
+                "tool line 134",
+                "tool line 135",
+                "tool line 137",
+                "tool line 138",
+                "tool line 140"
+              ],
+              "paragraph_sha256": "c20423ec3b8663df848962f946801e1e7b150b6bbf7f7efe888d8780e963cdb4"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "V02",
+          "url": "https://www.rn.ca.gov/practice/ab890.shtml",
+          "source_text_sha256": "dc63e5e167d1a71efe71567b6e5715a9bc091b0b984c45fa43fd2d09542aa04a",
+          "retrieval_status": "tool_excerpt",
+          "selector": "furnishing authority",
+          "locations": [
+            {
+              "locator": "tool line 207",
+              "context_locators": [
+                "tool line 206",
+                "tool line 207",
+                "tool line 209",
+                "tool line 211",
+                "tool line 212"
+              ],
+              "paragraph_sha256": "ce10f92dc7bef92b7584f44fd6b793676e5d80a271862b03123112e4e8028873"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_CONDITIONAL_WITH_ALTERNATIVES",
+      "rationale": "The occupational summary and California regulator establish variation and multiple arrangements.",
+      "alternatives": "California traditional/103/104 pathways have different conditions; furnishing authority and employer requirements are additional issues.",
+      "complexity": "The California page has prospective 104 availability wording that does not itself prove current individual certification or operational application availability."
+    }
+  },
+  {
+    "id": "D06",
+    "question": "Who supervises PA practice?",
+    "domain": "professional_scope",
+    "actors": [
+      "C05",
+      "C01"
+    ],
+    "rule": "Apply the actual state and practice requirements for collaboration/supervision.",
+    "cannot": "Do not infer one national supervision arrangement or confuse PA with medical assistant.",
+    "review": "Responsible practice/medical leadership and governing scope rules.",
+    "condition": "State, privileges and agreement are unresolved until identified.",
+    "sources": [
+      "B02",
+      "A15",
+      "V03"
+    ],
+    "evidence_status": "SUPPORTED_CONDITIONAL_WITH_ALTERNATIVES: Oregon explicitly describes collaborative practice and associate terminology, limiting broad national supervision summaries.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "B02",
+          "url": "https://www.bls.gov/ooh/healthcare/physician-assistants.htm",
+          "source_text_sha256": "c15b941bafdbaed6e0dbba5b1b5a5cdc76aa4dea73718eae17df83fbd7b9a11d",
+          "retrieval_status": "tool_excerpt",
+          "selector": "collaboration",
+          "locations": [
+            {
+              "locator": "tool line 236",
+              "context_locators": [
+                "tool line 235",
+                "tool line 236",
+                "tool line 237",
+                "tool line 238",
+                "tool line 240"
+              ],
+              "paragraph_sha256": "a7e13e3755062f1ebe6179a048c8b011a381f4c9b601cad264368b9672542c8a"
+            },
+            {
+              "locator": "tool line 274",
+              "context_locators": [
+                "tool line 272",
+                "tool line 274",
+                "tool line 275",
+                "tool line 276",
+                "tool line 278"
+              ],
+              "paragraph_sha256": "985e75ef33daf7285f961ac95c097b0c15a3dec8a4481f127d23c0785ca2ce37"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "V03",
+          "url": "https://www.oregon.gov/omb/Topics-of-Interest/Pages/PA-Modernization-Bill.aspx",
+          "source_text_sha256": "974e1d75b877759b45f18312be00cc5571126591db0f98a7205f0807e2c9a641",
+          "retrieval_status": "tool_excerpt",
+          "selector": "collaboration agreement",
+          "locations": [
+            {
+              "locator": "tool line 45",
+              "context_locators": [
+                "tool line 44",
+                "tool line 45",
+                "tool line 47",
+                "tool line 48",
+                "tool line 50"
+              ],
+              "paragraph_sha256": "0f41bd3b0fb15712096df38cb608ff41e166ff08a6c7e0740e7bf4202fe3b1c1"
+            },
+            {
+              "locator": "tool line 50",
+              "context_locators": [
+                "tool line 48",
+                "tool line 50",
+                "tool line 53",
+                "tool line 58",
+                "tool line 59"
+              ],
+              "paragraph_sha256": "2a36e04e623501f52da8234743077798352e4b0d20b9f4a4e23accf6848e399a"
+            },
+            {
+              "locator": "tool line 53",
+              "context_locators": [
+                "tool line 50",
+                "tool line 53",
+                "tool line 58",
+                "tool line 59",
+                "tool line 61"
+              ],
+              "paragraph_sha256": "3a9e800f45aafbd4de1cc472796223d84dab70a6295bfc8ee1cb749431890a16"
+            },
+            {
+              "locator": "tool line 61",
+              "context_locators": [
+                "tool line 59",
+                "tool line 61",
+                "tool line 62",
+                "tool line 63",
+                "tool line 65"
+              ],
+              "paragraph_sha256": "1c8102552633cc508ac068492d27e96545f930a5d676bd87a4c09a60a65e18d1"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_CONDITIONAL_WITH_ALTERNATIVES",
+      "rationale": "Oregon explicitly describes collaborative practice and associate terminology, limiting broad national supervision summaries.",
+      "alternatives": "Different states/practice arrangements; physician or employer agreement as specified by Oregon.",
+      "complexity": "National occupational text is not a state practice act; no universal supervision ratio or boss chain is established."
+    }
+  },
+  {
+    "id": "D07",
+    "question": "Can an RN delegate any assigned task?",
+    "domain": "professional_scope",
+    "actors": [
+      "C06",
+      "C07",
+      "C08",
+      "M21"
+    ],
+    "rule": "Assignment/delegation must fit applicable law, competence, supervision and policy.",
+    "cannot": "Manager instruction does not legalize a task beyond professional scope.",
+    "review": "Qualified nursing/professional supervisor and scope framework.",
+    "condition": "No nationwide permission for a specific drug, IV task or assessment is assumed.",
+    "sources": [
+      "A13",
+      "A14",
+      "B04",
+      "B05",
+      "B06",
+      "B19",
+      "V10"
+    ],
+    "evidence_status": "SUPPORTED_PROFESSIONAL_FRAMEWORK: The decision framework checks legal prohibition, education/competence, policy and accountability. It is professional guidance, not itself every state law.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "V10",
+          "url": "https://www.ncsbn.org/public-files/2016_Decision-Making-Framework.pdf",
+          "source_text_sha256": "b15a96e44efa2e77c7b7d9f601b099ddfe5418b959688005176dfb72db67ba07",
+          "retrieval_status": "tool_excerpt",
+          "selector": "prohibited",
+          "locations": [
+            {
+              "locator": "tool line 62 / PDF page 3",
+              "context_locators": [
+                "tool line 61 / PDF page 3",
+                "tool line 62 / PDF page 3",
+                "tool line 63 / PDF page 3",
+                "tool line 64 / PDF page 3",
+                "tool line 65 / PDF page 3"
+              ],
+              "paragraph_sha256": "83253998102d5f37b7e00daead4faf986f0aef293f68f85fc1a930b9a7d3a451"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "V10",
+          "url": "https://www.ncsbn.org/public-files/2016_Decision-Making-Framework.pdf",
+          "source_text_sha256": "b15a96e44efa2e77c7b7d9f601b099ddfe5418b959688005176dfb72db67ba07",
+          "retrieval_status": "tool_excerpt",
+          "selector": "competence",
+          "locations": [
+            {
+              "locator": "tool line 9 / PDF page 1",
+              "context_locators": [
+                "tool line 8 / PDF page 1",
+                "tool line 9 / PDF page 1",
+                "tool line 10 / PDF page 1",
+                "tool line 11 / PDF page 1",
+                "tool line 12 / PDF page 1"
+              ],
+              "paragraph_sha256": "691e361e48689ed93545006cfa3fbb8b076538f218905a03893d593ec4da0fbf"
+            },
+            {
+              "locator": "tool line 75 / PDF page 3",
+              "context_locators": [
+                "tool line 74 / PDF page 3",
+                "tool line 75 / PDF page 3",
+                "tool line 76 / PDF page 3",
+                "tool line 77 / PDF page 3",
+                "tool line 78 / PDF page 3"
+              ],
+              "paragraph_sha256": "8e8a96c76d4eb871666120d39ca3e3bcc29dc118fdad452292766989f26acf17"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A14",
+          "url": "https://ncsbn.org/policy/npa.page",
+          "source_text_sha256": "7e536aa86b6e2f83e88e70f6ae8163a89378c80f389098dd024f1718b99b10a2",
+          "retrieval_status": "tool_excerpt",
+          "selector": "state",
+          "locations": [
+            {
+              "locator": "tool line 26",
+              "context_locators": [
+                "tool line 24",
+                "tool line 26",
+                "tool line 28",
+                "tool line 30",
+                "tool line 32"
+              ],
+              "paragraph_sha256": "aacdcae24e02540232cd29d1486ff3462d8f5026adcfb22441faf58d9e66fdb8"
+            },
+            {
+              "locator": "tool line 40",
+              "context_locators": [
+                "tool line 38",
+                "tool line 40",
+                "tool line 41",
+                "tool line 43",
+                "tool line 45"
+              ],
+              "paragraph_sha256": "928c9b642bc2e3fa5f1816892b3add4742c27d4d169c83bb41f6038e72f579b7"
+            },
+            {
+              "locator": "tool line 41",
+              "context_locators": [
+                "tool line 40",
+                "tool line 41",
+                "tool line 43",
+                "tool line 45",
+                "tool line 47"
+              ],
+              "paragraph_sha256": "3ef403de8ac42281d97ccda2630b3934d4475492f322359f32337d65c23929b8"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_PROFESSIONAL_FRAMEWORK",
+      "rationale": "The decision framework checks legal prohibition, education/competence, policy and accountability. It is professional guidance, not itself every state law.",
+      "alternatives": "Assignment, delegation and supervision vary by activity/state/credential.",
+      "complexity": "Specific task permission remains unresolved until the actual practice act and case facts are checked."
+    }
+  },
+  {
+    "id": "D08",
+    "question": "Who supplies the clinical facts in a request?",
+    "domain": "documentation",
+    "actors": [
+      "C01",
+      "O06",
+      "O08",
+      "O13"
+    ],
+    "rule": "Responsible service author authenticates clinical content; custodians transfer and CDI requests clarification.",
+    "cannot": "Administrative staff cannot invent a diagnosis or revise facts to match payer criteria.",
+    "review": "Query author and follow correction/authentication process.",
+    "condition": "Hospital authentication requirement A15; other settings need their rules.",
+    "sources": [
+      "A15",
+      "B20",
+      "R07",
+      "R08"
+    ],
+    "evidence_status": "SUPPORTED_WITHIN_SETTING_PLUS_INTERPRETATION: Hospital authentication is explicit; coding/CDI sources support clarification rather than independently creating clinical facts.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "A15",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-C/section-482.24",
+          "source_text_sha256": "363a26a40f907655828d23fb820c88ad97806cf91b4b574546fcfa6420ff5839",
+          "retrieval_status": "tool_excerpt",
+          "selector": "authenticated",
+          "locations": [
+            {
+              "locator": "tool line 112",
+              "context_locators": [
+                "tool line 110",
+                "tool line 112",
+                "tool line 113",
+                "tool line 115",
+                "tool line 116"
+              ],
+              "paragraph_sha256": "7fc3cdef384c5d356abe7af8f4ecb8279ce196f0e6c3847c04158e7e129ede55"
+            },
+            {
+              "locator": "tool line 113",
+              "context_locators": [
+                "tool line 112",
+                "tool line 113",
+                "tool line 115",
+                "tool line 116",
+                "tool line 118"
+              ],
+              "paragraph_sha256": "9ec96a67835ac67c1eb8a98f82a1f8d7150d82a82f9a3e4319ed60d30cc1c4f3"
+            },
+            {
+              "locator": "tool line 120",
+              "context_locators": [
+                "tool line 119",
+                "tool line 120",
+                "tool line 122",
+                "tool line 124",
+                "tool line 125"
+              ],
+              "paragraph_sha256": "834108276bb3a48402dbb69a7cc7df6a12e05a8fe5c0c76c1fb7df7ae05d72a5"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "B20",
+          "url": "https://www.bls.gov/ooh/healthcare/medical-records-and-health-information-technicians.htm",
+          "source_text_sha256": "5f1fe0ada7884eefa9c85ababa20e6863909b451cd893a8098f63f71958c1406",
+          "retrieval_status": "tool_excerpt",
+          "selector": "clinical codes",
+          "locations": [
+            {
+              "locator": "tool line 228",
+              "context_locators": [
+                "tool line 227",
+                "tool line 228",
+                "tool line 229",
+                "tool line 230",
+                "tool line 231"
+              ],
+              "paragraph_sha256": "576f1cf1b2196b19f70d0809dc43eb44b0c657bc9df62d71bc2440275c75cb5a"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "R08",
+          "url": "https://journal.ahima.org/AMP_EDN/383/AHIMA-Releases-Denials-Management-Toolkit-1776.amp.html",
+          "source_text_sha256": "f2746f045120684d76d2429556c3ec742d872153d770a8b86bb4a37f43f64a8f",
+          "retrieval_status": "retrieved",
+          "selector": "documentation",
+          "locations": [
+            {
+              "locator": "HTML p block 1",
+              "context_locators": [
+                "HTML p block 1"
+              ],
+              "paragraph_sha256": "eab035b8092b4effec2dee35f698056a24fedc941a69255b52e131247baf257a"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_WITHIN_SETTING_PLUS_INTERPRETATION",
+      "rationale": "Hospital authentication is explicit; coding/CDI sources support clarification rather than independently creating clinical facts.",
+      "alternatives": "Responsible author and permitted countersign/correction arrangements depend on setting.",
+      "complexity": "The hospital rule is not silently generalized to all clinics or used as a complete record-correction policy."
+    }
+  },
+  {
+    "id": "D09",
+    "question": "Who selects supported administrative codes?",
+    "domain": "coding",
+    "actors": [
+      "O07",
+      "O08",
+      "C01"
+    ],
+    "rule": "Coding specialist assigns supported codes; clinical ambiguity goes back to responsible author.",
+    "cannot": "Code selection is not independent medical diagnosis or authorization.",
+    "review": "Clinician/CDI/HIM and claim-correction pathway.",
+    "condition": "Code system, service and documentation must match actual context.",
+    "sources": [
+      "B20",
+      "R08",
+      "A15"
+    ],
+    "evidence_status": "SUPPORTED_GENERAL_DESCRIPTION: The occupational description supports code assignment from clinical information; documentation/denial example supports collaboration.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "B20",
+          "url": "https://www.bls.gov/ooh/healthcare/medical-records-and-health-information-technicians.htm",
+          "source_text_sha256": "5f1fe0ada7884eefa9c85ababa20e6863909b451cd893a8098f63f71958c1406",
+          "retrieval_status": "tool_excerpt",
+          "selector": "assign clinical codes",
+          "locations": [
+            {
+              "locator": "tool line 228",
+              "context_locators": [
+                "tool line 227",
+                "tool line 228",
+                "tool line 229",
+                "tool line 230",
+                "tool line 231"
+              ],
+              "paragraph_sha256": "576f1cf1b2196b19f70d0809dc43eb44b0c657bc9df62d71bc2440275c75cb5a"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "R08",
+          "url": "https://journal.ahima.org/AMP_EDN/383/AHIMA-Releases-Denials-Management-Toolkit-1776.amp.html",
+          "source_text_sha256": "f2746f045120684d76d2429556c3ec742d872153d770a8b86bb4a37f43f64a8f",
+          "retrieval_status": "retrieved",
+          "selector": "coding",
+          "locations": [
+            {
+              "locator": "HTML p block 1",
+              "context_locators": [
+                "HTML p block 1"
+              ],
+              "paragraph_sha256": "eab035b8092b4effec2dee35f698056a24fedc941a69255b52e131247baf257a"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_GENERAL_DESCRIPTION",
+      "rationale": "The occupational description supports code assignment from clinical information; documentation/denial example supports collaboration.",
+      "alternatives": "Pre-service clarification, coding, CDI and downstream claim correction can be separate work.",
+      "complexity": "The exact coding standard/query process must be specified; coding alone is not clinical diagnosis or payer adjudication."
+    }
+  },
+  {
+    "id": "D10",
+    "question": "Is benefit verification the same as authorization?",
+    "domain": "coverage",
+    "actors": [
+      "O04",
+      "U02",
+      "O01"
+    ],
+    "rule": "Membership/benefit information and request authorization are distinct findings.",
+    "cannot": "Eligibility, an estimate or a case number does not prove clinical approval or final payment.",
+    "review": "Payer benefit/UM contacts and appropriate dispute route.",
+    "condition": "Plan and service determine required checks.",
+    "sources": [
+      "R06",
+      "R13"
+    ],
+    "evidence_status": "SUPPORTED_SOURCE_EXAMPLES: The sources distinguish benefits, authorization and financial responsibility.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "R06",
+          "url": "https://health.ucsd.edu/insurance-billing/paying/faq/",
+          "source_text_sha256": "b5acd82dbce888b8c7d60712aa978a2093c828d16c9a1731b8fbd3cdfb4efd11",
+          "retrieval_status": "retrieved",
+          "selector": "prior authorization",
+          "locations": [
+            {
+              "locator": "HTML h3 block 68",
+              "context_locators": [
+                "HTML h3 block 68"
+              ],
+              "paragraph_sha256": "c5a4aba41666d74256b7871f15a06486a6786573c8a587f5f8043c55b49d25f6"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "R13",
+          "url": "https://azprioritycare.com/wp-content/uploads/2026/03/2026-AZPC-Utilization-Management-Program.pdf",
+          "source_text_sha256": "d8921994ee6444823d3152ad683a7233e20f2f9caf86b3284ff535d5abf57313",
+          "retrieval_status": "retrieved",
+          "selector": "eligibility and benefits",
+          "locations": [
+            {
+              "locator": "PDF page 6, block 6",
+              "context_locators": [
+                "PDF page 6, block 6"
+              ],
+              "paragraph_sha256": "c15874d38e6aca94b03b67828bf41b0bdc0821676062d4918fd5d96ba6421463"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_SOURCE_EXAMPLES",
+      "rationale": "The sources distinguish benefits, authorization and financial responsibility.",
+      "alternatives": "Separate or combined staff can perform these checks; final claim/payment depends on its own applicable rules.",
+      "complexity": "Do not infer final coverage or zero patient cost from eligibility, estimates or a case identifier."
+    }
+  },
+  {
+    "id": "D11",
+    "question": "Can first-level UM approve a request?",
+    "domain": "coverage",
+    "actors": [
+      "U01",
+      "U02",
+      "U03",
+      "U04",
+      "U06",
+      "U07"
+    ],
+    "rule": "Published programs may permit limited nonclinical approvals under explicit criteria and assigned benefit decisions, alongside licensed clinical review and escalation; authority is delegation- and product-specific.",
+    "cannot": "RN/pharmacist/reviewer title alone does not establish unlimited approval or denial authority.",
+    "review": "Escalate where criteria, evidence or authority are insufficient.",
+    "condition": "R12/R13 are example programs; no universal program permission is inferred. R13 also states medical-director final responsibility and wider professional categories; exact case signoff needs clarification.",
+    "sources": [
+      "R12",
+      "R13",
+      "A02"
+    ],
+    "evidence_status": "SUPPORTED_ORGANIZATION_EXAMPLES_WITH_CORRECTION: The program allows limited nonclinical approvals under explicit criteria as well as licensed review; the earlier clinical-only emphasis was incomplete.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "R13",
+          "url": "https://azprioritycare.com/wp-content/uploads/2026/03/2026-AZPC-Utilization-Management-Program.pdf",
+          "source_text_sha256": "d8921994ee6444823d3152ad683a7233e20f2f9caf86b3284ff535d5abf57313",
+          "retrieval_status": "retrieved",
+          "selector": "Non-clinical personnel may",
+          "locations": [
+            {
+              "locator": "PDF page 6, block 6",
+              "context_locators": [
+                "PDF page 6, block 6"
+              ],
+              "paragraph_sha256": "c15874d38e6aca94b03b67828bf41b0bdc0821676062d4918fd5d96ba6421463"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "R13",
+          "url": "https://azprioritycare.com/wp-content/uploads/2026/03/2026-AZPC-Utilization-Management-Program.pdf",
+          "source_text_sha256": "d8921994ee6444823d3152ad683a7233e20f2f9caf86b3284ff535d5abf57313",
+          "retrieval_status": "retrieved",
+          "selector": "Non-licensed personnel may",
+          "locations": [
+            {
+              "locator": "PDF page 7, block 1",
+              "context_locators": [
+                "PDF page 7, block 1"
+              ],
+              "paragraph_sha256": "229fe32d42cd6123d117d99e791a376a328adbef10b7f62fea4e149f77f72e23"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "R12",
+          "url": "https://martinspoint.org/-/media/Providers/Documents/Clinical-Documentation/Medical-Necessity-Criteria-Standard.ashx",
+          "source_text_sha256": "4b5f91fd5091c3e9e03be90d0287b3e52e616bfc694678695f4b4b21daeaad52",
+          "retrieval_status": "earlier_tool_excerpt",
+          "selector": "first-level",
+          "locations": [
+            {
+              "locator": "tool line 114 / PDF page 3",
+              "context_locators": [
+                "tool line 113 / PDF page 3",
+                "tool line 114 / PDF page 3",
+                "tool line 115 / PDF page 3",
+                "tool line 116 / PDF page 3",
+                "tool line 117 / PDF page 3"
+              ],
+              "paragraph_sha256": "e4beecd4f7f49f41ad5881ecebbca0e9956317da13de9f39aa829aa7355085d5"
+            },
+            {
+              "locator": "tool line 116 / PDF page 3",
+              "context_locators": [
+                "tool line 115 / PDF page 3",
+                "tool line 116 / PDF page 3",
+                "tool line 117 / PDF page 3",
+                "tool line 118 / PDF page 3",
+                "tool line 119 / PDF page 3"
+              ],
+              "paragraph_sha256": "6affeb0979371a66a1b82f427fe08fe6bc97e2faee9f1991aef9af69c329eb4f"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_ORGANIZATION_EXAMPLES_WITH_CORRECTION",
+      "rationale": "The program allows limited nonclinical approvals under explicit criteria as well as licensed review; the earlier clinical-only emphasis was incomplete.",
+      "alternatives": "Nonclinical limited approval, benefit-only decision, licensed approval, or clinical escalation depending on documented delegation.",
+      "complexity": "R13 also describes medical-director final responsibility and broader professional categories; exact signing rights require program/product clarification."
+    }
+  },
+  {
+    "id": "D12",
+    "question": "Who reviews anticipated adverse MA medical necessity?",
+    "domain": "coverage",
+    "actors": [
+      "U03",
+      "U04",
+      "U05",
+      "U06"
+    ],
+    "rule": "Before issuance, 422.566(d) requires a physician OR other appropriate licensed healthcare professional with relevant expertise and Medicare-criteria knowledge.",
+    "cannot": "Do not replace this with a physician-only rule for every initial denial; do not use an unqualified clerk.",
+    "review": "Appropriate licensed expert review; subsequent applicable reconsideration.",
+    "condition": "MA initial adverse medical necessity; integrated-plan exception in 422.566(a) and different decision types must be checked.",
+    "sources": [
+      "A02"
+    ],
+    "evidence_status": "SUPPORTED_WITHIN_SCOPE: The retrieved section directly requires appropriate physician or other qualified professional review before the specified adverse MA medical-necessity determination.",
+    "checked_core_rule": {
+      "source": "A02",
+      "locator": "42 CFR 422.566(d)",
+      "checked_claim": "Anticipated adverse MA medical-necessity determinations require appropriate physician or other licensed professional review with relevant expertise.",
+      "scope": "Core qualification requirement only; integrated-plan exception and actual case applicability must still be checked.",
+      "checked_date": "2026-10-17",
+      "displayed_edition": "Title 42 through 2026-10-15"
+    },
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "A02",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.566",
+          "source_text_sha256": "bdbcd3597593c7bd7c2fa282fd7349210788db8c6bb4ad2b2e60be03429f2a72",
+          "retrieval_status": "tool_excerpt",
+          "selector": "expects to issue",
+          "locations": [
+            {
+              "locator": "tool line 139",
+              "context_locators": [
+                "tool line 138",
+                "tool line 139",
+                "tool line 140",
+                "tool line 141",
+                "tool line 142"
+              ],
+              "paragraph_sha256": "7a71c658188143213b9e3fe2a8a72034f40516a5780d21523dd4ed4e89e69153"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A02",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.566",
+          "source_text_sha256": "bdbcd3597593c7bd7c2fa282fd7349210788db8c6bb4ad2b2e60be03429f2a72",
+          "retrieval_status": "tool_excerpt",
+          "selector": "unrestricted license",
+          "locations": [
+            {
+              "locator": "tool line 140",
+              "context_locators": [
+                "tool line 139",
+                "tool line 140",
+                "tool line 141",
+                "tool line 142",
+                "tool line 143"
+              ],
+              "paragraph_sha256": "38399ac6d0025f8d05406b538198141bc45351b9cdded80359e5373c774d4b5b"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_WITHIN_SCOPE",
+      "rationale": "The retrieved section directly requires appropriate physician or other qualified professional review before the specified adverse MA medical-necessity determination.",
+      "alternatives": "Physician or another appropriate licensed expert; organization policy can set additional requirements.",
+      "complexity": "Integrated-plan and decision-type conditions matter; the rule is not physician-only for every initial denial."
+    }
+  },
+  {
+    "id": "D13",
+    "question": "Who may reconsider an MA medical-necessity denial?",
+    "domain": "appeal",
+    "actors": [
+      "U13",
+      "U12"
+    ],
+    "rule": "Under 422.590(h), reconsiderers were not involved in the initial decision; medical-necessity reconsideration is made by an appropriately expert physician.",
+    "cannot": "A more senior initial reviewer does not satisfy independence merely by rank.",
+    "review": "Remaining adverse MA issues proceed under independent-review requirements.",
+    "condition": "Specified MA reconsideration route; not a universal rule for every product/dispute.",
+    "sources": [
+      "A03",
+      "A04"
+    ],
+    "evidence_status": "SUPPORTED_WITHIN_SCOPE: Noninvolvement and physician expertise for the specified MA medical-necessity reconsideration are explicit.",
+    "checked_core_rule": {
+      "source": "A03",
+      "locator": "42 CFR 422.590(h)(1)-(2)",
+      "checked_claim": "MA reconsiderers were not involved in the initial determination; medical-necessity denial reconsideration is made by an appropriately expert physician.",
+      "scope": "Specified MA reconsideration rule; not every product or dispute type.",
+      "checked_date": "2026-10-17",
+      "displayed_edition": "Title 42 through 2026-10-15"
+    },
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "A03",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.590",
+          "source_text_sha256": "4d97fbf6fb11c2b72e1b65e3e4b25343c52c95d4bdf4141140223b3e262b3994",
+          "retrieval_status": "tool_excerpt",
+          "selector": "not involved",
+          "locations": [
+            {
+              "locator": "tool line 143",
+              "context_locators": [
+                "tool line 141",
+                "tool line 143",
+                "tool line 144",
+                "tool line 145",
+                "tool line 146"
+              ],
+              "paragraph_sha256": "712696037ea657d3374b4ac1442269de0f7768fdaecd8c4a75853c50602c6c93"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A03",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.590",
+          "source_text_sha256": "4d97fbf6fb11c2b72e1b65e3e4b25343c52c95d4bdf4141140223b3e262b3994",
+          "retrieval_status": "tool_excerpt",
+          "selector": "made by a physician",
+          "locations": [
+            {
+              "locator": "tool line 144",
+              "context_locators": [
+                "tool line 143",
+                "tool line 144",
+                "tool line 145",
+                "tool line 146",
+                "tool line 147"
+              ],
+              "paragraph_sha256": "dccb3c47557a5939eea03403588fab4ca41ac95bc57054c2d747eeb6354dd4d6"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_WITHIN_SCOPE",
+      "rationale": "Noninvolvement and physician expertise for the specified MA medical-necessity reconsideration are explicit.",
+      "alternatives": "Reviewer need not always have identical specialty; other products/types have their own requirements.",
+      "complexity": "Higher rank does not by itself establish independence or case eligibility."
+    }
+  },
+  {
+    "id": "D14",
+    "question": "Does peer-to-peer discussion replace appeal?",
+    "domain": "appeal",
+    "actors": [
+      "O11",
+      "U04",
+      "O10"
+    ],
+    "rule": "Peer discussion exchanges clinical information under the plan process.",
+    "cannot": "Do not assume it is an appeal, guarantees reversal, or preserves a filing deadline.",
+    "review": "Use actual formal route/notice for unresolved decision.",
+    "condition": "Plan/state/service process determines relationship between discussion and appeal.",
+    "sources": [
+      "R15"
+    ],
+    "evidence_status": "SUPPORTED_PROCESS_EXAMPLE_WITH_LIMITS: Payer material separately describes peer discussion and pre-service appeal. Deadline preservation is not established and is intentionally not assumed.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "R15",
+          "url": "https://www.uhcprovider.com/en/claims-payments-billing/appeals.html",
+          "source_text_sha256": "fdabc38e090ec40332c8493a67ee7756bec0bc9193b6f2eef69b6463aee9dffa",
+          "retrieval_status": "retrieved",
+          "selector": "discussion",
+          "locations": [
+            {
+              "locator": "HTML p block 10",
+              "context_locators": [
+                "HTML p block 10"
+              ],
+              "paragraph_sha256": "f556969a38bd56f53049bb508849cf21e956c3fd0abd4f4f2de46a55334e614e"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "R15",
+          "url": "https://www.uhcprovider.com/en/claims-payments-billing/appeals.html",
+          "source_text_sha256": "fdabc38e090ec40332c8493a67ee7756bec0bc9193b6f2eef69b6463aee9dffa",
+          "retrieval_status": "retrieved",
+          "selector": "pre-service appeal",
+          "locations": [
+            {
+              "locator": "HTML p block 15",
+              "context_locators": [
+                "HTML p block 15"
+              ],
+              "paragraph_sha256": "fbcc9d55085b29e5f1ee981afa6b5bf71611b4113cb9bc9d9c7f96b13eaa3d13"
+            },
+            {
+              "locator": "HTML p block 16",
+              "context_locators": [
+                "HTML p block 16"
+              ],
+              "paragraph_sha256": "ffe2a9e54dc8347b5a360d2ce08701f6cf08e89e27040da0b352c44011a556a3"
+            },
+            {
+              "locator": "HTML p block 17",
+              "context_locators": [
+                "HTML p block 17",
+                "HTML p block 18",
+                "HTML h2 block 19",
+                "HTML p block 20"
+              ],
+              "paragraph_sha256": "7effb2966b33955177078c752dfc134fd08e24e95f82cf3ef2ff9f7389a98bde"
+            },
+            {
+              "locator": "HTML h3 block 34",
+              "context_locators": [
+                "HTML h3 block 34",
+                "HTML p block 35",
+                "HTML li block 36",
+                "HTML li block 37"
+              ],
+              "paragraph_sha256": "9f88ff00965f8d23457e749d66672e44ba42c3a6a20d022f2d7a5779d0f77ae6"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_PROCESS_EXAMPLE_WITH_LIMITS",
+      "rationale": "Payer material separately describes peer discussion and pre-service appeal. Deadline preservation is not established and is intentionally not assumed.",
+      "alternatives": "Peer discussion, formal appeal or another correction route under actual product/notice.",
+      "complexity": "Retrieved deadline presentations differ. Do not select one as a universal rule or infer that discussion preserves filing rights."
+    }
+  },
+  {
+    "id": "D15",
+    "question": "Can MA independent review reverse payer review?",
+    "domain": "appeal",
+    "actors": [
+      "U14",
+      "U13",
+      "U09"
+    ],
+    "rule": "CMS-contracted independent entity resolves remaining disputed issues; reversal triggers scoped effectuation obligations.",
+    "cannot": "Payer management is not free to disregard applicable independent reversal.",
+    "review": "Further eligible MA appeal level; document implementation.",
+    "condition": "422.592 and 422.618; deadlines and further appeal rights differ by decision type.",
+    "sources": [
+      "A04",
+      "A16",
+      "A11"
+    ],
+    "evidence_status": "SUPPORTED_WITHIN_SCOPE: Independent MA review and scoped reversal effectuation are explicit.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "A04",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.592",
+          "source_text_sha256": "feef8772fccd227d85d0c074d6d7af65dba41a6aa738b384a488c60357bf34fd",
+          "retrieval_status": "tool_excerpt",
+          "selector": "remain in dispute",
+          "locations": [
+            {
+              "locator": "tool line 108",
+              "context_locators": [
+                "tool line 106",
+                "tool line 108",
+                "tool line 109",
+                "tool line 111",
+                "tool line 112"
+              ],
+              "paragraph_sha256": "3ec27ce828a70be13c6d430dda2c539366f4cfc990f2fb3687b231230cfc5fab"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A16",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.618",
+          "source_text_sha256": "2ec6038589ee6c290ddfecdc01e36a699c0e685f668f6969c048a8b63bee26a7",
+          "retrieval_status": "tool_excerpt",
+          "selector": "reversed in whole or in part",
+          "locations": [
+            {
+              "locator": "tool line 114",
+              "context_locators": [
+                "tool line 113",
+                "tool line 114",
+                "tool line 115",
+                "tool line 116",
+                "tool line 117"
+              ],
+              "paragraph_sha256": "e8682cd455507bfb78533171450d8d765c39bfdbd6037145d957282e42b590c8"
+            },
+            {
+              "locator": "tool line 116",
+              "context_locators": [
+                "tool line 115",
+                "tool line 116",
+                "tool line 117",
+                "tool line 118",
+                "tool line 119"
+              ],
+              "paragraph_sha256": "039f0d5f5316fa1ca1ffe6e08a56c6edf809095d65869b01304a8bc5e7dac702"
+            },
+            {
+              "locator": "tool line 117",
+              "context_locators": [
+                "tool line 116",
+                "tool line 117",
+                "tool line 118",
+                "tool line 119",
+                "tool line 120"
+              ],
+              "paragraph_sha256": "18cb888dfbb0193812802e7a8136913b1054e5e1061d81207d9db3e861f4baab"
+            },
+            {
+              "locator": "tool line 119",
+              "context_locators": [
+                "tool line 118",
+                "tool line 119",
+                "tool line 120",
+                "tool line 121",
+                "tool line 122"
+              ],
+              "paragraph_sha256": "200f250f8497a43828820048ee3bd83bd911249ba160c674abcb10b2eb62a65a"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_WITHIN_SCOPE",
+      "rationale": "Independent MA review and scoped reversal effectuation are explicit.",
+      "alternatives": "Outcome may affirm, reverse, dismiss/remand where allowed; implementation depends on decision category and further-review conditions.",
+      "complexity": "A favorable decision and actual authorization/provision/payment are distinct; no universal deadline is supplied."
+    }
+  },
+  {
+    "id": "D16",
+    "question": "Can commercial independent review supersede insurer denial?",
+    "domain": "appeal",
+    "actors": [
+      "U18",
+      "U15"
+    ],
+    "rule": "In the applicable external-review process described by HealthCare.gov, insurer must accept the external decision.",
+    "cannot": "Do not apply commercial IRO route automatically to MA, every plan or every denial.",
+    "review": "Follow applicable state/federal process and actual notice.",
+    "condition": "Determine product, eligibility, issue and route first. Check the applicable ACA/non-grandfathered context and actual external-review eligibility. Eligible urgent external review may be requested concurrently with internal appeal.",
+    "sources": [
+      "A12",
+      "R17",
+      "V19"
+    ],
+    "evidence_status": "SUPPORTED_CONDITIONAL_WITH_ALTERNATIVES: Guidance supports binding acceptance within its applicable external-review route and identifies product/process limits.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "A12",
+          "url": "https://www.healthcare.gov/appeal-insurance-company-decision/external-review/",
+          "source_text_sha256": "47c839bdf206b69ebb89fe3b0e59c8b0a321b4c7d2174de230bc270b4ce98aa1",
+          "retrieval_status": "tool_excerpt",
+          "selector": "required by law to accept",
+          "locations": [
+            {
+              "locator": "tool line 21",
+              "context_locators": [
+                "tool line 20",
+                "tool line 21",
+                "tool line 22",
+                "tool line 24",
+                "tool line 25"
+              ],
+              "paragraph_sha256": "7d1508f76558116c04531b92c281a5e7e0b244760bbb241220c1656bcbc723ec"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "R17",
+          "url": "https://www.cms.gov/cciio/programs-and-initiatives/consumer-support-and-information/csg-ext-appeals-facts",
+          "source_text_sha256": "736385abd503e5c77db0179c0ceacf35abb880df1ebb08047d06a631b4befc13",
+          "retrieval_status": "retrieved",
+          "selector": "non-grandfathered",
+          "locations": [
+            {
+              "locator": "HTML p block 4",
+              "context_locators": [
+                "HTML p block 4"
+              ],
+              "paragraph_sha256": "27d0d2295833bbe442b83aaa840be0736189521c55c8e5bb7236ac36b1bbac28"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "V19",
+          "url": "https://www.healthcare.gov/appeal-insurance-company-decision/internal-appeals/",
+          "source_text_sha256": "fb9b5193e266ceeea808613148ff65c95e2c246a229501e2764433510328b9f3",
+          "retrieval_status": "tool_excerpt",
+          "selector": "same time",
+          "locations": [
+            {
+              "locator": "tool line 28",
+              "context_locators": [
+                "tool line 27",
+                "tool line 28",
+                "tool line 29",
+                "tool line 31",
+                "tool line 32"
+              ],
+              "paragraph_sha256": "37fb004514feb1168a7295bb6d1a592d4372fd3b266ccb59d80d2367261fdc44"
+            },
+            {
+              "locator": "tool line 54",
+              "context_locators": [
+                "tool line 52",
+                "tool line 54",
+                "tool line 55",
+                "tool line 57",
+                "tool line 59"
+              ],
+              "paragraph_sha256": "7e02ded810b0addfca7b595faf7488f7649feb4fabea325f482105219b396082"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_CONDITIONAL_WITH_ALTERNATIVES",
+      "rationale": "Guidance supports binding acceptance within its applicable external-review route and identifies product/process limits.",
+      "alternatives": "State/federal qualifying routes; eligible urgent internal/external requests may run concurrently.",
+      "complexity": "The prior simple linear diagram was incomplete for urgent cases. MA IRE and this external process must remain distinct."
+    }
+  },
+  {
+    "id": "D17",
+    "question": "Are later MA appeal forums above the prior decision?",
+    "domain": "appeal",
+    "actors": [
+      "J01",
+      "J02",
+      "J03"
+    ],
+    "rule": "CMS lists plan reconsideration, IRE, adjudication, Council and district-court review as successive appeal levels.",
+    "cannot": "Diagram is not an automatic entitlement or claim that every later forum reviews every issue.",
+    "review": "Follow eligibility, jurisdiction, filing and notice requirements at each level.",
+    "condition": "A16 includes a Council-review effectuation exception; further appeal can affect implementation.",
+    "sources": [
+      "A11",
+      "A16"
+    ],
+    "evidence_status": "SUPPORTED_WITHIN_SCOPE: The MA overview names successive levels, while the effectuation rule provides a Council-review exception.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "A11",
+          "url": "https://www.cms.gov/medicare/appeals-grievances/managed-care-appeals-grievances/appeals-overview",
+          "source_text_sha256": "ec11b88b4e99076c6dfc0307088feffb03e977b20f3c92e820a4378e61e3ff27",
+          "retrieval_status": "tool_excerpt",
+          "selector": "five successive levels",
+          "locations": [
+            {
+              "locator": "tool line 687",
+              "context_locators": [
+                "tool line 685",
+                "tool line 687",
+                "tool line 689",
+                "tool line 690",
+                "tool line 691"
+              ],
+              "paragraph_sha256": "340610ecd7bddd572e8a4d0caa3c46fcb89357a2c281e3c0e0aec97e74e20c84"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A16",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.618",
+          "source_text_sha256": "2ec6038589ee6c290ddfecdc01e36a699c0e685f668f6969c048a8b63bee26a7",
+          "retrieval_status": "tool_excerpt",
+          "selector": "Council review",
+          "locations": [
+            {
+              "locator": "tool line 121",
+              "context_locators": [
+                "tool line 120",
+                "tool line 121",
+                "tool line 122",
+                "tool line 123",
+                "tool line 124"
+              ],
+              "paragraph_sha256": "d7cc389459fc9fffc18449500f1dd2130969f5940a127821b490d53758880076"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_WITHIN_SCOPE",
+      "rationale": "The MA overview names successive levels, while the effectuation rule provides a Council-review exception.",
+      "alternatives": "Further appeal is conditional on actual standing/jurisdiction/filing; reversals can have implementation conditions.",
+      "complexity": "This is not an employment ladder or a guarantee every case may reach every forum; no threshold amounts are invented."
+    }
+  },
+  {
+    "id": "D18",
+    "question": "Does coverage approval order the clinician to treat?",
+    "domain": "treatment_vs_coverage",
+    "actors": [
+      "U04",
+      "C01",
+      "P01"
+    ],
+    "rule": "Coverage, professional treatment judgment and patient willingness are separate domains.",
+    "cannot": "Coverage approval is not a treatment order or consent; clinical recommendation is not automatic benefit coverage.",
+    "review": "Resolve clinical questions with treating team and coverage disputes through review.",
+    "condition": "Functional separation; actual service and rights still apply.",
+    "sources": [
+      "A01",
+      "A02",
+      "A17",
+      "B01"
+    ],
+    "evidence_status": "INTERPRETATION_OF_DISTINCT_AUTHORITIES: Different source provisions address participation, clinical care and benefits. The domain separation is a reasoned synthesis rather than one quoted universal hierarchy statute.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "A01",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-B/section-482.13",
+          "source_text_sha256": "bac516176c3d291b39750285f02b0b2c4564bda54394f736fa33134a1e738191",
+          "retrieval_status": "tool_excerpt",
+          "selector": "informed decisions",
+          "locations": [
+            {
+              "locator": "tool line 118",
+              "context_locators": [
+                "tool line 117",
+                "tool line 118",
+                "tool line 119",
+                "tool line 120",
+                "tool line 122"
+              ],
+              "paragraph_sha256": "c87100eaa414ab908bc02898c2fd89633d4ce8e3273cf238a16da52793e5d166"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A02",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.566",
+          "source_text_sha256": "bdbcd3597593c7bd7c2fa282fd7349210788db8c6bb4ad2b2e60be03429f2a72",
+          "retrieval_status": "tool_excerpt",
+          "selector": "benefits an enrollee",
+          "locations": [
+            {
+              "locator": "tool line 107",
+              "context_locators": [
+                "tool line 106",
+                "tool line 107",
+                "tool line 108",
+                "tool line 109",
+                "tool line 110"
+              ],
+              "paragraph_sha256": "8246af01693be3bc7898571399530335a109bb010e498a7390aef40abfc70846"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "B01",
+          "url": "https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm",
+          "source_text_sha256": "3e33f364344db6ee1718cfe51ea6505b35b765d49b9953fb9665ca1dc4bfa190",
+          "retrieval_status": "tool_excerpt",
+          "selector": "treatment plan",
+          "locations": [
+            {
+              "locator": "tool line 230",
+              "context_locators": [
+                "tool line 229",
+                "tool line 230",
+                "tool line 231",
+                "tool line 232",
+                "tool line 233"
+              ],
+              "paragraph_sha256": "f4397e066b183ed18275e990893c04f8cd7e09b2e9fb4c5f4d640ac69ca555ec"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "INTERPRETATION_OF_DISTINCT_AUTHORITIES",
+      "rationale": "Different source provisions address participation, clinical care and benefits. The domain separation is a reasoned synthesis rather than one quoted universal hierarchy statute.",
+      "alternatives": "Clinical recommendations and coverage/consent outcomes may agree or conflict and require their own processes.",
+      "complexity": "The reference does not decide a real individual case or eliminate any actual legal constraint."
+    }
+  },
+  {
+    "id": "D19",
+    "question": "Who approves MA utilization policy?",
+    "domain": "policy",
+    "actors": [
+      "G03",
+      "G02",
+      "G08"
+    ],
+    "rule": "422.137 requires UM committee review/approval of MA UM policies and documented decisions within governing criteria.",
+    "cannot": "An analyst draft or CEO preference does not substitute for required policy governance.",
+    "review": "Committee/regulatory correction for criteria issues; separate appeal process for individual case.",
+    "condition": "MA-specific committee requirements; other products need their own governance.",
+    "sources": [
+      "A05",
+      "A17"
+    ],
+    "evidence_status": "SUPPORTED_WITHIN_SCOPE: The MA committee approval/documentation and criteria constraints are explicit.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "A05",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-C/section-422.137",
+          "source_text_sha256": "661d4ae519df845c875701f680c7f0f36687cf3d116586f123b0f28fda20e1f0",
+          "retrieval_status": "tool_excerpt",
+          "selector": "reviewed and approved",
+          "locations": [
+            {
+              "locator": "tool line 109",
+              "context_locators": [
+                "tool line 108",
+                "tool line 109",
+                "tool line 111",
+                "tool line 113",
+                "tool line 114"
+              ],
+              "paragraph_sha256": "4f232ad0bc56bea3557f03be66a86caf23a0e67dc71484f688b2cc8377a51b3d"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A05",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-C/section-422.137",
+          "source_text_sha256": "661d4ae519df845c875701f680c7f0f36687cf3d116586f123b0f28fda20e1f0",
+          "retrieval_status": "tool_excerpt",
+          "selector": "Document in writing",
+          "locations": [
+            {
+              "locator": "tool line 140",
+              "context_locators": [
+                "tool line 138",
+                "tool line 140",
+                "tool line 141",
+                "tool line 142",
+                "tool line 144"
+              ],
+              "paragraph_sha256": "87790b88d2bc0d2aa92816aca8b158eeac9c4ec6177925e7c72d2e4c465eb4bf"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A17",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-C/section-422.101",
+          "source_text_sha256": "9ef3c0b5ea6b544a2b5f0ac171eda1ddbeb0f46784aef5c9a2e6def81577903d",
+          "retrieval_status": "tool_excerpt",
+          "selector": "coverage criteria",
+          "locations": [
+            {
+              "locator": "tool line 123",
+              "context_locators": [
+                "tool line 122",
+                "tool line 123",
+                "tool line 124",
+                "tool line 125",
+                "tool line 127"
+              ],
+              "paragraph_sha256": "35e8b8cd6b2c5968d3fe2ce6bd5d4feceb37be9bd81c60dce65e776064c4d9f5"
+            },
+            {
+              "locator": "tool line 125",
+              "context_locators": [
+                "tool line 124",
+                "tool line 125",
+                "tool line 127",
+                "tool line 128",
+                "tool line 130"
+              ],
+              "paragraph_sha256": "51ad06687ca1b5d04881fa16e9086420f4bd93183c4a5030df427a40107ea93b"
+            },
+            {
+              "locator": "tool line 130",
+              "context_locators": [
+                "tool line 128",
+                "tool line 130",
+                "tool line 132",
+                "tool line 133",
+                "tool line 135"
+              ],
+              "paragraph_sha256": "82991a28b5b3c9fc700beeef9608285d93f8a9cbe7ccc0d30382a05af34b79f3"
+            },
+            {
+              "locator": "tool line 133",
+              "context_locators": [
+                "tool line 132",
+                "tool line 133",
+                "tool line 135",
+                "tool line 136",
+                "tool line 137"
+              ],
+              "paragraph_sha256": "23ea757fbd2d95c75381da600c84afe01aabc5338536670e3e31e2212a329f2a"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_WITHIN_SCOPE",
+      "rationale": "The MA committee approval/documentation and criteria constraints are explicit.",
+      "alternatives": "Other products may use different governance; analyst drafting and institutional approval are different functions.",
+      "complexity": "Policy approval does not itself adjudicate all individual case disputes."
+    }
+  },
+  {
+    "id": "D20",
+    "question": "Does policy committee rank supersede every case appeal?",
+    "domain": "policy_vs_case",
+    "actors": [
+      "G03",
+      "U13",
+      "U14"
+    ],
+    "rule": "Policy approval and case adjudication are different functions.",
+    "cannot": "Committee existence does not eliminate individual review or higher appeal rights.",
+    "review": "Separate systemic policy correction from case reconsideration.",
+    "condition": "No committee-to-IRE command edge exists in this map.",
+    "sources": [
+      "A05",
+      "A03",
+      "A04"
+    ],
+    "evidence_status": "INTERPRETATION_WITH_SCOPED_RULES: Sources assign different policy-governance and case-review functions. No committee command over the independent entity is evidenced.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "A05",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-C/section-422.137",
+          "source_text_sha256": "661d4ae519df845c875701f680c7f0f36687cf3d116586f123b0f28fda20e1f0",
+          "retrieval_status": "tool_excerpt",
+          "selector": "policies and procedures",
+          "locations": [
+            {
+              "locator": "tool line 108",
+              "context_locators": [
+                "tool line 106",
+                "tool line 108",
+                "tool line 109",
+                "tool line 111",
+                "tool line 113"
+              ],
+              "paragraph_sha256": "173a3f0d5230b03209dabe8e0a0c9332df3c11b8e99cb470e609848f30749f84"
+            },
+            {
+              "locator": "tool line 109",
+              "context_locators": [
+                "tool line 108",
+                "tool line 109",
+                "tool line 111",
+                "tool line 113",
+                "tool line 114"
+              ],
+              "paragraph_sha256": "4f232ad0bc56bea3557f03be66a86caf23a0e67dc71484f688b2cc8377a51b3d"
+            },
+            {
+              "locator": "tool line 121",
+              "context_locators": [
+                "tool line 119",
+                "tool line 121",
+                "tool line 123",
+                "tool line 125",
+                "tool line 127"
+              ],
+              "paragraph_sha256": "9e0d822402158c6f6a52237fa96e75c2ac40b955d2f7322885d548205fcdcfce"
+            },
+            {
+              "locator": "tool line 128",
+              "context_locators": [
+                "tool line 127",
+                "tool line 128",
+                "tool line 130",
+                "tool line 132",
+                "tool line 134"
+              ],
+              "paragraph_sha256": "c6af3f740662b74eb5656c4fe563f3e48dbb8630cba2459dbb3ea7a16904c030"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A04",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.592",
+          "source_text_sha256": "feef8772fccd227d85d0c074d6d7af65dba41a6aa738b384a488c60357bf34fd",
+          "retrieval_status": "tool_excerpt",
+          "selector": "independent, outside entity",
+          "locations": [
+            {
+              "locator": "tool line 108",
+              "context_locators": [
+                "tool line 106",
+                "tool line 108",
+                "tool line 109",
+                "tool line 111",
+                "tool line 112"
+              ],
+              "paragraph_sha256": "3ec27ce828a70be13c6d430dda2c539366f4cfc990f2fb3687b231230cfc5fab"
+            },
+            {
+              "locator": "tool line 109",
+              "context_locators": [
+                "tool line 108",
+                "tool line 109",
+                "tool line 111",
+                "tool line 112",
+                "tool line 114"
+              ],
+              "paragraph_sha256": "1ec7b567ecd55a7541fb8b04b9df0c0885d0fabb7d1d37d4860234b78f50e364"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "INTERPRETATION_WITH_SCOPED_RULES",
+      "rationale": "Sources assign different policy-governance and case-review functions. No committee command over the independent entity is evidenced.",
+      "alternatives": "Systemic policy review and an individual appeal can both be pursued through their own authorized mechanisms.",
+      "complexity": "The absence of a command edge is a conservative modeling choice, not a claim to have audited every possible internal organogram."
+    }
+  },
+  {
+    "id": "D21",
+    "question": "Who owns the shared care-coordination plan?",
+    "domain": "coordination",
+    "actors": [
+      "M01",
+      "P01",
+      "C02"
+    ],
+    "rule": "Lead coordinator integrates needs, goals and assigned follow-up with patient and responsible professionals.",
+    "cannot": "Coordination ownership alone does not grant authority to change clinical orders or benefit decisions.",
+    "review": "Send clinical changes to responsible clinician; resource gaps to service/management owner.",
+    "condition": "Program-specific professional background and permissions.",
+    "sources": [
+      "R22",
+      "R25",
+      "R24",
+      "R32"
+    ],
+    "evidence_status": "SUPPORTED_PROGRAM_MODELS_NOT_UNIVERSAL_AUTHORITY: Published programs support coordinating plans with patient and other professionals, with different staffing.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "R22",
+          "url": "https://www.ahrq.gov/ncepcr/care/coordination.html",
+          "source_text_sha256": "f2f0f12be9ee97cde671fc408061b77ef6cf751578c781ee383c746624eeedf2",
+          "retrieval_status": "tool_excerpt",
+          "selector": "proactive care plan",
+          "locations": [
+            {
+              "locator": "tool line 41",
+              "context_locators": [
+                "tool line 40",
+                "tool line 41",
+                "tool line 42",
+                "tool line 43",
+                "tool line 44"
+              ],
+              "paragraph_sha256": "0c444b4c4b91a76769abb4086a6268f574f9566ae84f5e286ad6d49e388053bb"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "R24",
+          "url": "https://psnet.ahrq.gov/innovation/team-developed-care-plan-and-ongoing-care-management-social-workers-and-nurse",
+          "source_text_sha256": "0dba4f4c1b605efe1cd14123d9fa9a75a647ec07c73ca7c5f573537574161c97",
+          "retrieval_status": "retrieved",
+          "selector": "social worker/nurse practitioner",
+          "locations": [
+            {
+              "locator": "HTML p block 5",
+              "context_locators": [
+                "HTML p block 5"
+              ],
+              "paragraph_sha256": "f4e6543645e6e30c5d198b7c9a7ae2526907907e886b5eaab4a71178036f9e83"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "R32",
+          "url": "https://www.partnershiphp.org/Providers/HealthServices/Documents/Physicians_Advisory_Committee_PAC/2026/04-April/Policy_Summary/Care_Coordination/MPCD2013_clean.pdf",
+          "source_text_sha256": "77e4f25fccb10b9f1f7b13dd8a020e6b1e257b7d390a98abc27482b7b2daa497",
+          "retrieval_status": "retrieved",
+          "selector": "Nurse Case Manager",
+          "locations": [
+            {
+              "locator": "PDF page 4, block 3",
+              "context_locators": [
+                "PDF page 4, block 3"
+              ],
+              "paragraph_sha256": "e852659e634121eabc3bffe59cc3b701acdd3df5f0f8bf78278135b9a9e72ecc"
+            },
+            {
+              "locator": "PDF page 14, block 1",
+              "context_locators": [
+                "PDF page 14, block 1"
+              ],
+              "paragraph_sha256": "440630ba9e0f4e7678b37208149619a2cb0aa93a23e2e7e696a26a44244ff1df"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_PROGRAM_MODELS_NOT_UNIVERSAL_AUTHORITY",
+      "rationale": "Published programs support coordinating plans with patient and other professionals, with different staffing.",
+      "alternatives": "RN case management, NP/SW teams and mixed staff programs; underlying clinical authority stays credential-dependent.",
+      "complexity": "Coordination ownership is not a verified national prescribing/coverage permission or a prevalence statement."
+    }
+  },
+  {
+    "id": "D22",
+    "question": "Who develops hospital discharge planning?",
+    "domain": "transition",
+    "actors": [
+      "M18",
+      "C06",
+      "M02"
+    ],
+    "rule": "482.43(a)(5) permits development by or under an RN, social worker or other appropriately qualified personnel.",
+    "cannot": "Do not impose RN-only staffing or treat a planner as sole medical discharge authority.",
+    "review": "Qualified plan supervision and responsible clinical team.",
+    "condition": "Hospital discharge setting; patient goals/access and information transfer requirements also apply.",
+    "sources": [
+      "A06"
+    ],
+    "evidence_status": "SUPPORTED_WITHIN_SCOPE: The hospital provision explicitly allows development by or under RN, social worker or other qualified personnel.",
+    "checked_core_rule": {
+      "source": "A06",
+      "locator": "42 CFR 482.43(a)(5)",
+      "checked_claim": "Hospital discharge planning/evaluation is developed by or under an RN, social worker or other appropriately qualified personnel.",
+      "scope": "Hospital discharge-planning qualification requirement only; not sole medical discharge authority.",
+      "checked_date": "2026-10-17",
+      "displayed_edition": "Title 42 through 2026-10-15"
+    },
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "A06",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-C/section-482.43",
+          "source_text_sha256": "2417355dfe736dc6e988fd7a80bb6e160ceaec07757282990e8de975fb3d770e",
+          "retrieval_status": "tool_excerpt",
+          "selector": "appropriately qualified personnel",
+          "locations": [
+            {
+              "locator": "tool line 110",
+              "context_locators": [
+                "tool line 109",
+                "tool line 110",
+                "tool line 112",
+                "tool line 113",
+                "tool line 114"
+              ],
+              "paragraph_sha256": "ef923ce037925f46a6c689a48bf451f189282ef6218dde39e8c905a4f4a49351"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_WITHIN_SCOPE",
+      "rationale": "The hospital provision explicitly allows development by or under RN, social worker or other qualified personnel.",
+      "alternatives": "Several qualified staffing models, not RN-only planning.",
+      "complexity": "Planning, medical readiness, patient participation and receiving-service availability remain distinct."
+    }
+  },
+  {
+    "id": "D23",
+    "question": "Who signs/changes the home-health medical plan?",
+    "domain": "home_health",
+    "actors": [
+      "M19",
+      "C01",
+      "C04",
+      "C05"
+    ],
+    "rule": "484.60 identifies physician/allowed-practitioner plan establishment/signature and scoped order/revision requirements.",
+    "cannot": "Agency coordinator cannot freely rewrite medical orders; authorized signatory is setting-specific.",
+    "review": "Consult responsible physician/allowed practitioner for required additions/changes.",
+    "condition": "Home-health setting; state law and agency policy apply to verbal orders and allowed activities.",
+    "sources": [
+      "A07"
+    ],
+    "evidence_status": "SUPPORTED_WITHIN_SCOPE: The home-health provision distinguishes plan/signature, orders, permitted verbal orders and revisions.",
+    "checked_core_rule": {
+      "source": "A07",
+      "locator": "42 CFR 484.60(a)(1)",
+      "checked_claim": "The specified home-health plan is established, reviewed and signed by a physician or allowed practitioner within scope; applicable additions are approved by the referring professional.",
+      "scope": "Core plan/signature and evaluation-addition rule; other order/revision statements retain their separate scope.",
+      "checked_date": "2026-10-17",
+      "displayed_edition": "Title 42 through 2026-10-15"
+    },
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "A07",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-484/subpart-B/section-484.60",
+          "source_text_sha256": "4bd0053ac1d3a4ab1cdfdb99dfb2be00725db5a197e8549814a639d7d6517376",
+          "retrieval_status": "tool_excerpt",
+          "selector": "signed by",
+          "locations": [
+            {
+              "locator": "tool line 106",
+              "context_locators": [
+                "tool line 105",
+                "tool line 106",
+                "tool line 107",
+                "tool line 108",
+                "tool line 110"
+              ],
+              "paragraph_sha256": "bd98f7e67ffe90393376d5b325f9d5b075ee6b1a75654693e0659f614ed2fac2"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A07",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-484/subpart-B/section-484.60",
+          "source_text_sha256": "4bd0053ac1d3a4ab1cdfdb99dfb2be00725db5a197e8549814a639d7d6517376",
+          "retrieval_status": "tool_excerpt",
+          "selector": "consulted to approve",
+          "locations": [
+            {
+              "locator": "tool line 107",
+              "context_locators": [
+                "tool line 106",
+                "tool line 107",
+                "tool line 108",
+                "tool line 110",
+                "tool line 112"
+              ],
+              "paragraph_sha256": "88cc06ce47e703079761511c426cda59cc7b20d51345bcdf9a4cc9d78c5cb844"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A07",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-484/subpart-B/section-484.60",
+          "source_text_sha256": "4bd0053ac1d3a4ab1cdfdb99dfb2be00725db5a197e8549814a639d7d6517376",
+          "retrieval_status": "tool_excerpt",
+          "selector": "Verbal orders",
+          "locations": [
+            {
+              "locator": "tool line 140",
+              "context_locators": [
+                "tool line 138",
+                "tool line 140",
+                "tool line 142",
+                "tool line 144",
+                "tool line 145"
+              ],
+              "paragraph_sha256": "f60bc61329c82b559dcd7ae00d5129082e5d28ddc26bd26f651fe47ccd47bef0"
+            },
+            {
+              "locator": "tool line 147",
+              "context_locators": [
+                "tool line 145",
+                "tool line 147",
+                "tool line 148",
+                "tool line 149",
+                "tool line 150"
+              ],
+              "paragraph_sha256": "2a6506bde011c3ab2e9548dc57c619cc7e711f9efc7b269b93efaca0b51441e9"
+            },
+            {
+              "locator": "tool line 148",
+              "context_locators": [
+                "tool line 147",
+                "tool line 148",
+                "tool line 149",
+                "tool line 150",
+                "tool line 151"
+              ],
+              "paragraph_sha256": "d51ad8d4127d65dc25a64e90331aecd1aa2ca9c4e5be4a29baefd94d9b55f275"
+            },
+            {
+              "locator": "tool line 149",
+              "context_locators": [
+                "tool line 148",
+                "tool line 149",
+                "tool line 150",
+                "tool line 151",
+                "tool line 152"
+              ],
+              "paragraph_sha256": "1f8ba121f5f73eadde7c1f0488bcebb7905bc53a57e6140d6a653609bc8583a9"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_WITHIN_SCOPE",
+      "rationale": "The home-health provision distinguishes plan/signature, orders, permitted verbal orders and revisions.",
+      "alternatives": "Physician/allowed practitioner within applicable scope; agency coordination and clinical signatures are different roles.",
+      "complexity": "Do not transplant hospice certification or another setting's signatory rules into home health."
+    }
+  },
+  {
+    "id": "D24",
+    "question": "Does referral acceptance mean the service happened?",
+    "domain": "service_completion",
+    "actors": [
+      "M01",
+      "M18",
+      "M19",
+      "M20",
+      "O05"
+    ],
+    "rule": "Referral sent, accepted, scheduled and completed are different events.",
+    "cannot": "Do not close unmet need solely because a document or booking exists.",
+    "review": "Confirm relevant receiving-service status and return unresolved barriers to coordinator.",
+    "condition": "Operational synthesis supporting closed-loop coordination, not a universal mandated form.",
+    "sources": [
+      "R22",
+      "R28",
+      "A06"
+    ],
+    "evidence_status": "OPERATIONAL_MODEL_NOT_EMPIRICAL_ASSERTION: Separating sent/accepted/scheduled/completed states is a proposed control informed by coordination needs, not a verified universal state machine.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "R22",
+          "url": "https://www.ahrq.gov/ncepcr/care/coordination.html",
+          "source_text_sha256": "f2f0f12be9ee97cde671fc408061b77ef6cf751578c781ee383c746624eeedf2",
+          "retrieval_status": "tool_excerpt",
+          "selector": "Monitoring and followup",
+          "locations": [
+            {
+              "locator": "tool line 42",
+              "context_locators": [
+                "tool line 41",
+                "tool line 42",
+                "tool line 43",
+                "tool line 44",
+                "tool line 45"
+              ],
+              "paragraph_sha256": "3e385e6a2debb6156e074c1b51f14a2b8f3464639f786f24e59249c45ebf29d0"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "R28",
+          "url": "https://www.cdc.gov/cancer/php/interventions/patient-navigation.html",
+          "source_text_sha256": "5bd5db9eb4b8b992dda3cd617e134f280dcfd77ac9afe57c91a0176671a66731",
+          "retrieval_status": "tool_excerpt",
+          "selector": "track",
+          "locations": [
+            {
+              "locator": "tool line 50",
+              "context_locators": [
+                "tool line 49",
+                "tool line 50",
+                "tool line 51",
+                "tool line 52",
+                "tool line 54"
+              ],
+              "paragraph_sha256": "fe1270e28fad6832e10d081f3aebff1f2e5db1964317756070f28077d4e3b49f"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "OPERATIONAL_MODEL_NOT_EMPIRICAL_ASSERTION",
+      "rationale": "Separating sent/accepted/scheduled/completed states is a proposed control informed by coordination needs, not a verified universal state machine.",
+      "alternatives": "Organizations use different status fields, acknowledgements and closure criteria.",
+      "complexity": "The model cannot prove delivery or clinical benefit; actual evidence must be obtained in its local workflow."
+    }
+  },
+  {
+    "id": "D25",
+    "question": "Can a technician change medication therapy?",
+    "domain": "medication",
+    "actors": [
+      "M05",
+      "M04",
+      "C01"
+    ],
+    "rule": "Technician processes permitted tasks; pharmacist/prescriber provides the relevant professional judgment.",
+    "cannot": "No independent therapy-change authority follows from medication-access assignment.",
+    "review": "Pharmacist then prescriber or authorized protocol as relevant.",
+    "condition": "Specific technician, pharmacist and prescribing permissions remain state/program-specific.",
+    "sources": [
+      "B07",
+      "B08",
+      "R09",
+      "V13"
+    ],
+    "evidence_status": "SUPPORTED_CONDITIONAL_WITH_ALTERNATIVES: Professional task separation is supported; Washington illustrates separately authorized pharmacist therapy decisions.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "B08",
+          "url": "https://www.bls.gov/ooh/healthcare/pharmacy-technicians.htm",
+          "source_text_sha256": "1bcd740a97abfc09f482726043b2ebde3d7229a72604d00b2a5d467d1f6898d4",
+          "retrieval_status": "tool_excerpt",
+          "selector": "under the supervision",
+          "locations": [
+            {
+              "locator": "tool line 234",
+              "context_locators": [
+                "tool line 233",
+                "tool line 234",
+                "tool line 235",
+                "tool line 237",
+                "tool line 238"
+              ],
+              "paragraph_sha256": "76520559eab9aa777a14d77009bb92a0def5c73311f337fd60871786c05ea507"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "B07",
+          "url": "https://www.bls.gov/ooh/healthcare/pharmacists.htm",
+          "source_text_sha256": "acd8170746e44b6f5888ae47d27720519aa272f81920efdf76b283a88e384e44",
+          "retrieval_status": "tool_excerpt",
+          "selector": "Supervise",
+          "locations": [
+            {
+              "locator": "tool line 232",
+              "context_locators": [
+                "tool line 231",
+                "tool line 232",
+                "tool line 233",
+                "tool line 234",
+                "tool line 235"
+              ],
+              "paragraph_sha256": "9163799a72e274f8818e441980945bf704bfba4c7c6c030e175b2d288e64112f"
+            },
+            {
+              "locator": "tool line 274",
+              "context_locators": [
+                "tool line 273",
+                "tool line 274",
+                "tool line 275",
+                "tool line 276",
+                "tool line 278"
+              ],
+              "paragraph_sha256": "20105e841c09fe5eb0284d6b66f37d0b5261e88d70f63f137605963815e2c0b6"
+            },
+            {
+              "locator": "tool line 423",
+              "context_locators": [
+                "tool line 421",
+                "tool line 423",
+                "tool line 424",
+                "tool line 426",
+                "tool line 427"
+              ],
+              "paragraph_sha256": "3cdf7f6e2d9fce6f15483a0426abb6d77bd476ca93673ede8a80ac3220676427"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "V13",
+          "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=246-945-350",
+          "source_text_sha256": "332cc96833572d6dc69fa75cf488e0914a544d9a67d03bd14e9920febedfb4b4",
+          "retrieval_status": "tool_excerpt",
+          "selector": "therapeutic decisions",
+          "locations": [
+            {
+              "locator": "tool line 145",
+              "context_locators": [
+                "tool line 144",
+                "tool line 145",
+                "tool line 147",
+                "tool line 149",
+                "tool line 151"
+              ],
+              "paragraph_sha256": "d28482360d89d968f9fb47c0680aa5123bde65bc85cad9f83874a7ce1c138a83"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_CONDITIONAL_WITH_ALTERNATIVES",
+      "rationale": "Professional task separation is supported; Washington illustrates separately authorized pharmacist therapy decisions.",
+      "alternatives": "Technician support, pharmacist professional decision and prescriber/protocol actions differ.",
+      "complexity": "Not every pharmacist change requires a new individual physician instruction; no general independent technician therapy authority follows from title."
+    }
+  },
+  {
+    "id": "D26",
+    "question": "Does psychologist/counselor title imply prescribing?",
+    "domain": "behavioral",
+    "actors": [
+      "M06",
+      "M07",
+      "M08"
+    ],
+    "rule": "Use actual license and separately granted permissions.",
+    "cannot": "Neither all psychologists prescribe nor a blanket national prohibition is inferred; counselor and psychiatrist roles differ.",
+    "review": "Qualified prescribing clinician for medication need.",
+    "condition": "Jurisdiction and specialty qualification required.",
+    "sources": [
+      "B01",
+      "B10",
+      "B11",
+      "V04"
+    ],
+    "evidence_status": "SUPPORTED_CONDITIONAL_WITH_ALTERNATIVES: New Mexico provides a concrete additional certification route, while general clinical psychology duties are separately described.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "B10",
+          "url": "https://www.bls.gov/ooh/life-physical-and-social-science/psychologists.htm",
+          "source_text_sha256": "5b94227f61d060d5688716dc943c56f823fa859a7bfbe96ae10a3f409270dcd6",
+          "retrieval_status": "tool_excerpt",
+          "selector": "Clinical and counseling",
+          "locations": [
+            {
+              "locator": "tool line 238",
+              "context_locators": [
+                "tool line 237",
+                "tool line 238",
+                "tool line 239",
+                "tool line 240",
+                "tool line 241"
+              ],
+              "paragraph_sha256": "66428a32e24e6453d9a1047b683e41a4587b0f945947ab171dcc2edc642e85e9"
+            },
+            {
+              "locator": "tool line 239",
+              "context_locators": [
+                "tool line 238",
+                "tool line 239",
+                "tool line 240",
+                "tool line 241",
+                "tool line 242"
+              ],
+              "paragraph_sha256": "ba0e44864004e718075440b20457b0aec62c07354124789a8ca77baa6d0e07b5"
+            },
+            {
+              "locator": "tool line 240",
+              "context_locators": [
+                "tool line 239",
+                "tool line 240",
+                "tool line 241",
+                "tool line 242",
+                "tool line 243"
+              ],
+              "paragraph_sha256": "ba37daee51615971e3ee0cc6c142e16d6bd6a8eab8e3d8710f6b7f03074bddf8"
+            },
+            {
+              "locator": "tool line 253",
+              "context_locators": [
+                "tool line 251",
+                "tool line 253",
+                "tool line 254",
+                "tool line 255",
+                "tool line 256"
+              ],
+              "paragraph_sha256": "6ea58e9191649cb3152dc8256e84575527c0458b5e024aa2e50735b6d970a9ba"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "V04",
+          "url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/psychologist-examiners/licensing-registration-and-renewal/",
+          "source_text_sha256": "fc1db2682f6639ea8b7b6084303c230ebc87393b0f272788e64634f5c11b0793",
+          "retrieval_status": "tool_excerpt",
+          "selector": "Prescription Certificate",
+          "locations": [
+            {
+              "locator": "tool line 380",
+              "context_locators": [
+                "tool line 378",
+                "tool line 380",
+                "tool line 386",
+                "tool line 401",
+                "tool line 402"
+              ],
+              "paragraph_sha256": "43598c8412cb57df2b59807d8d230a7d22c582dc56d069f05c7d37a99ab78547"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_CONDITIONAL_WITH_ALTERNATIVES",
+      "rationale": "New Mexico provides a concrete additional certification route, while general clinical psychology duties are separately described.",
+      "alternatives": "Ordinary psychology license and additional conditional/full prescribing qualification are distinct.",
+      "complexity": "No universal psychologist prescribing rule or verified permission for an individual is established."
+    }
+  },
+  {
+    "id": "D27",
+    "question": "Who can approve information sharing?",
+    "domain": "privacy",
+    "actors": [
+      "G10",
+      "O06",
+      "P03"
+    ],
+    "rule": "Use purpose, applicable rule/authority and scope; privacy/HIM process resolves uncertain releases.",
+    "cannot": "No blanket all-sharing-needs-written-consent rule; no unrestricted access merely from treating or administrative title.",
+    "review": "Privacy/legal channel for unclear authorization or specially protected data.",
+    "condition": "A10 lists minimum-necessary exceptions including specified treatment disclosures; other protections still apply. Applicable Part 2 records and separate SUD counseling notes illustrate additional consent distinctions; a HIPAA minimum-necessary exception is not blanket disclosure permission.",
+    "sources": [
+      "A09",
+      "A10",
+      "R07",
+      "V15"
+    ],
+    "evidence_status": "SUPPORTED_CONDITIONAL_WITH_COMPLEXITY: HIPAA minimum-necessary exceptions, representative authority and specific Part 2 protections show that information-sharing permission depends on more than a treatment label.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "A10",
+          "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/minimum-necessary-requirement/index.html",
+          "source_text_sha256": "e8e421444d62ed6284934a7eae8e9d17b6210c63e105c240e3dcd17204197804",
+          "retrieval_status": "tool_excerpt",
+          "selector": "treatment purposes",
+          "locations": [
+            {
+              "locator": "tool line 61",
+              "context_locators": [
+                "tool line 60",
+                "tool line 61",
+                "tool line 62",
+                "tool line 63",
+                "tool line 64"
+              ],
+              "paragraph_sha256": "80e58db97ef51bdba04c93f9d6b7c1eef3120612fca803f0abec4ea5776488bb"
+            },
+            {
+              "locator": "tool line 73",
+              "context_locators": [
+                "tool line 72",
+                "tool line 73",
+                "tool line 74",
+                "tool line 75",
+                "tool line 76"
+              ],
+              "paragraph_sha256": "4610b510e4e7c5cb120794d7b72a281b347612e5bfcdf3a6a05adb35caac7581"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A09",
+          "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/personal-representatives/index.html",
+          "source_text_sha256": "47f6b57260c613d9e2f493dc904dfce3ce3e5bcba1b22303f016a0280f9e7d76",
+          "retrieval_status": "tool_excerpt",
+          "selector": "scope",
+          "locations": [
+            {
+              "locator": "tool line 65",
+              "context_locators": [
+                "tool line 64",
+                "tool line 65",
+                "tool line 66",
+                "tool line 67",
+                "tool line 68"
+              ],
+              "paragraph_sha256": "8ece595fe14f86d4cf8e20da5194ccbc26c330f14744911bb10bd56440c3d306"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "V15",
+          "url": "https://www.hhs.gov/hipaa/for-professionals/regulatory-initiatives/fact-sheet-42-cfr-part-2-final-rule/index.html",
+          "source_text_sha256": "f44633816e29caa3b9914759ac60d103ae05bbf0cc282646de01da0cd401fa96",
+          "retrieval_status": "tool_excerpt",
+          "selector": "specific consent",
+          "locations": [
+            {
+              "locator": "tool line 82",
+              "context_locators": [
+                "tool line 81",
+                "tool line 82",
+                "tool line 84",
+                "tool line 85",
+                "tool line 86"
+              ],
+              "paragraph_sha256": "604fd9a5f1e43fa6595550b5c97646187662a67b0c9e740b2d6d6c5673a7ddd4"
+            },
+            {
+              "locator": "tool line 100",
+              "context_locators": [
+                "tool line 98",
+                "tool line 100",
+                "tool line 102",
+                "tool line 104",
+                "tool line 105"
+              ],
+              "paragraph_sha256": "b48b2aaac25528f8ff38e75423bcbebdd7110e23e042eb5083e05890f5414001"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_CONDITIONAL_WITH_COMPLEXITY",
+      "rationale": "HIPAA minimum-necessary exceptions, representative authority and specific Part 2 protections show that information-sharing permission depends on more than a treatment label.",
+      "alternatives": "Different purposes, record regimes and consent/exception pathways; applicable Part 2 TPO consent differs from special counseling notes.",
+      "complexity": "The treatment exception is not an unrestricted all-records disclosure rule. No patient/program-specific legal determination is made."
+    }
+  },
+  {
+    "id": "D28",
+    "question": "Can interpreter or navigator decide for the patient?",
+    "domain": "communication",
+    "actors": [
+      "P05",
+      "P06",
+      "M09",
+      "M10"
+    ],
+    "rule": "Communication/navigation functions support understanding and access.",
+    "cannot": "No substitute medical/coverage/consent authority follows from those functions.",
+    "review": "Return substantive decision to patient/qualified role.",
+    "condition": "Additional independent license/appointment, if any, must be established separately.",
+    "sources": [
+      "B23",
+      "R21",
+      "R28",
+      "A09"
+    ],
+    "evidence_status": "INTERPRETATION_WITH_PROFESSIONAL_CONTEXT: Communication/navigation functions are documented; no medical/coverage/proxy power is inferred merely from performing them.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "B23",
+          "url": "https://www.bls.gov/ooh/media-and-communication/interpreters-and-translators.htm",
+          "source_text_sha256": "968db094c91341b4e22e55a3fbde7217e67761c461221aa53e8f15dfb601465e",
+          "retrieval_status": "tool_excerpt",
+          "selector": "Render spoken messages",
+          "locations": [
+            {
+              "locator": "tool line 230",
+              "context_locators": [
+                "tool line 229",
+                "tool line 230",
+                "tool line 231",
+                "tool line 232",
+                "tool line 233"
+              ],
+              "paragraph_sha256": "01785e1742be082eaafce4511e5db626f4ec5f132baf472587d91a9ea1d9646d"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "R28",
+          "url": "https://www.cdc.gov/cancer/php/interventions/patient-navigation.html",
+          "source_text_sha256": "5bd5db9eb4b8b992dda3cd617e134f280dcfd77ac9afe57c91a0176671a66731",
+          "retrieval_status": "tool_excerpt",
+          "selector": "navigator",
+          "locations": [
+            {
+              "locator": "tool line 37",
+              "context_locators": [
+                "tool line 35",
+                "tool line 37",
+                "tool line 39",
+                "tool line 40",
+                "tool line 41"
+              ],
+              "paragraph_sha256": "2e075b4da655d24452f704139ccedb53184a90a8db9902076e579b31c8f34a49"
+            },
+            {
+              "locator": "tool line 49",
+              "context_locators": [
+                "tool line 48",
+                "tool line 49",
+                "tool line 50",
+                "tool line 51",
+                "tool line 52"
+              ],
+              "paragraph_sha256": "56f625aa70023b79d476e39a7c0ca447ba47f8f583f4eea411da2a2d0ff623ef"
+            },
+            {
+              "locator": "tool line 54",
+              "context_locators": [
+                "tool line 52",
+                "tool line 54",
+                "tool line 55",
+                "tool line 56",
+                "tool line 58"
+              ],
+              "paragraph_sha256": "b36c469180ca4a9bb1977681a1a8ca43054c2394a3411a8799a9e2fa71f490be"
+            },
+            {
+              "locator": "tool line 56",
+              "context_locators": [
+                "tool line 55",
+                "tool line 56",
+                "tool line 58",
+                "tool line 59",
+                "tool line 61"
+              ],
+              "paragraph_sha256": "d3caaf94064ddd6d7d4e1d3e480a73bfa844e232f4c4eea4421f7dec6b3b9e4a"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A09",
+          "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/personal-representatives/index.html",
+          "source_text_sha256": "47f6b57260c613d9e2f493dc904dfce3ce3e5bcba1b22303f016a0280f9e7d76",
+          "retrieval_status": "tool_excerpt",
+          "selector": "authority",
+          "locations": [
+            {
+              "locator": "tool line 65",
+              "context_locators": [
+                "tool line 64",
+                "tool line 65",
+                "tool line 66",
+                "tool line 67",
+                "tool line 68"
+              ],
+              "paragraph_sha256": "8ece595fe14f86d4cf8e20da5194ccbc26c330f14744911bb10bd56440c3d306"
+            },
+            {
+              "locator": "tool line 66",
+              "context_locators": [
+                "tool line 65",
+                "tool line 66",
+                "tool line 67",
+                "tool line 68",
+                "tool line 69"
+              ],
+              "paragraph_sha256": "70ef32d657b717634accd9dc9c0c00d4dda8480b9b4b63f00f4a1d6e723aad4f"
+            },
+            {
+              "locator": "tool line 67",
+              "context_locators": [
+                "tool line 66",
+                "tool line 67",
+                "tool line 68",
+                "tool line 69",
+                "tool line 70"
+              ],
+              "paragraph_sha256": "02e6d0ad2eec83f60f2ef70c1e0c333ad0aff93700a5184c8088ec85084b44db"
+            },
+            {
+              "locator": "tool line 69",
+              "context_locators": [
+                "tool line 68",
+                "tool line 69",
+                "tool line 70",
+                "tool line 71",
+                "tool line 72"
+              ],
+              "paragraph_sha256": "5242af9ae80f810d89a832ad749bc316ec9a0ec60f20e9437a734f9b1233a071"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "INTERPRETATION_WITH_PROFESSIONAL_CONTEXT",
+      "rationale": "Communication/navigation functions are documented; no medical/coverage/proxy power is inferred merely from performing them.",
+      "alternatives": "One person may hold additional independent qualifications or appointment, which must be established separately.",
+      "complexity": "The role boundary is not proof that an interpreter/navigator can never have another legitimate authority."
+    }
+  },
+  {
+    "id": "D29",
+    "question": "Can a manager overrule a licensed professional on any task?",
+    "domain": "management",
+    "actors": [
+      "O12",
+      "U17",
+      "G04",
+      "G05"
+    ],
+    "rule": "Management may assign work within organizational mandate and lawful scope.",
+    "cannot": "Reporting rank does not expand licensure or satisfy required review independence.",
+    "review": "Professional, compliance or appropriate appeal process rather than blind upward approval.",
+    "condition": "Actual organogram and professional/practice rules required.",
+    "sources": [
+      "B22",
+      "A13",
+      "A14",
+      "A03"
+    ],
+    "evidence_status": "SUPPORTED_FRAMEWORK_AND_SCOPED_BOUNDARY: Management, practice-scope guidance and reconsideration independence are separately evidenced.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "B22",
+          "url": "https://www.bls.gov/ooh/management/medical-and-health-services-managers.htm",
+          "source_text_sha256": "23e65ad322160368299ccc85597a6a4fa32ad3c04cdf47b8b6533c7e58b7c1bd",
+          "retrieval_status": "tool_excerpt",
+          "selector": "supervise staff",
+          "locations": [
+            {
+              "locator": "tool line 228",
+              "context_locators": [
+                "tool line 227",
+                "tool line 228",
+                "tool line 229",
+                "tool line 230",
+                "tool line 231"
+              ],
+              "paragraph_sha256": "e3cccaab860801b45692231db67c95e7446de9a16cb46a85a7c7d46929e89fb6"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "V10",
+          "url": "https://www.ncsbn.org/public-files/2016_Decision-Making-Framework.pdf",
+          "source_text_sha256": "b15a96e44efa2e77c7b7d9f601b099ddfe5418b959688005176dfb72db67ba07",
+          "retrieval_status": "tool_excerpt",
+          "selector": "prohibited",
+          "locations": [
+            {
+              "locator": "tool line 62 / PDF page 3",
+              "context_locators": [
+                "tool line 61 / PDF page 3",
+                "tool line 62 / PDF page 3",
+                "tool line 63 / PDF page 3",
+                "tool line 64 / PDF page 3",
+                "tool line 65 / PDF page 3"
+              ],
+              "paragraph_sha256": "83253998102d5f37b7e00daead4faf986f0aef293f68f85fc1a930b9a7d3a451"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A03",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.590",
+          "source_text_sha256": "4d97fbf6fb11c2b72e1b65e3e4b25343c52c95d4bdf4141140223b3e262b3994",
+          "retrieval_status": "tool_excerpt",
+          "selector": "not involved",
+          "locations": [
+            {
+              "locator": "tool line 143",
+              "context_locators": [
+                "tool line 141",
+                "tool line 143",
+                "tool line 144",
+                "tool line 145",
+                "tool line 146"
+              ],
+              "paragraph_sha256": "712696037ea657d3374b4ac1442269de0f7768fdaecd8c4a75853c50602c6c93"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_FRAMEWORK_AND_SCOPED_BOUNDARY",
+      "rationale": "Management, practice-scope guidance and reconsideration independence are separately evidenced.",
+      "alternatives": "Administrative reporting, professional supervision and statutory case review can follow different chains.",
+      "complexity": "A local organogram is not supplied; no universal authority ordering between licenses or job titles is certified."
+    }
+  },
+  {
+    "id": "D30",
+    "question": "Does an EHR administrator have clinical editing authority?",
+    "domain": "systems",
+    "actors": [
+      "G13",
+      "G14",
+      "C01"
+    ],
+    "rule": "Technical changes/access require authorized purpose and change permissions.",
+    "cannot": "Technical ability is not permission to fabricate clinical content or approve care.",
+    "review": "Clinical/policy author for substantive change; privacy/security for access.",
+    "condition": "Hospital authentication A15 and applicable access controls.",
+    "sources": [
+      "A15",
+      "A10",
+      "B21"
+    ],
+    "evidence_status": "SUPPORTED_CONTEXT_WITH_LOCAL_PERMISSION_UNKNOWN: IT permissions, healthcare access-purpose controls and hospital authentication are documented in their settings.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "V08",
+          "url": "https://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm",
+          "source_text_sha256": "cf5e4a2308c7e70fa8bad5089240bb66ecd68c7fb3612062e7f9fd8caa3e4ee8",
+          "retrieval_status": "tool_excerpt",
+          "selector": "permissions",
+          "locations": [
+            {
+              "locator": "tool line 231",
+              "context_locators": [
+                "tool line 230",
+                "tool line 231",
+                "tool line 232",
+                "tool line 233",
+                "tool line 234"
+              ],
+              "paragraph_sha256": "85bf5c03f6c7983551a1244e8f6b9c57a83d290fd08f9b6b1a8da565629d5351"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A10",
+          "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/minimum-necessary-requirement/index.html",
+          "source_text_sha256": "e8e421444d62ed6284934a7eae8e9d17b6210c63e105c240e3dcd17204197804",
+          "retrieval_status": "tool_excerpt",
+          "selector": "persons or classes",
+          "locations": [
+            {
+              "locator": "tool line 70",
+              "context_locators": [
+                "tool line 69",
+                "tool line 70",
+                "tool line 71",
+                "tool line 72",
+                "tool line 73"
+              ],
+              "paragraph_sha256": "991d350b1560360303235f0ae26dc11530cb83d7609672d6db6839d3cac48432"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A15",
+          "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-C/section-482.24",
+          "source_text_sha256": "363a26a40f907655828d23fb820c88ad97806cf91b4b574546fcfa6420ff5839",
+          "retrieval_status": "tool_excerpt",
+          "selector": "authenticated",
+          "locations": [
+            {
+              "locator": "tool line 112",
+              "context_locators": [
+                "tool line 110",
+                "tool line 112",
+                "tool line 113",
+                "tool line 115",
+                "tool line 116"
+              ],
+              "paragraph_sha256": "7fc3cdef384c5d356abe7af8f4ecb8279ce196f0e6c3847c04158e7e129ede55"
+            },
+            {
+              "locator": "tool line 113",
+              "context_locators": [
+                "tool line 112",
+                "tool line 113",
+                "tool line 115",
+                "tool line 116",
+                "tool line 118"
+              ],
+              "paragraph_sha256": "9ec96a67835ac67c1eb8a98f82a1f8d7150d82a82f9a3e4319ed60d30cc1c4f3"
+            },
+            {
+              "locator": "tool line 120",
+              "context_locators": [
+                "tool line 119",
+                "tool line 120",
+                "tool line 122",
+                "tool line 124",
+                "tool line 125"
+              ],
+              "paragraph_sha256": "834108276bb3a48402dbb69a7cc7df6a12e05a8fe5c0c76c1fb7df7ae05d72a5"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_CONTEXT_WITH_LOCAL_PERMISSION_UNKNOWN",
+      "rationale": "IT permissions, healthcare access-purpose controls and hospital authentication are documented in their settings.",
+      "alternatives": "Technical administration can be assigned separately from clinical/policy authorship.",
+      "complexity": "Actual system access is not proof of permission to alter clinical facts; exact change-control process remains local."
+    }
+  },
+  {
+    "id": "D31",
+    "question": "Who decides equipment or transport suitability?",
+    "domain": "service",
+    "actors": [
+      "M25",
+      "M23",
+      "M24",
+      "C01"
+    ],
+    "rule": "Service staff coordinate fulfillment; qualified clinical input handles medical requirements.",
+    "cannot": "Driver, dispatcher or delivery title does not establish clinical assessment authority.",
+    "review": "Ordering/responsible clinician and actual qualified service staff.",
+    "condition": "Exact equipment/transport protocol not established universally; CMS device example is service-specific.",
+    "sources": [
+      "R11",
+      "R28",
+      "R30"
+    ],
+    "evidence_status": "SERVICE_MODEL_WITH_SCOPED_SOURCE_CONTEXT: Equipment and Medicaid transport sources establish service-specific responsibilities; a general suitability workflow is a model.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "R11",
+          "url": "https://www.cms.gov/medicare/payment/fee-schedules/durable-medical-equipment-prosthetic-devices-prosthetics-orthotics-supplies/power-mobility-devices",
+          "source_text_sha256": "68156fa96c3b515a4ef745ddd2e9b1f6a20f26e9b687fc43567dd455fea5b439",
+          "retrieval_status": "retrieved",
+          "selector": "Standard Written Order",
+          "locations": [
+            {
+              "locator": "HTML li block 6",
+              "context_locators": [
+                "HTML li block 6"
+              ],
+              "paragraph_sha256": "13362fe26bb24197b1754716c529ef88cf226fe3152d156c6b3ed9c359d2e8c0"
+            },
+            {
+              "locator": "HTML h3 block 111",
+              "context_locators": [
+                "HTML h3 block 111",
+                "HTML p block 112",
+                "HTML td block 113",
+                "HTML p block 114"
+              ],
+              "paragraph_sha256": "77bb35d0034ce2c2ebee771a2345e52413dc00ae4a87af45c4c3651115d0bd53"
+            },
+            {
+              "locator": "HTML h3 block 146",
+              "context_locators": [
+                "HTML h3 block 146",
+                "HTML p block 147",
+                "HTML h3 block 148",
+                "HTML p block 149"
+              ],
+              "paragraph_sha256": "7070a99dbfb50c04c3d835f0fa9019b2b27407e698bc4aad2a6a77a903968127"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "V14",
+          "url": "https://www.medicaid.gov/sites/default/files/2023-09/smd23006.pdf",
+          "source_text_sha256": "a23f62fb8cd287ca2dc4daa40b617aea568af61fd079666d9cb41013542e6d35",
+          "retrieval_status": "tool_excerpt",
+          "selector": "transportation",
+          "locations": [
+            {
+              "locator": "tool line 5 / PDF page 1",
+              "context_locators": [
+                "tool line 4 / PDF page 1",
+                "tool line 5 / PDF page 1",
+                "tool line 6 / PDF page 1",
+                "tool line 7 / PDF page 1",
+                "tool line 8 / PDF page 1"
+              ],
+              "paragraph_sha256": "ae3536447257f5b10fc9608c050add28f820e463d1b8a98bb8d1fbd0f11859d2"
+            },
+            {
+              "locator": "tool line 6 / PDF page 1",
+              "context_locators": [
+                "tool line 5 / PDF page 1",
+                "tool line 6 / PDF page 1",
+                "tool line 7 / PDF page 1",
+                "tool line 8 / PDF page 1",
+                "tool line 9 / PDF page 1"
+              ],
+              "paragraph_sha256": "b057277945c76a752764c61646287c88a96e63ea4fdb2723d5b2d0c3f4c37cde"
+            },
+            {
+              "locator": "tool line 11 / PDF page 1",
+              "context_locators": [
+                "tool line 10 / PDF page 1",
+                "tool line 11 / PDF page 1",
+                "tool line 12 / PDF page 1",
+                "tool line 13 / PDF page 1",
+                "tool line 14 / PDF page 1"
+              ],
+              "paragraph_sha256": "121841d7f80b31b471507aa1139e2c156eb66d6d1705d470251914377d99f838"
+            },
+            {
+              "locator": "tool line 12 / PDF page 1",
+              "context_locators": [
+                "tool line 11 / PDF page 1",
+                "tool line 12 / PDF page 1",
+                "tool line 13 / PDF page 1",
+                "tool line 14 / PDF page 1",
+                "tool line 15 / PDF page 1"
+              ],
+              "paragraph_sha256": "b75dbf75a9b72d348bbde00dbcc11e12ae5ea238145ca83df16e277c15ba4193"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SERVICE_MODEL_WITH_SCOPED_SOURCE_CONTEXT",
+      "rationale": "Equipment and Medicaid transport sources establish service-specific responsibilities; a general suitability workflow is a model.",
+      "alternatives": "Different equipment, transport administration, vehicle and attendant arrangements.",
+      "complexity": "A generic driver/dispatcher/delivery title does not establish clinical qualification; actual orders/protocols are not provided."
+    }
+  },
+  {
+    "id": "D32",
+    "question": "Who approves financial assistance or final payment?",
+    "domain": "finance",
+    "actors": [
+      "O09",
+      "G15",
+      "O04"
+    ],
+    "rule": "Actual assistance administrator/payer adjudication decides under its program; counselors explain and help applications.",
+    "cannot": "Counseling, eligibility and authorization do not guarantee final payment.",
+    "review": "Appropriate assistance/payment-dispute route.",
+    "condition": "Program and claim rules must be identified.",
+    "sources": [
+      "R06",
+      "R08",
+      "R09"
+    ],
+    "evidence_status": "SUPPORTED_CONTEXT_NOT_PROGRAM_SIGNOFF: Cost and assistance support are documented, but the actual administrator's approval authority depends on the named program.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "R06",
+          "url": "https://health.ucsd.edu/insurance-billing/paying/faq/",
+          "source_text_sha256": "b5acd82dbce888b8c7d60712aa978a2093c828d16c9a1731b8fbd3cdfb4efd11",
+          "retrieval_status": "retrieved",
+          "selector": "financial responsibility",
+          "locations": [
+            {
+              "locator": "HTML p block 69",
+              "context_locators": [
+                "HTML p block 69"
+              ],
+              "paragraph_sha256": "a6964e66ed892886757b9ff9a52254b3b2b470c82ff723b1bf50dc0a37f380d7"
+            },
+            {
+              "locator": "HTML p block 98",
+              "context_locators": [
+                "HTML p block 98"
+              ],
+              "paragraph_sha256": "9bad8fa64d83eb9b2c02550921aa4d73de1097887216e0cc66e09d15b03f87b1"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "R09",
+          "url": "https://news.ashp.org/news/ashp-news/2019/11/21/Specialty-Pharmacy-Technicians-Assume-Advanced-Roles",
+          "source_text_sha256": "d716f05e3bf2453c2f9f6e8525d15f38151cc65212fa64bd486afc65c61c5e7a",
+          "retrieval_status": "earlier_tool_excerpt",
+          "selector": "assistance",
+          "locations": [
+            {
+              "locator": "tool line 57",
+              "context_locators": [
+                "tool line 56",
+                "tool line 57",
+                "tool line 59",
+                "tool line 60",
+                "tool line 62"
+              ],
+              "paragraph_sha256": "69f41f4479833ae438d8c0f490cfc516ad4d7ccefafb6f52b4f14c7eafc234b5"
+            },
+            {
+              "locator": "tool line 59",
+              "context_locators": [
+                "tool line 57",
+                "tool line 59",
+                "tool line 60",
+                "tool line 62",
+                "tool line 64"
+              ],
+              "paragraph_sha256": "6ef8e7ada8e50a82e70a1a7acab6785171c64d643c374cefdeb5996c0f009def"
+            },
+            {
+              "locator": "tool line 64",
+              "context_locators": [
+                "tool line 62",
+                "tool line 64",
+                "tool line 66",
+                "tool line 68",
+                "tool line 69"
+              ],
+              "paragraph_sha256": "c5986cae21e83ce819a7ba88a05fe6af8beb3eb6f0303507da461acb8a011e99"
+            },
+            {
+              "locator": "tool line 75",
+              "context_locators": [
+                "tool line 74",
+                "tool line 75",
+                "tool line 77",
+                "tool line 78",
+                "tool line 80"
+              ],
+              "paragraph_sha256": "854cd75677f063e4a0aa24640bf0263fb9e8231b38e07f3c3d9fbf82a86f4815"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_CONTEXT_NOT_PROGRAM_SIGNOFF",
+      "rationale": "Cost and assistance support are documented, but the actual administrator's approval authority depends on the named program.",
+      "alternatives": "Counseling, assistance decisions, claims and coverage are separate, possibly held by different organizations.",
+      "complexity": "No assistance eligibility outcome, final payment guarantee or universal financial-decision hierarchy is established."
+    }
+  },
+  {
+    "id": "D33",
+    "question": "Does hospice team composition create one boss over every profession?",
+    "domain": "hospice",
+    "actors": [
+      "M28",
+      "C01",
+      "C06",
+      "M03",
+      "M29"
+    ],
+    "rule": "The official October 2025 hospice codification distinguishes the interdisciplinary group/designated RN coordination from attending, physician certification and admission responsibilities.",
+    "cannot": "Team label is not identical authority for every member or proof of current complete regulation.",
+    "review": "Identify current hospice/attending responsibilities and relevant professional lead.",
+    "condition": "V11/V16/V17 establish that codified edition; a complete current-2026 update audit and actual hospice assignment are not established.",
+    "sources": [
+      "A08",
+      "R34",
+      "V11",
+      "V16",
+      "V17"
+    ],
+    "evidence_status": "SUPPORTED_DATED_RULES_WITH_ADDED_DISTINCTIONS: Official October 2025 codification strengthens the earlier limited composition snapshot and separates IDG coordination, attending, certification and admission.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "V11",
+          "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title42-vol3/pdf/CFR-2025-title42-vol3-sec418-56.pdf",
+          "source_text_sha256": "3ec38fe95197de5574db88702a34345b4f9cde2bed1347b12234ac4c767a23fd",
+          "retrieval_status": "retrieved",
+          "selector": "designate a registered nurse",
+          "locations": [
+            {
+              "locator": "PDF page 1, block 1",
+              "context_locators": [
+                "PDF page 1, block 1"
+              ],
+              "paragraph_sha256": "aaa60bc6ca8e92c95280f6f2d7543b1321637a1e35f04776cb36a0e6ed92616a"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "V16",
+          "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title42-vol3/pdf/CFR-2025-title42-vol3-sec418-22.pdf",
+          "source_text_sha256": "697759ef73ecadb3d0d5d9218e2209f10b8df1721f8333289ece4811cf42cd78",
+          "retrieval_status": "retrieved",
+          "selector": "Sources of certification",
+          "locations": [
+            {
+              "locator": "PDF page 2, block 1",
+              "context_locators": [
+                "PDF page 2, block 1"
+              ],
+              "paragraph_sha256": "9a169e6481cab8be6b9df3453ffdb0478826dcb35e6330822e46fc64f982df7a"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "V17",
+          "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title42-vol3/pdf/CFR-2025-title42-vol3-sec418-25.pdf",
+          "source_text_sha256": "041eee87133744c596b4874e4addd56543f0132bfb9bd1b5ed6daa9ae8d4e350",
+          "retrieval_status": "retrieved",
+          "selector": "Admission to hospice",
+          "locations": [
+            {
+              "locator": "PDF page 1, block 1",
+              "context_locators": [
+                "PDF page 1, block 1"
+              ],
+              "paragraph_sha256": "041eee87133744c596b4874e4addd56543f0132bfb9bd1b5ed6daa9ae8d4e350"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_DATED_RULES_WITH_ADDED_DISTINCTIONS",
+      "rationale": "Official October 2025 codification strengthens the earlier limited composition snapshot and separates IDG coordination, attending, certification and admission.",
+      "alternatives": "Designated RN coordination; specified physicians certify/admit within the codified rules; attending may be a different allowed professional.",
+      "complexity": "These are distinct decisions and a group is not one professional. A complete current-2026 regulatory update audit is not claimed from the dated codification."
+    }
+  },
+  {
+    "id": "D34",
+    "question": "Does a complaint to a regulator automatically reverse coverage?",
+    "domain": "oversight",
+    "actors": [
+      "G16",
+      "P07",
+      "U16"
+    ],
+    "rule": "Oversight, consumer assistance and case appeal have distinct mandates.",
+    "cannot": "A complaint is not automatically an appeal or a reversal.",
+    "review": "Identify the agency and correct clinical/coverage/rights forum.",
+    "condition": "Agency jurisdiction and program rules determine action.",
+    "sources": [
+      "R35",
+      "A11",
+      "A12"
+    ],
+    "evidence_status": "SUPPORTED_CONTEXT_WITH_MANDATE_LIMITS: Sources describe different assistance, complaint and appeal pathways; routing depends on the actual issue.",
+    "evidence_review_basis": {
+      "evidence": [
+        {
+          "source": "R35",
+          "url": "https://www.medicare.gov/basics/your-medicare-rights/get-help-with-your-rights-protections",
+          "source_text_sha256": "496bc1ba67908a14d796288f41d1e386865be70da676e535dfea623201882690",
+          "retrieval_status": "retrieved",
+          "selector": "complaint",
+          "locations": [
+            {
+              "locator": "HTML p block 8",
+              "context_locators": [
+                "HTML p block 8"
+              ],
+              "paragraph_sha256": "00535db37cd9de2ac780e3590dd6bf3b02136530e6842dfd299a041ca3ea448c"
+            },
+            {
+              "locator": "HTML li block 13",
+              "context_locators": [
+                "HTML li block 13",
+                "HTML li block 14",
+                "HTML li block 15",
+                "HTML p block 16"
+              ],
+              "paragraph_sha256": "a922501bb98dfa22f01cf3001e96946a2b5b77d67c3d3e2874559a008c356358"
+            },
+            {
+              "locator": "HTML p block 18",
+              "context_locators": [
+                "HTML p block 18"
+              ],
+              "paragraph_sha256": "337c62e827d581822e950ab7561bb192a3432e29b1e4ad041e11bdfda521358b"
+            },
+            {
+              "locator": "HTML li block 20",
+              "context_locators": [
+                "HTML li block 20",
+                "HTML li block 21",
+                "HTML li block 22",
+                "HTML p block 23"
+              ],
+              "paragraph_sha256": "b8f21bb3a88e33854e8c80d736a2697acf20bcb6b05bb05d8163d24094ed6d78"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "R17",
+          "url": "https://www.cms.gov/cciio/programs-and-initiatives/consumer-support-and-information/csg-ext-appeals-facts",
+          "source_text_sha256": "736385abd503e5c77db0179c0ceacf35abb880df1ebb08047d06a631b4befc13",
+          "retrieval_status": "retrieved",
+          "selector": "external review",
+          "locations": [
+            {
+              "locator": "HTML h1 block 2",
+              "context_locators": [
+                "HTML h1 block 2",
+                "HTML p block 4",
+                "HTML p block 5",
+                "HTML li block 6"
+              ],
+              "paragraph_sha256": "60f9289e7838e7ea257e93300d48fddb8dfd73772d4d8ced44ddfd122eeffbbf"
+            },
+            {
+              "locator": "HTML p block 4",
+              "context_locators": [
+                "HTML p block 4"
+              ],
+              "paragraph_sha256": "27d0d2295833bbe442b83aaa840be0736189521c55c8e5bb7236ac36b1bbac28"
+            },
+            {
+              "locator": "HTML li block 7",
+              "context_locators": [
+                "HTML li block 7",
+                "HTML p block 8",
+                "HTML p block 9",
+                "HTML h2 block 10"
+              ],
+              "paragraph_sha256": "f9ad2a378c44fda967edc39a94024dd5f6ae80c0130b7858ded3209d5dfe4032"
+            },
+            {
+              "locator": "HTML p block 8",
+              "context_locators": [
+                "HTML p block 8"
+              ],
+              "paragraph_sha256": "24b0b77008e934f122369934df3738dc88ac10c69a9fb5333ec929d57231e4cf"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        },
+        {
+          "source": "A11",
+          "url": "https://www.cms.gov/medicare/appeals-grievances/managed-care-appeals-grievances/appeals-overview",
+          "source_text_sha256": "ec11b88b4e99076c6dfc0307088feffb03e977b20f3c92e820a4378e61e3ff27",
+          "retrieval_status": "tool_excerpt",
+          "selector": "appeal",
+          "locations": [
+            {
+              "locator": "tool line 119",
+              "context_locators": [
+                "tool line 118",
+                "tool line 119",
+                "tool line 135",
+                "tool line 136",
+                "tool line 138"
+              ],
+              "paragraph_sha256": "e10686dd8e4e22d5412faacb62e3481f45050d0b491f3393b302b0d3c1c32985"
+            },
+            {
+              "locator": "tool line 138",
+              "context_locators": [
+                "tool line 136",
+                "tool line 138",
+                "tool line 144",
+                "tool line 146",
+                "tool line 147"
+              ],
+              "paragraph_sha256": "911fe0a74189d0b7f4938a5f99bdd8498126268c2c5f05d7ff1a96789240afb8"
+            },
+            {
+              "locator": "tool line 373",
+              "context_locators": [
+                "tool line 371",
+                "tool line 373",
+                "tool line 381",
+                "tool line 383",
+                "tool line 384"
+              ],
+              "paragraph_sha256": "91244160b12a6ba518a5865cfd886630993eef084a4f3c42c806562d0335dea9"
+            },
+            {
+              "locator": "tool line 679",
+              "context_locators": [
+                "tool line 677",
+                "tool line 679",
+                "tool line 685",
+                "tool line 687",
+                "tool line 689"
+              ],
+              "paragraph_sha256": "4fd3802ced20c3d2683878f3e650840eef6d3572a02caa25d6d66f41ac75fc58"
+            }
+          ],
+          "selection_limit": "Selector resolution only; authored rationale provides the evidence judgment. Match presence is not automatic verification."
+        }
+      ],
+      "verdict": "SUPPORTED_CONTEXT_WITH_MANDATE_LIMITS",
+      "rationale": "Sources describe different assistance, complaint and appeal pathways; routing depends on the actual issue.",
+      "alternatives": "Insurer appeal, public counseling, quality complaint or oversight mechanism as applicable.",
+      "complexity": "A complaint does not automatically establish an appeal, jurisdiction or reversal; the exact agency mandate remains case-specific."
+    }
+  }
+]

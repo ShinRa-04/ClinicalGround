@@ -1,0 +1,14 @@
+digraph "role-G02" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nG02 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+G02 [label="G02\nPayer medical director / \nclinical-program leader", URL="../index.html#G02", target="_top"];
+G03 [label="G03\nUM / medical-policy committee \nand specialty members", URL="../index.html#G03", target="_top"];
+G06 [label="G06\nQuality-improvement / audit \nprofessional", URL="../index.html#G06", target="_top"];
+U17 [label="U17\nUM manager / operational \nsupervisor", URL="../index.html#U17", target="_top"];
+U17 -> G02 [label="DEP180", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G06 -> G02 [label="DEP181", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G02 -> G03 [label="DEP184", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+U17 -> G02 [label="S-G02 request", tooltip="In MA the UM committee is led by the plan medical director; governance and case-review roles are not the same authority edge."];
+G02 -> U17 [label="S-G02 response", tooltip="In MA the UM committee is led by the plan medical director; governance and case-review roles are not the same authority edge."];
+}

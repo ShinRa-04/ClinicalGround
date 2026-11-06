@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-18",
+  "baseline_commit": "afb2ab9",
+  "baseline_hashes_unchanged": true,
+  "roles": 97,
+  "work_packages": 23,
+  "design_decisions": 16,
+  "authority_implications": 34,
+  "proposed_stress_cases": 20,
+  "mechanically_screened_pairs": 4656,
+  "authored_pair_examples": 20,
+  "pair_screen_counts": {
+    "preserve_participant_or_delegation_boundary": 2352,
+    "preserve_review_accountability": 651,
+    "shared_plumbing_distinct_function": 59,
+    "shared_support_preserve_permissions": 749,
+    "no_merge_evidence_yet": 793,
+    "candidate_function_merger": 52
+  },
+  "inherited_dependencies": 219,
+  "inherited_handoffs": 46,
+  "source_entries": 11,
+  "runtime_implemented": false,
+  "benchmarks_executed": false,
+  "architecture_performance_verified": false,
+  "limitation": "Publication/coverage only; labels, groupings and pair screens are design hypotheses, not legal permissions or empirical optimization."
+}

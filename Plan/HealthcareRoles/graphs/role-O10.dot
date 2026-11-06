@@ -1,0 +1,16 @@
+digraph "role-O10" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nO10 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+O01 [label="O01\nProvider authorization / \nprecertification specialist", URL="../index.html#O01", target="_top"];
+O10 [label="O10\nProvider denial / appeal \nspecialist", URL="../index.html#O10", target="_top"];
+U09 [label="U09\nDetermination / notification \ncoordinator", URL="../index.html#U09", target="_top"];
+U12 [label="U12\nInternal appeal / grievance \ncoordinator", URL="../index.html#U12", target="_top"];
+U09 -> O10 [label="DEP057", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> O10 [label="DEP058", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O01 -> O10 [label="DEP059", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O10 -> U12 [label="DEP095", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O01 -> O10 [label="S-O10 request", tooltip="Separate pre-service authorization disputes from post-service claim denials; actual notice determines route and deadlines."];
+O10 -> O01 [label="S-O10 response", tooltip="Separate pre-service authorization disputes from post-service claim denials; actual notice determines route and deadlines."];
+}

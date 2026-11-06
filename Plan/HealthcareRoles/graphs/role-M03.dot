@@ -1,0 +1,12 @@
+digraph "role-M03" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM03 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+M01 [label="M01\nLead care manager / case \nmanager", URL="../index.html#M01", target="_top"];
+M03 [label="M03\nLicensed clinical social \nworker", URL="../index.html#M03", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+P01 -> M03 [label="DEP115", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> M03 [label="DEP116", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> M03 [label="S-M03 request", tooltip="Exact clinical activities and independent practice depend on state license and setting, not a national generic job description."];
+M03 -> M01 [label="S-M03 response", tooltip="Exact clinical activities and independent practice depend on state license and setting, not a national generic job description."];
+}

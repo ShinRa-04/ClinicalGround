@@ -1,0 +1,15 @@
+digraph "role-G10" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nG10 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+G10 [label="G10\nPrivacy officer / HIM privacy \nspecialist", URL="../index.html#G10", target="_top"];
+G14 [label="G14\nIdentity / portal-access \nadministrator", URL="../index.html#G14", target="_top"];
+O06 [label="O06\nHIM / release-of-information \nspecialist", URL="../index.html#O06", target="_top"];
+P03 [label="P03\nLegally recognized personal \nrepresentative", URL="../index.html#P03", target="_top"];
+G10 -> P03 [label="DEP008", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O06 -> G10 [label="DEP198", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P03 -> G10 [label="DEP199", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G10 -> G14 [label="DEP206", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+O06 -> G10 [label="S-G10 request", tooltip="Treatment, payment, patient access, representative authority and specially protected data can invoke different rules."];
+G10 -> O06 [label="S-G10 response", tooltip="Treatment, payment, patient access, representative authority and specially protected data can invoke different rules."];
+}

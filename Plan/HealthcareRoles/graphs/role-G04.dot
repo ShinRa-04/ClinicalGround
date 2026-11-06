@@ -1,0 +1,14 @@
+digraph "role-G04" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nG04 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+G04 [label="G04\nCare-management director / \nmanager", URL="../index.html#G04", target="_top"];
+G11 [label="G11\nHealth-services / \npopulation-health data \nanalyst", URL="../index.html#G11", target="_top"];
+G12 [label="G12\nBusiness / workflow analyst", URL="../index.html#G12", target="_top"];
+M01 [label="M01\nLead care manager / case \nmanager", URL="../index.html#M01", target="_top"];
+M01 -> G04 [label="DEP185", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G11 -> G04 [label="DEP186", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G04 -> G12 [label="DEP202", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+M01 -> G04 [label="S-G04 request", tooltip="Partnership documents several management levels; exact titles and reporting relationships elsewhere remain local."];
+G04 -> M01 [label="S-G04 response", tooltip="Partnership documents several management levels; exact titles and reporting relationships elsewhere remain local."];
+}

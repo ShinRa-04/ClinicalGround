@@ -1,0 +1,14 @@
+digraph "role-G13" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nG13 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+G11 [label="G11\nHealth-services / \npopulation-health data \nanalyst", URL="../index.html#G11", target="_top"];
+G12 [label="G12\nBusiness / workflow analyst", URL="../index.html#G12", target="_top"];
+G13 [label="G13\nEHR / clinical informatics / \napplication-support \nprofessional", URL="../index.html#G13", target="_top"];
+G14 [label="G14\nIdentity / portal-access \nadministrator", URL="../index.html#G14", target="_top"];
+G12 -> G13 [label="DEP204", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G11 -> G13 [label="DEP205", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G13 -> G14 [label="DEP207", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+G12 -> G13 [label="S-G13 request", tooltip="Clinical informaticists may hold additional licenses; distinguish technical permissions from those independent credentials."];
+G13 -> G12 [label="S-G13 response", tooltip="Clinical informaticists may hold additional licenses; distinguish technical permissions from those independent credentials."];
+}

@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-18",
+  "result": "passed",
+  "organizational_modules": 29,
+  "micro_role_contracts": 66,
+  "domain_counts": {
+    "PA": 18,
+    "UM": 18,
+    "CM": 20,
+    "SH": 10
+  },
+  "service_contracts": 20,
+  "memory_layers": 10,
+  "prior_function_mappings": 97,
+  "composition_variants": 3,
+  "design_decisions": 18,
+  "proposed_acceptance_cases": 20,
+  "diagrams": 5,
+  "markdown_documents": 21,
+  "local_links_checked": 529,
+  "local_anchors_checked": 293,
+  "baseline_hashes_unchanged": true,
+  "checks": "Structural coverage, user-scope/isolation requirement labels, links, anchors and SVG integrity; not implementation enforcement.",
+  "runtime_implemented": false,
+  "actual_tool_mapping_completed": false,
+  "patient_isolation_enforced_or_tested": false,
+  "benchmark_or_clinical_performance_verified": false
+}

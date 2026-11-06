@@ -1,0 +1,12 @@
+digraph "role-M17" {
+graph [rankdir=LR, overlap=false, splines=true, pad=0.35, nodesep=0.35, ranksep=0.8, bgcolor="white", fontname="Arial", fontsize=16, label="MODEL: NOT CONFIRMED institutional workflow\nM17 dependency neighborhood | conditional contacts, not supervisors", labelloc=t];
+node [shape=box, style="rounded,filled", fillcolor="#f2f5f7", color="#94a3b8", fontname="Arial", fontsize=11, margin="0.14,0.1"];
+edge [color="#718096", fontname="Arial", fontsize=9, arrowsize=0.65];
+C01 [label="C01\nOrdering / treating physician", URL="../index.html#C01", target="_top"];
+M17 [label="M17\nRespiratory therapist", URL="../index.html#M17", target="_top"];
+P01 [label="P01\nPatient / insured member", URL="../index.html#P01", target="_top"];
+C01 -> M17 [label="DEP145", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+P01 -> M17 [label="DEP146", tooltip="Only when this role and pathway participate; not a universal mandatory predecessor"];
+C01 -> M17 [label="S-M17 request", tooltip="Specific protocols and privileges determine independent adjustments; state and setting must be checked."];
+M17 -> C01 [label="S-M17 response", tooltip="Specific protocols and privileges determine independent adjustments; state and setting must be checked."];
+}

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "G01",
+    "url": "https://modelcontextprotocol.io/specification/2026-07-28/architecture",
+    "captured_utc": "2026-10-18T06:14:13.950386+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://modelcontextprotocol.io/specification/2026-07-28/architecture",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 312584,
+    "sha256": "43796b00c3699632ba49819a91d35d4267800de1cb55d124b919f319c46c6956"
+  },
+  {
+    "id": "G02",
+    "url": "https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices",
+    "captured_utc": "2026-10-18T06:14:13.958930+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 577967,
+    "sha256": "88b7fb589f6358db9777b5f23e456111ced8797f0d6cf03c45a3fd6f036512c4"
+  },
+  {
+    "id": "G03",
+    "url": "https://developers.openai.com/api/docs/guides/function-calling",
+    "captured_utc": "2026-10-18T06:14:13.958930+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://developers.openai.com/api/docs/guides/function-calling",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 1478823,
+    "sha256": "287e0b754d03a34e74aa8dcaa1f560318ab9269449e01e89209aa5d8cc8f0987"
+  },
+  {
+    "id": "G04",
+    "url": "https://developers.openai.com/api/docs/guides/conversation-state",
+    "captured_utc": "2026-10-18T06:14:13.958930+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://developers.openai.com/api/docs/guides/conversation-state",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 715453,
+    "sha256": "cb751aa12925340b904c94c282946ca0cd3493c632b93e07fd854ae37b8e5ded"
+  },
+  {
+    "id": "G05",
+    "url": "https://developers.openai.com/api/docs/guides/compaction",
+    "captured_utc": "2026-10-18T06:14:14.530243+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://developers.openai.com/api/docs/guides/compaction",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 482226,
+    "sha256": "63003c950e990a2761b5758cbdd10f3b41d81f7f7220c1843a09de6f509e2afe"
+  },
+  {
+    "id": "G06",
+    "url": "https://developers.openai.com/api/docs/guides/prompt-caching",
+    "captured_utc": "2026-10-18T06:14:14.621428+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://developers.openai.com/api/docs/guides/prompt-caching",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 776021,
+    "sha256": "e0f9112b662acfdc2a407ebc86884366b6d463164b23c5a4467acedc2918ae14"
+  },
+  {
+    "id": "G07",
+    "url": "https://developers.openai.com/api/docs/guides/agents",
+    "captured_utc": "2026-10-18T06:14:14.661780+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://developers.openai.com/api/docs/guides/agents",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 364587,
+    "sha256": "711fccc6b619ce615b717c1e30667dcab43556d0fc7ae4668b4c5e04c3638160"
+  },
+  {
+    "id": "G08",
+    "url": "https://developers.openai.com/cookbook/examples/agents_sdk/building_reliable_agents_memory_compaction",
+    "captured_utc": "2026-10-18T06:14:14.679170+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://developers.openai.com/cookbook/examples/agents_sdk/building_reliable_agents_memory_compaction",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 500173,
+    "sha256": "bddcbaad306790224652d260eb51e9f92de5bb7eee12f8832bcba9fcd132b6b4"
+  },
+  {
+    "id": "G09",
+    "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+    "captured_utc": "2026-10-18T06:14:14.779448+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 165122,
+    "sha256": "c884b77df43f12fdd6f939a059870e0f19edbb36b57effe0dd8faadd334df476"
+  },
+  {
+    "id": "G10",
+    "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+    "captured_utc": "2026-10-18T06:14:14.798968+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 148449,
+    "sha256": "44423cccff53a5ecae14e4648653343814d1ec31311809d4f757fe6fe69d4577"
+  },
+  {
+    "id": "G11",
+    "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+    "captured_utc": "2026-10-18T06:14:14.867924+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 197554,
+    "sha256": "ffefe9d91a4450de70bc0312ff520965eb231fff5b0eff6efd599513fc809478"
+  },
+  {
+    "id": "G12",
+    "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+    "captured_utc": "2026-10-18T06:14:14.872829+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 175448,
+    "sha256": "bd965486fc182def891af17a4922f2ad7f7ad78b8c950f962dbd3d12f7bbf702"
+  },
+  {
+    "id": "G13",
+    "url": "https://www.anthropic.com/engineering/advanced-tool-use",
+    "captured_utc": "2026-10-18T06:14:15.251179+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://www.anthropic.com/engineering/advanced-tool-use",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 239053,
+    "sha256": "169f15b77a565d14e99b088f9272660557e7ead467472b7eb2854c1202f3e758"
+  },
+  {
+    "id": "G14",
+    "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+    "captured_utc": "2026-10-18T06:14:15.308190+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 268736,
+    "sha256": "fb22655a4965836b7a5df529cdb72e26a32b22802efd862fdb9f22d20f961630"
+  },
+  {
+    "id": "G15",
+    "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+    "captured_utc": "2026-10-18T06:14:15.333179+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+    "content_type": "text/html;charset=utf-8",
+    "bytes": 455504,
+    "sha256": "4859930db2230c54fa06a72d4516ed0c1f42e908872b6118ef2818e616b9e6de"
+  },
+  {
+    "id": "G16",
+    "url": "https://www.sqlite.org/transactional.html",
+    "captured_utc": "2026-10-18T06:14:15.383292+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://www.sqlite.org/transactional.html",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 4609,
+    "sha256": "3d6a66c925d32e66fb28872c0e0c32b1936d46f996995c1a30fe591173bc6266"
+  },
+  {
+    "id": "G17",
+    "url": "https://www.sqlite.org/wal.html",
+    "captured_utc": "2026-10-18T06:14:15.691913+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://www.sqlite.org/wal.html",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 42143,
+    "sha256": "f3467b530b883d4a00574fe1a898b3d121ed72764ae28cf66941080ac0badb9e"
+  },
+  {
+    "id": "G18",
+    "url": "https://docs.stripe.com/api/idempotent_requests",
+    "captured_utc": "2026-10-18T06:14:15.745625+00:00",
+    "scope": "Raw snapshot identity only; selected passages were separately read in official web sources.",
+    "status": "captured",
+    "final_url": "https://docs.stripe.com/api/idempotent_requests",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 1375315,
+    "sha256": "506e9618ba9a7c2d578458afde3cbe40a73addd9ae7c9c808aa94d0f2e1c4ee9"
+  }
+]

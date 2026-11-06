@@ -1,0 +1,402 @@
+[
+  {
+    "id": "A01",
+    "title": "Hospital patient rights",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-B/section-482.13",
+    "kind": "federal regulatory text",
+    "scope": "Specified US setting only",
+    "access": "Relevant text opened October 17, 2026",
+    "locator": "Relevant section or named guidance",
+    "note": "Displayed Title 42 current through October 15, 2026; authoritative but unofficial eCFR."
+  },
+  {
+    "id": "A02",
+    "title": "Initial MA organization determination review",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.566",
+    "kind": "federal regulatory text",
+    "scope": "Medicare Advantage; integrated-plan exception must be checked",
+    "access": "Opened October 17, 2026; Title 42 current October 15",
+    "locator": "422.566(c)-(d)",
+    "note": "Adverse medical-necessity review is by physician OR other appropriate licensed professional with relevant expertise."
+  },
+  {
+    "id": "A03",
+    "title": "MA reconsideration independence and expertise",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.590",
+    "kind": "federal regulatory text",
+    "scope": "Medicare Advantage standard/expedited reconsideration; verify route",
+    "access": "Opened October 17, 2026; Title 42 current October 15",
+    "locator": "422.590(h), (a)(2), (e)(5)",
+    "note": "Reconsiderers not involved in initial determination; medical-necessity denial reconsideration by appropriately expert physician."
+  },
+  {
+    "id": "A04",
+    "title": "MA independent entity reconsideration",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.592",
+    "kind": "federal regulatory text",
+    "scope": "Medicare Advantage independent review",
+    "access": "Opened October 17, 2026; Title 42 current October 15",
+    "locator": "422.592(a)-(c)",
+    "note": "Independent CMS-contracted entity reviews remaining disputed issues; not an internal reporting manager."
+  },
+  {
+    "id": "A05",
+    "title": "Medicare Advantage UM committee",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-C/section-422.137",
+    "kind": "federal regulatory text",
+    "scope": "Medicare Advantage Part C",
+    "access": "Relevant text opened October 17, 2026",
+    "locator": "Relevant section or named guidance",
+    "note": "Displayed Title 42 current through October 15, 2026; authoritative but unofficial eCFR."
+  },
+  {
+    "id": "A06",
+    "title": "Hospital discharge planning",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-C/section-482.43",
+    "kind": "federal regulatory text",
+    "scope": "Specified US setting only",
+    "access": "Relevant text opened October 17, 2026",
+    "locator": "Relevant section or named guidance",
+    "note": "Displayed Title 42 current through October 15, 2026; authoritative but unofficial eCFR."
+  },
+  {
+    "id": "A07",
+    "title": "Home-health plan and coordination",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-484/subpart-B/section-484.60",
+    "kind": "federal regulatory text",
+    "scope": "Specified US setting only",
+    "access": "Relevant text opened October 17, 2026",
+    "locator": "Relevant section or named guidance",
+    "note": "Displayed Title 42 current through October 15, 2026; authoritative but unofficial eCFR."
+  },
+  {
+    "id": "A08",
+    "title": "Hospice interdisciplinary team",
+    "url": "https://www.cms.gov/files/document/r222soma.pdf",
+    "kind": "government manual transmittal",
+    "scope": "Specified US setting only",
+    "access": "Opened, June 7, 2024 snapshot; page 4 inspected",
+    "locator": "Appendix M / 418.56(a)(1)",
+    "note": "Direct current eCFR and its advertised API were inaccessible. Establishes dated IDG composition, not complete current hospice regulation."
+  },
+  {
+    "id": "A09",
+    "title": "Personal representative authority",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/personal-representatives/index.html",
+    "kind": "government guidance",
+    "scope": "Specified US setting only",
+    "access": "Relevant text opened October 17, 2026",
+    "locator": "Relevant section or named guidance",
+    "note": ""
+  },
+  {
+    "id": "A10",
+    "title": "Minimum necessary and treatment exception",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/minimum-necessary-requirement/index.html",
+    "kind": "government guidance",
+    "scope": "Specified US setting only",
+    "access": "Relevant text opened October 17, 2026",
+    "locator": "Relevant section or named guidance",
+    "note": ""
+  },
+  {
+    "id": "A11",
+    "title": "Medicare Advantage appeal levels",
+    "url": "https://www.cms.gov/medicare/appeals-grievances/managed-care-appeals-grievances/appeals-overview",
+    "kind": "government guidance",
+    "scope": "Medicare Advantage Part C",
+    "access": "Relevant text opened October 17, 2026",
+    "locator": "Relevant section or named guidance",
+    "note": ""
+  },
+  {
+    "id": "A12",
+    "title": "Applicable commercial external review",
+    "url": "https://www.healthcare.gov/appeal-insurance-company-decision/external-review/",
+    "kind": "government guidance",
+    "scope": "Specified US setting only",
+    "access": "Relevant text opened October 17, 2026",
+    "locator": "Relevant section or named guidance",
+    "note": ""
+  },
+  {
+    "id": "A13",
+    "title": "Nursing scope framework",
+    "url": "https://ncsbn.org/nursing-regulation/practice/decision-making-framework.page",
+    "kind": "professional regulatory framework",
+    "scope": "Specified US setting only",
+    "access": "Relevant text opened October 17, 2026",
+    "locator": "Relevant section or named guidance",
+    "note": ""
+  },
+  {
+    "id": "A14",
+    "title": "Nurse Practice Acts",
+    "url": "https://ncsbn.org/policy/npa.page",
+    "kind": "professional regulatory framework",
+    "scope": "Specified US setting only",
+    "access": "Relevant text opened October 17, 2026",
+    "locator": "Relevant section or named guidance",
+    "note": ""
+  },
+  {
+    "id": "A15",
+    "title": "Hospital medical records",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-C/section-482.24",
+    "kind": "federal regulatory text",
+    "scope": "Specified US setting only",
+    "access": "Relevant text opened October 17, 2026",
+    "locator": "Relevant section or named guidance",
+    "note": "Displayed Title 42 current through October 15, 2026; authoritative but unofficial eCFR."
+  },
+  {
+    "id": "A16",
+    "title": "MA effectuation of decisions",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-M/section-422.618",
+    "kind": "federal regulatory text",
+    "scope": "Medicare Advantage Part C",
+    "access": "Relevant text opened October 17, 2026",
+    "locator": "Relevant section or named guidance",
+    "note": "Displayed Title 42 current through October 15, 2026; authoritative but unofficial eCFR."
+  },
+  {
+    "id": "A17",
+    "title": "MA coverage criteria",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-C/section-422.101",
+    "kind": "federal regulatory text",
+    "scope": "Medicare Advantage Part C",
+    "access": "Relevant text opened October 17, 2026",
+    "locator": "Relevant section or named guidance",
+    "note": "Displayed Title 42 current through October 15, 2026; authoritative but unofficial eCFR."
+  },
+  {
+    "id": "B01",
+    "title": "Physicians and surgeons",
+    "url": "https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B02",
+    "title": "Physician assistants",
+    "url": "https://www.bls.gov/ooh/healthcare/physician-assistants.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B03",
+    "title": "Advanced practice nurses",
+    "url": "https://www.bls.gov/ooh/healthcare/nurse-anesthetists-nurse-midwives-and-nurse-practitioners.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B04",
+    "title": "Registered nurses",
+    "url": "https://www.bls.gov/ooh/healthcare/registered-nurses.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B05",
+    "title": "Practical and vocational nurses",
+    "url": "https://www.bls.gov/ooh/healthcare/licensed-practical-and-licensed-vocational-nurses.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B06",
+    "title": "Medical assistants",
+    "url": "https://www.bls.gov/ooh/healthcare/medical-assistants.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B07",
+    "title": "Pharmacists",
+    "url": "https://www.bls.gov/ooh/healthcare/pharmacists.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B08",
+    "title": "Pharmacy technicians",
+    "url": "https://www.bls.gov/ooh/healthcare/pharmacy-technicians.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B09",
+    "title": "Social workers",
+    "url": "https://www.bls.gov/ooh/community-and-social-service/social-workers.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B10",
+    "title": "Psychologists",
+    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/psychologists.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B11",
+    "title": "Behavioral and substance-use counselors",
+    "url": "https://www.bls.gov/ooh/community-and-social-service/substance-abuse-behavioral-disorder-and-mental-health-counselors.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B12",
+    "title": "Community health workers",
+    "url": "https://www.bls.gov/ooh/community-and-social-service/community-health-workers.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B13",
+    "title": "Health education specialists",
+    "url": "https://www.bls.gov/ooh/community-and-social-service/health-educators.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B14",
+    "title": "Dietitians and nutritionists",
+    "url": "https://www.bls.gov/ooh/healthcare/dietitians-and-nutritionists.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B15",
+    "title": "Physical therapists",
+    "url": "https://www.bls.gov/ooh/healthcare/physical-therapists.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B16",
+    "title": "Occupational therapists",
+    "url": "https://www.bls.gov/ooh/healthcare/occupational-therapists.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B17",
+    "title": "Speech-language pathologists",
+    "url": "https://www.bls.gov/ooh/healthcare/speech-language-pathologists.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B18",
+    "title": "Respiratory therapists",
+    "url": "https://www.bls.gov/ooh/healthcare/respiratory-therapists.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B19",
+    "title": "Home health and personal care aides",
+    "url": "https://www.bls.gov/ooh/healthcare/home-health-aides-and-personal-care-aides.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B20",
+    "title": "Medical records specialists",
+    "url": "https://www.bls.gov/ooh/healthcare/medical-records-and-health-information-technicians.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B21",
+    "title": "Health information technologists",
+    "url": "https://www.bls.gov/ooh/healthcare/health-information-technologists-and-medical-registrars.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B22",
+    "title": "Medical and health services managers",
+    "url": "https://www.bls.gov/ooh/management/medical-and-health-services-managers.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  },
+  {
+    "id": "B23",
+    "title": "Interpreters and translators",
+    "url": "https://www.bls.gov/ooh/media-and-communication/interpreters-and-translators.htm",
+    "kind": "government occupational description",
+    "scope": "US occupational duties; not a state license or delegation grant",
+    "access": "Relevant duties passages opened October 17, 2026",
+    "locator": "What They Do / Duties",
+    "note": "Qualification and state-law limits remain applicable."
+  }
+]
