@@ -7,6 +7,19 @@ no task containers remain up.
 to the public repo. It excludes the Codex-as-model modules (`codex_provider.py`, `codex_transport.py`,
 `codex_smoke.py`), the Claude Code CLI adapters and their tests, and the competition page copy; README.md
 carries the disclaimer. `master`/`role-authority` (full history, including those files) were NOT pushed.
+**Update 2026-11-06:** `main` has a second commit (`ba036b9`) adding an API-key adapter in place of the Codex
+module (`HealthHarnessCodex/publish_overlay/codex_provider.py`: OpenAI-compatible, `CLINICALGROUND_*` env vars;
+batch skips the Codex executable and instruction pins only under it; runtime image ID overridable) plus a README
+setup guide. A fresh clone passes 791 tests (2 Codex-only skipped). Untested end to end with a real key. Rebuild
+with `python HealthHarnessCodex/publish_overlay/build_snapshot.py` after `git fetch origin main`; it stacks on
+origin/main so no force-push is needed (force-push is blocked).
+**Adapter live check 2026-11-06 (executed, partial by design):** from a `publish` worktree, with the judge's
+OpenRouter key (base URL `https://openrouter.ai/api/v1`, model `~deepseek/deepseek-flash-latest`, reasoning effort
+`none`) on `pa_t012_t012_o001_p01_triage_payer`: a one-call probe returned a correctly mapped `cases.get_case` tool
+call; the batch run then completed 2 model calls (23.9k/1.9k and 29.0k/2.6k tokens, 7 proposals) with tools
+dispatched in the Docker world, and was stopped deliberately at call 3 (the user only wanted to confirm calls and
+replies flow). Cost about $0.0013. Not a task result. The batch log still prints `model=gpt-6-luna` (the CLI default)
+although the adapter sends `CLINICALGROUND_MODEL`; cosmetic. Container stopped, not deleted.
 
 **Final measured state (native structural checks only; one judged attempt ever):**
 - Judge-graded: 1 attempt (Oct 22, PA provider t012, strict 0, 9/11, both semantic checks passed).
