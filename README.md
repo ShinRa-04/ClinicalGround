@@ -4,13 +4,13 @@ A research harness for long-horizon healthcare-administration agents, built for 
 (χ-Bench, [arXiv:2605.16679](https://arxiv.org/abs/2605.16679)) benchmark and the IEEE Big Data Cup 2026
 competition around it.
 
-**Status: abandoned (November 2026). Archived as-is. Not runnable as published.**
+**Status: abandoned (November 2026). Archived as-is. Runnable with your own API key and CHI-Bench access, but untested that way.**
 
 The competition this project targeted was abandoned, so the work stopped. This repository is a research
 record: the design, the reasoning, and unusually detailed run-by-run evidence. It is not a ready-to-run
 system, and it does not report an official benchmark score.
 
-## Disclaimer: how this was run, and why you cannot run it as published
+## Disclaimer: how this was run, and what changed for publication
 
 Read this before judging the results or trying to reproduce anything.
 
@@ -24,11 +24,13 @@ Read this before judging the results or trying to reproduce anything.
   official patient simulator. Earlier runs used a Codex-model patient.
 - **Official judge.** The semantic judge (Claude Opus 4.7) was run exactly once, through OpenRouter. Every
   other result below is from native structural checks only.
-- **The model-connection layer was removed.** `HealthHarnessCodex/`, the main harness where most of the
-  October and November 2026 work happened, is included, but the modules that connected it to the
+- **The subscription connection layer was replaced.** `HealthHarnessCodex/`, the main harness where most
+  of the October and November 2026 work happened, is included, but the modules that connected it to the
   subscription tools were deliberately removed because they were a workaround, not a product design:
-  - Codex App Server on the ChatGPT subscription (the actor connection): `codex_provider.py`,
-    `codex_transport.py`, `codex_smoke.py`.
+  - Codex App Server on the ChatGPT subscription (the actor connection): the original `codex_provider.py`,
+    `codex_transport.py`, `codex_smoke.py`. In their place, `codex_provider.py` is now a small **API-key
+    adapter** with the same interface, which sends each turn to any OpenAI-compatible Chat Completions API
+    (see [Running it yourself](#running-it-yourself)).
   - Claude Code CLI on the Claude subscription (the Sonnet patient and Claude-actor experiments):
     `claude_cli_patient.py`, `claude_code_actor.py`, `claude_code_container_actor.py`,
     `claude_container_runtime.py`.
@@ -36,9 +38,10 @@ Read this before judging the results or trying to reproduce anything.
     `test_claude_cli_patient.py`, `test_claude_code_actor.py`, `test_claude_code_container_actor.py`.
   The OpenRouter judge modules (`openrouter_judge.py`, `openrouter_batch.py`) remain; they use an
   ordinary API key.
-- **Consequence.** Other modules still import the removed ones, so the published package does not import
-  or run as-is, and no model backend is wired in. The gated CHI-Bench dataset and handbook are also not
-  included. You cannot reproduce the runs from this repository.
+- **Consequence.** The harness imports and its offline tests pass, but it has **never been run end to end
+  with the API-key adapter**; every recorded result came from the subscription setup above. The Claude
+  CLI patient backend and Claude actor backends are not available. The gated CHI-Bench dataset and
+  handbook are not included: you need your own access. The recorded runs cannot be reproduced exactly.
 - **Official task limits were not met.** Core tasks allow an agent timeout of 900 s (doubled by the
   multiplier in the submission example) on 2 CPUs, 4 GB and no GPU. Runs here took roughly 28 to 65
   minutes, and document search used local GPU embeddings. A result from this harness would not have been
@@ -95,7 +98,7 @@ official score.
 
 | Path | Contents |
 |---|---|
-| `HealthHarnessCodex/` | The main harness: actor loop, batch runner, simulator bridge, role and completion logic, tests. Its model-connection modules were removed (see the disclaimer), so it does not run as published. |
+| `HealthHarnessCodex/` | The main harness: actor loop, batch runner, simulator bridge, role and completion logic, tests. Its subscription connection was replaced by an API-key adapter (see the disclaimer and [Running it yourself](#running-it-yourself)). |
 | `HealthHarness/` | The original harness the Codex-based work started from, pinned. Standard-library Python core; see its own README. |
 | `HealthHarnessBlueprint/` | Design proposal: hospital-style organization, role catalog (66 micro-roles) and generators. |
 | `Progress/` | Handoff and design notes with every run's evidence and decisions. Start at `Progress/HANDOFF.md`. |
@@ -113,21 +116,78 @@ Handbook, downloaded benchmark data, run outputs and credentials.
 2. `HealthHarnessCodex/ARCHITECTURE.md`, `HealthHarness/ARCHITECTURE.md` and `HealthHarnessBlueprint/README.md` for the design.
 3. `HarnessGuide/README.md` for how the pieces fit together.
 
+## Running it yourself
+
+Untested end to end with the API-key adapter. Expect to debug. Developed on Windows 11 with Docker
+Desktop and PowerShell; other platforms were not tried.
+
+**You need:** Docker Desktop; Python 3.12; an OpenAI-compatible API key for a model that supports tool
+calling; a Hugging Face account approved for the
+[Managed-Care Operations Handbook](https://huggingface.co/datasets/actava/managed-care-operations-handbook);
+optionally an NVIDIA GPU for the semantic search tool.
+
+1. **Get the official benchmark** (the toolkit builds from this exact commit):
+
+   ```powershell
+   git clone https://github.com/actava-ai/chi-bench Runner/chi-bench
+   git -C Runner/chi-bench checkout 4444a07fa68a4f1623f841a292a54e284fc8e7f7
+   ```
+
+2. **Build the toolkit and download the data** (from the repository root):
+
+   ```powershell
+   .\Runner\toolkit.ps1 build
+   .\Runner\toolkit.ps1 download-public
+   .\Runner\toolkit.ps1 hf auth login        # after your handbook access is approved
+   .\Runner\toolkit.ps1 download-handbook
+   ```
+
+3. **Build the benchmark runtime image and pin it.** Your build has its own image ID, so tell the harness:
+
+   ```powershell
+   .\Runner\toolkit.ps1 build-runtime
+   $env:CLINICALGROUND_RUNTIME_IMAGE_ID = (docker image inspect bigdata-chi-bench:runtime-4444a07 --format '{{.Id}}')
+   ```
+
+4. **Optional semantic search** (GPU): `.\Runner\toolkit.ps1 build-retrieval`. Without it, the
+   `workspace.hybrid_search` tool reports itself unavailable; file search and reads still work.
+
+5. **Configure the model:**
+
+   ```powershell
+   $env:CLINICALGROUND_API_KEY  = '<your key>'                 # never commit it
+   $env:CLINICALGROUND_BASE_URL = 'https://api.openai.com/v1'  # or any OpenAI-compatible endpoint
+   $env:CLINICALGROUND_MODEL    = '<model id>'                 # overrides --model
+   # optional: $env:CLINICALGROUND_REASONING_EFFORT = 'none'   # if your endpoint rejects reasoning_effort
+   ```
+
+6. **Run one task** (a payer triage task needs no simulated counterpart):
+
+   ```powershell
+   cd HealthHarnessCodex
+   python -X utf8 -m health_harness_codex.batch --dataset-root ..\Dataset\chi-bench `
+     --run-dir runs\first-run --domains pa_um --task-id pa_t012_t012_o001_p01_triage_payer `
+     --attempts 1 --concurrency 1 --actor-backend harness --composition helpers `
+     --recovery-helper-policy auto --max-model-calls 100 --max-tool-calls 500 --json-summary
+   ```
+
+   For care-management tasks add `--simulator-backend codex`; the simulated patient then also uses your
+   API model through the same adapter (the official patient is Claude Sonnet 5, so results will differ).
+   Grading is deferred and no paid judge is called. Run output stays in `HealthHarnessCodex/runs/`,
+   which is git-ignored.
+
 ## Tests
 
-Neither suite is expected to run as published.
-
-- `HealthHarnessCodex/tests/` is the main offline suite. Several of its modules import the removed
-  connection layer, and the tests for that layer were removed too, so it cannot run as published.
-- The original `HealthHarness/` has its own offline suite and synthetic demo. Its README gives these
-  commands, run from inside `HealthHarness/` (Python 3.11 or later):
+`HealthHarnessCodex/tests/` is the main offline suite (no network, no Docker, no keys). From a fresh clone
+of this repository it passes: 791 tests, 2 skipped (Codex-app behaviour replaced by the adapter).
 
 ```bash
-python -m health_harness --demo
-python -m unittest discover -s tests -v
+cd HealthHarnessCodex
+python -X utf8 -m unittest discover -s tests -q
 ```
 
-These were not re-run for this publication and are not guaranteed to pass on a fresh checkout.
+The original `HealthHarness/` has its own suite and demo (`python -m health_harness --demo`,
+`python -m unittest discover -s tests -v` from inside it); not re-run for this publication.
 
 ## Licensing and third-party material
 

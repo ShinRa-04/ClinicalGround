@@ -3,6 +3,10 @@
 The user abandoned the project because the IEEE Big Data Cup / CHI-Bench competition was abandoned.
 Repository published as **ClinicalGround** (github.com/ShinRa-04/ClinicalGround). Nothing is running;
 no task containers remain up.
+**Published 2026-11-06:** a single-commit snapshot (local branch `publish`, `5ba25cb`) was pushed as `main`
+to the public repo. It excludes the Codex-as-model modules (`codex_provider.py`, `codex_transport.py`,
+`codex_smoke.py`), the Claude Code CLI adapters and their tests, and the competition page copy; README.md
+carries the disclaimer. `master`/`role-authority` (full history, including those files) were NOT pushed.
 
 **Final measured state (native structural checks only; one judged attempt ever):**
 - Judge-graded: 1 attempt (Oct 22, PA provider t012, strict 0, 9/11, both semantic checks passed).

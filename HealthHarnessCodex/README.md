@@ -2,8 +2,9 @@
 
 > **Published copy:** the modules that used Codex as the model (`codex_provider.py`, `codex_transport.py`,
 > `codex_smoke.py`) and the Claude Code CLI adapters were removed before publication because they were a
-> subscription workaround, not part of the harness design. This package therefore does not run as
-> published. See the [root README disclaimer](../README.md#disclaimer-how-this-was-run-and-why-you-cannot-run-it-as-published).
+> subscription workaround, not part of the harness design. `codex_provider.py` here is a small API-key
+> adapter with the same interface (OpenAI-compatible endpoint, `CLINICALGROUND_API_KEY`); it is untested
+> end to end. See the [root README](../README.md#running-it-yourself) for setup and the disclaimer.
 
 **Current status, November 3: documentation only.** The latest tested code is
 `d77870c` (743 software tests). Current runtime-guard edits are unfinished and

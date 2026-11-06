@@ -62,8 +62,10 @@ def _discover_codex_executable(installation_root: Path | None = None) -> Path:
 
 
 DEFAULT_CODEX_EXECUTABLE = _discover_codex_executable()
-RUNTIME_IMAGE = "bigdata-chi-bench:runtime-4444a07"
-RUNTIME_IMAGE_SHA256 = "sha256:420d28d0f15af56241c8ca212dcdea63acea1d9113a5fbbb5189368964684f66"
+# A locally built runtime has its own image ID; pin it with these variables when not using the original build.
+RUNTIME_IMAGE = os.environ.get("CLINICALGROUND_RUNTIME_IMAGE", "bigdata-chi-bench:runtime-4444a07")
+RUNTIME_IMAGE_SHA256 = os.environ.get(
+    "CLINICALGROUND_RUNTIME_IMAGE_ID", "sha256:420d28d0f15af56241c8ca212dcdea63acea1d9113a5fbbb5189368964684f66")
 ROOT_LABEL = "BigData/HealthHarnessCodex"
 CANONICAL_DOMAINS = {
     "pa_provider": "prior_auth_provider",
@@ -422,8 +424,16 @@ def _source_identity() -> dict[str, Any]:
             "source_files": sum(path.is_file() and "__pycache__" not in path.parts for path in files)}
 
 
+def _api_adapter() -> bool:
+    """True in the published copy, where an API-key stand-in replaces the Codex app adapter."""
+    from . import codex_provider
+    return getattr(codex_provider, "API_ADAPTER", False) is True
+
+
 def _instruction_pins(config: BatchConfig) -> dict[str, str]:
     pins: dict[str, str] = {}
+    if _api_adapter():
+        return pins  # No Codex instruction file exists for the API-key adapter.
     for source, expected in zip(config.instruction_sources, config.expected_instruction_hashes):
         original = Path(source)
         if original.is_symlink():
@@ -1016,7 +1026,7 @@ def run_batch(config: BatchConfig, *, plan_only: bool = False,
     pins = _instruction_pins(config)
     native_case_runner = case_runner is None
     explicit_executable = Path(config.codex_executable) != DEFAULT_CODEX_EXECUTABLE
-    executable_hash_required = native_case_runner and not plan_only
+    executable_hash_required = native_case_runner and not plan_only and not _api_adapter()
     executable_hash = None
     if native_case_runner or explicit_executable:
         executable_hash = _codex_executable_sha256(config.codex_executable,

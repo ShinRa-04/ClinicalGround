@@ -17,6 +17,9 @@ from concurrent.futures import ThreadPoolExecutor
 from types import SimpleNamespace
 
 from health_harness_codex.batch import BatchConfig, BatchError, enumerate_public_tasks, main, run_batch
+from health_harness_codex.batch import _api_adapter
+
+CODEX_ONLY = unittest.skipIf(_api_adapter(), 'Codex app adapter behaviour; replaced by the API-key adapter')
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -307,6 +310,7 @@ class BatchTests(unittest.TestCase):
         older.unlink()
         self.assertEqual(install / "codex.exe", _discover_codex_executable(install))
 
+    @CODEX_ONLY
     def test_native_executable_preflight_rejects_bad_paths_before_world_creation(self):
         cases = [
             (str(self.root / "missing-codex.exe"), "missing or is not a regular file"),
@@ -855,6 +859,7 @@ class BatchTests(unittest.TestCase):
         self.assertEqual(['gpt-6.1-sol'],seen)
         self.assertEqual('gpt-6.1-sol',result['frozen_config']['model'])
 
+    @CODEX_ONLY
     def test_codex_simulator_preserves_world_after_unsettled_worker(self):
         from types import SimpleNamespace
         from health_harness_codex.batch import (DEFAULT_INSTRUCTION, DEFAULT_INSTRUCTION_SHA256,
